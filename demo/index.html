@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
-    <title>Trace Completeness Curves · Evidence explorer</title>
+    <title>Trace Completeness Curves · Initial synthetic benchmark explorer</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
   </head>
@@ -17,11 +17,20 @@
 
     <main id="main">
       <section class="intro" aria-labelledby="page-title">
-        <p class="eyebrow">An observability experiment for agent swarms</p>
-        <h1 id="page-title">What can the trace<br>actually tell us?</h1>
-        <p class="lead">Explore how attribution changes as more evidence becomes visible. Compare each estimate with the simulator’s known transmission graph.</p>
+        <p class="eyebrow">Trace Completeness Curves / Study 1 of 3</p>
+        <h1 id="page-title">Initial synthetic<br>benchmark explorer</h1>
+        <p class="lead">These charts show the initial benchmark with complete logging. Explore how hiding telemetry types changes attribution, measured against the simulator’s known source-use edges.</p>
         <div class="intro-note"><span class="note-symbol" aria-hidden="true">→</span><p>Shared context can make independent actions look connected. Exposure is not use. Even a complete trace does not establish causal influence in a real incident.</p></div>
       </section>
+
+      <nav class="study-links" aria-label="Other completed studies">
+        <p class="eyebrow">Read the other completed studies</p>
+        <ul>
+          <li><a href="../studies/missing_receipts/results/REPORT.md">Missing-receipt study</a> — paired results for erased delivery and context records.</li>
+          <li><a href="../studies/wiki_case_study/REPORT.md">Public-wiki audit</a> — inherited and newly inserted references in 13,403 revisions.</li>
+          <li><a href="../studies/wiki_case_study/results/REPORT.md#source-linked-evidence-cards">Wiki evidence cards</a> · <a href="../studies/wiki_case_study/results/evidence_cards.json">Download cards as JSON</a> — observed text, unknown exposure and unobserved source use.</li>
+        </ul>
+      </nav>
 
       <section id="load-state" class="load-state" aria-live="polite" aria-atomic="true">
         <p id="load-title" class="load-title">Loading local experiment results…</p>
@@ -75,7 +84,7 @@ uv run python -m http.server 8000 --bind 127.0.0.1</code></pre>
           <li><span class="step-number">04</span><h3>+ Delivery</h3><p>See which requested information arrived.</p></li>
           <li><span class="step-number">05</span><h3>+ Context</h3><p>See shared-channel chunks included in context.</p></li>
         </ol>
-        <div class="reading-notes"><article><h3>What this experiment measures</h3><p>How observation limits and attribution rules affect recovery of a known synthetic transmission graph. The temporal method starts from nearby same-page writes; the witness method starts from exact witness-token overlap. Both filter candidate edges using the evidence available in the selected regime. Candidate sets shrink by construction. In this clean-log baseline, complete logs preserve true edges and recall; precision gains partly follow these assumptions. Fewer false positives alone are not an empirical discovery. Missing or corrupt logs remain untested.</p></article><article><h3>What remains unobserved</h3><p>A request need not be delivered. Delivered information need not enter context. Information in context need not change a decision. Context visibility records included shared-channel chunks, not the full harness state or which source was selected or used. The simulator’s ground truth makes evaluation possible; real traces usually do not provide that truth.</p></article></div>
+        <div class="reading-notes"><article><h3>What this experiment measures</h3><p>How observation limits and attribution rules affect recovery of a known synthetic transmission graph. The temporal method starts from nearby same-page writes; the witness method starts from exact witness-token overlap. Both filter candidate edges using the evidence available in the selected regime. Candidate sets shrink by construction. In this clean-log baseline, complete logs preserve true edges and recall; precision gains partly follow these assumptions. Fewer false positives alone are not an empirical discovery. The separate <a href="../studies/missing_receipts/results/REPORT.md">missing-receipt study</a> tests erased records; altered record contents remain untested.</p></article><article><h3>What remains unobserved</h3><p>A request need not be delivered. Delivered information need not enter context. Information in context need not change a decision. Context visibility records included shared-channel chunks, not the full harness state or which source was selected or used. The simulator’s ground truth makes evaluation possible; real traces usually do not provide that truth.</p></article></div>
       </section>
 
       <section class="reproduce" aria-labelledby="reproduce-heading"><div><p class="eyebrow">Keep the experiment inspectable</p><h2 id="reproduce-heading">Reproduce, then interrogate.</h2><p>This page reads a generated local artifact. Change the experiment, regenerate the results, and reload to inspect the measured outcomes. When replacing an existing artifact, add <code>--overwrite</code>.</p><a href="../results/benchmark.json" class="artifact-link">Open benchmark JSON <span aria-hidden="true">↗</span></a></div><pre><code>uv run tracebench benchmark \

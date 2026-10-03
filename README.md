@@ -1,8 +1,27 @@
 # Trace Completeness Curves
 
-**Question:** What can a swarm log establish about cross-agent information flow?
+Trace Completeness Curves tests what incomplete agent logs can establish about
+information flow. The project brings together three completed studies:
 
-**Method:** Generate synthetic swarms with known realized source-use edges, hide telemetry,
+- **[Synthetic source-attribution benchmark](results/REPORT.md):** Measure attribution
+  errors against known realized source-use edges as different telemetry types become
+  available.
+- **[Missing-receipt stress test](studies/missing_receipts/results/REPORT.md):** Erase
+  observable records from fixed worlds. Preserving exposure evidence can recover true
+  source candidates, but can also increase false attribution; the tradeoff depends on
+  the investigator's candidate selection.
+- **[Public-wiki case study](studies/wiki_case_study/REPORT.md):** Audit 13,403 DSE
+  revisions. Under the frozen comparison rule, 7,380 of 10,520 eligible snapshot
+  reference pairs (70.15%) contain only inherited references. This describes recorded
+  text; exposure remains unknown and source use unobserved.
+
+Exposure is not source use, and source use is not counterfactual causal necessity.
+See the [initial benchmark's claims and analysis specification](CLAIMS.md) and each
+study's report for its scope and limitations.
+
+## Initial synthetic benchmark
+
+Generate synthetic swarms with known realized source-use edges, hide telemetry types,
 and measure the errors of temporal-proximity and witness-reuse investigators.
 
 **Initial result:** In the high-shock scenario (`p=0.3`), witness precision rises from
@@ -14,9 +33,6 @@ These are synthetic results: correct, complete logs preserve true candidates by 
 estimate, and exposure records still leave attribution ambiguity.
 
 ![Initial telemetry-ablation results](results/trace_completeness.png)
-
-This repository is an initial research implementation. Exposure is not source use, and
-source use is not counterfactual causal necessity. See [CLAIMS.md](CLAIMS.md).
 
 ## Reproduce
 
@@ -66,14 +82,19 @@ uv run tracebench wiki-audit --archive data/raw/wiki/full-wiki-logs.zip \
   --protocol studies/wiki_case_study/ANALYSIS.md --output artifacts/wiki-replication
 ```
 
-## Explore the evidence
+## Initial synthetic benchmark explorer
 
 ```bash
 uv run python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open the `/demo/` path on that local server. The static explorer reads the curated
-`results/benchmark.json`, makes no external requests, and does not run new experiments.
+Open the `/demo/` path on that local server. Its charts cover only the initial synthetic
+benchmark, using the curated `results/benchmark.json`. The static explorer makes no
+external requests and does not run new experiments. Read the separate
+[missing-receipt report](studies/missing_receipts/results/REPORT.md),
+[public-wiki report](studies/wiki_case_study/REPORT.md), and
+[wiki evidence cards](studies/wiki_case_study/results/REPORT.md#source-linked-evidence-cards)
+for the completed follow-up studies.
 
 ## Research artifacts
 
