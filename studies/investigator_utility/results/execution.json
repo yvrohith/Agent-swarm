@@ -1,0 +1,41 @@
+{
+  "actual_cost_usd": "0",
+  "actual_total_cost_usd": "0",
+  "additional_retry_attempts": 0,
+  "attempts": 0,
+  "blockers": [
+    "No OpenAI, Anthropic, Gemini, OpenRouter or Azure model API credentials are configured in this environment.",
+    "The available Codex conversation and same-family collaboration agents are not a configured metered, stateless investigator API with enforceable per-request USD bounds.",
+    "No exact authorized model IDs, supported decoding limits and verified official prices are available to freeze.",
+    "No frozen authorized models with verified official pricing and limits."
+  ],
+  "case_counts": {
+    "development/synthetic": 2,
+    "development/wiki": 2,
+    "evaluation/synthetic": 8,
+    "evaluation/wiki": 16
+  },
+  "charged_or_reserved_usd": "0",
+  "completed_calls": 0,
+  "cost_basis": "regular-rate usage estimate plus unreleased reservations; not an invoice",
+  "credential_presence": {},
+  "development_calls_completed": 0,
+  "development_completed": 0,
+  "evaluation_calls_completed": 0,
+  "evaluation_completed": 0,
+  "freeze_sha256": "f6a4e76072e73ca9e25bb4ff114339c820ba2d3a9da81f97350ce55401ed0f13",
+  "frozen_at_utc": "2026-10-03T17:46:39.703261+00:00",
+  "known_usage_cost_usd": "0",
+  "ledger_sha256": null,
+  "preservation": {
+    "all_match": true,
+    "baseline_head": "7abea1a8f0bc2ac38bd6d3c7a2bdac83cdafe5f6",
+    "dependency_lock_sha256": "2ebf9b1106185db7de8590b6eb47c7b4b50c07d86f79a20ca7cd78871bbe42b7",
+    "verified_files": 70
+  },
+  "preservation_status": "All 70 baseline tracked-file hashes match.",
+  "reserved_cost_usd": "0",
+  "status": "blocked",
+  "transport_retry_attempts": 0,
+  "unknown_cost_attempts": 0
+}

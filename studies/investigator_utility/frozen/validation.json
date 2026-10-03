@@ -1,0 +1,20 @@
+{
+  "case_counts": {
+    "development/synthetic": 2,
+    "development/wiki": 2,
+    "evaluation/synthetic": 8,
+    "evaluation/wiki": 16
+  },
+  "claims": 112,
+  "gold_certificate_checks": 28,
+  "independent_human_review": false,
+  "label_invariance_checks": 28,
+  "leakage_field_checks": 28,
+  "same_evidence_checks": 28,
+  "shortages": {
+    "development/synthetic": 0,
+    "development/wiki": 0,
+    "evaluation/synthetic": 0,
+    "evaluation/wiki": 0
+  }
+}

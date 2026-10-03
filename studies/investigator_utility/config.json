@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "study_id": "investigator-utility-v1",
+  "models": [],
+  "execution_status": "blocked_no_authorized_models",
+  "budget_usd": "25.00",
+  "development_request_limit": 24,
+  "evaluation_request_limit": 144,
+  "transport_retry_limit": 12,
+  "concurrency": 1,
+  "raw_execution_directory": "artifacts/investigator-utility/calls",
+  "evaluation_wiki_cases": 16,
+  "evaluation_synthetic_cases": 8,
+  "development_wiki_cases": 2,
+  "development_synthetic_cases": 2,
+  "wiki_max_text_chars": 24000,
+  "max_prompt_utf8_bytes": 160000,
+  "order_seed": 73020,
+  "bootstrap_seed": 73021,
+  "bootstrap_resamples": 2000,
+  "primary_comparison": "C-B",
+  "secondary_comparisons": ["B-A", "C-A"],
+  "output_schema": "case_id; answers[{claim_id,status,evidence_ids,reason}]",
+  "reason_max_characters": 400,
+  "access_inspection": {
+    "configured_model_families": 0,
+    "credential_values_recorded": false,
+    "blockers": [
+      "No OpenAI, Anthropic, Gemini, OpenRouter or Azure model API credentials are configured in this environment.",
+      "The available Codex conversation and same-family collaboration agents are not a configured metered, stateless investigator API with enforceable per-request USD bounds.",
+      "No exact authorized model IDs, supported decoding limits and verified official prices are available to freeze."
+    ]
+  }
+}

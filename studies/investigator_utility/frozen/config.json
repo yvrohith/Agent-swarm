@@ -1,0 +1,37 @@
+{
+  "access_inspection": {
+    "blockers": [
+      "No OpenAI, Anthropic, Gemini, OpenRouter or Azure model API credentials are configured in this environment.",
+      "The available Codex conversation and same-family collaboration agents are not a configured metered, stateless investigator API with enforceable per-request USD bounds.",
+      "No exact authorized model IDs, supported decoding limits and verified official prices are available to freeze."
+    ],
+    "configured_model_families": 0,
+    "credential_values_recorded": false
+  },
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 73021,
+  "budget_usd": "25.00",
+  "concurrency": 1,
+  "development_request_limit": 24,
+  "development_synthetic_cases": 2,
+  "development_wiki_cases": 2,
+  "evaluation_request_limit": 144,
+  "evaluation_synthetic_cases": 8,
+  "evaluation_wiki_cases": 16,
+  "execution_status": "blocked_no_authorized_models",
+  "max_prompt_utf8_bytes": 160000,
+  "models": [],
+  "order_seed": 73020,
+  "output_schema": "case_id; answers[{claim_id,status,evidence_ids,reason}]",
+  "primary_comparison": "C-B",
+  "raw_execution_directory": "artifacts/investigator-utility/calls",
+  "reason_max_characters": 400,
+  "schema_version": 1,
+  "secondary_comparisons": [
+    "B-A",
+    "C-A"
+  ],
+  "study_id": "investigator-utility-v1",
+  "transport_retry_limit": 12,
+  "wiki_max_text_chars": 24000
+}

@@ -1,0 +1,11 @@
+{
+  "analysis_unit": "case; whole page/history clusters resampled together",
+  "bootstrap_seed": 73021,
+  "case_counts": {
+    "synthetic": 0,
+    "wiki": 0
+  },
+  "groups": [],
+  "paired": [],
+  "resamples": 2000
+}
