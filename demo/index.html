@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Trace Completeness Curves · Evidence explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to evidence explorer</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Trace Completeness Curves home"><span class="brand-mark" aria-hidden="true">T<span>∴</span>C</span> Trace Completeness Curves</a>
+      <span class="artifact-badge"><span aria-hidden="true"></span> Synthetic benchmark</span>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">An observability experiment for agent swarms</p>
+        <h1 id="page-title">What can the trace<br>actually tell us?</h1>
+        <p class="lead">Explore how attribution changes as more evidence becomes visible. Compare each estimate with the simulator’s known transmission graph.</p>
+        <div class="intro-note"><span class="note-symbol" aria-hidden="true">→</span><p>Shared context can make independent actions look connected. Exposure is not use. Even a complete trace does not establish causal influence in a real incident.</p></div>
+      </section>
+
+      <section id="load-state" class="load-state" aria-live="polite" aria-atomic="true">
+        <p id="load-title" class="load-title">Loading local experiment results…</p>
+        <p id="load-detail">Reading results/benchmark.json. No example measurements are substituted.</p>
+        <div id="recovery" hidden>
+          <p>Generate the benchmark from the repository root, then serve this page over HTTP:</p>
+          <pre><code>uv run tracebench benchmark --output results --seeds 12 --runs 120 --overwrite
+uv run python -m http.server 8000 --bind 127.0.0.1</code></pre>
+          <p>Open <code>http://localhost:8000/demo/</code>.</p>
+          <button type="button" id="retry-button" class="retry-button">Try loading again <span aria-hidden="true">↻</span></button>
+        </div>
+      </section>
+
+      <section id="explorer" hidden aria-labelledby="explorer-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / Explore a scenario</p><h2 id="explorer-title">More evidence. Better attribution?</h2></div>
+          <p id="dataset-status" class="dataset-status"></p>
+        </div>
+
+        <form class="controls" aria-label="Experiment controls" onsubmit="return false">
+          <div class="control"><label for="transmission">Transmission probability</label><select id="transmission"></select><p>Simulator setting for transmission.</p></div>
+          <div class="control"><label for="shock">Shared shock strength</label><select id="shock"></select><p>Common causes of correlated activity.</p></div>
+          <div class="control"><label for="method">Attribution method</label><select id="method"></select><p id="method-detail"></p></div>
+          <div class="control"><label for="regime">Visible evidence</label><select id="regime"></select><p id="regime-detail"></p></div>
+        </form>
+
+        <div id="scenario-summary" class="scenario-summary" aria-live="polite" aria-atomic="true"></div>
+        <div id="metrics" class="metric-grid" aria-label="Selected experiment metrics">
+          <article class="metric-card"><p class="metric-label">Edge precision</p><p class="metric-value" id="precision-value">—</p><p class="metric-interval" id="precision-interval"></p><p class="metric-definition">Fraction of attributed edges that are true transmission edges. Higher is better.</p></article>
+          <article class="metric-card"><p class="metric-label">Edge recall</p><p class="metric-value" id="recall-value">—</p><p class="metric-interval" id="recall-interval"></p><p class="metric-definition">Fraction of true transmission edges recovered. Higher is better.</p></article>
+          <article class="metric-card"><p class="metric-label">Mean absolute θ error</p><p class="metric-value" id="absolute_error-value">—</p><p class="metric-interval" id="absolute_error-interval"></p><p class="metric-definition">Absolute error in the fraction of all writes with a cross-run source. Lower is better.</p></article>
+          <article class="metric-card"><p class="metric-label">False-attributed targets</p><p class="metric-value" id="false_attributed_target_fraction-value">—</p><p class="metric-interval" id="false_attributed_target_fraction-interval"></p><p class="metric-definition">Attributed targets with no true cross-run source, divided by all writes. Lower is better.</p></article>
+        </div>
+
+        <section class="chart-panel" aria-labelledby="chart-heading">
+          <div class="chart-heading"><div><p class="eyebrow">02 / Compare trace completeness</p><h2 id="chart-heading">The evidence curve</h2></div><div class="chart-metric"><label for="chart-metric">Compare metric</label><select id="chart-metric"><option value="absolute_error">Mean absolute θ error</option><option value="precision">Edge precision</option><option value="recall">Edge recall</option><option value="false_attributed_target_fraction">False-attributed targets</option><option value="false_positive_edges_per_target">False-positive edges / target</option></select></div></div>
+          <p id="chart-description" class="chart-description"></p>
+          <div class="chart-legend"><span><i class="legend-point" aria-hidden="true"></i> Seed mean</span><span><i class="legend-interval" aria-hidden="true"></i> Bootstrap 95% interval</span><span><i class="legend-selected" aria-hidden="true"></i> Selected evidence</span></div>
+          <div id="chart" class="chart"></div>
+          <p class="uncertainty-note">Intervals summarize variation across simulation seeds. They are not confidence in a real incident’s causal explanation. A missing value means the metric is undefined or unavailable, not zero.</p>
+          <details class="data-table-disclosure"><summary>Read the chart as a data table</summary><div class="table-scroll"><table><caption id="table-caption">Measurements by visible evidence</caption><thead><tr><th scope="col">Visible evidence</th><th scope="col">Mean</th><th scope="col">95% interval</th><th scope="col">Seeds with a value</th></tr></thead><tbody id="chart-table"></tbody></table></div></details>
+        </section>
+      </section>
+
+      <section class="interpretation" aria-labelledby="interpretation-heading">
+        <div class="section-heading"><div><p class="eyebrow">03 / Read the evidence carefully</p><h2 id="interpretation-heading">Visibility is a ladder, not a verdict.</h2></div></div>
+        <ol class="evidence-ladder">
+          <li><span class="step-number">01</span><h3>Writes</h3><p>Observe artifact writes and their timing.</p></li>
+          <li><span class="step-number">02</span><h3>+ Identity</h3><p>Link observable writes to persistent run identities.</p></li>
+          <li><span class="step-number">03</span><h3>+ Requests</h3><p>See which information agents requested.</p></li>
+          <li><span class="step-number">04</span><h3>+ Delivery</h3><p>See which requested information arrived.</p></li>
+          <li><span class="step-number">05</span><h3>+ Context</h3><p>See shared-channel chunks included in context.</p></li>
+        </ol>
+        <div class="reading-notes"><article><h3>What this experiment measures</h3><p>How observation limits and attribution rules affect recovery of a known synthetic transmission graph. The temporal method starts from nearby same-page writes; the witness method starts from exact witness-token overlap. Both filter candidate edges using the evidence available in the selected regime. Candidate sets shrink by construction. In this clean-log baseline, complete logs preserve true edges and recall; precision gains partly follow these assumptions. Fewer false positives alone are not an empirical discovery. Missing or corrupt logs remain untested.</p></article><article><h3>What remains unobserved</h3><p>A request need not be delivered. Delivered information need not enter context. Information in context need not change a decision. Context visibility records included shared-channel chunks, not the full harness state or which source was selected or used. The simulator’s ground truth makes evaluation possible; real traces usually do not provide that truth.</p></article></div>
+      </section>
+
+      <section class="reproduce" aria-labelledby="reproduce-heading"><div><p class="eyebrow">Keep the experiment inspectable</p><h2 id="reproduce-heading">Reproduce, then interrogate.</h2><p>This page reads a generated local artifact. Change the experiment, regenerate the results, and reload to inspect the measured outcomes. When replacing an existing artifact, add <code>--overwrite</code>.</p><a href="../results/benchmark.json" class="artifact-link">Open benchmark JSON <span aria-hidden="true">↗</span></a></div><pre><code>uv run tracebench benchmark \
+  --output results \
+  --seeds 12 --runs 120 --overwrite
+
+uv run python -m http.server 8000 --bind 127.0.0.1
+# Open http://localhost:8000/demo/</code></pre></section>
+    </main>
+    <footer><span>Trace Completeness Curves</span><p>Synthetic evidence. Explicit uncertainty. Inspectable results.</p></footer>
+  </body>
+</html>

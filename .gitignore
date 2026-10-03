@@ -1,0 +1,68 @@
+# macOS metadata and resource forks
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+__MACOSX/
+.apdisk
+.TemporaryItems/
+.VolumeIcon.icns
+
+# Local secrets and credentials (commit documented templates only)
+.env
+.env.*
+!.env.example
+!.env.*.example
+.secrets/
+credentials*.json
+*.pem
+*.key
+*.p12
+*.pfx
+.envrc
+.direnv/
+
+# Python environments, caches, builds, and test artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# JavaScript dependencies and generated output
+node_modules/
+.next/
+.npm/
+coverage/
+*.tsbuildinfo
+
+# Editor and local execution state
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.log
+.cache/
+.local/
+
+# Raw runs, datasets, and downloaded models; curate evidence separately
+artifacts/
+data/raw/
+data/cache/
+models/
+wandb/
+mlruns/

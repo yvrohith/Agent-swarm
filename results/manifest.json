@@ -1,0 +1,12 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "REPORT.md": "ff832724feaf81e71c685a3bd45292f49d41781d862d2f6b00bbac8307efd974",
+    "benchmark.json": "2fde54d8bf87af9d3da414ed4136c0cf2fac82628bd8c1573e07c3736f1d5f39",
+    "runs.csv": "f2159e3678abe761db6248cac2aadafe32c3003791301b9adc1de814e1f93c54",
+    "summary.csv": "e638ccafe9a9f2815d584a41224d42d37c08b881daa2d4b9667f1959ce2dc65f",
+    "trace_completeness.png": "3bce98f579dcc36fdffb9fe0f15bb5abdff0aac1881a3bad1573fe02036f7237",
+    "trace_completeness.svg": "f8273f89a980f1225eadc5efc210eaa496ddf95b00276ea0ba3110c453729363"
+  },
+  "source_sha256": "7ba8058cdebc06651c5ce786aeeed753f6683cbd1b0a15c3f7a4e3cdb69c7d71"
+}
