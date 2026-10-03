@@ -1,0 +1,28 @@
+{
+  "additional_spend_usd": "0",
+  "all_historical_input_hashes_match": true,
+  "checked_at_utc": "2026-10-03T22:52:48.926266+00:00",
+  "credentials_accessed": false,
+  "final_current_script_reproduction": {
+    "cause_rows": 36,
+    "exact_match": true,
+    "family_rows": 24,
+    "terra_variants": 3,
+    "variant_rows": 72
+  },
+  "full_tests": {
+    "environment": "Installed .venv, empty inherited environment, socket connect/connect_ex/getaddrinfo/create_connection blocked; fake unit transports only.",
+    "failed": 0,
+    "new_diagnostic_tests": 18,
+    "passed": 638,
+    "previous_tests": 620
+  },
+  "historical_inputs_after": 771,
+  "historical_worktree_modifications": [],
+  "inspection": "All36Sonnet final outputs and all3Terra requests/certificates/final answers inspected mechanically and with AI assistance; no human review claimed.",
+  "lint": "ruff check src tests studies/evidence_responsiveness/offline_failure_audit/audit.py passed",
+  "model_calls": 0,
+  "network_requests": 0,
+  "provider_private_reasoning_inspected": false,
+  "whitespace": "git diff --check passed"
+}

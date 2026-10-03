@@ -1,0 +1,567 @@
+{
+  "alignment_limit": "Both classifier checks share SequenceMatcher; not independent alignment or human validation.",
+  "base_comparisons": {
+    "decisive": {
+      "provider_payload_changes": [
+        {
+          "after_sha256": "a885b3b61aa1c5e4dc374310f5c8d653a24b1d048bdc81ddb98e0819e26fa1d6",
+          "before_sha256": "6595adb07d942b6acaaf2ce7a53748232825e9ca986550b16e51672c77840502",
+          "path": "/messages/1/content"
+        }
+      ],
+      "public_case_changes": [
+        {
+          "after_sha256": "b76873913f97fbdefa2888820730198c8598c5beafc2c2cbcb91b55c9c25ed7c",
+          "before_sha256": "328f1bfa6a98891578e9ee379bde63ce58636398382a5e7cc2591779122faaf5",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "c713621e276510b5405093efef5fe42321636c907bfbc611e07c97c3bb7c001c",
+          "before_sha256": "9e08f32601b545b5af057790869da1733495e193156cacb75f3fa43cebfbe87f",
+          "path": "/records/0/text"
+        },
+        {
+          "after_sha256": "e40c5eab2010eb8cebafce17bf99dee81a3e442d4f747e94067e3f721ea561db",
+          "before_sha256": "ad78bd8372fe721968680caab807a0ce042262b627bfe409ab0c7db8a94b215d",
+          "path": "/records/0/text_sha256"
+        }
+      ],
+      "public_request_changes": [
+        {
+          "after_sha256": "12bdca48c6678991bb2cac36e13f0ebb0c6cdb5165736c1ffd1af59776f89f1c",
+          "before_sha256": "4c1b846252a53079a9d023a50ec1b0fe4e1d26234cacab6a6c9b3699f1538db3",
+          "path": "/attempt_key"
+        },
+        {
+          "after_sha256": "b76873913f97fbdefa2888820730198c8598c5beafc2c2cbcb91b55c9c25ed7c",
+          "before_sha256": "328f1bfa6a98891578e9ee379bde63ce58636398382a5e7cc2591779122faaf5",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "a885b3b61aa1c5e4dc374310f5c8d653a24b1d048bdc81ddb98e0819e26fa1d6",
+          "before_sha256": "6595adb07d942b6acaaf2ce7a53748232825e9ca986550b16e51672c77840502",
+          "path": "/user"
+        }
+      ],
+      "text_edits": [
+        {
+          "after": "r",
+          "before": "Q",
+          "offset": 886,
+          "record_id": "r0"
+        }
+      ]
+    },
+    "irrelevant": {
+      "provider_payload_changes": [
+        {
+          "after_sha256": "18b1f0b283a8828a8e7e7be2abf31e7473bb6d36d455936181b4e83fb5a93bdd",
+          "before_sha256": "6595adb07d942b6acaaf2ce7a53748232825e9ca986550b16e51672c77840502",
+          "path": "/messages/1/content"
+        }
+      ],
+      "public_case_changes": [
+        {
+          "after_sha256": "55ebd8068070cd513587670ea9bfba82282bdf60bcc4513a1cd69c38287405a7",
+          "before_sha256": "328f1bfa6a98891578e9ee379bde63ce58636398382a5e7cc2591779122faaf5",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "71be98d0c24db8134d45c234ba45276845b336d4144de4600f03bf4520894235",
+          "before_sha256": "06c831cfb74a06b1e287beed4b44db4bdeb7b738621c091479176ac238a7fee4",
+          "path": "/records/1/text"
+        },
+        {
+          "after_sha256": "1d8c7e718d95ac8404a79a8cbf82be2ba7ffb8e372263a7583eeb62c3b32e36b",
+          "before_sha256": "d619724298d361bb2ebc302cd698676777c9550e20e9f61fbf4985d856cd27d0",
+          "path": "/records/1/text_sha256"
+        }
+      ],
+      "public_request_changes": [
+        {
+          "after_sha256": "5d3307a2cca43aee1ce77055b3a79d05f9e40e0a47e79772814d735638eb9997",
+          "before_sha256": "4c1b846252a53079a9d023a50ec1b0fe4e1d26234cacab6a6c9b3699f1538db3",
+          "path": "/attempt_key"
+        },
+        {
+          "after_sha256": "55ebd8068070cd513587670ea9bfba82282bdf60bcc4513a1cd69c38287405a7",
+          "before_sha256": "328f1bfa6a98891578e9ee379bde63ce58636398382a5e7cc2591779122faaf5",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "18b1f0b283a8828a8e7e7be2abf31e7473bb6d36d455936181b4e83fb5a93bdd",
+          "before_sha256": "6595adb07d942b6acaaf2ce7a53748232825e9ca986550b16e51672c77840502",
+          "path": "/user"
+        }
+      ],
+      "text_edits": [
+        {
+          "after": "Q",
+          "before": "M",
+          "offset": 898,
+          "record_id": "r1"
+        }
+      ]
+    }
+  },
+  "causal_limit": "One sample each; case IDs and derived hashes also change. The text edit alone is not causally isolated.",
+  "certificates_reproduced": 3,
+  "family_id": "f_9695d2661a05a12eced27723",
+  "motif": "inserted_versus_inherited",
+  "pairwise_request_differences": {
+    "base_to_decisive": {
+      "provider_payload": [
+        {
+          "after_sha256": "a885b3b61aa1c5e4dc374310f5c8d653a24b1d048bdc81ddb98e0819e26fa1d6",
+          "before_sha256": "6595adb07d942b6acaaf2ce7a53748232825e9ca986550b16e51672c77840502",
+          "path": "/messages/1/content"
+        }
+      ],
+      "public_case": [
+        {
+          "after_sha256": "b76873913f97fbdefa2888820730198c8598c5beafc2c2cbcb91b55c9c25ed7c",
+          "before_sha256": "328f1bfa6a98891578e9ee379bde63ce58636398382a5e7cc2591779122faaf5",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "c713621e276510b5405093efef5fe42321636c907bfbc611e07c97c3bb7c001c",
+          "before_sha256": "9e08f32601b545b5af057790869da1733495e193156cacb75f3fa43cebfbe87f",
+          "path": "/records/0/text"
+        },
+        {
+          "after_sha256": "e40c5eab2010eb8cebafce17bf99dee81a3e442d4f747e94067e3f721ea561db",
+          "before_sha256": "ad78bd8372fe721968680caab807a0ce042262b627bfe409ab0c7db8a94b215d",
+          "path": "/records/0/text_sha256"
+        }
+      ],
+      "public_request": [
+        {
+          "after_sha256": "12bdca48c6678991bb2cac36e13f0ebb0c6cdb5165736c1ffd1af59776f89f1c",
+          "before_sha256": "4c1b846252a53079a9d023a50ec1b0fe4e1d26234cacab6a6c9b3699f1538db3",
+          "path": "/attempt_key"
+        },
+        {
+          "after_sha256": "b76873913f97fbdefa2888820730198c8598c5beafc2c2cbcb91b55c9c25ed7c",
+          "before_sha256": "328f1bfa6a98891578e9ee379bde63ce58636398382a5e7cc2591779122faaf5",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "a885b3b61aa1c5e4dc374310f5c8d653a24b1d048bdc81ddb98e0819e26fa1d6",
+          "before_sha256": "6595adb07d942b6acaaf2ce7a53748232825e9ca986550b16e51672c77840502",
+          "path": "/user"
+        }
+      ]
+    },
+    "base_to_irrelevant": {
+      "provider_payload": [
+        {
+          "after_sha256": "18b1f0b283a8828a8e7e7be2abf31e7473bb6d36d455936181b4e83fb5a93bdd",
+          "before_sha256": "6595adb07d942b6acaaf2ce7a53748232825e9ca986550b16e51672c77840502",
+          "path": "/messages/1/content"
+        }
+      ],
+      "public_case": [
+        {
+          "after_sha256": "55ebd8068070cd513587670ea9bfba82282bdf60bcc4513a1cd69c38287405a7",
+          "before_sha256": "328f1bfa6a98891578e9ee379bde63ce58636398382a5e7cc2591779122faaf5",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "71be98d0c24db8134d45c234ba45276845b336d4144de4600f03bf4520894235",
+          "before_sha256": "06c831cfb74a06b1e287beed4b44db4bdeb7b738621c091479176ac238a7fee4",
+          "path": "/records/1/text"
+        },
+        {
+          "after_sha256": "1d8c7e718d95ac8404a79a8cbf82be2ba7ffb8e372263a7583eeb62c3b32e36b",
+          "before_sha256": "d619724298d361bb2ebc302cd698676777c9550e20e9f61fbf4985d856cd27d0",
+          "path": "/records/1/text_sha256"
+        }
+      ],
+      "public_request": [
+        {
+          "after_sha256": "5d3307a2cca43aee1ce77055b3a79d05f9e40e0a47e79772814d735638eb9997",
+          "before_sha256": "4c1b846252a53079a9d023a50ec1b0fe4e1d26234cacab6a6c9b3699f1538db3",
+          "path": "/attempt_key"
+        },
+        {
+          "after_sha256": "55ebd8068070cd513587670ea9bfba82282bdf60bcc4513a1cd69c38287405a7",
+          "before_sha256": "328f1bfa6a98891578e9ee379bde63ce58636398382a5e7cc2591779122faaf5",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "18b1f0b283a8828a8e7e7be2abf31e7473bb6d36d455936181b4e83fb5a93bdd",
+          "before_sha256": "6595adb07d942b6acaaf2ce7a53748232825e9ca986550b16e51672c77840502",
+          "path": "/user"
+        }
+      ]
+    },
+    "irrelevant_to_decisive": {
+      "provider_payload": [
+        {
+          "after_sha256": "a885b3b61aa1c5e4dc374310f5c8d653a24b1d048bdc81ddb98e0819e26fa1d6",
+          "before_sha256": "18b1f0b283a8828a8e7e7be2abf31e7473bb6d36d455936181b4e83fb5a93bdd",
+          "path": "/messages/1/content"
+        }
+      ],
+      "public_case": [
+        {
+          "after_sha256": "b76873913f97fbdefa2888820730198c8598c5beafc2c2cbcb91b55c9c25ed7c",
+          "before_sha256": "55ebd8068070cd513587670ea9bfba82282bdf60bcc4513a1cd69c38287405a7",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "c713621e276510b5405093efef5fe42321636c907bfbc611e07c97c3bb7c001c",
+          "before_sha256": "9e08f32601b545b5af057790869da1733495e193156cacb75f3fa43cebfbe87f",
+          "path": "/records/0/text"
+        },
+        {
+          "after_sha256": "e40c5eab2010eb8cebafce17bf99dee81a3e442d4f747e94067e3f721ea561db",
+          "before_sha256": "ad78bd8372fe721968680caab807a0ce042262b627bfe409ab0c7db8a94b215d",
+          "path": "/records/0/text_sha256"
+        },
+        {
+          "after_sha256": "06c831cfb74a06b1e287beed4b44db4bdeb7b738621c091479176ac238a7fee4",
+          "before_sha256": "71be98d0c24db8134d45c234ba45276845b336d4144de4600f03bf4520894235",
+          "path": "/records/1/text"
+        },
+        {
+          "after_sha256": "d619724298d361bb2ebc302cd698676777c9550e20e9f61fbf4985d856cd27d0",
+          "before_sha256": "1d8c7e718d95ac8404a79a8cbf82be2ba7ffb8e372263a7583eeb62c3b32e36b",
+          "path": "/records/1/text_sha256"
+        }
+      ],
+      "public_request": [
+        {
+          "after_sha256": "12bdca48c6678991bb2cac36e13f0ebb0c6cdb5165736c1ffd1af59776f89f1c",
+          "before_sha256": "5d3307a2cca43aee1ce77055b3a79d05f9e40e0a47e79772814d735638eb9997",
+          "path": "/attempt_key"
+        },
+        {
+          "after_sha256": "b76873913f97fbdefa2888820730198c8598c5beafc2c2cbcb91b55c9c25ed7c",
+          "before_sha256": "55ebd8068070cd513587670ea9bfba82282bdf60bcc4513a1cd69c38287405a7",
+          "path": "/case_id"
+        },
+        {
+          "after_sha256": "a885b3b61aa1c5e4dc374310f5c8d653a24b1d048bdc81ddb98e0819e26fa1d6",
+          "before_sha256": "18b1f0b283a8828a8e7e7be2abf31e7473bb6d36d455936181b4e83fb5a93bdd",
+          "path": "/user"
+        }
+      ]
+    }
+  },
+  "public_package_note": "Complete texts, final explanations and provenance remain in the ignored package.",
+  "variants": {
+    "base": {
+      "canonical_provider_payload_sha256": "66b432e6bc9ab4d6d059c90ba4f76715ebe9c32f112dbe9bc0ab2369b06a25ab",
+      "case_id": "c_5d0eca8fa432a0bd5f37a404",
+      "cited_ids": [
+        "r0",
+        "r1",
+        "a1"
+      ],
+      "classifications": {
+        "ambiguous": [],
+        "inherited": [],
+        "inserted": [
+          [
+            877,
+            896
+          ]
+        ]
+      },
+      "final_content_sha256": "385a2ac133cebacd0c226f3f8333e8297b1d5204b4b859605db537c38f37c02c",
+      "gold_status": "established",
+      "opcodes": [
+        [
+          "equal",
+          0,
+          886,
+          0,
+          886
+        ],
+        [
+          "replace",
+          886,
+          887,
+          886,
+          887
+        ],
+        [
+          "equal",
+          887,
+          2557,
+          887,
+          2557
+        ],
+        [
+          "insert",
+          2557,
+          2557,
+          2557,
+          2765
+        ]
+      ],
+      "predecessor_matches": [],
+      "public_case_sha256": "ada75971526808c927c48e4c45db0ef1af9fcfe25b379cdc10808d286425aa2f",
+      "public_request_sha256": "a8ebd13dbc1bbcc8953caeef1d24f6fa4bb70cc99e9c3237fbee8cff826fa8cf",
+      "qualifying_spans": [
+        [
+          877,
+          896
+        ]
+      ],
+      "record_text_sha256": {
+        "r0": "597291a19564655e9326cf577c5ce9c47047fb6b102d62be5c1d0c5cb08f9ed2",
+        "r1": "966a811ffcba2c82aea9ab1fb15a746e65f2fca93b6a806748d86df88d62c661"
+      },
+      "request_file": "artifacts/evidence-responsiveness/calls/requests/f08d14134ad6c2198c71334cb52c672761849d283a3e02321f20892ebb6b8234.json",
+      "request_file_sha256": "0f7d4d9f1715cb41136aa4b08c2eaf0e1ea16d20bb242270a86de917e8d237c1",
+      "response_file": "artifacts/evidence-responsiveness/calls/responses/responsiveness-f08d14134ad6c2198c71334cb52c672761849d283a3e02321f20892ebb6b8234-01.json",
+      "response_file_sha256": "93fd9814360ef37ed743a35e18fc7a9f0aa676c59c29c9a3cbf6d580cfcb7451",
+      "returned_status": "established",
+      "score": {
+        "case_id": "c_5d0eca8fa432a0bd5f37a404",
+        "citation_error": false,
+        "citation_errors": [],
+        "citation_valid": true,
+        "cluster_id": "history_8238422a0ffd2f3a764e9ebf",
+        "completion_valid": true,
+        "finish_reason": "stop",
+        "gold_status": "established",
+        "invalid": false,
+        "missing": false,
+        "model_id": "openai/gpt-5.6-terra",
+        "nonempty_valid_support": true,
+        "refused": false,
+        "response_errors": [],
+        "schema_errors": [],
+        "schema_valid": true,
+        "split": "evaluation",
+        "status": "established",
+        "status_correct": true,
+        "strict_correct": true,
+        "subset": "wiki_derived",
+        "truncated": false,
+        "valid_evidence_ids": [
+          "a1",
+          "r0",
+          "r1"
+        ]
+      },
+      "target_matches": [
+        [
+          877,
+          896
+        ]
+      ]
+    },
+    "decisive": {
+      "canonical_provider_payload_sha256": "2bb59e010b807d6611292c265c051083e1cba79d7df08b300e55a3e03b4674f6",
+      "case_id": "c_796c25ca0ea2a0b5a0d6efcd",
+      "cited_ids": [
+        "r0",
+        "r1",
+        "a1"
+      ],
+      "classifications": {
+        "ambiguous": [],
+        "inherited": [
+          [
+            877,
+            896
+          ]
+        ],
+        "inserted": []
+      },
+      "final_content_sha256": "2768aca2beb39571bf5bc4561a9863a801ab8cc5074a35d14ff1b892d053201a",
+      "gold_status": "ruled_out",
+      "opcodes": [
+        [
+          "equal",
+          0,
+          2557,
+          0,
+          2557
+        ],
+        [
+          "insert",
+          2557,
+          2557,
+          2557,
+          2765
+        ]
+      ],
+      "predecessor_matches": [
+        [
+          877,
+          896
+        ]
+      ],
+      "public_case_sha256": "b11f55046c6896928453a020aef80eb8a9366807f1b836829262f232ee578ecb",
+      "public_request_sha256": "ce011a1da178350f1bbe1b3d3da01fa75443a9edc84e6227ea5319ab8e402159",
+      "qualifying_spans": [],
+      "record_text_sha256": {
+        "r0": "d0e5147167668d92854a221564eb4e0ba02684520ea0bb311c168a6ff619add2",
+        "r1": "966a811ffcba2c82aea9ab1fb15a746e65f2fca93b6a806748d86df88d62c661"
+      },
+      "request_file": "artifacts/evidence-responsiveness/calls/requests/7b01c1db5a76228fabfdffc58f5fe3dcbc828b55553d22d7a95e24bc7bf44cab.json",
+      "request_file_sha256": "8f284c63bdd1cce6436fb231440fe4454d7f8399b14004b17fdc4bf141905b5e",
+      "response_file": "artifacts/evidence-responsiveness/calls/responses/responsiveness-7b01c1db5a76228fabfdffc58f5fe3dcbc828b55553d22d7a95e24bc7bf44cab-01.json",
+      "response_file_sha256": "a1d12ab7c31c3e869ad4c82f2854d2f08796113371f923f20309ea8be7b7fa7a",
+      "returned_status": "ruled_out",
+      "score": {
+        "case_id": "c_796c25ca0ea2a0b5a0d6efcd",
+        "citation_error": false,
+        "citation_errors": [],
+        "citation_valid": true,
+        "cluster_id": "history_8238422a0ffd2f3a764e9ebf",
+        "completion_valid": true,
+        "finish_reason": "stop",
+        "gold_status": "ruled_out",
+        "invalid": false,
+        "missing": false,
+        "model_id": "openai/gpt-5.6-terra",
+        "nonempty_valid_support": true,
+        "refused": false,
+        "response_errors": [],
+        "schema_errors": [],
+        "schema_valid": true,
+        "split": "evaluation",
+        "status": "ruled_out",
+        "status_correct": true,
+        "strict_correct": true,
+        "subset": "wiki_derived",
+        "truncated": false,
+        "valid_evidence_ids": [
+          "a1",
+          "r0",
+          "r1"
+        ]
+      },
+      "target_matches": [
+        [
+          877,
+          896
+        ]
+      ]
+    },
+    "irrelevant": {
+      "canonical_provider_payload_sha256": "be62ca5eb00c92b636adeaede157b67e74fea1744943ac39f98ff95671e4ba53",
+      "case_id": "c_bf88b0680f8898862c1cf548",
+      "cited_ids": [
+        "a1",
+        "r0",
+        "r1"
+      ],
+      "classifications": {
+        "ambiguous": [],
+        "inherited": [],
+        "inserted": [
+          [
+            877,
+            896
+          ]
+        ]
+      },
+      "final_content_sha256": "61ec9fe17c74925eb1c683fa2e588ab0db13251b54fa48698c3d7682a3296f75",
+      "gold_status": "established",
+      "opcodes": [
+        [
+          "equal",
+          0,
+          886,
+          0,
+          886
+        ],
+        [
+          "replace",
+          886,
+          887,
+          886,
+          887
+        ],
+        [
+          "equal",
+          887,
+          898,
+          887,
+          898
+        ],
+        [
+          "replace",
+          898,
+          899,
+          898,
+          899
+        ],
+        [
+          "equal",
+          899,
+          2557,
+          899,
+          2557
+        ],
+        [
+          "insert",
+          2557,
+          2557,
+          2557,
+          2765
+        ]
+      ],
+      "predecessor_matches": [],
+      "public_case_sha256": "4bfce519e246e282d55247cd002efb3500e685b0931c3432fd11629e2a4fbcc6",
+      "public_request_sha256": "3f81bd06da1db431c68f5e0f38cffc00fa21ec821d200699b436756323063b34",
+      "qualifying_spans": [
+        [
+          877,
+          896
+        ]
+      ],
+      "record_text_sha256": {
+        "r0": "597291a19564655e9326cf577c5ce9c47047fb6b102d62be5c1d0c5cb08f9ed2",
+        "r1": "2863c760655065ffaf4f0a7b3e74be6883aa044f6df84d8b645dc49b9cedafaf"
+      },
+      "request_file": "artifacts/evidence-responsiveness/calls/requests/428778e313205d300c6ed23c13d1f957d2625ee4b84983417dc1dd4784ec486f.json",
+      "request_file_sha256": "6224195e2a4444213bf3921ee8f134e5eb9927d8572f365eeadbe6cef018dbeb",
+      "response_file": "artifacts/evidence-responsiveness/calls/responses/responsiveness-428778e313205d300c6ed23c13d1f957d2625ee4b84983417dc1dd4784ec486f-01.json",
+      "response_file_sha256": "8e3294829c29bbfa9191b8a9425b88c2dcd710a9b2c04e121310aa868fb7ac5b",
+      "returned_status": "ruled_out",
+      "score": {
+        "case_id": "c_bf88b0680f8898862c1cf548",
+        "citation_error": false,
+        "citation_errors": [],
+        "citation_valid": true,
+        "cluster_id": "history_8238422a0ffd2f3a764e9ebf",
+        "completion_valid": true,
+        "finish_reason": "stop",
+        "gold_status": "established",
+        "invalid": false,
+        "missing": false,
+        "model_id": "openai/gpt-5.6-terra",
+        "nonempty_valid_support": true,
+        "refused": false,
+        "response_errors": [],
+        "schema_errors": [],
+        "schema_valid": true,
+        "split": "evaluation",
+        "status": "ruled_out",
+        "status_correct": false,
+        "strict_correct": false,
+        "subset": "wiki_derived",
+        "truncated": false,
+        "valid_evidence_ids": [
+          "a1",
+          "r0",
+          "r1"
+        ]
+      },
+      "target_matches": [
+        [
+          877,
+          896
+        ]
+      ]
+    }
+  }
+}

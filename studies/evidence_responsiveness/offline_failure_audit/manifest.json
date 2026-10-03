@@ -1,0 +1,72 @@
+{
+  "annotation": "mechanical and AI-assisted; no independent human review",
+  "audit_script_sha256": "96875b9070239628f566af33970a7c47e333e060235388a7c931d4962ec61136",
+  "baseline_sha256": "1603fa44a3359b758014138927ca2c7bdb9007d66df5fbf341875ce0b7f133fd",
+  "created_at_utc": "2026-10-03T22:47:07.502647+00:00",
+  "diagnostic_precedence_record": {
+    "initial_rules_sha256": "43cb982b9d87d415999e626ae2fc46f75d52e11fd6256668baa4dbb4573e6379",
+    "later_change": "Only implementation_note added to describe diagnostic candidate filtering; all original rule fields remain unchanged.",
+    "primary_precedence_and_rules_unchanged": true
+  },
+  "diagnostic_rules_sha256": "f8b4d279ee39ed5ac4cab2d71537d65b075a14c021f8d1a67746f1bc0ba42b4b",
+  "finalized_at_utc": "2026-10-03T22:52:48.927033+00:00",
+  "hash_conventions": {
+    "file_sha256": "SHA-256 over exact file bytes",
+    "independent_completion_sha256": "SHA-256 over raw UTF-8 final text (not JSON string encoding)",
+    "logical_json_and_final_content_sha256": "SHA-256 over UTF-8 canonical JSON, sorted keys, compact separators, ensure_ascii=False, no final newline",
+    "record_text_sha256": "SHA-256 over raw UTF-8 text bytes"
+  },
+  "input_hashes": "baseline.json",
+  "output_sha256": {
+    "artifacts/evidence-responsiveness/offline-failure-audit/reproduced_scores.json": "435052a1c5a220755b2f10962082d4f4bc9bf5d1635cc101eec220942db384dc",
+    "artifacts/evidence-responsiveness/offline-failure-audit/sonnet-independent.json": "909255761c5cdbc30d0cf6dffd18a2f5e3c557cd5dc1bd213787dd50f44f91b8",
+    "artifacts/evidence-responsiveness/offline-failure-audit/sonnet_final_outputs.json": "5e40b45b1a96b513799099b08e83f577b63fcf1045845a657f9d7bd368f642cd",
+    "artifacts/evidence-responsiveness/offline-failure-audit/terra-independent.json": "bd97f5b42cec9ae0e4d78358b1f4f2a815ff30b02cebeaae704f4ab3c36d90ea",
+    "artifacts/evidence-responsiveness/offline-failure-audit/terra_evidence.json": "03cfdeb5b548266a887be6c864af3665f48e0c061a799adc4223294c9280e969",
+    "studies/evidence_responsiveness/offline_failure_audit/REPORT.md": "043a0e54ead8adc5236a81fb185dbb7304720f48118f59cff02becd41c05b479",
+    "studies/evidence_responsiveness/offline_failure_audit/diagnostic_rules.json": "f8b4d279ee39ed5ac4cab2d71537d65b075a14c021f8d1a67746f1bc0ba42b4b",
+    "studies/evidence_responsiveness/offline_failure_audit/response_causes.json": "47bf0da3cfd2b8fbc2496df99da4ce15aa11ce977014db014042c7fff5334d07",
+    "studies/evidence_responsiveness/offline_failure_audit/terra_summary.json": "eab55f227ea623f4590165af3ec690a600b7d858bfe9de64b5f5225d464e4e43",
+    "studies/evidence_responsiveness/offline_failure_audit/validation.json": "b4d86629eb98f5cbd8481937eb0c744315a21685bc76101da650b129f29bf0e7",
+    "studies/evidence_responsiveness/offline_failure_audit/verification.json": "5d0c52cf5986831aecf29a8a567d51530fb510832ba5b15cd846c0bd81cca040",
+    "tests/test_responsiveness_failure_audit.py": "fa040f23407f18e359dde5cb096298f4f0b38a0617b0e57f3822c11e8966901a"
+  },
+  "publication": "Not committed, pushed or published. Exact packages remain ignored and local.",
+  "reviewed_head": "f9028f581170cf4b5d43ea7ac6aebb4813ea4219",
+  "task_specification": {
+    "file_name": "Agent_swarm_offline_failure_audit_prompt.md",
+    "sha256": "e8980863870cfcbc1df107adf7ad30eb938fc9adb1befdc0d5397c2db2b9f45d"
+  },
+  "validation": "validation.json",
+  "verification": {
+    "additional_spend_usd": "0",
+    "credential_access": false,
+    "diagnostic_response_object_count": 42,
+    "evaluation_variant_scores_reproduced": 72,
+    "model_calls": 0,
+    "model_family_rows_reproduced": 24,
+    "network_requests": 0,
+    "object_valued_answers_across_all_diagnostic_payloads": 0,
+    "paired_summary_and_examples_match": true,
+    "provider_private_reasoning_inspected": false,
+    "sonnet_actual_empty": 2,
+    "sonnet_cascading_missing_response": 22,
+    "sonnet_primary_causes": {
+      "accepted": 10,
+      "answer_field_or_value_violation": 2,
+      "case_or_claim_identity_violation": 2,
+      "provider_refusal_or_filter": 2,
+      "serialization_violation": 20
+    },
+    "sonnet_subtypes": {
+      "declared_refusal_or_filter": 2,
+      "frozen_contract_valid": 10,
+      "invalid_answer_fields": 2,
+      "missing_claim+unknown_claim_id": 2,
+      "multiple_or_ambiguous_json_values": 8,
+      "surrounding_prose_single_json_value": 12
+    },
+    "strict_companion_matches_primary": true,
+    "unchanged_historical_inputs": 771
+  }
+}

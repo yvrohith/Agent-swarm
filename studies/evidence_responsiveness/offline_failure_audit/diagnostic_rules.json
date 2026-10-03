@@ -1,0 +1,41 @@
+{
+  "before_complete_response_annotation": true,
+  "container_subtypes": [
+    "non_object_root",
+    "object_valued_answers",
+    "other_non_array_answers",
+    "missing_or_extra_root_fields",
+    "non_object_array_member"
+  ],
+  "created_at_utc": "2026-10-03T22:35:12.998873+00:00",
+  "implementation_note": "Primary precedence was recorded before complete annotation. During implementation, diagnostic candidate detection was refined to exclude bracketed numeric time-window intervals in prose and count only disjoint objects bearing case_id or answers; whole-response root JSON is still inspected first. No gold-dependent candidate choice or acceptance change is made. All diagnosed final outputs were separately inspected with AI assistance.",
+  "primary_precedence": [
+    "provider_refusal_or_filter",
+    "acceptance_affecting_extraction_mismatch",
+    "empty_final_without_refusal",
+    "serialization_violation",
+    "root_or_answers_container_violation",
+    "case_or_claim_identity_violation",
+    "answer_field_or_value_violation",
+    "accepted",
+    "unresolved"
+  ],
+  "rules": [
+    "Assign exactly one primary cause from actual visible final content and frozen parser; keep downstream parser flags separately.",
+    "Provider refusal/filter has precedence over all downstream failures.",
+    "Adapter mismatch is primary only when final-content extraction changes acceptance or answer; representation-only differences are not defects.",
+    "Empty means actual final content missing/empty, not a parser-generated missing_response flag.",
+    "Use strict duplicate-key-aware JSON parsing, then inspect a sole fence or unique surrounded JSON value diagnostically without substituting it into primary scoring.",
+    "Record payload shape and nested violations separately; never choose an alternative using gold or promote a rejected output to correct.",
+    "Frozen schema validity determines accepted; refusal/truncation remain failures. Truncation without another earlier cause is an answer/termination violation.",
+    "Prompt underspecification is distinct from strict rejection and from a demonstrated implementation defect."
+  ],
+  "serialization_subtypes": [
+    "sole_markdown_fence_single_json_value",
+    "surrounding_prose_single_json_value",
+    "duplicate_json_keys",
+    "malformed_json",
+    "multiple_or_ambiguous_json_values"
+  ],
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "additional_spend_usd": "0",
+  "credential_access": false,
+  "diagnostic_response_object_count": 42,
+  "evaluation_variant_scores_reproduced": 72,
+  "model_calls": 0,
+  "model_family_rows_reproduced": 24,
+  "network_requests": 0,
+  "object_valued_answers_across_all_diagnostic_payloads": 0,
+  "paired_summary_and_examples_match": true,
+  "provider_private_reasoning_inspected": false,
+  "sonnet_actual_empty": 2,
+  "sonnet_cascading_missing_response": 22,
+  "sonnet_primary_causes": {
+    "accepted": 10,
+    "answer_field_or_value_violation": 2,
+    "case_or_claim_identity_violation": 2,
+    "provider_refusal_or_filter": 2,
+    "serialization_violation": 20
+  },
+  "sonnet_subtypes": {
+    "declared_refusal_or_filter": 2,
+    "frozen_contract_valid": 10,
+    "invalid_answer_fields": 2,
+    "missing_claim+unknown_claim_id": 2,
+    "multiple_or_ambiguous_json_values": 8,
+    "surrounding_prose_single_json_value": 12
+  },
+  "strict_companion_matches_primary": true,
+  "unchanged_historical_inputs": 771
+}
