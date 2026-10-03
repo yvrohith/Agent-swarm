@@ -1,7 +1,7 @@
 # Trace Completeness Curves
 
 Trace Completeness Curves tests what incomplete agent logs can establish about
-information flow. The project brings together four completed studies:
+information flow. The project brings together five completed studies:
 
 - **[Synthetic source-attribution benchmark](results/REPORT.md):** Measure attribution
   errors against known realized source-use edges as different telemetry types become
@@ -20,6 +20,11 @@ information flow. The project brings together four completed studies:
   pilot does not establish a general reasoning advantage: Terra was at ceiling and
   Sonnet's differences concerned response-contract reliability. Its wiki assistance
   condition matched the raw-evidence baseline.
+
+- **[Evidence-responsiveness audit](studies/evidence_responsiveness/results/REPORT.md):**
+  Test 12 certified evidence-change families with two models. Terra passes every
+  decisive pair but fails one wiki invariant pair; Sonnet’s paired scores are dominated
+  by invalid responses. Controlled wiki edits are fixtures, not incident observations.
 
 Exposure is not source use, and source use is not counterfactual causal necessity.
 See the [initial benchmark's claims and analysis specification](CLAIMS.md) and each
@@ -75,6 +80,33 @@ reserved accounting is **$2.9989060**, while **actual total cost remains unknown
 Read the [full report](studies/investigator_utility/openrouter_v1/results/REPORT.md),
 [submission addendum](studies/investigator_utility/openrouter_v1/SUBMISSION_ADDENDUM.md),
 and [exact visible answers and offline score reproduction](studies/investigator_utility/openrouter_v1/response_evidence/README.md).
+
+## Completed evidence-responsiveness audit
+
+The [separate follow-up](studies/evidence_responsiveness/results/REPORT.md) asks whether
+answers stay correct after irrelevant changes and change correctly after decisive
+changes. It completed 72 evaluation calls across eight receipt and four controlled
+wiki-derived families, plus 12 development calls, with no retries.
+
+| Model / substrate | Decisive pairs correct | Invariant pairs correct | Whole families correct |
+| --- | ---: | ---: | ---: |
+| Terra / receipt | 8/8 | 8/8 | 8/8 |
+| Terra / controlled wiki | 4/4 | 3/4 | 3/4 |
+| Sonnet / receipt | 0/8 | 0/8 | 0/8 |
+| Sonnet / controlled wiki | 0/4 | 1/4 | 0/4 |
+
+Terra made one valid but incorrect answer after an irrelevant wiki edit. Sonnet had
+26 invalid outputs, including two refusals; all 10 valid answers were correct.
+The companion requiring nonempty valid evidence IDs yields the same paired scores.
+Invalid responses stay in the denominators. These small, selected strata do not
+establish general evidence tracking or change the utility pilot’s findings.
+
+The [submission addendum](studies/evidence_responsiveness/SUBMISSION_ADDENDUM.md)
+reports family-bootstrap intervals, fixed-rule examples, limitations and cumulative
+accounting: $3.446844 in known charges plus $0.335912 in unresolved reservations,
+$3.782756 accounted against the shared $25 ceiling. Full response rescoring needs
+retained local artifacts; public hashes alone do not supply the evidence. See the
+[offline verification guide](studies/evidence_responsiveness/README.md).
 
 ## Initial synthetic benchmark
 

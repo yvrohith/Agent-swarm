@@ -1,0 +1,164 @@
+{
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 84104,
+  "credential_binding_note": "Execution reads OPENROUTER_KEY only. The existing working credential is supplied unchanged under that process-local variable; no new credential or network requirement is introduced.",
+  "cumulative_budget_usd": "25.00",
+  "development_families": {
+    "receipt": 1,
+    "wiki_derived": 1
+  },
+  "development_request_limit": 12,
+  "evaluation_families": {
+    "receipt": 8,
+    "wiki_derived": 4
+  },
+  "evaluation_request_limit": 72,
+  "exploratory": true,
+  "historical_ledger": "artifacts/investigator-utility/calls/attempts.jsonl",
+  "ledger_directory": "artifacts/evidence-responsiveness/calls",
+  "models": [
+    {
+      "api_key_env": "OPENROUTER_KEY",
+      "authorized": true,
+      "base_input_usd_per_million": "2",
+      "base_output_usd_per_million": "12",
+      "cache_policy": "Provider defaults; no cache_control is sent. Terra automatically writes cache at 1.25 times base input; all its input is conservatively reserved at that maximum. Anthropic cache writes require opt-in, which is absent.",
+      "cache_write_usd_per_million": "2.5",
+      "canonical_slug_at_verification": "openai/gpt-5.6-terra-20260709",
+      "context_tokens": 1050000,
+      "decoding": {},
+      "documented_reasoning_default": {
+        "default_effort": "medium",
+        "default_enabled": true,
+        "mandatory": false,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "none"
+        ]
+      },
+      "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+      "family": "openai",
+      "fee_evidence_names": [
+        "openai_pricing",
+        "pricing_faq",
+        "prompt_caching"
+      ],
+      "identity_note": "The documented API request ID is an alias; the catalog canonical slug is recorded as metadata, not claimed as a pinned request revision. Retain response model identity.",
+      "input_token_bound": "utf8_bytes_plus_4096",
+      "input_usd_per_million": "2.5",
+      "limits_evidence_sha256": "e9b0779f2ea07ffaddc520db2ef6cdea8199a4fcc98365d2304eb859da3374c3",
+      "limits_source": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create",
+      "max_output_tokens": 8192,
+      "model_id": "openai/gpt-5.6-terra",
+      "output_usd_per_million": "12",
+      "pricing_evidence_sha256": "28f11abbdd5fd6998c09e90c327d18640775a8687564aa6b5aa7147290807c87",
+      "pricing_source": "https://openrouter.ai/api/v1/models/openai/gpt-5.6-terra-20260709/endpoints",
+      "pricing_verified_at": "2026-10-03T21:41:44.389352+00:00",
+      "provider": "openrouter",
+      "provider_max_completion_tokens": 128000,
+      "provider_routing": {
+        "allow_fallbacks": false,
+        "max_price": {
+          "completion": 12,
+          "prompt": 2.5
+        },
+        "only": [
+          "openai"
+        ],
+        "require_parameters": true
+      },
+      "reasoning": "included_in_output_cap",
+      "request_usd": "0",
+      "short_context_pricing_threshold_tokens": 272000,
+      "verified_limits": true,
+      "zero_fixed_request_fee_basis": "Native-provider published base-token pricing plus OpenRouter no-inference-markup contract. Tools, searches, images, audio, files, BYOK configuration and credit purchases are not requested. Pricing JSON omits request rather than reporting an explicit zero."
+    },
+    {
+      "api_key_env": "OPENROUTER_KEY",
+      "authorized": true,
+      "base_input_usd_per_million": "2",
+      "base_output_usd_per_million": "10",
+      "cache_policy": "Provider defaults; no cache_control is sent. Terra automatically writes cache at 1.25 times base input; all its input is conservatively reserved at that maximum. Anthropic cache writes require opt-in, which is absent.",
+      "cache_write_usd_per_million": "2.5",
+      "canonical_slug_at_verification": "anthropic/claude-sonnet-5.5-20260928",
+      "context_tokens": 1000000,
+      "decoding": {},
+      "documented_reasoning_default": {
+        "default_effort": "high",
+        "mandatory": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+      "family": "anthropic",
+      "fee_evidence_names": [
+        "anthropic_pricing",
+        "pricing_faq",
+        "prompt_caching"
+      ],
+      "identity_note": "The documented API request ID is an alias; the catalog canonical slug is recorded as metadata, not claimed as a pinned request revision. Retain response model identity.",
+      "input_token_bound": "utf8_bytes_plus_4096",
+      "input_usd_per_million": "2",
+      "limits_evidence_sha256": "4be267aa1feaefaa8da04a7e3bd9c722d13717bf79de100a879f739b9241162a",
+      "limits_source": "https://platform.claude.com/docs/en/build-with-claude/thinking",
+      "max_output_tokens": 8192,
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "output_usd_per_million": "10",
+      "pricing_evidence_sha256": "30976afd3be76810766ef5c5286116e8915d28220d7f2bf22eb56ef615c13d4f",
+      "pricing_source": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5.5-20260928/endpoints",
+      "pricing_verified_at": "2026-10-03T21:41:44.389352+00:00",
+      "provider": "openrouter",
+      "provider_max_completion_tokens": 128000,
+      "provider_routing": {
+        "allow_fallbacks": false,
+        "max_price": {
+          "completion": 10,
+          "prompt": 2.0
+        },
+        "only": [
+          "anthropic"
+        ],
+        "require_parameters": true
+      },
+      "reasoning": "included_in_output_cap",
+      "request_usd": "0",
+      "verified_limits": true,
+      "zero_fixed_request_fee_basis": "Native-provider published base-token pricing plus OpenRouter no-inference-markup contract. Tools, searches, images, audio, files, BYOK configuration and credit purchases are not requested. Pricing JSON omits request rather than reporting an explicit zero."
+    }
+  ],
+  "order_seed": 84103,
+  "output_contract": {
+    "answers": [
+      {
+        "claim_id": "q0",
+        "evidence_ids": "array of supplied record/assumption IDs",
+        "reason": "nonempty string, at most400characters",
+        "status": "established|ruled_out|unresolved"
+      }
+    ],
+    "case_id": "opaque case ID"
+  },
+  "prepared_directory": "artifacts/evidence-responsiveness/prepared",
+  "public_utf8_limit": 48000,
+  "reason_max_characters": 400,
+  "salt": "tracebench-evidence-responsiveness-v1-20261003",
+  "schema_version": 1,
+  "selection_reason": "Both completed-pilot model aliases retain verified public metadata; final account access and complete-budget preflight precede inference.",
+  "study_id": "evidence-responsiveness-v1",
+  "transport_retry_limit": 4,
+  "variants": [
+    "base",
+    "irrelevant",
+    "decisive"
+  ],
+  "wiki_text_character_limit": 12000
+}

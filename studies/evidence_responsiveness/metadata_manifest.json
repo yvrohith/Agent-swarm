@@ -1,0 +1,112 @@
+{
+  "sources": [
+    {
+      "url": "https://openrouter.ai/api/v1/models",
+      "resolved_url": "https://openrouter.ai/api/v1/models",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "bc7f21ae71d31d58dc420ce7890c41731c01afbb8ed9b426e204274905057a5b"
+    },
+    {
+      "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+      "resolved_url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "199d5c2332d89a95662d044ea71f1b839b4d44e2db3e1152736a6310594445eb"
+    },
+    {
+      "url": "https://openrouter.ai/docs/guides/routing/provider-selection",
+      "resolved_url": "https://openrouter.ai/docs/guides/routing/provider-selection",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "afad0f75f82cd339a2710f97dc2c0767555501b2ab2346fa5fd69124e2709002"
+    },
+    {
+      "url": "https://openrouter.ai/docs/guides/guides/usage-accounting",
+      "resolved_url": "https://openrouter.ai/docs/cookbook/administration/usage-accounting",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "d8a9cc1b0f84c07b887fd57f7c6db4dd0028d2438bedf23703aafd5a51f76cc2"
+    },
+    {
+      "url": "https://openrouter.ai/docs/api-reference/parameters",
+      "resolved_url": "https://openrouter.ai/docs/api_reference/parameters",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "9593dd04adef04c86a6a9de9a25e41fc17d4208f6f2240c8fee66238468fa9e1"
+    },
+    {
+      "url": "https://openrouter.ai/openapi.json",
+      "resolved_url": "https://openrouter.ai/openapi.json",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "7fa62818121617baac967d1055a128b19b7421c644b41f3a797cb5f4b11674f2"
+    },
+    {
+      "url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5.5-20260928/endpoints",
+      "resolved_url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5.5-20260928/endpoints",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "30976afd3be76810766ef5c5286116e8915d28220d7f2bf22eb56ef615c13d4f"
+    },
+    {
+      "url": "https://openrouter.ai/api/v1/models/openai/gpt-5.6-terra-20260709/endpoints",
+      "resolved_url": "https://openrouter.ai/api/v1/models/openai/gpt-5.6-terra-20260709/endpoints",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "28f11abbdd5fd6998c09e90c327d18640775a8687564aa6b5aa7147290807c87"
+    },
+    {
+      "url": "https://openrouter.ai/docs/guides/best-practices/prompt-caching",
+      "resolved_url": "https://openrouter.ai/docs/guides/best-practices/prompt-caching",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "6162738a872b32c6cefe8273a6745cde7916e613cf6e0eb0d27bad0ae3318d33"
+    },
+    {
+      "url": "https://openrouter.ai/docs/guides/overview/models",
+      "resolved_url": "https://openrouter.ai/docs/guides/overview/models",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "409fbbef931aa3e2da175298377778ded9dd9b85eac418355a3956491d69b42d"
+    },
+    {
+      "url": "https://openrouter.ai/docs/faq",
+      "resolved_url": "https://openrouter.ai/docs/faq",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "4a0f36dfa2f863d6ad711f3d0a2b23ffee3217f6b651cffaff7cdd1b3b07e14e"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "resolved_url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "3bb2cd2a11ac89160ef10e75ae72e1acae2958bd17691a9f9131fda275a132e7"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+      "resolved_url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "bcf09f805a3a96d2d646cffb40f14b30f5ce1642de1bbb40a9ed1e599cd84f6e"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/thinking",
+      "resolved_url": "https://platform.claude.com/docs/en/build-with-claude/thinking",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "4be267aa1feaefaa8da04a7e3bd9c722d13717bf79de100a879f739b9241162a"
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create",
+      "resolved_url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "e9b0779f2ea07ffaddc520db2ef6cdea8199a4fcc98365d2304eb859da3374c3"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "resolved_url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "8643286c5c1a6b2f07d7d12402c5fa492f93482d4f04830b97b30f1d0b0f53fe"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "resolved_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "3437e8eec3631e973cf3ed4ac0015b674c1cafcb448b5afd2eb4aabd36186fc8"
+    },
+    {
+      "url": "https://openrouter.ai/pricing",
+      "resolved_url": "https://openrouter.ai/pricing",
+      "retrieved_at": "2026-10-03T21:41:44.389352+00:00",
+      "sha256": "c4755bd50e413e692beba0caa224760714edb9860eb7aaac3669bac3e64d678e"
+    }
+  ]
+}

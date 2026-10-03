@@ -2,7 +2,7 @@
 
 **Question:** What can a swarm's recorded activity establish about which agent used information from another?
 
-The project now includes four completed studies: the synthetic source-attribution benchmark, a missing-receipt stress test, a public-wiki evidence audit, and a bounded investigator-utility pilot. They distinguish source-attribution accuracy, missing evidence, observable text changes, and the reliability of an investigator's warranted answers.
+The project now includes five completed studies: the synthetic source-attribution benchmark, a missing-receipt stress test, a public-wiki evidence audit, a bounded investigator-utility pilot, and an evidence-responsiveness audit. They distinguish source-attribution accuracy, missing evidence, observable text changes, and the reliability of an investigator's warranted answers.
 
 ## Completed investigator-utility pilot
 
@@ -28,6 +28,23 @@ The **144 evaluation calls are repeated measurements of 24 fixed cases**, not 14
 There were 24 additional development calls and no retries. Four empty refusals remain failed responses. Provider-reported charges for 167 calls total **USD 2.8615140**. One refusal has no usage metadata, retaining **USD 0.137392** as a reservation. Charged-or-reserved accounting is **USD 2.9989060**; **the actual total cost remains unknown**, and provider-reported charges are not invoice reconciliation.
 
 The [full report](../studies/investigator_utility/openrouter_v1/results/REPORT.md) and [submission addendum](../studies/investigator_utility/openrouter_v1/SUBMISSION_ADDENDUM.md) retain flat, adverse, and failed responses alongside favorable comparisons. See [exact visible answers and offline score reproduction](../studies/investigator_utility/openrouter_v1/response_evidence/README.md) for inspectable response evidence without new investigator calls.
+
+## Completed evidence-responsiveness follow-up
+
+The [separate exploratory audit](../studies/evidence_responsiveness/results/REPORT.md) tests whether investigators stay correct after irrelevant evidence changes and change correctly after decisive changes. Eight receipt and four controlled wiki-derived families each have three certified variants, presented in fresh stateless calls with one fixed prompt. Two models completed 72 evaluation calls after 12 development calls, without retries. Family linkage, transformation roles and gold were hidden; evaluation was frozen before its outcomes.
+
+| Model / substrate | Decisive pairs correct | Invariant pairs correct | Whole families correct |
+| --- | ---: | ---: | ---: |
+| Terra / receipt | 8/8 | 8/8 | 8/8 |
+| Terra / controlled wiki | 4/4 | 3/4 | 3/4 |
+| Sonnet / receipt | 0/8 | 0/8 | 0/8 |
+| Sonnet / controlled wiki | 0/4 | 1/4 | 0/4 |
+
+Terra’s one wrong answer followed an irrelevant wiki edit; its receipt all-pass and decisive-pair successes are retained without changing the cases. Sonnet’s 26 invalid outputs, including two refusals, remain failures; its 10 valid answers were correct. Its low paired scores therefore concern response-contract reliability and do not establish that every failed pair reflected incorrect evidence interpretation. The strict companion requiring nonempty valid evidence IDs gives identical paired scores, but does not certify semantic support.
+
+The [addendum](../studies/evidence_responsiveness/SUBMISSION_ADDENDUM.md) gives family-bootstrap intervals and limitations. These are small selected strata, not 72 independent problems, universal evidence tracking, or internal reasoning validation. Altered wiki texts are controlled fixtures and never historical observations. Always-unresolved has zero decisive-pair and whole-family correctness by design. The earlier utility pilot’s null and adverse findings remain unchanged.
+
+Cumulative known provider-reported charges are USD 3.4468440, with USD 0.335912 in unresolved reservations: USD 3.7827560 accounted against the shared USD 25 ceiling. Actual total cost remains unknown. Exact new requests/responses and fixture bodies remain ignored local artifacts; hashes alone do not enable full public rescoring. See the [reproduction guide](../studies/evidence_responsiveness/README.md).
 
 ## Synthetic benchmark with known structural source-use labels
 
@@ -65,7 +82,7 @@ All 20 reviewed pairs follow the frozen extraction rule, but the review also exp
 
 The available event stream contains saves, deletions, reverts and a narrow failed-probe population. It is not a complete read log. A posted assertion of reading a page is not a server request or an authenticated receipt. Stable run identities, authenticated delivery/context receipts and direct source-selection labels are unavailable in this release. Observed handles are not runs; absence of a telemetry type is not an empty complete stream, and a missing record does not mean an event failed to occur. Exposure remains unknown and true source use unobserved. No real-data precision, recall, theta, confidence interval or copying-rate estimate is reported.
 
-The wiki audit demonstrates applicability of the evidence distinctions; it does not externally validate synthetic accuracy. These first three studies support different claims. Together they provide reproducible synthetic error measurements and an auditable account of what the public records can establish. The fourth study separately measures investigator response-contract reliability under bounded evidence. See [`EVIDENCE_CARD.md`](../EVIDENCE_CARD.md), [`LIMITATIONS.md`](../LIMITATIONS.md), and [`docs/RELATED_WORK.md`](RELATED_WORK.md) for the evidence boundary of the original studies, and the pilot's report for its distinct target and limitations.
+The wiki audit demonstrates applicability of the evidence distinctions; it does not externally validate synthetic accuracy. These first three studies support different claims. Together they provide reproducible synthetic error measurements and an auditable account of what the public records can establish. The fourth study separately measures investigator response-contract reliability under bounded evidence. The fifth tests correctness across controlled evidence changes. See [`EVIDENCE_CARD.md`](../EVIDENCE_CARD.md), [`LIMITATIONS.md`](../LIMITATIONS.md), and [`docs/RELATED_WORK.md`](RELATED_WORK.md) for the evidence boundary of the original studies, and the pilot's report for its distinct target and limitations.
 
 ## Reproduction and submission status
 

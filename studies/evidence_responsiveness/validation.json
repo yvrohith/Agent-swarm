@@ -1,0 +1,15 @@
+{
+  "cases": 42,
+  "certificates_reproduced": 42,
+  "constant_baselines_pass": true,
+  "families": 14,
+  "family_counts": {
+    "development/receipt": 1,
+    "development/wiki_derived": 1,
+    "evaluation/receipt": 8,
+    "evaluation/wiki_derived": 4
+  },
+  "metadata_invariance_checks": 42,
+  "relationship_checks": 14,
+  "review_type": "mechanical and AI-assisted; no human validation claimed"
+}

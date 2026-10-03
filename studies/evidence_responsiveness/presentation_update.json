@@ -1,0 +1,37 @@
+{
+  "files": {
+    "README.md": {
+      "baseline_sha256": "a43f9e3711dcb0b603db14db6c19ce395f8673861ac3e5f720c3f68d80e03e95",
+      "current_sha256": "7da7a86d88a69e53af1c687f0f9132685db82b20c2262c6ce7136eaa0af57a27"
+    },
+    "docs/SUBMISSION.md": {
+      "baseline_sha256": "ad2faaed1a3f5349938302f1843e1fa1d5ee8d9321f530c8820865a8ea3ddb59",
+      "current_sha256": "fee1e72596cb5038de5a5263c82085dafc68fce8885a76e87b8a59e7ca419e46"
+    }
+  },
+  "historical_checker_note": "The unchanged prior utility response verifier pins its original root-document hashes and will intentionally reject the two later presentation edits. Its code, manifest and scientific inputs remain unchanged; use baseline88ad3cb7e10fe82a15e8c30400ea780b370663d3 for that historical full-document check.",
+  "historical_response_bundle_check_before_entrypoint_edits": {
+    "cases": 28,
+    "development": 24,
+    "evaluation": 144,
+    "resamples": 2000,
+    "responses": 168,
+    "status": "verified"
+  },
+  "preservation": {
+    "all_match": false,
+    "baseline_commit": "88ad3cb7e10fe82a15e8c30400ea780b370663d3",
+    "changed_presentation_paths": [
+      "README.md",
+      "docs/SUBMISSION.md"
+    ],
+    "historical_raw_all_match": true,
+    "historical_raw_files": 415,
+    "scientific_all_match": true,
+    "scientific_tracked_files": 136,
+    "tracked_files": 138
+  },
+  "report_sha256": "77c2375436d79b4384eb66b8005d6e91ca0f240a757d993749cc720acf9a5522",
+  "scope": "Only project entrypoints updated after actual report generation; all completed scientific artifacts remain unchanged.",
+  "updated_at_utc": "2026-10-03T22:15:33.456055+00:00"
+}

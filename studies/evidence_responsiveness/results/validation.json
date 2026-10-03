@@ -1,0 +1,26 @@
+{
+  "cases": 42,
+  "certificates_reproduced": 42,
+  "constant_baselines_pass": true,
+  "families": 14,
+  "family_counts": {
+    "development/receipt": 1,
+    "development/wiki_derived": 1,
+    "evaluation/receipt": 8,
+    "evaluation/wiki_derived": 4
+  },
+  "frozen_at_utc": "2026-10-03T22:08:41.458158+00:00",
+  "metadata_invariance_checks": 42,
+  "preservation": {
+    "all_match": true,
+    "baseline_commit": "88ad3cb7e10fe82a15e8c30400ea780b370663d3",
+    "changed_presentation_paths": [],
+    "historical_raw_all_match": true,
+    "historical_raw_files": 415,
+    "scientific_all_match": true,
+    "scientific_tracked_files": 136,
+    "tracked_files": 138
+  },
+  "relationship_checks": 14,
+  "review_type": "mechanical and AI-assisted; no human validation claimed"
+}

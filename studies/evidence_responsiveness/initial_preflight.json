@@ -1,0 +1,43 @@
+{
+  "actual_total_cost_usd": "0",
+  "additional_retry_attempts": 0,
+  "attempts": 0,
+  "budget_usd": "25",
+  "charged_or_reserved_usd": "0",
+  "completed_calls": 0,
+  "cost_basis": "provider-reported charges when available; otherwise regular-rate usage estimates or unreleased reservations; not an invoice",
+  "cumulative_actual_total_cost_usd": null,
+  "cumulative_charged_or_reserved_usd": "2.9989060",
+  "cumulative_known_actual_usd": "2.8615140",
+  "cumulative_unknown_actual_attempts": 1,
+  "cumulative_unresolved_reservation_usd": "0.137392",
+  "development_completed": 0,
+  "development_requests": 12,
+  "evaluation_completed": 0,
+  "evaluation_requests": 72,
+  "historical_charged_or_reserved_usd": "2.9989060",
+  "known_usage_cost_usd": "0",
+  "maximum_attempt_reservation_usd": "0.1390115",
+  "provider_reported_actual_cost_usd": "0",
+  "remaining_primary_reservations_usd": "9.3962625",
+  "remaining_retry_attempts": 4,
+  "request_count": 84,
+  "retry_reservation_usd": "0.5560460",
+  "status": "ready",
+  "study_header": {
+    "cumulative_budget_usd": "25",
+    "development_calls": 12,
+    "evaluation_calls": 72,
+    "event": "study",
+    "historical_ledger": {
+      "path": "artifacts/investigator-utility/calls/attempts.jsonl",
+      "sha256": "10ac90c5e76d9344a5cff7695e9c0651f6a2f920e73f6e1728f49817b8158b05"
+    },
+    "models_hash": "d949507991d56a7f0322304f5c7a6b976e3de4c4caa50703afdbbffd922c837f",
+    "retry_attempts": 4,
+    "schedule_hash": "e3e38b7db26e6f0da87289283e3d404850f7eec6988d777985ba6e2dfb72de29"
+  },
+  "total_cumulative_bound_usd": "12.9512145",
+  "unknown_actual_cost_attempts": 0,
+  "unknown_cost_attempts": 0
+}

@@ -1,0 +1,128 @@
+{
+  "changes_after_development_outputs": [],
+  "checked_at_utc": "2026-10-03T22:08:38.643348+00:00",
+  "complete_requests_and_certificates_inspected": true,
+  "development_response_checks": {
+    "anthropic/claude-sonnet-5.5": {
+      "citation_error": 0,
+      "invalid": 4,
+      "missing": 0,
+      "refused": 0,
+      "status_correct": 2,
+      "strict_correct": 2,
+      "truncated": 0
+    },
+    "openai/gpt-5.6-terra": {
+      "citation_error": 0,
+      "invalid": 0,
+      "missing": 0,
+      "refused": 0,
+      "status_correct": 6,
+      "strict_correct": 6,
+      "truncated": 0
+    }
+  },
+  "development_status": {
+    "actual_total_cost_usd": "0.0677680",
+    "additional_retry_attempts": 0,
+    "attempts": 12,
+    "blockers": [],
+    "charged_or_reserved_usd": "0.0677680",
+    "completed_calls": 12,
+    "cost_basis": "provider-reported charges when available; otherwise regular-rate usage estimates or unreleased reservations; not an invoice",
+    "cumulative_actual_total_cost_usd": null,
+    "cumulative_charged_or_reserved_usd": "3.0666740",
+    "cumulative_known_actual_usd": "2.9292820",
+    "cumulative_unknown_actual_attempts": 1,
+    "cumulative_unresolved_reservation_usd": "0.137392",
+    "development_completed": 12,
+    "evaluation_completed": 0,
+    "historical_charged_or_reserved_usd": "2.9989060",
+    "known_usage_cost_usd": "0.0692910",
+    "ledger_sha256": "63302fce9631c8faca9d376230b67c750825da6176b68cbbeeca88438dbc2096",
+    "missing_requests": [],
+    "provider_reported_actual_cost_usd": "0.0677680",
+    "status": "completed",
+    "unknown_actual_cost_attempts": 0,
+    "unknown_cost_attempts": 0
+  },
+  "first_completions_retained": true,
+  "input_inspection": {
+    "actual_prepared_bundle_matches_inspected_values": true,
+    "all_presentation_fixture_hashes_match_actual_utf8_bytes": true,
+    "certificate_reproductions": 42,
+    "checked_at_utc": "2026-10-03T22:07:42.648083+00:00",
+    "clear_for_development": true,
+    "complete_development_public_requests_read": 6,
+    "complete_schedule_sha256": "e3e38b7db26e6f0da87289283e3d404850f7eec6988d777985ba6e2dfb72de29",
+    "config_sha256": "996d926f99e93bd604b81d090d4f9bd2a1c8275871e9c99a4cf538415bfc2851",
+    "decisive_wiki_maps_are_single_character_edits": true,
+    "development_primary_certificates_read": 6,
+    "development_prompt_sha256": {
+      "c_51f0ddb84e68629a83c9b6f9": "3847dd833d6a96a423ade16d4eb009ea9f0e0653acd163d214f3e2d0f914e11a",
+      "c_521cc8d35f8ed06a8d8746f4": "f252cb749b7cd422d60298045cd9673198bb1cc7f8ab82c5ce23c9ed86df473e",
+      "c_843fc9983438883bc6b54d89": "79b7e2b3f8a3b2676ab2e4b59c88aaa0e93af7b12669c8bb26e0faf90062ede6",
+      "c_a61853dd839d7f46de229a98": "08aa48ec17c5031c53f570e1f86ed32e83560a0a7c8228a73a7116089741a8d2",
+      "c_b106438d3c82fc96217b4cba": "b6e07c03c1fbee720046931f38ea1b9cfa4ab36fb0f5b1ff07b5a137cb4cb47b",
+      "c_ea039aa261215180effee837": "91435370bdd3f93e782ac9e5c11d3dde70cf7ed0804be97c125d15e0ad27d2fb"
+    },
+    "evaluation_freeze_pending": true,
+    "exact_wiki_transformation_reproductions": 15,
+    "family_relationships_verified": 14,
+    "independent_receipt_finite_exhaustions": 27,
+    "independent_wiki_literal_span_classifications": 15,
+    "limitations": [
+      "Wiki classification checks use independent span logic but share Python SequenceMatcher alignment; this is not human validation.",
+      "Fixed motifs and transformed source text are controlled fixtures, not new incident findings or a random task sample.",
+      "No investigator answers existed at the inspection; certificate relationships are design properties, not measured model performance.",
+      "Execution still requires the recorded development phase, a live-ledger-bound evaluation freeze, and the fixed cumulative budget guard."
+    ],
+    "model_calls_by_checker": 0,
+    "no_gold_family_role_transformation_or_source_provenance_in_public_records": true,
+    "original_publisher_jsonl_and_body_records_verified": 10,
+    "prepared_sha256": {
+      "cases.json": "064e127687775e63810850e0aaefc67a6e7695396873941733d28527d41721b5",
+      "families.json": "008bc6232a31030bf1f7740f7787ab8c27bdf36e2d8aa1860f05fc197e77b1db",
+      "gold.json": "9c8978579235e52322238ce27998ba4b7c4d01eaf8f2b4f4feafc7c8c0abc1bb",
+      "selection.json": "a5b3807dadb3c9da493c285a3455c3062b751d31a6f2119814d80b80f59f205d"
+    },
+    "preservation": {
+      "all_match": true,
+      "baseline_commit": "88ad3cb7e10fe82a15e8c30400ea780b370663d3",
+      "changed_presentation_paths": [],
+      "historical_raw_all_match": true,
+      "historical_raw_files": 415,
+      "scientific_all_match": true,
+      "scientific_tracked_files": 136,
+      "tracked_files": 138
+    },
+    "provider_message_pairs_match_public_only_serialization": 84,
+    "public_metadata_mutation_invariance_checks": 42,
+    "public_serialized_byte_range": [
+      2822,
+      10579
+    ],
+    "receipt_compatible_world_count_range": [
+      15,
+      45
+    ],
+    "remaining_blockers": [],
+    "review_type": "Read-only mechanical checks and complete-request AI-assisted inspection; no human validation claimed.",
+    "scheduled_development_requests": 12,
+    "scheduled_evaluation_requests": 72,
+    "wiki_source_endpoint_histories_disjoint_and_outside_prior_exclusions": 10
+  },
+  "inspection_scope": "Complete public development triplets and certificates inspected mechanically and with AI assistance; first development responses checked mechanically for contract validity; no human review claimed.",
+  "technical_corrections_before_first_model_call": [
+    "Retain full reservation when authoritative cost is absent.",
+    "Honor cumulative configured ceiling and stricter inherited retry allowance.",
+    "Reject truncated completions and keep conditional diagnostic denominators.",
+    "Apply fixed wiki size eligibility before expensive diffs with full-history parity tests.",
+    "Bind freeze to live development ledger and reject early evaluation attempts."
+  ],
+  "tests": {
+    "failed": 0,
+    "lint": "ruff check src tests passed",
+    "passed": 620
+  }
+}
