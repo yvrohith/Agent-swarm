@@ -1,5 +1,16 @@
 # Trace Completeness Curves
 
+**Start here:** [Current research synthesis](docs/FINAL_SUBMISSION.md) ·
+[Two failure modes demo](demo/failure_modes.html) ·
+[Three-minute presentation script](docs/DEMO_WALKTHROUGH.md) ·
+[Reviewer guide and evidence access](docs/REVIEWER_GUIDE.md).
+
+For investigator findings, read the [utility results](studies/investigator_utility/openrouter_v1/results/REPORT.md),
+[responsiveness results](studies/evidence_responsiveness/results/REPORT.md), and
+[offline failure diagnosis](studies/evidence_responsiveness/offline_failure_audit/REPORT.md).
+The [historical submission](docs/SUBMISSION.md) remains preserved; the final synthesis
+connects the completed work. Open the static failure demo directly as a local file.
+
 Trace Completeness Curves tests what incomplete agent logs can establish about
 information flow. The project brings together five completed studies:
 

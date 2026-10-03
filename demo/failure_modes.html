@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Two audited investigator failures: an unusable response and a valid but incorrect conclusion. A static evidence demonstration from Trace Completeness Curves.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>Two failure modes · Trace Completeness Curves</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main { max-width: 1120px; }
+    .site-header { max-width: 1220px; }
+    .site-header nav, .jump-links, .source-links { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: .84rem; line-height: 1.6; }
+    .intro { max-width: 900px; padding: 56px 0 36px; }
+    h1 { font-size: clamp(2.5rem, 5.3vw, 4.2rem); }
+    .lead { max-width: 760px; }
+    .jump-links { margin-top: 24px; }
+    .panel { border: 1px solid var(--border); border-radius: 10px; background: var(--surface); padding: 30px; margin: 24px 0; }
+    .panel > p, .panel > details, .panel > .source-links { margin-top: 18px; }
+    .panel > .eyebrow { margin-top: 0; }
+    .panel h2 { max-width: 790px; }
+    .panel p, .panel li { font-size: .94rem; }
+    .panel code { font-size: .85em; overflow-wrap: anywhere; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 24px; }
+    .split h3, .example h3 { font-size: 1rem; font-weight: 650; margin-bottom: 12px; }
+    .example { border-left: 3px solid #a7bdae; padding-left: 20px; }
+    .example p + p { margin-top: 14px; }
+    .schematic { margin: 16px 0; padding: 16px; border: 1px dashed #a7bdae; border-radius: 6px; background: #f6f8f0; }
+    .schematic figcaption { font-size: .76rem; color: var(--muted); margin-bottom: 12px; }
+    .schematic ol { margin: 0; padding-left: 22px; }
+    .schematic li + li { margin-top: 8px; }
+    .panel table { font-size: .85rem; }
+    .panel caption { font-size: .8rem; }
+    .causes th, .causes td { white-space: normal; padding: 11px 6px; }
+    .causes td:last-child { text-align: right; font-weight: 600; }
+    .causes tfoot { font-weight: 650; }
+    .callout { padding: 15px 18px; border-radius: 6px; background: #eaf0e6; border-left: 3px solid var(--accent); }
+    .caution { background: #fbf2e8; border-left-color: var(--warning); }
+    .triplet { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+    .variant { border: 1px solid var(--border); border-radius: 7px; padding: 18px; }
+    .variant h3 { font-size: 1.05rem; font-weight: 650; }
+    .variant .case-id { color: var(--muted); margin: 9px 0 18px; font-size: .74rem; }
+    .variant dl { margin: 0; }
+    .variant dt { font-size: .73rem; color: var(--muted); margin-top: 10px; }
+    .variant dd { margin: 3px 0 0; font-size: 1rem; font-weight: 600; }
+    .variant .outcome { font-size: .8rem; font-weight: 600; padding-top: 15px; margin-top: 15px; border-top: 1px solid var(--border); }
+    .variant.failed { border-color: #c99f74; background: #fff8f0; }
+    .variant.failed .outcome { color: #804418; }
+    .excerpts { margin: 22px 0 0; padding-left: 22px; }
+    .excerpts li + li { margin-top: 14px; }
+    .small { color: var(--muted); font-size: .82rem !important; }
+    details { border-top: 1px solid var(--border); padding-top: 17px; }
+    summary { cursor: pointer; font-size: .9rem; line-height: 1.6; }
+    details p { margin-top: 16px; }
+    .hash-table th, .hash-table td { white-space: normal; vertical-align: top; }
+    .hash-table td code { font-size: .75rem; word-break: break-all; }
+    .hash-table th:first-child { width: 95px; }
+    #scope { margin-bottom: 38px; }
+    footer { max-width: 1120px; margin-top: 0; }
+    @media (max-width: 760px) {
+      .site-header { align-items: flex-start; flex-direction: column; }
+      .split { grid-template-columns: 1fr; gap: 24px; }
+      .triplet { grid-template-columns: 1fr; }
+      .panel { padding: 23px 18px; }
+      .intro { padding-top: 38px; }
+      .variant .case-id { margin-bottom: 12px; }
+      .variant dl { display: grid; grid-template-columns: 1fr 1fr; }
+      .variant dt { grid-row: 1; }
+      .variant dd { grid-row: 2; }
+      .hash-table th, .hash-table td { padding: 10px 6px; }
+    }
+    @media print { .panel, .variant { break-inside: avoid; } details { display: block; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the demonstration</a>
+  <header class="site-header">
+    <a class="brand" href="../README.md">Trace Completeness Curves</a>
+    <nav aria-label="Project navigation">
+      <a href="../docs/FINAL_SUBMISSION.md">Full submission</a>
+      <a href="index.html">Synthetic benchmark explorer</a>
+      <a href="../docs/REVIEWER_GUIDE.md">Reviewer guide</a>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="intro">
+      <p class="eyebrow">Completed evidence-responsiveness study</p>
+      <h1>Two ways an investigator answer can fail</h1>
+      <p class="lead">What can incomplete agent records support, and where do investigators fail to deliver a usable, justified answer? These audited examples separate an unusable response from a valid but wrong conclusion.</p>
+      <nav class="jump-links" aria-label="Demonstration sections">
+        <a href="#sonnet">01 · Serialization failure</a>
+        <a href="#terra">02 · Verified answer error</a>
+        <a href="#scope">What this shows</a>
+      </nav>
+    </div>
+
+    <section class="panel" id="sonnet" aria-labelledby="sonnet-heading">
+      <p class="eyebrow">01 · Sonnet / response acceptance</p>
+      <h2 id="sonnet-heading">A recognizable answer is not necessarily a usable response</h2>
+      <p>The frozen contract requires the entire final response to be one JSON object, with specified fields. A response containing prose plus JSON fails that contract. The audit does not extract an embedded answer or judge it as a newly accepted response.</p>
+      <div class="split">
+        <div>
+          <table class="causes">
+            <caption>All 36 Sonnet evaluation responses. One primary cause per response.</caption>
+            <thead><tr><th scope="col">Observed outcome</th><th scope="col">Count</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Prose plus one JSON object</th><td>12</td></tr>
+              <tr><th scope="row">Two JSON objects with self-correction prose</th><td>8</td></tr>
+              <tr><th scope="row">Provider refusal</th><td>2</td></tr>
+              <tr><th scope="row"><code>id</code> instead of <code>claim_id</code></th><td>2</td></tr>
+              <tr><th scope="row">Extra <code>id</code> field</th><td>2</td></tr>
+              <tr><th scope="row">Accepted and correct</th><td>10</td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">Total</th><td>36</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="example">
+          <h3>One audited illustration</h3>
+          <p><code>c_2165e482488490256503f009</code><br><span class="small">Receipt fixture · irrelevant variant</span></p>
+          <figure class="schematic">
+            <figcaption>Structural summary only, not a transcript</figcaption>
+            <ol>
+              <li>Leading explanatory prose</li>
+              <li>One identifiable JSON response object</li>
+            </ol>
+          </figure>
+          <p><strong>Recorded outcome: rejected.</strong> The whole response is not JSON. This illustration makes no claim about the embedded answer’s correctness.</p>
+          <p class="small">Selected after evaluation: the lexicographically smallest case ID among the 12 prose-plus-one-object responses. Selection did not use embedded answer correctness.</p>
+        </div>
+      </div>
+      <p class="callout"><strong>The array-shape hypothesis explains zero observed failures.</strong> All 42 identifiable JSON objects use array-valued <code>answers</code>, despite the prompt’s underspecified “answers must contain one object” wording. No preferred object is selected from the eight multi-object responses.</p>
+      <p class="small">Twenty nonempty outputs acquired cascading <code>missing_response</code> flags; only two actually lacked final content. The adapter preserved the final content in all 36 cases. The 26 rejected responses are not 26 demonstrated incorrect evidence judgments.</p>
+      <div class="source-links">
+        <a href="../studies/evidence_responsiveness/offline_failure_audit/REPORT.md">Offline audit</a>
+        <a href="../studies/evidence_responsiveness/offline_failure_audit/response_causes.json">Response-cause table and locators</a>
+        <a href="../docs/consolidation/selection.json">Illustration selection record</a>
+        <a href="../docs/REVIEWER_GUIDE.md">Exact-evidence access</a>
+      </div>
+    </section>
+
+    <section class="panel" id="terra" aria-labelledby="terra-heading">
+      <p class="eyebrow">02 · Terra / warranted conclusion</p>
+      <h2 id="terra-heading">One valid answer changed when the warranted answer stayed the same</h2>
+      <p>Family <code>f_9695d2661a05a12eced27723</code> tests whether a target text contains an inserted literal title reference. All three answers pass the response schema. The irrelevant variant’s conclusion is incorrect under the frozen rule.</p>
+      <p class="callout"><strong>Controlled wiki-derived fixtures.</strong> Altered text is not a historical observation. The short excerpts below explain the audit; they are not the full tested requests.</p>
+      <div class="triplet" aria-label="Verified three-variant result">
+        <article class="variant">
+          <h3>Base</h3>
+          <p class="case-id"><code>c_5d0eca8fa432a0bd5f37a404</code></p>
+          <dl><dt>Certified status</dt><dd>established</dd><dt>Final answer</dt><dd>established</dd></dl>
+          <p class="outcome">Correct</p>
+        </article>
+        <article class="variant failed">
+          <h3>Irrelevant change</h3>
+          <p class="case-id"><code>c_bf88b0680f8898862c1cf548</code></p>
+          <dl><dt>Certified status</dt><dd>established</dd><dt>Final answer</dt><dd>ruled_out</dd></dl>
+          <p class="outcome">Incorrect · invariant pair fails</p>
+        </article>
+        <article class="variant">
+          <h3>Decisive change</h3>
+          <p class="case-id"><code>c_796c25ca0ea2a0b5a0d6efcd</code></p>
+          <dl><dt>Certified status</dt><dd>ruled_out</dd><dt>Final answer</dt><dd>ruled_out</dd></dl>
+          <p class="outcome">Correct · decisive pair passes</p>
+        </article>
+      </div>
+      <p><strong>The fixed literal-attribution rule:</strong> match the exact case-sensitive title at Unicode word boundaries. Compare full predecessor and target texts with <code>SequenceMatcher(autojunk=False)</code>. A match is inserted if a title character overlaps an insertion or replacement. It is inherited only when an equal alignment maps the whole match to the same bounded title in the predecessor. A boundary created solely by deletion is neither category. No target match makes the insertion claim false.</p>
+      <ol class="excerpts">
+        <li><strong>Base:</strong> the target title <code>Jan14PovertyWatcher</code> occupies <code>[877,896)</code>. The predecessor excerpt is <code>Jan14PoveQtyWatcher</code>. Replacement <code>[886,887)</code> overlaps the title, so the target occurrence is inserted.</li>
+        <li><strong>Irrelevant change:</strong> <code>r1[898]: M → Q</code> is outside the title, after two newlines. The original replacement at <code>[886,887)</code> and title match at <code>[877,896)</code> remain. The insertion claim stays <strong>established</strong>.</li>
+        <li><strong>Decisive change:</strong> <code>r0[886]: Q → r</code> restores the predecessor title. The match now lies inside equal span <code>[0,2557)</code>, so it is inherited. The later insertion <code>[2557,2765)</code> has no other matching title. The insertion claim becomes <strong>ruled_out</strong>.</li>
+      </ol>
+      <p class="small">Offsets are zero-based Unicode code points; half-open spans include the start and exclude the end. “Inserted” is an alignment category, not authorship, exposure, copying, or source use.</p>
+      <p class="callout caution"><strong>One completion per variant; case IDs and derived hashes change too.</strong> This verifies one controlled behavioral inconsistency, not a causally isolated effect of the character edit. Both certificate checks share SequenceMatcher; neither is human validation. Valid evidence IDs do not establish semantic support.</p>
+      <details>
+        <summary>Request differences and integrity identifiers</summary>
+        <p>Relative to base, the irrelevant public case changes only <code>/case_id</code>, <code>/records/1/text</code>, and <code>/records/1/text_sha256</code>. The decisive case changes only <code>/case_id</code>, <code>/records/0/text</code>, and <code>/records/0/text_sha256</code>. Local wrappers also change the derived <code>attempt_key</code>, which is not sent to the provider. The provider body changes only its user-message content. System prompt, assumptions, claim, record order, text lengths, model and settings match.</p>
+        <div class="table-scroll">
+          <table class="hash-table">
+            <caption>UTF-8 fixture-text SHA-256, as recorded in the audit. Hashes identify content; they do not supply it.</caption>
+            <thead><tr><th scope="col">Record</th><th scope="col">Base</th><th scope="col">Changed variant</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><code>r1</code><br>Irrelevant</th><td><code>966a811ffcba2c82aea9ab1fb15a746e65f2fca93b6a806748d86df88d62c661</code></td><td><code>2863c760655065ffaf4f0a7b3e74be6883aa044f6df84d8b645dc49b9cedafaf</code></td></tr>
+              <tr><th scope="row"><code>r0</code><br>Decisive</th><td><code>597291a19564655e9326cf577c5ce9c47047fb6b102d62be5c1d0c5cb08f9ed2</code></td><td><code>d0e5147167668d92854a221564eb4e0ba02684520ea0bb311c168a6ff619add2</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The source summary records all three pairwise request comparisons and complete request hashes. Full requests, fixtures, certificates and final answers remain in the authorized local evidence package described by the reviewer guide. This page neither embeds nor loads that package.</p>
+      </details>
+      <div class="source-links">
+        <a href="../studies/evidence_responsiveness/offline_failure_audit/REPORT.md">Verified triplet explanation</a>
+        <a href="../studies/evidence_responsiveness/offline_failure_audit/terra_summary.json">Spans, scores, IDs and hashes</a>
+        <a href="../docs/REVIEWER_GUIDE.md">Exact-evidence access</a>
+      </div>
+    </section>
+
+    <section class="panel" id="scope" aria-labelledby="scope-heading">
+      <p class="eyebrow">Interpretation</p>
+      <h2 id="scope-heading">Usability and evidence correctness need separate checks</h2>
+      <p>The responsiveness study contains 12 evaluation families, not 72 independent problems. These two examples diagnose specific observed failures; they do not rank general model ability. The completed utility pilot also does not establish a general reasoning benefit from provenance assistance: Terra was at ceiling, and Sonnet’s observed differences were driven by response acceptance.</p>
+      <p>All results here come from saved artifacts. This static demonstration adds no model calls, experiments or response repairs. The <a href="index.html">existing explorer</a> covers the initial synthetic benchmark; the <a href="../docs/FINAL_SUBMISSION.md">final write-up</a> connects the completed studies and their distinct evidence limits.</p>
+      <div class="source-links">
+        <a href="../studies/evidence_responsiveness/results/REPORT.md">Responsiveness results</a>
+        <a href="../studies/investigator_utility/openrouter_v1/results/REPORT.md">Utility pilot results</a>
+        <a href="../docs/DEMO_WALKTHROUGH.md">Presentation script</a>
+      </div>
+    </section>
+  </main>
+  <footer><span>Trace Completeness Curves</span><p>Static local demonstration · report-level evidence only</p></footer>
+</body>
+</html>

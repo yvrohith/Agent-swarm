@@ -1,0 +1,69 @@
+{
+  "access_limitations": [
+    "Exact fixtures and final responses stay in ignored local package; separate release permission required.",
+    "No standalone Sonnet semantic gold certificate exists in the final-only audit package; not reconstructed.",
+    "Small package makes four examples inspectable, not every study independently reproducible.",
+    "Managed browser policy blocked file URL navigation; offline document layout/DOM checks passed without changing policy.",
+    "Author/team contact remains user-owned; external rules and references were not reverified."
+  ],
+  "base_head": "6d2c3567af52029c21addea9a514721f6b346aa2",
+  "baseline": "baseline.json",
+  "finalized_at_utc": "2026-10-03T23:28:39.640522+00:00",
+  "hash_convention": "SHA-256 over exact file bytes. This manifest does not hash itself.",
+  "local_only_output_sha256": {
+    "artifacts/final-consolidation/failure_modes_desktop.png": "4bd9f7491574322f46f829eb78479a2ce7fb679368e4e3c7ce15ddcfbcc01fde",
+    "artifacts/final-consolidation/failure_modes_desktop_details.png": "2278c16705b3b426c61b1700e802f694ac8e28ae90fe76e4c6c3086ba5550f82",
+    "artifacts/final-consolidation/failure_modes_desktop_terra_viewport.png": "f1a4ad5919e8eb4fecdd529235e388d1ef1d1b4d162c1713aead5e897c13fa38",
+    "artifacts/final-consolidation/failure_modes_mobile.png": "726c944b14c014fa09ef1804e570127394a1f551026b633504e810677e710ddc",
+    "artifacts/final-consolidation/failure_modes_mobile_details.png": "1ecc2677d2d9319169b597de2b3e57cd94198a85dfd0cbda14f68665e7e3e4ea",
+    "artifacts/final-consolidation/failure_modes_mobile_terra_viewport.png": "c69dc7fafc441edf8bfe4b486f329cb8b4bd4d250ae7ad69242409753834c116",
+    "artifacts/final-consolidation/rendering_checks.json": "a1c36824bd96acc8f0c9724e8555f5e58aa83d513b960508796e82bcfb4d798e",
+    "artifacts/final-consolidation/static_checks.json": "8229b474686361cf91cc4d4fbcf268c0a8d878d09ef2c4dc8fd73452fae373b0",
+    "artifacts/submission-review-v1/manifest.json": "4cd35d36d251d8d9130e8c883bd7b6e02ef729fcb5e3b5633c4f307b8c63374d"
+  },
+  "output_sha256": {
+    "README.md": "e67cc5d4c59286ece323c2287540f3f520b0fff925ac8d15d929a5a47661601f",
+    "demo/failure_modes.html": "0d781eb55d06ea57d7626e50aee216c72ad1878271c10503a4ba3f1d2cf44f4b",
+    "demo/index.html": "583a7e3cf46d2adbc98f749105eda76ffcd1b2e6984c1997e01aa32fc1a1afb0",
+    "docs/DEMO_WALKTHROUGH.md": "436304245a550f604a59a8106b8bd1ca6a2ddfc8489685c1e33cf6f89ba37383",
+    "docs/FINAL_SUBMISSION.md": "c3e8d6c545d095b7423d923c615c8676e09fa962b5ff00a732fb096db5b1a7da",
+    "docs/REVIEWER_GUIDE.md": "faad4338488ec380749467577f7b7b53d5dbd55981b2eee7082a9f39d828f7d4",
+    "docs/consolidation/baseline.json": "4c440a63571deebde4fec4f0df50571c2120ea237ca21a5d919a530841e33b01",
+    "docs/consolidation/presentation_changes.json": "3e778967907623e1840c5948dea75809d037774f379ad7a57ac3a8d14d54e43b",
+    "docs/consolidation/selection.json": "9ddff24deb6fb274354d234dbace1ac15b798f77d3bc0bd6ef06e032f2f72660",
+    "docs/consolidation/validation.json": "1bbc2e64392fa4e49c6edb7b169316b5ead36518bd00723b9613e0915c33f77f"
+  },
+  "presentation_changes": "presentation_changes.json",
+  "scope": "Completed local communication/evidence consolidation; no new scientific study, alternate scoring, publication or submission.",
+  "selected_source_sha256": {
+    "docs/HACKATHON.md": "9ea1da0688c3ba46b7cbd6610c6dc6ec0b842091fd54f74d30a98a0f47850d9a",
+    "docs/RELATED_WORK.md": "07d8fc57e0f41c01dbe6a5e29f85093913fbdc1e6e95ee5e775d34b25cd76851",
+    "docs/SUBMISSION.md": "fee1e72596cb5038de5a5263c82085dafc68fce8885a76e87b8a59e7ca419e46",
+    "results/REPORT.md": "ff832724feaf81e71c685a3bd45292f49d41781d862d2f6b00bbac8307efd974",
+    "results/summary.csv": "e638ccafe9a9f2815d584a41224d42d37c08b881daa2d4b9667f1959ce2dc65f",
+    "studies/evidence_responsiveness/offline_failure_audit/REPORT.md": "043a0e54ead8adc5236a81fb185dbb7304720f48118f59cff02becd41c05b479",
+    "studies/evidence_responsiveness/offline_failure_audit/manifest.json": "de1215d5a10471661ddef512aa090bfe88527fad47c0608cec3f15005c9a4a75",
+    "studies/evidence_responsiveness/offline_failure_audit/response_causes.json": "47bf0da3cfd2b8fbc2496df99da4ce15aa11ce977014db014042c7fff5334d07",
+    "studies/evidence_responsiveness/offline_failure_audit/terra_summary.json": "eab55f227ea623f4590165af3ec690a600b7d858bfe9de64b5f5225d464e4e43",
+    "studies/evidence_responsiveness/offline_failure_audit/verification.json": "5d0c52cf5986831aecf29a8a567d51530fb510832ba5b15cd846c0bd81cca040",
+    "studies/evidence_responsiveness/results/REPORT.md": "77c2375436d79b4384eb66b8005d6e91ca0f240a757d993749cc720acf9a5522",
+    "studies/evidence_responsiveness/results/execution.json": "ec5934105ecfbc49f78a614b8509f6ab6fd5665112317f8377e8cd00831109b2",
+    "studies/evidence_responsiveness/results/per_family.json": "1a0f832e3fa5581ea7116396486729efb6aa20bdb03a4f63313d7c0687060514",
+    "studies/evidence_responsiveness/results/per_variant.json": "2f0ad026fbe3d9908540120a64977ca255eda3d644a19af50fd8fab42abea3c3",
+    "studies/investigator_utility/openrouter_v1/results/REPORT.md": "8cf2fad6d51213eec73fa7669ce8fb92405de8501d91ff590e6bc52450d56486",
+    "studies/investigator_utility/openrouter_v1/results/failure_diagnostics.json": "6eaa55ea6a3ff3a6f036fdcfd09e9d0b9c7f59920976b836aaa6791427ab5437",
+    "studies/investigator_utility/openrouter_v1/results/paired_summary.json": "f28ff2134a3e4bbde28fcb6ad2f0d73eb188cca502c34af3c0a420e438bb7a5b",
+    "studies/missing_receipts/results/REPORT.md": "e95d0bdff34eb9fd8333c994e402d4ce38c553d59156437c475cf9240a1eef49",
+    "studies/missing_receipts/results/study.json": "fc9ba1334150eefd9d20095bb349b88e6af8144ff4241beff86e242927c7ba56",
+    "studies/wiki_case_study/REPORT.md": "c4bfc8ea342c5733c1e6eab647f03201922fdce2a8be42d010759ddf7010f332",
+    "studies/wiki_case_study/results/counts.json": "dd8d2f6f8ec1106a052ed914ea7622b4c99b16f3df985cf73688b8bb0ab40676",
+    "studies/wiki_case_study/results/manifest.json": "f8019b38ed9b6605d51f3e1c8c5f4bc93c184ddad05f3676dfa0fd7b82740773",
+    "studies/wiki_case_study/source_manifest.json": "601bfbdacfbef32cce37689781644fee638d43f5a422fc992cf8af070e59ec3e"
+  },
+  "selection": "selection.json",
+  "task_specification": {
+    "filename": "Agent_swarm_final_consolidation_prompt.md",
+    "sha256": "4e634e7a9e6d24946eb829acf41e87c22424d7a65b1300f47613b6c604479b8c"
+  },
+  "validation": "validation.json"
+}
