@@ -1,0 +1,15 @@
+{
+  "source_kind": "synthetic_fixture",
+  "schema_version": "tracebench-wiki-fixture-v1",
+  "description": "Locally constructed test data; not a German-wiki export or incident evidence. All handles and content are fictitious.",
+  "revision_file": {
+    "name": "synthetic_revisions.jsonl",
+    "sha256": "5af75021e04321d3fb853d30a7416e23abe61aa5d70585499b6e56e9f1730a8b",
+    "bytes": 4966,
+    "records": 23
+  },
+  "source_urls": [],
+  "publisher_checksums": null,
+  "redactions": "Synthetic redaction markers are retained verbatim.",
+  "public_release_adapter_status": "Not implemented: publisher archive schema has not been acquired or inspected."
+}

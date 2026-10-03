@@ -1,5 +1,13 @@
 # Evidence card
 
+This card describes the original clean-telemetry baseline. The separately scoped
+[missing-receipt follow-up](studies/missing_receipts/ANALYSIS.md) erases individual
+observable records without changing world events or truth. Its
+[report](studies/missing_receipts/results/REPORT.md) adds target FP/FN, signed error,
+target disagreement and unresolved exposure burden. Incomplete record coverage is
+distinct from an unavailable telemetry type; neither makes absence proof of an event's
+non-occurrence without an explicit completeness assurance.
+
 ## What is being measured
 
 This is a synthetic benchmark of source attribution under incomplete telemetry. Its target is the simulator's **realized source-use relation**: an output uses a prior output from another stable run through the simulated shared channel. The evaluator's hidden labels record that choice.
@@ -58,7 +66,7 @@ The default sweep uses three writes per run, transmission probabilities `0`, `0.
 
 ## Data and source status
 
-The core benchmark requires no real agents, API credentials, private logs, or external incident data. The real wiki case study is a scaffold only; see `case_study/README.md`. Literature claims and source-verification status are recorded in `docs/RELATED_WORK.md`.
+The core benchmark requires no real agents, API credentials, private logs, or external incident data. A separate [public-wiki audit](studies/wiki_case_study/results/REPORT.md) uses a pinned publisher export to count literal references attributed to newly inserted text. Its descriptive target is distinct from synthetic source-use truth: stable identities are unresolved, source-read receipts are unavailable, exposure is unknown and source use is unobserved. The event export contains saves, deletions, reverts and limited probes, not a complete read log. This audit demonstrates the applicability of evidence distinctions, not external validation of synthetic accuracy. See `case_study/README.md` and `docs/RELATED_WORK.md` for provenance, reproduction and source status.
 
 ## Supported conclusion
 

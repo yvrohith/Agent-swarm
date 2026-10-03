@@ -133,7 +133,46 @@ def main(argv: list[str] | None = None) -> None:
     benchmark.add_argument("--bootstrap-samples", type=_positive, default=2000)
     benchmark.add_argument("--overwrite", action="store_true", help="Replace prior generated artifacts")
     commands.add_parser("equivalence", help="Verify equal observations with different source-use truth")
+    receipts = commands.add_parser("receipt-study", help="Run the separate missing-receipt follow-up")
+    receipts.add_argument("--config", type=Path,
+                          default=Path("studies/missing_receipts/config.json"))
+    receipts.add_argument("--output", type=Path,
+                          default=Path("studies/missing_receipts/results"))
+    wiki = commands.add_parser("wiki-audit", help="Audit literal references in a pinned public export")
+    wiki.add_argument("--archive", type=Path, required=True)
+    wiki.add_argument("--other-wikis", type=Path)
+    wiki.add_argument("--protocol", type=Path, required=True)
+    wiki.add_argument("--output", type=Path, required=True)
+    fixture = commands.add_parser("wiki-fixture-audit", help="Validate using explicitly synthetic revisions")
+    fixture.add_argument("--revisions", type=Path, required=True)
+    fixture.add_argument("--manifest", type=Path, required=True)
+    fixture.add_argument("--protocol", type=Path, required=True)
+    fixture.add_argument("--output", type=Path, required=True)
     args = parser.parse_args(argv)
+    if args.command in ("wiki-audit", "wiki-fixture-audit"):
+        from .wiki_loader import load_fixture, load_release
+        from .wiki_study import run_loaded_study
+
+        try:
+            if args.command == "wiki-audit":
+                loaded = load_release(args.archive, args.other_wikis)
+                target_site = "dse"
+            else:
+                loaded = load_fixture(args.revisions, args.manifest)
+                target_site = "DSE"
+            result = run_loaded_study(loaded, args.protocol, args.output, target_site=target_site)
+        except (ValueError, OSError) as error:
+            parser.error(str(error))
+        print(json.dumps(result["counts"], indent=2, sort_keys=True))
+        return
+    if args.command == "receipt-study":
+        from .receipt_study import run_study
+
+        try:
+            run_study(args.config, args.output)
+        except (ValueError, OSError) as error:
+            parser.error(str(error))
+        return
     if args.command == "equivalence":
         left, right = observational_equivalence_pair()
         equality = {regime.value: observe(left, regime) == observe(right, regime)

@@ -1,0 +1,83 @@
+{
+  "historical_source_provenance": {
+    "baseline_commit": "36be8fa3682b294462ac65f8c2f750119e75cdb2",
+    "baseline_source_digest_matches_commit": true,
+    "missing_receipt_only_current_source_difference": "cli.py: later wiki argument and dispatch blocks",
+    "removing_later_cli_blocks_reproduces_historical_sha256": true
+  },
+  "human_validation": false,
+  "input_manifest_sha256": {
+    "results/manifest.json": "68270d7ad00a53ac121f25b6eda519aec77533081c2d2504db505a9fd6534a19",
+    "studies/missing_receipts/results/manifest.json": "b08fae0f8de739ae4a10e39520cbcbe37c7e18372dafaa8d2c068a59673510a3",
+    "studies/wiki_case_study/VALIDATION.json": "f8afb403ff6374c08a350ebebaeeb2a7df2205eb6e0718a3065ecfb606ef61ef",
+    "studies/wiki_case_study/results/manifest.json": "f8019b38ed9b6605d51f3e1c8c5f4bc93c184ddad05f3676dfa0fd7b82740773"
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "missing_receipt_recalculation": {
+    "evaluations": 1280,
+    "new_simulations_run": false,
+    "observation_audits": 320,
+    "paired_contrasts": 640,
+    "paired_differences_checked": 640,
+    "paired_summary_groups_checked": 32,
+    "selected_bootstrap_endpoints": "Recomputed from saved per-world rows; match recorded endpoints",
+    "summary_groups_checked": 64,
+    "target_error_identities_checked": 1280,
+    "worlds": 40
+  },
+  "publication_actions": {
+    "commit": false,
+    "push": false,
+    "submission": false,
+    "visibility_change": false
+  },
+  "researcher_coordination": {
+    "latest_review_read": true,
+    "limitation": "Available connector reads ChatGPT conversations but cannot post or start a researcher turn",
+    "messages_sent": false
+  },
+  "review_date_eastern": "2026-10-03",
+  "runtime": {
+    "python": "3.12.14"
+  },
+  "scientific_changes": "None; frozen protocols, source-generation mechanisms, source-selection target and saved outputs unchanged",
+  "scope": "Final AI-assisted implementation verification and local packaging; no new scientific conditions",
+  "source_and_artifact_checks": {
+    "all_preserved_unchanged": true,
+    "historical_wiki_validation_pins_matching": true,
+    "output_manifests_verified": 3,
+    "preserved_files": 21,
+    "wiki_executed_source_files_matching": 4,
+    "wiki_protocol_matching": true
+  },
+  "test_suite": {
+    "added_final_regressions": 5,
+    "command": ".venv/bin/pytest -q",
+    "elapsed_seconds": 6.96,
+    "failed": 0,
+    "missing_receipts": 77,
+    "original": 47,
+    "passed": 219,
+    "skipped": 0,
+    "wiki": 95
+  },
+  "whitespace": {
+    "command": "git diff --check",
+    "status": "passed"
+  },
+  "wiki_accounting": {
+    "attribution_excluded_or_ambiguous_pairs": 2016,
+    "boundary_ambiguous_occurrences_inside_excluded": 4,
+    "excluded_or_ambiguous_occurrences": 8172,
+    "inherited_occurrences": 11731,
+    "inherited_only_pairs": 7380,
+    "inserted_occurrences": 4854,
+    "inserted_pairs": 3140,
+    "occurrence_partition_scope": "Verified for the pinned export; not a universal identity of these counters",
+    "snapshot_occurrences": 24757,
+    "snapshot_pairs": 12536
+  }
+}

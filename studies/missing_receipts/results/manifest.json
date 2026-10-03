@@ -1,0 +1,28 @@
+{
+  "algorithm": "sha256",
+  "config_sha256": "d86e206f492ac66c5a55f508f02553b6ba8ee50469b600f201ecbd4aa98e63a2",
+  "files": {
+    "REPORT.md": "e95d0bdff34eb9fd8333c994e402d4ce38c553d59156437c475cf9240a1eef49",
+    "config.json": "d86e206f492ac66c5a55f508f02553b6ba8ee50469b600f201ecbd4aa98e63a2",
+    "paired_runs.csv": "bb99dcf25f3c6a7c05baf07980fc3ac6459c8d218334c4f9f27883edd52cd7a3",
+    "recall_retention.png": "e61d839faf835bb5852edfeeb1a9a6b001d5986fc3827181a06bc2a8fc5fccf8",
+    "recall_retention.svg": "a318290b2bf41dfc5853dd57aa920befcf7cb58eb7529e4733265d557f7d9202",
+    "retention.csv": "0a1d7890d763f115edde85693881b7a32b70342f09091e6289ccef4609521eb1",
+    "runs.csv": "9463c694cec1bf3eb8ed7fe40e57917916b308773d6464eef9bdb292e0d6282a",
+    "study.json": "fc9ba1334150eefd9d20095bb349b88e6af8144ff4241beff86e242927c7ba56"
+  },
+  "source_files_sha256": {
+    "__init__.py": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3",
+    "cli.py": "08ccaff8ca97e9c588b28cd37cd9da1ed442e35ba89e209193fb1eaf0441e276",
+    "corruption.py": "2758cc38efe7e65cf5cf7eb640068e63acce333c2e804ad9adffe0ad34493051",
+    "estimators.py": "a1d8f633d85cea91db7ee8d63516ae184c97129576c2d5570f0cb063e3912317",
+    "evaluate.py": "133fca68d2ff72499c33e3f2922b04103e2e55b87124edfda4913fcfe0b66b22",
+    "model.py": "be1388cf2b1673e6bc46cd8bf73994c31a14d84d2f7bb1c0b592735388595254",
+    "observe.py": "84e96db43b175c6cda5a17dd6d64b2bab38a4910c3ab98e1895fb8224d0109e1",
+    "policies.py": "3dfb05720dc00d1149805322b8209bb7c536ca9722068fdfc506dae35e5d25d1",
+    "receipt_reporting.py": "f713e0c916d263ca20e97e5522c9dffa64fa16a00e59593e53526704bb98e313",
+    "receipt_study.py": "0d9ffa4663fad9072f9335cfa0f966f33eb63052873bb880cb8ade74b65d753d",
+    "reporting.py": "580021398e1dcbb21dd97c24e07cf4d7a8587e8c7ca3c78df509c2748be7c883",
+    "simulate.py": "3015db75f04709308952b8a34e83a11c0980ddf38c63018c00b2ba90566d98e6"
+  }
+}

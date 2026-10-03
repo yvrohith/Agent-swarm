@@ -33,6 +33,39 @@ The curated initial run is in [results/REPORT.md](results/REPORT.md). Generated 
 experiments belong in ignored `artifacts/`; only deliberately selected, non-sensitive
 research evidence belongs in `results/`.
 
+## Missing-receipt follow-up
+
+The [follow-up protocol](studies/missing_receipts/ANALYSIS.md) separates omitted
+telemetry **types** from missing **records** within a logged type. It erases delivery
+or context receipts after generating each world, preserving the simulator and truth.
+An evidence-aware comparison policy reports unknown exposure separately from
+heuristic predictions. This is a review-informed stress test, not a preregistered discovery.
+
+```bash
+uv run tracebench receipt-study --config studies/missing_receipts/config.json \
+  --output artifacts/missing-receipts-replication
+```
+
+See its [paired results and recall figure](studies/missing_receipts/results/REPORT.md).
+The original `results/` files and `CLAIMS.md` remain unchanged and refer to baseline
+commit `36be8fa`; their recorded source digest describes that historical version.
+
+## Public-wiki evidence audit
+
+The separate [descriptive case study](studies/wiki_case_study/results/REPORT.md)
+compares cumulative snapshot references with newly inserted references in a pinned
+public German-wiki export. It keeps observed handles, unavailable source-read
+receipts, unknown exposure and unobserved source use distinct. It does not evaluate
+real-data attribution accuracy or estimate copying. Raw downloads remain ignored.
+See [source provenance and reproduction](case_study/README.md) and the
+[frozen analysis rules](studies/wiki_case_study/ANALYSIS.md).
+
+```bash
+uv run tracebench wiki-audit --archive data/raw/wiki/full-wiki-logs.zip \
+  --other-wikis data/raw/wiki/other-wikis.json.gz \
+  --protocol studies/wiki_case_study/ANALYSIS.md --output artifacts/wiki-replication
+```
+
 ## Explore the evidence
 
 ```bash
@@ -49,8 +82,12 @@ Open the `/demo/` path on that local server. The static explorer reads the curat
 - [Hackathon deliverables and verification status](docs/HACKATHON.md)
 - [Related work and source status](docs/RELATED_WORK.md)
 - [German-wiki case-study status](case_study/README.md)
+- [Final researcher handoff and review-package instructions](review/RESEARCHER_HANDOFF.md)
 
-The supplied competition requirements call for a short write-up or video and the code
+The verified competition requirements call for a short write-up or video and the code
 repository, with real-world results optional. See the [submission write-up](docs/SUBMISSION.md).
-No detailed judging rubric was supplied; the deadline and submission portal still need
-verification. The work here is local and has not been submitted or published.
+The official deadline is Sunday, October 4, 2026, at **8 p.m. Eastern / 5 p.m. Pacific**.
+The [official logistics and submission link](docs/HACKATHON.md) are recorded; exact form
+limits and terms remain unverified because the form returned HTTP 403. No detailed
+scoring rubric appears on the checked pages. No competition submission or hosted
+deployment has been performed.

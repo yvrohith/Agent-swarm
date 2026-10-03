@@ -1,0 +1,383 @@
+{
+  "review_type": "AI-assisted targeted observable extraction review",
+  "independent_human_validation": false,
+  "review_sheet_sha256": "b09c82b6738ea8e9be8fd202320b5fc904ec049dc7ad0d3e53574a2c7a04a443",
+  "selection": "Unmodified frozen first ten SHA256-ordered pairs in each of inserted and inherited_only categories.",
+  "summary": {
+    "reviewed_pairs": 20,
+    "inserted_pairs_reviewed": 10,
+    "inherited_only_pairs_reviewed": 10,
+    "passed_under_frozen_rule": 20,
+    "failed_under_frozen_rule": 0,
+    "verified_reference_spans": 28,
+    "semantic_limitations_observed": [
+      "Some retained references shift offsets because earlier text changes; those shifts do not imply new insertion.",
+      "Inserted pairs can contain both inherited and newly added occurrences.",
+      "A same-named external provider and generic navigation titles satisfy the lexical rule without establishing an intentional wiki-page reference."
+    ],
+    "strict_earlier_source_record_checks": 333
+  },
+  "method": "Reload pinned release; resolve selected target/parent records; check all reported spans/excerpts against source text; inspect character-level diff operations and nearby inert text. No links followed or content executed. Also verify target/parent/source record hashes and strict nonoverlap source and parent time conditions.",
+  "limitations": [
+    "AI assistance is part of this implementation session; it is not an independent human validation or a ground-truth assessment.",
+    "Diff checks reuse the specified SequenceMatcher algorithm and do not establish a unique edit history.",
+    "Pass denotes compliance with the frozen literal extraction rule, not semantic relevance, authorship, exposure, copying, or source use.",
+    "Twenty selected pairs do not establish extraction precision or recall over the export.",
+    "Observed handles remain distinct from stable run identities; all candidate source-request, delivery and context support remains unavailable."
+  ],
+  "entries_by_selection_sha256": {
+    "0000162da28652e355c320afb688d73b32edcbbf13984049c3ad74662d477417": {
+      "selection_sha256": "0000162da28652e355c320afb688d73b32edcbbf13984049c3ad74662d477417",
+      "category": "inherited_only",
+      "target_revision_id": "dse~HealthdataCVDSequenceCollab@28",
+      "referenced_page": "OpenAIHealthdataCVDMar27",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "Both contact/signature occurrences are unchanged in the immediate predecessor at identical offsets; neither is newly inserted by this save.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "0003cf85f9d7683e31675e2c34dbd33f5debc7bc0ba65b9d1e491af3e751dca0": {
+      "selection_sha256": "0003cf85f9d7683e31675e2c34dbd33f5debc7bc0ba65b9d1e491af3e751dca0",
+      "category": "inherited_only",
+      "target_revision_id": "dse~MaidsR3FastRelayOct11@34",
+      "referenced_page": "OpenAIApr15Maids205825",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The live-page mention is retained at the same offset inside an equal diff span. Its appearance in another save is not new attribution.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "0004d20a025204c27442f20c6777905b9df7c88e97cb6ab1e6f1fe96c7dd9361": {
+      "selection_sha256": "0004d20a025204c27442f20c6777905b9df7c88e97cb6ab1e6f1fe96c7dd9361",
+      "category": "inherited_only",
+      "target_revision_id": "dse~HealthdataCVDSequenceCollab@52",
+      "referenced_page": "OpenAIHealthdataCVDJan31",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "Both the contact mention and repeated signature already occur in the parent; the two occurrences correctly collapse to one inherited-only pair.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "00130a0b2ab3e15d70868b4b6918b388b4f649ca558fcb2d0f79aafdf830ba43": {
+      "selection_sha256": "00130a0b2ab3e15d70868b4b6918b388b4f649ca558fcb2d0f79aafdf830ba43",
+      "category": "inherited_only",
+      "target_revision_id": "dse~Sector61State5FastSignal@73",
+      "referenced_page": "AgentAug23OAI",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The referenced handle/page name is an unchanged entry in an existing list. The current edit does not newly insert it.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "001cb1ce8ce29ceb9e1007db43caef2b5164bdb050244183a6f4ff10d7f08072": {
+      "selection_sha256": "001cb1ce8ce29ceb9e1007db43caef2b5164bdb050244183a6f4ff10d7f08072",
+      "category": "inherited_only",
+      "target_revision_id": "dse~Sector61State5LiveRelay@43",
+      "referenced_page": "AgentOpenAIFeb29Run",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The existing signature is retained in an equal span; surrounding calls to post updates are inert text, not authenticated access evidence.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "002ea9fda84cb0a5043a2e13b7eed4a39e4c8ab2387f62878a8b3586ecb3c0e7": {
+      "selection_sha256": "002ea9fda84cb0a5043a2e13b7eed4a39e4c8ab2387f62878a8b3586ecb3c0e7",
+      "category": "inherited_only",
+      "target_revision_id": "dse~StartSeite@280",
+      "referenced_page": "DataUSAQueryBridgeFeb08D",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The literal title occurs in an unchanged URL query parameter. The URL was inspected only as inert text and was not fetched.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "00367eeac35b47026e0d6319c63899f965a3034baa6bfef436810e10940e61f5": {
+      "selection_sha256": "00367eeac35b47026e0d6319c63899f965a3034baa6bfef436810e10940e61f5",
+      "category": "inherited_only",
+      "target_revision_id": "dse~StartSeite@281",
+      "referenced_page": "DataUSAQueryBridgeFeb08C",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "A 201-code-point insertion before the carried text moves the reference from [2324,2348) to [2525,2549). The mapped title is unchanged and correctly inherited.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "003a2a0fe31a1936137b8d9372ac35040774ab96c30fabd5e51c2c5b2acf20e1": {
+      "selection_sha256": "003a2a0fe31a1936137b8d9372ac35040774ab96c30fabd5e51c2c5b2acf20e1",
+      "category": "inherited_only",
+      "target_revision_id": "dse~OECDEducationEquitySequence@38",
+      "referenced_page": "Jun05OECDScout",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "Two signature occurrences shift by -778 code points while remaining in an equal diff block. Their changed offsets do not make either newly inserted.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "0046cbf6d35e489aae51bc8bea286c0f0646bd7368c72b1e9d9931682a9a2bed": {
+      "selection_sha256": "0046cbf6d35e489aae51bc8bea286c0f0646bd7368c72b1e9d9931682a9a2bed",
+      "category": "inherited_only",
+      "target_revision_id": "dse~Sector61State5LiveRelay@53",
+      "referenced_page": "SectorAgentSep21OAI",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The retained sentence asserts that another handle saw a value, but the page-name span already exists in the predecessor. The assertion is not a request/delivery/context receipt.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "00512dcb0e3d165b25f7d2178e83f26b2300f574e34ea8cc758c2a68cf0bf0a2": {
+      "selection_sha256": "00512dcb0e3d165b25f7d2178e83f26b2300f574e34ea8cc758c2a68cf0bf0a2",
+      "category": "inherited_only",
+      "target_revision_id": "dse~Clothing2m56Round3RelayMay31@18",
+      "referenced_page": "DataUSAClothingLive2m56Jun28",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The old-page/GET-limit statement and title are inherited from the parent. That statement is a posted claim and does not supply authenticated request evidence.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "001e9238e44c17b203c5546f647d1ddb8b3afa7b9db21a501e10d022294f971e": {
+      "selection_sha256": "001e9238e44c17b203c5546f647d1ddb8b3afa7b9db21a501e10d022294f971e",
+      "category": "inserted",
+      "target_revision_id": "dse~AgentPureNext778@2",
+      "referenced_page": "AgentSecDirectJQP999",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "All three current literal occurrences are absent from the predecessor. Two intersect insert operations; the third spans replace/equal fragments but intersects changed characters. Counting three inserted occurrences and one pair follows the frozen rule.",
+      "limitations": [
+        "Character-diff alignment splits the third title across operations; newly added means overlap with changed characters, not that every character was inserted."
+      ],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "003b6ade0a8e33b6735bdc1d7b73e5cab1301a0ca3ffba91b9ae24dd91a3bce6": {
+      "selection_sha256": "003b6ade0a8e33b6735bdc1d7b73e5cab1301a0ca3ffba91b9ae24dd91a3bce6",
+      "category": "inserted",
+      "target_revision_id": "dse~ForumSeite@7",
+      "referenced_page": "AgentTempOpenAIx",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The title appears in a newly appended URL query parameter after an unchanged prefix. Parent contains no bounded occurrence; this is a new literal match, with no conclusion about executing the URL.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "00420f0aaf805cf0305fefd22feb8760d4573fde019e5b25427b588e2a7f5d90": {
+      "selection_sha256": "00420f0aaf805cf0305fefd22feb8760d4573fde019e5b25427b588e2a7f5d90",
+      "category": "inserted",
+      "target_revision_id": "dse~AgentMyBridgeZZ@26",
+      "referenced_page": "WillkommenImWiki",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "Three new literal matches appear in URL parameters within replacement text; predecessor text does not contain the title. The matched title is a welcome/navigation name, so this passes the frozen lexical rule but is semantically nonspecific.",
+      "limitations": [
+        "Generic welcome/navigation title remains included because exclusions were frozen before candidate results; no post-result exclusions were applied."
+      ],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "0049015de099fc7d40e0229a4cd874f55498852a94a03d93d9a2f41f5c6a7b25": {
+      "selection_sha256": "0049015de099fc7d40e0229a4cd874f55498852a94a03d93d9a2f41f5c6a7b25",
+      "category": "inserted",
+      "target_revision_id": "dse~CashierR5SignalFeb28OAI@1",
+      "referenced_page": "CashierCoordFeb28OAI",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The explicitly created page contains the title as a signature-like string. Empty-predecessor insertion is supported by the creation metadata; this does not establish intellectual authorship or source use.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "0059a221395c619a6c6743b2b139dad9a1376fe5fe1351e9fe26ad03ebe1f6c1": {
+      "selection_sha256": "0059a221395c619a6c6743b2b139dad9a1376fe5fe1351e9fe26ad03ebe1f6c1",
+      "category": "inserted",
+      "target_revision_id": "dse~HealthdataCVDSequenceCollab@112",
+      "referenced_page": "OpenAINov28CVDLive",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "One earlier signature occurrence is inherited and a second appears in a new appended span. One inserted occurrence and one inserted pair are correct. Observed source/target handle comparison is same, not a claim of a stable run.",
+      "limitations": [
+        "Same observed handle does not establish a stable run identity."
+      ],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "0065d52d46895495b19ed57a1f2212e79b4b93d183dee3bc02d50dafa93f2131": {
+      "selection_sha256": "0065d52d46895495b19ed57a1f2212e79b4b93d183dee3bc02d50dafa93f2131",
+      "category": "inserted",
+      "target_revision_id": "dse~RedirTryABC@1",
+      "referenced_page": "BridgeAsciiJump",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The title appears in a newly created redirect directive. This is a literal page-name reference under the rule; the redirect was not rendered or followed.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "0072e4563096629ba3641449fb590920e8c534bfb02253cd6ed54c4e707c2219": {
+      "selection_sha256": "0072e4563096629ba3641449fb590920e8c534bfb02253cd6ed54c4e707c2219",
+      "category": "inserted",
+      "target_revision_id": "dse~AgentMassSECFinalLinks2026K@2",
+      "referenced_page": "AgentJQDirectSec19A",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The literal title is newly appended in an inert URL query parameter and is absent from the parent. This is an observable addition, not evidence of a successful page request.",
+      "limitations": [],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "0075958f33aa750cdc0f2883ae48fb46b28f800696c8d45bf9b4d9b90bc4eb6f": {
+      "selection_sha256": "0075958f33aa750cdc0f2883ae48fb46b28f800696c8d45bf9b4d9b90bc4eb6f",
+      "category": "inserted",
+      "target_revision_id": "dse~OAIFlatheadBridgeTestMay24X@45",
+      "referenced_page": "ZZOurSecCitationJun18X7",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The title is newly inserted in an inert URL parameter. The target author is redacted; redaction is preserved and cross-handle status remains unknown.",
+      "limitations": [
+        "Publisher author redaction prevents resolved observed-handle comparison."
+      ],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "009cff3d980af87e25f5c41e8e7602cc810bcabfc86ae293468877092aa7b91e": {
+      "selection_sha256": "009cff3d980af87e25f5c41e8e7602cc810bcabfc86ae293468877092aa7b91e",
+      "category": "inserted",
+      "target_revision_id": "dse~Sep21ConstructionWageLive2027@1",
+      "referenced_page": "DataUSA",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The newly created page uses DataUSA as a topic/provider name. It matches an already observed page title under the frozen lexical rule, but context does not establish that it intentionally refers to that wiki page.",
+      "limitations": [
+        "Lexical equality with an external provider/topic name does not establish an intentional reference to the same-named wiki page."
+      ],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    },
+    "00ada3d46cc9d202edafcd83ce6869d5eb857c2b7014085c01c5828c47bbefee": {
+      "selection_sha256": "00ada3d46cc9d202edafcd83ce6869d5eb857c2b7014085c01c5828c47bbefee",
+      "category": "inserted",
+      "target_revision_id": "dse~AgentUniquePage551990@1",
+      "referenced_page": "WillkommenImWiki",
+      "extraction_check": "pass_under_frozen_literal_matching_and_diff_rule",
+      "notes": "The explicitly created page contains a welcome-page title in an inert URL parameter. Strictly earlier source revisions exist; interval-overlapping source revisions must remain excluded. The generic navigation context and unknown handle comparison limit interpretation.",
+      "limitations": [
+        "Generic welcome/navigation title remains included under the frozen exclusions.",
+        "Some source timestamps overlap the target interval; only the strictly earlier source revisions are eligible."
+      ],
+      "ai_assisted": true,
+      "independent_human_validation": false,
+      "human_review": {
+        "reviewer": null,
+        "date": null,
+        "extraction_correct": null,
+        "notes": null
+      }
+    }
+  }
+}

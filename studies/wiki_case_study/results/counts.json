@@ -1,0 +1,1219 @@
+{
+  "analysis_protocol_sha256": "bbc8e09a821dac3676e5a2ace0fcbfe5cbd0b948f4fb5845cb269599a3e079a9",
+  "counts": {
+    "ambiguous_reference_occurrences": 4,
+    "auxiliary_added_line_records": 90,
+    "distinct_inserted_target_handles": 1128,
+    "distinct_observed_handles": 2997,
+    "distinct_snapshot_target_handles": 1788,
+    "eligible_snapshot_occurrences": 16585,
+    "eligible_snapshot_pairs": 10520,
+    "eligible_target_revisions": 10884,
+    "excluded_or_ambiguous_pairs": 7428,
+    "excluded_or_ambiguous_revisions": 2519,
+    "excluded_source_order_pairs": 5412,
+    "inherited_only_pairs": 7380,
+    "inherited_reference_occurrences": 11731,
+    "inserted_reference_occurrences": 4854,
+    "inserted_reference_pairs": 3140,
+    "naive_snapshot_occurrences": 24757,
+    "naive_snapshot_pairs": 12536,
+    "pair_exclusion_reasons": {
+      "ambiguous_predecessor_order": 4031,
+      "boundary_only_or_unmapped_reference": 4,
+      "missing_predecessor": 4,
+      "no_strictly_earlier_same_site_source_page": 5412,
+      "publisher_recreation_or_revert_not_new_authorship": 48,
+      "restoration_not_new_authorship": 2257
+    },
+    "raw_snapshot_pairs_before_source_check": 17948,
+    "revision_exclusion_reasons": {
+      "ambiguous_predecessor_order": 2228,
+      "missing_predecessor": 11,
+      "publisher_recreation_or_revert_not_new_authorship": 63,
+      "restoration_not_new_authorship": 1272
+    },
+    "revision_flags": {
+      "ambiguous_latest_predecessor_interval": 395,
+      "duplicate_snapshot": 41,
+      "missing_or_redacted_author": 91,
+      "missing_predecessor": 11,
+      "nonpreceding_or_undated_predecessor": 1658,
+      "overlapping_same_page_timestamp_intervals": 2082,
+      "publisher_recreation": 63,
+      "redacted_author": 91,
+      "restoration_of_earlier_snapshot": 1272,
+      "tied_predecessor_timestamp": 26,
+      "tied_same_page_timestamp": 194
+    },
+    "target_revisions": 13403,
+    "target_revisions_with_inserted_reference": 2500,
+    "target_revisions_with_snapshot_match": 6048,
+    "total_input_records": 14681,
+    "total_input_revisions": 14591
+  },
+  "excluded_titles": [
+    "HomePage",
+    "RecentChanges",
+    "SandBox",
+    "WikiSandBox",
+    "Help",
+    "Index",
+    "FrontPage"
+  ],
+  "excluded_titles_present": [
+    "RecentChanges",
+    "SandBox"
+  ],
+  "input_validation": {
+    "archive": {
+      "bytes": 4228605,
+      "name": "full-wiki-logs.zip",
+      "sha256": "eb68aa12d26bf189d8bfc4ce47f4d8af66ae5ba7ebbadd429738297a3cbb25ae"
+    },
+    "authors_missing_or_empty": 899,
+    "body_bytes": 27186058,
+    "body_encoding_counts": {
+      "ascii": 14340,
+      "latin1": 1,
+      "utf8": 250
+    },
+    "body_hashes_verified": 14591,
+    "event_population_warning": "The save, delete, revert and probe row populations overlap in what they describe; events.jsonl happens to contain 19,913 rows, but that physical row total has no incident meaning, and the 68 first-recreation relations are edges rather than rows.",
+    "event_rows": 19913,
+    "event_type_counts": {
+      "delete": 5217,
+      "probe": 101,
+      "revert": 4,
+      "save": 14591
+    },
+    "internal_checksums_verified": true,
+    "labels": 3103,
+    "offset_convention": "Python Unicode code points in decoded text",
+    "other_wikis": {
+      "completeness_assurance": "Partial recovered rendering; absence of a match is not absence from those sites",
+      "decoded_file": {
+        "bytes": 34390,
+        "name": "other-wikis.json",
+        "sha256": "130d34ef80b591f49d123793d39dcd9d94ee5598b962803ee231047eea22e03a"
+      },
+      "interpretation": "Added-line text only; removed lines are not indexed; no full bodies, labels or predecessor reconstruction",
+      "locator_hash_scope": "record_sha256 pins entire decoded JSON file; source_json_pointer locates added-line array",
+      "pages": 8,
+      "publisher_provenance": "The eight pages from publictestwiki, uncyclopedia and usemod that agent-swarm-site published on 2026-09-04 (commits 0deccdd5f, 59dc4e48a, 60911fe0f), rendered then by tools/gen_explorer.py from MediaWiki API exports and the usemod.org RCS store on a box this repo cannot reach. Those inputs were not kept, so each revision is here as what that render showed: the lines it added and removed, the save time, the /16 of the address. MediaWiki records no name for an anonymous edit, so label is absent.",
+      "recovered": "2026-09-07",
+      "revision_snippets": 90,
+      "supplied_file": {
+        "bytes": 4920,
+        "name": "other-wikis.json.gz",
+        "sha256": "2047f3a2915fb3d237ed03d01deef306d11021a6ffc42a57a5f60918d850a5fd"
+      },
+      "time_uncertainty": "Not supplied; no strict temporal claim without an uncertainty bound"
+    },
+    "pages": 4579,
+    "pages_with_earlier_unpublished_revisions": 17,
+    "parser_version": "tracebench-wiki-explorer-schema-2-v1",
+    "publisher_checks_reported": [
+      {
+        "actual": 14591,
+        "expected": 14591,
+        "name": "published revisions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4579,
+        "expected": 4579,
+        "name": "published pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 13403,
+        "expected": 13403,
+        "name": "dse revisions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 3908,
+        "expected": 3908,
+        "name": "dse pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 1013,
+        "expected": 1013,
+        "name": "probier revisions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 601,
+        "expected": 601,
+        "name": "probier pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 169,
+        "expected": 169,
+        "name": "fractal revisions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 68,
+        "expected": 68,
+        "name": "fractal pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 6,
+        "expected": 6,
+        "name": "dorfwiki revisions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 2,
+        "expected": 2,
+        "name": "dorfwiki pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4562,
+        "expected": 4562,
+        "name": "pages beginning at seq 1",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 17,
+        "expected": 17,
+        "name": "pages with earlier unpublished revisions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 27186058,
+        "expected": 27186058,
+        "name": "published body bytes",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 899,
+        "expected": 899,
+        "name": "blank-label revisions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 3103,
+        "expected": 3103,
+        "name": "distinct labels",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 3,
+        "expected": 3,
+        "name": "human-handle labels",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 251,
+        "expected": 251,
+        "name": "non-ASCII bodies",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 14340,
+        "expected": 14340,
+        "name": "ASCII bodies",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 250,
+        "expected": 250,
+        "name": "UTF-8 byte bodies",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 1,
+        "expected": 1,
+        "name": "Latin-1 byte bodies",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "source body hash failures",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 14591,
+        "expected": 14591,
+        "name": "round-trip revision rows",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "round-trip body hash failures",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "revision order failures",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "revision hunk regeneration failures",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "revision public identity failures",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4579,
+        "expected": 4579,
+        "name": "page keys",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4579,
+        "expected": 4579,
+        "name": "NFC-normalized page keys",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 77,
+        "expected": 77,
+        "name": "published names containing slash",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "published names containing tilde",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 1,
+        "expected": 1,
+        "name": "non-ASCII published names",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 3908,
+        "expected": 3908,
+        "name": "DSE pages with page family",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 671,
+        "expected": 671,
+        "name": "off-store unclassified pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 13414,
+        "expected": 13414,
+        "name": "write_time source rows",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "rclog": 50,
+          "reqlog": 13359,
+          "unknown": 5
+        },
+        "expected": {
+          "rclog": 50,
+          "reqlog": 13359,
+          "unknown": 5
+        },
+        "name": "write_time full grade histogram",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "rclog": 44,
+          "reqlog": 13359
+        },
+        "expected": {
+          "rclog": 44,
+          "reqlog": 13359
+        },
+        "name": "dse cut save grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "rclog": 22,
+          "reqlog": 991
+        },
+        "expected": {
+          "rclog": 22,
+          "reqlog": 991
+        },
+        "name": "probier save grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "rclog": 37,
+          "reqlog": 132
+        },
+        "expected": {
+          "rclog": 37,
+          "reqlog": 132
+        },
+        "name": "fractal save grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "write_date": 6
+        },
+        "expected": {
+          "write_date": 6
+        },
+        "name": "dorfwiki save grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "rclog": 103,
+          "reqlog": 14482,
+          "write_date": 6
+        },
+        "expected": {
+          "rclog": 103,
+          "reqlog": 14482,
+          "write_date": 6
+        },
+        "name": "whole-cut save grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "unknown save grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "rclog": 22,
+          "reqlog": 5
+        },
+        "expected": {
+          "rclog": 22,
+          "reqlog": 5
+        },
+        "name": "probier 2026-05 grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "reqlog": 977
+        },
+        "expected": {
+          "reqlog": 977
+        },
+        "name": "probier 2026-06 grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "reqlog": 9
+        },
+        "expected": {
+          "reqlog": 9
+        },
+        "name": "probier 2026-07 grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "rclog": 37
+        },
+        "expected": {
+          "rclog": 37
+        },
+        "name": "fractal 2026-05 grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "reqlog": 130
+        },
+        "expected": {
+          "reqlog": 130
+        },
+        "name": "fractal 2026-06 grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "reqlog": 2
+        },
+        "expected": {
+          "reqlog": 2
+        },
+        "name": "fractal 2026-07 grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 158016,
+        "expected": 158016,
+        "name": "rclog source rows",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 5218,
+        "expected": 5218,
+        "name": "dse [Admin1] deletion predicate rows",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 5217,
+        "expected": 5217,
+        "name": "deletion events",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 5144,
+        "expected": 5144,
+        "name": "deleted pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "rclog": 1,
+          "reqlog": 5216
+        },
+        "expected": {
+          "rclog": 1,
+          "reqlog": 5216
+        },
+        "name": "deletion grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4746,
+        "expected": 4746,
+        "name": "same-second delete requests",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 470,
+        "expected": 470,
+        "name": "one-second-prior delete requests",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 1,
+        "expected": 1,
+        "name": "ambiguous delete requests",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "[Admin1-host1]": 1874,
+          "[Admin1-host2]": 3343
+        },
+        "expected": {
+          "[Admin1-host1]": 1874,
+          "[Admin1-host2]": 3343
+        },
+        "name": "deletion actor IPs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": "AgentOfficialDirectQueryAA3",
+        "expected": "AgentOfficialDirectQueryAA3",
+        "name": "sole rclog deletion page",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "sole rclog deletion has clock note",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 3889,
+        "expected": 3889,
+        "name": "admin form_edit requests",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "[Admin1-host1]": 1490,
+          "[Admin1-host2]": 2399
+        },
+        "expected": {
+          "[Admin1-host1]": 1490,
+          "[Admin1-host2]": 2399
+        },
+        "name": "admin form_edit requests by IP",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 433,
+        "expected": 433,
+        "name": "eligible recreation deletions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 68,
+        "expected": 68,
+        "name": "first-recreation relations",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 50,
+        "expected": 50,
+        "name": "recreated pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "reqlog": 68
+        },
+        "expected": {
+          "reqlog": 68
+        },
+        "name": "recreation grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 64,
+        "expected": 64,
+        "name": "recreations with revision refs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4,
+        "expected": 4,
+        "name": "recreations without revision refs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 64,
+        "expected": 64,
+        "name": "stored first-recreation relation edges",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 63,
+        "expected": 63,
+        "name": "stored revisions carrying recreation relations",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4,
+        "expected": 4,
+        "name": "revert events",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "reqlog": 4
+        },
+        "expected": {
+          "reqlog": 4
+        },
+        "name": "revert grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "form_edit": 4
+        },
+        "expected": {
+          "form_edit": 4
+        },
+        "name": "no-body recovery request actions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4,
+        "expected": 4,
+        "name": "native revert request rows",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 60,
+        "expected": 60,
+        "name": "same-second recreation requests",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 8,
+        "expected": 8,
+        "name": "one-second-prior recreation requests",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 57,
+        "expected": 57,
+        "name": "recreator labels",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 66,
+        "expected": 66,
+        "name": "recreator IPs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 101,
+        "expected": 101,
+        "name": "probe events",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "reqlog": 101
+        },
+        "expected": {
+          "reqlog": 101
+        },
+        "name": "probe grades",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 39,
+        "expected": 39,
+        "name": "May probes",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 37,
+        "expected": 37,
+        "name": "May probe IPs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 62,
+        "expected": 62,
+        "name": "June probes",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 31,
+        "expected": 31,
+        "name": "June probe IPs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 68,
+        "expected": 68,
+        "name": "all probe IPs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": "2026-05-17T05:46:45Z",
+        "expected": "2026-05-17T05:46:45Z",
+        "name": "first probe",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": "2026-06-30T12:10:38Z",
+        "expected": "2026-06-30T12:10:38Z",
+        "name": "last probe",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "probe key schema",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "delete": 5217,
+          "probe": 101,
+          "revert": 4,
+          "save": 14591
+        },
+        "expected": {
+          "delete": 5217,
+          "probe": 101,
+          "revert": 4,
+          "save": 14591
+        },
+        "name": "event type populations",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 19913,
+        "expected": 19913,
+        "name": "events rows",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "pages ordered by page_key",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "labels ordered by UTF-8 bytes",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "events ordered by time and event_id",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "save key schema",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "general event key schema",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "non-probe event page keys",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 14591,
+        "expected": 14591,
+        "name": "save revision references resolve one-to-one",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 64,
+        "expected": 64,
+        "name": "stored recreation edges on save events",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 11,
+        "expected": 11,
+        "name": "multi-round pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 29,
+        "expected": 29,
+        "name": "multi-round relation edges",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 317,
+        "expected": 317,
+        "name": "AgentRelent stored revisions",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 308,
+        "expected": 308,
+        "name": "AgentRelent stored revision IPs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 4,
+        "expected": 4,
+        "name": "AgentRelent stored revision pages",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 798,
+        "expected": 798,
+        "name": "AgentRelent save requests",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 756,
+        "expected": 756,
+        "name": "AgentRelent save-request IPs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 119,
+        "expected": 119,
+        "name": "AgentRelent save-request /16s",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 3887,
+        "expected": 3887,
+        "name": "[Admin1] save requests",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 2,
+        "expected": 2,
+        "name": "[Admin1] save-request IPs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 603,
+        "expected": 603,
+        "name": "603-byte created-page revision exists",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": null,
+        "expected": null,
+        "name": "created-page diff base",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": "page_created",
+        "expected": "page_created",
+        "name": "created-page diff reason",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "created-page hunk covers every line",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": "2026-06-19T14:06:38Z",
+        "expected": "2026-06-19T14:06:38Z",
+        "name": "ZZZ construction page creation",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 1,
+        "expected": 1,
+        "name": "DataUSAConstructionWageSep18Live named deletion",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": "reqlog",
+        "expected": "reqlog",
+        "name": "DataUSAConstructionWageSep18Live named deletion grade",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 1,
+        "expected": 1,
+        "name": "ZZZDataUSAConstructionWageLive named deletion",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": "reqlog",
+        "expected": "reqlog",
+        "name": "ZZZDataUSAConstructionWageLive named deletion grade",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": {
+          "[Admin1]": 26,
+          "[Admin2]": 4,
+          "[Person22]": 1
+        },
+        "expected": {
+          "[Admin1]": 26,
+          "[Admin2]": 4,
+          "[Person22]": 1
+        },
+        "name": "labels overlapping pre-2026",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "published IPs overlapping pre-2026",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 2,
+        "expected": 2,
+        "name": "deletions sharing an RCS archive second",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "credential-parameter literals in JSONL outputs",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "forbidden research account in output objects",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 0,
+        "expected": 0,
+        "name": "request-derived URL strings retained",
+        "ok": true,
+        "population_id": "export_check"
+      },
+      {
+        "actual": 253552,
+        "expected": "< 2097152",
+        "name": "peak RSS KiB",
+        "ok": true,
+        "population_id": "export_check"
+      }
+    ],
+    "publisher_checksums": {
+      "events.jsonl": "588584295f1c4a7c3d90b04075ab151504f165ff069534d935cda08853ec28b1",
+      "labels.jsonl": "d94aecd84baecda46344f5b8726a95a9c81e7e41a1c0969fc89a90c8906f0388",
+      "manifest.json": "b6d53e16b5d9a6a0a98d4577238835ee7a574d7d10a8f1312330b4e626c6ba2b",
+      "pages.jsonl": "92b296170b496b836cdf5ef783bed9465d2d75db7e1a0becec1c36c8b7c42cfd",
+      "revisions.jsonl": "60df4a515178230aa952d9f64f6215aea4bd95ab2f05e31e484cf9b887e3f793"
+    },
+    "publisher_cut": {
+      "field": "revision.write_date",
+      "operator": ">=",
+      "value": "2026-05-01"
+    },
+    "publisher_database_sha256": "199241bf9e0b38b58764cf1545680de8fec8896db034050bde145e3b6f6ce0bb",
+    "publisher_events_inspected": true,
+    "publisher_generated_at": "2026-09-03T03:42:36Z",
+    "records": 14591,
+    "sha256_meaning": "Release integrity only; HTTPS acquisition provenance is recorded separately",
+    "sites": {
+      "dorfwiki": 6,
+      "dse": 13403,
+      "fractal": 169,
+      "probier": 1013
+    },
+    "source_kind": "publisher_export",
+    "text_decoding": "JSON body -> Latin-1 source bytes -> declared ascii/utf8/latin1 decode; no normalization",
+    "time_range": {
+      "max": "2026-07-02T17:51:22Z",
+      "min": "2026-05-24T06:02:19Z"
+    }
+  },
+  "inserted_pair_cross_handle_counts": {
+    "different": 1910,
+    "mixed": 363,
+    "same": 616,
+    "unknown": 251
+  },
+  "mechanical_verification": "all candidates checked; not independent human review",
+  "settings": {
+    "diff": "difflib.SequenceMatcher characters, autojunk=False; insert/replace spans",
+    "earlier_literal_occurrence_scope": "all supplied sites; no global-origin inference",
+    "first_revision": "eligible only with explicit is_creation=True",
+    "matching_rule": "(?<!\\w) escaped literal page title (?!\\w)",
+    "normalization": "none; case-sensitive exact Unicode strings",
+    "offset_unit": "Unicode code points; half-open [start,end)",
+    "pair_unit": "target site / target revision ID / referenced same-site page title",
+    "partial_records": "added-line snippets indexed for literal occurrences only; never targets/sources",
+    "predecessor": "explicit same-page parent, strictly earlier and latest unambiguous",
+    "receipt_streams": "unavailable; no complete empty streams are synthesized",
+    "restoration": "exact earlier non-immediate snapshot excluded from new attribution",
+    "source_page_scope": "same-site full revisions; all strictly earlier intervals retained",
+    "source_use": "unobserved; reference or posted read claim is not exposure/use",
+    "stable_identity": "unresolved; handles are not run identities",
+    "target_site": "dse",
+    "temporal_precedence": "source timestamp plus uncertainty < target timestamp minus uncertainty"
+  },
+  "source_kind": "publisher_export",
+  "study_type": "exploratory_descriptive_reference_audit",
+  "telemetry_inventory": [
+    {
+      "availability": "available_with_history_gaps",
+      "completeness_assurance": "Published write-date cut only; earlier unpublished rows flagged",
+      "evidence_type": "revision_snapshots",
+      "linkage_reliability": "Publisher page/revision IDs and previous logical sequence checked",
+      "meaning": "Stored revision contents with explicit same-page diff bases",
+      "provenance": "Checksum-verified revisions.jsonl and pages.jsonl",
+      "restrictions": "Snapshots contain inherited text; a held revision is not proof of new authorship"
+    },
+    {
+      "availability": "available_or_missing_by_record",
+      "completeness_assurance": "No stable identity assurance",
+      "evidence_type": "observed_handles",
+      "linkage_reliability": "Exact string comparison; IP prefixes are not identities",
+      "meaning": "Observed posted handles only",
+      "provenance": "Publisher label fields retained verbatim, including blanks and redactions",
+      "restrictions": "Do not infer owners or equate handles with runs"
+    },
+    {
+      "availability": "limited_save_and_probe_metadata",
+      "completeness_assurance": "No complete general read-request stream; raw request logs not included",
+      "evidence_type": "server_requests",
+      "linkage_reliability": "Save links use revision_ref; probes lack target source-read linkage",
+      "meaning": "Limited server evidence about saves and probes, not source-page reading",
+      "provenance": "Revision request_time/action metadata and publisher probe/save events",
+      "restrictions": "Candidate source-read requests remain unavailable; posted read claims unverified"
+    },
+    {
+      "availability": "available_selected_event_populations",
+      "completeness_assurance": "Population-specific release coverage only",
+      "evidence_type": "publisher_events",
+      "linkage_reliability": "Save revision references checked; recreation links may be derived",
+      "meaning": "Overlapping publisher populations, not independent incident counts",
+      "provenance": "Checksum-verified events.jsonl; save, delete, revert, probe schemas inspected",
+      "restrictions": "Do not add populations to estimate incidents or interpret omissions as non-events"
+    },
+    {
+      "availability": "unavailable",
+      "completeness_assurance": "none; absence of a type is not an empty complete stream",
+      "evidence_type": "stable_run_identity",
+      "linkage_reliability": "unknown",
+      "meaning": "Observed labels do not identify stable runs or owners",
+      "provenance": "Inspected explorer-schema-2 manifest, revisions, labels and events",
+      "restrictions": "Do not infer negative events or verified source selection from absence"
+    },
+    {
+      "availability": "unavailable",
+      "completeness_assurance": "none; absence of a type is not an empty complete stream",
+      "evidence_type": "authenticated_delivery",
+      "linkage_reliability": "unknown",
+      "meaning": "Save/probe success is not delivery of a source page to a target",
+      "provenance": "Inspected explorer-schema-2 manifest, revisions, labels and events",
+      "restrictions": "Do not infer negative events or verified source selection from absence"
+    },
+    {
+      "availability": "unavailable",
+      "completeness_assurance": "none; absence of a type is not an empty complete stream",
+      "evidence_type": "authenticated_context",
+      "linkage_reliability": "unknown",
+      "meaning": "No authenticated source-page context-entry receipts supplied",
+      "provenance": "Inspected explorer-schema-2 manifest, revisions, labels and events",
+      "restrictions": "Do not infer negative events or verified source selection from absence"
+    },
+    {
+      "availability": "unavailable",
+      "completeness_assurance": "none; absence of a type is not an empty complete stream",
+      "evidence_type": "source_selection",
+      "linkage_reliability": "unknown",
+      "meaning": "Direct realized source selection is unobserved",
+      "provenance": "Inspected explorer-schema-2 manifest, revisions, labels and events",
+      "restrictions": "Do not infer negative events or verified source selection from absence"
+    }
+  ]
+}

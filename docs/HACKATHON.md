@@ -1,45 +1,91 @@
 # Submission preparation
 
-This project is being prepared for the [Swarm Chasing hackathon](https://swarmchasing.com). The official site returned HTTP 403 during this setup session on October 3, 2026. The user subsequently supplied an excerpt of the official page. The requirements below are based on that excerpt; the live page was not independently read. The research-plan attachment remains a project proposal, not an authoritative competition specification.
+The [Swarm Chasing hackathon home page](https://swarmchasing.com/) and its
+[official logistics page](https://swarmchasing.com/logistics/) were independently
+retrieved with HTTP 200 on **October 3, 2026, at 12:20–12:21 p.m. Eastern
+(America/New_York)**. This replaces the earlier reliance on the user's supplied
+excerpt after a blocked request. The research-plan attachment is a project proposal,
+not an organizer specification.
 
-## Requirements from the supplied official-page excerpt
+## Verified organizer requirements
 
-The event says participants can work on whatever they like. Suggested directions include discovery, understanding and visualization, answering multi-agent research questions, agent whistleblowing, tracing information spread, web/digital forensics, and aggregating datasets. This project fits **tracing information spread** and **digital forensics**.
-
-The final submission calls for:
+**Submissions are due Sunday, October 4, 2026, at 5:00 p.m. Pacific / 8:00 p.m.
+Eastern**, including online participants. The logistics page links the
+[submission form](https://airtable.com/appFBFzD2Cv2rYCG5/shr8KXOLvo3xV9bnZ) and
+specifies one submission per team, containing:
 
 1. A short write-up or video explaining the project.
-2. A link to the GitHub repository containing the code.
-3. Optionally, a write-up of real results obtained using the tool.
+2. A GitHub repository link containing the code.
+3. Optionally, a write-up of real results found using the tool.
+4. Names and email addresses of everyone on the team.
 
-The excerpt describes approximately three to five judges from AI Village staff and field experts, with decisions shortly afterward. It does not provide numeric grading weights or a detailed rubric. No weights or minimum performance thresholds are inferred here.
+The organizer permits solo or team projects, online participation, other datasets,
+and work started before the weekend. The home page explicitly includes tracing
+information spread and web/digital forensics among its suggested directions, and
+links the German-wiki export as an allowed example dataset. These fit this project's
+scope; they are suggestions, not grading categories.
 
-`docs/SUBMISSION.md` is the short project write-up draft; the code repository is [yvrohith/Agent-swarm](https://github.com/yvrohith/Agent-swarm). The synthetic experiment report belongs in `results/REPORT.md`. Synthetic benchmark outcomes are clearly labeled and should not be presented as real incident results. The optional real incident analysis remains pending.
+The logistics page says online and in-person teams are judged alike by Grove
+Research and AI Village staff, with decisions expected roughly a week afterward.
+Neither retrieved page publishes scoring dimensions, weights, or minimum performance
+thresholds. None are inferred here. In-person demos are approximately two minutes
+each, Sunday 6:00–7:00 p.m. Pacific, from a shared computer; the organizer asks teams
+to have their code on GitHub before those demos.
 
-## Proposed deliverables
+## Completed local research artifacts
 
-These are project commitments derived from the research plan, **not verified organizer requirements or grading criteria**.
+The three components answer different questions and must remain separate in the
+submission. They are implemented and analyzed, and the user has authorized committing
+and pushing the completed work. The saved review validations record the preceding
+local review; they are not a statement of the current Git publication status.
 
-| Deliverable | Reviewable artifact | Acceptance criterion |
+| Component | Reviewable artifacts | What it establishes |
 | --- | --- | --- |
-| Precise research question | `CLAIMS.md` | Define realized source use, eligible outputs, and the distinction from counterfactual influence. |
-| Reproducible synthetic benchmark | Simulation, observation, estimation, and evaluation code | Fixed seeds reproduce output; estimators receive only the chosen telemetry projection. |
-| Telemetry ablation | `results/REPORT.md`, `results/trace_completeness.png`, and `results/trace_completeness.svg` | Compare five observation regimes on the same underlying worlds, including zero transmission. |
-| Honest empirical conclusions | Report plus `EVIDENCE_CARD.md` | Separate structural precision/recall behavior in clean logs from measured target-fraction errors; explain denominators and uncertainty. |
-| Small explorable demo | Local evidence explorer | Show measured errors and describe exactly which additional evidence a regime exposes. |
-| Research context | `docs/RELATED_WORK.md`, `LIMITATIONS.md` | Distinguish existing identification problems from this benchmark's contribution and list model assumptions. |
-| Real incident extension | `case_study/README.md` | Remain a scaffold until source provenance, license, identity mapping, and data availability are verified. |
+| Original synthetic benchmark | [Claims](../CLAIMS.md), [report and figure](../results/REPORT.md) | 144 simulated worlds and 1,440 evaluations with known structural source-selection truth; complete-log filtering properties are model invariants. |
+| Missing-receipt follow-up | [Frozen protocol](../studies/missing_receipts/ANALYSIS.md), [paired results and recall figure](../studies/missing_receipts/results/REPORT.md) | 40 fixed worlds, 1,280 evaluations and 640 paired contrasts; observation-only record loss exposes recall, false-attribution and unresolved-burden tradeoffs. This is review-informed, not preregistered. |
+| Public German-wiki audit | [Source manifest](../studies/wiki_case_study/source_manifest.json), [frozen protocol](../studies/wiki_case_study/ANALYSIS.md), [report](../studies/wiki_case_study/REPORT.md), [review sheet](../studies/wiki_case_study/results/review_sheet.json) | A descriptive audit of new versus inherited literal page-name references across 13,403 DSE revisions. Source-use truth is unavailable; exposure stays unknown. |
 
-The main contribution is a controlled measurement experiment: the same synthetic world is projected into different logs, and simple investigators are scored against hidden source-use labels. The temporal estimator is a proximity baseline, not a fitted Hawkes process. The implemented clean-logging baseline preserves every initially proposed true edge under telemetry filtering; true-positive counts and recall therefore stay constant while defined precision cannot decrease. Absolute target-fraction error can still be nonmonotonic. Missing or corrupted telemetry is a future stress test. The synthetic experiment is implemented; the real incident extension remains optional until its evidence is available.
+The [submission write-up](SUBMISSION.md) explains all three components and links their
+reports. The code repository is [yvrohith/Agent-swarm](https://github.com/yvrohith/Agent-swarm).
+The wiki report supplies the optional real-data results with explicit limits: its
+3,140 inserted reference pairs are not verified source-use edges or a copying-rate
+estimate. Human-review fields remain blank; automated checks and the AI-assisted
+review are labeled separately. Raw public exports remain ignored and are not
+redistributed in this repository.
 
-## Official requirements still to verify
+The [local evidence explorer](../demo/index.html) covers the original synthetic
+benchmark. It is a supporting demo, not a hosted deployment. Reproduction commands
+are in the [README](../README.md), individual reports and
+[case-study guide](../case_study/README.md). The [evidence card](../EVIDENCE_CARD.md),
+[limitations](../LIMITATIONS.md) and [related work](RELATED_WORK.md) state the evidence
+boundaries.
 
-| Requirement | Current status | Needed before submission |
+## Remaining submission checks
+
+| Item | Verified status | Remaining action |
 | --- | --- | --- |
-| Eligible project categories and research expectations | Broad scope described in the user-supplied excerpt | Check for additional eligibility rules in the complete current rules. |
-| Judging rubric and weights | No detailed rubric in the supplied excerpt | Record official dimensions and weights if published; do not substitute the proposal's informal ratings. |
-| Deadline and timezone | Unverified | Confirm the organizer's date, time, and timezone. |
-| Submission portal and required links/files | Write-up/video and code link specified in the supplied excerpt | Confirm the portal, any form fields, and formatting limits. |
-| Team, licensing, data, and prior-work rules | Unverified | Check eligibility and attribution requirements against the final artifact. |
+| Deadline and portal | Date, time, timezone and portal link verified on the official logistics page | Use the linked portal only if the user later authorizes submission. |
+| Form fields and limits | Required content listed above is verified on the logistics page; a read-only GET of Airtable returned HTTP 403 | Verify the live form's exact fields, length limits and attachment requirements before submission. |
+| Team details | Names and email addresses are required | User supplies or confirms the final roster; none are invented or sent. |
+| Code availability | The user authorized committing and pushing the completed research after local review | Verify the submitted repository revision contains the final artifacts. |
+| Judging rubric | No detailed rubric on either retrieved official page | Record any later organizer-issued rubric without substituting informal project criteria. |
+| Licensing, redistribution and other eligibility terms | No detailed licensing or additional eligibility terms found on the two retrieved pages | Check any terms presented by the final form; preserve data provenance and avoid redistributing raw exports. |
 
-No competition submission or public deployment is performed by preparing these files. Once official instructions are available, update this checklist and map their actual requirements to the existing artifacts.
+Commit and push are authorized. Competition submission, contacting organizers,
+repository-visibility changes and deployment remain separate actions that have not
+been performed.
+
+## Source record
+
+Retrieved HTML was inspected as inert text; no scripts were executed. The following
+hashes identify the specific official page bytes used for this check, not a promise
+that the live pages will remain unchanged:
+
+| URL | Retrieval date (Eastern) | Bytes | SHA-256 |
+| --- | --- | ---: | --- |
+| `https://swarmchasing.com/` | October 3, 2026, 12:20 p.m. | 96,747 | `4fa69d5653907d15bd8349af85d0e986ce26bc65e04fdf4efb2fd7ab22382fa8` |
+| `https://swarmchasing.com/logistics/` | October 3, 2026, 12:21 p.m. | 31,361 | `80ccf6a945b3020662ba7a39c28686cff1e738ab1eeac11a9c2a84c99da82e89` |
+
+The page gives October 3–4, Saturday–Sunday; the year is the current 2026 event
+context. The Eastern deadline uses the `America/Los_Angeles` to `America/New_York`
+conversion for October 4, 2026 (PDT to EDT).

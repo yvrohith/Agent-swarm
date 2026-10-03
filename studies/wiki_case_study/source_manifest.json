@@ -1,0 +1,1061 @@
+{
+  "schema_version": "wiki-source-manifest-v1",
+  "status": "acquired_and_publisher_checksums_verified",
+  "inventory_parser": {
+    "name": "python-standard-library-schema-inventory",
+    "version": "1",
+    "python": "3.12.14",
+    "scope": "Schema/count/provenance inspection only; no reference-candidate aggregate analysis"
+  },
+  "publisher_url": "https://collusion.wiki/",
+  "download_page": {
+    "requested_url": "https://collusion.wiki/explorer/download",
+    "retrieval_time_utc": "2026-10-03T15:44:16.696063+00:00",
+    "redirects": [],
+    "status": 200,
+    "final_url": "https://collusion.wiki/explorer/download",
+    "headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "4106",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"download.html\"",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sat, 03 Oct 2026 15:44:17 GMT",
+      "etag": "\"f29c7836780e82aa4735487f5025eac2\"",
+      "last-modified": "Sat, 03 Oct 2026 14:35:50 GMT",
+      "referrer-policy": "no-referrer",
+      "server": "envoy",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "sfo1::ngmjw-1791042257122-93af11415a4f",
+      "content-length": "9470",
+      "x-envoy-upstream-service-time": "244",
+      "connection": "close"
+    },
+    "byte_size": 9470,
+    "sha256": "21306cd384d3e590c69d8f313837f94916071791cb430a597beb4fb5c1bbb2cc",
+    "local_path": null
+  },
+  "archive": {
+    "requested_url": "https://collusion.wiki/explorer/download/full-wiki-logs.zip",
+    "retrieval_time_utc": "2026-10-03T15:45:45.751937+00:00",
+    "redirects": [],
+    "provenance": "Link verified on fetched official publisher download page",
+    "status": 200,
+    "final_url": "https://collusion.wiki/explorer/download/full-wiki-logs.zip",
+    "headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "43273",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"full-wiki-logs.zip\"",
+      "content-type": "application/zip",
+      "date": "Sat, 03 Oct 2026 15:45:45 GMT",
+      "etag": "\"6c69df6965c35a0ad8cc46bb66e192f5\"",
+      "last-modified": "Sat, 03 Oct 2026 03:44:32 GMT",
+      "referrer-policy": "no-referrer",
+      "server": "envoy",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "sfo1::kvx5t-1791042345950-ccca627ce94c",
+      "content-length": "4228605",
+      "x-envoy-upstream-service-time": "151",
+      "connection": "close"
+    },
+    "byte_size": 4228605,
+    "sha256": "eb68aa12d26bf189d8bfc4ce47f4d8af66ae5ba7ebbadd429738297a3cbb25ae",
+    "local_path": "data/raw/wiki/full-wiki-logs.zip"
+  },
+  "supplement_download": {
+    "requested_url": "https://collusion.wiki/explorer/download/other-wikis.json.gz",
+    "retrieval_time_utc": "2026-10-03T15:44:17.259949+00:00",
+    "redirects": [],
+    "status": 200,
+    "final_url": "https://collusion.wiki/explorer/download/other-wikis.json.gz",
+    "headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "62755",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"other-wikis.json.gz\"",
+      "content-type": "application/gzip",
+      "date": "Sat, 03 Oct 2026 15:44:17 GMT",
+      "etag": "\"120d31bb27ede0522c11fa7eae8a55bd\"",
+      "last-modified": "Fri, 02 Oct 2026 22:18:22 GMT",
+      "referrer-policy": "no-referrer",
+      "server": "envoy",
+      "strict-transport-security": "max-age=63072000",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "sfo1::ltft6-1791042257704-a4544aa077c0",
+      "content-length": "4920",
+      "x-envoy-upstream-service-time": "59",
+      "connection": "close"
+    },
+    "byte_size": 4920,
+    "sha256": "2047f3a2915fb3d237ed03d01deef306d11021a6ffc42a57a5f60918d850a5fd",
+    "local_path": "data/raw/wiki/other-wikis.json.gz"
+  },
+  "source_url_policy": "Only user-supplied official publisher/arXiv URLs and actually published download links were fetched; no original live wiki or incident-embedded URL was fetched.",
+  "release": {
+    "publisher_generated_at": "2026-09-03T03:42:36Z",
+    "database_sha256": "199241bf9e0b38b58764cf1545680de8fec8896db034050bde145e3b6f6ce0bb",
+    "database_hash_verification": "Publisher assertion only; original database not acquired",
+    "cut": {
+      "field": "revision.write_date",
+      "operator": ">=",
+      "value": "2026-05-01"
+    },
+    "exporter_tools": {
+      "python": "3.13.5",
+      "sqlite": "3.46.1",
+      "exporter": "explorer-schema-2",
+      "diff": "difflib.SequenceMatcher autojunk=False, line-split on \\n"
+    },
+    "main_time_range": {
+      "first": "2026-05-24T06:02:19Z",
+      "last": "2026-07-02T17:51:22Z"
+    },
+    "event_time_range": {
+      "first": "2026-05-17T05:46:45Z",
+      "last": "2026-07-14T13:56:54Z"
+    },
+    "physical_event_rows_warning": "The save, delete, revert and probe row populations overlap in what they describe; events.jsonl happens to contain 19,913 rows, but that physical row total has no incident meaning, and the 68 first-recreation relations are edges rather than rows."
+  },
+  "files": [
+    {
+      "name": "pages.jsonl",
+      "local_path": "data/raw/wiki/pages.jsonl",
+      "bytes": 2973326,
+      "sha256": "92b296170b496b836cdf5ef783bed9465d2d75db7e1a0becec1c36c8b7c42cfd",
+      "publisher_sha256": "92b296170b496b836cdf5ef783bed9465d2d75db7e1a0becec1c36c8b7c42cfd",
+      "publisher_checksum_url": "https://collusion.wiki/explorer/download",
+      "publisher_checksum_matches": true,
+      "archive_member": "pages.jsonl",
+      "archive_internal_checksum_matches": true,
+      "retrieval_time_utc": "2026-10-03T15:45:45.751937+00:00",
+      "record_count": 4579,
+      "schema": {
+        "body_bytes": [
+          "int"
+        ],
+        "bucket": [
+          "str"
+        ],
+        "deleted_live": [
+          "bool"
+        ],
+        "first_write": [
+          "str"
+        ],
+        "head_differs_from_live": [
+          "bool"
+        ],
+        "labels": [
+          "list"
+        ],
+        "last_write": [
+          "str"
+        ],
+        "live_body_variant": [
+          "str"
+        ],
+        "n_deletions": [
+          "int"
+        ],
+        "n_ip16": [
+          "int"
+        ],
+        "n_ips": [
+          "int"
+        ],
+        "n_labels": [
+          "int"
+        ],
+        "n_recreations": [
+          "int"
+        ],
+        "n_revs": [
+          "int"
+        ],
+        "n_revs_before": [
+          "int"
+        ],
+        "name": [
+          "str"
+        ],
+        "page_family": [
+          "str"
+        ],
+        "page_family_cohort": [
+          "NoneType",
+          "str"
+        ],
+        "page_family_confidence": [
+          "NoneType",
+          "float"
+        ],
+        "page_family_method": [
+          "NoneType",
+          "str"
+        ],
+        "page_family_source": [
+          "str"
+        ],
+        "page_id": [
+          "str"
+        ],
+        "page_key": [
+          "str"
+        ],
+        "wiki": [
+          "str"
+        ]
+      },
+      "field_presence_counts": {
+        "body_bytes": 4579,
+        "bucket": 4579,
+        "deleted_live": 4579,
+        "first_write": 4579,
+        "head_differs_from_live": 4579,
+        "labels": 4579,
+        "last_write": 4579,
+        "live_body_variant": 4579,
+        "n_deletions": 4579,
+        "n_ip16": 4579,
+        "n_ips": 4579,
+        "n_labels": 4579,
+        "n_recreations": 4579,
+        "n_revs": 4579,
+        "n_revs_before": 4579,
+        "name": 4579,
+        "page_family": 4579,
+        "page_family_cohort": 4579,
+        "page_family_confidence": 4579,
+        "page_family_method": 4579,
+        "page_family_source": 4579,
+        "page_id": 4579,
+        "page_key": 4579,
+        "wiki": 4579
+      },
+      "observed_time_range": {
+        "fields": [
+          "first_write",
+          "last_write"
+        ],
+        "first": "2026-05-24T06:02:19Z",
+        "last": "2026-07-02T17:51:22Z"
+      }
+    },
+    {
+      "name": "revisions.jsonl",
+      "local_path": "data/raw/wiki/revisions.jsonl",
+      "bytes": 41521492,
+      "sha256": "60df4a515178230aa952d9f64f6215aea4bd95ab2f05e31e484cf9b887e3f793",
+      "publisher_sha256": "60df4a515178230aa952d9f64f6215aea4bd95ab2f05e31e484cf9b887e3f793",
+      "publisher_checksum_url": "https://collusion.wiki/explorer/download",
+      "publisher_checksum_matches": true,
+      "archive_member": "revisions.jsonl",
+      "archive_internal_checksum_matches": true,
+      "retrieval_time_utc": "2026-10-03T15:45:45.751937+00:00",
+      "record_count": 14591,
+      "schema": {
+        "archived_at": [
+          "str"
+        ],
+        "body": [
+          "str"
+        ],
+        "body_encoding": [
+          "str"
+        ],
+        "body_len": [
+          "int"
+        ],
+        "body_sha256": [
+          "str"
+        ],
+        "change_summary": [
+          "NoneType",
+          "str"
+        ],
+        "diff_base": [
+          "NoneType",
+          "str"
+        ],
+        "diff_base_reason": [
+          "NoneType",
+          "str"
+        ],
+        "hunks": [
+          "list"
+        ],
+        "ip16": [
+          "str"
+        ],
+        "label": [
+          "str"
+        ],
+        "lines": [
+          "int"
+        ],
+        "name": [
+          "str"
+        ],
+        "page_id": [
+          "str"
+        ],
+        "page_key": [
+          "str"
+        ],
+        "rcs_path": [
+          "str"
+        ],
+        "rcs_rev": [
+          "str"
+        ],
+        "recent_changes_time": [
+          "NoneType"
+        ],
+        "related_event_id": [
+          "NoneType",
+          "list"
+        ],
+        "relation_type": [
+          "NoneType",
+          "str"
+        ],
+        "request_action": [
+          "NoneType",
+          "str"
+        ],
+        "request_time": [
+          "NoneType",
+          "str"
+        ],
+        "rev_id": [
+          "str"
+        ],
+        "round_id": [
+          "NoneType",
+          "list"
+        ],
+        "seq": [
+          "int"
+        ],
+        "success_time": [
+          "NoneType",
+          "str"
+        ],
+        "time": [
+          "str"
+        ],
+        "time_grade": [
+          "str"
+        ],
+        "uncertainty_seconds": [
+          "int"
+        ],
+        "wiki": [
+          "str"
+        ],
+        "winning_clock": [
+          "str"
+        ],
+        "write_date": [
+          "str"
+        ]
+      },
+      "field_presence_counts": {
+        "archived_at": 14591,
+        "body": 14591,
+        "body_encoding": 14591,
+        "body_len": 14591,
+        "body_sha256": 14591,
+        "change_summary": 14591,
+        "diff_base": 14591,
+        "diff_base_reason": 14591,
+        "hunks": 14591,
+        "ip16": 14591,
+        "label": 14591,
+        "lines": 14591,
+        "name": 14591,
+        "page_id": 14591,
+        "page_key": 14591,
+        "rcs_path": 14591,
+        "rcs_rev": 14591,
+        "recent_changes_time": 14591,
+        "related_event_id": 14591,
+        "relation_type": 14591,
+        "request_action": 14591,
+        "request_time": 14591,
+        "rev_id": 14591,
+        "round_id": 14591,
+        "seq": 14591,
+        "success_time": 14591,
+        "time": 14591,
+        "time_grade": 14591,
+        "uncertainty_seconds": 14591,
+        "wiki": 14591,
+        "winning_clock": 14591,
+        "write_date": 14591
+      },
+      "observed_time_range": {
+        "field": "time",
+        "first": "2026-05-24T06:02:19Z",
+        "last": "2026-07-02T17:51:22Z"
+      }
+    },
+    {
+      "name": "events.jsonl",
+      "local_path": "data/raw/wiki/events.jsonl",
+      "bytes": 8543896,
+      "sha256": "588584295f1c4a7c3d90b04075ab151504f165ff069534d935cda08853ec28b1",
+      "publisher_sha256": "588584295f1c4a7c3d90b04075ab151504f165ff069534d935cda08853ec28b1",
+      "publisher_checksum_url": "https://collusion.wiki/explorer/download",
+      "publisher_checksum_matches": true,
+      "archive_member": "events.jsonl",
+      "archive_internal_checksum_matches": true,
+      "retrieval_time_utc": "2026-10-03T15:45:45.751937+00:00",
+      "record_count": 19913,
+      "schema": {
+        "actor_label": [
+          "str"
+        ],
+        "change_summary": [
+          "str"
+        ],
+        "clock_delta_seconds": [
+          "NoneType",
+          "int"
+        ],
+        "clock_note": [
+          "NoneType",
+          "str"
+        ],
+        "event_id": [
+          "str"
+        ],
+        "event_type": [
+          "str"
+        ],
+        "ip16": [
+          "str"
+        ],
+        "page": [
+          "str"
+        ],
+        "page_held": [
+          "bool"
+        ],
+        "page_key": [
+          "str"
+        ],
+        "param_family": [
+          "str"
+        ],
+        "rcs_date": [
+          "NoneType"
+        ],
+        "recent_changes_time": [
+          "NoneType"
+        ],
+        "related_event_id": [
+          "NoneType",
+          "list",
+          "str"
+        ],
+        "relation_type": [
+          "NoneType",
+          "str"
+        ],
+        "request_action": [
+          "str"
+        ],
+        "request_time": [
+          "NoneType",
+          "str"
+        ],
+        "revision_ref": [
+          "NoneType",
+          "str"
+        ],
+        "round_id": [
+          "NoneType",
+          "list",
+          "str"
+        ],
+        "source_refs": [
+          "list"
+        ],
+        "success_observed": [
+          "bool"
+        ],
+        "success_time": [
+          "str"
+        ],
+        "time": [
+          "str"
+        ],
+        "time_grade": [
+          "str"
+        ],
+        "uncertainty_seconds": [
+          "int"
+        ],
+        "wiki": [
+          "str"
+        ],
+        "winning_clock": [
+          "str"
+        ],
+        "write_date": [
+          "NoneType"
+        ]
+      },
+      "field_presence_counts": {
+        "actor_label": 5221,
+        "change_summary": 5221,
+        "clock_delta_seconds": 5221,
+        "clock_note": 5221,
+        "event_id": 19913,
+        "event_type": 19913,
+        "ip16": 5322,
+        "page": 19812,
+        "page_held": 5221,
+        "page_key": 19812,
+        "param_family": 101,
+        "rcs_date": 5221,
+        "recent_changes_time": 5221,
+        "related_event_id": 19812,
+        "relation_type": 19812,
+        "request_action": 5322,
+        "request_time": 5221,
+        "revision_ref": 19812,
+        "round_id": 19812,
+        "source_refs": 5322,
+        "success_observed": 5322,
+        "success_time": 5221,
+        "time": 19913,
+        "time_grade": 19913,
+        "uncertainty_seconds": 5221,
+        "wiki": 19812,
+        "winning_clock": 5221,
+        "write_date": 5221
+      },
+      "observed_time_range": {
+        "field": "time",
+        "first": "2026-05-17T05:46:45Z",
+        "last": "2026-07-14T13:56:54Z"
+      },
+      "event_type_counts": {
+        "delete": 5217,
+        "probe": 101,
+        "revert": 4,
+        "save": 14591
+      }
+    },
+    {
+      "name": "labels.jsonl",
+      "local_path": "data/raw/wiki/labels.jsonl",
+      "bytes": 1471940,
+      "sha256": "d94aecd84baecda46344f5b8726a95a9c81e7e41a1c0969fc89a90c8906f0388",
+      "publisher_sha256": "d94aecd84baecda46344f5b8726a95a9c81e7e41a1c0969fc89a90c8906f0388",
+      "publisher_checksum_url": "https://collusion.wiki/explorer/download",
+      "publisher_checksum_matches": true,
+      "archive_member": "labels.jsonl",
+      "archive_internal_checksum_matches": true,
+      "retrieval_time_utc": "2026-10-03T15:45:45.751937+00:00",
+      "record_count": 3103,
+      "schema": {
+        "first_write": [
+          "str"
+        ],
+        "is_human_handle": [
+          "bool"
+        ],
+        "label": [
+          "str"
+        ],
+        "last_write": [
+          "str"
+        ],
+        "pages": [
+          "list"
+        ],
+        "save_request_ip16": [
+          "int"
+        ],
+        "save_request_ips": [
+          "int"
+        ],
+        "save_request_pages": [
+          "int"
+        ],
+        "save_request_source": [
+          "NoneType",
+          "str"
+        ],
+        "save_requests": [
+          "int"
+        ],
+        "stored_revision_ip16": [
+          "int"
+        ],
+        "stored_revision_ips": [
+          "int"
+        ],
+        "stored_revision_pages": [
+          "int"
+        ],
+        "stored_revisions": [
+          "int"
+        ],
+        "wikis": [
+          "list"
+        ]
+      },
+      "field_presence_counts": {
+        "first_write": 3103,
+        "is_human_handle": 3103,
+        "label": 3103,
+        "last_write": 3103,
+        "pages": 3103,
+        "save_request_ip16": 3103,
+        "save_request_ips": 3103,
+        "save_request_pages": 3103,
+        "save_request_source": 3103,
+        "save_requests": 3103,
+        "stored_revision_ip16": 3103,
+        "stored_revision_ips": 3103,
+        "stored_revision_pages": 3103,
+        "stored_revisions": 3103,
+        "wikis": 3103
+      },
+      "observed_time_range": {
+        "fields": [
+          "first_write",
+          "last_write"
+        ],
+        "first": "2026-05-24T06:02:19Z",
+        "last": "2026-07-02T17:51:22Z"
+      }
+    },
+    {
+      "name": "manifest.json",
+      "local_path": "data/raw/wiki/manifest.json",
+      "bytes": 62254,
+      "sha256": "b6d53e16b5d9a6a0a98d4577238835ee7a574d7d10a8f1312330b4e626c6ba2b",
+      "publisher_sha256": "b6d53e16b5d9a6a0a98d4577238835ee7a574d7d10a8f1312330b4e626c6ba2b",
+      "publisher_checksum_url": "https://collusion.wiki/explorer/download",
+      "publisher_checksum_matches": true,
+      "archive_member": "manifest.json",
+      "archive_internal_checksum_matches": true,
+      "retrieval_time_utc": "2026-10-03T15:45:45.751937+00:00",
+      "schema": {
+        "generated_at": "str",
+        "db_sha256": "str",
+        "cut": "dict",
+        "counts": "dict",
+        "per_wiki": "dict",
+        "population_counts": "dict",
+        "grade_histograms": "dict",
+        "body_bytes": "dict",
+        "body_encoding": "dict",
+        "page_family_coverage": "dict",
+        "facts": "dict",
+        "recreation_source": "dict",
+        "resources": "dict",
+        "tool_versions": "dict",
+        "source_scan": "dict",
+        "request_source_note": "str",
+        "checks": "list"
+      }
+    },
+    {
+      "name": "SHA256SUMS",
+      "local_path": "data/raw/wiki/SHA256SUMS",
+      "bytes": 398,
+      "sha256": "4c09a28dcda5d24506c31fe78029103a5cf90b4813c76f1d4db40613f3251d12",
+      "publisher_sha256": null,
+      "publisher_checksum_url": "https://collusion.wiki/explorer/download",
+      "publisher_checksum_matches": null,
+      "archive_member": "SHA256SUMS",
+      "archive_internal_checksum_matches": null,
+      "retrieval_time_utc": "2026-10-03T15:45:45.751937+00:00"
+    },
+    {
+      "name": "other-wikis.json",
+      "local_path": "data/raw/wiki/other-wikis.json",
+      "bytes": 34390,
+      "sha256": "130d34ef80b591f49d123793d39dcd9d94ee5598b962803ee231047eea22e03a",
+      "publisher_sha256": "130d34ef80b591f49d123793d39dcd9d94ee5598b962803ee231047eea22e03a",
+      "publisher_checksum_url": "https://collusion.wiki/explorer/download",
+      "publisher_checksum_matches": true,
+      "archive_member": null,
+      "archive_internal_checksum_matches": null,
+      "retrieval_time_utc": "2026-10-03T15:44:17.259949+00:00",
+      "schema": {
+        "recovered": "str",
+        "source": "str",
+        "pages": "list"
+      },
+      "page_count": 8,
+      "revision_snippet_count": 90,
+      "wiki_page_counts": {
+        "publictestwiki": 4,
+        "uncyclopedia": 1,
+        "usemod": 3
+      },
+      "revision_schema": {
+        "added": [
+          "list"
+        ],
+        "append": [
+          "bool"
+        ],
+        "ip16": [
+          "str"
+        ],
+        "removed": [
+          "list"
+        ],
+        "seq": [
+          "int"
+        ],
+        "time": [
+          "str"
+        ],
+        "time_grade": [
+          "str"
+        ]
+      },
+      "observed_time_range": {
+        "field": "time",
+        "first": "2026-05-11T04:10:47Z",
+        "last": "2026-06-16T19:12:00Z"
+      },
+      "observed_handle_records": 0,
+      "publisher_recovered_date": "2026-09-07",
+      "publisher_provenance_statement": "The eight pages from publictestwiki, uncyclopedia and usemod that agent-swarm-site published on 2026-09-04 (commits 0deccdd5f, 59dc4e48a, 60911fe0f), rendered then by tools/gen_explorer.py from MediaWiki API exports and the usemod.org RCS store on a box this repo cannot reach. Those inputs were not kept, so each revision is here as what that render showed: the lines it added and removed, the save time, the /16 of the address. MediaWiki records no name for an anonymous edit, so label is absent.",
+      "history_status": "partial rendered added/removed-line recovery; full snapshots and original inputs unavailable"
+    }
+  ],
+  "reconciliation": [
+    {
+      "metric": "revisions",
+      "observed": 14591,
+      "publisher_expected": 14591,
+      "matches": true
+    },
+    {
+      "metric": "pages",
+      "observed": 4579,
+      "publisher_expected": 4579,
+      "matches": true
+    },
+    {
+      "metric": "labels",
+      "observed": 3103,
+      "publisher_expected": 3103,
+      "matches": true
+    },
+    {
+      "metric": "dse_revisions",
+      "observed": 13403,
+      "publisher_expected": 13403,
+      "matches": true
+    },
+    {
+      "metric": "dse_pages",
+      "observed": 3908,
+      "publisher_expected": 3908,
+      "matches": true
+    },
+    {
+      "metric": "probier_revisions",
+      "observed": 1013,
+      "publisher_expected": 1013,
+      "matches": true
+    },
+    {
+      "metric": "probier_pages",
+      "observed": 601,
+      "publisher_expected": 601,
+      "matches": true
+    },
+    {
+      "metric": "fractal_revisions",
+      "observed": 169,
+      "publisher_expected": 169,
+      "matches": true
+    },
+    {
+      "metric": "fractal_pages",
+      "observed": 68,
+      "publisher_expected": 68,
+      "matches": true
+    },
+    {
+      "metric": "dorfwiki_revisions",
+      "observed": 6,
+      "publisher_expected": 6,
+      "matches": true
+    },
+    {
+      "metric": "dorfwiki_pages",
+      "observed": 2,
+      "publisher_expected": 2,
+      "matches": true
+    },
+    {
+      "metric": "event_save",
+      "observed": 14591,
+      "publisher_expected": 14591,
+      "matches": true
+    },
+    {
+      "metric": "event_delete",
+      "observed": 5217,
+      "publisher_expected": 5217,
+      "matches": true
+    },
+    {
+      "metric": "event_revert",
+      "observed": 4,
+      "publisher_expected": 4,
+      "matches": true
+    },
+    {
+      "metric": "event_probe",
+      "observed": 101,
+      "publisher_expected": 101,
+      "matches": true
+    },
+    {
+      "metric": "source_body_bytes",
+      "observed": 27186058,
+      "publisher_expected": 27186058,
+      "matches": true
+    },
+    {
+      "metric": "body_hash_failures",
+      "observed": 0,
+      "publisher_expected": 0,
+      "matches": true
+    },
+    {
+      "metric": "body_length_failures",
+      "observed": 0,
+      "publisher_expected": 0,
+      "matches": true
+    },
+    {
+      "metric": "first_pages_with_earlier_unpublished_revisions",
+      "observed": 17,
+      "publisher_expected": 17,
+      "matches": true
+    }
+  ],
+  "body_decoding": {
+    "raw_source_bytes": "JSON body string encoded as Latin-1 recovers original bytes for every record",
+    "analysis_text": "Decode recovered bytes using declared body_encoding; ascii/utf8/latin1 respectively",
+    "encoding_counts": {
+      "ascii": 14340,
+      "utf8": 250,
+      "latin1": 1
+    },
+    "source_byte_hash_verified_records": 14591,
+    "offset_requirement": "Evidence offsets must declare decoded Unicode text versus raw-byte representation"
+  },
+  "schema_notes": {
+    "diff_base_reason_counts": {
+      "page_created": 4562,
+      "None": 10012,
+      "earlier_revisions_not_published": 17
+    },
+    "timestamp_uncertainty_seconds_counts": {
+      "1": 14591
+    },
+    "time_grade_counts": {
+      "write_date": 6,
+      "reqlog": 14482,
+      "rclog": 103
+    },
+    "winning_clock_counts": {
+      "revision.pref_ts": 14591
+    },
+    "blank_label_revision_count": 899,
+    "dse_blank_label_revision_count": 0,
+    "dse_first_missing_predecessor_count": 11,
+    "probe_success_observed_counts": {
+      "False": 101
+    },
+    "publisher_hunks": "Line-based SequenceMatcher opcodes; replacement lines require finer attribution so unchanged tokens are not called inserted."
+  },
+  "capabilities": [
+    {
+      "evidence_type": "saved_revision_text",
+      "availability": "available_in_selected_cut",
+      "provenance": "revisions.jsonl + publisher SHA-256 + manifest cut",
+      "meaning": "Stored cumulative page text at an observed save; insertion requires comparison with same-page predecessor.",
+      "linkage_reliability": "Explicit page_id,rev_id,seq,diff_base; 17 first held revisions have unpublished predecessors.",
+      "completeness_assurance": "Reconciles to selected held-revision cut only; not a complete history of all writes or reads.",
+      "restrictions": "Raw corpus remains ignored; preserve redactions; inert text only."
+    },
+    {
+      "evidence_type": "page_and_label_metadata",
+      "availability": "available",
+      "provenance": "pages.jsonl and labels.jsonl",
+      "meaning": "Publisher page summaries and observed preference-label summaries; labels include blank/redacted names.",
+      "linkage_reliability": "Explicit names/keys; labels are not authenticated run IDs.",
+      "completeness_assurance": "Counts reconcile to selected release; does not establish all people/runs/edits.",
+      "restrictions": "Do not re-identify or infer stable identity from label/address summaries."
+    },
+    {
+      "evidence_type": "save_delete_revert_events",
+      "availability": "available_derived_selected_populations",
+      "provenance": "events.jsonl, manifest source_scan/recreation_source",
+      "meaning": "14,591 saves,5,217 deletions,4 reverts; overlapping record populations, not additive incident counts.",
+      "linkage_reliability": "revision_ref present for saves; relation linking is partly reconstructed by publisher, including fallback links.",
+      "completeness_assurance": "Publisher-selected populations; no blanket logging completeness assurance.",
+      "restrictions": "No exposure/source-use upgrades from event filename or write-event timestamps."
+    },
+    {
+      "evidence_type": "narrow_probe_requests",
+      "availability": "available_selected_family",
+      "provenance": "101 probe rows in events.jsonl",
+      "meaning": "Narrow executable-script request family; all success_observed false. These explicit negatives concern these probes.",
+      "linkage_reliability": "Publisher event IDs/source refs; does not supply actor-to-content-read edges.",
+      "completeness_assurance": "Not a general read-request log; absence of a different request is unknown.",
+      "restrictions": "Do not execute probe text or treat failed probes as source-page reads."
+    },
+    {
+      "evidence_type": "general_content_read_requests",
+      "availability": "unavailable_in_this_release",
+      "provenance": "Observed event-type inventory and publisher manifest; arXiv v2 separately acquired operator logs",
+      "meaning": "No general server-side content-read stream supplied. Posted read claims are text assertions only.",
+      "linkage_reliability": "unavailable",
+      "completeness_assurance": "none; absent telemetry type, not a complete empty stream",
+      "restrictions": "Do not fetch original live wiki or fabricate request records."
+    },
+    {
+      "evidence_type": "authenticated_delivery_receipts",
+      "availability": "unavailable",
+      "provenance": "No corresponding export stream/schema",
+      "meaning": "Write success_time fields do not authenticate a source-content response delivered to a target run.",
+      "linkage_reliability": "unavailable",
+      "completeness_assurance": "none",
+      "restrictions": "Missing telemetry type remains unknown, not observed non-delivery."
+    },
+    {
+      "evidence_type": "authenticated_context_insertion",
+      "availability": "unavailable",
+      "provenance": "No corresponding export stream/schema",
+      "meaning": "No authenticated runtime evidence of inserting source content into target context.",
+      "linkage_reliability": "unavailable",
+      "completeness_assurance": "none",
+      "restrictions": "Do not manufacture simulator-style context receipts."
+    },
+    {
+      "evidence_type": "stable_run_identity",
+      "availability": "unresolved",
+      "provenance": "Only observed label metadata used; no identity reconstruction performed",
+      "meaning": "Different handles need not be different runs; one handle need not be one run.",
+      "linkage_reliability": "observed-handle equality/difference only",
+      "completeness_assurance": "none",
+      "restrictions": "No new identity reconstruction or re-identification."
+    },
+    {
+      "evidence_type": "direct_realized_source_selection",
+      "availability": "unobserved",
+      "provenance": "No hidden structural labels or independent source-use ground truth",
+      "meaning": "Page-name references and self-reports cannot establish direct realized source use.",
+      "linkage_reliability": "unavailable",
+      "completeness_assurance": "none",
+      "restrictions": "No real-data theta,precision,recall,source-use bounds or causal interpretations."
+    },
+    {
+      "evidence_type": "supplemental_other_wiki_snippets",
+      "availability": "partial_recovery",
+      "provenance": "other-wikis.json recovered 2026-09-07 from earlier publisher render; original inputs not kept",
+      "meaning": "90 added/removed-line records on eight pages, no full snapshots or handles.",
+      "linkage_reliability": "page_key,sequence,time identify recovered snippets; prior full state unavailable",
+      "completeness_assurance": "none; earlier occurrence may be found, absence cannot establish origin",
+      "restrictions": "Supplemental indexing scope must be explicitly declared; not eligible DSE targets."
+    }
+  ],
+  "related_work_retrievals": [
+    {
+      "requested_url": "https://arxiv.org/html/2609.12748v2",
+      "retrieval_time_utc": "2026-10-03T15:44:17.759890+00:00",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://arxiv.org/html/2609.12748v2",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://arxiv.org/html/2609.12748>; rel='canonical'",
+        "server": "envoy",
+        "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+        "last-modified": "Mon, 21 Sep 2026 00:43:17 GMT",
+        "etag": "\"CNn328m4/pYDEAE=\"",
+        "x-robots-tag": "nofollow",
+        "accept-ranges": "bytes",
+        "age": "259270",
+        "date": "Sat, 03 Oct 2026 15:44:18 GMT",
+        "x-served-by": "cache-lga-kjfk8660073-LGA, cache-lga-kjfk8660073-LGA, cache-lga-kjfk8660073-LGA, cache-bur-kbur8200091-BUR",
+        "x-cache": "MISS, HIT, MISS",
+        "x-timer": "S1791042258.163387,VS0,VE67",
+        "content-length": "798547",
+        "x-envoy-upstream-service-time": "153",
+        "connection": "close"
+      },
+      "byte_size": 798547,
+      "sha256": "f7ce1e314283c6129b5e15277f3433370bd75f4334d42a8cb838b866f79c7b2b",
+      "local_path": null
+    },
+    {
+      "requested_url": "https://arxiv.org/abs/2609.12748",
+      "retrieval_time_utc": "2026-10-03T15:44:18.287556+00:00",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2609.12748",
+      "headers": {
+        "last-modified": "Mon, 21 Sep 2026 00:43:14 GMT",
+        "cache-control": "max-age=3600",
+        "content-type": "text/html; charset=utf-8",
+        "content-security-policy": "frame-ancestors 'none'",
+        "x-cloud-trace-context": "6ee24230b918205d80d1bbb9789c9cb7",
+        "server": "envoy",
+        "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+        "x-frame-options": "SAMEORIGIN",
+        "accept-ranges": "bytes",
+        "age": "1086610",
+        "date": "Sat, 03 Oct 2026 15:44:18 GMT",
+        "x-served-by": "cache-lga-kjfk8660051-LGA, cache-lga-kjfk8660051-LGA, cache-lga-kjfk8660051-LGA, cache-bur-kbur8200099-BUR",
+        "x-cache": "MISS, HIT, HIT",
+        "x-timer": "S1791042259.691698,VS0,VE1",
+        "content-length": "44379",
+        "x-envoy-upstream-service-time": "115",
+        "connection": "close"
+      },
+      "byte_size": 44379,
+      "sha256": "6c80cbc9d6be613001903711c1c5d019a0679be7210842332d895df310310990",
+      "local_path": null
+    }
+  ],
+  "restrictions": [
+    "Raw archive and extracted corpus stay under ignored data/raw/.",
+    "No raw redistribution, credential use, re-identification, execution or active rendering.",
+    "Checksums verify correspondence to published bytes; they do not establish logging or historical completeness.",
+    "Parser success and temporal continuity do not establish completeness.",
+    "This manifest records inventory; exact analysis scope and exclusions are frozen separately before candidate aggregates."
+  ],
+  "earlier_acquisition_attempt": {
+    "status": "proxy_CONNECT_403_before_success",
+    "origin_response_received": false,
+    "corpus_bytes": 0,
+    "resolved": "Later authorized official URLs returned HTTPS 200; successful provenance above supersedes initial blocker."
+  }
+}

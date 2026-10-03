@@ -1,0 +1,17 @@
+{
+  "algorithm": "sha256",
+  "analysis_protocol_sha256": "bbc8e09a821dac3676e5a2ace0fcbfe5cbd0b948f4fb5845cb269599a3e079a9",
+  "analysis_source_files": {
+    "wiki_analysis.py": "8eed62eed7103d65e7ad609b2c4ab7cd29ce232f87cfce512c8df3e247afd194",
+    "wiki_loader.py": "cbcf2689511801e55814e7d8931383f74f899f42c5bc2c6b51c8b07dba9636f7",
+    "wiki_model.py": "aeb2ade4aa4b657ef6c153ec32bc7ef237feefcb31e6dc211417e2090e0e5eb6",
+    "wiki_study.py": "d62c9c32fdbec69df8c749f3958472401c6525b058b8fb91919f9e8085f34c82"
+  },
+  "files": {
+    "REPORT.md": "7da8a07f28614ceb194aa3c7fa1c9f95f4f729366fa0bb5e76b5055a4a8ff082",
+    "counts.json": "dd8d2f6f8ec1106a052ed914ea7622b4c99b16f3df985cf73688b8bb0ab40676",
+    "evidence_cards.json": "762ebd18c5b0edf74e3beac40fa851bdefcc1a6a68ac9276960e8b22a66784e7",
+    "review_sheet.json": "b09c82b6738ea8e9be8fd202320b5fc904ec049dc7ad0d3e53574a2c7a04a443"
+  },
+  "schema_version": 1
+}

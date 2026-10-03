@@ -1,0 +1,73 @@
+{
+  "bootstrap_samples": 2000,
+  "freeze": {
+    "command": "MPLCONFIGDIR=/workspace/.cache/matplotlib .venv/bin/pytest -q",
+    "fixture_note": "Early correctness fixtures used seeds 211/213 with 30 runs; they were moved to 41/43 before freeze. No 120-run follow-up world was evaluated before freeze. This is not claimed to be preregistered or untouched holdout evaluation.",
+    "passed_tests": 124,
+    "review": "Independent read-only review found no blocker for the bounded loss-only experiment.",
+    "status": "Frozen after correctness tests, before the bounded 120-run experiment"
+  },
+  "mask_seed_base": 900000,
+  "methods": [
+    "temporal",
+    "witness"
+  ],
+  "n_runs": 120,
+  "policies": [
+    "conjunction",
+    "evidence_aware"
+  ],
+  "policy_assumptions": {
+    "authentication_scope": "Trusted retained simulator receipts; no cryptographic verification or forged-record model.",
+    "completeness_scope": "Channel-wide; affected channel incomplete at nominal retention below 1, regardless of realized loss.",
+    "mask_rule": "One independent SHA-256 rank per public receipt key and mask seed; same ranks reused at all retention levels.",
+    "negative_evidence": "Absence excludes exposure only when declared complete relevant logging makes that absence informative.",
+    "positive_evidence": "Semantically valid context-entry receipt supports exposure even without upstream logs; it does not establish source selection.",
+    "receipts_authenticated": true,
+    "unknown_handling": "Unresolved exposure candidates never enter scored predictions; burden is reported separately."
+  },
+  "profiles": [
+    "drop_delivery",
+    "drop_context"
+  ],
+  "regime": "context",
+  "retentions": [
+    1,
+    0.9,
+    0.5,
+    0
+  ],
+  "reviewed_baseline_commit": "36be8fa3682b294462ac65f8c2f750119e75cdb2",
+  "shock_strengths": [
+    0.9
+  ],
+  "study_id": "missing-receipts-followup-v1",
+  "study_type": "follow-up stress test informed by review; not preregistered",
+  "transmission_probabilities": [
+    0,
+    0.3
+  ],
+  "world_seeds": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219
+  ],
+  "writes_per_run": 3
+}
