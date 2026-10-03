@@ -2,7 +2,7 @@
 
 **Authors and team contact:** user-owned fields, not supplied in this repository's verified attribution record.
 
-**Code:** <https://github.com/yvrohith/Agent-swarm> · [Demonstration](../demo/failure_modes.html) · [Presentation script](DEMO_WALKTHROUGH.md) · [Reviewer guide](REVIEWER_GUIDE.md)
+**Code:** <https://github.com/yvrohith/Agent-swarm> · [Reviewer guide](REVIEWER_GUIDE.md)
 
 ## Abstract
 
@@ -47,7 +47,7 @@ Terra's audited family `f_9695d2661a05a12eced27723` instead contains a valid wro
 
 Small selected cases, one sampled completion per variant, changeable model aliases, shared alignment machinery and possible public-text familiarity limit generalization. Whole worlds or case/history families, rather than repeated calls, underpin intervals; all-pass intervals do not imply universal reliability. These studies do not establish a new identification theorem or an optimal logging policy.
 
-[Accounting](../studies/evidence_responsiveness/results/execution.json) remains $3.446844 known charges plus $0.335912 reservations, totaling $3.782756 charged-or-reserved; exact actual cost is unknown. The prior audit reported 638 passing tests and 771 preserved input hashes. This consolidation checks saved numbers, links, permitted evidence packaging and preservation; its actual checks are recorded in the [reviewer guide](REVIEWER_GUIDE.md). It performs zero new experiments, model calls, external requests or spend.
+[Accounting](../studies/evidence_responsiveness/results/execution.json) remains $3.446844 known charges plus $0.335912 reservations, totaling $3.782756 charged-or-reserved; exact actual cost is unknown. The prior audit reported 638 passing tests and 771 preserved input hashes. Those checks support implementation integrity, not scientific novelty. The [reviewer guide](REVIEWER_GUIDE.md) maps claims to their saved sources and explains reproduction and access limits.
 
 Tracked tables permit claim inspection and reaggregation. Exact fixtures and final answers remain in an ignored local package; hashes alone cannot enable independent response rescoring. Publication permissions, team attribution and final submission remain user-owned. [Organizer requirements](HACKATHON.md) and [source status](RELATED_WORK.md) are historical records, not newly verified requirements. Preparation is not publication or submission.
 
