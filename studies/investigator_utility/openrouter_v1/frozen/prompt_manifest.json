@@ -1,0 +1,1154 @@
+[
+  {
+    "arm": "A",
+    "attempt_key": "8d894e69eabc3ff76611f06a39424c1fa863134011736a15ee51f8d25f1acf8b",
+    "case_id": "s008",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "b93391ca24028ab688ddbd390da52be63a8d91d1ff337dd768aed3b363c48216",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "b93164bad492c798f0e8ed444f63c53adc05e674d79e581557bbb6db67e0b961",
+    "case_id": "s008",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "a7f8979f0481a42e3095fa59163ff042a80e0ccc3bf7ff775bbbd3307f2cb940",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "8fd3f0bf43d8c692142674fb725810b65bebfec105b8876acecb00d69e379643",
+    "case_id": "s008",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "dbe7a8cca2a0cb126dd53612f8ce556530c8d52f3dd5eeec3b0cc0062b76a54f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "b374b272374a8534aecc967d70b1f5c796274e1afdd2fe68af0744974d9037b7",
+    "case_id": "s009",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "b9fabea45db70b8cfea2cd7a1fab14e35839e675444d85f4563939731e174bfb",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "1ddd1f9c17dec31afdecc579ab5b8b7d0378e25010ac445d70ba51c988466b6e",
+    "case_id": "s009",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "ea93e0dc304cff70ba9279e5b262f41ce74642dc45383ca003759191cbb4a114",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "a97960613ad13c419432a805c969fbaa90796340eb2942da2046da00d3df4f29",
+    "case_id": "s009",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "f3563df83ddd7cc0bf4f6451088c2f471b80838ef8036f1a5ee588bcf8b6c9c9",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "ad18dccf95546e78e5198e33dbfbfeb0e4c4f7b85702fae3db8db16803459579",
+    "case_id": "wiki_024de924633c3728",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "9658d4416d33ca21fc0395b9c5f9212a90f60ba5557bcc63645a9c23a73c85e0",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "955031bdf8d7758785b043f53e4400dd245400dd19a5dbe923d871efcbb4fd66",
+    "case_id": "wiki_024de924633c3728",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "90e4f3fef347fa11046177fc527e26536a147a641bebee46ea864eb6a894682f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "c38a4b13bfdc447b8494cbb86b869f2464896c561fc9930935f78b621e7f105e",
+    "case_id": "wiki_024de924633c3728",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "803f65ef4de9e6019bfdb398eb39b7d417487d0524199c7906383498c5724d28",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "970e8c63d3554d26f5dd173f6e8d4ba27afc5d714e414af75c2a9053f8ceef13",
+    "case_id": "wiki_0252f85ad8d798a1",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "b459b8c9a638368c1ada73ad9059d91eda95107daaaea10572d5b9a18af33a7c",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "49b9a89a27b0c0451dd8ec95619fd284e46a80c7b9c6de248f7fdc9bdcc8dbf5",
+    "case_id": "wiki_0252f85ad8d798a1",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "c1d217afb115eba9aeb9a39a8bc3d73740da7da44243c7b146b1679d7459c9c1",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "59e7bc13fe0c7c5206e6b137b429627d4f335b59e741bba8a6f6732e27b16faf",
+    "case_id": "wiki_0252f85ad8d798a1",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "520a1a867925aa1a28187f2137b1951a5b3b582c6976998e07f6cf69117c5501",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "61e2facfc4eea027159d86be115ccdaeab537c5a5c5eaeedff902d30412e3652",
+    "case_id": "s004",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "43397eacbd6b7a2d9e44d383f4f33a9dd710bc39480de11080e1d489a2b5da16",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "e983f2d334ea2afe1bd4dd0612fc5469cf17a65fdec3b7b6f4874b4af62c81cb",
+    "case_id": "s004",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "75c2a5d8e2c2111f2343b104f147c5d9aefdc922c96dd332a905f0e3f3d1ea33",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "3e399e6ee78346acedf3dbf35e283ae47d7dcfdfa47a372086b19176ae50901c",
+    "case_id": "s004",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "883227c788f1db0c6de7c8fb252a3f02ab6a713647b793fa3f1b155e55723c01",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "8cc7b99292382ed5ef84c2adf3cc5d39ada2fa936589128e106bed9fb3c60764",
+    "case_id": "wiki_028b2268bbdc10a0",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "afd9f3f47c74a53128a8aa45473de0681c0dada3007e6b0b9de56525c0297d4f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "78f81c7856bb15a0108d734306b350779b4e64fb09c7bcdef86a6d502f7cd8ce",
+    "case_id": "wiki_028b2268bbdc10a0",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "92b8c292713e69fa124f4a6a7f493a653d31b3acb851a93418672bfdcf84bce8",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "be8feaff71cbc2c3f2df93f339b7fca71b2ee2a285c576e18b0cc6f119ba0662",
+    "case_id": "wiki_028b2268bbdc10a0",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "915442856a2354e3efc14dd06778b06be0e2f86b3e25d113c15f27748dfb6a4b",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "8f9a8492bd2e02307c1577407f88a404d470747d659428c10baf591db6e59797",
+    "case_id": "wiki_022044d9432b5bac",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "458fad04280e5bcfd723dbf8792ba8dfac80ad0d67af4e30632cdccc63b3fccd",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "e8b676336e4344af71ea2850519f1f0c342db32a20c0664055fffa89e1d262c1",
+    "case_id": "wiki_022044d9432b5bac",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "3842c2f28b9fbcd5fe4fd2bc3abc00fb3a3f53d5b8c405cbb9877aed1abd09bc",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "abd66d0d704acc7e2deb9b659906ce1bb33b2d2bfc9c63b6c6fae03459637aa6",
+    "case_id": "wiki_022044d9432b5bac",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "b11bbf1114dc279b193c236713021325291692c477406e17004d947787feab23",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "c802e82e4d19f0ecd9ac84b96ba9b3569328ff661f356d9fcddc7d11fe4d0515",
+    "case_id": "wiki_00f28627d035b3d7",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "0f371d14588d87f1d04e489d9f86e69b8ef44e87b116ecb4d3b8b6889f967497",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "78799911f154c730fa3e150846137e4553b00b9395458c1068f7e0afb2bd4c9f",
+    "case_id": "wiki_00f28627d035b3d7",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "c9ef01c75fbc1fe45d56b9806954c0a9cfc16ffd955a64ba6817375591aad55b",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "c2e9d1ae1a779ed682be96ba05815d961eb9c2949263ee17e9146203a081d9c6",
+    "case_id": "wiki_00f28627d035b3d7",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "dca50438d8eb01f18402cb9a879eeefd1112c84b5be1dcbfa0ba65bf35014d1e",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "7647267717fd901e53d9ec6443d445006f380d4d199bc74459724e6215ea2715",
+    "case_id": "wiki_004b8eda7b936681",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "6e9ae0eb54c75d6eb199d1d1246d8ac12adf1c8926f2644392c56e7d5bf3159a",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "cc39558a2153ab56c1112cc3f99a51a7d01b891baaca2ab2e524f96b00e5b6e2",
+    "case_id": "wiki_004b8eda7b936681",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "7a8c9c79f01723ef85aa288927d9dbde6a27302fb053d0632ef5dcaebf965460",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "e9b2ab5e74b4fb8a3c63f8a43fb52f0d66074f31e26c87310a3b9acfc7d991b1",
+    "case_id": "wiki_004b8eda7b936681",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "f6095a1c5b1c3c6cf1b74c388fcd73167b9d165839b9bed9201e3aa1273596a6",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "808ae4abea8f290511e9705085a7a77b39d645cc15765fc86ab9275ebd3ab0bd",
+    "case_id": "wiki_00934b155f20a8eb",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "d5433316e01d4b46cf7723b5cb2139056ecf1cce6969b023bc85bfe53c305091",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "4c356af4942f26ecdf5e14eca200102ef0e8ced9cf99caf8ed7ec25bdd26d3fd",
+    "case_id": "wiki_00934b155f20a8eb",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "9a82060f7a786c5c742b5e7eacc90003c501b6d2fd9ceea4cfca30b5b2363071",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "3510081927dc8678854908af03b538c8c28bbfe934d6b41cc6ef6f77d2a9d10e",
+    "case_id": "wiki_00934b155f20a8eb",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "34ab07220a20dadade74efd3a34263b9f6e6d6e929082bf1538c0f2908b845e8",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "a1fad3a46889572ee750d2ea1f00c00112484d25d18a9b6a0cef24b8ec375090",
+    "case_id": "wiki_02242579e77fc4f9",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "f3b50f6a51dfee5191374d9431dda62e3470be78be82bb0fad012efeb89fc0eb",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "9624cb670776e6f58633e7aaabe63ec6ae16c8a01c10941598021418fe28e798",
+    "case_id": "wiki_02242579e77fc4f9",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "47eb8f36db6d10f3eb7a1e37462abdae5a9ec9d1347514715f360bf4f917f77a",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "1a7488b7c07a80bf3cf633c2d4a41ddaf373c2f8d44773328260b8515b86fa69",
+    "case_id": "wiki_02242579e77fc4f9",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "fef82ba10f8ca30ca3a45fc6bb7ef1cbf8a0e1e8030a4a696843d25cafdced62",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "18a98599be8287593d1eef3af143f9d7f68848f086ec55858bbc6c932892aca1",
+    "case_id": "s003",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "53f74add34fe63874b462c5d4b993ca961f37dd8b274cbfadd9eae4e14a27f6f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "87f6db4920230f177e4ff08f03f3fd080555e4d6dab95e8a3d3be9e7ba6ce262",
+    "case_id": "s003",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "e8073ecd03dd6420e6992a1d3c28db73f9dbd9aac06e4599a245680001e523ab",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "60f117f60665ab8b5ea1c2de76b17fcef75b1c6e49dc6995b90d513c252fa2bc",
+    "case_id": "s003",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "cc815c16f400f48ba27c3a44eb75f70d5d72198c031f1ac58f47f8a7a9214078",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "d289a14f5bff8029030e22afae2e5387331136b5d3f1be7a24f49113efe21c97",
+    "case_id": "wiki_00a62ba4a1e63afd",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "9711c0b116691571586434dab765decfe1fa304be727fc84e68838b698bc417a",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "1a2374adddb1d0d36f09e38ade871900d4ad505a00c0b590271fd1d004c6d4f9",
+    "case_id": "wiki_00a62ba4a1e63afd",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "dd86e51c4fea9fbd87c522ce7b269630b143eeb5f6882d0ed815d8e5d61cf31e",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "9265df0ebd656495bcf13757cd7579566577a780b679704d6c022bb7fe19d8d7",
+    "case_id": "wiki_00a62ba4a1e63afd",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "b49c79039ba5cadcb198fa4af394d77ba10b4a5cc78ba292c2842d4ffd1fcd7f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "8d8d590eeea96d237342329ec33cec09f0850e31343a435d1403e20e5555efc8",
+    "case_id": "s006",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "1523717b9c59313ef0e7bd2bda6face97eb39fc53cc779bbd56bf6def50b4187",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "7c0d3534f940a3afbfc6ece844102e2845050a0bf799a305e43cbc56431c5147",
+    "case_id": "s006",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "f7fd06d8c960b18321e4a8b4a208fa46c39fd550c0abdfe18d51dc25791348f4",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "0e33423159cd51a55aa7c040debeaa23ed59c9ae62189e833f6dd53d1834ab1a",
+    "case_id": "s006",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "b9003d0dfca227fd752656b8a5ebe0fa644349645e9a5fa94882ba4dcc206e8b",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "9c58aca5be0fef16612a12e8c6ec7fd0e427e654c0c7733678c6eb8548d40941",
+    "case_id": "wiki_008a6682a45fb0f8",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "4a9451508448d720bcccacae99b39e5b1de3a7b1308351375267a53f7a43d022",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "5f9cc0d54d0f63f9c227667faf9bd6e9f1f7ac942ea5d611ba414afad4575c1f",
+    "case_id": "wiki_008a6682a45fb0f8",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "3ff84fc9e46e4572a20ea37d047f91ac2cb5eb2d1562c942d63b3b6cec44e176",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "3d4bea90aa5a6e9ea59bbacc569cf6f2c089240e41932aa39d973debf0c4faa8",
+    "case_id": "wiki_008a6682a45fb0f8",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "fc56cabbbfbb4096f7500eaeae466d2c4526f4716fa3a48cbddb50b3baf7050e",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "4a5fe9830494724913e1e896facfa2d2210aecec9383d453f9d2283e87d94097",
+    "case_id": "s005",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "2479f217183ef748c827ce84cf4d60726d75c1045ab05be26f09bba7f86d6993",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "96537b33e4de8287662902cf271137abaa56566e452a6d491eeac75478a6ca4d",
+    "case_id": "s005",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "187a6380f5dbdaaeb0238529e9c796a6f90226a143fcfcb3353f297d8c2a6ace",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "a5d216b8ffafdc0efc8c6d0205fe76c1a664b5105394984f74a2435afa310a61",
+    "case_id": "s005",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "84e12e123b5c7fff3b065dc873c2c5d02d7efb8a74245deb2e62d9a90a357d3b",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "a362ba8cfb466ac8d2e61665cae4cc38b92b2d51420929441f2bc4357c2ab852",
+    "case_id": "s010",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "bd63ac313910281b933d760cb683346af10a7caab7b231f64cd70eb34a9d3cff",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "2d022e92a7a201eabce93ce371d279c72bfd4a02acd4f797f3171ca050f1d1ae",
+    "case_id": "s010",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "baca73eaef55146320189172d4aa80db080853b32babea00e31e63171d9a73ad",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "1726e790e090bc4aaecfefbd56844cec2d4036a4d1bf98f750bc960d15a64b25",
+    "case_id": "s010",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "efbd35d5bd540f25c23673fe36c3663403f263f403123f0c11041cfe27dee3d0",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "304245361f9faa371428e3e5dbc672d96a50d84f4b10d2f7e994399678c698a5",
+    "case_id": "wiki_00bf758d6c4598eb",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "949f6f303b75ce2846de824e3a29a3c32f82c77c2a3730b42b7546db71db8088",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "1962bec63b8548b591857ff973b11d1feb7546414c8cf28ce0c78771a319b592",
+    "case_id": "wiki_00bf758d6c4598eb",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "67cc9b5f26c49441593fbed7ca4235a4b311de41f01f8184e88aa79345785bcb",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "db6c8cc5b0676738c900619474c6a452c602be5d2805135b0098c32eec9c25e7",
+    "case_id": "wiki_00bf758d6c4598eb",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "5705b8c1acfd6375faf357c0dfe60e5b1849f22c3bf7fa64ffcabfef3ad20b4a",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "f826cc6f02b58a1e285d058b6d1f6b47aec930b5d67ec01db5f589278a93f027",
+    "case_id": "wiki_00453ee6390a4fd0",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "c895f0d158d81ce10eb6e4f54e8e745980d1e62dbef23953dc9d4de30bf97172",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "d311dede87fe94f76776e5effe480309bc084dbd2cce3a960ac6ce9048d3195a",
+    "case_id": "wiki_00453ee6390a4fd0",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "59ac6909ae4e28a8bc1e13530ffc08989d5acd67d1331937e3e411733151df11",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "2878db3625554d8107256fdc09a1278931b243e7748a79e33246e6f89db64722",
+    "case_id": "wiki_00453ee6390a4fd0",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "c0a0771180f5a491cb4fa1eb95f3ad406257bcc6274e809817ec7713a857f803",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "0ae30ed37b15e046fe5a68cf39ad9650181ffa53d804d537936759b65fa2cfdf",
+    "case_id": "s007",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "136368a94c84132c4b886208d04ca61a0246aa5976993175d0f14bbbf73a2a41",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "1c1201bae1c561e30ef33e470b1c656eab87d45ebb3fe50690b4904c905cc354",
+    "case_id": "s007",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "bb962f756744dc0c264cb4dd8a5773dc64671cf8496fd12c99fc783bf689fa44",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "224a0474acdb9320009fbca0a042a9ef1e38231448e559a3ea27a90dc7e178be",
+    "case_id": "s007",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "22cb418341cffca8147b103bc9597e68b5c54fe6cd04f8da2fd2149b4c02d73d",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "45effca7d6a27106cf255872a69e4bc7c5a09a4b029cefde0a12a859238610cd",
+    "case_id": "wiki_00f4297cef60b25f",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "280fde17a7cba14a993703ed5898885f86816c03d6ca1d42fb57337c93508560",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "9830568a28fcb24be82635148d33d84cc2f3d8ebc62c502d57c6de0623c55742",
+    "case_id": "wiki_00f4297cef60b25f",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "d24f5ccb352596e1558bf750a8b4c0c505485e774db635aa8618310754f1ab45",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "7385a217cb0c5ae696e90dd94f43c2324c06096d2fdd5739991159dad4f09822",
+    "case_id": "wiki_00f4297cef60b25f",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "e0754875de647c8a24b6c604aea702103bcfc91d0200e8932cea3c7221e84622",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "7371c304703fc0907ee93526e35669a198e5c86aff6e2e4db4d73ecd858ecc07",
+    "case_id": "wiki_0028fc1e8b7ce94f",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "375431b1c91bfa5bd7ac8f50b42a02e69050d60c34e0be6d84e14fdeceaea2e2",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "59cb62a22549cadbf108b2b696647eb2ab2c01a86c18873a1258caec19e6523c",
+    "case_id": "wiki_0028fc1e8b7ce94f",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "3a621f67092389768abd19fd49727c5e4896ac82ee31b90767414c961a22e389",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "830b99897a3bc269dde8bdf6eebe9302fcfba8b26bcb483d9d67d85abae9d332",
+    "case_id": "wiki_0028fc1e8b7ce94f",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "dbe21aaf903ac7551c2fcb442ffcc4f8432c82ed428a0477f6813f737f662861",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "1028d31f06755ba1c7a50d2cbf2e0dfffa53863a7a773e79124ac9359da01182",
+    "case_id": "wiki_005dcf4b1e328d0b",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "6a7d8fe16b34006b0f9dd61e49ac4a045f8680e204d6ed17ce252b6a59d58ad4",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "86adda1fb90a722c3452ac2970937420d466ca33029ce1fa9a6288a8d64c6e90",
+    "case_id": "wiki_005dcf4b1e328d0b",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "acee62a8a8fb33f68af4ac44339a1ca6e85e12b3e23379b3e84424ae4321c71d",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "b7587344df68e4c401e749834c4b0f0bd6a923b6c8c7078a5d892976c88c8499",
+    "case_id": "wiki_005dcf4b1e328d0b",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "a69ef42e61d4ade01dbe827c8f89594c02a6246b0f04db353f83674486b0a5d2",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "00cffa2704bf9f33308b3b159a6d1d89748e846835a6a679d9a18dbc81c05966",
+    "case_id": "wiki_00de99b2b79722ba",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "64e581242258c4df041f7f7330aab3bc3a50e5f84fecb6fe90a3ce1750b23fe1",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "214691ff513bf3725b4db3d115dddb6fe4551189850c175f59317c28c8576e8e",
+    "case_id": "wiki_00de99b2b79722ba",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "b062903be1afd72bce4787af0de39cb82ef1bf54c7955489d7fcade8c624cca6",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "b4eac31ca8c31cc146cb16867d5d216c2474ba724afba8e838b8496a593d2b60",
+    "case_id": "wiki_00de99b2b79722ba",
+    "model_id": "openai/gpt-5.6-terra",
+    "request_sha256": "1ec7341f7520782b97edd579767dd05643d68edf034d6e4ec249f85842ff4642",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "bf8e13ac76bd38b627fb00421a9faebef09d16ed47e52db064e285ebb55c412b",
+    "case_id": "s008",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "7ec5d4fd70ee0893f0dda7d9b5fea53261a3290df097ed6829153b535d4a271f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "0c563f84e3f2823b0f8598a6879a1e5591281b9a16e02e78e4b528af23b4c4df",
+    "case_id": "s008",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "cb1ab9e0bdcf394ee147a29c8a9831f166531fa0316b96e2c9e356eed4afa4d8",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "522eb67fde22ba72f05d18b9a9c14d3bc62f6284b448dda9d298852f419a3fdd",
+    "case_id": "s008",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f53d4982a5508ae74581dc08663ac5498532448d07858cbf74bbf27afbb0ba7e",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "cad19dce3caebe6ec23680fc95235104aa11c7d57e090ba8d533d2899517f006",
+    "case_id": "s009",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "cea94c27628a3c8f001a1d00a0c6e1b81217e4df448d8587400d20adf27d0261",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "b9df612d0dd7ba0996d92d02a559d08dab3b75be0acd7d4ddbfc3b2dee77f43d",
+    "case_id": "s009",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "fcdca2c24815ad475a9d960badc4bee99dbdc0307a0cb2ed25154c4ab32441c7",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "e2875775c6d49678fa85934e935698a2ad580633f4ef88582d065c15b7ae4401",
+    "case_id": "s009",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "5c30408d81d8f7f7dcc16dc6163a56ff8825fc95b2040743d7d1b2418549664d",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "87386510bb8a7beb79fb403be89250986a2e26134e83c8e9139e51eec94242d7",
+    "case_id": "wiki_024de924633c3728",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "1441a683778447e607411b443e7b4edc5a0c51097099c05ece6a40ff55689f77",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "82c97b59aa7d3652cf8cd017d1c33cf4098ab4ccc276df8f2afb8ea3eca9e3db",
+    "case_id": "wiki_024de924633c3728",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "245693e10d4d392515cba30ee7bb869f55447f0b5f4f087abd2ad395ab906f88",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "9cd72f29882d3156b84097e4ae89c2706a04f288286971c21a69a019fab92a8c",
+    "case_id": "wiki_024de924633c3728",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "a52d4a074f68da5f6de115cdd0fdd5baf9d7d5f023f2630fffd801140995f6ee",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "c9ab5373c32c12dc8ce162431555336bdaf723822467c56b90afaa0a7f787d4e",
+    "case_id": "wiki_0252f85ad8d798a1",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "c1f8cd3302c422e0304bdeab2f163bfa9dc7d36c1fa80e2eff6085cb75ee5242",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "686e3a0bcaa65912cb6d008ecc8748047e4d6867c4150d9cb8ec82b044d9e641",
+    "case_id": "wiki_0252f85ad8d798a1",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "639a209c5588f9ff1c983d531ddb406725bfc39d0edd9f8911413fba619883f4",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "dc002034672d5973415f2f13a57b0945c954792fd9ae207b85071384ffd11cf6",
+    "case_id": "wiki_0252f85ad8d798a1",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f8bbdd9f68b13f8cc870038c7060c335c177f09fcaa2049647a29efdff920efa",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "741c7ca0744b970584a21f02a9fa3be6bb505b7e09b29fe30d6f6f65f2a3867c",
+    "case_id": "s004",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "320654c1783d397123575a03e54ec7f5a95a90971077f92de5eae37c997d5171",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "379fc5cd03ed19110fece5f460e3f75c6b3450f4eebb7c64077618424ddcda40",
+    "case_id": "s004",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "58584bf33496e780e627c00eb84efcebf31d4240c05e0a252e07e18b4f0e3dd7",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "088d65a937cb91d084c89903712444eb4dc7797fa6dc4cbe002152f344d3e7a1",
+    "case_id": "s004",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "e387cf29235dd5a7cc61bd7d94469096f742fa7e8078242e9d8ec67033e3eb28",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "be89374033bdbe756a5e5c92f9c4ea2403a1849235d8d74a7704423fc64280f5",
+    "case_id": "wiki_028b2268bbdc10a0",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "49fc760b215a6a699905b63e224b14e211e582f7e813a8d8cfa8a2dc1a33d88f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "3e46d388d55478c2e9bf7ea3f017dfd5c584e17db77951764e0aebea1ce5495d",
+    "case_id": "wiki_028b2268bbdc10a0",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "e266b84d30d4ddd0a83306ad2e033fd3a17444515ef2a6c346cccc65fdfc853c",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "6157cdba76b8af5eb4f9427d928495eedb7e5a894e70761df8077af08362a0db",
+    "case_id": "wiki_028b2268bbdc10a0",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "416644f337c563a8fc972fb625773070ad5481868d73004679dbe8669cc00353",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "3c8f68af6c1f19c746dcbdd4acb8485cb166041fcb05b4ee7cca00d534e35037",
+    "case_id": "wiki_022044d9432b5bac",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "e8c0ae511abbb7d5de5c293e2cbe4d66354b7fdff4c9c8497d4b416134cf098d",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "14544a66d1e545b0f17996a61a53e548cb474a125dc985d1a6e8fc8c3820f136",
+    "case_id": "wiki_022044d9432b5bac",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "a5189c834be66fd63ff670c84e109cc8a4d32236dbecd761cb67de8b1f6111dc",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "ff7a2ddb53fe4b498748692a2f5e232acbf67d48da9ff4d95930e01f5f749bb4",
+    "case_id": "wiki_022044d9432b5bac",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f45de7af519003da8a06fecaf6f7a0cc1ea5b10f08cee4008e5893c1529333e8",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "f59d653300beb0c184120c13eadf37c50509b3d9910f1db849f92fae7c40d1d2",
+    "case_id": "wiki_00f28627d035b3d7",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "267da24c962ed081ef0a5271108dd23809444bc0c2a05c4ffe96d9e841355541",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "c853f473f73f12b9a82cce80bbbb46f656bb4c42c7a50eeb51cd632014a970ef",
+    "case_id": "wiki_00f28627d035b3d7",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "af28f73ba7702fb7bcf3df0badf781dc2e9cd99dc38e931c71d1278fc65e45e0",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "debe1c135801a5ba2bb57ee63f58b7359a48b0bf8580545ca9deab9b4a856631",
+    "case_id": "wiki_00f28627d035b3d7",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f32b0ec009564565759b5f74faff89961f90e772ec0e6abd43d746350ce8e1cc",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "e8569ff9f929db2a6624e9b63b5708d29beae9ceebc4e5ab203a5109341e68ba",
+    "case_id": "wiki_004b8eda7b936681",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "ed046c5cb1ab2eda517011a7faee8626c83fbe1f558b4da6e2230d00572d3400",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "536cd23aad2479ee3bd93db9c4e431cbf27186e2067e22bbafd362496a32cd14",
+    "case_id": "wiki_004b8eda7b936681",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "845fedceeef42cfa909ac0f36b89003ebd16ae0c23f417d80208da3373eb1a6c",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "e0b4c3113ff1f4d59058e4d2abdb7c5de066d476551e0fdea46acb920c9f97c7",
+    "case_id": "wiki_004b8eda7b936681",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "a911cd2a0891140caffa17b2f21cf60be73155e4a0e60e088d1dc7182a3db8c3",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "c0665c7f94c063923991193da7ff8f173b9685f43267e8a337d8ca7ffeaa714c",
+    "case_id": "wiki_00934b155f20a8eb",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "3c6ee4e27f9645e736d9c35f7a770e6eb6f49c7f3bbeaabffadabeca3fb03c73",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "ddcf6e309a923a687002950e85c2147565cc30881c7d42ffdb5ad0031d6a278b",
+    "case_id": "wiki_00934b155f20a8eb",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "31f11cfa4dd72e38b4044e7a25c9c359117cc552c4289ae22fcd84e560f686c0",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "57be0387f00e1c8828ececa775db1ffc68f0a80bb403a61ef28202caa5215909",
+    "case_id": "wiki_00934b155f20a8eb",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "11082a83158c69fc3505382953b058b6eb80a3b4f4b3c782eb129faceea70799",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "88f8e0af79431045ec4c1cd35673a99feb7e178ac1c09f021a8b9f91093831bd",
+    "case_id": "wiki_02242579e77fc4f9",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "90d9eae649c9e8dc1ab3ab159af26574ad7ded98b561d5d73da5b13d5ed88c11",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "1dfb292a708bfc52c536fd1f24ff0724f56f23456b441cbfa04a5b7ef1cb1725",
+    "case_id": "wiki_02242579e77fc4f9",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "2fd68f37e1eb37a0abd1d2964881b1dfaf374449bd184298793e2890c2bbdab3",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "0ff4836414743e54aae31cbe26ca703f6685feba65609fa8f32bd9a13c249dbe",
+    "case_id": "wiki_02242579e77fc4f9",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "913cb5e050b147968bac4956b9fd361bb45771f7ac36bdafe071d6a0928146f6",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "abbe6f0aa5f817c16b8aa0f2980b421ba0c8b97bad0d5b8ed92f779361fc0067",
+    "case_id": "s003",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "3379ff2461f15e540453a7d02f2f66c646e646044f0582dbdc25c541d4582508",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "65d84cd36a72f770d6858b84c12382bf8df5e7b15ecdb218cb91bc20d51ebbb3",
+    "case_id": "s003",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "caff9eedfcc61018df27404496f624f527ec022573f247ff38714901fd22df5f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "656dd3ceb9d1895a1a0c7a4d4249570f2b6830764115af07107c82a2ddbc2cce",
+    "case_id": "s003",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "9b641882cc2e3093c4bc1388821d7cb5777f3c5faf459cd120ddfb91f306fa31",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "44c88eb6b273f41f0a41a7076133e4759bf0f9a452722fec965005b5e7633a92",
+    "case_id": "wiki_00a62ba4a1e63afd",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "0a4c1364bfeb0986edf1baf186748dec1e200664dcf6b9cb7a4b2041f0ff7e40",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "646e099ce1e505d77d35bad84e2bac204a627770b7f90b2e28d50f6ec87386c3",
+    "case_id": "wiki_00a62ba4a1e63afd",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "dcd1ff2cb3df97508e9b52f60fb243d47090b207dca0a518a408e5b25eaa83b8",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "54b79c5d57ca9cbe5467c7bf41cd089f8da520895b419a2615244c4f7955558f",
+    "case_id": "wiki_00a62ba4a1e63afd",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "fd771a99b747e8863ff587fa06a04cdbda347ae8404a11d756bc0059bec8266e",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "8569214d57dac2590789f0821b6975b74c78cd8871ab6d182434a83ceb792231",
+    "case_id": "s006",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "d6043e97f0bd6c00318ec1cc8a45b98a0ff9be068513aa8e54906ba4e775d116",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "706efcd6f0059f01f862520bbee1121717ab09f085bebb048309e46e4f1a5381",
+    "case_id": "s006",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "c7d20c78731aef109a793d4ae93c217e668b4386c46602bb3beee23801ff15ff",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "e5968418671df6d0805db2d2c183ef58b97f9a24c4bdd26c9ff5646cfa941542",
+    "case_id": "s006",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "22871e1007e057e7113d36b384b49b26841557da3301c781b9e84f064000225c",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "fb6477acbce7aded338774874e67388d2e1f1c10f21cff46a13067c0869e7ce4",
+    "case_id": "wiki_008a6682a45fb0f8",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "880b446e8b0811373b056b7650d81d065c8aa37c307e8eb4dc10198ecc8baf1f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "2e9fae76dc443d1685ac8632936d7b67a852e19d6cf1696f487c84d811231bbe",
+    "case_id": "wiki_008a6682a45fb0f8",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "9380b04e090311ee6b0855a1185fd11e011de018c6ee455bc7c20444b99af905",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "6a1e35e7caac98cc533fcc9156e6c4c9f7ec250fcbbeb68e718f821d17b12d8c",
+    "case_id": "wiki_008a6682a45fb0f8",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "ce14dde30e761e320e915eddf76455e0d35d600225c4773881f0d84464b652b7",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "3df9d535fb9ede44d1971b3e0b6e0316e4288808073a8153757eb54e788a904e",
+    "case_id": "s005",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "255360fa609e87a85040ce2a47f39f0f1f53318ad7bfb2a248eb49be5eff88dc",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "fa9540dbe8fb4da626b6bee1bebf3b4306bad0a25bb14aeffae303075d0d529a",
+    "case_id": "s005",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "4c339330ef359a6bec4078fd478093ea35c0ad66653ee0b07491185891ea9e66",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "3d2188223713185e55b869cd66160be7394befd02b745219e8c1a21b3fa7af1b",
+    "case_id": "s005",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "2f974c115ae8c2b2112e158ccc13e86d14e22057e96c5cdac9ddb52f6e0f35ec",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "5c41b282c1e2e6f6a895657441fe42b2e29b7ea1edf721e7f4b0c85e82e8fc0f",
+    "case_id": "s010",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "846a52ea097835d492ab8a264b146601feda437f2044a23314f9dcd146b0bc0e",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "ea20a427c74f118e6066d086f24fa3c7e9faee9497cc52ea8b557d4b8958e476",
+    "case_id": "s010",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "9ffbd55fd01592a033469264e8f135d603877ee098b1578b8c6660bcdd5595a7",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "cb38cc8263786221cdf6882ca47cd46ef863ae113e8f6e7ab449479318ce0883",
+    "case_id": "s010",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "46548b138d1a4390753dae815095a27a9d8c1aa77ed6304eaf00ea70adb17e9b",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "465dfff4b6b60f0ca09fbca53bfd649869af05d74de149d4d214c99866f1c860",
+    "case_id": "wiki_00bf758d6c4598eb",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "007e8c6cc466089c667ca99a3d3d371fb28f6cd058e503651399c87e02ff44f3",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "69e37a5a2056257e38b3541927c36d0a3afe4e6049e7f1006ad9929820d0d6ae",
+    "case_id": "wiki_00bf758d6c4598eb",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "2cc306972e4bf9032d295787af93fe2a67127f465117e867d6c011af6b55767b",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "968a418f64e392dda1f883010c0071788c9a59ec1fe70f516c6fce4358062c7d",
+    "case_id": "wiki_00bf758d6c4598eb",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "25b30f4c803c8c2166378a9c14272791a88df04c843764db72f951c9fc071278",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "2f9d116c678d57fae0ce16f551db1b776598ed794844a1a6d8b025df2ceaecf1",
+    "case_id": "wiki_00453ee6390a4fd0",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "b1126e23d36dd427cce81722ab78a8916fd54e5d03486fce0003c4f3a2929fc0",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "5582fc662ee3487612e1a396a12db8789f57e4d1cd38bf0b655b696844628777",
+    "case_id": "wiki_00453ee6390a4fd0",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "c4bc93b92ed2bf89b2587901493e5575eb4bacd2f8d440da3bbbb2bdaa89941f",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "2dab1d1715ca6a8257a3612e156b3570b0d129612bc1aa32e9c7bbeb412cf5c0",
+    "case_id": "wiki_00453ee6390a4fd0",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "131a75d1f8378b29231b011f6307b24419d1e4fcad02b278923cac98df36f4d5",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "c7f3fa8c61b9ae169477eeb25337d870006bc6e90d48f7574c7205b885da3218",
+    "case_id": "s007",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "837608d0566c055fb30726b2706c33dc794b09b91901c1f9cfb2b1edf5515862",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "51bd964a96b0501c640802ae838ab1d0189b588982609440c4de2b583201e4ec",
+    "case_id": "s007",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "43f3125ea549c73db1a9ed74cce10d1a5db03c445eb64f90269887a28df8e918",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "7a9547c4ad5308e8a7859de223bcf3f6af3b60aa5dbef60a230898ee318b7201",
+    "case_id": "s007",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f03903fb8555d9dcfc0345594120b05aa9d24a369e48f91929abbaf71052c6d5",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "826237e715a5c9c58787b2372d31b4ec7f4d5d99aa25114569a15aeb57a14e6d",
+    "case_id": "wiki_00f4297cef60b25f",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "4441d5cbc9778380eda4e6150c7d47cc335c5bbb360fb985adb5587a593594ca",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "1357583a3b4aff8aa0c18a9982fa2e5f6dececeab934a7fe2fb26c7b60b21c77",
+    "case_id": "wiki_00f4297cef60b25f",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "7bd8e07ff81a64e4eadf4d0c2439760b76d82ca896d9811504b1861041c85196",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "5ad74e26653971887dede2d30ae144217bc212f9ca8ff1a92d89a8ee64b8efc9",
+    "case_id": "wiki_00f4297cef60b25f",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "45b0fcd374f54401359b515ac566788f8e5ed4f89ac1d61634f7381368dd8661",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "4cae0303c15087ffb1612dc22ec1e3ff3f87842cdc3cc71249cb278c3463dd31",
+    "case_id": "wiki_0028fc1e8b7ce94f",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "b3f325341dcfa2c4f3194d457064a3a436163be39930662612d5de1ff4196e27",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "58a5b77f9fa996ac5533b48e77b7406fb2c568f7d42e72f9f9ea511a47bbb6a9",
+    "case_id": "wiki_0028fc1e8b7ce94f",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "8447ed3c5bd363b8933879a7c4fa1a038750c76a2013f209ded21486da51f790",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "636c70010a77de3c51e8e81803499104540f99507bfe5169beac1f4f576646fa",
+    "case_id": "wiki_0028fc1e8b7ce94f",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "5b02e650d9cd3e8b61fe4a2ed98de1967781f939385bcbb975fda0a358c78832",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "6b74979c257aba9d5c103c7b6378ae6645087a35a50881ab10ce398a5185139e",
+    "case_id": "wiki_005dcf4b1e328d0b",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "61bc81deb1ccf41363109f4e95c0c318f9266fa1b1289608079dd7c996a5e02b",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "e77264e908870ad09e760eed5d6b0e9549721dbf55e2273fbb8d0a41e1a47ce6",
+    "case_id": "wiki_005dcf4b1e328d0b",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "fd08db32fae864ff55c26586fe40ae2964736fc81eff96048cf9ed6701260884",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "81750c92ebbbdca17e0595f0564de9ec34271a46b10b6cd2b3beaa484c174402",
+    "case_id": "wiki_005dcf4b1e328d0b",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "05572831c9155537c5cc3c49d80a4795a4cb3e612d1456ee5e936a0d1f81d576",
+    "split": "evaluation"
+  },
+  {
+    "arm": "A",
+    "attempt_key": "637c21d8b1db2a5cce3928055a5c9df98b801ff76df2f3afd02d006b07513e9c",
+    "case_id": "wiki_00de99b2b79722ba",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "338eccf2c6acda5ab87780485821aaa8bf91c05b9a971a6070062645a13c7e4c",
+    "split": "evaluation"
+  },
+  {
+    "arm": "B",
+    "attempt_key": "c04e2c19b61663c498282b490b5644449e3920f17826c23a3fa0ecf8a5926d94",
+    "case_id": "wiki_00de99b2b79722ba",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "d6c0664cf8d9015f9afa70bf432c739913f1678501bfa3bee6c6dedab52c6061",
+    "split": "evaluation"
+  },
+  {
+    "arm": "C",
+    "attempt_key": "e518b243db854971d6e4cc5a2b8bc616b799a2002227566abd491f0e895c728c",
+    "case_id": "wiki_00de99b2b79722ba",
+    "model_id": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f95da45287037d74ba2230ee8e8e0c464b80142ab022d8424ff0723e0a68195c",
+    "split": "evaluation"
+  }
+]

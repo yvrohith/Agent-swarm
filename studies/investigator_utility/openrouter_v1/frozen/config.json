@@ -1,0 +1,278 @@
+{
+  "access_inspection": {
+    "authentication_http_status": 200,
+    "blockers": [],
+    "both_preferred_models_in_authenticated_listing": true,
+    "configured_model_families": 2,
+    "credential_values_recorded": false,
+    "credential_variable": "OPENROUTER_API_KEY"
+  },
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 73021,
+  "budget_usd": "25.00",
+  "concurrency": 1,
+  "development_request_limit": 24,
+  "development_synthetic_cases": 2,
+  "development_wiki_cases": 2,
+  "evaluation_request_limit": 144,
+  "evaluation_synthetic_cases": 8,
+  "evaluation_wiki_cases": 16,
+  "execution_choices": {
+    "cost_estimate_note": "input_usd_per_million is the conservative billing bound. For Terra it is 2.50 including cache writes, while uncached input is 2.00. known_usage_cost_usd therefore is a conservative priced-token estimate, not the actual invoice. usage.cost remains separately recorded.",
+    "input_bound_rationale": "The frozen UTF-8-byte bound upper-bounds byte-derived text tokenization for the supplied text-only messages; the entire serialized payload plus 4096 tokens conservatively includes framing. Check actual usage against it on every call.",
+    "max_total_spend_usd": "25.00",
+    "output_allowance_rationale": "8192 total reasoning-plus-answer tokens per request, identical across A/B/C and both models. Four brief JSON answers; no reasoning/decoding override and no evidence truncation. Set before any billable development request and do not adjust after observing responses.",
+    "prior_charges_usd": "0",
+    "prior_model_attempts": 0,
+    "request_caps": {
+      "additional_transport_retries": 12,
+      "development": 24,
+      "evaluation": 144
+    },
+    "selection_rule": "Use both originally preferred families because both are listed for this key and the entire schedule including retry reserve fits USD 25; no investigator outcomes have been observed."
+  },
+  "execution_status": "models_fixed_before_development",
+  "max_prompt_utf8_bytes": 160000,
+  "models": [
+    {
+      "api_key_env": "OPENROUTER_API_KEY",
+      "authorized": true,
+      "base_input_usd_per_million": "2",
+      "base_output_usd_per_million": "12",
+      "cache_policy": "Provider defaults; no cache_control is sent. Terra automatically writes cache at 1.25 times base input; all its input is conservatively reserved at that maximum. Anthropic cache writes require opt-in, which is absent.",
+      "cache_write_usd_per_million": "2.5",
+      "canonical_slug_at_verification": "openai/gpt-5.6-terra-20260709",
+      "context_tokens": 1050000,
+      "decoding": {},
+      "documented_reasoning_default": {
+        "default_effort": "medium",
+        "default_enabled": true,
+        "mandatory": false,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "none"
+        ]
+      },
+      "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+      "family": "openai",
+      "fee_evidence_names": [
+        "openai_pricing",
+        "pricing_faq",
+        "prompt_caching"
+      ],
+      "identity_note": "The documented API request ID is an alias; the catalog canonical slug is recorded as metadata, not claimed as a pinned request revision. Retain response model identity.",
+      "input_token_bound": "utf8_bytes_plus_4096",
+      "input_usd_per_million": "2.5",
+      "limits_evidence_sha256": "e9b0779f2ea07ffaddc520db2ef6cdea8199a4fcc98365d2304eb859da3374c3",
+      "limits_source": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create",
+      "max_output_tokens": 8192,
+      "model_id": "openai/gpt-5.6-terra",
+      "output_usd_per_million": "12",
+      "pricing_evidence_sha256": "f17ec8306c75e6f0310ec5a05b9863560e678f07aeccd4268c1c08c7cd9bb247",
+      "pricing_source": "https://openrouter.ai/api/v1/models/openai/gpt-5.6-terra-20260709/endpoints",
+      "pricing_verified_at": "2026-10-03T20:23:23.089605+00:00",
+      "provider": "openrouter",
+      "provider_max_completion_tokens": 128000,
+      "provider_routing": {
+        "allow_fallbacks": false,
+        "max_price": {
+          "completion": 12,
+          "prompt": 2.5
+        },
+        "only": [
+          "openai"
+        ],
+        "require_parameters": true
+      },
+      "reasoning": "included_in_output_cap",
+      "request_usd": "0",
+      "short_context_pricing_threshold_tokens": 272000,
+      "verified_limits": true,
+      "zero_fixed_request_fee_basis": "Native-provider published base-token pricing plus OpenRouter no-inference-markup contract. Tools, searches, images, audio, files, BYOK configuration and credit purchases are not requested. Pricing JSON omits request rather than reporting an explicit zero."
+    },
+    {
+      "api_key_env": "OPENROUTER_API_KEY",
+      "authorized": true,
+      "base_input_usd_per_million": "2",
+      "base_output_usd_per_million": "10",
+      "cache_policy": "Provider defaults; no cache_control is sent. Terra automatically writes cache at 1.25 times base input; all its input is conservatively reserved at that maximum. Anthropic cache writes require opt-in, which is absent.",
+      "cache_write_usd_per_million": "2.5",
+      "canonical_slug_at_verification": "anthropic/claude-sonnet-5.5-20260928",
+      "context_tokens": 1000000,
+      "decoding": {},
+      "documented_reasoning_default": {
+        "default_effort": "high",
+        "mandatory": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+      "family": "anthropic",
+      "fee_evidence_names": [
+        "anthropic_pricing",
+        "pricing_faq",
+        "prompt_caching"
+      ],
+      "identity_note": "The documented API request ID is an alias; the catalog canonical slug is recorded as metadata, not claimed as a pinned request revision. Retain response model identity.",
+      "input_token_bound": "utf8_bytes_plus_4096",
+      "input_usd_per_million": "2",
+      "limits_evidence_sha256": "6950658047b205da8b192382967f623fc7f5be7a72bb2e1c164ea4729b0d118e",
+      "limits_source": "https://platform.claude.com/docs/en/build-with-claude/thinking",
+      "max_output_tokens": 8192,
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "output_usd_per_million": "10",
+      "pricing_evidence_sha256": "79474b2ef940b98a7948cdbe162bb8825d119c048a05a0e8d7a576908464967b",
+      "pricing_source": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5.5-20260928/endpoints",
+      "pricing_verified_at": "2026-10-03T20:23:23.089744+00:00",
+      "provider": "openrouter",
+      "provider_max_completion_tokens": 128000,
+      "provider_routing": {
+        "allow_fallbacks": false,
+        "max_price": {
+          "completion": 10,
+          "prompt": 2.0
+        },
+        "only": [
+          "anthropic"
+        ],
+        "require_parameters": true
+      },
+      "reasoning": "included_in_output_cap",
+      "request_usd": "0",
+      "verified_limits": true,
+      "zero_fixed_request_fee_basis": "Native-provider published base-token pricing plus OpenRouter no-inference-markup contract. Tools, searches, images, audio, files, BYOK configuration and credit purchases are not requested. Pricing JSON omits request rather than reporting an explicit zero."
+    }
+  ],
+  "order_seed": 73020,
+  "output_schema": "case_id; answers[{claim_id,status,evidence_ids,reason}]",
+  "primary_comparison": "C-B",
+  "raw_execution_directory": "artifacts/investigator-utility/calls",
+  "reason_max_characters": 400,
+  "schema_version": 1,
+  "secondary_comparisons": [
+    "B-A",
+    "C-A"
+  ],
+  "study_id": "investigator-utility-openrouter-v1",
+  "transport_retry_limit": 12,
+  "verification_evidence": {
+    "anthropic_endpoints": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/anthropic_endpoints.source",
+      "requested_at": "2026-10-03T20:16:28.844982+00:00",
+      "sha256": "79474b2ef940b98a7948cdbe162bb8825d119c048a05a0e8d7a576908464967b",
+      "url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5.5-20260928/endpoints"
+    },
+    "anthropic_model": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/anthropic_model.source",
+      "requested_at": "2026-10-03T20:17:35.750577+00:00",
+      "sha256": "092e36f1aed180f838a611dfea332e7f29f4835764adeef4b99d8abb05b1d4db",
+      "url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+    },
+    "anthropic_pricing": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/anthropic_pricing.source",
+      "requested_at": "2026-10-03T20:20:23.026114+00:00",
+      "sha256": "3fc23e9449afb9e1b20e6efcd09b01f182733071219cf33f11e2f04adc6b4831",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    "anthropic_thinking": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/anthropic_thinking.source",
+      "requested_at": "2026-10-03T20:17:35.790653+00:00",
+      "sha256": "6950658047b205da8b192382967f623fc7f5be7a72bb2e1c164ea4729b0d118e",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/thinking"
+    },
+    "model_docs": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/model_docs.source",
+      "requested_at": "2026-10-03T20:17:35.393665+00:00",
+      "sha256": "409fbbef931aa3e2da175298377778ded9dd9b85eac418355a3956491d69b42d",
+      "url": "https://openrouter.ai/docs/guides/overview/models"
+    },
+    "models": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/models.source",
+      "requested_at": "2026-10-03T20:15:56.137807+00:00",
+      "sha256": "dea40a2274294b2bc0495fd91f229deef09150ab4c662812c42ebc8ed398583b",
+      "url": "https://openrouter.ai/api/v1/models"
+    },
+    "openai_completion_limits": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/openai_completion_limits.source",
+      "requested_at": "2026-10-03T20:19:33.762260+00:00",
+      "sha256": "e9b0779f2ea07ffaddc520db2ef6cdea8199a4fcc98365d2304eb859da3374c3",
+      "url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create"
+    },
+    "openai_endpoints": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/openai_endpoints.source",
+      "requested_at": "2026-10-03T20:16:28.845834+00:00",
+      "sha256": "f17ec8306c75e6f0310ec5a05b9863560e678f07aeccd4268c1c08c7cd9bb247",
+      "url": "https://openrouter.ai/api/v1/models/openai/gpt-5.6-terra-20260709/endpoints"
+    },
+    "openai_model": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/openai_model.source",
+      "requested_at": "2026-10-03T20:17:35.394516+00:00",
+      "sha256": "3bb2cd2a11ac89160ef10e75ae72e1acae2958bd17691a9f9131fda275a132e7",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+    },
+    "openai_pricing": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/openai_pricing.source",
+      "requested_at": "2026-10-03T20:20:23.025522+00:00",
+      "sha256": "8643286c5c1a6b2f07d7d12402c5fa492f93482d4f04830b97b30f1d0b0f53fe",
+      "url": "https://developers.openai.com/api/docs/pricing"
+    },
+    "openapi": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/openapi.source",
+      "requested_at": "2026-10-03T20:15:56.900536+00:00",
+      "sha256": "7fa62818121617baac967d1055a128b19b7421c644b41f3a797cb5f4b11674f2",
+      "url": "https://openrouter.ai/openapi.json"
+    },
+    "openrouter_pricing": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/openrouter_pricing.source",
+      "requested_at": "2026-10-03T20:20:23.026468+00:00",
+      "sha256": "a6001b1c2fbb9519da747707e5f42fb310dbb81573aff6d8c02189c931868133",
+      "url": "https://openrouter.ai/pricing"
+    },
+    "parameters": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/parameters.source",
+      "requested_at": "2026-10-03T20:15:56.759322+00:00",
+      "sha256": "9593dd04adef04c86a6a9de9a25e41fc17d4208f6f2240c8fee66238468fa9e1",
+      "url": "https://openrouter.ai/docs/api-reference/parameters"
+    },
+    "pricing_faq": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/pricing_faq.source",
+      "requested_at": "2026-10-03T20:17:35.394142+00:00",
+      "sha256": "4a0f36dfa2f863d6ad711f3d0a2b23ffee3217f6b651cffaff7cdd1b3b07e14e",
+      "url": "https://openrouter.ai/docs/faq"
+    },
+    "prompt_caching": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/prompt_caching.source",
+      "requested_at": "2026-10-03T20:17:35.392918+00:00",
+      "sha256": "6162738a872b32c6cefe8273a6745cde7916e613cf6e0eb0d27bad0ae3318d33",
+      "url": "https://openrouter.ai/docs/guides/best-practices/prompt-caching"
+    },
+    "provider_selection": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/provider_selection.source",
+      "requested_at": "2026-10-03T20:15:56.138759+00:00",
+      "sha256": "afad0f75f82cd339a2710f97dc2c0767555501b2ab2346fa5fd69124e2709002",
+      "url": "https://openrouter.ai/docs/guides/routing/provider-selection"
+    },
+    "reasoning": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/reasoning.source",
+      "requested_at": "2026-10-03T20:15:56.138372+00:00",
+      "sha256": "199d5c2332d89a95662d044ea71f1b839b4d44e2db3e1152736a6310594445eb",
+      "url": "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens"
+    },
+    "usage_accounting": {
+      "path": "artifacts/investigator-utility/openrouter-metadata-v1/usage_accounting.source",
+      "requested_at": "2026-10-03T20:15:56.139233+00:00",
+      "sha256": "d8a9cc1b0f84c07b887fd57f7c6db4dd0028d2438bedf23703aafd5a51f76cc2",
+      "url": "https://openrouter.ai/docs/guides/guides/usage-accounting"
+    }
+  },
+  "wiki_max_text_chars": 24000
+}

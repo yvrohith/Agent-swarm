@@ -1,0 +1,13 @@
+model,subset,arm,case_mean,ci_low,ci_high,numerator,denominator,n_cases,n_clusters
+anthropic/claude-sonnet-5.5,synthetic,A,0.42857142857142855,0.14285714285714285,0.7142857142857143,11,22,7,7
+anthropic/claude-sonnet-5.5,synthetic,B,0.42857142857142855,0.14285714285714285,0.8571428571428571,8,22,7,7
+anthropic/claude-sonnet-5.5,synthetic,C,0.7142857142857143,0.42857142857142855,1.0,16,22,7,7
+anthropic/claude-sonnet-5.5,wiki,A,0.9375,0.8125,1.0,30,32,16,16
+anthropic/claude-sonnet-5.5,wiki,B,0.75,0.5,0.9375,24,32,16,16
+anthropic/claude-sonnet-5.5,wiki,C,0.9375,0.8125,1.0,30,32,16,16
+openai/gpt-5.6-terra,synthetic,A,1.0,1.0,1.0,22,22,7,7
+openai/gpt-5.6-terra,synthetic,B,1.0,1.0,1.0,22,22,7,7
+openai/gpt-5.6-terra,synthetic,C,1.0,1.0,1.0,22,22,7,7
+openai/gpt-5.6-terra,wiki,A,1.0,1.0,1.0,32,32,16,16
+openai/gpt-5.6-terra,wiki,B,1.0,1.0,1.0,32,32,16,16
+openai/gpt-5.6-terra,wiki,C,1.0,1.0,1.0,32,32,16,16

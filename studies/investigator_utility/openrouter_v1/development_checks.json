@@ -1,0 +1,141 @@
+{
+  "accounting": {
+    "actual_total_cost_usd": "0.5040925",
+    "additional_retry_attempts": 0,
+    "attempts": 24,
+    "charged_or_reserved_usd": "0.5040925",
+    "completed_calls": 24,
+    "cost_basis": "provider-reported charges when available; otherwise regular-rate usage estimates or unreleased reservations; not an invoice",
+    "development_completed": 24,
+    "evaluation_completed": 0,
+    "known_usage_cost_usd": "0.5046125",
+    "provider_reported_actual_cost_usd": "0.5040925",
+    "unknown_actual_cost_attempts": 0,
+    "unknown_cost_attempts": 0
+  },
+  "byok_responses": 0,
+  "citation_invalid_claims": 0,
+  "completed_matrix": [
+    {
+      "arm": "A",
+      "completed": 2,
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "planned": 2,
+      "subset": "synthetic"
+    },
+    {
+      "arm": "B",
+      "completed": 2,
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "planned": 2,
+      "subset": "synthetic"
+    },
+    {
+      "arm": "C",
+      "completed": 2,
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "planned": 2,
+      "subset": "synthetic"
+    },
+    {
+      "arm": "A",
+      "completed": 2,
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "planned": 2,
+      "subset": "wiki"
+    },
+    {
+      "arm": "B",
+      "completed": 2,
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "planned": 2,
+      "subset": "wiki"
+    },
+    {
+      "arm": "C",
+      "completed": 2,
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "planned": 2,
+      "subset": "wiki"
+    },
+    {
+      "arm": "A",
+      "completed": 2,
+      "model_id": "openai/gpt-5.6-terra",
+      "planned": 2,
+      "subset": "synthetic"
+    },
+    {
+      "arm": "B",
+      "completed": 2,
+      "model_id": "openai/gpt-5.6-terra",
+      "planned": 2,
+      "subset": "synthetic"
+    },
+    {
+      "arm": "C",
+      "completed": 2,
+      "model_id": "openai/gpt-5.6-terra",
+      "planned": 2,
+      "subset": "synthetic"
+    },
+    {
+      "arm": "A",
+      "completed": 2,
+      "model_id": "openai/gpt-5.6-terra",
+      "planned": 2,
+      "subset": "wiki"
+    },
+    {
+      "arm": "B",
+      "completed": 2,
+      "model_id": "openai/gpt-5.6-terra",
+      "planned": 2,
+      "subset": "wiki"
+    },
+    {
+      "arm": "C",
+      "completed": 2,
+      "model_id": "openai/gpt-5.6-terra",
+      "planned": 2,
+      "subset": "wiki"
+    }
+  ],
+  "development_completed": 24,
+  "empty_completions": 0,
+  "evaluation_completed_before_freeze": 0,
+  "finish_reasons": {
+    "stop": 24
+  },
+  "first_request_attempt_count": 1,
+  "interpretation": "Mechanical development checks only; no outcome-driven model, case, prompt, label, scoring or parameter changes.",
+  "missing_cost_metadata_responses": 0,
+  "response_model_identities": {
+    "anthropic/claude-sonnet-5.5": [
+      "anthropic/claude-sonnet-5.5"
+    ],
+    "openai/gpt-5.6-terra": [
+      "openai/gpt-5.6-terra"
+    ]
+  },
+  "response_providers": {
+    "anthropic/claude-sonnet-5.5": [
+      "Anthropic"
+    ],
+    "openai/gpt-5.6-terra": [
+      "OpenAI"
+    ]
+  },
+  "schema_error_counts": {
+    "answers_not_list": 4,
+    "invalid_answer_fields": 4,
+    "invalid_response_fields": 4,
+    "malformed_json": 4,
+    "missing_claim": 12,
+    "missing_response": 4,
+    "unknown_claim_id": 8,
+    "wrong_case_id": 4
+  },
+  "schema_invalid_claims": 16,
+  "status": "completed"
+}

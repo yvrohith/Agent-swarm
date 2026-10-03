@@ -1,0 +1,48 @@
+{
+  "artifacts_sha256": {
+    "case_manifest.json": "5f185aa2fa518d56488e12530ce1210ffeb545f893f0718514f6de72d77e087a",
+    "config.json": "8af4b4415b3a09a9276ed799a7b491d0b4c22db4e286f40c828b50fa42c5230a",
+    "gold_certificates.json": "33d45ec5ea3416e5b5956ff316889b6836949395673f0d3e5b28d75c192e58ac",
+    "prompt_manifest.json": "87bf2b710b6dd103b635fd98a920ab2b1c446f7b54762cbd612a9f8f76b7750e",
+    "selection.json": "3dee15beda5dde44c38e7777c66a50c3fd35b440a588ffb128b52de9972624c3",
+    "validation.json": "8cd10b27f255106d5248f63f07b472282fe4a1b5ef2cfb1ab4f76298e35c6030",
+    "view_manifest.json": "4fc812e15046cfcfc703adf1f81ff1d5166c883b9a6ca7bd1e52602842872d34"
+  },
+  "code_sha256": {
+    "src/tracebench/investigator_utility/__init__.py": "47f71cc9d3f59a7f9ffe66a783db93de537a61fbd530de6883cd3e0adb92c0f8",
+    "src/tracebench/investigator_utility/__main__.py": "7f5f053fef9752c3d534d49943013d026c81d6bdba16fb21500dd22488b004b5",
+    "src/tracebench/investigator_utility/execution.py": "eb38a957739f5a53b7f1a556648c831aacf4581a2a7ce48f24d31cefcf0fc034",
+    "src/tracebench/investigator_utility/prompts.py": "03fcc5ffbe284804b3eb19cd760260a08412930d1ff6494d9f3c02933f1355d8",
+    "src/tracebench/investigator_utility/reporting.py": "f59e0510329e9a160d676e4d0e2e4876e5106400bf8eddd4bdbaebd22848790f",
+    "src/tracebench/investigator_utility/scoring.py": "c5119c7745a3e3bc840894df21986a0749c5db4ccde414706ea5c6db16eadf48",
+    "src/tracebench/investigator_utility/study.py": "d3f6d22ce3d9b0c5385ef29c177cdbabecacdeedc7214495ebed8e6cd7561714",
+    "src/tracebench/investigator_utility/synthetic_cases.py": "9d1666df4786640d7e5e12e2b7f69b7e5a6418037ece3c0a4d643e9b2a47cd8d",
+    "src/tracebench/investigator_utility/wiki_cases.py": "42dfa215b90612ca8ac14e8d6b91282ab8ac879a93ef035d24cc88a8c249aeb7"
+  },
+  "evaluation_calls_planned": 144,
+  "execution_blockers": [],
+  "frozen_at_utc": "2026-10-03T20:30:49.922216+00:00",
+  "input_sha256": {
+    "artifacts/investigator-utility/prepared/gold.json": "33d45ec5ea3416e5b5956ff316889b6836949395673f0d3e5b28d75c192e58ac",
+    "artifacts/investigator-utility/prepared/public_cases.json": "f330512a90332c9d22fe5fb45a240375d5385b00a0c7c516eebb9e189c29d21d",
+    "artifacts/investigator-utility/prepared/selection.json": "3dee15beda5dde44c38e7777c66a50c3fd35b440a588ffb128b52de9972624c3",
+    "studies/investigator_utility/ANALYSIS.md": "1e22eab2a7e9d22abbe5e3fc71f6bd3b18bf20b72f8e96c92bee4a222f941d27",
+    "studies/investigator_utility/openrouter_v1/config.json": "8af4b4415b3a09a9276ed799a7b491d0b4c22db4e286f40c828b50fa42c5230a"
+  },
+  "model_freeze_note": "No model chosen without authorized access and verified pricing. A future model execution requires a new, explicitly versioned freeze before any evaluation response; this blocked freeze permits zero calls.",
+  "models": [
+    "openai/gpt-5.6-terra",
+    "anthropic/claude-sonnet-5.5"
+  ],
+  "potential_evaluation_calls": 144,
+  "preservation": {
+    "all_match": true,
+    "baseline_head": "7abea1a8f0bc2ac38bd6d3c7a2bdac83cdafe5f6",
+    "dependency_lock_sha256": "2ebf9b1106185db7de8590b6eb47c7b4b50c07d86f79a20ca7cd78871bbe42b7",
+    "verified_files": 70
+  },
+  "raw_execution_directory": "artifacts/investigator-utility/calls",
+  "schema_version": 1,
+  "status": "ready",
+  "study_id": "investigator-utility-openrouter-v1"
+}

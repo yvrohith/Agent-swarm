@@ -1,0 +1,540 @@
+[
+  {
+    "case_id": "wiki_0082c1aa6d44d532",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_fb17686eba73fdf3",
+    "public_case_sha256": "2a38c62b5360a4acceda6a480d4879d889a0e032cafd8d9cf449c008643592ae",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "development",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_008a6682a45fb0f8",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_25e99c9dac71f83b",
+    "public_case_sha256": "b550ead2b8db797430f66abf0d447ca31ecc51cd40757c0352cc8306ec3a77af",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_00de99b2b79722ba",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_d7959fb037d05fd2",
+    "public_case_sha256": "3bbb6d4b476c8c58bab34f73adf68d127d5c15645100420a975733d34122aea7",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_00f4297cef60b25f",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_938cbe7ad7e65490",
+    "public_case_sha256": "d0bfe1e0b8d0975a5e58c17c64bad8829ac44d3dc44488a95a88afdbad5e428c",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_022044d9432b5bac",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_574c63f71b9032bf",
+    "public_case_sha256": "a4a01c9df4ac43edf31fd4d722858d060f76add3b41e4cbcf257fd5be270c9d3",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_02242579e77fc4f9",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_cb6ab6069ba158f1",
+    "public_case_sha256": "3456b53add959b55577f820ede59ec439940e7b354b5423eaa8cf4ce30b624ad",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_024de924633c3728",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_3bc9ce43000c688a",
+    "public_case_sha256": "a50643c408dc8d8d18bd8331ba22da2deb521976a46f6028245b989d1c043152",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_0252f85ad8d798a1",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_dce5270824666192",
+    "public_case_sha256": "e50170e474532897abca07bb1d222b6cca4335820140b29a5363b0e0dcebeaa6",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3",
+      "record_4",
+      "record_5",
+      "record_6",
+      "record_7",
+      "record_8"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_028b2268bbdc10a0",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_b7807f0f367fc71a",
+    "public_case_sha256": "19acd9701954d36b15098563bc228faf83fc8ed9c46924b39eb5d62c3b80274f",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_00037911fcdf208d",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_a19904a655c1f434",
+    "public_case_sha256": "590dc6aedc2ee2d697e6d4f505ecd9644339048b53a1c23353b3f5af1b951780",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3",
+      "record_4",
+      "record_5",
+      "record_6",
+      "record_7"
+    ],
+    "split": "development",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_0028fc1e8b7ce94f",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_4263fc5147af768e",
+    "public_case_sha256": "bf5b97fab33b6f6c3be28c538e37ddf23beb185c242759f33817111dac4d3d97",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3",
+      "record_4"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_00453ee6390a4fd0",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_615fbdaf4a5d0bd4",
+    "public_case_sha256": "ef67534877a90c063a4f4b21ca090d328c5cbff9dba24c33bc56019e6adc7f30",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3",
+      "record_4",
+      "record_5"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_004b8eda7b936681",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_3541d6a06d493315",
+    "public_case_sha256": "7c055d0dd009c22e12a0eef3c9799bd99f635fd52c6938c0f49aa050e17758f8",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_005dcf4b1e328d0b",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_838b99d56ee9eeb5",
+    "public_case_sha256": "4b81a09456d28ed1f25019a6289e989dde9e67a70aee2bea44a8cf5c378595dc",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_00934b155f20a8eb",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_8d1a4fae5b98041c",
+    "public_case_sha256": "6f378982ebd8a6e6fb83011ac532721cce59e40a7aa38a0da1bceaf0b25d728c",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3",
+      "record_4",
+      "record_5",
+      "record_6"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_00a62ba4a1e63afd",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_1e13ecb4cc9618e1",
+    "public_case_sha256": "25c7b2198e7c82f6902d8bf06eae07085e088c4904c0c23d6e18fe8dcbb41dd1",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3",
+      "record_4",
+      "record_5",
+      "record_6"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_00bf758d6c4598eb",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_3170377d5323b715",
+    "public_case_sha256": "a9981343483af9276241dc6dafa5bcbe5f28345787fc1b419747376bd4ddeeda",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3",
+      "record_4",
+      "record_5"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "wiki_00f28627d035b3d7",
+    "claim_ids": [
+      "literal_inserted",
+      "literal_inherited",
+      "exposure",
+      "source_use"
+    ],
+    "cluster_id": "wiki_page_bcc2ecbc7001de0f",
+    "public_case_sha256": "3a9238471ff621ccf05a35323d7a333118b16d6a74585cd25e8a545d4c816c6c",
+    "record_ids": [
+      "record_1",
+      "record_2",
+      "record_3"
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "case_id": "s001",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s001",
+    "public_case_sha256": "ed77749d567ec8619edebcd7e3a39ca0a74d05bcff0aae15bb96cef2f2e3d30b",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04"
+    ],
+    "split": "development",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s002",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s002",
+    "public_case_sha256": "8180a8940ba3d74700331c089bb038ca602c34a1604aa4432df4a8821faa5550",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05"
+    ],
+    "split": "development",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s003",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s003",
+    "public_case_sha256": "5a09d163af678d38436f4a3f646b2fdf9669b4b35f947887b496cf15dfa9e703",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04"
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s004",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s004",
+    "public_case_sha256": "4805a5cabc7527a67b23e6f4673791835b85d109cd5cf98fe0aa13972e8e722e",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05"
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s005",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s005",
+    "public_case_sha256": "5da4f710d217bf9695259d21cac0e2a8c1ee3ab4b3f5d416b6792710936386a6",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05"
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s006",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s006",
+    "public_case_sha256": "a080ec7f94c549ae64bc3f339b31a10cf9836231d426fd4cdde527ee4202cdf2",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04"
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s007",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s007",
+    "public_case_sha256": "0be6627161259c903c61e09413e5fb1a304c1d9999c6a9025c1405f791c3c6a4",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05",
+      "r06"
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s008",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s008",
+    "public_case_sha256": "aa10a569e904da35f427546a4ba43fd65a77ab4b1bca34f0c20f4bdb9a4ecb1f",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03"
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s009",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s009",
+    "public_case_sha256": "5dc53a3674198044ddcf348593d181088f7cbc73af4d2eb1e7cb25dc9b17d32a",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03"
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "case_id": "s010",
+    "claim_ids": [
+      "c01",
+      "c02",
+      "c03",
+      "c04"
+    ],
+    "cluster_id": "s010",
+    "public_case_sha256": "f6965a113b2e870db35c6468f8d730163b31d40c3d9b9eb27beda97013990e2d",
+    "record_ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05"
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  }
+]

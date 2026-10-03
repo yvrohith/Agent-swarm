@@ -1,0 +1,1565 @@
+{
+  "access": {
+    "blockers": [],
+    "credential_presence": {
+      "OPENROUTER_API_KEY": true
+    }
+  },
+  "budget": {
+    "budget_usd": "25.00",
+    "development_requests": 24,
+    "evaluation_requests": 144,
+    "maximum_attempt_reservation_usd": "0.201874",
+    "prior_charged_or_reserved_usd": "0",
+    "remaining_request_reservations_usd": "21.6344280",
+    "remaining_retry_attempts": 12,
+    "request_count": 168,
+    "requests": [
+      {
+        "arm": "A",
+        "attempt_key": "909a8a86c57ac182c40874ccb18fdfbc04513d36d6fecf90d0e048fe9c208bb3",
+        "case_id": "wiki_00037911fcdf208d",
+        "input_token_bound": 36197,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1887965",
+        "split": "development"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "275f8277ec8b8511fba05b1bcca9f2ddbb1389a545e6b7c341e54e48d2f76e06",
+        "case_id": "wiki_00037911fcdf208d",
+        "input_token_bound": 37268,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.191474",
+        "split": "development"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "8b72d46fc66be88e119e93ae970a5b1093b21f895a8767be4bee488d6f10a5ad",
+        "case_id": "wiki_00037911fcdf208d",
+        "input_token_bound": 41428,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.201874",
+        "split": "development"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "4b73d896fc07de69db633206a53b212f8b261b47408f000c99ab32ef26f79ef4",
+        "case_id": "wiki_0082c1aa6d44d532",
+        "input_token_bound": 15384,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.136764",
+        "split": "development"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "17b922b4041f57bac63f2e9de6e02238f03543e8c4e02c5e86723bc23ce251e0",
+        "case_id": "wiki_0082c1aa6d44d532",
+        "input_token_bound": 22231,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1538815",
+        "split": "development"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "93c4c76c624019b6ba45c6a5a65f12ff0cb0e9eefcdd58394ad711cb2554765d",
+        "case_id": "wiki_0082c1aa6d44d532",
+        "input_token_bound": 16455,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1394415",
+        "split": "development"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "8b685dd92c8150d23a8287d4d014dcb2d6dde5965cb539c8b2fa18d16742a8ff",
+        "case_id": "s001",
+        "input_token_bound": 10059,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1234515",
+        "split": "development"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "ec55fa95be19c9daa2f887b58fea93b730eefd01a9f3e8cd5315b0ec4358df47",
+        "case_id": "s001",
+        "input_token_bound": 8988,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.120774",
+        "split": "development"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "51b80722fe77ebdc68e84a4a22c22d4d8a5c6965f791faefe8d99c1591dcfbd8",
+        "case_id": "s001",
+        "input_token_bound": 10723,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1251115",
+        "split": "development"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "12792ee0cfad8d3973347b389f537b8dcbb928ddac32bfaee0a9d77c94d60563",
+        "case_id": "s002",
+        "input_token_bound": 10192,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.123784",
+        "split": "development"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "701ba92d572f34a680ec50393832b5694e2e558cb84a997e504292ece95b6a65",
+        "case_id": "s002",
+        "input_token_bound": 10934,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.125639",
+        "split": "development"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "d3569baee57550c57c7f37d895a33a27155a3034df8b290ec50f0b1a69f6a5fe",
+        "case_id": "s002",
+        "input_token_bound": 9121,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1211065",
+        "split": "development"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "688e197a1fd592a0c536fb0a20fdb779a552b97a7c59d17369a3c640a1635bb7",
+        "case_id": "wiki_00037911fcdf208d",
+        "input_token_bound": 36207,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.154334",
+        "split": "development"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "d36b4d04205e6550b8f0c735155496b77c6a78cf159d0042c0389e61a5ac4e31",
+        "case_id": "wiki_00037911fcdf208d",
+        "input_token_bound": 41438,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.164796",
+        "split": "development"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "64c1d6fa187bec223dbefd757bb6ca428a7505bbee1afa11cc5fc64a4af88d8f",
+        "case_id": "wiki_00037911fcdf208d",
+        "input_token_bound": 37278,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.156476",
+        "split": "development"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "d55fcffb63ac61676296bcc51a142901bdab6aedff6c1f6864706f1346892f7f",
+        "case_id": "wiki_0082c1aa6d44d532",
+        "input_token_bound": 16465,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.11485",
+        "split": "development"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "016b242a9e2ff2c60d50612df6ad0d77d6e9a510b502563f1cb1edee542abcc8",
+        "case_id": "wiki_0082c1aa6d44d532",
+        "input_token_bound": 15394,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.112708",
+        "split": "development"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "063d989b792df889f1bba05d0a1621965d853103762ee25c41431e2f787db165",
+        "case_id": "wiki_0082c1aa6d44d532",
+        "input_token_bound": 22241,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.126402",
+        "split": "development"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "b35a45d4c4fb85c48730271b3ca1073a7a3e014b3861cb8695cf802da7fa581c",
+        "case_id": "s001",
+        "input_token_bound": 10069,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.102058",
+        "split": "development"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "7d61c7eb3bc8fd9a326d7cd7dabfb1af99b7c662b1315593a376f2a92662e3c5",
+        "case_id": "s001",
+        "input_token_bound": 10733,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.103386",
+        "split": "development"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "03a8ff1b9de6b24d42abf9c6f0fe751ba4cf2842c478fffc78a2486543fb910c",
+        "case_id": "s001",
+        "input_token_bound": 8998,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.099916",
+        "split": "development"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "242e0e6179b17eb321383deec1365ae1c2b8d577901f3f3fa2fca88e015d6ad4",
+        "case_id": "s002",
+        "input_token_bound": 10944,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.103808",
+        "split": "development"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "b90dbc512430d832a9cf5d07cbb34ae2b68bd02196a9d8d14df9e502b1849671",
+        "case_id": "s002",
+        "input_token_bound": 9131,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.100182",
+        "split": "development"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "0ef20beecfebedcb9909e9295eb49d986e6223f9331cc2c642b0ecd7a3548b5d",
+        "case_id": "s002",
+        "input_token_bound": 10202,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.102324",
+        "split": "development"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "8d894e69eabc3ff76611f06a39424c1fa863134011736a15ee51f8d25f1acf8b",
+        "case_id": "s008",
+        "input_token_bound": 8864,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.120464",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "b93164bad492c798f0e8ed444f63c53adc05e674d79e581557bbb6db67e0b961",
+        "case_id": "s008",
+        "input_token_bound": 9935,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1231415",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "8fd3f0bf43d8c692142674fb725810b65bebfec105b8876acecb00d69e379643",
+        "case_id": "s008",
+        "input_token_bound": 10437,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1243965",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "b374b272374a8534aecc967d70b1f5c796274e1afdd2fe68af0744974d9037b7",
+        "case_id": "s009",
+        "input_token_bound": 8947,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1206715",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "1ddd1f9c17dec31afdecc579ab5b8b7d0378e25010ac445d70ba51c988466b6e",
+        "case_id": "s009",
+        "input_token_bound": 10520,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.124604",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "a97960613ad13c419432a805c969fbaa90796340eb2942da2046da00d3df4f29",
+        "case_id": "s009",
+        "input_token_bound": 10018,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.123349",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "ad18dccf95546e78e5198e33dbfbfeb0e4c4f7b85702fae3db8db16803459579",
+        "case_id": "wiki_024de924633c3728",
+        "input_token_bound": 16330,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.139129",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "955031bdf8d7758785b043f53e4400dd245400dd19a5dbe923d871efcbb4fd66",
+        "case_id": "wiki_024de924633c3728",
+        "input_token_bound": 15259,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1364515",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "c38a4b13bfdc447b8494cbb86b869f2464896c561fc9930935f78b621e7f105e",
+        "case_id": "wiki_024de924633c3728",
+        "input_token_bound": 24049,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1584265",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "970e8c63d3554d26f5dd173f6e8d4ba27afc5d714e414af75c2a9053f8ceef13",
+        "case_id": "wiki_0252f85ad8d798a1",
+        "input_token_bound": 27726,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.167619",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "49b9a89a27b0c0451dd8ec95619fd284e46a80c7b9c6de248f7fdc9bdcc8dbf5",
+        "case_id": "wiki_0252f85ad8d798a1",
+        "input_token_bound": 32282,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.179009",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "59e7bc13fe0c7c5206e6b137b429627d4f335b59e741bba8a6f6732e27b16faf",
+        "case_id": "wiki_0252f85ad8d798a1",
+        "input_token_bound": 26655,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1649415",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "61e2facfc4eea027159d86be115ccdaeab537c5a5c5eaeedff902d30412e3652",
+        "case_id": "s004",
+        "input_token_bound": 11210,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.126329",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "e983f2d334ea2afe1bd4dd0612fc5469cf17a65fdec3b7b6f4874b4af62c81cb",
+        "case_id": "s004",
+        "input_token_bound": 9397,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1217965",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "3e399e6ee78346acedf3dbf35e283ae47d7dcfdfa47a372086b19176ae50901c",
+        "case_id": "s004",
+        "input_token_bound": 10468,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.124474",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "8cc7b99292382ed5ef84c2adf3cc5d39ada2fa936589128e106bed9fb3c60764",
+        "case_id": "wiki_028b2268bbdc10a0",
+        "input_token_bound": 16823,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1403615",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "78f81c7856bb15a0108d734306b350779b4e64fb09c7bcdef86a6d502f7cd8ce",
+        "case_id": "wiki_028b2268bbdc10a0",
+        "input_token_bound": 14748,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.135174",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "be8feaff71cbc2c3f2df93f339b7fca71b2ee2a285c576e18b0cc6f119ba0662",
+        "case_id": "wiki_028b2268bbdc10a0",
+        "input_token_bound": 13677,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1324965",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "8f9a8492bd2e02307c1577407f88a404d470747d659428c10baf591db6e59797",
+        "case_id": "wiki_022044d9432b5bac",
+        "input_token_bound": 17559,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1422015",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "e8b676336e4344af71ea2850519f1f0c342db32a20c0664055fffa89e1d262c1",
+        "case_id": "wiki_022044d9432b5bac",
+        "input_token_bound": 18630,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.144879",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "abd66d0d704acc7e2deb9b659906ce1bb33b2d2bfc9c63b6c6fae03459637aa6",
+        "case_id": "wiki_022044d9432b5bac",
+        "input_token_bound": 20636,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.149894",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "c802e82e4d19f0ecd9ac84b96ba9b3569328ff661f356d9fcddc7d11fe4d0515",
+        "case_id": "wiki_00f28627d035b3d7",
+        "input_token_bound": 21039,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1509015",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "78799911f154c730fa3e150846137e4553b00b9395458c1068f7e0afb2bd4c9f",
+        "case_id": "wiki_00f28627d035b3d7",
+        "input_token_bound": 24292,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.159034",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "c2e9d1ae1a779ed682be96ba05815d961eb9c2949263ee17e9146203a081d9c6",
+        "case_id": "wiki_00f28627d035b3d7",
+        "input_token_bound": 22110,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.153579",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "7647267717fd901e53d9ec6443d445006f380d4d199bc74459724e6215ea2715",
+        "case_id": "wiki_004b8eda7b936681",
+        "input_token_bound": 17963,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1432115",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "cc39558a2153ab56c1112cc3f99a51a7d01b891baaca2ab2e524f96b00e5b6e2",
+        "case_id": "wiki_004b8eda7b936681",
+        "input_token_bound": 16892,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.140534",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "e9b2ab5e74b4fb8a3c63f8a43fb52f0d66074f31e26c87310a3b9acfc7d991b1",
+        "case_id": "wiki_004b8eda7b936681",
+        "input_token_bound": 19999,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1483015",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "808ae4abea8f290511e9705085a7a77b39d645cc15765fc86ab9275ebd3ab0bd",
+        "case_id": "wiki_00934b155f20a8eb",
+        "input_token_bound": 34051,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1834315",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "4c356af4942f26ecdf5e14eca200102ef0e8ced9cf99caf8ed7ec25bdd26d3fd",
+        "case_id": "wiki_00934b155f20a8eb",
+        "input_token_bound": 37615,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1923415",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "3510081927dc8678854908af03b538c8c28bbfe934d6b41cc6ef6f77d2a9d10e",
+        "case_id": "wiki_00934b155f20a8eb",
+        "input_token_bound": 32980,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.180754",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "a1fad3a46889572ee750d2ea1f00c00112484d25d18a9b6a0cef24b8ec375090",
+        "case_id": "wiki_02242579e77fc4f9",
+        "input_token_bound": 15764,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.137714",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "9624cb670776e6f58633e7aaabe63ec6ae16c8a01c10941598021418fe28e798",
+        "case_id": "wiki_02242579e77fc4f9",
+        "input_token_bound": 12657,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1299465",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "1a7488b7c07a80bf3cf633c2d4a41ddaf373c2f8d44773328260b8515b86fa69",
+        "case_id": "wiki_02242579e77fc4f9",
+        "input_token_bound": 13728,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.132624",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "18a98599be8287593d1eef3af143f9d7f68848f086ec55858bbc6c932892aca1",
+        "case_id": "s003",
+        "input_token_bound": 10722,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.125109",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "87f6db4920230f177e4ff08f03f3fd080555e4d6dab95e8a3d3be9e7ba6ce262",
+        "case_id": "s003",
+        "input_token_bound": 10058,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.123449",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "60f117f60665ab8b5ea1c2de76b17fcef75b1c6e49dc6995b90d513c252fa2bc",
+        "case_id": "s003",
+        "input_token_bound": 8987,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1207715",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "d289a14f5bff8029030e22afae2e5387331136b5d3f1be7a24f49113efe21c97",
+        "case_id": "wiki_00a62ba4a1e63afd",
+        "input_token_bound": 19220,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.146354",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "1a2374adddb1d0d36f09e38ade871900d4ad505a00c0b590271fd1d004c6d4f9",
+        "case_id": "wiki_00a62ba4a1e63afd",
+        "input_token_bound": 20291,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1490315",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "9265df0ebd656495bcf13757cd7579566577a780b679704d6c022bb7fe19d8d7",
+        "case_id": "wiki_00a62ba4a1e63afd",
+        "input_token_bound": 23970,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.158229",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "8d8d590eeea96d237342329ec33cec09f0850e31343a435d1403e20e5555efc8",
+        "case_id": "s006",
+        "input_token_bound": 9270,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.121479",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "7c0d3534f940a3afbfc6ece844102e2845050a0bf799a305e43cbc56431c5147",
+        "case_id": "s006",
+        "input_token_bound": 11005,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1258165",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "0e33423159cd51a55aa7c040debeaa23ed59c9ae62189e833f6dd53d1834ab1a",
+        "case_id": "s006",
+        "input_token_bound": 10341,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1241565",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "9c58aca5be0fef16612a12e8c6ec7fd0e427e654c0c7733678c6eb8548d40941",
+        "case_id": "wiki_008a6682a45fb0f8",
+        "input_token_bound": 18518,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.144599",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "5f9cc0d54d0f63f9c227667faf9bd6e9f1f7ac942ea5d611ba414afad4575c1f",
+        "case_id": "wiki_008a6682a45fb0f8",
+        "input_token_bound": 17447,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1419215",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "3d4bea90aa5a6e9ea59bbacc569cf6f2c089240e41932aa39d973debf0c4faa8",
+        "case_id": "wiki_008a6682a45fb0f8",
+        "input_token_bound": 20581,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1497565",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "4a5fe9830494724913e1e896facfa2d2210aecec9383d453f9d2283e87d94097",
+        "case_id": "s005",
+        "input_token_bound": 10743,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1251615",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "96537b33e4de8287662902cf271137abaa56566e452a6d491eeac75478a6ca4d",
+        "case_id": "s005",
+        "input_token_bound": 11485,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1270165",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "a5d216b8ffafdc0efc8c6d0205fe76c1a664b5105394984f74a2435afa310a61",
+        "case_id": "s005",
+        "input_token_bound": 9672,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.122484",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "a362ba8cfb466ac8d2e61665cae4cc38b92b2d51420929441f2bc4357c2ab852",
+        "case_id": "s010",
+        "input_token_bound": 11374,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.126739",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "2d022e92a7a201eabce93ce371d279c72bfd4a02acd4f797f3171ca050f1d1ae",
+        "case_id": "s010",
+        "input_token_bound": 9561,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1222065",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "1726e790e090bc4aaecfefbd56844cec2d4036a4d1bf98f750bc960d15a64b25",
+        "case_id": "s010",
+        "input_token_bound": 10632,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.124884",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "304245361f9faa371428e3e5dbc672d96a50d84f4b10d2f7e994399678c698a5",
+        "case_id": "wiki_00bf758d6c4598eb",
+        "input_token_bound": 22140,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.153654",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "1962bec63b8548b591857ff973b11d1feb7546414c8cf28ce0c78771a319b592",
+        "case_id": "wiki_00bf758d6c4598eb",
+        "input_token_bound": 18971,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1457315",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "db6c8cc5b0676738c900619474c6a452c602be5d2805135b0098c32eec9c25e7",
+        "case_id": "wiki_00bf758d6c4598eb",
+        "input_token_bound": 17900,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.143054",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "f826cc6f02b58a1e285d058b6d1f6b47aec930b5d67ec01db5f589278a93f027",
+        "case_id": "wiki_00453ee6390a4fd0",
+        "input_token_bound": 23579,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1572515",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "d311dede87fe94f76776e5effe480309bc084dbd2cce3a960ac6ce9048d3195a",
+        "case_id": "wiki_00453ee6390a4fd0",
+        "input_token_bound": 24650,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.159929",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "2878db3625554d8107256fdc09a1278931b243e7748a79e33246e6f89db64722",
+        "case_id": "wiki_00453ee6390a4fd0",
+        "input_token_bound": 27630,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.167379",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "0ae30ed37b15e046fe5a68cf39ad9650181ffa53d804d537936759b65fa2cfdf",
+        "case_id": "s007",
+        "input_token_bound": 9801,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1228065",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "1c1201bae1c561e30ef33e470b1c656eab87d45ebb3fe50690b4904c905cc354",
+        "case_id": "s007",
+        "input_token_bound": 11691,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1275315",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "224a0474acdb9320009fbca0a042a9ef1e38231448e559a3ea27a90dc7e178be",
+        "case_id": "s007",
+        "input_token_bound": 10872,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.125484",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "45effca7d6a27106cf255872a69e4bc7c5a09a4b029cefde0a12a859238610cd",
+        "case_id": "wiki_00f4297cef60b25f",
+        "input_token_bound": 17492,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.142034",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "9830568a28fcb24be82635148d33d84cc2f3d8ebc62c502d57c6de0623c55742",
+        "case_id": "wiki_00f4297cef60b25f",
+        "input_token_bound": 16421,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1393565",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "7385a217cb0c5ae696e90dd94f43c2324c06096d2fdd5739991159dad4f09822",
+        "case_id": "wiki_00f4297cef60b25f",
+        "input_token_bound": 19554,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.147189",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "7371c304703fc0907ee93526e35669a198e5c86aff6e2e4db4d73ecd858ecc07",
+        "case_id": "wiki_0028fc1e8b7ce94f",
+        "input_token_bound": 18067,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1434715",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "59cb62a22549cadbf108b2b696647eb2ab2c01a86c18873a1258caec19e6523c",
+        "case_id": "wiki_0028fc1e8b7ce94f",
+        "input_token_bound": 20589,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1497765",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "830b99897a3bc269dde8bdf6eebe9302fcfba8b26bcb483d9d67d85abae9d332",
+        "case_id": "wiki_0028fc1e8b7ce94f",
+        "input_token_bound": 16996,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.140794",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "1028d31f06755ba1c7a50d2cbf2e0dfffa53863a7a773e79124ac9359da01182",
+        "case_id": "wiki_005dcf4b1e328d0b",
+        "input_token_bound": 18318,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.144099",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "86adda1fb90a722c3452ac2970937420d466ca33029ce1fa9a6288a8d64c6e90",
+        "case_id": "wiki_005dcf4b1e328d0b",
+        "input_token_bound": 15131,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1361315",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "b7587344df68e4c401e749834c4b0f0bd6a923b6c8c7078a5d892976c88c8499",
+        "case_id": "wiki_005dcf4b1e328d0b",
+        "input_token_bound": 16202,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.138809",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "00cffa2704bf9f33308b3b159a6d1d89748e846835a6a679d9a18dbc81c05966",
+        "case_id": "wiki_00de99b2b79722ba",
+        "input_token_bound": 15360,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.136704",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "214691ff513bf3725b4db3d115dddb6fe4551189850c175f59317c28c8576e8e",
+        "case_id": "wiki_00de99b2b79722ba",
+        "input_token_bound": 13343,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.1316615",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "b4eac31ca8c31cc146cb16867d5d216c2474ba724afba8e838b8496a593d2b60",
+        "case_id": "wiki_00de99b2b79722ba",
+        "input_token_bound": 12272,
+        "model_id": "openai/gpt-5.6-terra",
+        "reserved_usd": "0.128984",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "bf8e13ac76bd38b627fb00421a9faebef09d16ed47e52db064e285ebb55c412b",
+        "case_id": "s008",
+        "input_token_bound": 8874,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.099668",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "0c563f84e3f2823b0f8598a6879a1e5591281b9a16e02e78e4b528af23b4c4df",
+        "case_id": "s008",
+        "input_token_bound": 10447,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.102814",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "522eb67fde22ba72f05d18b9a9c14d3bc62f6284b448dda9d298852f419a3fdd",
+        "case_id": "s008",
+        "input_token_bound": 9945,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.10181",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "cad19dce3caebe6ec23680fc95235104aa11c7d57e090ba8d533d2899517f006",
+        "case_id": "s009",
+        "input_token_bound": 10028,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.101976",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "b9df612d0dd7ba0996d92d02a559d08dab3b75be0acd7d4ddbfc3b2dee77f43d",
+        "case_id": "s009",
+        "input_token_bound": 8957,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.099834",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "e2875775c6d49678fa85934e935698a2ad580633f4ef88582d065c15b7ae4401",
+        "case_id": "s009",
+        "input_token_bound": 10530,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.10298",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "87386510bb8a7beb79fb403be89250986a2e26134e83c8e9139e51eec94242d7",
+        "case_id": "wiki_024de924633c3728",
+        "input_token_bound": 16340,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.1146",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "82c97b59aa7d3652cf8cd017d1c33cf4098ab4ccc276df8f2afb8ea3eca9e3db",
+        "case_id": "wiki_024de924633c3728",
+        "input_token_bound": 24059,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.130038",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "9cd72f29882d3156b84097e4ae89c2706a04f288286971c21a69a019fab92a8c",
+        "case_id": "wiki_024de924633c3728",
+        "input_token_bound": 15269,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.112458",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "c9ab5373c32c12dc8ce162431555336bdaf723822467c56b90afaa0a7f787d4e",
+        "case_id": "wiki_0252f85ad8d798a1",
+        "input_token_bound": 32292,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.146504",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "686e3a0bcaa65912cb6d008ecc8748047e4d6867c4150d9cb8ec82b044d9e641",
+        "case_id": "wiki_0252f85ad8d798a1",
+        "input_token_bound": 26665,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.13525",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "dc002034672d5973415f2f13a57b0945c954792fd9ae207b85071384ffd11cf6",
+        "case_id": "wiki_0252f85ad8d798a1",
+        "input_token_bound": 27736,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.137392",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "741c7ca0744b970584a21f02a9fa3be6bb505b7e09b29fe30d6f6f65f2a3867c",
+        "case_id": "s004",
+        "input_token_bound": 11220,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.10436",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "379fc5cd03ed19110fece5f460e3f75c6b3450f4eebb7c64077618424ddcda40",
+        "case_id": "s004",
+        "input_token_bound": 10478,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.102876",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "088d65a937cb91d084c89903712444eb4dc7797fa6dc4cbe002152f344d3e7a1",
+        "case_id": "s004",
+        "input_token_bound": 9407,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.100734",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "be89374033bdbe756a5e5c92f9c4ea2403a1849235d8d74a7704423fc64280f5",
+        "case_id": "wiki_028b2268bbdc10a0",
+        "input_token_bound": 13687,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.109294",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "3e46d388d55478c2e9bf7ea3f017dfd5c584e17db77951764e0aebea1ce5495d",
+        "case_id": "wiki_028b2268bbdc10a0",
+        "input_token_bound": 14758,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.111436",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "6157cdba76b8af5eb4f9427d928495eedb7e5a894e70761df8077af08362a0db",
+        "case_id": "wiki_028b2268bbdc10a0",
+        "input_token_bound": 16833,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.115586",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "3c8f68af6c1f19c746dcbdd4acb8485cb166041fcb05b4ee7cca00d534e35037",
+        "case_id": "wiki_022044d9432b5bac",
+        "input_token_bound": 17569,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.117058",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "14544a66d1e545b0f17996a61a53e548cb474a125dc985d1a6e8fc8c3820f136",
+        "case_id": "wiki_022044d9432b5bac",
+        "input_token_bound": 20646,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.123212",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "ff7a2ddb53fe4b498748692a2f5e232acbf67d48da9ff4d95930e01f5f749bb4",
+        "case_id": "wiki_022044d9432b5bac",
+        "input_token_bound": 18640,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.1192",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "f59d653300beb0c184120c13eadf37c50509b3d9910f1db849f92fae7c40d1d2",
+        "case_id": "wiki_00f28627d035b3d7",
+        "input_token_bound": 22120,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.12616",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "c853f473f73f12b9a82cce80bbbb46f656bb4c42c7a50eeb51cd632014a970ef",
+        "case_id": "wiki_00f28627d035b3d7",
+        "input_token_bound": 21049,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.124018",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "debe1c135801a5ba2bb57ee63f58b7359a48b0bf8580545ca9deab9b4a856631",
+        "case_id": "wiki_00f28627d035b3d7",
+        "input_token_bound": 24302,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.130524",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "e8569ff9f929db2a6624e9b63b5708d29beae9ceebc4e5ab203a5109341e68ba",
+        "case_id": "wiki_004b8eda7b936681",
+        "input_token_bound": 17973,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.117866",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "536cd23aad2479ee3bd93db9c4e431cbf27186e2067e22bbafd362496a32cd14",
+        "case_id": "wiki_004b8eda7b936681",
+        "input_token_bound": 20009,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.121938",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "e0b4c3113ff1f4d59058e4d2abdb7c5de066d476551e0fdea46acb920c9f97c7",
+        "case_id": "wiki_004b8eda7b936681",
+        "input_token_bound": 16902,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.115724",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "c0665c7f94c063923991193da7ff8f173b9685f43267e8a337d8ca7ffeaa714c",
+        "case_id": "wiki_00934b155f20a8eb",
+        "input_token_bound": 37625,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.15717",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "ddcf6e309a923a687002950e85c2147565cc30881c7d42ffdb5ad0031d6a278b",
+        "case_id": "wiki_00934b155f20a8eb",
+        "input_token_bound": 32990,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.1479",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "57be0387f00e1c8828ececa775db1ffc68f0a80bb403a61ef28202caa5215909",
+        "case_id": "wiki_00934b155f20a8eb",
+        "input_token_bound": 34061,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.150042",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "88f8e0af79431045ec4c1cd35673a99feb7e178ac1c09f021a8b9f91093831bd",
+        "case_id": "wiki_02242579e77fc4f9",
+        "input_token_bound": 15774,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.113468",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "1dfb292a708bfc52c536fd1f24ff0724f56f23456b441cbfa04a5b7ef1cb1725",
+        "case_id": "wiki_02242579e77fc4f9",
+        "input_token_bound": 13738,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.109396",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "0ff4836414743e54aae31cbe26ca703f6685feba65609fa8f32bd9a13c249dbe",
+        "case_id": "wiki_02242579e77fc4f9",
+        "input_token_bound": 12667,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.107254",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "abbe6f0aa5f817c16b8aa0f2980b421ba0c8b97bad0d5b8ed92f779361fc0067",
+        "case_id": "s003",
+        "input_token_bound": 8997,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.099914",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "65d84cd36a72f770d6858b84c12382bf8df5e7b15ecdb218cb91bc20d51ebbb3",
+        "case_id": "s003",
+        "input_token_bound": 10068,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.102056",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "656dd3ceb9d1895a1a0c7a4d4249570f2b6830764115af07107c82a2ddbc2cce",
+        "case_id": "s003",
+        "input_token_bound": 10732,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.103384",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "44c88eb6b273f41f0a41a7076133e4759bf0f9a452722fec965005b5e7633a92",
+        "case_id": "wiki_00a62ba4a1e63afd",
+        "input_token_bound": 19230,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.12038",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "646e099ce1e505d77d35bad84e2bac204a627770b7f90b2e28d50f6ec87386c3",
+        "case_id": "wiki_00a62ba4a1e63afd",
+        "input_token_bound": 23980,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.12988",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "54b79c5d57ca9cbe5467c7bf41cd089f8da520895b419a2615244c4f7955558f",
+        "case_id": "wiki_00a62ba4a1e63afd",
+        "input_token_bound": 20301,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.122522",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "8569214d57dac2590789f0821b6975b74c78cd8871ab6d182434a83ceb792231",
+        "case_id": "s006",
+        "input_token_bound": 10351,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.102622",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "706efcd6f0059f01f862520bbee1121717ab09f085bebb048309e46e4f1a5381",
+        "case_id": "s006",
+        "input_token_bound": 9280,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.10048",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "e5968418671df6d0805db2d2c183ef58b97f9a24c4bdd26c9ff5646cfa941542",
+        "case_id": "s006",
+        "input_token_bound": 11015,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.10395",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "fb6477acbce7aded338774874e67388d2e1f1c10f21cff46a13067c0869e7ce4",
+        "case_id": "wiki_008a6682a45fb0f8",
+        "input_token_bound": 18528,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.118976",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "2e9fae76dc443d1685ac8632936d7b67a852e19d6cf1696f487c84d811231bbe",
+        "case_id": "wiki_008a6682a45fb0f8",
+        "input_token_bound": 20591,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.123102",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "6a1e35e7caac98cc533fcc9156e6c4c9f7ec250fcbbeb68e718f821d17b12d8c",
+        "case_id": "wiki_008a6682a45fb0f8",
+        "input_token_bound": 17457,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.116834",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "3df9d535fb9ede44d1971b3e0b6e0316e4288808073a8153757eb54e788a904e",
+        "case_id": "s005",
+        "input_token_bound": 11495,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.10491",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "fa9540dbe8fb4da626b6bee1bebf3b4306bad0a25bb14aeffae303075d0d529a",
+        "case_id": "s005",
+        "input_token_bound": 9682,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.101284",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "3d2188223713185e55b869cd66160be7394befd02b745219e8c1a21b3fa7af1b",
+        "case_id": "s005",
+        "input_token_bound": 10753,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.103426",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "5c41b282c1e2e6f6a895657441fe42b2e29b7ea1edf721e7f4b0c85e82e8fc0f",
+        "case_id": "s010",
+        "input_token_bound": 11384,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.104688",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "ea20a427c74f118e6066d086f24fa3c7e9faee9497cc52ea8b557d4b8958e476",
+        "case_id": "s010",
+        "input_token_bound": 10642,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.103204",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "cb38cc8263786221cdf6882ca47cd46ef863ae113e8f6e7ab449479318ce0883",
+        "case_id": "s010",
+        "input_token_bound": 9571,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.101062",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "465dfff4b6b60f0ca09fbca53bfd649869af05d74de149d4d214c99866f1c860",
+        "case_id": "wiki_00bf758d6c4598eb",
+        "input_token_bound": 17910,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.11774",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "69e37a5a2056257e38b3541927c36d0a3afe4e6049e7f1006ad9929820d0d6ae",
+        "case_id": "wiki_00bf758d6c4598eb",
+        "input_token_bound": 18981,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.119882",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "968a418f64e392dda1f883010c0071788c9a59ec1fe70f516c6fce4358062c7d",
+        "case_id": "wiki_00bf758d6c4598eb",
+        "input_token_bound": 22150,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.12622",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "2f9d116c678d57fae0ce16f551db1b776598ed794844a1a6d8b025df2ceaecf1",
+        "case_id": "wiki_00453ee6390a4fd0",
+        "input_token_bound": 23589,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.129098",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "5582fc662ee3487612e1a396a12db8789f57e4d1cd38bf0b655b696844628777",
+        "case_id": "wiki_00453ee6390a4fd0",
+        "input_token_bound": 27640,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.1372",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "2dab1d1715ca6a8257a3612e156b3570b0d129612bc1aa32e9c7bbeb412cf5c0",
+        "case_id": "wiki_00453ee6390a4fd0",
+        "input_token_bound": 24660,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.13124",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "c7f3fa8c61b9ae169477eeb25337d870006bc6e90d48f7574c7205b885da3218",
+        "case_id": "s007",
+        "input_token_bound": 10882,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.103684",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "51bd964a96b0501c640802ae838ab1d0189b588982609440c4de2b583201e4ec",
+        "case_id": "s007",
+        "input_token_bound": 9811,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.101542",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "7a9547c4ad5308e8a7859de223bcf3f6af3b60aa5dbef60a230898ee318b7201",
+        "case_id": "s007",
+        "input_token_bound": 11701,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.105322",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "826237e715a5c9c58787b2372d31b4ec7f4d5d99aa25114569a15aeb57a14e6d",
+        "case_id": "wiki_00f4297cef60b25f",
+        "input_token_bound": 17502,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.116924",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "1357583a3b4aff8aa0c18a9982fa2e5f6dececeab934a7fe2fb26c7b60b21c77",
+        "case_id": "wiki_00f4297cef60b25f",
+        "input_token_bound": 19564,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.121048",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "5ad74e26653971887dede2d30ae144217bc212f9ca8ff1a92d89a8ee64b8efc9",
+        "case_id": "wiki_00f4297cef60b25f",
+        "input_token_bound": 16431,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.114782",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "4cae0303c15087ffb1612dc22ec1e3ff3f87842cdc3cc71249cb278c3463dd31",
+        "case_id": "wiki_0028fc1e8b7ce94f",
+        "input_token_bound": 20599,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.123118",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "58a5b77f9fa996ac5533b48e77b7406fb2c568f7d42e72f9f9ea511a47bbb6a9",
+        "case_id": "wiki_0028fc1e8b7ce94f",
+        "input_token_bound": 17006,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.115932",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "636c70010a77de3c51e8e81803499104540f99507bfe5169beac1f4f576646fa",
+        "case_id": "wiki_0028fc1e8b7ce94f",
+        "input_token_bound": 18077,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.118074",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "6b74979c257aba9d5c103c7b6378ae6645087a35a50881ab10ce398a5185139e",
+        "case_id": "wiki_005dcf4b1e328d0b",
+        "input_token_bound": 18328,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.118576",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "e77264e908870ad09e760eed5d6b0e9549721dbf55e2273fbb8d0a41e1a47ce6",
+        "case_id": "wiki_005dcf4b1e328d0b",
+        "input_token_bound": 16212,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.114344",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "81750c92ebbbdca17e0595f0564de9ec34271a46b10b6cd2b3beaa484c174402",
+        "case_id": "wiki_005dcf4b1e328d0b",
+        "input_token_bound": 15141,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.112202",
+        "split": "evaluation"
+      },
+      {
+        "arm": "A",
+        "attempt_key": "637c21d8b1db2a5cce3928055a5c9df98b801ff76df2f3afd02d006b07513e9c",
+        "case_id": "wiki_00de99b2b79722ba",
+        "input_token_bound": 12282,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.106484",
+        "split": "evaluation"
+      },
+      {
+        "arm": "B",
+        "attempt_key": "c04e2c19b61663c498282b490b5644449e3920f17826c23a3fa0ecf8a5926d94",
+        "case_id": "wiki_00de99b2b79722ba",
+        "input_token_bound": 13353,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.108626",
+        "split": "evaluation"
+      },
+      {
+        "arm": "C",
+        "attempt_key": "e518b243db854971d6e4cc5a2b8bc616b799a2002227566abd491f0e895c728c",
+        "case_id": "wiki_00de99b2b79722ba",
+        "input_token_bound": 15370,
+        "model_id": "anthropic/claude-sonnet-5.5",
+        "reserved_usd": "0.11266",
+        "split": "evaluation"
+      }
+    ],
+    "retry_reservation_usd": "2.422488",
+    "status": "ready",
+    "total_schedule_bound_usd": "24.0569160"
+  },
+  "checked_at_utc": "2026-10-03T20:23:28.754208+00:00",
+  "no_inference_before_this_record": true,
+  "preservation": {
+    "all_match": true,
+    "baseline_head": "7abea1a8f0bc2ac38bd6d3c7a2bdac83cdafe5f6",
+    "dependency_lock_sha256": "2ebf9b1106185db7de8590b6eb47c7b4b50c07d86f79a20ca7cd78871bbe42b7",
+    "verified_files": 70
+  },
+  "ruff": "passed",
+  "tests_passed": 431,
+  "validation": {
+    "case_counts": {
+      "development/synthetic": 2,
+      "development/wiki": 2,
+      "evaluation/synthetic": 8,
+      "evaluation/wiki": 16
+    },
+    "claims": 112,
+    "gold_certificate_checks": 28,
+    "independent_human_review": false,
+    "label_invariance_checks": 28,
+    "leakage_field_checks": 28,
+    "same_evidence_checks": 28,
+    "shortages": {
+      "development/synthetic": 0,
+      "development/wiki": 0,
+      "evaluation/synthetic": 0,
+      "evaluation/wiki": 0
+    }
+  }
+}

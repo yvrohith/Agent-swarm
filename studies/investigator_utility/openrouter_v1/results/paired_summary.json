@@ -1,0 +1,1585 @@
+{
+  "analysis_unit": "case; whole page/history clusters resampled together",
+  "bootstrap_seed": 73021,
+  "case_counts": {
+    "synthetic": 8,
+    "wiki": 16
+  },
+  "groups": [
+    {
+      "arm": "A",
+      "case_count": 8,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.8,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.4,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 5
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.875,
+          "ci_low": 0.125,
+          "denominator": 32,
+          "mean": 0.5,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 16
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.875,
+          "ci_low": 0.125,
+          "denominator": 32,
+          "mean": 0.5,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 16
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 1.0,
+          "ci_low": 0.2,
+          "denominator": 10,
+          "mean": 0.6,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 5
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.7142857142857143,
+          "ci_low": 0.14285714285714285,
+          "denominator": 22,
+          "mean": 0.42857142857142855,
+          "n_cases": 7,
+          "n_clusters": 7,
+          "numerator": 11
+        }
+      },
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "subset": "synthetic"
+    },
+    {
+      "arm": "B",
+      "case_count": 8,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 0.2,
+          "denominator": 10,
+          "mean": 0.6,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 4
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.875,
+          "ci_low": 0.25,
+          "denominator": 32,
+          "mean": 0.625,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 20
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.75,
+          "ci_low": 0.125,
+          "denominator": 32,
+          "mean": 0.375,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 12
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.8,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.4,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 6
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.8571428571428571,
+          "ci_low": 0.14285714285714285,
+          "denominator": 22,
+          "mean": 0.42857142857142855,
+          "n_cases": 7,
+          "n_clusters": 7,
+          "numerator": 8
+        }
+      },
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "subset": "synthetic"
+    },
+    {
+      "arm": "C",
+      "case_count": 8,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 0.2,
+          "denominator": 10,
+          "mean": 0.6,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 4
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.75,
+          "ci_low": 0.125,
+          "denominator": 32,
+          "mean": 0.375,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 12
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.875,
+          "ci_low": 0.25,
+          "denominator": 32,
+          "mean": 0.625,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 20
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.8,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.4,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 6
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 0.42857142857142855,
+          "denominator": 22,
+          "mean": 0.7142857142857143,
+          "n_cases": 7,
+          "n_clusters": 7,
+          "numerator": 16
+        }
+      },
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "subset": "synthetic"
+    },
+    {
+      "arm": "A",
+      "case_count": 16,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 0.8125,
+          "denominator": 32,
+          "mean": 0.9375,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 30
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.1875,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0625,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 4
+        },
+        "three_class_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 0.8125,
+          "denominator": 64,
+          "mean": 0.9375,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 60
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.1875,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0625,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 2
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 0.8125,
+          "denominator": 32,
+          "mean": 0.9375,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 30
+        }
+      },
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "subset": "wiki"
+    },
+    {
+      "arm": "B",
+      "case_count": 16,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.9375,
+          "ci_low": 0.5,
+          "denominator": 32,
+          "mean": 0.75,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 24
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.4375,
+          "ci_low": 0.0625,
+          "denominator": 64,
+          "mean": 0.25,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 16
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.9375,
+          "ci_low": 0.5,
+          "denominator": 64,
+          "mean": 0.75,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 48
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.4390624999999915,
+          "ci_low": 0.0625,
+          "denominator": 32,
+          "mean": 0.25,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 8
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.9375,
+          "ci_low": 0.5,
+          "denominator": 32,
+          "mean": 0.75,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 24
+        }
+      },
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "subset": "wiki"
+    },
+    {
+      "arm": "C",
+      "case_count": 16,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 0.75,
+          "denominator": 32,
+          "mean": 0.90625,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 29
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.046875,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.015625,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 1
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.1875,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0625,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 4
+        },
+        "three_class_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 0.8125,
+          "denominator": 64,
+          "mean": 0.9375,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 60
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.25,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.09375,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 3
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 0.8125,
+          "denominator": 32,
+          "mean": 0.9375,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 30
+        }
+      },
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "subset": "wiki"
+    },
+    {
+      "arm": "A",
+      "case_count": 8,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 10,
+          "mean": 1.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 10
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "three_class_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 32
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 22,
+          "mean": 1.0,
+          "n_cases": 7,
+          "n_clusters": 7,
+          "numerator": 22
+        }
+      },
+      "model_id": "openai/gpt-5.6-terra",
+      "subset": "synthetic"
+    },
+    {
+      "arm": "B",
+      "case_count": 8,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 10,
+          "mean": 1.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 10
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "three_class_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 32
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 22,
+          "mean": 1.0,
+          "n_cases": 7,
+          "n_clusters": 7,
+          "numerator": 22
+        }
+      },
+      "model_id": "openai/gpt-5.6-terra",
+      "subset": "synthetic"
+    },
+    {
+      "arm": "C",
+      "case_count": 8,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 10,
+          "mean": 1.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 10
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 0
+        },
+        "three_class_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 8,
+          "n_clusters": 8,
+          "numerator": 32
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 10,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5,
+          "numerator": 0
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 22,
+          "mean": 1.0,
+          "n_cases": 7,
+          "n_clusters": 7,
+          "numerator": 22
+        }
+      },
+      "model_id": "openai/gpt-5.6-terra",
+      "subset": "synthetic"
+    },
+    {
+      "arm": "A",
+      "case_count": 16,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 32
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "three_class_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 64,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 64
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 32
+        }
+      },
+      "model_id": "openai/gpt-5.6-terra",
+      "subset": "wiki"
+    },
+    {
+      "arm": "B",
+      "case_count": 16,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 32
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "three_class_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 64,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 64
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 32
+        }
+      },
+      "model_id": "openai/gpt-5.6-terra",
+      "subset": "wiki"
+    },
+    {
+      "arm": "C",
+      "case_count": 16,
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 32
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 64,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "three_class_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 64,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 64
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "denominator": 32,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 0
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "denominator": 32,
+          "mean": 1.0,
+          "n_cases": 16,
+          "n_clusters": 16,
+          "numerator": 32
+        }
+      },
+      "model_id": "openai/gpt-5.6-terra",
+      "subset": "wiki"
+    }
+  ],
+  "paired": [
+    {
+      "comparison": "C-B",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.6,
+          "ci_low": -0.6,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.25,
+          "ci_low": -0.75,
+          "mean": -0.25,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.625,
+          "ci_low": -0.25,
+          "mean": 0.25,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.6,
+          "ci_low": -0.6,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.7142857142857143,
+          "ci_low": -0.2857142857142857,
+          "mean": 0.2857142857142857,
+          "n_cases": 7,
+          "n_clusters": 7
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "paired_case_count": 8,
+      "primary": true,
+      "subset": "synthetic"
+    },
+    {
+      "comparison": "B-A",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.8,
+          "ci_low": -0.4,
+          "mean": 0.2,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.625,
+          "ci_low": -0.5,
+          "mean": 0.125,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.375,
+          "ci_low": -0.625,
+          "mean": -0.125,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.6,
+          "ci_low": -0.8,
+          "mean": -0.2,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.5714285714285714,
+          "ci_low": -0.5714285714285714,
+          "mean": 0.0,
+          "n_cases": 7,
+          "n_clusters": 7
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "paired_case_count": 8,
+      "primary": false,
+      "subset": "synthetic"
+    },
+    {
+      "comparison": "C-A",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.8,
+          "ci_low": -0.4,
+          "mean": 0.2,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.375,
+          "ci_low": -0.625,
+          "mean": -0.125,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.625,
+          "ci_low": -0.375,
+          "mean": 0.125,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.4,
+          "ci_low": -0.8,
+          "mean": -0.2,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.7142857142857143,
+          "ci_low": -0.2857142857142857,
+          "mean": 0.2857142857142857,
+          "n_cases": 7,
+          "n_clusters": 7
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "paired_case_count": 8,
+      "primary": false,
+      "subset": "synthetic"
+    },
+    {
+      "comparison": "C-B",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.34375,
+          "ci_low": 0.0,
+          "mean": 0.15625,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.046875,
+          "ci_low": 0.0,
+          "mean": 0.015625,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": -0.375,
+          "mean": -0.1875,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.375,
+          "ci_low": 0.0,
+          "mean": 0.1875,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": -0.34375,
+          "mean": -0.15625,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.375,
+          "ci_low": 0.0,
+          "mean": 0.1875,
+          "n_cases": 16,
+          "n_clusters": 16
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "paired_case_count": 16,
+      "primary": true,
+      "subset": "wiki"
+    },
+    {
+      "comparison": "B-A",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.0,
+          "ci_low": -0.375,
+          "mean": -0.1875,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.375,
+          "ci_low": 0.0,
+          "mean": 0.1875,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": -0.375,
+          "mean": -0.1875,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.375,
+          "ci_low": 0.0,
+          "mean": 0.1875,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": -0.375,
+          "mean": -0.1875,
+          "n_cases": 16,
+          "n_clusters": 16
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "paired_case_count": 16,
+      "primary": false,
+      "subset": "wiki"
+    },
+    {
+      "comparison": "C-A",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.09375,
+          "ci_low": -0.1875,
+          "mean": -0.03125,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.046875,
+          "ci_low": 0.0,
+          "mean": 0.015625,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.1875,
+          "ci_low": -0.1875,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.1875,
+          "ci_low": -0.1875,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.1875,
+          "ci_low": -0.09375,
+          "mean": 0.03125,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.1875,
+          "ci_low": -0.1875,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "paired_case_count": 16,
+      "primary": false,
+      "subset": "wiki"
+    },
+    {
+      "comparison": "C-B",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 7,
+          "n_clusters": 7
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "openai/gpt-5.6-terra",
+      "paired_case_count": 8,
+      "primary": true,
+      "subset": "synthetic"
+    },
+    {
+      "comparison": "B-A",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 7,
+          "n_clusters": 7
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "openai/gpt-5.6-terra",
+      "paired_case_count": 8,
+      "primary": false,
+      "subset": "synthetic"
+    },
+    {
+      "comparison": "C-A",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 8,
+          "n_clusters": 8
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 5,
+          "n_clusters": 5
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 7,
+          "n_clusters": 7
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "openai/gpt-5.6-terra",
+      "paired_case_count": 8,
+      "primary": false,
+      "subset": "synthetic"
+    },
+    {
+      "comparison": "C-B",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "openai/gpt-5.6-terra",
+      "paired_case_count": 16,
+      "primary": true,
+      "subset": "wiki"
+    },
+    {
+      "comparison": "B-A",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "openai/gpt-5.6-terra",
+      "paired_case_count": 16,
+      "primary": false,
+      "subset": "wiki"
+    },
+    {
+      "comparison": "C-A",
+      "metrics": {
+        "correct_unresolved": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "evidence_citation_error_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "invalid_missing_answer_rate": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "three_class_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "unjustified_certainty_or_invalid": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        },
+        "warranted_answer_accuracy": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n_cases": 16,
+          "n_clusters": 16
+        }
+      },
+      "missing_control_case_ids": [],
+      "missing_treatment_case_ids": [],
+      "model_id": "openai/gpt-5.6-terra",
+      "paired_case_count": 16,
+      "primary": false,
+      "subset": "wiki"
+    }
+  ],
+  "resamples": 2000
+}

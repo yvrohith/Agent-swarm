@@ -1,0 +1,671 @@
+{
+  "case_counts": {
+    "development/synthetic": 2,
+    "development/wiki": 2,
+    "evaluation/synthetic": 8,
+    "evaluation/wiki": 16
+  },
+  "existing_source_manifest_sha256": "def8d0245e200bbd564f3f94a70883a5330e41d8bbc4d2986ccbf5bdff7e33b1",
+  "source_container_sha256": {
+    "archive": "eb68aa12d26bf189d8bfc4ce47f4d8af66ae5ba7ebbadd429738297a3cbb25ae",
+    "supplement": "2047f3a2915fb3d237ed03d01deef306d11021a6ffc42a57a5f60918d850a5fd"
+  },
+  "synthetic": {
+    "case_ids": [
+      "s001",
+      "s002",
+      "s003",
+      "s004",
+      "s005",
+      "s006",
+      "s007",
+      "s008",
+      "s009",
+      "s010"
+    ],
+    "contract": "receipt-chain-shared-scaffold-v1",
+    "development_cases": 2,
+    "evaluation_cases": 8,
+    "gold_sha256": "fef4bca2cfa0bfcc1fce055cd1728b75f58396cf4fd0b5dae6101dee4a1fb5b1",
+    "inconsistency_rule": "reject bundles with no compatible finite world before inference",
+    "public_cases_sha256": "69ab965e3023a16455cbd0278ef140b5468320bd5e4d6b24b55928b35b15a28c",
+    "schema_version": 1,
+    "selection": "fixed enumerated receipt/scope scenarios; no model-outcome selection",
+    "subset": "synthetic",
+    "unit": "one public observation bundle; compatible mechanisms are not extra cases"
+  },
+  "wiki": {
+    "candidate_pairs_by_stratum": {
+      "inherited_only": 2688,
+      "inserted": 1346
+    },
+    "excluded_pages": [
+      [
+        "dse",
+        "AgentAug23OAI"
+      ],
+      [
+        "dse",
+        "AgentJQDirectSec19A"
+      ],
+      [
+        "dse",
+        "AgentMassSECFinalLinks2026K"
+      ],
+      [
+        "dse",
+        "AgentMyBridgeZZ"
+      ],
+      [
+        "dse",
+        "AgentOpenAIFeb29Run"
+      ],
+      [
+        "dse",
+        "AgentPureNext778"
+      ],
+      [
+        "dse",
+        "AgentSecDirectJQP999"
+      ],
+      [
+        "dse",
+        "AgentTempOpenAIx"
+      ],
+      [
+        "dse",
+        "AgentUniquePage551990"
+      ],
+      [
+        "dse",
+        "BridgeAsciiJump"
+      ],
+      [
+        "dse",
+        "CashierCoordFeb28OAI"
+      ],
+      [
+        "dse",
+        "CashierR5SignalFeb28OAI"
+      ],
+      [
+        "dse",
+        "Clothing2m56Round3RelayMay31"
+      ],
+      [
+        "dse",
+        "DataUSA"
+      ],
+      [
+        "dse",
+        "DataUSAClothingLive2m56Jun28"
+      ],
+      [
+        "dse",
+        "DataUSAQueryBridgeFeb08C"
+      ],
+      [
+        "dse",
+        "DataUSAQueryBridgeFeb08D"
+      ],
+      [
+        "dse",
+        "ForumSeite"
+      ],
+      [
+        "dse",
+        "HealthdataCVDSequenceCollab"
+      ],
+      [
+        "dse",
+        "Jun05OECDScout"
+      ],
+      [
+        "dse",
+        "MaidsR3FastRelayOct11"
+      ],
+      [
+        "dse",
+        "OAIFlatheadBridgeTestMay24X"
+      ],
+      [
+        "dse",
+        "OECDEducationEquitySequence"
+      ],
+      [
+        "dse",
+        "OpenAIApr15Maids205825"
+      ],
+      [
+        "dse",
+        "OpenAIHealthdataCVDJan31"
+      ],
+      [
+        "dse",
+        "OpenAIHealthdataCVDMar27"
+      ],
+      [
+        "dse",
+        "OpenAINov28CVDLive"
+      ],
+      [
+        "dse",
+        "RedirTryABC"
+      ],
+      [
+        "dse",
+        "Sector61State5FastSignal"
+      ],
+      [
+        "dse",
+        "Sector61State5LiveRelay"
+      ],
+      [
+        "dse",
+        "SectorAgentSep21OAI"
+      ],
+      [
+        "dse",
+        "Sep21ConstructionWageLive2027"
+      ],
+      [
+        "dse",
+        "StartSeite"
+      ],
+      [
+        "dse",
+        "WillkommenImWiki"
+      ],
+      [
+        "dse",
+        "ZZOurSecCitationJun18X7"
+      ]
+    ],
+    "exclusion_counts_first_applicable_reason": {
+      "complete_record_text_exceeds_frozen_character_limit": 828,
+      "frozen_extraction_excluded_or_ambiguous": 7428,
+      "no_actual_predecessor_for_two_snapshot_task": 658,
+      "previously_reviewed_target_or_source_page": 5000
+    },
+    "known_prior_exposure": "The authors previously computed corpus-wide extraction and AI-assisted checks of a 20-pair review sheet. Every target and referenced page in that sheet is excluded, including other revisions of those pages. This is not an assertion of unseen pages for every author or uncontaminated model evaluation data. The public corpus and its earlier report were already available.",
+    "max_full_text_characters": 24000,
+    "requested_development_per_stratum": 1,
+    "requested_evaluation_per_stratum": 8,
+    "rule": "Use original eligible literal pairs with a real predecessor, no ambiguous matches, and all full predecessor/target/strict-prior-source text within the frozen character bound. Exclude both endpoint pages from every old review pair. Process inserted then inherited_only; rank each by SHA256 of compact sorted-key JSON [salt,pair_key], then pair_key. Take development then evaluation per stratum, skipping any target or source page history previously chosen in either role across both strata and splits.",
+    "schema_version": 1,
+    "selected": [
+      {
+        "case_id": "wiki_0082c1aa6d44d532",
+        "cluster_id": "wiki_page_fb17686eba73fdf3",
+        "endpoint_pages": [
+          [
+            "dse",
+            "AgentMDSECCountFitX2"
+          ],
+          [
+            "dse",
+            "AgentMdLongDirect998172"
+          ]
+        ],
+        "full_text_characters": 3969,
+        "pair_key": [
+          "dse",
+          "dse~AgentMdLongDirect998172@3",
+          "AgentMDSECCountFitX2"
+        ],
+        "public_case_sha256": "2a38c62b5360a4acceda6a480d4879d889a0e032cafd8d9cf449c008643592ae",
+        "selection_sha256": "0082c1aa6d44d532600667de788433addcc486c81038acd24b6b2696b67b426d",
+        "source_page": "AgentMDSECCountFitX2",
+        "split": "development",
+        "stratum": "inserted",
+        "target_page": "AgentMdLongDirect998172"
+      },
+      {
+        "case_id": "wiki_008a6682a45fb0f8",
+        "cluster_id": "wiki_page_25e99c9dac71f83b",
+        "endpoint_pages": [
+          [
+            "dse",
+            "AgentAug25OAI"
+          ],
+          [
+            "dse",
+            "DataUSAStateSequenceCollab2027"
+          ]
+        ],
+        "full_text_characters": 5952,
+        "pair_key": [
+          "dse",
+          "dse~DataUSAStateSequenceCollab2027@80",
+          "AgentAug25OAI"
+        ],
+        "public_case_sha256": "b550ead2b8db797430f66abf0d447ca31ecc51cd40757c0352cc8306ec3a77af",
+        "selection_sha256": "008a6682a45fb0f85e43cdd317d94d3a86f6cc4f616ebb9b9e1787800cec5fbd",
+        "source_page": "AgentAug25OAI",
+        "split": "evaluation",
+        "stratum": "inserted",
+        "target_page": "DataUSAStateSequenceCollab2027"
+      },
+      {
+        "case_id": "wiki_00de99b2b79722ba",
+        "cluster_id": "wiki_page_d7959fb037d05fd2",
+        "endpoint_pages": [
+          [
+            "dse",
+            "IHMEFamilyPlanningR5Signal"
+          ],
+          [
+            "dse",
+            "OpenAIOct28FPScoutStatus"
+          ]
+        ],
+        "full_text_characters": 885,
+        "pair_key": [
+          "dse",
+          "dse~IHMEFamilyPlanningR5Signal@2",
+          "OpenAIOct28FPScoutStatus"
+        ],
+        "public_case_sha256": "3bbb6d4b476c8c58bab34f73adf68d127d5c15645100420a975733d34122aea7",
+        "selection_sha256": "00de99b2b79722bae2883664239a928ab190f987efc56cd2948c17c894717ae5",
+        "source_page": "OpenAIOct28FPScoutStatus",
+        "split": "evaluation",
+        "stratum": "inserted",
+        "target_page": "IHMEFamilyPlanningR5Signal"
+      },
+      {
+        "case_id": "wiki_00f4297cef60b25f",
+        "cluster_id": "wiki_page_938cbe7ad7e65490",
+        "endpoint_pages": [
+          [
+            "dse",
+            "OpenAIFuelPovertyJan01Live"
+          ],
+          [
+            "dse",
+            "OpenAIFuelPovertyNov30Live"
+          ]
+        ],
+        "full_text_characters": 4937,
+        "pair_key": [
+          "dse",
+          "dse~OpenAIFuelPovertyJan01Live@8",
+          "OpenAIFuelPovertyNov30Live"
+        ],
+        "public_case_sha256": "d0bfe1e0b8d0975a5e58c17c64bad8829ac44d3dc44488a95a88afdbad5e428c",
+        "selection_sha256": "00f4297cef60b25ff7e8ef08cd4e8358bec3e7802eeb6f39b2c34d1d9a597c56",
+        "source_page": "OpenAIFuelPovertyNov30Live",
+        "split": "evaluation",
+        "stratum": "inserted",
+        "target_page": "OpenAIFuelPovertyJan01Live"
+      },
+      {
+        "case_id": "wiki_022044d9432b5bac",
+        "cluster_id": "wiki_page_574c63f71b9032bf",
+        "endpoint_pages": [
+          [
+            "dse",
+            "AgentJSLinks99172"
+          ],
+          [
+            "dse",
+            "AgentLinkma20JuneAA"
+          ]
+        ],
+        "full_text_characters": 6117,
+        "pair_key": [
+          "dse",
+          "dse~AgentLinkma20JuneAA@18",
+          "AgentJSLinks99172"
+        ],
+        "public_case_sha256": "a4a01c9df4ac43edf31fd4d722858d060f76add3b41e4cbcf257fd5be270c9d3",
+        "selection_sha256": "022044d9432b5bac9efe65cdf9697b1baa50eefd7670cf56e15097ff6dee3990",
+        "source_page": "AgentJSLinks99172",
+        "split": "evaluation",
+        "stratum": "inserted",
+        "target_page": "AgentLinkma20JuneAA"
+      },
+      {
+        "case_id": "wiki_02242579e77fc4f9",
+        "cluster_id": "wiki_page_cb6ab6069ba158f1",
+        "endpoint_pages": [
+          [
+            "dse",
+            "AgentOurDataUSAQueryXQ20250827"
+          ],
+          [
+            "dse",
+            "FinanceSequenceMar26OAI"
+          ]
+        ],
+        "full_text_characters": 1257,
+        "pair_key": [
+          "dse",
+          "dse~AgentOurDataUSAQueryXQ20250827@2",
+          "FinanceSequenceMar26OAI"
+        ],
+        "public_case_sha256": "3456b53add959b55577f820ede59ec439940e7b354b5423eaa8cf4ce30b624ad",
+        "selection_sha256": "02242579e77fc4f92d1637eec841bda5a5c32bf12b35b64183758abcc527161a",
+        "source_page": "FinanceSequenceMar26OAI",
+        "split": "evaluation",
+        "stratum": "inserted",
+        "target_page": "AgentOurDataUSAQueryXQ20250827"
+      },
+      {
+        "case_id": "wiki_024de924633c3728",
+        "cluster_id": "wiki_page_3bc9ce43000c688a",
+        "endpoint_pages": [
+          [
+            "dse",
+            "AgentNextJoinedJuneBA"
+          ],
+          [
+            "dse",
+            "BANextUnique9917"
+          ]
+        ],
+        "full_text_characters": 3832,
+        "pair_key": [
+          "dse",
+          "dse~AgentNextJoinedJuneBA@22",
+          "BANextUnique9917"
+        ],
+        "public_case_sha256": "a50643c408dc8d8d18bd8331ba22da2deb521976a46f6028245b989d1c043152",
+        "selection_sha256": "024de924633c3728b049396d4612393dee42015dd7d49f513623d7b23ee87beb",
+        "source_page": "BANextUnique9917",
+        "split": "evaluation",
+        "stratum": "inserted",
+        "target_page": "AgentNextJoinedJuneBA"
+      },
+      {
+        "case_id": "wiki_0252f85ad8d798a1",
+        "cluster_id": "wiki_page_dce5270824666192",
+        "endpoint_pages": [
+          [
+            "dse",
+            "OAIEquityDec30Raw"
+          ],
+          [
+            "dse",
+            "OECDEquityLiveJul24"
+          ]
+        ],
+        "full_text_characters": 11991,
+        "pair_key": [
+          "dse",
+          "dse~OECDEquityLiveJul24@4",
+          "OAIEquityDec30Raw"
+        ],
+        "public_case_sha256": "e50170e474532897abca07bb1d222b6cca4335820140b29a5363b0e0dcebeaa6",
+        "selection_sha256": "0252f85ad8d798a19f156a46030d702e6449b4cda75b8f1a7d548de009a1feb1",
+        "source_page": "OAIEquityDec30Raw",
+        "split": "evaluation",
+        "stratum": "inserted",
+        "target_page": "OECDEquityLiveJul24"
+      },
+      {
+        "case_id": "wiki_028b2268bbdc10a0",
+        "cluster_id": "wiki_page_b7807f0f367fc71a",
+        "endpoint_pages": [
+          [
+            "dse",
+            "DataUSATransportEquipmentLiveR3"
+          ],
+          [
+            "dse",
+            "TransportR3Mar28Live"
+          ]
+        ],
+        "full_text_characters": 2182,
+        "pair_key": [
+          "dse",
+          "dse~DataUSATransportEquipmentLiveR3@5",
+          "TransportR3Mar28Live"
+        ],
+        "public_case_sha256": "19acd9701954d36b15098563bc228faf83fc8ed9c46924b39eb5d62c3b80274f",
+        "selection_sha256": "028b2268bbdc10a038fc2ed45150e947fa4aa9f182522f2a2b9717fdcf6d967e",
+        "source_page": "TransportR3Mar28Live",
+        "split": "evaluation",
+        "stratum": "inserted",
+        "target_page": "DataUSATransportEquipmentLiveR3"
+      },
+      {
+        "case_id": "wiki_00037911fcdf208d",
+        "cluster_id": "wiki_page_a19904a655c1f434",
+        "endpoint_pages": [
+          [
+            "dse",
+            "OJLinksCountyJuneUnique777"
+          ],
+          [
+            "dse",
+            "TestSandboxAIabc"
+          ]
+        ],
+        "full_text_characters": 21806,
+        "pair_key": [
+          "dse",
+          "dse~TestSandboxAIabc@18",
+          "OJLinksCountyJuneUnique777"
+        ],
+        "public_case_sha256": "590dc6aedc2ee2d697e6d4f505ecd9644339048b53a1c23353b3f5af1b951780",
+        "selection_sha256": "00037911fcdf208d564a3138df927646407256e05a569f3f75d05a3d7ee8c39c",
+        "source_page": "OJLinksCountyJuneUnique777",
+        "split": "development",
+        "stratum": "inherited_only",
+        "target_page": "TestSandboxAIabc"
+      },
+      {
+        "case_id": "wiki_0028fc1e8b7ce94f",
+        "cluster_id": "wiki_page_4263fc5147af768e",
+        "endpoint_pages": [
+          [
+            "dse",
+            "OECDEquityLiveDec19"
+          ],
+          [
+            "dse",
+            "OECDEquityLiveFeb21"
+          ]
+        ],
+        "full_text_characters": 4964,
+        "pair_key": [
+          "dse",
+          "dse~OECDEquityLiveDec19@5",
+          "OECDEquityLiveFeb21"
+        ],
+        "public_case_sha256": "bf5b97fab33b6f6c3be28c538e37ddf23beb185c242759f33817111dac4d3d97",
+        "selection_sha256": "0028fc1e8b7ce94f3851e3b1b5e0435b8939746d570e3f210bd61814d46a16af",
+        "source_page": "OECDEquityLiveFeb21",
+        "split": "evaluation",
+        "stratum": "inherited_only",
+        "target_page": "OECDEquityLiveDec19"
+      },
+      {
+        "case_id": "wiki_00453ee6390a4fd0",
+        "cluster_id": "wiki_page_615fbdaf4a5d0bd4",
+        "endpoint_pages": [
+          [
+            "dse",
+            "AgentAfterFinalGG"
+          ],
+          [
+            "dse",
+            "AgentEvenLaterHH"
+          ]
+        ],
+        "full_text_characters": 10903,
+        "pair_key": [
+          "dse",
+          "dse~AgentAfterFinalGG@2",
+          "AgentEvenLaterHH"
+        ],
+        "public_case_sha256": "ef67534877a90c063a4f4b21ca090d328c5cbff9dba24c33bc56019e6adc7f30",
+        "selection_sha256": "00453ee6390a4fd0847e17deab8ba643713d8521cb9ab029375f6fcdc50ee81b",
+        "source_page": "AgentEvenLaterHH",
+        "split": "evaluation",
+        "stratum": "inherited_only",
+        "target_page": "AgentAfterFinalGG"
+      },
+      {
+        "case_id": "wiki_004b8eda7b936681",
+        "cluster_id": "wiki_page_3541d6a06d493315",
+        "endpoint_pages": [
+          [
+            "dse",
+            "AgentJulyMapSpecial80822"
+          ],
+          [
+            "dse",
+            "AgentOfficialMassRowsFreshZQ3"
+          ]
+        ],
+        "full_text_characters": 5362,
+        "pair_key": [
+          "dse",
+          "dse~AgentOfficialMassRowsFreshZQ3@2",
+          "AgentJulyMapSpecial80822"
+        ],
+        "public_case_sha256": "7c055d0dd009c22e12a0eef3c9799bd99f635fd52c6938c0f49aa050e17758f8",
+        "selection_sha256": "004b8eda7b936681106264c9a84b44c0f5f30c42655d3a553579371baad000d2",
+        "source_page": "AgentJulyMapSpecial80822",
+        "split": "evaluation",
+        "stratum": "inherited_only",
+        "target_page": "AgentOfficialMassRowsFreshZQ3"
+      },
+      {
+        "case_id": "wiki_005dcf4b1e328d0b",
+        "cluster_id": "wiki_page_838b99d56ee9eeb5",
+        "endpoint_pages": [
+          [
+            "dse",
+            "DataUSAGrocerySequenceCollab2027"
+          ],
+          [
+            "dse",
+            "DataUSAGrocerySequenceCollabOct22"
+          ]
+        ],
+        "full_text_characters": 3527,
+        "pair_key": [
+          "dse",
+          "dse~DataUSAGrocerySequenceCollabOct22@3",
+          "DataUSAGrocerySequenceCollab2027"
+        ],
+        "public_case_sha256": "4b81a09456d28ed1f25019a6289e989dde9e67a70aee2bea44a8cf5c378595dc",
+        "selection_sha256": "005dcf4b1e328d0bacbd32be7f52a3f76da1c49b1500839a4a2fb12c50e119a5",
+        "source_page": "DataUSAGrocerySequenceCollab2027",
+        "split": "evaluation",
+        "stratum": "inherited_only",
+        "target_page": "DataUSAGrocerySequenceCollabOct22"
+      },
+      {
+        "case_id": "wiki_00934b155f20a8eb",
+        "cluster_id": "wiki_page_8d1a4fae5b98041c",
+        "endpoint_pages": [
+          [
+            "dse",
+            "OpenAICVDDec08Fast2028"
+          ],
+          [
+            "dse",
+            "OpenAICVDFeb26Fast"
+          ]
+        ],
+        "full_text_characters": 19408,
+        "pair_key": [
+          "dse",
+          "dse~OpenAICVDDec08Fast2028@30",
+          "OpenAICVDFeb26Fast"
+        ],
+        "public_case_sha256": "6f378982ebd8a6e6fb83011ac532721cce59e40a7aa38a0da1bceaf0b25d728c",
+        "selection_sha256": "00934b155f20a8eb83f810697c25a00088df74c811f47c608567489a77223f62",
+        "source_page": "OpenAICVDFeb26Fast",
+        "split": "evaluation",
+        "stratum": "inherited_only",
+        "target_page": "OpenAICVDDec08Fast2028"
+      },
+      {
+        "case_id": "wiki_00a62ba4a1e63afd",
+        "cluster_id": "wiki_page_1e13ecb4cc9618e1",
+        "endpoint_pages": [
+          [
+            "dse",
+            "DataUSAPovertySep22Live178189"
+          ],
+          [
+            "dse",
+            "Sep26ConstructionWageLive"
+          ]
+        ],
+        "full_text_characters": 5697,
+        "pair_key": [
+          "dse",
+          "dse~DataUSAPovertySep22Live178189@9",
+          "Sep26ConstructionWageLive"
+        ],
+        "public_case_sha256": "25c7b2198e7c82f6902d8bf06eae07085e088c4904c0c23d6e18fe8dcbb41dd1",
+        "selection_sha256": "00a62ba4a1e63afd8139e94ba9689e0347a081c2c9ef4291c35f3f9b61aa4ef4",
+        "source_page": "Sep26ConstructionWageLive",
+        "split": "evaluation",
+        "stratum": "inherited_only",
+        "target_page": "DataUSAPovertySep22Live178189"
+      },
+      {
+        "case_id": "wiki_00bf758d6c4598eb",
+        "cluster_id": "wiki_page_3170377d5323b715",
+        "endpoint_pages": [
+          [
+            "dse",
+            "ClothingLiveState3RelayMay29"
+          ],
+          [
+            "dse",
+            "DataUSAClothingLive2m56Aug01"
+          ]
+        ],
+        "full_text_characters": 4930,
+        "pair_key": [
+          "dse",
+          "dse~ClothingLiveState3RelayMay29@19",
+          "DataUSAClothingLive2m56Aug01"
+        ],
+        "public_case_sha256": "a9981343483af9276241dc6dafa5bcbe5f28345787fc1b419747376bd4ddeeda",
+        "selection_sha256": "00bf758d6c4598ebfd50f0145e6ae538a748d4463df6673ca6d06a52476bb078",
+        "source_page": "DataUSAClothingLive2m56Aug01",
+        "split": "evaluation",
+        "stratum": "inherited_only",
+        "target_page": "ClothingLiveState3RelayMay29"
+      },
+      {
+        "case_id": "wiki_00f28627d035b3d7",
+        "cluster_id": "wiki_page_bcc2ecbc7001de0f",
+        "endpoint_pages": [
+          [
+            "dse",
+            "AgentFrenchPrepXQ29"
+          ],
+          [
+            "dse",
+            "DataUSALanguageR5LiveDec29"
+          ]
+        ],
+        "full_text_characters": 8797,
+        "pair_key": [
+          "dse",
+          "dse~DataUSALanguageR5LiveDec29@11",
+          "AgentFrenchPrepXQ29"
+        ],
+        "public_case_sha256": "3a9238471ff621ccf05a35323d7a333118b16d6a74585cd25e8a545d4c816c6c",
+        "selection_sha256": "00f28627d035b3d71c73d5e052b1192e968251721113f450105fb1b031e62820",
+        "source_page": "AgentFrenchPrepXQ29",
+        "split": "evaluation",
+        "stratum": "inherited_only",
+        "target_page": "DataUSALanguageR5LiveDec29"
+      }
+    ],
+    "selection_salt": "tracebench-investigator-utility-wiki-v1",
+    "shortages": [],
+    "target_site": "dse",
+    "validation": "Mechanical extraction/offset checks; no independent human validation"
+  }
+}
