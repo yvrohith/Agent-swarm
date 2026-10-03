@@ -26,6 +26,12 @@ MILLION = Decimal(1_000_000)
 PROVIDERS = {
     "openai": ("https://api.openai.com/v1/chat/completions", "openai.com"),
     "anthropic": ("https://api.anthropic.com/v1/messages", "anthropic.com"),
+    "openrouter": ("https://openrouter.ai/api/v1/chat/completions", "openrouter.ai"),
+}
+DOCUMENTATION_HOSTS = {
+    "openai": {"openai.com", "platform.openai.com", "developers.openai.com"},
+    "anthropic": {"anthropic.com", "docs.anthropic.com", "platform.claude.com"},
+    "openrouter": {"openrouter.ai", "developers.openai.com", "platform.claude.com"},
 }
 REQUIRED_MODEL_FIELDS = {
     "provider", "model_id", "family", "endpoint", "api_key_env", "context_tokens",
@@ -78,10 +84,14 @@ def _integer(value: Any, field: str) -> int:
     return value
 
 
-def _official_url(value: str, domain: str) -> bool:
-    parsed = urlparse(value)
-    return (parsed.scheme == "https" and parsed.hostname is not None
-            and (parsed.hostname == domain or parsed.hostname.endswith("." + domain)))
+def _official_url(value: str, hosts: set[str]) -> bool:
+    try:
+        parsed = urlparse(value)
+        return (parsed.scheme == "https" and parsed.hostname in hosts
+                and parsed.username is None and parsed.password is None
+                and parsed.port in {None, 443})
+    except (TypeError, ValueError):
+        return False
 
 
 def _validate_model(model: dict) -> None:
@@ -103,7 +113,7 @@ def _validate_model(model: dict) -> None:
     _money(model["input_usd_per_million"])
     _money(model["output_usd_per_million"])
     for kind in ("pricing", "limits"):
-        if not _official_url(model[kind + "_source"], PROVIDERS[provider][1]):
+        if not _official_url(model[kind + "_source"], DOCUMENTATION_HOSTS[provider]):
             raise ExecutionBlocked(f"{kind} must cite official provider documentation")
         if not re.fullmatch(r"[0-9a-f]{64}", model[kind + "_evidence_sha256"]):
             raise ExecutionBlocked(f"{kind} needs a pinned verification artifact")
@@ -119,9 +129,29 @@ def _validate_model(model: dict) -> None:
     # silently dropping them. A provider's output cap must include reasoning.
     if model["decoding"] != {}:
         raise ExecutionBlocked("this adapter supports provider-default decoding only")
-    allowed_reasoning = {"none", "included_in_output_cap"} if provider == "openai" else {"none"}
+    allowed_reasoning = {"none", "included_in_output_cap"}
     if model["reasoning"] not in allowed_reasoning:
         raise ExecutionBlocked("unbounded or unsupported reasoning settings")
+    if provider == "openrouter":
+        routing = model.get("provider_routing")
+        if (not isinstance(routing, dict) or set(routing) != {
+            "only", "allow_fallbacks", "require_parameters", "max_price"
+        } or not isinstance(routing["only"], list) or len(routing["only"]) != 1
+                or not isinstance(routing["only"][0], str) or not routing["only"][0].strip()
+                or routing["allow_fallbacks"] is not False
+                or routing["require_parameters"] is not True):
+            raise ExecutionBlocked("OpenRouter requires one frozen route and enforced parameters")
+        prices = routing["max_price"]
+        if not isinstance(prices, dict) or set(prices) != {"prompt", "completion"}:
+            raise ExecutionBlocked("OpenRouter requires explicit input/output routing price caps")
+        for key, field in (("prompt", "input_usd_per_million"),
+                           ("completion", "output_usd_per_million")):
+            if type(prices[key]) not in {int, float} or _money(prices[key]) != _money(model[field]):
+                raise ExecutionBlocked("routing price caps must match frozen per-million rates")
+        # Additional request/image/search fees cannot be inferred from token prices.
+        # The selected text-only route must have a verified zero per-request charge.
+        if "request_usd" not in model or _money(model["request_usd"]) != 0:
+            raise ExecutionBlocked("OpenRouter requires a verified zero per-request charge")
 
 
 def inspect_access(models: list[dict]) -> dict:
@@ -154,6 +184,16 @@ def request_payload(request: dict, model: dict) -> dict:
     _validate_model(model)
     if not isinstance(request.get("system"), str) or not isinstance(request.get("user"), str):
         raise ExecutionBlocked("system and user prompts must be text")
+    if model["provider"] == "openrouter":
+        return {
+            "model": model["model_id"],
+            "messages": [
+                {"role": "system", "content": request["system"]},
+                {"role": "user", "content": request["user"]},
+            ],
+            "max_tokens": model["max_output_tokens"], "stream": False,
+            "provider": json.loads(_canonical(model["provider_routing"])),
+        }
     if model["provider"] == "openai":
         return {
             "model": model["model_id"],
@@ -190,8 +230,9 @@ class _NoRedirect(urllib.request.HTTPRedirectHandler):
 
 def api_transport(model: dict, payload: dict, api_key: str) -> dict:
     """One potentially billable attempt, without SDK retries or tool support."""
+    _validate_model(model)  # Credential destinations are checked at the network boundary too.
     headers = {"Content-Type": "application/json"}
-    if model["provider"] == "openai":
+    if model["provider"] in {"openai", "openrouter"}:
         headers["Authorization"] = "Bearer " + api_key
     else:
         headers.update({"x-api-key": api_key, "anthropic-version": "2023-06-01"})
@@ -220,7 +261,7 @@ def _usage(response: dict, model: dict) -> tuple[dict | None, Decimal | None]:
     usage = response.get("usage")
     if not isinstance(usage, dict):
         return None, None
-    keys = ("prompt_tokens", "completion_tokens") if model["provider"] == "openai" else (
+    keys = ("prompt_tokens", "completion_tokens") if model["provider"] in {"openai", "openrouter"} else (
         "input_tokens", "output_tokens"
     )
     if any(type(usage.get(key)) is not int or usage[key] < 0 for key in keys):
@@ -230,12 +271,24 @@ def _usage(response: dict, model: dict) -> tuple[dict | None, Decimal | None]:
     inputs, outputs = usage[keys[0]], usage[keys[1]]
     cost = (Decimal(inputs) * _money(model["input_usd_per_million"])
             + Decimal(outputs) * _money(model["output_usd_per_million"])) / MILLION
-    return {"input_tokens": inputs, "output_tokens": outputs}, cost
+    normalized = {"input_tokens": inputs, "output_tokens": outputs}
+    if model["provider"] == "openrouter" and usage.get("cost") is not None:
+        try:
+            # Only provider-reported generation charges are actual costs here;
+            # token-derived costs remain a distinct conservative priced estimate.
+            if isinstance(usage["cost"], bool):
+                raise ExecutionBlocked("invalid cost")
+            actual = _money(usage["cost"])
+        except ExecutionBlocked:
+            pass  # Invalid cost metadata must not lose a completed response.
+        else:
+            normalized["provider_reported_actual_cost_usd"] = str(actual)
+    return normalized, cost
 
 
 def _completion(response: dict, provider: str) -> str | None:
     try:
-        if provider == "openai":
+        if provider in {"openai", "openrouter"}:
             content = response["choices"][0]["message"]["content"]
             return content if isinstance(content, str) else None
         parts = response["content"]
@@ -285,6 +338,10 @@ def _account(events: list[dict]) -> dict:
     known = sum((_money(e["usage_cost_usd"]) for e in settled.values()
                  if e.get("usage_cost_usd") is not None), Decimal(0))
     unknown = sum(1 for a in reservations if settled.get(a, {}).get("usage_cost_usd") is None)
+    actual_costs = [settled.get(a, {}).get("provider_reported_actual_cost_usd")
+                    for a in reservations]
+    known_actual = sum((_money(cost) for cost in actual_costs if cost is not None), Decimal(0))
+    unknown_actual = sum(cost is None for cost in actual_costs)
     return {"attempts": len(reservations), "additional_retry_attempts": sum(
         e["attempt_number"] > 1 for e in reservations.values()
     ), "completed_calls": sum(e["event"] == "attempt_completed" for e in settled.values()),
@@ -294,8 +351,108 @@ def _account(events: list[dict]) -> dict:
                                     for e in settled.values()),
         "charged_or_reserved_usd": str(charged), "known_usage_cost_usd": str(known),
         "unknown_cost_attempts": unknown,
-        "cost_basis": "regular-rate usage estimate plus unreleased reservations; not an invoice",
-        "actual_total_cost_usd": "0" if not reservations else None}
+        "provider_reported_actual_cost_usd": str(known_actual),
+        "unknown_actual_cost_attempts": unknown_actual,
+        "cost_basis": ("provider-reported charges when available; otherwise regular-rate usage "
+                       "estimates or unreleased reservations; not an invoice"),
+        "actual_total_cost_usd": str(known_actual) if not unknown_actual else None}
+
+
+def schedule_preflight(
+    requests: list[dict], models: list[dict], limits: dict | None = None,
+    *, existing_events: list[dict] | None = None,
+) -> dict:
+    """Bound the full 4-development/24-evaluation schedule without calls or writes.
+
+    Existing charges/reservations are retained. Only completed first responses
+    release their future reservation; failed or unsettled attempts still consume
+    their recorded cost. Each remaining retry is budgeted at the largest request
+    bound. Metadata verification is a prerequisite, not something inferred here.
+    """
+    if not 1 <= len(models) <= 2:
+        raise ExecutionBlocked("full schedule requires one or two frozen models")
+    for model in models:
+        _validate_model(model)
+    if (len({model["model_id"] for model in models}) != len(models)
+            or len({model["family"] for model in models}) != len(models)):
+        raise ExecutionBlocked("frozen models must have distinct identifiers and families")
+    supplied = limits or {}
+    if set(supplied) - {"budget_usd", "development_calls", "evaluation_calls", "retry_attempts"}:
+        raise ExecutionBlocked("unknown execution limit")
+    cap = min(_money(supplied.get("budget_usd", "25")), Decimal(25))
+    retry_limit = supplied.get("retry_attempts", 12)
+    if type(retry_limit) is not int or not 0 <= retry_limit <= 12:
+        raise ExecutionBlocked("retry_attempts must be an integer between zero and twelve")
+    registry = {model["model_id"]: model for model in models}
+    entries = []
+    for request in requests:
+        if set(request) != {"attempt_key", "case_id", "arm", "model_id", "split", "system", "user"}:
+            raise ExecutionBlocked("request contains missing fields or non-public/unsupported fields")
+        if any(not isinstance(value, str) or not value for value in request.values()):
+            raise ExecutionBlocked("all request fields must be nonempty strings")
+        if (request["arm"] not in {"A", "B", "C"}
+                or request["split"] not in {"development", "evaluation"}
+                or request["model_id"] not in registry):
+            raise ExecutionBlocked("invalid arm, split, or unfrozen model")
+        model = registry[request["model_id"]]
+        payload = request_payload(request, model)
+        tokens, reserve = request_bound(payload, model)
+        entries.append({"attempt_key": request["attempt_key"], "input_token_bound": tokens,
+                        "reserved_usd": str(reserve), "split": request["split"],
+                        "model_id": request["model_id"], "case_id": request["case_id"],
+                        "arm": request["arm"]})
+    if len({r["attempt_key"] for r in entries}) != len(entries):
+        raise ExecutionBlocked("duplicate request keys in full schedule")
+    units = [(r["case_id"], r["model_id"], r["arm"]) for r in entries]
+    if len(set(units)) != len(units):
+        raise ExecutionBlocked("only one frozen request is permitted per case/model/arm")
+    split_cases = {split: {r["case_id"] for r in entries if r["split"] == split}
+                   for split in ("development", "evaluation")}
+    if split_cases["development"] & split_cases["evaluation"]:
+        raise ExecutionBlocked("development and evaluation cases must be disjoint")
+    for split, cases, default_cap in (("development", 4, 24),
+                                      ("evaluation", 24, 72 * len(models))):
+        count = sum(r["split"] == split for r in entries)
+        request_cap = min(_integer(supplied.get(split + "_calls", default_cap),
+                                   split + "_calls"), default_cap)
+        if len(split_cases[split]) != cases or count != cases * 3 * len(models):
+            raise ExecutionBlocked("full schedule must contain all cases, models, and three arms")
+        if count > request_cap:
+            raise ExecutionBlocked(f"{split} request limit exceeded")
+    events = existing_events or []
+    if any(event["event"] == "execution_halted" for event in events):
+        raise ExecutionBlocked("prior execution was halted; do not replace its ledger")
+    if events and events[0].get("models_hash") != _hash(models):
+        raise ExecutionBlocked("frozen models changed; preserve existing study costs")
+    prior_requests = {event["attempt_key"]: event for event in events if event["event"] == "request"}
+    if set(prior_requests) - {request["attempt_key"] for request in requests}:
+        raise ExecutionBlocked("existing ledger contains requests outside the full schedule")
+    for request in requests:
+        prior = prior_requests.get(request["attempt_key"])
+        if prior and prior["digest"] != _hash({
+            "request": request, "payload": request_payload(request, registry[request["model_id"]])
+        }):
+            raise ExecutionBlocked("request payload or identity changed; refusing to resume")
+    accounted = _account(events)
+    remaining_retries = retry_limit - accounted["additional_retry_attempts"]
+    if remaining_retries < 0:
+        raise ExecutionBlocked("recorded retries already exceed the frozen retry limit")
+    completed = {event["attempt_key"] for event in events if event["event"] == "attempt_completed"}
+    remaining = sum((_money(entry["reserved_usd"]) for entry in entries
+                     if entry["attempt_key"] not in completed), Decimal(0))
+    maximum = max((_money(entry["reserved_usd"]) for entry in entries), default=Decimal(0))
+    retries = maximum * remaining_retries
+    prior_cost = _money(accounted["charged_or_reserved_usd"])
+    total = prior_cost + remaining + retries
+    if total > cap:
+        raise ExecutionBlocked(f"full schedule including retry reserve requires USD {total}; cap is {cap}")
+    return {"status": "ready", "requests": entries, "request_count": len(entries),
+            "development_requests": 12 * len(models), "evaluation_requests": 72 * len(models),
+            "prior_charged_or_reserved_usd": str(prior_cost),
+            "remaining_request_reservations_usd": str(remaining),
+            "maximum_attempt_reservation_usd": str(maximum),
+            "remaining_retry_attempts": remaining_retries, "retry_reservation_usd": str(retries),
+            "total_schedule_bound_usd": str(total), "budget_usd": str(cap)}
 
 
 def run_requests(
@@ -444,16 +601,21 @@ def run_requests(
                                      "charged_usd": str(reserve)})
                     break
                 usage, cost = _usage(response, model)
+                actual_cost = (usage or {}).get("provider_reported_actual_cost_usd")
+                charged = _money(actual_cost) if actual_cost is not None else (
+                    cost if cost is not None else reserve
+                )
                 response_path = folder / "responses" / f"{attempt_id}.json"
                 _save_once(response_path, {**common, "timestamp_utc": _now(), "raw_response": response,
                                           "completion_text": _completion(response, model["provider"])})
                 _append(ledger, {**common, "event": "attempt_completed", "usage": usage,
                                  "usage_cost_usd": str(cost) if cost is not None else None,
-                                 "charged_usd": str(cost if cost is not None else reserve),
+                                 "provider_reported_actual_cost_usd": actual_cost,
+                                 "charged_usd": str(charged),
                                  "response_file": str(response_path.relative_to(folder))})
-                if usage and (usage["input_tokens"] > bound or
-                              usage["output_tokens"] > model["max_output_tokens"]):
-                    blockers.append("Provider usage violated the frozen token-bound contract; execution stopped.")
+                if charged > reserve or (usage and (usage["input_tokens"] > bound or
+                                                   usage["output_tokens"] > model["max_output_tokens"])):
+                    blockers.append("Provider usage violated the frozen token/cost-bound contract; execution stopped.")
                     _append(ledger, {"event": "execution_halted", "reason": "provider_bound_violation",
                                      "attempt_id": attempt_id})
                     return {"status": "blocked", "blockers": blockers, **_account(_read(ledger))}

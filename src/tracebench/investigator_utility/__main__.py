@@ -5,7 +5,7 @@ import csv
 import hashlib
 from pathlib import Path
 
-from .execution import _account, inspect_access, run_requests
+from .execution import ExecutionBlocked, _account, inspect_access, run_requests, schedule_preflight
 from .prompts import ARMS, build_prompt, digest, ordered_requests
 from .reporting import render_report
 from .scoring import sanity_scores, score_response, select_examples, summarize_scores
@@ -56,8 +56,24 @@ def _ledger_path(config):
     return path
 
 
+def whole_schedule_preflight(prepared, config):
+    """Bound development, evaluation and every permitted retry before inference."""
+    if not config["models"]:
+        return {"status": "blocked", "blockers": ["No verified model configuration."]}
+    requests = (public_requests(prepared, config, "development")
+                + public_requests(prepared, config, "evaluation"))
+    ledger = _ledger_path(config) / "attempts.jsonl"
+    events = []
+    if ledger.exists():
+        import json
+        events = [json.loads(line) for line in ledger.read_text().splitlines()]
+    return schedule_preflight(requests, config["models"], execution_limits(config),
+                              existing_events=events)
+
+
 def develop(prepared, config, output):
     validation = validate_prepared(prepared, config)
+    budget = whole_schedule_preflight(prepared, config)
     ignored_output(ROOT, output)
     if output.exists():
         raise ValueError("Development output already exists; do not overwrite")
@@ -71,7 +87,7 @@ def develop(prepared, config, output):
                           _ledger_path(config), execution_limits(config))
     write_json(output / "execution.json", result)
     return {"validation": {k: v for k, v in validation.items() if k != "prompt_manifests"},
-            "execution": result}
+            "execution": result, "schedule_preflight": budget}
 
 
 def evaluate(prepared, frozen):
@@ -82,7 +98,9 @@ def evaluate(prepared, frozen):
     manifest = read_json(frozen / "prompt_manifest.json")
     if [digest(request) for request in requests] != [r["request_sha256"] for r in manifest]:
         raise ValueError("Serialized requests differ from the frozen schedule")
+    budget = whole_schedule_preflight(prepared, config)
     result = run_requests(requests, config["models"], _ledger_path(config), execution_limits(config))
+    result["schedule_preflight"] = budget
     ledger = _ledger_path(config) / "attempts.jsonl"
     result["ledger_sha256"] = file_hash(ledger) if ledger.exists() else None
     result["freeze_sha256"] = file_hash(frozen / "freeze.json")
@@ -211,6 +229,10 @@ def main():
     config = read_json(args.config)
     if args.command == "access":
         result = inspect_access(config["models"])
+        try:
+            result["schedule_preflight"] = whole_schedule_preflight(args.prepared, config)
+        except ExecutionBlocked as error:
+            result["schedule_preflight"] = {"status": "blocked", "blockers": [str(error)]}
     elif args.command == "prepare":
         result = prepare(ROOT, args.archive, args.other_wikis, args.prepared, config)
         result.pop("prompt_manifests", None)
