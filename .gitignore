@@ -61,6 +61,9 @@ coverage/
 
 # Raw runs, datasets, and downloaded models; curate evidence separately
 artifacts/
+# Internal coordination materials do not belong in the submission
+/review/
+/scripts/review_snapshot.py
 data/raw/
 data/cache/
 models/

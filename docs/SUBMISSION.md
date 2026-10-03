@@ -62,4 +62,4 @@ uv run tracebench wiki-audit --archive data/raw/wiki/full-wiki-logs.zip \
   --output artifacts/wiki-replication
 ```
 
-This write-up and the repository link address the organizer's verified write-up-or-video and code-link deliverables; see [`docs/HACKATHON.md`](HACKATHON.md) for the official deadline and submission link. Exact form limits and terms remain unverified. The [final review handoff](../review/RESEARCHER_HANDOFF.md) reconciles the counting units, explains the fixed insertion rule, and identifies the executed source and packaged working tree. Committing and pushing these artifacts does not submit the project to the competition or deploy the demo.
+This write-up and the repository link address the organizer's write-up-or-video and code-link deliverables. See [`docs/HACKATHON.md`](HACKATHON.md) for the official deadline and submission link. Exact form limits and terms remain unverified.

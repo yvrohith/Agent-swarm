@@ -65,12 +65,11 @@ their unspecified timestamp uncertainty permits only labeled nominal ordering.
 No complete-history, global-origin, original-authorship or copying claim follows.
 There are no real-data precision, recall, theta or sampling confidence intervals.
 
-Validation: **214 tests passed, 0 failed, 0 skipped**, including 90 new wiki tests;
-Ruff and `git diff --check` passed. Every extracted candidate's links, offsets,
-excerpts and applicable time conditions were mechanically checked. All 21
-[preserved file hashes](preserved_hashes.json) match the initial simulator,
-original plan/results and frozen missing-receipt artifacts. The latter remain
-40 worlds, 1,280 evaluations and 640 paired contrasts; no synthetic study was
-refit or extended. Mechanical properties are test consequences, not discoveries.
-See [validation details](VALIDATION.json) and the
+The automated tests cover decoding, predecessor eligibility, character alignment,
+repeated and moved text, timestamp ambiguity, and unavailable receipt evidence.
+Every extracted candidate's links, offsets, excerpts and applicable time conditions
+were mechanically checked. The [result manifest](results/manifest.json) pins the
+executed source files, frozen protocol and generated outputs. The synthetic
+studies were not refit or extended for this audit. Mechanical properties are test
+consequences, not discoveries. See the
 [local reproduction command](../../case_study/README.md#reproduce-locally).

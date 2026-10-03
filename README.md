@@ -82,12 +82,10 @@ Open the `/demo/` path on that local server. The static explorer reads the curat
 - [Hackathon deliverables and verification status](docs/HACKATHON.md)
 - [Related work and source status](docs/RELATED_WORK.md)
 - [German-wiki case-study status](case_study/README.md)
-- [Final researcher handoff and review-package instructions](review/RESEARCHER_HANDOFF.md)
 
 The verified competition requirements call for a short write-up or video and the code
 repository, with real-world results optional. See the [submission write-up](docs/SUBMISSION.md).
 The official deadline is Sunday, October 4, 2026, at **8 p.m. Eastern / 5 p.m. Pacific**.
 The [official logistics and submission link](docs/HACKATHON.md) are recorded; exact form
 limits and terms remain unverified because the form returned HTTP 403. No detailed
-scoring rubric appears on the checked pages. No competition submission or hosted
-deployment has been performed.
+scoring rubric appears on the checked pages.

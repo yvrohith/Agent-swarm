@@ -3,9 +3,7 @@
 The [Swarm Chasing hackathon home page](https://swarmchasing.com/) and its
 [official logistics page](https://swarmchasing.com/logistics/) were independently
 retrieved with HTTP 200 on **October 3, 2026, at 12:20–12:21 p.m. Eastern
-(America/New_York)**. This replaces the earlier reliance on the user's supplied
-excerpt after a blocked request. The research-plan attachment is a project proposal,
-not an organizer specification.
+(America/New_York)**. The requirements below come from those organizer pages.
 
 ## Verified organizer requirements
 
@@ -32,14 +30,11 @@ thresholds. None are inferred here. In-person demos are approximately two minute
 each, Sunday 6:00–7:00 p.m. Pacific, from a shared computer; the organizer asks teams
 to have their code on GitHub before those demos.
 
-## Completed local research artifacts
+## Research artifacts
 
-The three components answer different questions and must remain separate in the
-submission. They are implemented and analyzed, and the user has authorized committing
-and pushing the completed work. The saved review validations record the preceding
-local review; they are not a statement of the current Git publication status.
+The three completed components address different research questions.
 
-| Component | Reviewable artifacts | What it establishes |
+| Component | Artifacts | What it establishes |
 | --- | --- | --- |
 | Original synthetic benchmark | [Claims](../CLAIMS.md), [report and figure](../results/REPORT.md) | 144 simulated worlds and 1,440 evaluations with known structural source-selection truth; complete-log filtering properties are model invariants. |
 | Missing-receipt follow-up | [Frozen protocol](../studies/missing_receipts/ANALYSIS.md), [paired results and recall figure](../studies/missing_receipts/results/REPORT.md) | 40 fixed worlds, 1,280 evaluations and 640 paired contrasts; observation-only record loss exposes recall, false-attribution and unresolved-burden tradeoffs. This is review-informed, not preregistered. |
@@ -64,16 +59,12 @@ boundaries.
 
 | Item | Verified status | Remaining action |
 | --- | --- | --- |
-| Deadline and portal | Date, time, timezone and portal link verified on the official logistics page | Use the linked portal only if the user later authorizes submission. |
+| Deadline and portal | Date, time, timezone and portal link verified on the official logistics page | Complete the linked form before the deadline. |
 | Form fields and limits | Required content listed above is verified on the logistics page; a read-only GET of Airtable returned HTTP 403 | Verify the live form's exact fields, length limits and attachment requirements before submission. |
-| Team details | Names and email addresses are required | User supplies or confirms the final roster; none are invented or sent. |
-| Code availability | The user authorized committing and pushing the completed research after local review | Verify the submitted repository revision contains the final artifacts. |
+| Team details | Names and email addresses are required | Include the final team roster. |
+| Code availability | Code and curated results are available in this repository | Reference the repository revision containing the submitted results. |
 | Judging rubric | No detailed rubric on either retrieved official page | Record any later organizer-issued rubric without substituting informal project criteria. |
 | Licensing, redistribution and other eligibility terms | No detailed licensing or additional eligibility terms found on the two retrieved pages | Check any terms presented by the final form; preserve data provenance and avoid redistributing raw exports. |
-
-Commit and push are authorized. Competition submission, contacting organizers,
-repository-visibility changes and deployment remain separate actions that have not
-been performed.
 
 ## Source record
 
