@@ -5,19 +5,29 @@ investigator beyond the same raw evidence and a strong checklist. The primary
 comparison is C minus B; raw evidence alone (A) is secondary. It concerns justified
 conclusions, not guesses about hidden simulator source selection.
 
-**Status: prepared and validated; investigator execution blocked.** No authorized
-metered model API or verified model/pricing configuration is available in this
-workspace. No model observations, paired utility estimates or measured successful
-examples exist. The [report](results/REPORT.md) keeps model results empty and labels
-constant-answer calculations as analytic sanity checks. This is not a completed
-experiment and does not establish additional investigator utility.
+**Status: completed in the [versioned OpenRouter pilot](openrouter_v1/README.md).**
+Two model aliases completed 144 evaluation calls on 24 fixed cases, following
+24 development calls. The pilot does not establish a general reasoning advantage:
+Terra was at ceiling, and Sonnet's observed differences concern response-contract
+reliability, not correction of wrong schema-valid conclusions. Sonnet's wiki
+warranted-answer accuracy was 93.75% in A, 75% in B and 93.75% in C. C−B remains
+primary; its advantage does not extend to the secondary C−A wiki comparison.
+Zero schema-valid unjustified certainty does not count invalid answers as safe
+abstentions: Sonnet's synthetic certainty-or-invalid rate is 40% in both B and C.
+
+Read the [completed report](openrouter_v1/results/REPORT.md),
+[submission addendum](openrouter_v1/SUBMISSION_ADDENDUM.md), and
+[visible responses with offline score verification](openrouter_v1/response_evidence/README.md).
+The [original blocked report](results/REPORT.md), configuration and freeze in this
+directory remain historical artifacts; they are not the current execution status.
 
 The evaluation has 16 fixed wiki windows and 8 synthetic cases; 4 additional cases
 are development-only. Wiki cases preserve full relevant before/after/source texts,
 exclude previously inspected endpoint pages, and share no page histories across
 cases or splits. The 96 evaluation claims comprise 54 answerable and 42 unresolved
-claims. Always-unresolved has zero warranted-answer accuracy. The three completed
-studies, main README and submission are unchanged.
+claims. Always-unresolved has zero warranted-answer accuracy. The original three
+studies and all frozen protocols and numerical results remain unchanged. Main
+project documentation now includes the completed fourth study.
 
 ## Artifacts
 
@@ -32,11 +42,20 @@ studies, main README and submission are unchanged.
 
 Gold certificates are evaluator-only: the runner reads public case views and never
 places these certificates in an investigator request. Full wiki texts, exact model
-prompts and raw completions stay in ignored `artifacts/`. No new raw corpus is
-redistributed. Leakage checks and label checks are mechanical/AI-assisted, not
-independent human validation.
+prompts and full provider responses stay in ignored `artifacts/`. The separately
+authorized response-evidence release contains the exact visible answers and
+refusals, with no provider reasoning or raw corpus records. Leakage checks and
+label checks are mechanical/AI-assisted, not independent human validation.
 
-## Reproduce preparation and checks
+## Historical preparation and checks
+
+The commands below describe the original preparation at commit `0bb581e9`.
+The historical whole-checkout preservation check also pins the old main README
+and submission; it deliberately rejects their later presentation updates. No
+manifest or guard has been weakened. For current offline reproduction of the
+completed scores, use the [response-evidence verifier](openrouter_v1/response_evidence/README.md).
+Reconstructing full input evidence requires the pinned source release and the
+historical checkout; the published scoring views alone do not validate the gold.
 
 Use the locked environment (`uv sync --frozen --extra dev`). The already documented
 pinned ZIP and supplement belong in `data/raw/wiki/`; the existing wiki loader
@@ -58,7 +77,7 @@ models it records a blocker, makes zero API calls, and supplies no mock answers.
 For a fresh reproduction use a fresh `--prepared` and development `--output` path,
 passing the prepared path consistently to subsequent commands.
 
-## Freeze, execution and reporting
+## Historical freeze, execution and reporting
 
 ```sh
 uv run python -m tracebench.investigator_utility access
@@ -73,14 +92,12 @@ prompts, scoring and selection; it is not represented as a completed model choic
 The `run` command records the exact blocker, and `report` produces empty model
 tables plus clearly separate analytic baselines.
 
-If authorized access becomes available, inspect supported exact model IDs and
-official pricing/limit documentation before creating a **new versioned** execution
-configuration/freeze. Preserve the blocked preparation and do not replace cases
-after seeing outcomes. One family permits a 72-request pilot; two different
-families permit 144 evaluation requests. At most 24 development requests and 12
-additional transport retries share the USD 25 ceiling or a lower authorized limit.
-Never paste credentials into case files, configuration, commits or chat; use the
-environment's secret configuration.
+Authorized access was subsequently verified and the **versioned**
+[OpenRouter execution freeze](openrouter_v1/frozen/freeze.json) was saved before
+evaluation. The blocked preparation was retained and no cases were replaced.
+The completed execution used both families, 24 development requests and 144
+evaluation requests, with no retries. It retained the USD 25 whole-study ceiling.
+This historical workflow is not an instruction to rerun or expand the experiment.
 
 Each model entry must supply the fields checked by
 [`execution.py`](../../src/tracebench/investigator_utility/execution.py): provider,

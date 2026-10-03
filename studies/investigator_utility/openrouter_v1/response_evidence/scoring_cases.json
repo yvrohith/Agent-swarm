@@ -1,0 +1,1497 @@
+[
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_0082c1aa6d44d532",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'AgentMDSECCountFitX2' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'AgentMDSECCountFitX2' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_fb17686eba73fdf3",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "development",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_008a6682a45fb0f8",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'AgentAug25OAI' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'AgentAug25OAI' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_25e99c9dac71f83b",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_00de99b2b79722ba",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'OpenAIOct28FPScoutStatus' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'OpenAIOct28FPScoutStatus' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_d7959fb037d05fd2",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_00f4297cef60b25f",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'OpenAIFuelPovertyNov30Live' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'OpenAIFuelPovertyNov30Live' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_938cbe7ad7e65490",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_022044d9432b5bac",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'AgentJSLinks99172' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'AgentJSLinks99172' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_574c63f71b9032bf",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_02242579e77fc4f9",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'FinanceSequenceMar26OAI' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'FinanceSequenceMar26OAI' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_cb6ab6069ba158f1",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_024de924633c3728",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'BANextUnique9917' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'BANextUnique9917' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_3bc9ce43000c688a",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_0252f85ad8d798a1",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'OAIEquityDec30Raw' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'OAIEquityDec30Raw' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_dce5270824666192",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      },
+      {
+        "id": "record_4"
+      },
+      {
+        "id": "record_5"
+      },
+      {
+        "id": "record_6"
+      },
+      {
+        "id": "record_7"
+      },
+      {
+        "id": "record_8"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_028b2268bbdc10a0",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'TransportR3Mar28Live' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'TransportR3Mar28Live' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_b7807f0f367fc71a",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_00037911fcdf208d",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'OJLinksCountyJuneUnique777' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'OJLinksCountyJuneUnique777' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_a19904a655c1f434",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      },
+      {
+        "id": "record_4"
+      },
+      {
+        "id": "record_5"
+      },
+      {
+        "id": "record_6"
+      },
+      {
+        "id": "record_7"
+      }
+    ],
+    "split": "development",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_0028fc1e8b7ce94f",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'OECDEquityLiveFeb21' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'OECDEquityLiveFeb21' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_4263fc5147af768e",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      },
+      {
+        "id": "record_4"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_00453ee6390a4fd0",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'AgentEvenLaterHH' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'AgentEvenLaterHH' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_615fbdaf4a5d0bd4",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      },
+      {
+        "id": "record_4"
+      },
+      {
+        "id": "record_5"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_004b8eda7b936681",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'AgentJulyMapSpecial80822' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'AgentJulyMapSpecial80822' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_3541d6a06d493315",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_005dcf4b1e328d0b",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'DataUSAGrocerySequenceCollab2027' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'DataUSAGrocerySequenceCollab2027' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_838b99d56ee9eeb5",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_00934b155f20a8eb",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'OpenAICVDFeb26Fast' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'OpenAICVDFeb26Fast' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_8d1a4fae5b98041c",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      },
+      {
+        "id": "record_4"
+      },
+      {
+        "id": "record_5"
+      },
+      {
+        "id": "record_6"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_00a62ba4a1e63afd",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'Sep26ConstructionWageLive' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'Sep26ConstructionWageLive' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_1e13ecb4cc9618e1",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      },
+      {
+        "id": "record_4"
+      },
+      {
+        "id": "record_5"
+      },
+      {
+        "id": "record_6"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_00bf758d6c4598eb",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'DataUSAClothingLive2m56Aug01' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'DataUSAClothingLive2m56Aug01' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_3170377d5323b715",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      },
+      {
+        "id": "record_4"
+      },
+      {
+        "id": "record_5"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "literal_rule"
+      },
+      {
+        "id": "window_scope"
+      },
+      {
+        "id": "record_meaning"
+      },
+      {
+        "id": "open_evidence"
+      }
+    ],
+    "case_id": "wiki_00f28627d035b3d7",
+    "claims": [
+      {
+        "id": "literal_inserted",
+        "text": "The target contains at least one inserted literal occurrence of 'AgentFrenchPrepXQ29' relative to the predecessor under the declared comparison rule."
+      },
+      {
+        "id": "literal_inherited",
+        "text": "The target contains at least one inherited literal occurrence of 'AgentFrenchPrepXQ29' under the declared comparison rule."
+      },
+      {
+        "id": "exposure",
+        "text": "At least one supplied source-page revision entered the context of the process responsible for the target save before that save."
+      },
+      {
+        "id": "source_use",
+        "text": "The process responsible for the target save directly selected at least one supplied source-page revision as a source of the target text."
+      }
+    ],
+    "cluster_id": "wiki_page_bcc2ecbc7001de0f",
+    "records": [
+      {
+        "id": "record_1"
+      },
+      {
+        "id": "record_2"
+      },
+      {
+        "id": "record_3"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "wiki"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      }
+    ],
+    "case_id": "s001",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_001, run run_001, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_001, run run_001, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_001, run run_001, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_001, run run_001, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s001",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      },
+      {
+        "id": "r04"
+      }
+    ],
+    "split": "development",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      }
+    ],
+    "case_id": "s002",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_002, run run_002, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_002, run run_002, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_002, run run_002, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_002, run run_002, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s002",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      },
+      {
+        "id": "r04"
+      },
+      {
+        "id": "r05"
+      }
+    ],
+    "split": "development",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      }
+    ],
+    "case_id": "s003",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_003, run run_003, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_003, run run_003, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_003, run run_003, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_003, run run_003, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s003",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      },
+      {
+        "id": "r04"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      },
+      {
+        "id": "a05"
+      }
+    ],
+    "case_id": "s004",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_004, run run_004, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_004, run run_004, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_004, run run_004, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_004, run run_004, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s004",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      },
+      {
+        "id": "r04"
+      },
+      {
+        "id": "r05"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      },
+      {
+        "id": "a05"
+      },
+      {
+        "id": "a06"
+      }
+    ],
+    "case_id": "s005",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_005, run run_005, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_005, run run_005, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_005, run run_005, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_005, run run_005, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s005",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      },
+      {
+        "id": "r04"
+      },
+      {
+        "id": "r05"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      },
+      {
+        "id": "a05"
+      }
+    ],
+    "case_id": "s006",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_006, run run_006, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_006, run run_006, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_006, run run_006, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_006, run run_006, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s006",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      },
+      {
+        "id": "r04"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      },
+      {
+        "id": "a05"
+      },
+      {
+        "id": "a06"
+      }
+    ],
+    "case_id": "s007",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_007, run run_007, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_007, run run_007, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_007, run run_007, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_007, run run_007, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s007",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      },
+      {
+        "id": "r04"
+      },
+      {
+        "id": "r05"
+      },
+      {
+        "id": "r06"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      }
+    ],
+    "case_id": "s008",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_008, run run_008, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_008, run run_008, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_008, run run_008, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_008, run run_008, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s008",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      }
+    ],
+    "case_id": "s009",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_009, run run_009, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_009, run run_009, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_009, run run_009, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_009, run run_009, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s009",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  },
+  {
+    "assumptions": [
+      {
+        "id": "a01"
+      },
+      {
+        "id": "a02"
+      },
+      {
+        "id": "a03"
+      },
+      {
+        "id": "a04"
+      },
+      {
+        "id": "a05"
+      }
+    ],
+    "case_id": "s010",
+    "claims": [
+      {
+        "id": "c01",
+        "text": "A request occurred for source document_010, run run_010, during [0, 10]."
+      },
+      {
+        "id": "c02",
+        "text": "Successful delivery occurred for source document_010, run run_010, during [0, 10]."
+      },
+      {
+        "id": "c03",
+        "text": "The source content entered the target context for source document_010, run run_010, during [0, 10]."
+      },
+      {
+        "id": "c04",
+        "text": "The target selected that source content to generate its output for source document_010, run run_010, during [0, 10]."
+      }
+    ],
+    "cluster_id": "s010",
+    "records": [
+      {
+        "id": "r01"
+      },
+      {
+        "id": "r02"
+      },
+      {
+        "id": "r03"
+      },
+      {
+        "id": "r04"
+      },
+      {
+        "id": "r05"
+      }
+    ],
+    "split": "evaluation",
+    "subset": "synthetic"
+  }
+]

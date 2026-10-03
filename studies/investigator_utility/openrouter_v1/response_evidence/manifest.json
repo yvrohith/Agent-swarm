@@ -1,0 +1,54 @@
+{
+  "bootstrap_seed": 73021,
+  "current_documentation_sha256": {
+    "README.md": "a43f9e3711dcb0b603db14db6c19ce395f8673861ac3e5f720c3f68d80e03e95",
+    "docs/SUBMISSION.md": "ad2faaed1a3f5349938302f1843e1fa1d5ee8d9321f530c8820865a8ea3ddb59"
+  },
+  "expected_counts": {
+    "development": 24,
+    "evaluation": 144,
+    "total": 168
+  },
+  "files_sha256": {
+    "README.md": "b19a1aa5a49f5d6e18b36993fce519b1ca48d511f766eab723e998765dca75b7",
+    "responses.jsonl": "21da9d524bee2cc1cfede1b8b885a5f73b01b1ee7600c1840b84e9e19bceadd6",
+    "scoring_cases.json": "967619692abb6dc7ce81cb2dcc77db8f7fa256582e73115ba5027920aca59c88",
+    "verify.py": "0cd2d25da2530aad71ce4308f7133a1ac5df343139f8f6ba7e992dcb8c87c09c"
+  },
+  "historical_documentation_pins": {
+    "README.md": "1809103fe6c78199089528674fd72b621005e74293a34ba52aceda64d06b39d3",
+    "docs/SUBMISSION.md": "5ed63eb2ebcadcb710b0cf01bbe638ea1742981c0138224e445aeac8000295eb"
+  },
+  "preservation_note": "The original freeze and preservation manifest remain unchanged. README.md and docs/SUBMISSION.md now surface the completed results as authorized after evaluation. The historical whole-checkout preservation check intentionally rejects those documentation differences; this bundle verifies frozen scoring and results without weakening that check.",
+  "release_scope": "All saved first visible completions from 24 development and 144 evaluation calls. Exact decoded strings/null; no response repair, private provider reasoning, full provider envelopes, prompts, or raw corpus records. Minimal scorer metadata is not a replacement for supplied evidence.",
+  "repository_files_sha256": {
+    "src/tracebench/investigator_utility/__init__.py": "47f71cc9d3f59a7f9ffe66a783db93de537a61fbd530de6883cd3e0adb92c0f8",
+    "src/tracebench/investigator_utility/__main__.py": "7f5f053fef9752c3d534d49943013d026c81d6bdba16fb21500dd22488b004b5",
+    "src/tracebench/investigator_utility/execution.py": "eb38a957739f5a53b7f1a556648c831aacf4581a2a7ce48f24d31cefcf0fc034",
+    "src/tracebench/investigator_utility/prompts.py": "03fcc5ffbe284804b3eb19cd760260a08412930d1ff6494d9f3c02933f1355d8",
+    "src/tracebench/investigator_utility/reporting.py": "f59e0510329e9a160d676e4d0e2e4876e5106400bf8eddd4bdbaebd22848790f",
+    "src/tracebench/investigator_utility/scoring.py": "c5119c7745a3e3bc840894df21986a0749c5db4ccde414706ea5c6db16eadf48",
+    "src/tracebench/investigator_utility/study.py": "d3f6d22ce3d9b0c5385ef29c177cdbabecacdeedc7214495ebed8e6cd7561714",
+    "src/tracebench/investigator_utility/synthetic_cases.py": "9d1666df4786640d7e5e12e2b7f69b7e5a6418037ece3c0a4d643e9b2a47cd8d",
+    "src/tracebench/investigator_utility/wiki_cases.py": "42dfa215b90612ca8ac14e8d6b91282ab8ac879a93ef035d24cc88a8c249aeb7",
+    "studies/investigator_utility/ANALYSIS.md": "1e22eab2a7e9d22abbe5e3fc71f6bd3b18bf20b72f8e96c92bee4a222f941d27",
+    "studies/investigator_utility/openrouter_v1/config.json": "8af4b4415b3a09a9276ed799a7b491d0b4c22db4e286f40c828b50fa42c5230a",
+    "studies/investigator_utility/openrouter_v1/frozen/case_manifest.json": "5f185aa2fa518d56488e12530ce1210ffeb545f893f0718514f6de72d77e087a",
+    "studies/investigator_utility/openrouter_v1/frozen/config.json": "8af4b4415b3a09a9276ed799a7b491d0b4c22db4e286f40c828b50fa42c5230a",
+    "studies/investigator_utility/openrouter_v1/frozen/freeze.json": "3174e440442ed5c9de24331d727cbc677168ea3ff45926e5abead7ee7d0b07bb",
+    "studies/investigator_utility/openrouter_v1/frozen/gold_certificates.json": "33d45ec5ea3416e5b5956ff316889b6836949395673f0d3e5b28d75c192e58ac",
+    "studies/investigator_utility/openrouter_v1/frozen/prompt_manifest.json": "87bf2b710b6dd103b635fd98a920ab2b1c446f7b54762cbd612a9f8f76b7750e",
+    "studies/investigator_utility/openrouter_v1/frozen/selection.json": "3dee15beda5dde44c38e7777c66a50c3fd35b440a588ffb128b52de9972624c3",
+    "studies/investigator_utility/openrouter_v1/frozen/validation.json": "8cd10b27f255106d5248f63f07b472282fe4a1b5ef2cfb1ab4f76298e35c6030",
+    "studies/investigator_utility/openrouter_v1/frozen/view_manifest.json": "4fc812e15046cfcfc703adf1f81ff1d5166c883b9a6ca7bd1e52602842872d34",
+    "studies/investigator_utility/openrouter_v1/results/execution.json": "f629b194857c3c342d847c8306d5f9fdc5e7382f3565c4ea65c9439728c9c56b",
+    "studies/investigator_utility/openrouter_v1/results/paired_summary.json": "f28ff2134a3e4bbde28fcb6ad2f0d73eb188cca502c34af3c0a420e438bb7a5b",
+    "studies/investigator_utility/openrouter_v1/results/per_case_scores.json": "9fd3594c866b26d715af2ed678eef68685e4cdbc34a8f61a5cea5220bff075d3",
+    "studies/investigator_utility/openrouter_v1/results/response_manifest.json": "3505747aa00d336afebe672d492b5462205c86e691ec53856f1f3bd71421b10f",
+    "studies/investigator_utility/openrouter_v1/results/sanity_baselines.json": "50b3f0a2e83678fe1a5b4cedef88b3614f176c598e41629e472d7a8827271503",
+    "studies/investigator_utility/preservation.json": "90587621a574122bdc044bc44956e2f5bf699852d02898bbe5fa8509d7552716"
+  },
+  "resamples": 2000,
+  "schema_version": 1,
+  "source_commit": "0bb581e9b9debaf1160754931964ab90dc3b9702"
+}

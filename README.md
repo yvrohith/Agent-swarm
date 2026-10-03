@@ -1,7 +1,7 @@
 # Trace Completeness Curves
 
 Trace Completeness Curves tests what incomplete agent logs can establish about
-information flow. The project brings together three completed studies:
+information flow. The project brings together four completed studies:
 
 - **[Synthetic source-attribution benchmark](results/REPORT.md):** Measure attribution
   errors against known realized source-use edges as different telemetry types become
@@ -14,10 +14,67 @@ information flow. The project brings together three completed studies:
   revisions. Under the frozen comparison rule, 7,380 of 10,520 eligible snapshot
   reference pairs (70.15%) contain only inherited references. This describes recorded
   text; exposure remains unknown and source use unobserved.
+- **[Investigator-utility pilot](studies/investigator_utility/openrouter_v1/results/REPORT.md):**
+  Compare raw evidence, a strong checklist, and added deterministic provenance assistance
+  on 16 wiki cases and eight synthetic fixtures with two model families. The completed
+  pilot does not establish a general reasoning advantage: Terra was at ceiling and
+  Sonnet's differences concerned response-contract reliability. Its wiki assistance
+  condition matched the raw-evidence baseline.
 
 Exposure is not source use, and source use is not counterfactual causal necessity.
 See the [initial benchmark's claims and analysis specification](CLAIMS.md) and each
 study's report for its scope and limitations.
+
+## Completed investigator-utility pilot
+
+**This pilot does not establish a general forensic-reasoning benefit from provenance
+assistance.** It reports a bounded comparison with flat, adverse and invalid outcomes retained.
+
+**Primary comparison: C−B**, where A receives raw evidence and a competent task, B adds
+a strong checklist, and C adds record indexing, full character alignments, locators,
+and equality groups to B. Every arm retains the same raw facts; C supplies no hidden
+labels or exposure/use verdicts. This is an exploratory follow-up.
+
+**Unjustified certainty (UC) is zero in every arm, model, and subset**, but invalid
+responses do not count as successful restraint. UC counts schema-valid definite
+answers to unresolved claims. Its companion diagnostic,
+**certainty-or-invalid**, includes schema and citation failures on unresolved claims.
+Warranted-answer accuracy (WAA) measures correct, schema-valid definite answers to
+answerable claims. Both primary outcomes must be read with the failure diagnostic.
+
+All table values are percentages; differences and intervals are percentage points.
+
+| Requested model alias | Subset | WAA A / B / C | Primary WAA C−B [95% interval] | Certainty-or-invalid B → C |
+| --- | --- | ---: | ---: | ---: |
+| `anthropic/claude-sonnet-5.5` | Wiki | 93.75 / 75.00 / 93.75 | +18.75 [0.00, 37.50] | 25.00 → 9.38 |
+| `anthropic/claude-sonnet-5.5` | Synthetic | 42.86 / 42.86 / 71.43 | +28.57 [−28.57, 71.43] | 40.00 → 40.00 |
+| `openai/gpt-5.6-terra` | Wiki | 100 / 100 / 100 | 0 [0, 0] | 0 → 0 |
+| `openai/gpt-5.6-terra` | Synthetic | 100 / 100 / 100 | 0 [0, 0] | 0 → 0 |
+
+Every schema-valid status answer is correct in both models. Sonnet's measured gains
+therefore concern **response-contract reliability**: producing usable answers for the
+specified case and claims, with the required fields and identifiers. This is broader
+than formatting and does not establish improved semantic reasoning. Sonnet C matches
+A on wiki WAA; Terra has no measured gain. Adverse cases remain: C invalidates a
+previously correct synthetic response and introduces one wiki citation-ID error.
+
+The evaluation made **144 calls, not 144 independent observations**: 24 fixed cases
+were each run through three arms and two models. Estimates average claims within
+cases, then cases; paired intervals resample whole case/page-history clusters.
+All primary intervals include zero. A `[0, 0]` interval reflects no observed variation,
+not a zero population effect. Synthetic WAA uses seven applicable cases and UC five;
+both wiki metrics use 16. Models and wiki/synthetic subsets remain separate. Model IDs are aliases; no
+independent human gold validation or semantic citation grading is claimed, and
+public-corpus contamination cannot be excluded.
+
+There were also 24 development calls and no retries. Four empty refusals remain
+failures. Known provider-reported charges for 167 calls total **$2.8615140**; one
+refusal lacks usage metadata and retains a **$0.137392 reservation**. Charged or
+reserved accounting is **$2.9989060**, while **actual total cost remains unknown**.
+
+Read the [full report](studies/investigator_utility/openrouter_v1/results/REPORT.md),
+[submission addendum](studies/investigator_utility/openrouter_v1/SUBMISSION_ADDENDUM.md),
+and [exact visible answers and offline score reproduction](studies/investigator_utility/openrouter_v1/response_evidence/README.md).
 
 ## Initial synthetic benchmark
 
@@ -94,7 +151,9 @@ external requests and does not run new experiments. Read the separate
 [missing-receipt report](studies/missing_receipts/results/REPORT.md),
 [public-wiki report](studies/wiki_case_study/REPORT.md), and
 [wiki evidence cards](studies/wiki_case_study/results/REPORT.md#source-linked-evidence-cards)
-for the completed follow-up studies.
+for those completed follow-up studies. The
+[investigator-utility report](studies/investigator_utility/openrouter_v1/results/REPORT.md)
+and saved response evidence are separate from the initial benchmark explorer.
 
 ## Research artifacts
 

@@ -2,6 +2,33 @@
 
 **Question:** What can a swarm's recorded activity establish about which agent used information from another?
 
+The project now includes four completed studies: the synthetic source-attribution benchmark, a missing-receipt stress test, a public-wiki evidence audit, and a bounded investigator-utility pilot. They distinguish source-attribution accuracy, missing evidence, observable text changes, and the reliability of an investigator's warranted answers.
+
+## Completed investigator-utility pilot
+
+**This pilot does not establish a general forensic-reasoning benefit from provenance assistance.** Terra performed at ceiling; Sonnet's differences reflected response-contract reliability, and its wiki assistance condition did not outperform the raw-evidence baseline.
+
+The [completed exploratory pilot](../studies/investigator_utility/openrouter_v1/results/REPORT.md) evaluates 16 wiki windows and eight synthetic fixtures with two models. Arm A receives full raw evidence and a competent investigation task; B adds a strong checklist; C adds deterministic record indexing, character alignments, locators, and equality groups to B. Raw evidence and assumptions remain identical. **C−B is primary**; A remains a secondary baseline. The target is what the supplied evidence warrants, not recovery of hidden source-use labels.
+
+The primary outcomes are unjustified certainty (UC: schema-valid definite answers to unresolved claims) and warranted-answer accuracy (WAA: schema-valid correct definite answers to answerable claims). **UC is zero in every arm, model, and subset.** This is not sufficient evidence of successful restraint: the companion **certainty-or-invalid** diagnostic also counts schema and citation failures on unresolved claims. Invalid or missing answers retain their denominators.
+
+All table values are percentages; differences and intervals are percentage points.
+
+| Requested model alias | Subset | WAA A / B / C | Primary WAA C−B [95% interval] | Certainty-or-invalid B → C |
+| --- | --- | ---: | ---: | ---: |
+| `anthropic/claude-sonnet-5.5` | Wiki | 93.75 / 75.00 / 93.75 | +18.75 [0.00, 37.50] | 25.00 → 9.38 |
+| `anthropic/claude-sonnet-5.5` | Synthetic | 42.86 / 42.86 / 71.43 | +28.57 [−28.57, 71.43] | 40.00 → 40.00 |
+| `openai/gpt-5.6-terra` | Wiki | 100 / 100 / 100 | 0 [0, 0] | 0 → 0 |
+| `openai/gpt-5.6-terra` | Synthetic | 100 / 100 / 100 | 0 [0, 0] | 0 → 0 |
+
+Every schema-valid status answer is correct. The measured differences concern **response-contract reliability**, including answering the specified case and claims with usable fields and identifiers, rather than correcting wrong schema-valid conclusions. Sonnet's schema/missing-claim failures fall from B to C from `16/64` to `4/64` on wiki and `20/32` to `12/32` on synthetic claims. C nevertheless invalidates a previously correct synthetic response and introduces one wiki citation-ID error. Sonnet's wiki C−A WAA comparison is flat; Terra has no measured added benefit. A general semantic-reasoning benefit is not established.
+
+The **144 evaluation calls are repeated measurements of 24 fixed cases**, not 144 independent observations. Claims are averaged within cases before cases are averaged; intervals use 2,000 paired whole-case/page-history bootstrap resamples. All primary intervals include zero; `[0, 0]` reflects no observed variation, not a zero population effect. Synthetic WAA uses seven applicable cases and UC five; both wiki metrics use 16. Wiki and synthetic subsets and the two models remain separate. Model IDs are aliases, not immutable revisions. Gold and leakage checks are mechanical/AI-assisted, with no independent human validation. Citation checks establish identifier existence only; empty citations are allowed and semantic explanation quality is ungraded. Public-corpus contamination and limited incident coverage remain unresolved.
+
+There were 24 additional development calls and no retries. Four empty refusals remain failed responses. Provider-reported charges for 167 calls total **USD 2.8615140**. One refusal has no usage metadata, retaining **USD 0.137392** as a reservation. Charged-or-reserved accounting is **USD 2.9989060**; **the actual total cost remains unknown**, and provider-reported charges are not invoice reconciliation.
+
+The [full report](../studies/investigator_utility/openrouter_v1/results/REPORT.md) and [submission addendum](../studies/investigator_utility/openrouter_v1/SUBMISSION_ADDENDUM.md) retain flat, adverse, and failed responses alongside favorable comparisons. See [exact visible answers and offline score reproduction](../studies/investigator_utility/openrouter_v1/response_evidence/README.md) for inspectable response evidence without new investigator calls.
+
 ## Synthetic benchmark with known structural source-use labels
 
 This project benchmarks source attribution when investigators have incomplete logs. A lightweight simulator generates runs with shared tasks, synchronized activity, disposable handles, and occasional content reuse. It records which prior output was actually selected as a cross-run source, while keeping that label hidden from the investigators.
@@ -38,7 +65,7 @@ All 20 reviewed pairs follow the frozen extraction rule, but the review also exp
 
 The available event stream contains saves, deletions, reverts and a narrow failed-probe population. It is not a complete read log. A posted assertion of reading a page is not a server request or an authenticated receipt. Stable run identities, authenticated delivery/context receipts and direct source-selection labels are unavailable in this release. Observed handles are not runs; absence of a telemetry type is not an empty complete stream, and a missing record does not mean an event failed to occur. Exposure remains unknown and true source use unobserved. No real-data precision, recall, theta, confidence interval or copying-rate estimate is reported.
 
-The wiki audit demonstrates applicability of the evidence distinctions; it does not externally validate synthetic accuracy. The three studies support different claims. Together they provide reproducible synthetic error measurements and an auditable account of what the public records can establish. See [`EVIDENCE_CARD.md`](../EVIDENCE_CARD.md), [`LIMITATIONS.md`](../LIMITATIONS.md), and [`docs/RELATED_WORK.md`](RELATED_WORK.md) for the evidence boundary.
+The wiki audit demonstrates applicability of the evidence distinctions; it does not externally validate synthetic accuracy. These first three studies support different claims. Together they provide reproducible synthetic error measurements and an auditable account of what the public records can establish. The fourth study separately measures investigator response-contract reliability under bounded evidence. See [`EVIDENCE_CARD.md`](../EVIDENCE_CARD.md), [`LIMITATIONS.md`](../LIMITATIONS.md), and [`docs/RELATED_WORK.md`](RELATED_WORK.md) for the evidence boundary of the original studies, and the pilot's report for its distinct target and limitations.
 
 ## Reproduction and submission status
 
