@@ -21,18 +21,23 @@ The supplemental `other-wikis.json.gz` has a narrower role in this audit. Its pr
 
 Cosma Rohilla Shalizi and Andrew C. Thomas. “Homophily and Contagion Are Generically Confounded in Observational Social Network Studies.” *Sociological Methods & Research* 40(2), 211–239 (2011). [DOI: 10.1177/0049124111404820](https://doi.org/10.1177/0049124111404820).
 
-This is a bibliographic reference for the established problem of distinguishing contagion from selection and shared causes in observational networks. The publisher page was not fetched in this session. The paper's result should not be described as a theorem about this simulator or as a new result of this project. Applying an identification result requires matching its assumptions and observational model.
+This is bibliographic context for distinguishing contagion from selection and shared causes in observational networks; it is not an independently checked theorem about this simulator or a new result of this project. Applying an identification result requires matching its assumptions and observational model.
 
-## Remaining leads in the supplied proposal
+## Finite acquisition and EC2
 
-The attachment also names the following work, but its citation markers do not resolve the relevant claims. These remain **unverified research leads**, not independently checked evidence for the benchmark.
+Daniel Golovin, Andreas Krause, and Debajyoti Ray. *Near-Optimal Bayesian Active Learning with Noisy Observations*. NeurIPS 2010, Section 3. [arXiv:1010.3091](https://arxiv.org/abs/1010.3091). The corrective task supplied this bibliographic reference and the equation below; this correction made no external retrieval.
 
-| Lead named by the proposal | Relevance to investigate | Verification needed |
-| --- | --- | --- |
-| De Marzo, Alboré, and Garcia on wiki conventions | Reconstructed exposure and reuse of newly coined forms | Confirm title, authors, publication/version, data and the paper's own causal caveats. |
-| `swarm-ai-research` incident archive | Run identity reconstruction and detector evaluation | Identify the authoritative repository, pin a commit, and verify dataset and derived-artifact licenses. |
+The historical finite-acquisition `pair_cut` policy is an application of **EC2**, not a new algorithm merely inspired by equivalence-class methods. Its hypotheses are the supplied nominal worlds and its equivalence classes are the three-way complete-archive conclusions `tau`. Weighted edges join hypotheses in different classes, with weight `p(u)p(v)`. For compatible set `S`, the expected cut for a query is
 
-No numerical claims or detector performance numbers from those remaining leads are treated as established results. A source update should record the exact URL, version or commit, access date, narrow supporting claim and redistribution terms. A repository being public does not by itself establish permission to redistribute its data.
+```text
+E(S) - sum_o P(o | S) E(S_o).
+```
+
+[`Planner.edge_mass` and `Planner.pair_gain`](../src/tracebench/evidence_acquisition/policies.py) implement this expression using original prior masses inside `E`; class-mass products equal the sum of cross-class world-pair weights. Query selection divides by positive retrieval cost, with the preserved cost/opaque-ID tie rules. The supplied definition and code establish this correspondence. They do not independently verify every theorem assumption or import approximation guarantees.
+
+The [retrospective acquisition comparison](../studies/comparative_validity/REVIEW.md) keeps the same finite terminal objective when testing schema order with implied-query skipping and information gain over `tau`. Entropy over every world is a different surrogate, and entropy over a Boolean claim would be different again. Positive priors affect expected costs and policy choices without changing which worlds support the same acquired evidence. These are finite-instance calculations, not held-out model generalization or measured swarm-investigator benefit.
+
+The earlier method notes remain frozen. This additive attribution and the current synthesis supersede any broader novelty or comparative interpretation; they do not rewrite historical numerical results.
 
 ## Contribution boundary
 

@@ -1,0 +1,28 @@
+{
+  "dependencies_sha256": {
+    "src/tracebench/__init__.py": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3",
+    "src/tracebench/evidence_acquisition/__init__.py": "cc13ce3dda5f44b8ee9c696f224464deee132f2ea92afb392b8acb33d1bafb07",
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "studies/acquisition_prior_robustness/aggregation.py": "d301074af6d8990d865c8752fe0ad9c98de4379ea221f1f4317b7baa3e5bf809",
+    "studies/acquisition_prior_robustness/results/details.json.gz": "1160da8d715c4920b2ccfe53cac6fd5eb2740c14dd0d6930df1e2c1a18f24f12",
+    "studies/acquisition_prior_robustness/results/per_problem.json": "4cefa2b8904a405b7af5f50d0a387116d7079f2d32e96d4334eb91ad8c04326f",
+    "studies/acquisition_prior_robustness/sensitivity.py": "917771647708477955f3f72791dcea6295d4c8eb61f5665a9d7a2024398ddb41",
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/comparative_validity/acquisition.py": "001c333f8f2ba5bba08e4a64c434a42eaadbded73c7c4490585ad8a25200d8f3",
+    "studies/comparative_validity/acquisition_protocol.json": "83044b8ac2179bd5a2e6504a41c0ff036bcf3c15537ce14c81ac63b7e0dcfb64",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/evidence_acquisition/results/certificates.json.gz": "877d154cd04c08f2e048f990c514d270275a5fabbce3031c94453cccbf1c2f08",
+    "studies/evidence_acquisition/results/signature_runs.json.gz": "862b75cefdd6f1d6c3c1c0ef50880ebb5ac741e5a3e79242d98676de4b7818b9",
+    "tests/test_acquisition_policies.py": "88c74fc13c599eac1f11bdef13350316030e841888f0dc8c02c410e875b1a985",
+    "tests/test_comparative_acquisition.py": "94e9d9b680c3821e593419d29eab596a8f7a540d883384168b7c19a5bac1e4fd"
+  },
+  "results_sha256": {
+    "acquisition_details.json.gz": "c30397804e61ea1a513ff3669fc89bc9445939a493bd43434a5b06d9c5ab4ad8",
+    "acquisition_rows.json": "5fcd1140d4cf72f17786788ba0ab2c58f7e10911ffeaba329382544d0694063c",
+    "acquisition_summary.json": "416f02a753785b551818208a387bc79646224e7499c3ee8f90a4bd94ca1db1bf",
+    "acquisition_validation.json": "70eefb96cae3a8e881a2858f6cad2db8be25f081108eb911d60720ce00159173"
+  }
+}

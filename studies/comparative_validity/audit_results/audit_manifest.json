@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "audit_stopped_runs.json.gz": "08357b6de15ea2cc37a6db459ff8677aea5920c5c473246f7edee7248f914144",
+    "audit_strata.json": "6e1762475dffe3e2024427ec2fe20984bfb89f227f13522cef144bb55477a16a",
+    "audit_summary.json": "9cd2f403a6e7bbad01aab6dc6c30c315ca7772d59c13f8b95ccee86a8d512435",
+    "audit_tie_per_problem.json.gz": "9b80108f895c0b6ae4dc2295c8698ad1c313fd5b222c656ce9ab6eeb24a16d8e",
+    "audit_tie_rankings.json.gz": "fc0b8ec0906091b4cbee634b65b6a75db42be13f2be7e5317800758f7205c770",
+    "audit_tie_repetitions.json": "a82a961ebc0e6c232b101f4eb963e5e6f05d089a489ad0d67ffd660c745b15c6"
+  }
+}

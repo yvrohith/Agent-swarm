@@ -1,0 +1,196 @@
+{
+  "environment": {
+    "cache": "/workspace/.cache/uv",
+    "dependency_downloads": 0,
+    "editable_project": "trace-completeness==0.1.0",
+    "inherited_shell_environment": false,
+    "installed_distributions": 17,
+    "locked_install_completed": true,
+    "python": "CPython 3.12.14",
+    "pythonpath_environment_set": false,
+    "remote_ci_executed": false,
+    "source_git_config_or_hooks_copied": false,
+    "uv": "0.12.19"
+  },
+  "final_suite": "Not part of this preflight diagnostic; separate clean_checkout_final.json records the once-only complete clean console suite after all intended test files are ready.",
+  "full_public_history_check": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_chronology_inputs.py::test_historical_pins_reconcile_without_refreshing",
+      "tests/test_chronology_inputs.py::test_manifest_separates_presentation_and_scientific_dependencies"
+    ],
+    "exit_code": 0,
+    "passed_tests": 2
+  },
+  "minimal_ci_history_fix": "actions/checkout@v4 with fetch-depth: 0; historical provenance tests unchanged.",
+  "minimal_import_fix": "[tool.pytest.ini_options] pythonpath = [\".\"]; distribution remains src/tracebench only.",
+  "network_guard_check": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "-c",
+      "import socket; socket.socket()"
+    ],
+    "exit_code": 1,
+    "guard": "Linux seccomp denies socket and connect; inherited by all child processes.",
+    "result": "socket construction rejected with EPERM before any connection"
+  },
+  "post_fix_collection": {
+    "commands": [
+      {
+        "command": [
+          "uv",
+          "--version"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.006836075990577228
+      },
+      {
+        "command": [
+          "uv",
+          "sync",
+          "--frozen",
+          "--extra",
+          "dev"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.3602710510022007
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "python",
+          "--version"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.048913827995420434
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "pytest",
+          "--collect-only",
+          "-q"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 1.6445667649968527
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "python",
+          "-m",
+          "pytest",
+          "--collect-only",
+          "-q"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 1.7574511260027066
+      }
+    ],
+    "console_count": 1206,
+    "console_node_ids_sha256": "7ea6a4d2486e26f14b3db66400de8d0e054a322f302583bb309301863698111c",
+    "copied_public_file_count": 420,
+    "module_count": 1206,
+    "module_node_ids_sha256": "7ea6a4d2486e26f14b3db66400de8d0e054a322f302583bb309301863698111c",
+    "public_history": "full_public_local_history",
+    "same_intended_test_set": true,
+    "status": "collection_passed"
+  },
+  "pre_fix": {
+    "commands": [
+      {
+        "command": [
+          "uv",
+          "--version"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.006720510995364748
+      },
+      {
+        "command": [
+          "uv",
+          "sync",
+          "--frozen",
+          "--extra",
+          "dev"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.5005859780067112
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "python",
+          "--version"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 0.055322594998870045
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "pytest",
+          "--collect-only",
+          "-q"
+        ],
+        "exit_code": 2,
+        "wall_seconds": 1.7239485860045534
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "python",
+          "-m",
+          "pytest",
+          "--collect-only",
+          "-q"
+        ],
+        "exit_code": 0,
+        "wall_seconds": 1.4350896260002628
+      }
+    ],
+    "console_count": 1167,
+    "console_node_ids_sha256": "1825a602863b13649d25ceff030eafa1f1f09d10785def46993ca8e2168460d3",
+    "copied_public_file_count": 419,
+    "module_count": 1206,
+    "module_node_ids_sha256": "7ea6a4d2486e26f14b3db66400de8d0e054a322f302583bb309301863698111c",
+    "public_history": "shallow",
+    "same_intended_test_set": false,
+    "status": "collection_failed"
+  },
+  "pre_fix_errors": [
+    "tests/test_acquisition_prior_driver.py: ModuleNotFoundError: No module named studies",
+    "tests/test_acquisition_prior_timing.py: ModuleNotFoundError: No module named studies",
+    "tests/test_archive_misspecification_reference.py: ModuleNotFoundError: No module named studies"
+  ],
+  "raw_diagnostic_records": "Retained only in temporary local files; exact commands and decisive outcomes are recorded here. The separate final clean-run record includes snapshot hashes and final output.",
+  "schema_version": 1,
+  "scope": "Real console entry points in clean public-file snapshots with bounded intended pending research files; no historical artifacts or developer environment.",
+  "shallow_history_check": {
+    "cause": "Original public commit 36be8fa3682b294462ac65f8c2f750119e75cdb2 missing; git ls-tree exits 128.",
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_chronology_inputs.py::test_historical_pins_reconcile_without_refreshing",
+      "tests/test_chronology_inputs.py::test_manifest_separates_presentation_and_scientific_dependencies"
+    ],
+    "exit_code": 1,
+    "failed_tests": 2
+  },
+  "status": "preflight_diagnosis_complete"
+}

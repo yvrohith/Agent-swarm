@@ -1,0 +1,965 @@
+{
+  "acquisition_validation": {
+    "additional_spend_usd": "0",
+    "comparison_rows": 2800,
+    "ec2_explicit_pair_arithmetic_checks": 12876,
+    "frozen_dependencies_verified": 18,
+    "historical_exact_rows_reproduced_from_saved_paths": 2000,
+    "historical_policies_reoptimized": false,
+    "model_calls": 0,
+    "network_requests": 0,
+    "new_comparator_rows": 800,
+    "problems": 40,
+    "semantic_check_scope": "Existing Model/certificate checker plus explicit pair arithmetic and paid-path accounting; not independent physical semantics.",
+    "status": "passed",
+    "structure_groups": 30,
+    "supplied_q0_targets": {
+      "pair_cut": {
+        "actual": {
+          "exact": "607/160",
+          "value": 3.79375
+        },
+        "difference": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "matches": true,
+        "supplied_target": {
+          "exact": "607/160",
+          "value": 3.79375
+        }
+      },
+      "pair_cut_vs_schema_skip_counts": {
+        "actual": [
+          13,
+          14,
+          13
+        ],
+        "matches": true,
+        "supplied": [
+          13,
+          14,
+          13
+        ]
+      },
+      "schema_skip": {
+        "actual": {
+          "exact": "1191/320",
+          "value": 3.721875
+        },
+        "difference": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "matches": true,
+        "supplied_target": {
+          "exact": "1191/320",
+          "value": 3.721875
+        }
+      },
+      "terminal_class_entropy": {
+        "actual": {
+          "exact": "4489/1280",
+          "value": 3.50703125
+        },
+        "difference": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "matches": true,
+        "supplied_target": {
+          "exact": "4489/1280",
+          "value": 3.50703125
+        }
+      }
+    }
+  },
+  "audit_validation": {
+    "common_rankings": 8000,
+    "external_tie_target_difference": "Frozen shuffle gives means 16.750/16.735, C-minus-B range -5..4; supplied 16.455/16.510 and -4..4 not matched. No retuning.",
+    "historical_path_views_reproduced": 20064,
+    "k1_k2_not_independent": true,
+    "saved_exact_path_views": 5016,
+    "status": "passed",
+    "stopped_path_views": 10032,
+    "tie_repetitions": 200
+  },
+  "authorized_changes": {
+    "paths": [
+      ".github/workflows/checks.yml",
+      "README.md",
+      "docs/FINAL_SUBMISSION.md",
+      "docs/RELATED_WORK.md",
+      "docs/REVIEWER_GUIDE.md",
+      "pyproject.toml"
+    ],
+    "record": "studies/comparative_validity/authorized_changes.json",
+    "sha256": "310555953468be11c42e36940d5e43ae3d002cc2bae6383c57bc3808b9332c27"
+  },
+  "boundaries": {
+    "additional_spend_usd": "0",
+    "credential_access": false,
+    "dependency_downloads": 0,
+    "dependency_upgrades": 0,
+    "license_or_account_decisions": false,
+    "model_calls": 0,
+    "new_presentation_demo_plot_UI_or_reviewer_package": false,
+    "publish_deploy_submit": false,
+    "remote_requests": 0,
+    "source_commit_push_branch_or_history_change": false,
+    "unverified": "Remote CI and unavailable auxiliary-script code; unreleased model-input replays were not performed or fabricated."
+  },
+  "chronology": {
+    "affected_benchmark": 76,
+    "affected_receipt": 0,
+    "completed_study_preserved": true,
+    "configurations": 184,
+    "diagnostic_sha256": "4f3d0b7a01cb4a1d0707aa68de3768ed118904894c9c360b0bf9696148a2972f",
+    "new_world_generation": false,
+    "public_saved_data_check": "passed",
+    "source_authority_pins": 40,
+    "writes": 66240
+  },
+  "clean_checkout": {
+    "cache_limitations": "None encountered: fresh locked editable installation succeeded entirely from the existing local cache; no dependency downloads.",
+    "console_collection": 1291,
+    "full_public_git_history": true,
+    "full_suite": {
+      "console_command_runs": 1,
+      "outcomes": {
+        "error": 0,
+        "failed": 0,
+        "passed": 1291,
+        "skipped": 0,
+        "xfailed": 0,
+        "xpassed": 0
+      },
+      "summary": "======================= 1291 passed in 93.32s (0:01:33) ========================",
+      "wall_seconds": 94.00365087599494
+    },
+    "identical_node_id_sets_checked_from_raw_record": true,
+    "lint": "passed uv run ruff check .",
+    "locked_install": "Fresh editable install of 17 locked packages from existing cache; no dependency downloads/upgrades.",
+    "manual_pythonpath": false,
+    "module_collection": 1291,
+    "new_focused_tests_by_file": {
+      "tests/test_comparative_acquisition.py": 24,
+      "tests/test_comparative_audits.py": 22,
+      "tests/test_comparative_chronology_scope.py": 13,
+      "tests/test_comparative_public_verify.py": 21,
+      "tests/test_comparative_saved_checks.py": 5
+    },
+    "post_snapshot_additions": "Final diagnostic/preservation records and technical prose only; all source/test/config bytes match the tested snapshot.",
+    "public_files": 455,
+    "python": "3.12.14",
+    "record_sha256": "1ecc8fc2812880ea59dff101f780dfdcc07d1b1f4beeab1af8ed57de6236e775",
+    "remote_ci": "Not run; no green remote workflow claim.",
+    "source_test_config_paths_identical_to_tested_snapshot": 139,
+    "status": "passed",
+    "uv": "0.12.19"
+  },
+  "clean_public_checks": [
+    {
+      "check": "prior_public_results",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "studies.comparative_validity.public_verify",
+        "public-results"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 22.034251959004905
+    },
+    {
+      "check": "released_utility_scores",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.298497870011488
+    },
+    {
+      "check": "saved_chronology_scope",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "studies.comparative_validity.chronology_scope",
+        "--verify",
+        "studies/comparative_validity/chronology_scope.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 4.905685937003
+    },
+    {
+      "check": "saved_comparison_arithmetic",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "studies.comparative_validity.verify_comparisons"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 13.638453765001032
+    },
+    {
+      "check": "existing_ci_equivalence",
+      "command": [
+        "uv",
+        "run",
+        "tracebench",
+        "equivalence"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.07302689799689688
+    }
+  ],
+  "clean_public_record_sha256": "dbd241a5fbcfcbf0b4b351626947703aea155f66c0818bc5b6ec872b79874375",
+  "comparison_freezes": [
+    {
+      "freeze": "studies/comparative_validity/acquisition_freeze.json",
+      "pins_checked": 18,
+      "sha256": "a45f33fd9ca0355aa7452101c7268adca859c1ce5ae06c7fb5acebd7b572769b"
+    },
+    {
+      "freeze": "studies/comparative_validity/audit_freeze.json",
+      "pins_checked": 32,
+      "sha256": "5ed72ca8c3df53daf17f7436165f7854fcd55970c3229aff497f60a46d0b991c"
+    }
+  ],
+  "documentation": {
+    "active_synthesis": "docs/FINAL_SUBMISSION.md",
+    "author": "Rohith YV",
+    "email_added": false,
+    "independence": "Same-code, shared-semantics and separate algorithmic checks distinguished; no independent human or physical-semantics validation claimed.",
+    "links": [
+      {
+        "source": "README.md",
+        "target": "docs/FINAL_SUBMISSION.md"
+      },
+      {
+        "source": "README.md",
+        "target": "docs/REVIEWER_GUIDE.md"
+      },
+      {
+        "source": "README.md",
+        "target": "studies/chronology_consistency/RESULTS.md"
+      },
+      {
+        "source": "README.md",
+        "target": "studies/missing_receipts/results/REPORT.md"
+      },
+      {
+        "source": "README.md",
+        "target": "studies/wiki_case_study/REPORT.md"
+      },
+      {
+        "source": "README.md",
+        "target": "studies/investigator_utility/openrouter_v1/results/REPORT.md"
+      },
+      {
+        "source": "README.md",
+        "target": "studies/evidence_responsiveness/results/REPORT.md"
+      },
+      {
+        "source": "README.md",
+        "target": "studies/comparative_validity/REVIEW.md"
+      },
+      {
+        "source": "README.md",
+        "target": "docs/REVIEWER_GUIDE.md"
+      },
+      {
+        "source": "README.md",
+        "target": "studies/chronology_consistency/RESULTS.md"
+      },
+      {
+        "source": "README.md",
+        "target": "case_study/README.md"
+      },
+      {
+        "source": "README.md",
+        "target": "docs/FINAL_SUBMISSION.md"
+      },
+      {
+        "source": "README.md",
+        "target": "docs/REVIEWER_GUIDE.md"
+      },
+      {
+        "source": "README.md",
+        "target": "docs/RELATED_WORK.md"
+      },
+      {
+        "source": "README.md",
+        "target": "studies/comparative_validity/REVIEW.md"
+      },
+      {
+        "source": "README.md",
+        "target": "docs/SUBMISSION.md"
+      },
+      {
+        "source": "README.md",
+        "target": "CLAIMS.md"
+      },
+      {
+        "source": "README.md",
+        "target": "results/REPORT.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "REVIEWER_GUIDE.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "SUBMISSION.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/comparative_validity/REVIEW.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../results/REPORT.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/review_remediation/derived_target_errors.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/chronology_consistency/RESULTS.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/comparative_validity/CHRONOLOGY_SCOPE.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/missing_receipts/results/REPORT.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/missing_receipts/results/study.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/wiki_case_study/REPORT.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/wiki_case_study/source_manifest.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/wiki_case_study/results/counts.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/investigator_utility/openrouter_v1/results/REPORT.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/review_remediation/utility_diagnostic.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/evidence_responsiveness/results/REPORT.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/evidence_responsiveness/offline_failure_audit/REPORT.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/evidence_responsiveness/offline_failure_audit/terra_summary.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/evidence_acquisition/RESULTS.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "RELATED_WORK.md#finite-acquisition-and-ec2"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/comparative_validity/REVIEW.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/comparative_validity/results/acquisition_results/acquisition_summary.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/comparative_validity/audit_results/audit_summary.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/comparative_validity/audit_results/audit_tie_repetitions.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/exact_audit_frontier/RESULTS.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/joint_audit_warrant/RESULTS.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/investigator_utility/openrouter_v1/response_evidence/README.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "REVIEWER_GUIDE.md"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/evidence_responsiveness/results/execution.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/wiki_case_study/source_manifest.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../studies/wiki_case_study/results/manifest.json"
+      },
+      {
+        "source": "docs/FINAL_SUBMISSION.md",
+        "target": "../CLAIMS.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "FINAL_SUBMISSION.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/review_remediation/derived_target_errors.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../results/runs.csv"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/chronology_consistency/RESULTS.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/chronology_consistency/results/impact.json.gz"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/CHRONOLOGY_SCOPE.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/missing_receipts/results/REPORT.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/missing_receipts/results/study.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/wiki_case_study/REPORT.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/wiki_case_study/results/counts.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/wiki_case_study/source_manifest.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/investigator_utility/openrouter_v1/results/REPORT.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/investigator_utility/openrouter_v1/results/paired_summary.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/investigator_utility/openrouter_v1/results/per_case_scores.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/review_remediation/diagnostic_rules.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/review_remediation/utility_diagnostic.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/evidence_responsiveness/results/REPORT.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/evidence_responsiveness/results/per_family.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/evidence_responsiveness/results/per_variant.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/evidence_responsiveness/offline_failure_audit/REPORT.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/evidence_responsiveness/offline_failure_audit/response_causes.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/evidence_responsiveness/offline_failure_audit/terra_summary.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/REVIEW.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/VERIFY.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/VERIFY.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/investigator_utility/openrouter_v1/response_evidence/scoring_manifest_v2.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/VERIFY.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/clean_checkout_checks.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/REVIEW.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/clean_checkout.py"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/wiki_case_study/source_manifest.json"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/comparative_validity/REVIEW.md"
+      },
+      {
+        "source": "docs/REVIEWER_GUIDE.md",
+        "target": "../studies/evidence_responsiveness/results/execution.json"
+      },
+      {
+        "source": "docs/RELATED_WORK.md",
+        "target": "../studies/wiki_case_study/source_manifest.json"
+      },
+      {
+        "source": "docs/RELATED_WORK.md",
+        "target": "../studies/wiki_case_study/ANALYSIS.md"
+      },
+      {
+        "source": "docs/RELATED_WORK.md",
+        "target": "../src/tracebench/evidence_acquisition/policies.py"
+      },
+      {
+        "source": "docs/RELATED_WORK.md",
+        "target": "../studies/comparative_validity/REVIEW.md"
+      },
+      {
+        "source": "studies/comparative_validity/CHRONOLOGY_SCOPE.md",
+        "target": "../chronology_consistency/RESULTS.md"
+      },
+      {
+        "source": "studies/comparative_validity/CHRONOLOGY_SCOPE.md",
+        "target": "chronology_scope.py"
+      },
+      {
+        "source": "studies/comparative_validity/CHRONOLOGY_SCOPE.md",
+        "target": "chronology_scope.json"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "public_manifest_v1.json"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "public_verification.json"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../../tests/test_utility_score_verification.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "chronology_scope.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../../src/tracebench/evidence_acquisition/study.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../../src/tracebench/evidence_acquisition/certificates.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../../tests/test_acquisition_policies.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "public_verify.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../acquisition_prior_robustness/analysis.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../archive_model_misspecification/analysis.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../archive_model_misspecification/reference.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../audit_aware_acquisition/analysis.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../audit_aware_acquisition/reference.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../exact_audit_frontier/analysis.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../exact_audit_frontier/reference.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../joint_audit_warrant/analysis.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../joint_audit_warrant/reference.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "chronology_scope.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../chronology_consistency/reference.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../investigator_utility/openrouter_v1/response_evidence/verify_scores.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../../src/tracebench/evidence_responsiveness/scoring.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../evidence_responsiveness/offline_failure_audit/audit.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../../src/tracebench/wiki_loader.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "../../src/tracebench/wiki_analysis.py"
+      },
+      {
+        "source": "studies/comparative_validity/VERIFY.md",
+        "target": "hash_only_validation_inventory.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "initial_state.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "../../docs/FINAL_SUBMISSION.md"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "clean_checkout_checks.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "public_verify.py"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "VERIFY.md"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "CHRONOLOGY_SCOPE.md"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "acquisition_protocol.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "acquisition_freeze.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "results/acquisition_results/acquisition_summary.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "../../docs/RELATED_WORK.md"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "audit_protocol.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "audit_freeze.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "audit_results/audit_tie_rankings.json.gz"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "audit_results/audit_tie_repetitions.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "audit_results/audit_summary.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "audit_results/audit_strata.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "audit_results/audit_stopped_runs.json.gz"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "chronology_scope.py"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "chronology_scope.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "VERIFY.md"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "verify_comparisons.py"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "INDEPENDENT_VALIDATION.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "clean_checkout.py"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "clean_checkout_final.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "clean_public_verification.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "authorized_changes.json"
+      },
+      {
+        "source": "studies/comparative_validity/REVIEW.md",
+        "target": "FINAL_VALIDATION.json"
+      },
+      {
+        "source": "studies/comparative_validity/ACQUISITION_EC2.md",
+        "target": "acquisition_protocol.json"
+      },
+      {
+        "source": "studies/comparative_validity/ACQUISITION_EC2.md",
+        "target": "acquisition_freeze.json"
+      },
+      {
+        "source": "studies/comparative_validity/ACQUISITION_EC2.md",
+        "target": "../../src/tracebench/evidence_acquisition/policies.py"
+      },
+      {
+        "source": "studies/comparative_validity/ACQUISITION_EC2.md",
+        "target": "results/acquisition_results/acquisition_summary.json"
+      },
+      {
+        "source": "studies/comparative_validity/ACQUISITION_EC2.md",
+        "target": "results/acquisition_results/acquisition_rows.json"
+      },
+      {
+        "source": "studies/comparative_validity/ACQUISITION_EC2.md",
+        "target": "results/acquisition_results/acquisition_details.json.gz"
+      },
+      {
+        "source": "studies/comparative_validity/ACQUISITION_EC2.md",
+        "target": "results/acquisition_results/acquisition_validation.json"
+      },
+      {
+        "source": "studies/comparative_validity/ACQUISITION_EC2.md",
+        "target": "results/acquisition_results/acquisition_manifest.json"
+      }
+    ],
+    "relative_links_checked": 149,
+    "review": "studies/comparative_validity/REVIEW.md"
+  },
+  "freeze_count_interpretation": "Overlapping dependency sets, not independent replications.",
+  "head_unchanged": "c29002c624005003e2f36ab7186e217edde76b22",
+  "independent_record_sha256": "c0f5980d9f65eb51bbf416007f40a719940ca7535f4a4a91b0482dc5decbba4b",
+  "independent_saved_data_verification": {
+    "acquisition": {
+      "complete_condition_rows": 2800,
+      "independent_prior_reweighting_and_exact_aggregation": "passed",
+      "paid_trajectory_views": 27440,
+      "paired_summaries": 800,
+      "per_problem_contrasts": 3200,
+      "policy_summaries": 700,
+      "result_and_dependency_pins": 22
+    },
+    "additional_spend_usd": "0",
+    "audits": {
+      "all_anchor_and_stratum_aggregates": "passed",
+      "common_rankings": 8000,
+      "independently_replayed_tie_problem_conditions": 48000,
+      "paired_tie_totals": 600,
+      "result_pins": 6,
+      "stopped_paid_paths": 10032
+    },
+    "frozen_dependency_pin_checks": 50,
+    "model_calls": 0,
+    "network_requests": 0,
+    "scope": "Separately implemented complete-signature filtering, paid-prefix and first-conflict checks, replay of saved B/C rankings, prior arithmetic and aggregates. Existing Model supplies shared physical semantics. Historical exact policies are retained, never optimized. No independent human or physical-semantics validation is claimed.",
+    "status": "passed"
+  },
+  "legacy_scientific_freeze_checks": [
+    {
+      "freeze": "studies/evidence_acquisition/freeze.json",
+      "freeze_bytes_unchanged": true,
+      "pins_checked": 19
+    },
+    {
+      "freeze": "studies/acquisition_prior_robustness/freeze.json",
+      "freeze_bytes_unchanged": true,
+      "pins_checked": 34
+    },
+    {
+      "freeze": "studies/archive_model_misspecification/freeze.json",
+      "freeze_bytes_unchanged": true,
+      "pins_checked": 23
+    },
+    {
+      "freeze": "studies/audit_aware_acquisition/freeze.json",
+      "freeze_bytes_unchanged": true,
+      "pins_checked": 27
+    },
+    {
+      "freeze": "studies/exact_audit_frontier/freeze.json",
+      "freeze_bytes_unchanged": true,
+      "pins_checked": 36
+    },
+    {
+      "freeze": "studies/joint_audit_warrant/freeze.json",
+      "freeze_bytes_unchanged": true,
+      "pins_checked": 42
+    },
+    {
+      "freeze": "studies/chronology_consistency/freeze.json",
+      "freeze_bytes_unchanged": true,
+      "pins_checked": 55
+    }
+  ],
+  "new_artifacts_sha256_excluding_this_record": {
+    "studies/comparative_validity/ACQUISITION_EC2.md": "93e1ec09eedaa90ca686bf745bb3ee973daa2ccfbdaf814772b414e1b8f2789f",
+    "studies/comparative_validity/CHRONOLOGY_SCOPE.md": "993a457bc9ddc37f61ff84e8372c6c1a6c3cec266891883f2a15f08a7f8a03c8",
+    "studies/comparative_validity/INDEPENDENT_VALIDATION.json": "c0f5980d9f65eb51bbf416007f40a719940ca7535f4a4a91b0482dc5decbba4b",
+    "studies/comparative_validity/REVIEW.md": "aef31d7daa4d694ce17e59f84471fa04313bb1c3ed417cd19d67ce639fffcf20",
+    "studies/comparative_validity/VERIFY.md": "0bdd3d218e3390d6893cd7c3dd55ea8716a6e32c2fad2982099642e257a640f7",
+    "studies/comparative_validity/acquisition.py": "001c333f8f2ba5bba08e4a64c434a42eaadbded73c7c4490585ad8a25200d8f3",
+    "studies/comparative_validity/acquisition_freeze.json": "a45f33fd9ca0355aa7452101c7268adca859c1ce5ae06c7fb5acebd7b572769b",
+    "studies/comparative_validity/acquisition_protocol.json": "83044b8ac2179bd5a2e6504a41c0ff036bcf3c15537ce14c81ac63b7e0dcfb64",
+    "studies/comparative_validity/audit_freeze.json": "5ed72ca8c3df53daf17f7436165f7854fcd55970c3229aff497f60a46d0b991c",
+    "studies/comparative_validity/audit_protocol.json": "ba8b088924103b9d9f87e7f6867c8fd05c91a0c0e073094082d9a9c766c4214c",
+    "studies/comparative_validity/audit_results/audit_manifest.json": "fe1a94a7726aeae68ab59fe2288792294b8716d2f694b40cb6be99c2d71858af",
+    "studies/comparative_validity/audit_results/audit_stopped_runs.json.gz": "08357b6de15ea2cc37a6db459ff8677aea5920c5c473246f7edee7248f914144",
+    "studies/comparative_validity/audit_results/audit_strata.json": "6e1762475dffe3e2024427ec2fe20984bfb89f227f13522cef144bb55477a16a",
+    "studies/comparative_validity/audit_results/audit_summary.json": "9cd2f403a6e7bbad01aab6dc6c30c315ca7772d59c13f8b95ccee86a8d512435",
+    "studies/comparative_validity/audit_results/audit_tie_per_problem.json.gz": "9b80108f895c0b6ae4dc2295c8698ad1c313fd5b222c656ce9ab6eeb24a16d8e",
+    "studies/comparative_validity/audit_results/audit_tie_rankings.json.gz": "fc0b8ec0906091b4cbee634b65b6a75db42be13f2be7e5317800758f7205c770",
+    "studies/comparative_validity/audit_results/audit_tie_repetitions.json": "a82a961ebc0e6c232b101f4eb963e5e6f05d089a489ad0d67ffd660c745b15c6",
+    "studies/comparative_validity/audits.py": "94843582970257a1c898672523ce58d444ca866fe0f3e785d6363e3650749386",
+    "studies/comparative_validity/authorized_changes.json": "310555953468be11c42e36940d5e43ae3d002cc2bae6383c57bc3808b9332c27",
+    "studies/comparative_validity/chronology_scope.json": "4f3d0b7a01cb4a1d0707aa68de3768ed118904894c9c360b0bf9696148a2972f",
+    "studies/comparative_validity/chronology_scope.py": "dce814f85d5b7bca5b7f3ac21260f6894854ec2aac35aa841f98a4c9fc5ff80e",
+    "studies/comparative_validity/clean_checkout.py": "8de6a41f418ad661af7b8e10ca6ac16c73ec7691b0197f2df9515481a55e205f",
+    "studies/comparative_validity/clean_checkout_checks.json": "76ba209a37725e8fbbf7c652e003c09e343dafd59ee194c1c036fd0df02609eb",
+    "studies/comparative_validity/clean_checkout_final.json": "1ecc8fc2812880ea59dff101f780dfdcc07d1b1f4beeab1af8ed57de6236e775",
+    "studies/comparative_validity/clean_public_verification.json": "dbd241a5fbcfcbf0b4b351626947703aea155f66c0818bc5b6ec872b79874375",
+    "studies/comparative_validity/hash_only_validation_inventory.json": "ed2ea166e256d274d8f53d7747ba20d778ca40f9f6c0191c8119a73ff845af2a",
+    "studies/comparative_validity/initial_state.json": "33d590b1ab1e57a50c695144673c236734807dced6841dd2c5ec6335e07826e5",
+    "studies/comparative_validity/public_manifest_v1.json": "9dcc49d3d520c184942c8a73cf39e449781df37e3fc19c628861ad70272c30f8",
+    "studies/comparative_validity/public_verification.json": "1c8a30deaa2e93b705845a973302f3bea0682e2b185f8907c246386ab42fefc5",
+    "studies/comparative_validity/public_verify.py": "c689b31f8fffd68bc53331c5928a8e915cb3a6c44ac52a1a974380ca8091ed37",
+    "studies/comparative_validity/results/acquisition_results/acquisition_details.json.gz": "c30397804e61ea1a513ff3669fc89bc9445939a493bd43434a5b06d9c5ab4ad8",
+    "studies/comparative_validity/results/acquisition_results/acquisition_manifest.json": "e54060d3725c3a9817e20a8c3a1351c7c20730b267f26ff0d4be2f145b68c93a",
+    "studies/comparative_validity/results/acquisition_results/acquisition_rows.json": "5fcd1140d4cf72f17786788ba0ab2c58f7e10911ffeaba329382544d0694063c",
+    "studies/comparative_validity/results/acquisition_results/acquisition_summary.json": "416f02a753785b551818208a387bc79646224e7499c3ee8f90a4bd94ca1db1bf",
+    "studies/comparative_validity/results/acquisition_results/acquisition_validation.json": "70eefb96cae3a8e881a2858f6cad2db8be25f081108eb911d60720ce00159173",
+    "studies/comparative_validity/verify_comparisons.py": "3de98ed25da37d9d3e2cc8d96f3b52bc43711e8dba33a046be3b6cd724310cc8",
+    "tests/test_comparative_acquisition.py": "94e9d9b680c3821e593419d29eab596a8f7a540d883384168b7c19a5bac1e4fd",
+    "tests/test_comparative_audits.py": "78b5ce2cdb708ffb4621775e1e506f61f45cb36dadd67979e840fae256d3d669",
+    "tests/test_comparative_chronology_scope.py": "3f9302a348e73cb008633037e1451b985707e647ecdcb5afaff1b81fde28b758",
+    "tests/test_comparative_public_verify.py": "debd7669f249a37c63cefc4be1bd36d79a66278fd1addb5cd64c990f837983ea",
+    "tests/test_comparative_saved_checks.py": "861bfd1c342560a1f44705cc5173b328417425404fe3ecf3ddf42b684cb083a7"
+  },
+  "preservation": {
+    "api_accounting": "Initial retained byte hashes match; no ledger reset or additional model requests.",
+    "authorized_existing_edits": 6,
+    "historical_broad_gates": "Retain original meaning and may flag the authorized current-document/configuration edits. They are not silently reported as a full-history pass.",
+    "historical_freezes_modified_or_repinned": false,
+    "local_response_treatment": "Opaque hashing only; provider-private reasoning not decoded.",
+    "preserved_local_files": 701,
+    "preserved_preexisting_untracked_files": 30,
+    "unchanged_initial_tracked_files": 381
+  },
+  "schema_version": 1,
+  "source_index_unchanged": true,
+  "status": "passed",
+  "verified_at_utc": "2026-10-04T15:45:03.769613+00:00"
+}

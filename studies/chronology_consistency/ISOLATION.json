@@ -1,0 +1,203 @@
+{
+  "frozen_dependency_checks": [
+    {
+      "frozen_dependencies_checked": 19,
+      "hash_mismatches": [],
+      "manifest": "studies/evidence_acquisition/freeze.json",
+      "manifest_sha256": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+      "shared_top_level_tracebench_files": [
+        "src/tracebench/__init__.py"
+      ]
+    },
+    {
+      "frozen_dependencies_checked": 34,
+      "hash_mismatches": [],
+      "manifest": "studies/acquisition_prior_robustness/freeze.json",
+      "manifest_sha256": "b4aa0f67a5be921bb0882c1f53dffd4c5ef19b425dd63e83997eefc27390cbe2",
+      "shared_top_level_tracebench_files": [
+        "src/tracebench/__init__.py"
+      ]
+    },
+    {
+      "frozen_dependencies_checked": 23,
+      "hash_mismatches": [],
+      "manifest": "studies/archive_model_misspecification/freeze.json",
+      "manifest_sha256": "6243d8d8ff95dad06abad0fc5dc1f79118fcd49042c175468118f9025b492fea",
+      "shared_top_level_tracebench_files": [
+        "src/tracebench/__init__.py"
+      ]
+    },
+    {
+      "frozen_dependencies_checked": 27,
+      "hash_mismatches": [],
+      "manifest": "studies/audit_aware_acquisition/freeze.json",
+      "manifest_sha256": "b31fd98de70fbec09756e268ed1ea3c617c66b3f2f5df773a0e58aba03594f9a",
+      "shared_top_level_tracebench_files": [
+        "src/tracebench/__init__.py"
+      ]
+    },
+    {
+      "frozen_dependencies_checked": 36,
+      "hash_mismatches": [],
+      "manifest": "studies/exact_audit_frontier/freeze.json",
+      "manifest_sha256": "fff39cd695f83308b3f76c018a84c1fa01720c14c684b37f9356ab96cb4a0bcb",
+      "shared_top_level_tracebench_files": [
+        "src/tracebench/__init__.py"
+      ]
+    },
+    {
+      "frozen_dependencies_checked": 42,
+      "hash_mismatches": [],
+      "manifest": "studies/joint_audit_warrant/freeze.json",
+      "manifest_sha256": "6168b278fdf341eee6b43158fcce5d9db818bbe8e34536739911a4511cd2aadf",
+      "shared_top_level_tracebench_files": [
+        "src/tracebench/__init__.py"
+      ]
+    }
+  ],
+  "information_limits": [
+    "Static import and frozen-dependency checks establish the inspected code/data dependency separation, not correctness of every independent model or real-world fidelity.",
+    "No saved model response envelopes or private reasoning were decoded; no model/network requests, credential access, dependency downloads, or additional spend occurred during this inspection.",
+    "Legacy chronology retiming changes no independent-study file and does not warrant retracting or rerunning those results.",
+    "Frozen file-count checks overlap between studies and are not independent replications."
+  ],
+  "legacy_missing_receipt_source_provenance": {
+    "interpretation": "The 11 non-CLI historical modules match their original pins. The historical command-layer CLI pin differs; it is retained as a mismatch and is not refreshed. This isolation record does not establish numerical reproduction.",
+    "manifest": "studies/missing_receipts/results/manifest.json",
+    "status_by_module": {
+      "__init__.py": "matched",
+      "cli.py": "historical_pin_mismatch",
+      "corruption.py": "matched",
+      "estimators.py": "matched",
+      "evaluate.py": "matched",
+      "model.py": "matched",
+      "observe.py": "matched",
+      "policies.py": "matched",
+      "receipt_reporting.py": "matched",
+      "receipt_study.py": "matched",
+      "reporting.py": "matched",
+      "simulate.py": "matched"
+    }
+  },
+  "preservation_scope": {
+    "existing_local_file_count": 700,
+    "manifest": "studies/chronology_consistency/preservation.json",
+    "manifest_sha256": "7a6a054ae530eb06d2f0ff42cce7fad1ac77597ca94787a246af60c5075a7a99",
+    "notes": "Current preservation expands past the prior 509 response/accounting and 12 exact-audit-development pins; existing local files are hashed opaquely. The preservation manifest distinguishes scientific artifacts from presentation history.",
+    "tracked_file_count": 387
+  },
+  "provenance": {
+    "method": "Python AST inspection of explicit imports, including relative imports, plus SHA256 verification of the six existing execution-freeze dependency sets. No scientific module imported or evaluated.",
+    "reference_final_validation": "studies/joint_audit_warrant/FINAL_VALIDATION.json",
+    "reference_result": "studies/joint_audit_warrant/RESULTS.md",
+    "review_type": "AI-assisted source review; not independent human validation."
+  },
+  "schema_version": 1,
+  "scope": "Read-only source and saved-dependency inspection; no independent acquisition, archive, audit, exact-frontier, or joint study execution.",
+  "shared_package_initializer": {
+    "contents": "Package docstring and __version__ assignment only; no imports or generation.",
+    "path": "src/tracebench/__init__.py",
+    "sha256": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3"
+  },
+  "source_import_scan": [
+    {
+      "dynamic_import_call_sites": [],
+      "legacy_scientific_imports": [],
+      "namespace": "src/tracebench/evidence_acquisition",
+      "python_modules_scanned": 7,
+      "repository_import_modules": [
+        "tracebench.evidence_acquisition.certificates",
+        "tracebench.evidence_acquisition.generator",
+        "tracebench.evidence_acquisition.model",
+        "tracebench.evidence_acquisition.policies",
+        "tracebench.evidence_acquisition.study"
+      ],
+      "source_set_sha256": "8119324e7cd04c2b7b1b05dfa50c954864a486fb9a1f0dc3e480b4d5ae882f74"
+    },
+    {
+      "dynamic_import_call_sites": [],
+      "legacy_scientific_imports": [],
+      "namespace": "studies/acquisition_prior_robustness",
+      "python_modules_scanned": 4,
+      "repository_import_modules": [
+        "studies.acquisition_prior_robustness.aggregation",
+        "studies.acquisition_prior_robustness.sensitivity",
+        "studies.acquisition_prior_robustness.timing",
+        "tracebench.evidence_acquisition.model",
+        "tracebench.evidence_acquisition.policies",
+        "tracebench.evidence_acquisition.study"
+      ],
+      "source_set_sha256": "81893f1ed1eb2f3a427993c2fe11b424538f554163e5b76df42fb8a35261d2e4"
+    },
+    {
+      "dynamic_import_call_sites": [],
+      "legacy_scientific_imports": [],
+      "namespace": "studies/archive_model_misspecification",
+      "python_modules_scanned": 3,
+      "repository_import_modules": [
+        "studies.acquisition_prior_robustness.aggregation",
+        "studies.acquisition_prior_robustness.sensitivity",
+        "studies.archive_model_misspecification.expanded",
+        "studies.archive_model_misspecification.reference",
+        "tracebench.evidence_acquisition.model"
+      ],
+      "source_set_sha256": "f8bcbff3001a939b8ee88b592259b9ed1c356141cbdbb71976e19f6a025d1218"
+    },
+    {
+      "dynamic_import_call_sites": [],
+      "legacy_scientific_imports": [],
+      "namespace": "studies/audit_aware_acquisition",
+      "python_modules_scanned": 3,
+      "repository_import_modules": [
+        "studies.acquisition_prior_robustness.aggregation",
+        "studies.archive_model_misspecification",
+        "studies.archive_model_misspecification.expanded",
+        "studies.audit_aware_acquisition.auditing",
+        "studies.audit_aware_acquisition.reference",
+        "tracebench.evidence_acquisition.model"
+      ],
+      "source_set_sha256": "c4d41e0f337a7f915ffc4024110ce116cc51ba9d65c925c3be62f94410b1bff5"
+    },
+    {
+      "dynamic_import_call_sites": [],
+      "legacy_scientific_imports": [],
+      "namespace": "studies/exact_audit_frontier",
+      "python_modules_scanned": 4,
+      "repository_import_modules": [
+        "studies.acquisition_prior_robustness.aggregation",
+        "studies.archive_model_misspecification.expanded",
+        "studies.audit_aware_acquisition",
+        "studies.audit_aware_acquisition.analysis",
+        "studies.audit_aware_acquisition.auditing",
+        "studies.exact_audit_frontier.execution",
+        "studies.exact_audit_frontier.frontier",
+        "studies.exact_audit_frontier.reference",
+        "tracebench.evidence_acquisition.model"
+      ],
+      "source_set_sha256": "f3a7947472f3d35d415068bed65b9ae8a30e0d26396cc9ac457a9d72661a7b37"
+    },
+    {
+      "dynamic_import_call_sites": [],
+      "legacy_scientific_imports": [],
+      "namespace": "studies/joint_audit_warrant",
+      "python_modules_scanned": 5,
+      "repository_import_modules": [
+        "studies.acquisition_prior_robustness.aggregation",
+        "studies.archive_model_misspecification.expanded",
+        "studies.audit_aware_acquisition",
+        "studies.audit_aware_acquisition.analysis",
+        "studies.audit_aware_acquisition.auditing",
+        "studies.exact_audit_frontier",
+        "studies.exact_audit_frontier.execution",
+        "studies.exact_audit_frontier.frontier",
+        "studies.joint_audit_warrant.execution",
+        "studies.joint_audit_warrant.frontier",
+        "studies.joint_audit_warrant.reference",
+        "studies.joint_audit_warrant.support",
+        "tracebench.evidence_acquisition.model"
+      ],
+      "source_set_sha256": "67f400b2b06e7a7ceff4b130b626600d5fcf43a23c002d2103795fd231834b6c"
+    }
+  ],
+  "status": "passed_static_isolation_and_dependency_hash_checks"
+}

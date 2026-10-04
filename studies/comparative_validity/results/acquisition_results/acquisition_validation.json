@@ -1,0 +1,75 @@
+{
+  "additional_spend_usd": "0",
+  "comparison_rows": 2800,
+  "ec2_explicit_pair_arithmetic_checks": 12876,
+  "frozen_dependencies_verified": 18,
+  "historical_exact_rows_reproduced_from_saved_paths": 2000,
+  "historical_policies_reoptimized": false,
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_comparator_rows": 800,
+  "problems": 40,
+  "semantic_check_scope": "Existing Model/certificate checker plus explicit pair arithmetic and paid-path accounting; not independent physical semantics.",
+  "status": "passed",
+  "structure_groups": 30,
+  "supplied_q0_targets": {
+    "pair_cut": {
+      "actual": {
+        "exact": "607/160",
+        "value": 3.79375
+      },
+      "difference": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "matches": true,
+      "supplied_target": {
+        "exact": "607/160",
+        "value": 3.79375
+      }
+    },
+    "pair_cut_vs_schema_skip_counts": {
+      "actual": [
+        13,
+        14,
+        13
+      ],
+      "matches": true,
+      "supplied": [
+        13,
+        14,
+        13
+      ]
+    },
+    "schema_skip": {
+      "actual": {
+        "exact": "1191/320",
+        "value": 3.721875
+      },
+      "difference": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "matches": true,
+      "supplied_target": {
+        "exact": "1191/320",
+        "value": 3.721875
+      }
+    },
+    "terminal_class_entropy": {
+      "actual": {
+        "exact": "4489/1280",
+        "value": 3.50703125
+      },
+      "difference": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "matches": true,
+      "supplied_target": {
+        "exact": "4489/1280",
+        "value": 3.50703125
+      }
+    }
+  }
+}

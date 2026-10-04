@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "retrospective corrective comparison; definitions fixed before running new evaluation policies",
+  "evaluation": "Exactly the existing 40 evaluation problems, all queries including nuisance and duplicate queries, costs, initial evidence, complete finite supports, terminal tau classes, and supplied structure groups",
+  "development": "Only the four existing development problems and tiny explicit truth tables",
+  "execution_gate": "Pin the explicit computational/source closure plus definitions and focused tests in acquisition_freeze.json after passed development checks and code review. Refuse missing/changed/incomplete freeze or an existing output directory before evaluation. Recheck freeze after calculation and at execution end. Owned outputs go in a fresh dedicated directory.",
+  "new_policies": {
+    "schema_skip": "Historical schema relevance/cost/opaque-ID order; before selecting a query discard remaining queries constant in the current compatible nominal state. Do not add implied answers to paid history, charge them, or count their bytes. Stop at the unchanged terminal condition.",
+    "terminal_class_entropy": "H(tau|history) minus the outcome-probability-weighted child H(tau), divided by positive query cost. Skip constant queries. Natural finite float computation uses base-2 logs and math.fsum, class/outcome sorting. Gain less than -1e-12 is an error; smaller negative roundoff clamps to zero. Ratios within absolute 1e-12 of the maximum tie, broken by cost then opaque ID. If maximum ratio is at most 1e-12, use cheapest nonconstant query, then ID. Never stop merely because one-step gains are zero. Stop at the unchanged terminal condition."
+  },
+  "prior_grid": ["q0", "qS", "qT", "qMinus", "qPlus"],
+  "prior_scope": "Five total existing distributions, including q0=original p0; no sixth prior is defined or invented. Preserve coincident priors under their declared names; they are not independent replications.",
+  "planning_modes": {
+    "frozen_p0": "Run each new policy once under q0, retain complete signature paths, and reweight unchanged paths under each distribution. Read historical paths for the original policies.",
+    "matched_q": "Run terminal-class information gain under each matched prior; schema-skip is prior independent. Use the saved, path-validated matched-prior exact optimum and historical other-policy paths. No historical exact planning is rerun."
+  },
+  "references": ["read_all", "schema_aware", "world_entropy", "pair_cut", "exact_optimal"],
+  "failure_rule": "Fail closed, retain any existing written partial files, report unavailable execution rather than omit a problem or tune the rule. Historical cap/unavailable rows require explicit handling; no replacement solve is authorized.",
+  "summary_rules": ["equal_problem", "structure_balanced"],
+  "summaries": "Exact rational cost/optimum gap, per-problem contrasts, stratum and all-problem summaries, pair-cut against all other policies plus each new comparator against matched exact, wins/ties/losses and weighted masses. Zero optimum ratios are undefined; list them explicitly. Structural grouping is copied unchanged. No sampling confidence intervals.",
+  "verification": "Existing Model/certificate checker, complete charged signature histories and exact reweighting. Separately enumerate weighted cross-tau hypothesis pairs at visited states to verify the EC2 formula; shared tau is not an independent physical-semantics implementation.",
+  "supplied_q0_targets": "3.793750 pair-cut, 3.721875 schema-skip, 3.50703125 terminal-class entropy; pair-cut versus schema-skip 13 wins/14 ties/13 losses. Record agreement or differences, never force these targets.",
+  "ec2_reference": "Golovin, Krause, and Ray. Near-Optimal Bayesian Active Learning with Noisy Observations. NeurIPS 2010; arXiv:1010.3091, Section 3. Supplied bibliographic context, no external requests.",
+  "ec2_mapping": "For hypotheses u,v with different complete-archive tau, weighted edges p(u)p(v) give E(S). Historical Planner.pair_gain is exactly E(S)-sum_o P(o|S)E(S_o), divided by query cost for selection, with historical cost/ID ties. This is an application of EC2, not a novel algorithm. No approximation guarantee is imported.",
+  "boundaries": "Nominally constant skipping is specific to nominal acquisition and is not transferred to mismatch auditing. These are finite instance optimizations, not deployment generalization or measured investigator benefit. No actual world or unpaid answer is given to a planner.",
+  "network_requests": 0,
+  "model_calls": 0,
+  "additional_spend_usd": "0"
+}

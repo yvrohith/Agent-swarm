@@ -1,0 +1,168 @@
+{
+  "authority_sha256": {
+    "studies/acquisition_prior_robustness/freeze.json": "b4aa0f67a5be921bb0882c1f53dffd4c5ef19b425dd63e83997eefc27390cbe2",
+    "studies/acquisition_prior_robustness/results/manifest.json": "cfad54ca8b0b52e352c51c04959da30790232b0170612c77ad0e81b50f6927ec",
+    "studies/evidence_acquisition/freeze.json": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+    "studies/evidence_acquisition/results/manifest.json": "d8a66b24107949ceb4346a9001df86dc331f027a5247c34958bb27341735d9f5"
+  },
+  "dependency_scope": "Actual imports, exact released finite inputs, declared prior/config/group definitions, saved trajectories and compared result bytes. Historical reports, broad preservation, test files, prior driver and timing driver are not runtime dependencies. Their historical manifests remain intact; whole-checkout preservation is separate.",
+  "files": [
+    {
+      "origin": {
+        "key": "src/tracebench/__init__.py",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "src/tracebench/__init__.py",
+      "sha256": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3"
+    },
+    {
+      "origin": {
+        "key": "src/tracebench/evidence_acquisition/__init__.py",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "src/tracebench/evidence_acquisition/__init__.py",
+      "sha256": "cc13ce3dda5f44b8ee9c696f224464deee132f2ea92afb392b8acb33d1bafb07"
+    },
+    {
+      "origin": {
+        "key": "src/tracebench/evidence_acquisition/certificates.py",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "src/tracebench/evidence_acquisition/certificates.py",
+      "sha256": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b"
+    },
+    {
+      "origin": {
+        "key": "src/tracebench/evidence_acquisition/model.py",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "src/tracebench/evidence_acquisition/model.py",
+      "sha256": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d"
+    },
+    {
+      "origin": {
+        "key": "src/tracebench/evidence_acquisition/policies.py",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "src/tracebench/evidence_acquisition/policies.py",
+      "sha256": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f"
+    },
+    {
+      "origin": {
+        "key": "studies/acquisition_prior_robustness/aggregation.py",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/aggregation.py",
+      "sha256": "d301074af6d8990d865c8752fe0ad9c98de4379ea221f1f4317b7baa3e5bf809"
+    },
+    {
+      "origin": {
+        "key": "studies/acquisition_prior_robustness/config.json",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/config.json",
+      "sha256": "27e341b3f8cac2791e12fbd5d200252a7c6fb3082575c44297ab0bfaa55825bb"
+    },
+    {
+      "origin": {
+        "key": "details.json.gz",
+        "record": "studies/acquisition_prior_robustness/results/manifest.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/results/details.json.gz",
+      "sha256": "1160da8d715c4920b2ccfe53cac6fd5eb2740c14dd0d6930df1e2c1a18f24f12"
+    },
+    {
+      "origin": {
+        "key": "per_problem.json",
+        "record": "studies/acquisition_prior_robustness/results/manifest.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/results/per_problem.json",
+      "sha256": "4cefa2b8904a405b7af5f50d0a387116d7079f2d32e96d4334eb91ad8c04326f"
+    },
+    {
+      "origin": {
+        "key": "runtime.json",
+        "record": "studies/acquisition_prior_robustness/results/manifest.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/results/runtime.json",
+      "sha256": "295f352241d377d71daa2b01977240806d748033abb06b900c8b8e1ac463b82e"
+    },
+    {
+      "origin": {
+        "key": "summary.json",
+        "record": "studies/acquisition_prior_robustness/results/manifest.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/results/summary.json",
+      "sha256": "6a9f568fd5c06a636db1b4b16f02a7a834c545d7801a844f3a9a82d97c0c032d"
+    },
+    {
+      "origin": {
+        "key": "validation.json",
+        "record": "studies/acquisition_prior_robustness/results/manifest.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/results/validation.json",
+      "sha256": "2f6172d94cbd30098b6cfc0091300a9704acbd8c284e396f4d081a899846bcc6"
+    },
+    {
+      "origin": {
+        "key": "studies/acquisition_prior_robustness/sensitivity.py",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/sensitivity.py",
+      "sha256": "917771647708477955f3f72791dcea6295d4c8eb61f5665a9d7a2024398ddb41"
+    },
+    {
+      "origin": {
+        "key": "studies/acquisition_prior_robustness/structure_groups.json",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/acquisition_prior_robustness/structure_groups.json",
+      "sha256": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8"
+    },
+    {
+      "origin": {
+        "key": "studies/evidence_acquisition/evaluation_problems.json",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/evidence_acquisition/evaluation_problems.json",
+      "sha256": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893"
+    },
+    {
+      "origin": {
+        "key": "studies/evidence_acquisition/results/certificates.json.gz",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/evidence_acquisition/results/certificates.json.gz",
+      "sha256": "877d154cd04c08f2e048f990c514d270275a5fabbce3031c94453cccbf1c2f08"
+    },
+    {
+      "origin": {
+        "key": "studies/evidence_acquisition/results/signature_runs.json.gz",
+        "record": "studies/acquisition_prior_robustness/freeze.json",
+        "section": "files_sha256"
+      },
+      "path": "studies/evidence_acquisition/results/signature_runs.json.gz",
+      "sha256": "862b75cefdd6f1d6c3c1c0ef50880ebb5ac741e5a3e79242d98676de4b7818b9"
+    }
+  ],
+  "provenance": "Authority hashes match the existing chronology preservation inventory for c29002c624005003e2f36ab7186e217edde76b22. Scientific/input/result pins are copied from original freezes and release manifests, not refreshed from current source bytes. Trust is the released repository and these manifests; no cryptographic provider authenticity claim.",
+  "schema_version": 1,
+  "semantic_limit": "Certificate replay uses the same Model/certificate; expectation and summary reproduction use unchanged calculation helpers. No policy optimization, independent physical semantics, new timing, or private local evidence.",
+  "study": "acquisition_prior_robustness"
+}

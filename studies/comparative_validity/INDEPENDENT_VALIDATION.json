@@ -1,0 +1,25 @@
+{
+  "acquisition": {
+    "complete_condition_rows": 2800,
+    "independent_prior_reweighting_and_exact_aggregation": "passed",
+    "paid_trajectory_views": 27440,
+    "paired_summaries": 800,
+    "per_problem_contrasts": 3200,
+    "policy_summaries": 700,
+    "result_and_dependency_pins": 22
+  },
+  "additional_spend_usd": "0",
+  "audits": {
+    "all_anchor_and_stratum_aggregates": "passed",
+    "common_rankings": 8000,
+    "independently_replayed_tie_problem_conditions": 48000,
+    "paired_tie_totals": 600,
+    "result_pins": 6,
+    "stopped_paid_paths": 10032
+  },
+  "frozen_dependency_pin_checks": 50,
+  "model_calls": 0,
+  "network_requests": 0,
+  "scope": "Separately implemented complete-signature filtering, paid-prefix and first-conflict checks, replay of saved B/C rankings, prior arithmetic and aggregates. Existing Model supplies shared physical semantics. Historical exact policies are retained, never optimized. No independent human or physical-semantics validation is claimed.",
+  "status": "passed"
+}

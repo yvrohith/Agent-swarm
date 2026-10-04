@@ -1,0 +1,92 @@
+{
+  "additional_spend_usd": "0",
+  "chronology": [
+    {
+      "affected_configurations": 76,
+      "all_worlds_and_rng_unchanged_by_instrumentation": true,
+      "audited_configurations": 144,
+      "cohort": "benchmark",
+      "configurations": 144,
+      "expected_configurations": 144,
+      "maximum_time_discrepancy": 12.706597068266205,
+      "totals": {
+        "affected_writes": 798,
+        "context_records": 26134,
+        "distinct_first_availability_contradictions": 782,
+        "distinct_source_run_installations": 25491,
+        "extra_source_decisions": 809,
+        "missing_source_decisions": 0,
+        "offending_chains": 784,
+        "repeated_context_receipts": 643,
+        "request_chains": 40700,
+        "writes_checked": 51840
+      },
+      "unavailable_configurations": 0
+    },
+    {
+      "affected_configurations": 0,
+      "all_worlds_and_rng_unchanged_by_instrumentation": true,
+      "audited_configurations": 40,
+      "cohort": "missing_receipts",
+      "configurations": 40,
+      "expected_configurations": 40,
+      "maximum_time_discrepancy": 0.0,
+      "totals": {
+        "affected_writes": 0,
+        "context_records": 7346,
+        "distinct_first_availability_contradictions": 0,
+        "distinct_source_run_installations": 7332,
+        "extra_source_decisions": 0,
+        "missing_source_decisions": 0,
+        "offending_chains": 0,
+        "repeated_context_receipts": 14,
+        "request_chains": 11475,
+        "writes_checked": 14400
+      },
+      "unavailable_configurations": 0
+    },
+    {
+      "affected_configurations": 76,
+      "all_worlds_and_rng_unchanged_by_instrumentation": true,
+      "audited_configurations": 184,
+      "cohort": "all_unique",
+      "configurations": 184,
+      "expected_configurations": 184,
+      "maximum_time_discrepancy": 12.706597068266205,
+      "totals": {
+        "affected_writes": 798,
+        "context_records": 33480,
+        "distinct_first_availability_contradictions": 782,
+        "distinct_source_run_installations": 32823,
+        "extra_source_decisions": 809,
+        "missing_source_decisions": 0,
+        "offending_chains": 784,
+        "repeated_context_receipts": 657,
+        "request_chains": 52175,
+        "writes_checked": 66240
+      },
+      "unavailable_configurations": 0
+    }
+  ],
+  "configurations": 184,
+  "failures": [],
+  "frozen_dependencies": 55,
+  "impact_counts": {
+    "benchmark_configurations": 144,
+    "benchmark_evaluations": 1440,
+    "changed_evaluations": 186,
+    "policy_contrasts": 640,
+    "receipt_configurations": 40,
+    "receipt_evaluations": 1280,
+    "reproduction_all_matched": true,
+    "unavailable_evaluations": 0
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "preservation": {
+    "historical_local_files": 700,
+    "tracked_files": 387
+  },
+  "status": "passed",
+  "wall_seconds": 139.01290805199824
+}

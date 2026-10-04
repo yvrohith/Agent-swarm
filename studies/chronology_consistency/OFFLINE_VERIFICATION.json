@@ -1,0 +1,15 @@
+{
+  "additional_spend_usd": "0",
+  "configurations_checked": 184,
+  "model_calls": 0,
+  "network_requests": 0,
+  "preservation": {
+    "historical_local_files": 700,
+    "tracked_files": 387
+  },
+  "scope": "Retained World values, direct full-log availability, independent quarter-order/field checks, unchanged investigator/scorer reproduction, stable mask IDs and exact grouped arithmetic; no generator or independent finite study rerun.",
+  "status": "passed",
+  "unavailable_configurations": 0,
+  "wall_seconds": 85.32014857900504,
+  "writes_checked": 66240
+}

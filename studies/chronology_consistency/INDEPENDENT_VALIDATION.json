@@ -1,0 +1,168 @@
+{
+  "checks": [
+    "Every captured availability set equals generation-order forwarding of owned context installations, including first/repeated distinctions.",
+    "Final complete-stream availability independently reconstructed at every write, by distinct source identity.",
+    "Captured cross-run selected sources exactly equal truth edges.",
+    "Actual disagreement independently determines offending chain IDs; exact quarter times, owner/previous/source bounds and all recorded metadata match.",
+    "Reconstructed corrected World retains every other field and all unaffected records; complete legacy/corrected World hashes match.",
+    "Every corrected write has exactly its captured available source set.",
+    "Saved profile-only/detailed RNG primitive-call counts and final-state hashes agree in every world.",
+    "Every historical saved legacy scalar field matches; integer target/edge identities and undefined denominators hold in both versions.",
+    "Corrected-minus-legacy arithmetic and within-version policy contrasts and their differences match.",
+    "Original equal-weight grouped means, defined-world counts and historical summary means/counts match.",
+    "All claim values, directions, affected counts and statuses match.",
+    "Historical timestamp-dependent hash-rank masks independently reproduce; retained physical-ID sets and actual retention match across versions.",
+    "Writes-only and stable-identity regimes retain identical metric rows and prediction hashes."
+  ],
+  "claim_status_counts": {
+    "magnitude_changed_direction_retained": 27,
+    "unchanged_on_tested_cohort": 97
+  },
+  "counts": {
+    "affected_benchmark_configurations": 76,
+    "affected_missing_receipt_configurations": 0,
+    "affected_writes": 798,
+    "benchmark_configurations": 144,
+    "changed_benchmark_evaluations": 186,
+    "changed_missing_receipt_evaluations": 0,
+    "claims_verified": 124,
+    "configurations": 184,
+    "corrected_chains": 784,
+    "corrected_remaining_disagreements": 0,
+    "distinct_source_run_contradictions": 782,
+    "extra_source_decisions": 809,
+    "historical_generation_hashes": 52,
+    "mask_channel_pairs_verified": 960,
+    "mask_pairs_verified": 320,
+    "maximum_time_discrepancy": 12.706597068266205,
+    "missing_receipt_configurations": 40,
+    "original_evaluation_rows_preserved": 2720,
+    "policy_groups_verified": 32,
+    "policy_paired_rows_verified": 640,
+    "retained_record_occurrences_verified": 197581,
+    "scenario_groups_verified": 184,
+    "scored_version_rows_checked": 5440,
+    "stage_timestamps_retimed": 2352,
+    "unavailable_evaluations": 0,
+    "writes": 66240
+  },
+  "freeze_sha256": "48069f646590c5a07202a585c4d54bcaa335a59b3127cafbb144a0711f133400",
+  "limits": [
+    "AI-assisted separate implementation and arithmetic, not independent human validation.",
+    "Shares retained raw World/trace data and declared timing, correction, mask and metric definitions; no production helper reuse.",
+    "Saved RNG evidence verifies internal equality of recorded counts/states; this pass does not recapture hidden RNG execution.",
+    "Prediction sets are retained as hashes; this pass verifies score identities and saved scalars. Separate runner verification re-evaluates unchanged investigators on retained worlds.",
+    "Historical intervals are preserved, not recomputed or reinterpreted as correction-sensitivity uncertainty.",
+    "State-preserving chronology repair does not establish physical realism, alternative scheduling outcomes, or autonomous-agent cognition."
+  ],
+  "method": "Separate saved-data audit using only Python standard-library JSON, dictionary/set, timestamp, count, and arithmetic operations. No production generator, correction, verifier, scorer, mask, or aggregation helper imported or called.",
+  "metric_effect_counts": {
+    "absolute_error": {
+      "decreased_evaluations": 47,
+      "increased_evaluations": 90,
+      "maximum_corrected_minus_legacy": 0.03888888888888886,
+      "minimum_corrected_minus_legacy": -0.008333333333333304,
+      "unchanged_evaluations": 2583,
+      "undefined_evaluations": 0
+    },
+    "false_negative_edges": {
+      "decreased_evaluations": 0,
+      "increased_evaluations": 0,
+      "maximum_corrected_minus_legacy": 0,
+      "minimum_corrected_minus_legacy": 0,
+      "unchanged_evaluations": 2720,
+      "undefined_evaluations": 0
+    },
+    "false_negative_targets": {
+      "decreased_evaluations": 32,
+      "increased_evaluations": 9,
+      "maximum_corrected_minus_legacy": 1,
+      "minimum_corrected_minus_legacy": -7,
+      "unchanged_evaluations": 2679,
+      "undefined_evaluations": 0
+    },
+    "false_positive_edges": {
+      "decreased_evaluations": 97,
+      "increased_evaluations": 88,
+      "maximum_corrected_minus_legacy": 27,
+      "minimum_corrected_minus_legacy": -16,
+      "unchanged_evaluations": 2535,
+      "undefined_evaluations": 0
+    },
+    "false_positive_targets": {
+      "decreased_evaluations": 67,
+      "increased_evaluations": 70,
+      "maximum_corrected_minus_legacy": 12,
+      "minimum_corrected_minus_legacy": -2,
+      "unchanged_evaluations": 2583,
+      "undefined_evaluations": 0
+    },
+    "precision": {
+      "decreased_evaluations": 63,
+      "increased_evaluations": 75,
+      "maximum_corrected_minus_legacy": 0.11111111111111116,
+      "minimum_corrected_minus_legacy": -0.0013789027873534754,
+      "unchanged_evaluations": 2339,
+      "undefined_evaluations": 243
+    },
+    "predicted_edges": {
+      "decreased_evaluations": 97,
+      "increased_evaluations": 88,
+      "maximum_corrected_minus_legacy": 27,
+      "minimum_corrected_minus_legacy": -16,
+      "unchanged_evaluations": 2535,
+      "undefined_evaluations": 0
+    },
+    "recall": {
+      "decreased_evaluations": 0,
+      "increased_evaluations": 0,
+      "maximum_corrected_minus_legacy": 0.0,
+      "minimum_corrected_minus_legacy": 0.0,
+      "unchanged_evaluations": 1720,
+      "undefined_evaluations": 1000
+    },
+    "signed_error": {
+      "decreased_evaluations": 65,
+      "increased_evaluations": 72,
+      "maximum_corrected_minus_legacy": 0.03888888888888886,
+      "minimum_corrected_minus_legacy": -0.008333333333333331,
+      "unchanged_evaluations": 2583,
+      "undefined_evaluations": 0
+    },
+    "target_disagreement": {
+      "decreased_evaluations": 73,
+      "increased_evaluations": 61,
+      "maximum_corrected_minus_legacy": 0.033333333333333326,
+      "minimum_corrected_minus_legacy": -0.019444444444444486,
+      "unchanged_evaluations": 2586,
+      "undefined_evaluations": 0
+    },
+    "true_positive_edges": {
+      "decreased_evaluations": 0,
+      "increased_evaluations": 0,
+      "maximum_corrected_minus_legacy": 0,
+      "minimum_corrected_minus_legacy": 0,
+      "unchanged_evaluations": 2720,
+      "undefined_evaluations": 0
+    }
+  },
+  "preservation": {
+    "external_requests_during_this_check": 0,
+    "frozen_files_verified": 55,
+    "historical_local_files_verified": 700,
+    "model_calls_during_this_check": 0,
+    "new_simulated_worlds": 0,
+    "preservation_manifest_sha256": "7a6a054ae530eb06d2f0ff42cce7fad1ac77597ca94787a246af60c5075a7a99",
+    "tracked_files_verified": 387
+  },
+  "result_files_sha256": {
+    "chronology.json": "07f745f9573483e327691a2b1f035dde49e9319cf2f5132afc1f90e5befe20ee",
+    "claims.json": "aa959f12f21aea703b54416074ad67676a8ecb23f776ce5d36a6a93f1b5cbd8e",
+    "impact.json.gz": "0388e8fd2d7d02ac5aba0efa1a029bdeab2925b575e3e844904206cd07bdb248",
+    "validation.json": "ee70477237f2d4cc18542cefe29099c43c98107db786bb98f99757eb60714425",
+    "worlds.json.gz": "ad3ff8265b2e96fe2d36ac902e873e119aa9cd288f90e46fc7bd06373adb65b5"
+  },
+  "results_manifest_sha256": "4d472efd1b70229331d0b071428d298d7bd742aac4eec78b4490a6e7aac332f2",
+  "schema_version": 1,
+  "status": "passed"
+}

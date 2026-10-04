@@ -1,0 +1,10 @@
+{
+  "files_sha256": {
+    "chronology.json": "07f745f9573483e327691a2b1f035dde49e9319cf2f5132afc1f90e5befe20ee",
+    "claims.json": "aa959f12f21aea703b54416074ad67676a8ecb23f776ce5d36a6a93f1b5cbd8e",
+    "impact.json.gz": "0388e8fd2d7d02ac5aba0efa1a029bdeab2925b575e3e844904206cd07bdb248",
+    "validation.json": "ee70477237f2d4cc18542cefe29099c43c98107db786bb98f99757eb60714425",
+    "worlds.json.gz": "ad3ff8265b2e96fe2d36ac902e873e119aa9cd288f90e46fc7bd06373adb65b5"
+  },
+  "freeze_sha256": "48069f646590c5a07202a585c4d54bcaa335a59b3127cafbb144a0711f133400"
+}

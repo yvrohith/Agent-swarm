@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "field": "verifier_source_sha256",
+      "matching_tracked_python_source": null,
+      "record": "studies/audit_aware_acquisition/INDEPENDENT_VALIDATION.json",
+      "sha256": "596d6b72d40dde1c3da6e46f5b3adc37a3fcf1709f1961fc9f8c597b7a9741e2",
+      "status": "unavailable_hash_only"
+    },
+    {
+      "field": "audit_script_sha256",
+      "matching_tracked_python_source": null,
+      "record": "studies/exact_audit_frontier/INDEPENDENT_VALIDATION.json",
+      "sha256": "edffc4fde7d13947ed7610692ce8101bba9cc54dbaaa01261bee022ed590e611",
+      "status": "unavailable_hash_only"
+    },
+    {
+      "field": "audit_script_sha256",
+      "matching_tracked_python_source": null,
+      "record": "studies/joint_audit_warrant/INDEPENDENT_VALIDATION.json",
+      "sha256": "fe37b095fe70c8734011a1373c2127507c309da0740d47e36065555af611bbec",
+      "status": "unavailable_hash_only"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Exact byte match against all existing tracked Python files; historical hash assertions are not replacement source code. This does not deny available frozen reference implementations."
+}

@@ -1,0 +1,37 @@
+{
+  "additional_spend_usd": "0",
+  "checked_at_utc": "2026-10-04T15:02:14.856063+00:00",
+  "development_checks_sha256": "20201cd8870e9ea0e479ea54bf20c3a6306d73fe90ce68f9a54833a94594b3d3",
+  "focused_tests": {
+    "failed": 0,
+    "files": [
+      "tests/test_chronology_retiming.py",
+      "tests/test_chronology_reference.py",
+      "tests/test_chronology_inputs.py",
+      "tests/test_chronology_analysis.py",
+      "tests/test_chronology_runner.py"
+    ],
+    "passed": 81,
+    "reported_wall_seconds": 0.91,
+    "scope": "Five new focused files only; full installed suite remains for final validation.",
+    "skipped": 0
+  },
+  "independent_read_only_review": {
+    "scope": "Full-log availability, targeted correction, ordinary/trace RNG parity, preserved original source reconciliation, timestamp-independent mask membership, metrics/paired/group denominators, unavailable-grid and round-trip failure handling, claim comparisons, frozen gates.",
+    "status": "passed"
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_published_sensitivity_outcomes_observed": 0,
+  "offline_execution": "Fixed env-i allowlist; socket connect/connect_ex/create_connection/getaddrinfo fail closed. No package installation.",
+  "preservation": {
+    "historical_local_files": 700,
+    "tracked_files": 387
+  },
+  "schema_version": 1,
+  "status": "passed"
+}

@@ -1,0 +1,294 @@
+{
+  "changed_benchmark_configurations": 72,
+  "changed_benchmark_groups": 34,
+  "changed_evaluations_by_regime": {
+    "context": 19,
+    "delivery": 59,
+    "requests": 108
+  },
+  "claim_status_counts": {
+    "magnitude_changed_direction_retained": 27,
+    "unchanged_on_tested_cohort": 97
+  },
+  "documentation_checks": {
+    "links": [
+      {
+        "source": "studies/chronology_consistency/ANALYSIS.md",
+        "target": "METHOD.md"
+      },
+      {
+        "source": "studies/chronology_consistency/METHOD.md",
+        "target": "ANALYSIS.md"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "ANALYSIS.md"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "METHOD.md"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "freeze.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "development_checks.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "inputs.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "results/impact.json.gz"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "results/claims.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "../../results/benchmark.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "../review_remediation/derived_target_errors.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "../missing_receipts/results/study.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "OFFLINE_VERIFICATION.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "results/validation.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "INDEPENDENT_VALIDATION.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "FINAL_VALIDATION.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "ISOLATION.json"
+      },
+      {
+        "source": "studies/chronology_consistency/RESULTS.md",
+        "target": "results/manifest.json"
+      }
+    ],
+    "local_links_checked": 18,
+    "offline_reproduction_shell_and_python_syntax": "passed",
+    "snippet_execution": "Not repeated: retained-output verification and published execution already passed; snippet syntax only was checked."
+  },
+  "final_read_only_review": {
+    "scope": "New artifact types, historical and frozen preservation, static finite-study isolation, report counts and representative values, adverse outcomes and interpretation.",
+    "status": "passed"
+  },
+  "focused_prefreeze_tests": {
+    "failed": 0,
+    "passed": 81,
+    "reported_wall_seconds": 0.91,
+    "skipped": 0
+  },
+  "fresh_saved_output_verification": {
+    "additional_spend_usd": "0",
+    "configurations_checked": 184,
+    "model_calls": 0,
+    "network_requests": 0,
+    "preservation": {
+      "historical_local_files": 700,
+      "tracked_files": 387
+    },
+    "scope": "Retained World values, direct full-log availability, independent quarter-order/field checks, unchanged investigator/scorer reproduction, stable mask IDs and exact grouped arithmetic; no generator or independent finite study rerun.",
+    "status": "passed",
+    "unavailable_configurations": 0,
+    "wall_seconds": 85.32014857900504,
+    "writes_checked": 66240
+  },
+  "frozen_dependencies_checked": 55,
+  "full_installed_offline_suite": {
+    "entrypoint": "pytest.main(['-q', '--junitxml=artifacts/chronology-consistency/full-offline-pytest.xml'])",
+    "errors": 0,
+    "failures": 0,
+    "focused_tests_included": 81,
+    "junit_path": "artifacts/chronology-consistency/full-offline-pytest.xml",
+    "junit_sha256": "0ad3d5f29a37c01fb631efccf3eed0d3bfdf58e20aa0a59b405cccc768c0bdfc",
+    "junit_wall_seconds": 95.709,
+    "passed": 1206,
+    "reported_wall_seconds": 95.72,
+    "runs": 1,
+    "scope": "All installed tests, including unit/development fixtures from existing studies; no completed independent-study experiment was rerun.",
+    "skipped": 0,
+    "tests": 1206
+  },
+  "head_unchanged": "c29002c624005003e2f36ab7186e217edde76b22",
+  "historical_worktree_and_index_diffs_empty": true,
+  "independent_saved_data_audit": {
+    "path": "studies/chronology_consistency/INDEPENDENT_VALIDATION.json",
+    "sha256": "2a548bba7c9e94e7a3d31506323dcbd9491ec60e549aadacba2639049facc8b5",
+    "status": "passed",
+    "type": "Separate AI-assisted stdlib raw-data arithmetic and installation-state audit; not independent human validation."
+  },
+  "limitations": [
+    "The single frozen repair preserves simulator decisions and establishes log/state consistency for these fixed cohorts, not physical scheduling realism or counterfactual agent behavior.",
+    "No added seeds, alternate corrections, intervals, or independent finite-study executions.",
+    "Instrumentation and separate checkers share original generator semantics, immutable records/trace evidence and the Python runtime.",
+    "Historical confidence intervals are preserved, not recomputed; sensitivity deltas are paired within the original worlds."
+  ],
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "new_artifacts_sha256_excluding_this_record": {
+    "studies/chronology_consistency/ANALYSIS.md": "10ea7097eb5ceae2e5ed31fd4b795e9975f5b62507a78b8bde73e5f94add1585",
+    "studies/chronology_consistency/INDEPENDENT_VALIDATION.json": "2a548bba7c9e94e7a3d31506323dcbd9491ec60e549aadacba2639049facc8b5",
+    "studies/chronology_consistency/ISOLATION.json": "3d01f05bf8ab61e071b31563bfd2411c2a1c1959327770fa6ba452588340081a",
+    "studies/chronology_consistency/METHOD.md": "c0f9d8560aa394777d7cfdcdd3a6526ae3f63362c219bc0f417c0cc7fec2e781",
+    "studies/chronology_consistency/OFFLINE_VERIFICATION.json": "fd4ca8a8f57c8d08175a7f3c415b8ef30df6e384476ec04a18705c2e8adc248d",
+    "studies/chronology_consistency/RESULTS.md": "afe904b6ee913201eef0193f88138d149d60481ed84f3a128ccf2b0a3a147b0b",
+    "studies/chronology_consistency/analysis.py": "18f781cc62742479bd2f70429a025e0e1178df06e966c3515bdbd6b84caf0fc5",
+    "studies/chronology_consistency/config.json": "e00fc1e03dac4273014379832954b65712598af792d4ea4b17c27cec4f92ccb0",
+    "studies/chronology_consistency/development_checks.json": "20201cd8870e9ea0e479ea54bf20c3a6306d73fe90ce68f9a54833a94594b3d3",
+    "studies/chronology_consistency/freeze.json": "48069f646590c5a07202a585c4d54bcaa335a59b3127cafbb144a0711f133400",
+    "studies/chronology_consistency/inputs.json": "7e369ef8ebac0d1129c95f652c3a573795c4e7050ee4879f2c17884246877ba1",
+    "studies/chronology_consistency/inputs.py": "408fe751170fff8d7861652fe74d40cb7ef1813ea77690a14894f5a98bbf47a3",
+    "studies/chronology_consistency/pre_freeze_checks.json": "57ce3e54a379d67fe30854f0203d0b3b29355f39eca900a9abbbfd6a09a2e1f6",
+    "studies/chronology_consistency/preservation.json": "7a6a054ae530eb06d2f0ff42cce7fad1ac77597ca94787a246af60c5075a7a99",
+    "studies/chronology_consistency/reference.py": "f97acbfecaf41a5403861ccf5324517ffd04aba586163ac3a9e3ae516506a61d",
+    "studies/chronology_consistency/results/chronology.json": "07f745f9573483e327691a2b1f035dde49e9319cf2f5132afc1f90e5befe20ee",
+    "studies/chronology_consistency/results/claims.json": "aa959f12f21aea703b54416074ad67676a8ecb23f776ce5d36a6a93f1b5cbd8e",
+    "studies/chronology_consistency/results/impact.json.gz": "0388e8fd2d7d02ac5aba0efa1a029bdeab2925b575e3e844904206cd07bdb248",
+    "studies/chronology_consistency/results/manifest.json": "4d472efd1b70229331d0b071428d298d7bd742aac4eec78b4490a6e7aac332f2",
+    "studies/chronology_consistency/results/validation.json": "ee70477237f2d4cc18542cefe29099c43c98107db786bb98f99757eb60714425",
+    "studies/chronology_consistency/results/worlds.json.gz": "ad3ff8265b2e96fe2d36ac902e873e119aa9cd288f90e46fc7bd06373adb65b5",
+    "studies/chronology_consistency/retime.py": "08151bc83adec975af692968db394b6a2ce1b9c3edc59b175b9ebff3184a7d81",
+    "studies/chronology_consistency/runner.py": "188378e326a6f51b7d80686dc4464b6e5e0ba8e3cc5d857321abd19ee9b94d7e",
+    "studies/chronology_consistency/trace.py": "6513cc704086e7086e32a11e81de14bd93755a39c25cbdae922c3c0f6587e6c0",
+    "tests/test_chronology_analysis.py": "4d4a4752994d1d89cbb2058aa51e2efa2563ab470c9af46a192ab31263db4dda",
+    "tests/test_chronology_inputs.py": "9935457220297e2644e4816a2cc13e4bcab1c06a0626f57f546bf5556015f7ba",
+    "tests/test_chronology_reference.py": "21c46c78268a1c015678566561a6faf1678fd2763be49b835401cbc087bbff1e",
+    "tests/test_chronology_retiming.py": "54d8aafded02a582bd2a0a888c051ac647c192102cfa6708995cbaf8080c22fe",
+    "tests/test_chronology_runner.py": "6f9f051f00a768fa13b78a26af3e96a9ae6e248607fab2c1eca9d2e62ec08d44"
+  },
+  "offline_controls": {
+    "additional_spend_usd": "0",
+    "credential_access": false,
+    "dependency_downloads": 0,
+    "execution": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1; installed .venv Python; connect/connect_ex/create_connection/getaddrinfo fail closed. Full tests also use MPLCONFIGDIR=/tmp/chronology-consistency-mpl.",
+    "git_stage_commit_push": false,
+    "historical_api_accounting": "Byte hashes unchanged within the retained local preservation set; no ledger reset or provider call.",
+    "model_calls": 0,
+    "network_requests": 0,
+    "provider_private_reasoning_access": false,
+    "publish_deploy_submit": false
+  },
+  "preservation": {
+    "historical_local_files": 700,
+    "tracked_files": 387
+  },
+  "published_execution": {
+    "additional_spend_usd": "0",
+    "chronology": [
+      {
+        "affected_configurations": 76,
+        "all_worlds_and_rng_unchanged_by_instrumentation": true,
+        "audited_configurations": 144,
+        "cohort": "benchmark",
+        "configurations": 144,
+        "expected_configurations": 144,
+        "maximum_time_discrepancy": 12.706597068266205,
+        "totals": {
+          "affected_writes": 798,
+          "context_records": 26134,
+          "distinct_first_availability_contradictions": 782,
+          "distinct_source_run_installations": 25491,
+          "extra_source_decisions": 809,
+          "missing_source_decisions": 0,
+          "offending_chains": 784,
+          "repeated_context_receipts": 643,
+          "request_chains": 40700,
+          "writes_checked": 51840
+        },
+        "unavailable_configurations": 0
+      },
+      {
+        "affected_configurations": 0,
+        "all_worlds_and_rng_unchanged_by_instrumentation": true,
+        "audited_configurations": 40,
+        "cohort": "missing_receipts",
+        "configurations": 40,
+        "expected_configurations": 40,
+        "maximum_time_discrepancy": 0.0,
+        "totals": {
+          "affected_writes": 0,
+          "context_records": 7346,
+          "distinct_first_availability_contradictions": 0,
+          "distinct_source_run_installations": 7332,
+          "extra_source_decisions": 0,
+          "missing_source_decisions": 0,
+          "offending_chains": 0,
+          "repeated_context_receipts": 14,
+          "request_chains": 11475,
+          "writes_checked": 14400
+        },
+        "unavailable_configurations": 0
+      },
+      {
+        "affected_configurations": 76,
+        "all_worlds_and_rng_unchanged_by_instrumentation": true,
+        "audited_configurations": 184,
+        "cohort": "all_unique",
+        "configurations": 184,
+        "expected_configurations": 184,
+        "maximum_time_discrepancy": 12.706597068266205,
+        "totals": {
+          "affected_writes": 798,
+          "context_records": 33480,
+          "distinct_first_availability_contradictions": 782,
+          "distinct_source_run_installations": 32823,
+          "extra_source_decisions": 809,
+          "missing_source_decisions": 0,
+          "offending_chains": 784,
+          "repeated_context_receipts": 657,
+          "request_chains": 52175,
+          "writes_checked": 66240
+        },
+        "unavailable_configurations": 0
+      }
+    ],
+    "configurations": 184,
+    "failures": [],
+    "frozen_dependencies": 55,
+    "impact_counts": {
+      "benchmark_configurations": 144,
+      "benchmark_evaluations": 1440,
+      "changed_evaluations": 186,
+      "policy_contrasts": 640,
+      "receipt_configurations": 40,
+      "receipt_evaluations": 1280,
+      "reproduction_all_matched": true,
+      "unavailable_evaluations": 0
+    },
+    "model_calls": 0,
+    "network_requests": 0,
+    "preservation": {
+      "historical_local_files": 700,
+      "tracked_files": 387
+    },
+    "status": "passed",
+    "wall_seconds": 139.01290805199824
+  },
+  "result_files_checked": 5,
+  "schema_version": 1,
+  "status": "passed",
+  "verified_at_utc": "2026-10-04T15:15:55.044980+00:00"
+}

@@ -1,0 +1,84 @@
+{
+  "additional_spend_usd": "0",
+  "arrangement": "Same fresh public-file-only snapshot and locked editable environment as clean_checkout_final.json, with full public Git history and no ignored historical artifacts.",
+  "commands": [
+    {
+      "check": "prior_public_results",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "studies.comparative_validity.public_verify",
+        "public-results"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"additional_spend_usd\": \"0\", \"dependencies\": {\"computational_and_result_files\": 17, \"historical_authorities\": 4, \"local_history\": \"not checked\", \"status\": \"passed\", \"unrelated_documentation\": \"not a dependency\"}, \"deployment_distributions\": 200, \"matched_trajectories\": 5880, \"metric_rows\": 2000, \"model_calls\": 0, \"network_requests\": 0, \"not_performed\": [\"local history preservation\", \"planner or optimum re-solve\", \"timing measurement\", \"independent physical semantics\", \"human or external validation\"], \"problems\": 40, \"scope\": \"Original byte pins, saved paths, shared-model certificates, prior masses and same-code exact reaggregation\", \"status\": \"passed_public_results_only\", \"summary_paired_rows\": 200, \"summary_policy_rows\": 500}\n",
+      "wall_seconds": 22.034251959004905
+    },
+    {
+      "check": "released_utility_scores",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"cases\": 28, \"charged_or_reserved_usd\": \"2.9989060\", \"development\": 24, \"evaluation\": 144, \"historical_dependencies\": 14, \"provider_reported_cost_usd\": \"2.8615140\", \"required_files_including_verifier_and_manifest\": 16, \"resamples\": 2000, \"responses\": 168, \"scope\": \"released scores and accounting; not historical checkout preservation\", \"status\": \"verified\", \"unknown_actual_cost_attempts\": 1}\n",
+      "wall_seconds": 2.298497870011488
+    },
+    {
+      "check": "saved_chronology_scope",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "studies.comparative_validity.chronology_scope",
+        "--verify",
+        "studies/comparative_validity/chronology_scope.json"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"configurations\": 184, \"scope_by_shock\": [{\"affected_configurations\": 48, \"cohort\": \"benchmark\", \"configurations\": 48, \"corrected_availability_disagreements\": 0, \"first_contexts\": 8300, \"legacy_affected_writes\": 744, \"legacy_extra_source_decisions\": 755, \"legacy_missing_source_decisions\": 0, \"legitimate_inflight_request_write_pairs\": 3347, \"offending_context_chains\": 730, \"offending_first_contexts\": 728, \"offending_repeat_contexts\": 2, \"receipt_stage_order_violations\": 0, \"request_chains_checked\": 13593, \"shock_strength\": 0.0, \"writes_checked\": 17280}, {\"affected_configurations\": 28, \"cohort\": \"benchmark\", \"configurations\": 48, \"corrected_availability_disagreements\": 0, \"first_contexts\": 8416, \"legacy_affected_writes\": 54, \"legacy_extra_source_decisions\": 54, \"legacy_missing_source_decisions\": 0, \"legitimate_inflight_request_write_pairs\": 1704, \"offending_context_chains\": 54, \"offending_first_contexts\": 54, \"offending_repeat_contexts\": 0, \"receipt_stage_order_violations\": 0, \"request_chains_checked\": 13537, \"shock_strength\": 0.5, \"writes_checked\": 17280}, {\"affected_configurations\": 0, \"cohort\": \"benchmark\", \"configurations\": 48, \"corrected_availability_disagreements\": 0, \"first_contexts\": 8775, \"legacy_affected_writes\": 0, \"legacy_extra_source_decisions\": 0, \"legacy_missing_source_decisions\": 0, \"legitimate_inflight_request_write_pairs\": 5, \"offending_context_chains\": 0, \"offending_first_contexts\": 0, \"offending_repeat_contexts\": 0, \"receipt_stage_order_violations\": 0, \"request_chains_checked\": 13570, \"shock_strength\": 0.9, \"writes_checked\": 17280}, {\"affected_configurations\": 0, \"cohort\": \"missing_receipts\", \"configurations\": 40, \"corrected_availability_disagreements\": 0, \"first_contexts\": 7332, \"legacy_affected_writes\": 0, \"legacy_extra_source_decisions\": 0, \"legacy_missing_source_decisions\": 0, \"legitimate_inflight_request_write_pairs\": 5, \"offending_context_chains\": 0, \"offending_first_contexts\": 0, \"offending_repeat_contexts\": 0, \"receipt_stage_order_violations\": 0, \"request_chains_checked\": 11475, \"shock_strength\": 0.9, \"writes_checked\": 14400}], \"status\": \"verified\"}\n",
+      "wall_seconds": 4.905685937003
+    },
+    {
+      "check": "saved_comparison_arithmetic",
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "studies.comparative_validity.verify_comparisons"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"acquisition\": {\n    \"complete_condition_rows\": 2800,\n    \"independent_prior_reweighting_and_exact_aggregation\": \"passed\",\n    \"paid_trajectory_views\": 27440,\n    \"paired_summaries\": 800,\n    \"per_problem_contrasts\": 3200,\n    \"policy_summaries\": 700,\n    \"result_and_dependency_pins\": 22\n  },\n  \"additional_spend_usd\": \"0\",\n  \"audits\": {\n    \"all_anchor_and_stratum_aggregates\": \"passed\",\n    \"common_rankings\": 8000,\n    \"independently_replayed_tie_problem_conditions\": 48000,\n    \"paired_tie_totals\": 600,\n    \"result_pins\": 6,\n    \"stopped_paid_paths\": 10032\n  },\n  \"frozen_dependency_pin_checks\": 50,\n  \"model_calls\": 0,\n  \"network_requests\": 0,\n  \"scope\": \"Separately implemented complete-signature filtering, paid-prefix and first-conflict checks, replay of saved B/C rankings, prior arithmetic and aggregates. Existing Model supplies shared physical semantics. Historical exact policies are retained, never optimized. No independent human or physical-semantics validation is claimed.\",\n  \"status\": \"passed\"\n}\n",
+      "wall_seconds": 13.638453765001032
+    },
+    {
+      "check": "existing_ci_equivalence",
+      "command": [
+        "uv",
+        "run",
+        "tracebench",
+        "equivalence"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"observations_equal\": {\n    \"writes\": true,\n    \"identity\": true,\n    \"requests\": true,\n    \"delivery\": true,\n    \"context\": true\n  },\n  \"world_a_truth_edges\": [],\n  \"world_b_truth_edges\": [\n    [\n      \"e000000\",\n      \"e000001\"\n    ]\n  ],\n  \"conclusion\": \"Even channel context provenance need not identify source use.\"\n}\n",
+      "wall_seconds": 0.07302689799689688
+    }
+  ],
+  "dependency_downloads": 0,
+  "historical_private_preservation_checked": false,
+  "network_control": "Kernel seccomp denies socket and connect in every subprocess; no inherited environment or PYTHONPATH.",
+  "remote_ci_executed": false,
+  "schema_version": 1,
+  "scope": "Public released-result and saved-data checks plus existing tiny identifiability CI diagnostic; no new study generation or model execution.",
+  "status": "passed"
+}

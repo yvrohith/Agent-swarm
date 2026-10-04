@@ -1,0 +1,46 @@
+{
+  "authorized_existing_changes": [
+    {
+      "after_sha256": "c4594f265cce3feee17f7fae8f4d4b2a71add16cb31e2d111496cfc05a8133c7",
+      "before_sha256": "9e47149775fd0fd912c0208b67734af8869bb69228ecbb6731fa69b7cc2bf2e3",
+      "path": ".github/workflows/checks.yml",
+      "purpose": "Full public Git history for existing historical-source provenance tests."
+    },
+    {
+      "after_sha256": "5c4da6a2e9e890ee29fc37db76621d2cd9d29559563d37e27fbe6bb65882e6d1",
+      "before_sha256": "5d3e88ee66909506319d9c954289b6d8ef6421723ca98837c1d9453289be6b4f",
+      "path": "README.md",
+      "purpose": "Project-first active navigation and supported findings; author name; correct public paths."
+    },
+    {
+      "after_sha256": "465b78325a0379b5facedc35f090c48d2fe7d12131397a6b6d694fd1ac051449",
+      "before_sha256": "6374912ec86c837b00f351cebdd4c4378808f8bfcacf5bb55d4f5474a9cd463e",
+      "path": "docs/FINAL_SUBMISSION.md",
+      "purpose": "Active synthesis with actual comparator/chronology findings and limits; author name."
+    },
+    {
+      "after_sha256": "8dcda924f796c28e34c3f9f0fc7b8cc2f8f2fdad20ff48b24ac835b45bb331da",
+      "before_sha256": "07d8fc57e0f41c01dbe6a5e29f85093913fbdc1e6e95ee5e775d34b25cd76851",
+      "path": "docs/RELATED_WORK.md",
+      "purpose": "Direct EC2 attribution; current source-status narrative."
+    },
+    {
+      "after_sha256": "c93ae82101e784987b0a4ee2245b1d0bb110160bb8b22fa364acfc1ebfc13c57",
+      "before_sha256": "58ff13bcef1122710e1ba42551a76ce3c762bf870c2dc0855fdea7e95362a117",
+      "path": "docs/REVIEWER_GUIDE.md",
+      "purpose": "Public numerical versus local-history verification and precise independence/access scope."
+    },
+    {
+      "after_sha256": "251a3ea19af99ad837e862a573f3cf84fc202786eaa6d3666279723d79145035",
+      "before_sha256": "004dfb81881a3ddad059f16d7d88b126d4168f0c2b4d825cfee31f8f682322ef",
+      "path": "pyproject.toml",
+      "purpose": "Explicit pytest repository-root import path; source package and dependencies unchanged."
+    }
+  ],
+  "historical_pins_refreshed": false,
+  "preserved_local_files": 701,
+  "preserved_preexisting_untracked_files": 30,
+  "schema_version": 1,
+  "scope": "Narrow current-document/test-entrypoint corrections only; all historical scientific implementations, frozen protocols/results/manifests/cases/responses and prior chronology additions preserved.",
+  "unchanged_initial_tracked_files": 381
+}

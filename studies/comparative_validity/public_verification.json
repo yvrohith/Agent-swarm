@@ -1,0 +1,27 @@
+{
+  "additional_spend_usd": "0",
+  "dependencies": {
+    "computational_and_result_files": 17,
+    "historical_authorities": 4,
+    "local_history": "not checked",
+    "status": "passed",
+    "unrelated_documentation": "not a dependency"
+  },
+  "deployment_distributions": 200,
+  "matched_trajectories": 5880,
+  "metric_rows": 2000,
+  "model_calls": 0,
+  "network_requests": 0,
+  "not_performed": [
+    "local history preservation",
+    "planner or optimum re-solve",
+    "timing measurement",
+    "independent physical semantics",
+    "human or external validation"
+  ],
+  "problems": 40,
+  "scope": "Original byte pins, saved paths, shared-model certificates, prior masses and same-code exact reaggregation",
+  "status": "passed_public_results_only",
+  "summary_paired_rows": 200,
+  "summary_policy_rows": 500
+}
