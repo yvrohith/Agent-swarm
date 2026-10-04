@@ -1,0 +1,12 @@
+{
+  "files_sha256": {
+    "certificates.json.gz": "935064341a219c83930b776eb0d728e75d5ae10ef5f18d37a0cac9e8ccb1d5f2",
+    "independent_verification.json": "7d76f4fb2f2cabf1594595f2326f88d6aff4dc3c6559df009884b50421d8d328",
+    "paired.json.gz": "610ca019ceaa95bc515853d530c0aa820d535c14e7f4caf83f20693a233b2b0f",
+    "per_condition.json.gz": "011eccbf5dd0e07232f95d64b502027c3eb27a96c74d7c7f6c61d44805d6f700",
+    "runs.json.gz": "0a208ab0a8d76882eef7fdc065cc9926f89407634c52b87d8d30bd09137250b3",
+    "summary.json.gz": "f4545ccb9511cc38e4f2b67e23160b4a5e4b5b6abee5dd57b8eb285fa8b5491a",
+    "validation.json": "2b10e0973ccfca50deda25b8a3a682d2084d9ae7314a627e5f64fdfd70b6aa76"
+  },
+  "freeze_sha256": "b31fd98de70fbec09756e268ed1ea3c617c66b3f2f5df773a0e58aba03594f9a"
+}

@@ -1,0 +1,20 @@
+{
+  "aggregate_cell_count": 1920,
+  "budget_prefix_checks": 20064,
+  "certificate_references_checked": 80256,
+  "condition_count": 120,
+  "cross_k_path_checks": 13168,
+  "distinct_certificate_all_query_witness_checks": 16360,
+  "distinct_certificates_checked": 6021,
+  "distinct_expanded_certificates_checked": 4500,
+  "distinct_nominal_certificates_checked": 1521,
+  "first_conflict_checks": 380,
+  "full_budget_endpoint_checks": 3762,
+  "independence_scope": "Direct physical filtering and independent audit ordering/accounting; unchanged prior physical validator, claim semantics and certificate checkers reused; no independent nominal exact optimization.",
+  "paid_prefix_checks": 25079,
+  "problem_count": 40,
+  "run_count": 20064,
+  "status": "passed",
+  "unique_paid_action_contexts": 4133,
+  "unreferenced_certificates_checked": 0
+}

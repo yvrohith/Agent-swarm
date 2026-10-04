@@ -1,0 +1,40 @@
+{
+  "evaluation_audit_outcomes_observed": 0,
+  "files_sha256": {
+    "src/tracebench/__init__.py": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3",
+    "src/tracebench/evidence_acquisition/__init__.py": "cc13ce3dda5f44b8ee9c696f224464deee132f2ea92afb392b8acb33d1bafb07",
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "studies/acquisition_prior_robustness/aggregation.py": "d301074af6d8990d865c8752fe0ad9c98de4379ea221f1f4317b7baa3e5bf809",
+    "studies/acquisition_prior_robustness/sensitivity.py": "917771647708477955f3f72791dcea6295d4c8eb61f5665a9d7a2024398ddb41",
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/archive_model_misspecification/analysis.py": "ce64a702c45dc2e7933135006de00fae701c13598dfb8bcc8510a516c6f08b9d",
+    "studies/archive_model_misspecification/expanded.py": "c42410c809e3bc20e5e549821404c53d15099799981269f1ff09894036f31472",
+    "studies/archive_model_misspecification/reference.py": "b9b6346fa29ff5dd02e0edec855df9f761c4b8fe9ec7813900f6f6f30c28dd59",
+    "studies/archive_model_misspecification/results/details.json.gz": "5eb576b6044803cd88c8f82cf2b581ca707245108c71e57cbd7f5f1d93ca6cdc",
+    "studies/audit_aware_acquisition/ANALYSIS.md": "4a54a4f731ee1e40a8ea8b873a907771c467106507b2279be956736121bbcee7",
+    "studies/audit_aware_acquisition/METHOD.md": "1102cb228e6ab39c471c0ed25de25aac663306234013dd2ba8da114faaebb201",
+    "studies/audit_aware_acquisition/analysis.py": "cace93aedebca67cf3bc6fafcbbc9a7940d0733780f88052c9b60d2a29360219",
+    "studies/audit_aware_acquisition/auditing.py": "d6e4c707e1d78edfbfe4b6e0e2e338541a38e59329e1d42cc2aff38009795c15",
+    "studies/audit_aware_acquisition/baseline_verification.json": "ae2a58557045c7de4737ac9cea3f18bd2c367ae830a678014ec17ae430cba32c",
+    "studies/audit_aware_acquisition/config.json": "44178d6aa97c93cf5bc90ad4c01cb39036ba939833ad4aa604bf45823f53bf87",
+    "studies/audit_aware_acquisition/development_baseline.json.gz": "7349918d35661bad18f042abbf726d0f0c8da7236a3b3bc6fc8deddc24e0e1c0",
+    "studies/audit_aware_acquisition/development_checks.json": "b6d9356c05a1f90e7f78ce268aee08e1dced4bbe4051387e817570a6e0194c4f",
+    "studies/audit_aware_acquisition/input_provenance.json": "548b01b5901be05d9346f0c9741b09ed25173ff2d824d6cb2d9d12e49a8999e0",
+    "studies/audit_aware_acquisition/pre_freeze_checks.json": "02e568944cd8c45fa3f92319da91632102cf97a52a9c118b81b6fe7c940c706e",
+    "studies/audit_aware_acquisition/reference.py": "b5815d0519f5aa8225bf7cc3990267807427a0fa17e47dbb6095e65dcc6d8245",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "tests/test_audit_acquisition_reference.py": "9bbea7d539917eac320d86b01ef729fb7a988bac4ebd97b02e872d1c7bd9ba1d",
+    "tests/test_audit_aware_acquisition.py": "2e08d9ff957c5eca71b55a082891482bfc10653a6a018460c39471848164b978"
+  },
+  "frozen_at_utc": "2026-10-04T12:01:00.538865+00:00",
+  "known_nominal_baseline_outcomes": true,
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 289
+  },
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "schema_version": 1
+}

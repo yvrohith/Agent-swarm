@@ -1,0 +1,882 @@
+{
+  "additional_spend_usd": "0",
+  "baseline_and_mechanical_endpoints": [
+    {
+      "added_cost_all": 673,
+      "arm": "cost_order",
+      "budget_percent": 25,
+      "detected_new": 6,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 4,
+      "original_remaining_unsupported_without_alarm": 94,
+      "original_signatures": 392,
+      "original_warrant_restored": 2
+    },
+    {
+      "added_cost_all": 451,
+      "arm": "constant_first",
+      "budget_percent": 25,
+      "detected_new": 7,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 5,
+      "original_remaining_unsupported_without_alarm": 96,
+      "original_signatures": 392,
+      "original_warrant_restored": 0
+    },
+    {
+      "added_cost_all": 433,
+      "arm": "closure_informed",
+      "budget_percent": 25,
+      "detected_new": 7,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 5,
+      "original_remaining_unsupported_without_alarm": 96,
+      "original_signatures": 392,
+      "original_warrant_restored": 0
+    },
+    {
+      "added_cost_all": 1706,
+      "arm": "cost_order",
+      "budget_percent": 50,
+      "detected_new": 15,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 2,
+      "new_warrant_restored_and_withdrawn": 2,
+      "new_withdrawn_definite": 9,
+      "original_remaining_unsupported_without_alarm": 92,
+      "original_signatures": 392,
+      "original_warrant_restored": 4
+    },
+    {
+      "added_cost_all": 1732,
+      "arm": "constant_first",
+      "budget_percent": 50,
+      "detected_new": 18,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 2,
+      "new_warrant_restored_and_withdrawn": 2,
+      "new_withdrawn_definite": 14,
+      "original_remaining_unsupported_without_alarm": 93,
+      "original_signatures": 392,
+      "original_warrant_restored": 3
+    },
+    {
+      "added_cost_all": 1730,
+      "arm": "closure_informed",
+      "budget_percent": 50,
+      "detected_new": 20,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 2,
+      "new_warrant_restored_and_withdrawn": 2,
+      "new_withdrawn_definite": 15,
+      "original_remaining_unsupported_without_alarm": 93,
+      "original_signatures": 392,
+      "original_warrant_restored": 3
+    },
+    {
+      "added_cost_all": 4492,
+      "arm": "cost_order",
+      "budget_percent": 100,
+      "detected_new": 39,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 3,
+      "new_warrant_restored_and_withdrawn": 3,
+      "new_withdrawn_definite": 26,
+      "original_remaining_unsupported_without_alarm": 71,
+      "original_signatures": 392,
+      "original_warrant_restored": 25
+    },
+    {
+      "added_cost_all": 4476,
+      "arm": "constant_first",
+      "budget_percent": 100,
+      "detected_new": 39,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 2,
+      "new_warrant_restored_and_withdrawn": 2,
+      "new_withdrawn_definite": 26,
+      "original_remaining_unsupported_without_alarm": 71,
+      "original_signatures": 392,
+      "original_warrant_restored": 25
+    },
+    {
+      "added_cost_all": 4458,
+      "arm": "closure_informed",
+      "budget_percent": 100,
+      "detected_new": 39,
+      "k": 1,
+      "new_signatures": 39,
+      "new_warrant_restored": 2,
+      "new_warrant_restored_and_withdrawn": 2,
+      "new_withdrawn_definite": 26,
+      "original_remaining_unsupported_without_alarm": 71,
+      "original_signatures": 392,
+      "original_warrant_restored": 25
+    },
+    {
+      "added_cost_all": 673,
+      "arm": "cost_order",
+      "budget_percent": 25,
+      "detected_new": 6,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 4,
+      "original_remaining_unsupported_without_alarm": 96,
+      "original_signatures": 392,
+      "original_warrant_restored": 0
+    },
+    {
+      "added_cost_all": 451,
+      "arm": "constant_first",
+      "budget_percent": 25,
+      "detected_new": 7,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 5,
+      "original_remaining_unsupported_without_alarm": 96,
+      "original_signatures": 392,
+      "original_warrant_restored": 0
+    },
+    {
+      "added_cost_all": 433,
+      "arm": "closure_informed",
+      "budget_percent": 25,
+      "detected_new": 7,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 5,
+      "original_remaining_unsupported_without_alarm": 96,
+      "original_signatures": 392,
+      "original_warrant_restored": 0
+    },
+    {
+      "added_cost_all": 1706,
+      "arm": "cost_order",
+      "budget_percent": 50,
+      "detected_new": 15,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 9,
+      "original_remaining_unsupported_without_alarm": 95,
+      "original_signatures": 392,
+      "original_warrant_restored": 1
+    },
+    {
+      "added_cost_all": 1732,
+      "arm": "constant_first",
+      "budget_percent": 50,
+      "detected_new": 18,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 14,
+      "original_remaining_unsupported_without_alarm": 93,
+      "original_signatures": 392,
+      "original_warrant_restored": 3
+    },
+    {
+      "added_cost_all": 1730,
+      "arm": "closure_informed",
+      "budget_percent": 50,
+      "detected_new": 20,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 15,
+      "original_remaining_unsupported_without_alarm": 93,
+      "original_signatures": 392,
+      "original_warrant_restored": 3
+    },
+    {
+      "added_cost_all": 4492,
+      "arm": "cost_order",
+      "budget_percent": 100,
+      "detected_new": 39,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 26,
+      "original_remaining_unsupported_without_alarm": 86,
+      "original_signatures": 392,
+      "original_warrant_restored": 10
+    },
+    {
+      "added_cost_all": 4476,
+      "arm": "constant_first",
+      "budget_percent": 100,
+      "detected_new": 39,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 26,
+      "original_remaining_unsupported_without_alarm": 86,
+      "original_signatures": 392,
+      "original_warrant_restored": 10
+    },
+    {
+      "added_cost_all": 4458,
+      "arm": "closure_informed",
+      "budget_percent": 100,
+      "detected_new": 39,
+      "k": 2,
+      "new_signatures": 39,
+      "new_warrant_restored": 0,
+      "new_warrant_restored_and_withdrawn": 0,
+      "new_withdrawn_definite": 26,
+      "original_remaining_unsupported_without_alarm": 86,
+      "original_signatures": 392,
+      "original_warrant_restored": 10
+    }
+  ],
+  "checked_at_utc": "2026-10-04T12:05:38.430240+00:00",
+  "counts": {
+    "added_action_choices_checked": 25079,
+    "aggregate_cells_checked": 1920,
+    "certificate_references_bound": 80256,
+    "full_budget_endpoints": 3762,
+    "k1_k2_path_pairs": 6896,
+    "paired_per_problem_metric_checks": 151200,
+    "paired_per_problem_rows_checked": 4320,
+    "paired_summary_metric_checks": 37800,
+    "paired_summary_rows_checked": 1080,
+    "per_problem_population_metric_checks": 201600,
+    "runs_checked": 20064,
+    "summary_metric_checks": 100800,
+    "summary_rows_checked": 2880,
+    "zero_or_no_audit_parities": 8778
+  },
+  "credential_access": false,
+  "discrepancies": [],
+  "distinct_certificate_digests_and_bindings": 6021,
+  "execution_overhead_from_saved_validation": {
+    "independent_reference_seconds": 45.79251288499654,
+    "nominal_compatibility_seconds": 2.7120966197908274,
+    "selection_seconds": 1.6623987461280194,
+    "total_seconds": 109.96273204900353
+  },
+  "freeze_sha256": "b31fd98de70fbec09756e268ed1ea3c617c66b3f2f5df773a0e58aba03594f9a",
+  "frozen_dependencies_verified": 27,
+  "independence_limits": [
+    "Physical meanings and required rule definitions are shared contracts; this is software verification, not independent incident replication.",
+    "This audit does not reprove original exact optimality or rerun model APIs, generator, omission closure, acquisition experiments or timing sweeps.",
+    "Cost at detection is conditional on each arm detecting; finite-budget paired conditional costs may compare different detected signature subsets. Unconditional added costs use the same signature populations.",
+    "Same k=1/k=2 signatures are repeated conditions; original and new signatures stay separate, and k=0 conditional detection is undefined."
+  ],
+  "input_sha256": {
+    "studies/audit_aware_acquisition/results/certificates.json.gz": "935064341a219c83930b776eb0d728e75d5ae10ef5f18d37a0cac9e8ccb1d5f2",
+    "studies/audit_aware_acquisition/results/independent_verification.json": "7d76f4fb2f2cabf1594595f2326f88d6aff4dc3c6559df009884b50421d8d328",
+    "studies/audit_aware_acquisition/results/paired.json.gz": "610ca019ceaa95bc515853d530c0aa820d535c14e7f4caf83f20693a233b2b0f",
+    "studies/audit_aware_acquisition/results/per_condition.json.gz": "011eccbf5dd0e07232f95d64b502027c3eb27a96c74d7c7f6c61d44805d6f700",
+    "studies/audit_aware_acquisition/results/runs.json.gz": "0a208ab0a8d76882eef7fdc065cc9926f89407634c52b87d8d30bd09137250b3",
+    "studies/audit_aware_acquisition/results/summary.json.gz": "f4545ccb9511cc38e4f2b67e23160b4a5e4b5b6abee5dd57b8eb285fa8b5491a",
+    "studies/audit_aware_acquisition/results/validation.json": "2b10e0973ccfca50deda25b8a3a682d2084d9ae7314a627e5f64fdfd70b6aa76"
+  },
+  "method": [
+    "Derived query signatures from retained physical record membership and claim truth directly from events/write timing/source selection; cached direct support filtering on paid histories.",
+    "Checked actual saved additional actions against separately expressed cost/constant/distinct-k2-signature rules; checked first contradiction, budget censorship, costs, bytes, support and alarm axes without generating another trajectory.",
+    "Independently computed every per-problem population metric, pooled count, exact equal-problem/structure-balanced mean, paired per-problem difference, paired mean and lower/tied/higher count; did not import the study aggregator.",
+    "Verified every result/freeze hash, every certificate content address and each run reference binding; semantic certificate coverage additionally has the separately saved frozen reference check."
+  ],
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_experiments": 0,
+  "preservation": {
+    "all_match": true,
+    "local_files": 509,
+    "tracked_files": 289
+  },
+  "result_files_verified": 7,
+  "result_manifest_sha256": "2fb087221bb0aab1003cb20f1ff075b0df02fd18c67b8f7806a9cced7a47e264",
+  "schema_version": 1,
+  "scope": "Independent exact reaggregation and retained-trajectory verification; no policies rerun or cases generated",
+  "selected_paired_checks": [
+    {
+      "budget_percent": 25,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "expected_problems": 40,
+          "higher": 3,
+          "lower": 19,
+          "mean": {
+            "exact": "-3619/7200",
+            "value": -0.5026388888888889
+          },
+          "tied": 18,
+          "undefined_problems": 0
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 1,
+          "lower": 0,
+          "mean": {
+            "exact": "1/44",
+            "value": 0.022727272727272728
+          },
+          "tied": 21,
+          "undefined_problems": 18
+        }
+      },
+      "population": "all",
+      "right": "cost_order",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 25,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "expected_problems": 40,
+          "higher": 3,
+          "lower": 19,
+          "mean": {
+            "exact": "-5609/10800",
+            "value": -0.5193518518518518
+          },
+          "tied": 18,
+          "undefined_problems": 0
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 1,
+          "lower": 0,
+          "mean": {
+            "exact": "1/34",
+            "value": 0.029411764705882353
+          },
+          "tied": 21,
+          "undefined_problems": 18
+        }
+      },
+      "population": "all",
+      "right": "cost_order",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 25,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 1,
+          "lower": 8,
+          "mean": {
+            "exact": "-19/44",
+            "value": -0.4318181818181818
+          },
+          "tied": 13,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 1,
+          "lower": 0,
+          "mean": {
+            "exact": "1/44",
+            "value": 0.022727272727272728
+          },
+          "tied": 21,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "cost_order",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 25,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 1,
+          "lower": 8,
+          "mean": {
+            "exact": "-27/68",
+            "value": -0.39705882352941174
+          },
+          "tied": 13,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 1,
+          "lower": 0,
+          "mean": {
+            "exact": "1/34",
+            "value": 0.029411764705882353
+          },
+          "tied": 21,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "cost_order",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 50,
+      "comparison_scope": "secondary_extra_model_knowledge",
+      "k": 1,
+      "left": "closure_informed",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 1,
+          "lower": 2,
+          "mean": {
+            "exact": "-5/33",
+            "value": -0.15151515151515152
+          },
+          "tied": 19,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 2,
+          "lower": 0,
+          "mean": {
+            "exact": "2/33",
+            "value": 0.06060606060606061
+          },
+          "tied": 20,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "constant_first",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "comparison_scope": "secondary_extra_model_knowledge",
+      "k": 1,
+      "left": "closure_informed",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 1,
+          "lower": 2,
+          "mean": {
+            "exact": "-4/51",
+            "value": -0.0784313725490196
+          },
+          "tied": 19,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 2,
+          "lower": 0,
+          "mean": {
+            "exact": "4/51",
+            "value": 0.0784313725490196
+          },
+          "tied": 20,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "constant_first",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 50,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "expected_problems": 40,
+          "higher": 9,
+          "lower": 11,
+          "mean": {
+            "exact": "117/1120",
+            "value": 0.10446428571428572
+          },
+          "tied": 20,
+          "undefined_problems": 0
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 4,
+          "lower": 3,
+          "mean": {
+            "exact": "5/132",
+            "value": 0.03787878787878788
+          },
+          "tied": 15,
+          "undefined_problems": 18
+        }
+      },
+      "population": "all",
+      "right": "cost_order",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "expected_problems": 40,
+          "higher": 9,
+          "lower": 11,
+          "mean": {
+            "exact": "39/280",
+            "value": 0.1392857142857143
+          },
+          "tied": 20,
+          "undefined_problems": 0
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 4,
+          "lower": 3,
+          "mean": {
+            "exact": "7/204",
+            "value": 0.03431372549019608
+          },
+          "tied": 15,
+          "undefined_problems": 18
+        }
+      },
+      "population": "all",
+      "right": "cost_order",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 50,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 2,
+          "lower": 8,
+          "mean": {
+            "exact": "-37/132",
+            "value": -0.2803030303030303
+          },
+          "tied": 12,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 4,
+          "lower": 3,
+          "mean": {
+            "exact": "5/132",
+            "value": 0.03787878787878788
+          },
+          "tied": 15,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "cost_order",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 2,
+          "lower": 8,
+          "mean": {
+            "exact": "-19/102",
+            "value": -0.18627450980392157
+          },
+          "tied": 12,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 4,
+          "lower": 3,
+          "mean": {
+            "exact": "7/204",
+            "value": 0.03431372549019608
+          },
+          "tied": 15,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "cost_order",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 100,
+      "comparison_scope": "secondary_extra_model_knowledge",
+      "k": 1,
+      "left": "closure_informed",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 0,
+          "lower": 6,
+          "mean": {
+            "exact": "-35/66",
+            "value": -0.5303030303030303
+          },
+          "tied": 16,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "constant_first",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 100,
+      "comparison_scope": "secondary_extra_model_knowledge",
+      "k": 1,
+      "left": "closure_informed",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 0,
+          "lower": 6,
+          "mean": {
+            "exact": "-55/102",
+            "value": -0.5392156862745098
+          },
+          "tied": 16,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "constant_first",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 100,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "expected_problems": 40,
+          "higher": 5,
+          "lower": 7,
+          "mean": {
+            "exact": "1/450",
+            "value": 0.0022222222222222222
+          },
+          "tied": 28,
+          "undefined_problems": 0
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22,
+          "undefined_problems": 18
+        }
+      },
+      "population": "all",
+      "right": "cost_order",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 100,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "expected_problems": 40,
+          "higher": 5,
+          "lower": 7,
+          "mean": {
+            "exact": "7/5400",
+            "value": 0.0012962962962962963
+          },
+          "tied": 28,
+          "undefined_problems": 0
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22,
+          "undefined_problems": 18
+        }
+      },
+      "population": "all",
+      "right": "cost_order",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 100,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 5,
+          "lower": 7,
+          "mean": {
+            "exact": "-29/132",
+            "value": -0.2196969696969697
+          },
+          "tied": 10,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "cost_order",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 100,
+      "comparison_scope": "primary_nominal_only",
+      "k": 1,
+      "left": "constant_first",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 5,
+          "lower": 7,
+          "mean": {
+            "exact": "-23/102",
+            "value": -0.22549019607843138
+          },
+          "tied": 10,
+          "undefined_problems": 18
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "expected_problems": 40,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22,
+          "undefined_problems": 18
+        }
+      },
+      "population": "new",
+      "right": "cost_order",
+      "weighting": "structure_balanced"
+    }
+  ],
+  "status": "passed",
+  "verifier_source_sha256": "596d6b72d40dde1c3da6e46f5b3adc37a3fcf1709f1961fc9f8c597b7a9741e2"
+}

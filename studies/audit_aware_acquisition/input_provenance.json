@@ -1,0 +1,14 @@
+{
+  "development_baseline": {
+    "destination": "studies/audit_aware_acquisition/development_baseline.json.gz",
+    "sha256": "7349918d35661bad18f042abbf726d0f0c8da7236a3b3bc6fc8deddc24e0e1c0",
+    "source": "artifacts/archive-model-misspecification/development-v1/details.json.gz",
+    "transformation": "None: byte-identical copy of the completed synthetic development closure/certificates/histories; no reoptimization or regeneration"
+  },
+  "evaluation_baseline": {
+    "sha256": "5eb576b6044803cd88c8f82cf2b581ca707245108c71e57cbd7f5f1d93ca6cdc",
+    "source": "studies/archive_model_misspecification/results/details.json.gz",
+    "transformation": "None; consumed from preserved tracked source"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "additional_spend_usd": "0",
+  "aggregate_cells": 1920,
+  "certificate_checks": {
+    "cache_references": 82764,
+    "certificate_generation_seconds": 1.034326054250414,
+    "certificate_verification_seconds": 42.76008052292309,
+    "distinct_certificates_verified": 6021,
+    "model_contract_history_keys": 6021
+  },
+  "completed_cells": 1920,
+  "expected_signature_runs": 20064,
+  "failures": [],
+  "frozen_dependencies": 27,
+  "implementation_overhead": {
+    "independent_reference_seconds": 45.79251288499654,
+    "nominal_compatibility_seconds": 2.7120966197908274,
+    "selection_seconds": 1.6623987461280194,
+    "total_seconds": 109.96273204900353
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 289
+  },
+  "problems": 40,
+  "signature_runs": 20064,
+  "split": "evaluation",
+  "status": "passed"
+}

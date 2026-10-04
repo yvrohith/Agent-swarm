@@ -1,0 +1,47 @@
+{
+  "checked_at_utc": "2026-10-04T12:01:00.496400+00:00",
+  "development_cells": 192,
+  "development_checks_sha256": "b6d9356c05a1f90e7f78ce268aee08e1dced4bbe4051387e817570a6e0194c4f",
+  "development_signature_runs": 1952,
+  "evaluation_audit_outcomes_observed": 0,
+  "execution_controls": {
+    "additional_spend_usd": "0",
+    "clean_environment": true,
+    "model_calls": 0,
+    "network_requests": 0,
+    "socket_connect_and_resolution_disabled_in_test_and_development_processes": true
+  },
+  "full_test_suite": {
+    "elapsed_seconds": 39.63,
+    "failed": 0,
+    "historical_tests": 883,
+    "new_tests": 66,
+    "passed": 949
+  },
+  "independent_review": {
+    "pre_freeze_corrections": [
+      "Align driver with reference status field",
+      "Pin transitive sensitivity dependency",
+      "Check every aggregate-driving field independently",
+      "Validate retained certificate content-address keys",
+      "Keep valid k conditions when another condition fails"
+    ],
+    "scope": "Selector information boundary, retained nominal histories, certificate bindings, reference independence, grouping and denominators, computational dependency closure; only development and tiny-fixture audit outcomes inspected.",
+    "status": "passed"
+  },
+  "known_prior_study_outcomes": true,
+  "limitations": [
+    "Verification shares the preserved typed-record and certificate semantics.",
+    "Development outcomes and motivating prior-study results were known before this freeze; new evaluation audit outcomes were not."
+  ],
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 289
+  },
+  "schema_version": 1,
+  "status": "passed"
+}

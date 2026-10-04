@@ -1,0 +1,116 @@
+{
+  "artifact_count_excluding_this_record": 26,
+  "authorization": {
+    "additional_spend_usd": "0",
+    "committed": false,
+    "credential_access": false,
+    "model_calls": 0,
+    "network_requests": 0,
+    "provider_private_reasoning_access": false,
+    "published": false,
+    "pushed": false,
+    "staged": false
+  },
+  "certificate_count_note": "Distinct counts are not multiplied by repeated verification passes.",
+  "checked_at_utc": "2026-10-04T12:14:43.773080+00:00",
+  "development": {
+    "aggregate_cells": 192,
+    "problems": 4,
+    "retained_result_manifest_verified": true,
+    "signature_runs": 1952,
+    "status": "passed"
+  },
+  "distinct_certificates": 6021,
+  "evaluation": {
+    "aggregate_cells": 1920,
+    "problems": 40,
+    "signature_runs": 20064,
+    "status": "passed",
+    "unavailable_cells": 0
+  },
+  "existing_tracked_diff_empty": true,
+  "files_sha256": {
+    "studies/audit_aware_acquisition/ANALYSIS.md": "4a54a4f731ee1e40a8ea8b873a907771c467106507b2279be956736121bbcee7",
+    "studies/audit_aware_acquisition/INDEPENDENT_VALIDATION.json": "8b31a4fbe306d6afee70086cce4a4c9fc005fad24bd8227ef44f1f6674588ac3",
+    "studies/audit_aware_acquisition/METHOD.md": "1102cb228e6ab39c471c0ed25de25aac663306234013dd2ba8da114faaebb201",
+    "studies/audit_aware_acquisition/OFFLINE_VERIFICATION.json": "fc447323354c2d4996df39452d6d72dbcdbb7c8bc9e852cc9d4da373ee3ab024",
+    "studies/audit_aware_acquisition/RESULTS.md": "698af954ad442905b2bf09138652ec94e389b591d48c0e09705e3dc88d775191",
+    "studies/audit_aware_acquisition/analysis.py": "cace93aedebca67cf3bc6fafcbbc9a7940d0733780f88052c9b60d2a29360219",
+    "studies/audit_aware_acquisition/auditing.py": "d6e4c707e1d78edfbfe4b6e0e2e338541a38e59329e1d42cc2aff38009795c15",
+    "studies/audit_aware_acquisition/baseline_verification.json": "ae2a58557045c7de4737ac9cea3f18bd2c367ae830a678014ec17ae430cba32c",
+    "studies/audit_aware_acquisition/config.json": "44178d6aa97c93cf5bc90ad4c01cb39036ba939833ad4aa604bf45823f53bf87",
+    "studies/audit_aware_acquisition/development_baseline.json.gz": "7349918d35661bad18f042abbf726d0f0c8da7236a3b3bc6fc8deddc24e0e1c0",
+    "studies/audit_aware_acquisition/development_checks.json": "b6d9356c05a1f90e7f78ce268aee08e1dced4bbe4051387e817570a6e0194c4f",
+    "studies/audit_aware_acquisition/freeze.json": "b31fd98de70fbec09756e268ed1ea3c617c66b3f2f5df773a0e58aba03594f9a",
+    "studies/audit_aware_acquisition/input_provenance.json": "548b01b5901be05d9346f0c9741b09ed25173ff2d824d6cb2d9d12e49a8999e0",
+    "studies/audit_aware_acquisition/pre_freeze_checks.json": "02e568944cd8c45fa3f92319da91632102cf97a52a9c118b81b6fe7c940c706e",
+    "studies/audit_aware_acquisition/preservation.json": "61c4b924fc3c998003e6672b4e5f4f700f23de9c2809a9cf1e0abaf087f8dfbd",
+    "studies/audit_aware_acquisition/reference.py": "b5815d0519f5aa8225bf7cc3990267807427a0fa17e47dbb6095e65dcc6d8245",
+    "studies/audit_aware_acquisition/results/certificates.json.gz": "935064341a219c83930b776eb0d728e75d5ae10ef5f18d37a0cac9e8ccb1d5f2",
+    "studies/audit_aware_acquisition/results/independent_verification.json": "7d76f4fb2f2cabf1594595f2326f88d6aff4dc3c6559df009884b50421d8d328",
+    "studies/audit_aware_acquisition/results/manifest.json": "2fb087221bb0aab1003cb20f1ff075b0df02fd18c67b8f7806a9cced7a47e264",
+    "studies/audit_aware_acquisition/results/paired.json.gz": "610ca019ceaa95bc515853d530c0aa820d535c14e7f4caf83f20693a233b2b0f",
+    "studies/audit_aware_acquisition/results/per_condition.json.gz": "011eccbf5dd0e07232f95d64b502027c3eb27a96c74d7c7f6c61d44805d6f700",
+    "studies/audit_aware_acquisition/results/runs.json.gz": "0a208ab0a8d76882eef7fdc065cc9926f89407634c52b87d8d30bd09137250b3",
+    "studies/audit_aware_acquisition/results/summary.json.gz": "f4545ccb9511cc38e4f2b67e23160b4a5e4b5b6abee5dd57b8eb285fa8b5491a",
+    "studies/audit_aware_acquisition/results/validation.json": "2b10e0973ccfca50deda25b8a3a682d2084d9ae7314a627e5f64fdfd70b6aa76",
+    "tests/test_audit_acquisition_reference.py": "9bbea7d539917eac320d86b01ef729fb7a988bac4ebd97b02e872d1c7bd9ba1d",
+    "tests/test_audit_aware_acquisition.py": "2e08d9ff957c5eca71b55a082891482bfc10653a6a018460c39471848164b978"
+  },
+  "frozen_computational_dependencies": 27,
+  "head_unchanged": "d2f341e880dbc9a82436cbb67ad3e9dd1fcd9b9d",
+  "historical_preservation": {
+    "local_files": 509,
+    "tracked_files": 289
+  },
+  "independent_exact_reaggregation": {
+    "record": "INDEPENDENT_VALIDATION.json",
+    "status": "passed"
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "nominal_optimizer_cap": {
+    "production_solve_required": false,
+    "state_limit": 100000
+  },
+  "nominal_policy_optimizations_in_baseline_or_evaluation": 0,
+  "observed_cap_maxima": {
+    "development": {
+      "actions": 6,
+      "expanded_worlds": 36,
+      "full_signatures": 20,
+      "outcomes_per_action": 2
+    },
+    "evaluation": {
+      "actions": 8,
+      "expanded_worlds": 36,
+      "full_signatures": 20,
+      "outcomes_per_action": 2
+    }
+  },
+  "per_run_certificate_references": 80256,
+  "saved_output_reverification": {
+    "record": "OFFLINE_VERIFICATION.json",
+    "status": "passed"
+  },
+  "schema_version": 1,
+  "staging_diff_empty": true,
+  "status": "passed",
+  "technical_note_links_checked": 20,
+  "test_and_lint_scope": "Completed before freeze; frozen implementation and tests remain byte-identical afterward.",
+  "tests": {
+    "elapsed_seconds": 39.63,
+    "failed": 0,
+    "historical_tests": 883,
+    "new_tests": 66,
+    "passed": 949
+  },
+  "verification_limits": [
+    "Finite supplied models and catalogue only; no empirical deployment prior or general model-adequacy claim.",
+    "Independent filtering and arithmetic reuse preserved physical validators, claim semantics, and certificate machinery.",
+    "Original exact optimizer was not independently reproved or rerun; retained histories and original k=0 results were checked.",
+    "The informed selector has fixed hypothetical k=2 model knowledge unavailable to the nominal-only comparators."
+  ]
+}

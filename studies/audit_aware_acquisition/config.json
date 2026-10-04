@@ -1,0 +1,65 @@
+{
+  "additional_spend_usd": "0",
+  "aggregation_rules": [
+    "equal_problem",
+    "structure_balanced"
+  ],
+  "arms": [
+    "no_audit",
+    "cost_order",
+    "constant_first",
+    "closure_informed"
+  ],
+  "audit_stopping": "First nominal conflict before other checks; otherwise budget or catalogue exhaustion. Nominal or expanded claim terminality never ends an audit early",
+  "budget_censoring": "Choose independently of remaining funds; if the next action is unaffordable stop without reranking",
+  "budget_rule": "floor(percent * original unqueried catalogue cost at H0 / 100); base acquisition is sunk and separately reported",
+  "certificate_cache": "Key by correct model/contract and ordered paid history; verify distinct certificates once and every run reference",
+  "closure_informed": "Fixed saved k=2 distinct signatures compatible with paid H; maximize positive count of signatures whose answer empties nominal support divided by action cost, ties lower cost then opaque ID; zero-score fallback constant_first",
+  "conflict_output": "nominal_model_conflict with nominal certificate and withheld definite conclusion; no causal or claim-falsity assertion",
+  "constant_first": "Recompute nominal partition after each paid answer; cheapest unqueried one-nonempty-branch action first, else cheapest unqueried action; ties opaque ID",
+  "cost_order": "Ascending (cost, opaque query ID) among unqueried actions",
+  "design_envelope_k": 2,
+  "development_baseline_source": "studies/audit_aware_acquisition/development_baseline.json.gz",
+  "development_problems": 4,
+  "development_source": "studies/evidence_acquisition/development_problems.json",
+  "evaluation_aggregate_cells": 1920,
+  "evaluation_baseline_source": "studies/archive_model_misspecification/results/details.json.gz",
+  "evaluation_problems": 40,
+  "evaluation_source": "studies/evidence_acquisition/evaluation_problems.json",
+  "exact_state_cap": 100000,
+  "expanded_world_cap": 4096,
+  "extra_budget_percentages": [
+    0,
+    25,
+    50,
+    100
+  ],
+  "failure_handling": "Preserve failed/capped cells and valid outputs; no truncation, substitution, new mechanisms, or silent refreeze",
+  "group_source": "studies/acquisition_prior_robustness/structure_groups.json",
+  "label": "Review-informed audit ordering after preserved nominal stopping; known baseline outcomes, no new evaluation outcomes before freeze",
+  "model_calls": 0,
+  "network_requests": 0,
+  "no_alarm_output": "no_conflict_observed with coverage; no model adequacy claim",
+  "no_audit": "Preserve H0 and its nominal proposal; zero added cost at every audit budget",
+  "omission_budgets": [
+    0,
+    1,
+    2
+  ],
+  "outcomes_per_query_cap": 2,
+  "paired_comparison": "constant_first minus cost_order per problem; closure_informed comparisons labeled extra-model-knowledge separately",
+  "policy_information_boundary": "No realized signature, omitted IDs, parent provenance, realized truth, full-archive conflict category, actual evaluation k, future answers, or remaining budget enters selection",
+  "primary_populations": [
+    "original",
+    "new",
+    "all"
+  ],
+  "query_cap": 8,
+  "runtime_measurement": "Aggregate local planning and checking overhead only; distinct from abstract retrieval units, no timing competition",
+  "sampling_inference": "None; no confidence intervals, p-values, or independent incident claims",
+  "schema_version": 1,
+  "signature_cap": 256,
+  "signature_weighting": "Exact descriptive within-problem signature census; no new deployment prior",
+  "study_version": "audit-aware-acquisition-v1",
+  "support_semantics": "Evaluate every world in the saved actual Mk compatible with the same final paid evidence; retain claim and operational statuses separately; withdrawal never counts as warrant restoration"
+}
