@@ -1,0 +1,16 @@
+{
+  "files_sha256": {
+    "certificates.json.gz": "d8e8e2c6d3fc7c0326e461fb5b57304d422d11617ddaffb4e234383fe02621eb",
+    "design_runs.json.gz": "c67dad55b88e89a7510757b6c0f7e8af46f733e6b20e0b4cf7d506c7b4f80cbd",
+    "design_summary.json.gz": "e67497490965b1ecdea1a9ad91f90abdf3dc3fba340f1253d837accf76f885ac",
+    "independent_verification.json": "39aed892b433b754b726d0cb37fe09390d4f81e3ada7a283752c6ab338a0cc6c",
+    "legacy_parity.json": "3d1154d963fe2f31464a83594bbeb2c8f460566a300ccdcd0b8fddb1ca6b6cd2",
+    "paired.json.gz": "bc90072af9ed7a7443a038421bb838845708c201649d2c4ae032170555cd43b0",
+    "per_condition.json.gz": "6588592712427a84d7312269b9b9c1b1f305964140b7a8838622c103ff12fbbd",
+    "roots.json.gz": "f57b4cd639edf95463405b83b09f8591ae5aafac023dbc6952014a5aa3420afc",
+    "runs.json.gz": "976ee8e3f7b6b6c36644f6f071b1fb9ec912169b9026ccc94cb3ab52d44c7846",
+    "summary.json.gz": "27166497a57242e986496141009d3d01554a844b2f3fefc8ff5467c8eebbeb64",
+    "validation.json": "f6552e9cf74f127213f8dedd9240fd97f0bc571572cffcd0ff90fae88909358e"
+  },
+  "freeze_sha256": "fff39cd695f83308b3f76c018a84c1fa01720c14c684b37f9356ab96cb4a0bcb"
+}

@@ -1,0 +1,109 @@
+{
+  "additional_spend_usd": "0",
+  "aggregate_cells": 288,
+  "certificate_checks": {
+    "cache_references": 22086,
+    "certificate_generation_seconds": 0.09831896796094952,
+    "certificate_verification_seconds": 2.6388240489468444,
+    "distinct_certificates_verified": 618,
+    "model_contract_history_keys": 618
+  },
+  "completed_anchor_runs": 2928,
+  "completed_cells": 288,
+  "completed_design_runs": 2520,
+  "completed_roots": 15,
+  "expected_schedule": {
+    "anchor_cells": 288,
+    "anchor_runs": 2928,
+    "integer_design_runs_six_arms": 2520,
+    "root_integer_budget_cells": 133,
+    "roots": 15
+  },
+  "failures": [],
+  "frozen_dependencies": null,
+  "manifest_sha256": "d3007a446f96f662c4e300940a36ece8c776057f3e69b51b0da5ab3686c9b9fb",
+  "missing_problem_ids": [],
+  "missing_schedule_counts": {
+    "anchor_cells": 0,
+    "anchor_runs": 0,
+    "integer_design_runs_six_arms": 0,
+    "root_integer_budget_cells": 0,
+    "roots": 0
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_evaluation_policy_outcomes_observed": 0,
+  "output": "artifacts/exact-audit-frontier/development-v1",
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 316
+  },
+  "problems": 4,
+  "resources": {
+    "independent_checker": {
+      "cpu_seconds": 4.681187917,
+      "wall_seconds": 4.6818377890012925
+    },
+    "peak_scope": "Cumulative process peak, not an isolated per-policy measurement",
+    "process_peak_rss_kib": 262092,
+    "serialization": {
+      "cpu_seconds": 1.0096394639999993,
+      "wall_seconds": 1.0106151189975208
+    },
+    "total_cpu_seconds": 11.917076552000001,
+    "total_wall_seconds": 11.920974703003594
+  },
+  "retained_schedule": {
+    "anchor_cells": 288,
+    "anchor_runs": 2928,
+    "integer_design_runs_six_arms": 2520,
+    "root_integer_budget_cells": 133,
+    "roots": 15
+  },
+  "schedule": {
+    "anchor_cells": 288,
+    "anchor_runs": 2928,
+    "integer_design_runs_six_arms": 2520,
+    "root_integer_budget_cells": 133,
+    "roots": 15
+  },
+  "source_sha256": {
+    "src/tracebench/__init__.py": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3",
+    "src/tracebench/evidence_acquisition/__init__.py": "cc13ce3dda5f44b8ee9c696f224464deee132f2ea92afb392b8acb33d1bafb07",
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "studies/acquisition_prior_robustness/aggregation.py": "d301074af6d8990d865c8752fe0ad9c98de4379ea221f1f4317b7baa3e5bf809",
+    "studies/acquisition_prior_robustness/sensitivity.py": "917771647708477955f3f72791dcea6295d4c8eb61f5665a9d7a2024398ddb41",
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/archive_model_misspecification/analysis.py": "ce64a702c45dc2e7933135006de00fae701c13598dfb8bcc8510a516c6f08b9d",
+    "studies/archive_model_misspecification/expanded.py": "c42410c809e3bc20e5e549821404c53d15099799981269f1ff09894036f31472",
+    "studies/archive_model_misspecification/reference.py": "b9b6346fa29ff5dd02e0edec855df9f761c4b8fe9ec7813900f6f6f30c28dd59",
+    "studies/archive_model_misspecification/results/details.json.gz": "5eb576b6044803cd88c8f82cf2b581ca707245108c71e57cbd7f5f1d93ca6cdc",
+    "studies/audit_aware_acquisition/analysis.py": "cace93aedebca67cf3bc6fafcbbc9a7940d0733780f88052c9b60d2a29360219",
+    "studies/audit_aware_acquisition/auditing.py": "d6e4c707e1d78edfbfe4b6e0e2e338541a38e59329e1d42cc2aff38009795c15",
+    "studies/audit_aware_acquisition/development_baseline.json.gz": "7349918d35661bad18f042abbf726d0f0c8da7236a3b3bc6fc8deddc24e0e1c0",
+    "studies/audit_aware_acquisition/reference.py": "b5815d0519f5aa8225bf7cc3990267807427a0fa17e47dbb6095e65dcc6d8245",
+    "studies/audit_aware_acquisition/results/runs.json.gz": "0a208ab0a8d76882eef7fdc065cc9926f89407634c52b87d8d30bd09137250b3",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/exact_audit_frontier/ANALYSIS.md": "ef104990579afac04d8fe174fc5c8d916a934fa19bd05745d14e629bb01e6459",
+    "studies/exact_audit_frontier/METHOD.md": "04b43869271ef3469e7c619236d3d657b68f1a212420d7ee99067df314ebd49a",
+    "studies/exact_audit_frontier/analysis.py": "3eef2030fce5a36cda700c73ff9f6265eb6bdd0f6aff45dfeb994ee45d435b18",
+    "studies/exact_audit_frontier/baseline_verification.json": "639d5a7eaf1df089e29bd2493feee5ef991f10015d77303dd24eb493d8d78626",
+    "studies/exact_audit_frontier/config.json": "3c48a1b2fe08c36b569450f8585386d46681ba563e5824c1d06c604df8728e08",
+    "studies/exact_audit_frontier/development_legacy_audit.json.gz": "0026e86b5f7bb8061f870c965dc4764e917bdcd6e2ab434b412d3c42fb115631",
+    "studies/exact_audit_frontier/execution.py": "a246469ab6ccab509127cc42d6214d3d30bed46f358c28a881b5dc01cee41fec",
+    "studies/exact_audit_frontier/frontier.py": "8ce38cfa959ad360f94448fa02918f92e46048b14217c74bb57b12866147c222",
+    "studies/exact_audit_frontier/input_provenance.json": "4ae35d7b0fbb044fe73bfc2f2b6262c9f321b9c7662d0cbb309d84c27a5b9f66",
+    "studies/exact_audit_frontier/reference.py": "6cf422fe1f20a76310f10620253eff4461d82af7f5962165988e00c02b1f9cdb",
+    "tests/test_audit_aware_acquisition.py": "2e08d9ff957c5eca71b55a082891482bfc10653a6a018460c39471848164b978",
+    "tests/test_exact_audit_driver.py": "2243e3b6dc4cfffc34b5b8677bb7ca84267703442961c0de6671dfedcdf5c0e3",
+    "tests/test_exact_audit_execution.py": "4c56fb85724525422628f0cc8364762c34feef2a1d7d65d5cf644e1c9a56c618",
+    "tests/test_exact_audit_frontier.py": "fc2815df8555abdde17ed3df72a2383e2ffa44479a4b6b6f11e7ea75da8e436d",
+    "tests/test_exact_audit_planner_guards.py": "03dc2a8996ee6f696fed60ff33a7717857d138d834813b0bbe34a3a18ea9ff22"
+  },
+  "split": "development",
+  "status": "passed",
+  "unavailable_roots": []
+}

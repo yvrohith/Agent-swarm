@@ -1,0 +1,59 @@
+{
+  "additional_spend_usd": "0",
+  "checked_at_utc": "2026-10-04T13:25:35.370192+00:00",
+  "frozen_dependencies": 36,
+  "independent_verification": {
+    "anchor_grid_rows": 30096,
+    "certificate_references_checked": 181443,
+    "child_combinations_checked": 105551,
+    "completed_anchor_paths_checked": 30096,
+    "completed_design_paths_checked": 30510,
+    "design_grid_rows": 30510,
+    "distinct_certificate_all_query_witness_checks": 17330,
+    "distinct_certificates_checked": 7201,
+    "distinct_expanded_certificates_checked": 4773,
+    "distinct_nominal_certificates_checked": 2428,
+    "exact_optimality_status": "complete",
+    "exact_roots_unavailable": 0,
+    "exact_roots_verified": 169,
+    "hindsight_rows_checked": 431,
+    "hindsight_subsets_enumerated": 10688,
+    "independence_limits": "All Bellman actions/branches/frontiers, subset minima and path semantics checked without production solver/runtime calls; preserved physical reconstruction, claim semantics and certificate checker reused. Original nominal optimizer not independently reproved. Tiny oracle enumerates whole trees without DP.",
+    "problem_count": 40,
+    "root_budgets_checked": 1722,
+    "root_count": 169,
+    "states_checked": 53290,
+    "status": "passed",
+    "unavailable_anchor_rows": 0,
+    "unavailable_design_rows": 0,
+    "unavailable_root_ids": [],
+    "unreferenced_certificates_checked": 0
+  },
+  "legacy_parity": {
+    "excluded_fields": [
+      "selection_seconds",
+      "checking_seconds"
+    ],
+    "historical_anchor_runs": 20064,
+    "status": "passed"
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 316
+  },
+  "resources": {
+    "cpu_seconds": 93.328147764,
+    "wall_seconds": 93.34175734299788
+  },
+  "schedule": {
+    "anchor_cells": 2880,
+    "anchor_runs": 30096,
+    "integer_design_runs_six_arms": 30510,
+    "root_integer_budget_cells": 1722,
+    "roots": 169
+  },
+  "scope": "Frozen scientific dependencies and retained outputs; historical preservation is checked separately",
+  "status": "passed"
+}

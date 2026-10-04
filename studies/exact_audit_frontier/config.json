@@ -1,0 +1,96 @@
+{
+  "additional_spend_usd": "0",
+  "aggregation_rules": [
+    "equal_problem",
+    "structure_balanced"
+  ],
+  "arms": [
+    "no_audit",
+    "cost_order",
+    "constant_first",
+    "closure_informed",
+    "closure_informed_affordable",
+    "exact_frontier"
+  ],
+  "canonical_exact_policy": "Maximize detection count, then minimize all-signature cost sum, then deterministic policy tie order",
+  "cap_scope": "One problem/H0 solve across the entire integer budget grid; deterministic root order; caches released between roots",
+  "caps": {
+    "child_combinations_per_root": 10000000,
+    "states_per_root": 100000
+  },
+  "closure_informed_affordable": "Restrict to currently affordable unqueried actions; use unchanged distinct-signature immediate-conflict count per cost, cost/ID ties, then constant-first and cheapest fallback within affordable actions",
+  "comparison_dominating_point": "Among attainable frontier points with detection >= comparator and cost <= comparator, minimize cost, then maximize detection, then deterministic point encoding; retain weak equality and strict domination separately",
+  "design_envelope_k": 2,
+  "development_baseline_source": "studies/audit_aware_acquisition/development_baseline.json.gz",
+  "development_legacy_audit_source": "studies/exact_audit_frontier/development_legacy_audit.json.gz",
+  "development_problems": 4,
+  "development_source": "studies/evidence_acquisition/development_problems.json",
+  "evaluation_anchor_cells": 2880,
+  "evaluation_baseline_source": "studies/archive_model_misspecification/results/details.json.gz",
+  "evaluation_legacy_audit_source": "studies/audit_aware_acquisition/results/runs.json.gz",
+  "evaluation_problems": 40,
+  "evaluation_source": "studies/evidence_acquisition/evaluation_problems.json",
+  "exact_full_budget_endpoint": "All new signatures detected; no forced exhaustive-original warrant count because detection-optimal E can stop without exhausting harmless queries",
+  "expanded_world_cap": 4096,
+  "expected_schedule": {
+    "development": {
+      "anchor_cells": 288,
+      "anchor_runs": 2928,
+      "integer_design_runs_six_arms": 2520,
+      "root_integer_budget_cells": 133,
+      "roots": 15
+    },
+    "evaluation": {
+      "anchor_cells": 2880,
+      "anchor_runs": 30096,
+      "integer_design_runs_six_arms": 30510,
+      "root_integer_budget_cells": 1722,
+      "roots": 169
+    }
+  },
+  "expected_schedule_basis": "Counts computed solely from retained input histories, catalogues, and signature membership before any new evaluation policy outcomes; capped exact rows must remain explicit rather than change denominators.",
+  "extra_budget_percentages": [
+    0,
+    25,
+    50,
+    100
+  ],
+  "failure_handling": "Any capped root has unavailable exact frontiers for its whole grid; retain partial Bellman evidence, comparators, hindsight bounds, missing denominators and valid outputs; no truncation or cap increases",
+  "freeze_chronology": "Known baseline reproduced before freeze; new E and D_affordable decisions restricted to four development problems and tiny correctness fixtures before freeze",
+  "frontier_ties": "Prefer STOP, then smaller current action cost, then opaque action ID, then canonical child-choice encodings in fixed outcome order",
+  "group_source": "studies/acquisition_prior_robustness/structure_groups.json",
+  "hindsight_bound": "Minimum contradictory acquired subset cost lower-bounds a detected path cost; affordable hindsight count upper-bounds prospective detection and is not an executable auditor",
+  "hindsight_ties": "Minimum subset cost, then cardinality, then sorted opaque query IDs",
+  "integer_budget_grid": "Every integer from zero through unqueried catalogue cost at the original paid stopping history, inclusive",
+  "legacy_chronology": "Documented historical simulator defect remains unchanged and isolated; no imports or generation from that simulator",
+  "legacy_policy_semantics": "Original A-D rule and unaffordable-next-action cutoff retained unchanged; no reranking or budget input to their selectors",
+  "model_calls": 0,
+  "network_requests": 0,
+  "objective": "Deterministic attainable nondominated (detected distinct k2 signatures, sum of added actual retrieval cost across all compatible distinct k2 signatures)",
+  "omission_budgets": [
+    0,
+    1,
+    2
+  ],
+  "outcomes_per_query_cap": 2,
+  "populations": [
+    "original",
+    "new",
+    "all"
+  ],
+  "primary_comparison": "exact_frontier minus closure_informed_affordable at matched hard allowance, with separate realized spending and attained detection",
+  "prospective_information": "Fixed nominal model and k2 envelope for D, D_affordable and E; available budget only for D_affordable and E; never actual k, realized signature, unqueried answers, actual omissions, truth, hindsight subset, or evaluator failure labels",
+  "query_cap": 8,
+  "resource_accounting": "Per-root states, frontier sizes, child combinations, planner/checker CPU and wall time and process peak resource where practical; no new timing competition",
+  "root_grouping": "Group identical ordered paid H0 within each problem; verify every compatible hypothetical signature follows that same retained deterministic path and stopping point",
+  "sampling_inference": "None; no sampling intervals, significance claims, incident probabilities or deployment superiority",
+  "schema_version": 1,
+  "secondary_comparisons": [
+    "exact_frontier minus closure_informed",
+    "closure_informed_affordable minus closure_informed"
+  ],
+  "signature_cap": 256,
+  "signature_weighting": "Distinct observable cells of fixed k2 envelope have unit design weight; never parent/world multiplicity or a calibrated deployment prior",
+  "study_version": "exact-audit-frontier-v1",
+  "support_semantics": "Unchanged all-compatible-world actual-k support at percentage anchors; alarm, same-proposal warrant restoration, withdrawal, pending uncertainty and archive irreducibility remain separate"
+}

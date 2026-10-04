@@ -1,0 +1,54 @@
+{
+  "additional_spend_usd": "0",
+  "checked_at_utc": "2026-10-04T13:20:36.246652+00:00",
+  "credential_access": false,
+  "development": {
+    "anchor_cells": 288,
+    "anchor_paths": 2928,
+    "completed_roots": 15,
+    "historical_anchor_paths_reproduced": 1952,
+    "integer_budget_cells": 133,
+    "integer_paths": 2520,
+    "qualification_sha256": "a9f1c854bbeccf6fe714630efb5835026180d6d121ae05c52befcd9cf9aa9b05",
+    "status": "passed"
+  },
+  "execution_isolation": {
+    "environment": "env -i with only PATH and PYTHONDONTWRITEBYTECODE",
+    "python_socket_connections_and_name_resolution": "disabled"
+  },
+  "known_prior_study_outcomes_reproduced": true,
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_evaluation_policy_outcomes_observed": 0,
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 316
+  },
+  "schema_version": 1,
+  "status": "passed",
+  "tests": {
+    "dependency_scoped_historical_tests": 210,
+    "elapsed_seconds": 46.31,
+    "files": [
+      "tests/test_exact_audit_frontier.py",
+      "tests/test_exact_audit_execution.py",
+      "tests/test_exact_audit_planner_guards.py",
+      "tests/test_exact_audit_driver.py",
+      "tests/test_acquisition_model.py",
+      "tests/test_acquisition_policies.py",
+      "tests/test_archive_model_misspecification.py",
+      "tests/test_archive_misspecification_reference.py",
+      "tests/test_audit_aware_acquisition.py",
+      "tests/test_audit_acquisition_reference.py",
+      "tests/test_acquisition_prior_aggregation.py"
+    ],
+    "new_focused_tests": 86,
+    "passed": 296,
+    "scope": "New exact-audit tests plus finite acquisition, archive, audit, and structural aggregation dependencies; unrelated simulations, model evaluations, and wiki census were not rerun.",
+    "status": "passed"
+  }
+}

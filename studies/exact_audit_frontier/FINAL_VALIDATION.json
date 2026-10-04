@@ -1,0 +1,162 @@
+{
+  "additional_spend_usd": "0",
+  "artifact_sha256": {
+    "studies/exact_audit_frontier/ANALYSIS.md": "ef104990579afac04d8fe174fc5c8d916a934fa19bd05745d14e629bb01e6459",
+    "studies/exact_audit_frontier/INDEPENDENT_VALIDATION.json": "7a4308eb53158ac6272e71c2e61f4dbc2479e464da419eb2c1b9248d3fcc4e30",
+    "studies/exact_audit_frontier/METHOD.md": "04b43869271ef3469e7c619236d3d657b68f1a212420d7ee99067df314ebd49a",
+    "studies/exact_audit_frontier/OFFLINE_VERIFICATION.json": "e2162e0a2ff5a8b369b88f14d94bdbd8dff7c9ff10857b61b4506270cec367af",
+    "studies/exact_audit_frontier/RESULTS.md": "5c1c3cdf153fb9c5671012debce45d4c8122a4463a5262dc95614373effca6aa",
+    "studies/exact_audit_frontier/analysis.py": "3eef2030fce5a36cda700c73ff9f6265eb6bdd0f6aff45dfeb994ee45d435b18",
+    "studies/exact_audit_frontier/baseline_verification.json": "639d5a7eaf1df089e29bd2493feee5ef991f10015d77303dd24eb493d8d78626",
+    "studies/exact_audit_frontier/config.json": "3c48a1b2fe08c36b569450f8585386d46681ba563e5824c1d06c604df8728e08",
+    "studies/exact_audit_frontier/development_checks.json": "a9f1c854bbeccf6fe714630efb5835026180d6d121ae05c52befcd9cf9aa9b05",
+    "studies/exact_audit_frontier/development_legacy_audit.json.gz": "0026e86b5f7bb8061f870c965dc4764e917bdcd6e2ab434b412d3c42fb115631",
+    "studies/exact_audit_frontier/execution.py": "a246469ab6ccab509127cc42d6214d3d30bed46f358c28a881b5dc01cee41fec",
+    "studies/exact_audit_frontier/freeze.json": "fff39cd695f83308b3f76c018a84c1fa01720c14c684b37f9356ab96cb4a0bcb",
+    "studies/exact_audit_frontier/frontier.py": "8ce38cfa959ad360f94448fa02918f92e46048b14217c74bb57b12866147c222",
+    "studies/exact_audit_frontier/input_provenance.json": "4ae35d7b0fbb044fe73bfc2f2b6262c9f321b9c7662d0cbb309d84c27a5b9f66",
+    "studies/exact_audit_frontier/pre_freeze_checks.json": "10c3dacdcd04e0ee3c0cbeb0552fc62a862418f1af009a63fb43b78db337d386",
+    "studies/exact_audit_frontier/preservation.json": "8d348000e7ae5a5cc3dcb68ca17bec8ece8b55381b9f0776b2fe0bd73271c127",
+    "studies/exact_audit_frontier/reference.py": "6cf422fe1f20a76310f10620253eff4461d82af7f5962165988e00c02b1f9cdb",
+    "studies/exact_audit_frontier/results/certificates.json.gz": "d8e8e2c6d3fc7c0326e461fb5b57304d422d11617ddaffb4e234383fe02621eb",
+    "studies/exact_audit_frontier/results/design_runs.json.gz": "c67dad55b88e89a7510757b6c0f7e8af46f733e6b20e0b4cf7d506c7b4f80cbd",
+    "studies/exact_audit_frontier/results/design_summary.json.gz": "e67497490965b1ecdea1a9ad91f90abdf3dc3fba340f1253d837accf76f885ac",
+    "studies/exact_audit_frontier/results/independent_verification.json": "39aed892b433b754b726d0cb37fe09390d4f81e3ada7a283752c6ab338a0cc6c",
+    "studies/exact_audit_frontier/results/legacy_parity.json": "3d1154d963fe2f31464a83594bbeb2c8f460566a300ccdcd0b8fddb1ca6b6cd2",
+    "studies/exact_audit_frontier/results/manifest.json": "6177a235def766c08f38020c0ebd3b62487c1a9ae9c5cd00fe4735d296f8991d",
+    "studies/exact_audit_frontier/results/paired.json.gz": "bc90072af9ed7a7443a038421bb838845708c201649d2c4ae032170555cd43b0",
+    "studies/exact_audit_frontier/results/per_condition.json.gz": "6588592712427a84d7312269b9b9c1b1f305964140b7a8838622c103ff12fbbd",
+    "studies/exact_audit_frontier/results/roots.json.gz": "f57b4cd639edf95463405b83b09f8591ae5aafac023dbc6952014a5aa3420afc",
+    "studies/exact_audit_frontier/results/runs.json.gz": "976ee8e3f7b6b6c36644f6f071b1fb9ec912169b9026ccc94cb3ab52d44c7846",
+    "studies/exact_audit_frontier/results/summary.json.gz": "27166497a57242e986496141009d3d01554a844b2f3fefc8ff5467c8eebbeb64",
+    "studies/exact_audit_frontier/results/validation.json": "f6552e9cf74f127213f8dedd9240fd97f0bc571572cffcd0ff90fae88909358e",
+    "tests/test_exact_audit_driver.py": "2243e3b6dc4cfffc34b5b8677bb7ca84267703442961c0de6671dfedcdf5c0e3",
+    "tests/test_exact_audit_execution.py": "4c56fb85724525422628f0cc8364762c34feef2a1d7d65d5cf644e1c9a56c618",
+    "tests/test_exact_audit_frontier.py": "fc2815df8555abdde17ed3df72a2383e2ffa44479a4b6b6f11e7ea75da8e436d",
+    "tests/test_exact_audit_planner_guards.py": "03dc2a8996ee6f696fed60ff33a7717857d138d834813b0bbe34a3a18ea9ff22"
+  },
+  "checked_at_utc": "2026-10-04T13:34:38.206100+00:00",
+  "committed": false,
+  "completed_roots": 169,
+  "completed_schedule": {
+    "anchor_cells": 2880,
+    "anchor_runs": 30096,
+    "integer_design_runs_six_arms": 30510,
+    "root_integer_budget_cells": 1722,
+    "roots": 169
+  },
+  "credential_access": false,
+  "failures": [],
+  "freeze": {
+    "dependencies": 36,
+    "sha256": "fff39cd695f83308b3f76c018a84c1fa01720c14c684b37f9356ab96cb4a0bcb",
+    "unchanged_since_before_evaluation": true
+  },
+  "head": "ca563ee377a26a97dfe6144f99486ae15e7a69d0",
+  "historical_tracked_modifications": [],
+  "independent_arithmetic_checks": {
+    "anchor_summary_rows": 4320,
+    "cross_k_path_pairs": 10344,
+    "design_problem_anchor_rows": 160,
+    "design_summary_rows": 40,
+    "exact_numeric_checks": 650000,
+    "frontier_comparator_points": 10332,
+    "integer_root_budgets": 1722,
+    "legacy_anchor_parity_rows": 20064,
+    "paid_design_paths": 30510,
+    "paired_problem_rows": 4320,
+    "paired_summary_rows": 1080,
+    "population_cells": 8640
+  },
+  "legacy_anchor_reproduction": {
+    "excluded_fields": [
+      "selection_seconds",
+      "checking_seconds"
+    ],
+    "historical_anchor_runs": 20064,
+    "status": "passed"
+  },
+  "limitations": [
+    "Exactness concerns deterministic post-H0 policies under the fixed hypothetical k=2 distinct-signature census and supplied retrieval costs.",
+    "No randomized frontier, joint acquisition optimization, empirical deployment prior, causal inference or practical cost conversion is claimed.",
+    "Independent full-input verification reuses preserved physical semantics and certificate validators; the original nominal acquisition optimizer is not independently reproved.",
+    "Frontier computation does not optimize target-claim warrant. The adverse residual warrant and inspection outcomes are retained.",
+    "Repeated budgets, root states, k values and verification passes are not independent incidents; no sampling intervals or significance claims are made."
+  ],
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "missing_schedule_counts": {
+    "anchor_cells": 0,
+    "anchor_runs": 0,
+    "integer_design_runs_six_arms": 0,
+    "root_integer_budget_cells": 0,
+    "roots": 0
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 316
+  },
+  "published": false,
+  "pushed": false,
+  "reproduction_commands": [
+    ".venv/bin/python -m studies.exact_audit_frontier.analysis verify",
+    ".venv/bin/python -m studies.exact_audit_frontier.analysis run --output artifacts/exact-audit-frontier/replication"
+  ],
+  "schema_version": 1,
+  "semantic_verification": {
+    "anchor_grid_rows": 30096,
+    "certificate_references_checked": 181443,
+    "child_combinations_checked": 105551,
+    "completed_anchor_paths_checked": 30096,
+    "completed_design_paths_checked": 30510,
+    "design_grid_rows": 30510,
+    "distinct_certificate_all_query_witness_checks": 17330,
+    "distinct_certificates_checked": 7201,
+    "distinct_expanded_certificates_checked": 4773,
+    "distinct_nominal_certificates_checked": 2428,
+    "exact_optimality_status": "complete",
+    "exact_roots_unavailable": 0,
+    "exact_roots_verified": 169,
+    "hindsight_rows_checked": 431,
+    "hindsight_subsets_enumerated": 10688,
+    "independence_limits": "All Bellman actions/branches/frontiers, subset minima and path semantics checked without production solver/runtime calls; preserved physical reconstruction, claim semantics and certificate checker reused. Original nominal optimizer not independently reproved. Tiny oracle enumerates whole trees without DP.",
+    "problem_count": 40,
+    "root_budgets_checked": 1722,
+    "root_count": 169,
+    "states_checked": 53290,
+    "status": "passed",
+    "unavailable_anchor_rows": 0,
+    "unavailable_design_rows": 0,
+    "unavailable_root_ids": [],
+    "unreferenced_certificates_checked": 0
+  },
+  "staged_paths": [],
+  "status": "passed",
+  "technical_document_local_links_checked": 31,
+  "tests": {
+    "dependency_scoped_historical_tests": 210,
+    "elapsed_seconds": 46.31,
+    "files": [
+      "tests/test_exact_audit_frontier.py",
+      "tests/test_exact_audit_execution.py",
+      "tests/test_exact_audit_planner_guards.py",
+      "tests/test_exact_audit_driver.py",
+      "tests/test_acquisition_model.py",
+      "tests/test_acquisition_policies.py",
+      "tests/test_archive_model_misspecification.py",
+      "tests/test_archive_misspecification_reference.py",
+      "tests/test_audit_aware_acquisition.py",
+      "tests/test_audit_acquisition_reference.py",
+      "tests/test_acquisition_prior_aggregation.py"
+    ],
+    "new_focused_tests": 86,
+    "passed": 296,
+    "scope": "New exact-audit tests plus finite acquisition, archive, audit, and structural aggregation dependencies; unrelated simulations, model evaluations, and wiki census were not rerun.",
+    "status": "passed"
+  },
+  "unavailable_roots": []
+}

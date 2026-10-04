@@ -1,0 +1,81 @@
+# Exact deterministic conflict detection after fixed acquisition
+
+The [analysis protocol](ANALYSIS.md) fixes one finite objective and its comparisons. The mathematics below is standard finite dynamic programming and test selection applied to a declared archive contract; it is not a general guarantee about investigators or arbitrary logs.
+
+## Observation contract and sufficient state
+
+Reuse the nominal model M0 and fixed k=2 observable signature envelope Sigma2. Every nominal complete signature belongs to Sigma2. Query outcomes are deterministic typed payloads given a signature, prices are positive integers, no action can be paid twice, and every alias uses the same physical record membership with its original separate price. Initial evidence remains protected. The distinction between physical events, nominal archive, post-omission archive, and actually acquired records follows the [unchanged omission method](../archive_model_misspecification/METHOD.md). An empty lookup is not evidence of nonoccurrence; an authentic completeness assertion does not automatically remain true after allowed omissions.
+
+Each root is a preserved ordered nominal stopping history H0, its original proposal, accounting, and certificate. Group only identical H0 values in one problem. Check that every design signature agreeing with H0 would traverse the same deterministic original acquisition path and stop there. Root membership is therefore an observable information state, not hidden information inferred from which signature the evaluator chose. Every design signature belongs to exactly one verified root; root aggregation must not duplicate its weight.
+
+At an additional paid history H, N is the set of nominal worlds consistent with H0 and H; T is the set of distinct Sigma2 signatures consistent with that same evidence; U contains unqueried actions; and b is unused hard extra budget. Empty T is an execution/model failure. Empty N with nonempty T is a nominal-model contradiction, not vacuous certainty about the claim. Nominal worlds may share a signature, but design reward and cost weight each member of T once.
+
+The planner memoizes `(nominal_world_mask, design_signature_mask, sorted_remaining_action_ids, integer_budget)` within pins for the nominal model, sorted fixed-k=2 table, and unchanged root. This is sufficient because future observations, allowed actions, prices, detection reward, and design mass depend only on those values. Actual k, physical parent multiplicity, omitted IDs, target truth, realized full answers, and future outcomes are absent. Ordered paid histories are retained for execution and certificates even if equivalent information states share computation.
+
+## Set-valued recurrence and deterministic policy
+
+For a state x=(N,T,U,b), let F(x) contain nondominated attainable integer pairs (d,l). Here d is the number of signatures in T soundly detected within the allowance; l is the sum of further realized retrieval costs over **every** signature in T, including nominal-compatible signatures. Pair (d1,l1) dominates (d2,l2) when d1≥d2 and l1≤l2 with at least one strict inequality.
+
+If N is empty, immediately return `{(|T|,0)}` and permit no further query. Otherwise STOP supplies `(0,0)`. For every a∈U with c(a)≤b, partition N and T by declared outcome o. Keep each nonempty T_o branch, including those with empty N_o. For each choice `(d_o,l_o)∈F(N_o,T_o,U\{a},b−c(a))` in every such branch, construct
+
+    d = sum_o d_o
+    l = |T| * c(a) + sum_o l_o.
+
+Union all action combinations with STOP, then remove dominated pairs. The factor |T| charges the first lookup on every signature reaching the state. Each branch has the full residual pathwise budget b−c(a): only one outcome occurs in an actual investigation, so the budget is not divided among counterfactual branches.
+
+Enumerate **all** affordable actions, including aliases and queries constant in N. A nominally constant query can expose a contradiction; the original acquisition planner's constant-query elimination cannot be reused for this objective. This implementation also keeps queries constant across T rather than depending on an additional pruning argument. Strictly positive prices and the smaller remaining-action set make recursion finite.
+
+For equal pairs, prefer STOP when applicable, then lower current action cost, then lexicographically smaller opaque action ID, then canonical JSON bytes of child choices. Child entries are in fixed lexicographic outcome order and encode `[outcome_id, child_state_id, d, l]`. State identifiers are stable encodings of the pinned sufficient state. Display frontiers by decreasing d then increasing l. Canonical E chooses maximal d, then minimal l, with the retained equal-pair backpointer. Reconstruction follows those hypothetical backpointers only after each charged answer arrives; it does not receive the realized full signature.
+
+**Exactness by induction.** For no remaining action or no affordable action with nonempty N, only STOP is feasible and `(0,0)` is exact. Empty N is an immediate-alarm terminal under the contract. For the induction step, every feasible deterministic policy at a nonterminal state either stops or begins with one affordable action. Conditional on its observed outcome it executes a feasible policy with one fewer unqueried action and the residual hard budget. By induction, each child's attainable pair is represented or dominated by its frontier. Replacing a dominated child by its dominating feasible policy cannot decrease parent detection or increase parent cost, because the branch contributions add with nonnegative weights. The recurrence enumerates every possible first action and combination of surviving child choices, so it retains every nondominated attainable parent pair. Conversely, every constructed pair has a feasible action and feasible child policies, obeys the pathwise budget, and is attainable. Thus pruning preserves the entire deterministic Pareto frontier, and the lexicographic primary choice has maximal detection and least all-signature cost at that detection.
+
+This proof does not enumerate randomized mixtures. Those may produce additional intermediate tradeoffs. Exactness is conditional on this finite envelope, one-signature-one-weight objective, supplied query interface, and fixed H0. It is neither global acquisition-and-audit optimality nor cost optimality for a k=0 deployment population.
+
+## Comparator execution and Pareto witnesses
+
+Preserve A/B/C/D from the [original audit selectors](../audit_aware_acquisition/auditing.py). Their next action is budget independent; if it is too expensive, stop without choosing another. D's score is the number of distinct compatible k=2 signatures whose answer immediately empties N, divided by action cost. Positive-score ties use lower price then opaque ID; zero-score fallback is constant-first, then cheapest action. All hypotheses and observable outcomes remain unchanged.
+
+D_affordable uses the same score and ties, restricting next-action candidates to unqueried a with c(a)≤b. Its zero-score fallback is constant-first among those candidates, then cheapest affordable action. When none is affordable it stops. Restricting candidates is not deleting queries from the model. E and D_affordable may select different histories at different allowances, so lower-budget results are executed separately rather than truncated from one high-budget path. Their primary comparison supplies identical nominal/envelope and budget information.
+
+Execute every policy's root/budget/signature trajectory directly through the preserved passive lookup at each integer budget, charge actual canonical response bytes and original prices, and check nominal compatibility after every answer. Neither E nor D_affordable is reconstructed by censoring a high-budget execution. Percentage anchors reference their corresponding already-executed integer-budget trajectory, then check that same final paid history under actual Mk. Reusing an identical path across anchors or k conditions creates no additional paid session or model trial. First conflict ends retrieval and produces a checked contradiction certificate. At no-alarm stopping, the operational output is `no_conflict_observed` with coverage. It establishes no expanded warrant or model validity.
+
+For every root and integer allowance, sum a comparator's actual detected indicators and realized added costs over the same T(H0). Its point is feasible for the exact recurrence. Among frontier points with at least its detection and at most its cost, select a witness by minimum cost, then maximum detection, then canonical point encoding. Retain equality separately from strict domination and keep the chosen point's backpointer evidence. E can detect more but cost more than a lower-detection frontier point; the primary optimum must not be advertised as the cheapest policy irrespective of detection. Costs at “matched detection” require equal or better detection under the same census and hard budget, not comparison with an intentionally weaker policy.
+
+## Hindsight contradictory subsets and search bounds
+
+For each root and hypothetical signature s, let V=N(H0) and let U0 be its unqueried actions. Define
+
+    C_a(s) = {w in V : the nominal answer of w to a differs from s[a]}.
+
+A subset J⊆U0 contradicts every nominal witness exactly when the union of C_a(s), a∈J, equals V. This is the weighted set-cover characterization: remaining compatibility is `V \ union_a C_a(s)`, which is empty precisely on a cover. Enumerate every subset independently; minimize summed positive costs, then cardinality, then sorted opaque IDs. Preserve actual typed outcomes, coverage, minimality checks, and a directly verified contradiction certificate. Aliases retain consistent outcomes and are not independent evidence; their different prices can affect the least-cost paid subset.
+
+V is nonempty at a valid retained root, so the empty subset is not contradictory. If s is nominal-compatible, one world agreeing with its entire signature survives every subset; represent the minimum as explicit unavailable/`no_catalogue_contradiction`. If s is new, the full U0 contradicts V, so a finite minimum m(s,H0) exists. This enumeration knows the complete hypothetical s in hindsight; it is an evaluator bound and is never a free hint to an auditor.
+
+**Necessary path bound.** A sound detected path for s ends with empty nominal support. Its extra paid actions therefore form one feasible contradictory subset J. The minimum subset cost cannot exceed that path's actual added cost. Hence, for budget b,
+
+    dE(H0,b) <= h(H0,b)
+    h(H0,b) = count{s in T(H0) : m(s,H0) is finite and m(s,H0) <= b}.
+
+This count grants signature-specific knowledge of which subset to retrieve. It is not sufficient for a single prospective policy to find every cheap subset within b. The finite **search gap** is h−dE; the **policy-selection gap** for the matched-information comparator is dE−dD_affordable. If C is the total number of new signatures at the root, then its missed conflicts decompose as
+
+    C − dD_affordable = (C − h) + (h − dE) + (dE − dD_affordable).
+
+The first term is unavoidable even with hindsight at that allowance, the second is the prospective information constraint, and the third is the fixed greedy rule's loss against this exact objective. This is a decomposition of counts, not three identified disjoint sets of signatures: E and D_affordable may detect different members even when E detects at least as many. Sum root counts only after assigning each signature once. If an exact root is unavailable, retain h and comparator results but leave terms requiring dE unavailable. Do not use a best-so-far value to claim a search gap or an optimum.
+
+## Sound alarms, warrant, and limits
+
+**No false alarms under nominal support.** For a nominally possible complete signature s, select one nominal witness agreeing with all its answers and initial evidence. At H0 it survives. Inductively, every truthful paid answer along any allowed adaptive path agrees with that witness, so N cannot become empty. This proof assumes the supplied nominal support, deterministic truthful lookup, and unchanged catalogue; it is not an empirical false-alarm estimate. Sound detection of a new signature proves incompatibility with M0, not target falsity or a unique omission cause.
+
+At full residual budget, querying all remaining actions is a feasible policy detecting every new signature, so E's maximum detection equals the complete-conflict count. Maximum detection is nondecreasing with budget because a policy feasible under a smaller allowance remains feasible under a larger one. Neither statement requires nested canonical paths. E can minimize cost by stopping without alarm as soon as further detection is impossible; harmless unqueried evidence might still improve target-claim warrant. Therefore full detection does not force the exhaustive-reference 71/86 unsupported-original counts.
+
+Retrospective support uses every actual-Mk world compatible with the same paid evidence. A definite proposal is restored only if final expanded support agrees with that same proposal. Withdrawal on alarm is independent: it can coincide with mathematical restoration but never causes it. Record unwithdrawn restoration separately, and do not call an opposite definite answer restoration. For unresolved support, archive irreducibility requires every still-compatible complete-signature cell to contain both claim values; otherwise uncertainty remains pending. Opposite-claim worlds sharing the entire catalogue signature remain indistinguishable by any of these policies. Exposure remains different from source use.
+
+## Checkable exactness and bounded resources
+
+Save sufficient-state tables, examined action/branch structure, nondominated pairs, and canonical backpointers so a separate checker can reconstruct Bellman candidates and nondominance rather than trust a reported optimum. Qualify complete frontiers against a separate exhaustive enumeration of all deterministic decision trees on tiny fixtures with at most three actions. Full-input checks independently filter saved answer tables for every executed path, recompute charges and rewards, and enumerate hindsight subsets separately. These checks share declared physical semantics, canonicalization, and preserved certificate validators; they do not independently establish real-world archive assumptions or reprove the original nominal acquisition optimizer.
+
+The per-root solver shares memo entries across b=0,…,R. Admit at most 100,000 distinct sufficient states and count every evaluated Cartesian tuple of child-frontier choices toward 10,000,000 combinations; STOP is not a child combination. Caps do not reset between budgets. A cap makes the entire root's exact result unavailable, withholding all exact-budget claims while preserving completed Bellman tables, pending-state evidence, comparator runs, and valid hindsight results. Retain the root in completion denominators. Release root caches before moving to the next root in deterministic order.
+
+Record whole-solve state/frontier/combination counts and planner CPU/wall resources separately from per-root reconstruction CPU/wall time for all arms over all integer-budget executions. Shared certificate generation/checking records wall time; independent saved-evidence verification records CPU and wall time. One process-wide peak RSS from `resource.getrusage` is a cumulative execution measurement, not isolated per-arm memory. Caches are released after the root's complete grid and replay, before the next root. These scopes describe whole hypothetical computation separately from any one charged realized audit. No additional memory cap, tracemalloc competition, deployment time/money conversion, new prior, sampled interval, dataset expansion, or scalability claim is introduced.
+
+For historical context only, Golovin, Krause, and Ray, “Near-Optimal Bayesian Active Learning with Noisy Observations,” NeurIPS 2010, arXiv:1010.3091, studies costly adaptive tests and equivalence-class determination. No guarantee from that different objective is imported here, and this offline task conducts no new literature search.

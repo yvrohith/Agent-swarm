@@ -1,0 +1,10 @@
+{
+  "development_legacy_audit": {
+    "byte_identical": true,
+    "copy": "studies/exact_audit_frontier/development_legacy_audit.json.gz",
+    "purpose": "Portable exact copy of the four completed synthetic development audit outputs; no regenerated inputs or outcomes.",
+    "sha256": "0026e86b5f7bb8061f870c965dc4764e917bdcd6e2ab434b412d3c42fb115631",
+    "source": "artifacts/audit-aware-acquisition/development-v1/runs.json.gz"
+  },
+  "schema_version": 1
+}

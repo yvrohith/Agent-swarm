@@ -1,0 +1,70 @@
+{
+  "additional_spend_usd": "0",
+  "aggregate_cells": 2880,
+  "certificate_checks": {
+    "cache_references": 245441,
+    "certificate_generation_seconds": 1.4620326782314805,
+    "certificate_verification_seconds": 45.759188281939714,
+    "distinct_certificates_verified": 7201,
+    "model_contract_history_keys": 7201
+  },
+  "completed_anchor_runs": 30096,
+  "completed_cells": 2880,
+  "completed_design_runs": 30510,
+  "completed_roots": 169,
+  "expected_schedule": {
+    "anchor_cells": 2880,
+    "anchor_runs": 30096,
+    "integer_design_runs_six_arms": 30510,
+    "root_integer_budget_cells": 1722,
+    "roots": 169
+  },
+  "failures": [],
+  "frozen_dependencies": 36,
+  "missing_problem_ids": [],
+  "missing_schedule_counts": {
+    "anchor_cells": 0,
+    "anchor_runs": 0,
+    "integer_design_runs_six_arms": 0,
+    "root_integer_budget_cells": 0,
+    "roots": 0
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 316
+  },
+  "problems": 40,
+  "resources": {
+    "independent_checker": {
+      "cpu_seconds": 65.97403198200001,
+      "wall_seconds": 65.98378015500202
+    },
+    "peak_scope": "Cumulative process peak, not an isolated per-policy measurement",
+    "process_peak_rss_kib": 1070508,
+    "serialization": {
+      "cpu_seconds": 5.716371148999997,
+      "wall_seconds": 5.716792671002622
+    },
+    "total_cpu_seconds": 154.076544779,
+    "total_wall_seconds": 154.10351020700182
+  },
+  "retained_schedule": {
+    "anchor_cells": 2880,
+    "anchor_runs": 30096,
+    "integer_design_runs_six_arms": 30510,
+    "root_integer_budget_cells": 1722,
+    "roots": 169
+  },
+  "schedule": {
+    "anchor_cells": 2880,
+    "anchor_runs": 30096,
+    "integer_design_runs_six_arms": 30510,
+    "root_integer_budget_cells": 1722,
+    "roots": 169
+  },
+  "split": "evaluation",
+  "status": "passed",
+  "unavailable_roots": []
+}

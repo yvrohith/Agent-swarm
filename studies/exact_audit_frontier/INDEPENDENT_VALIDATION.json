@@ -1,0 +1,1128 @@
+{
+  "adverse_warrant_and_coverage": [
+    {
+      "added_cost": 4235,
+      "arm": "closure_informed_affordable",
+      "budget_percent": 100,
+      "catalogue_coverage_fraction": "1",
+      "catalogue_exhausted": 392,
+      "detected": 0,
+      "finally_unsupported_definite": 71,
+      "k": 1,
+      "population": "original",
+      "signatures": 392,
+      "warrant_restored": 25,
+      "withdrawn_definite": 0
+    },
+    {
+      "added_cost": 262,
+      "arm": "exact_frontier",
+      "budget_percent": 100,
+      "catalogue_coverage_fraction": "11027/27440",
+      "catalogue_exhausted": 4,
+      "detected": 0,
+      "finally_unsupported_definite": 93,
+      "k": 1,
+      "population": "original",
+      "signatures": 392,
+      "warrant_restored": 3,
+      "withdrawn_definite": 0
+    },
+    {
+      "added_cost": 4235,
+      "arm": "closure_informed_affordable",
+      "budget_percent": 100,
+      "catalogue_coverage_fraction": "1",
+      "catalogue_exhausted": 392,
+      "detected": 0,
+      "finally_unsupported_definite": 86,
+      "k": 2,
+      "population": "original",
+      "signatures": 392,
+      "warrant_restored": 10,
+      "withdrawn_definite": 0
+    },
+    {
+      "added_cost": 262,
+      "arm": "exact_frontier",
+      "budget_percent": 100,
+      "catalogue_coverage_fraction": "11027/27440",
+      "catalogue_exhausted": 4,
+      "detected": 0,
+      "finally_unsupported_definite": 93,
+      "k": 2,
+      "population": "original",
+      "signatures": 392,
+      "warrant_restored": 3,
+      "withdrawn_definite": 0
+    }
+  ],
+  "all_integer_grid_gaps": {
+    "negative_affordability_gain_cells": 0,
+    "note": "Cells repeat roots and signatures at different budgets; these sums are not distinct incident counts.",
+    "policy_selection_gap_sum_over_repeated_budget_cells": 74,
+    "positive_affordability_gain_cells": 1,
+    "positive_policy_selection_gap_cells": 55,
+    "positive_search_gap_cells": 0,
+    "root_budget_cells": 1722
+  },
+  "audit_script_sha256": "edffc4fde7d13947ed7610692ce8101bba9cc54dbaaa01261bee022ed590e611",
+  "canonical_exact_cost_tradeoffs": {
+    "comparisons": [
+      {
+        "comparator": "no_audit",
+        "counts": {
+          "canonical_cost_equal": 1514,
+          "canonical_cost_higher": 208,
+          "canonical_cost_lower": 0,
+          "corresponding_detection_difference_sum_repeated_cells": 310,
+          "cost_higher_with_detection_higher": 208,
+          "positive_cost_difference_sum_repeated_cells": 3200,
+          "root_budget_cells": 1722
+        },
+        "examples": [
+          {
+            "comparator_cost": 0,
+            "comparator_detection": 0,
+            "cost_difference": 38,
+            "detection_difference": 1,
+            "exact_cost": 38,
+            "exact_detection": 1,
+            "integer_budget": 9,
+            "problem_id": "acq_94213",
+            "root_id": "audit_root_af52185994a35e6d25773c41"
+          },
+          {
+            "comparator_cost": 0,
+            "comparator_detection": 0,
+            "cost_difference": 35,
+            "detection_difference": 1,
+            "exact_cost": 35,
+            "exact_detection": 1,
+            "integer_budget": 10,
+            "problem_id": "acq_94213",
+            "root_id": "audit_root_af52185994a35e6d25773c41"
+          },
+          {
+            "comparator_cost": 0,
+            "comparator_detection": 0,
+            "cost_difference": 35,
+            "detection_difference": 1,
+            "exact_cost": 35,
+            "exact_detection": 1,
+            "integer_budget": 11,
+            "problem_id": "acq_94213",
+            "root_id": "audit_root_af52185994a35e6d25773c41"
+          }
+        ],
+        "maximum_positive_cost_difference": 38
+      },
+      {
+        "comparator": "cost_order",
+        "counts": {
+          "canonical_cost_equal": 324,
+          "canonical_cost_higher": 8,
+          "canonical_cost_lower": 1390,
+          "corresponding_detection_difference_sum_repeated_cells": 12,
+          "cost_higher_with_detection_higher": 8,
+          "positive_cost_difference_sum_repeated_cells": 36,
+          "root_budget_cells": 1722
+        },
+        "examples": [
+          {
+            "comparator_cost": 4,
+            "comparator_detection": 0,
+            "cost_difference": 12,
+            "detection_difference": 2,
+            "exact_cost": 16,
+            "exact_detection": 2,
+            "integer_budget": 4,
+            "problem_id": "acq_94221",
+            "root_id": "audit_root_416a8fd66913c6abd3bb76e1"
+          },
+          {
+            "comparator_cost": 18,
+            "comparator_detection": 0,
+            "cost_difference": 6,
+            "detection_difference": 2,
+            "exact_cost": 24,
+            "exact_detection": 2,
+            "integer_budget": 4,
+            "problem_id": "acq_94229",
+            "root_id": "audit_root_a53bad2683ef787b0366738c"
+          },
+          {
+            "comparator_cost": 18,
+            "comparator_detection": 0,
+            "cost_difference": 4,
+            "detection_difference": 2,
+            "exact_cost": 22,
+            "exact_detection": 2,
+            "integer_budget": 5,
+            "problem_id": "acq_94229",
+            "root_id": "audit_root_a53bad2683ef787b0366738c"
+          }
+        ],
+        "maximum_positive_cost_difference": 12
+      },
+      {
+        "comparator": "constant_first",
+        "counts": {
+          "canonical_cost_equal": 451,
+          "canonical_cost_higher": 4,
+          "canonical_cost_lower": 1267,
+          "corresponding_detection_difference_sum_repeated_cells": 6,
+          "cost_higher_with_detection_higher": 4,
+          "positive_cost_difference_sum_repeated_cells": 34,
+          "root_budget_cells": 1722
+        },
+        "examples": [
+          {
+            "comparator_cost": 12,
+            "comparator_detection": 0,
+            "cost_difference": 12,
+            "detection_difference": 2,
+            "exact_cost": 24,
+            "exact_detection": 2,
+            "integer_budget": 4,
+            "problem_id": "acq_94229",
+            "root_id": "audit_root_a53bad2683ef787b0366738c"
+          },
+          {
+            "comparator_cost": 12,
+            "comparator_detection": 0,
+            "cost_difference": 10,
+            "detection_difference": 2,
+            "exact_cost": 22,
+            "exact_detection": 2,
+            "integer_budget": 5,
+            "problem_id": "acq_94229",
+            "root_id": "audit_root_a53bad2683ef787b0366738c"
+          },
+          {
+            "comparator_cost": 6,
+            "comparator_detection": 0,
+            "cost_difference": 6,
+            "detection_difference": 1,
+            "exact_cost": 12,
+            "exact_detection": 1,
+            "integer_budget": 4,
+            "problem_id": "acq_94211",
+            "root_id": "audit_root_59736b1878542417b7870194"
+          }
+        ],
+        "maximum_positive_cost_difference": 12
+      },
+      {
+        "comparator": "closure_informed",
+        "counts": {
+          "canonical_cost_equal": 458,
+          "canonical_cost_higher": 0,
+          "canonical_cost_lower": 1264,
+          "corresponding_detection_difference_sum_repeated_cells": 0,
+          "cost_higher_with_detection_higher": 0,
+          "positive_cost_difference_sum_repeated_cells": 0,
+          "root_budget_cells": 1722
+        },
+        "examples": [],
+        "maximum_positive_cost_difference": 0
+      },
+      {
+        "comparator": "closure_informed_affordable",
+        "counts": {
+          "canonical_cost_equal": 323,
+          "canonical_cost_higher": 0,
+          "canonical_cost_lower": 1399,
+          "corresponding_detection_difference_sum_repeated_cells": 0,
+          "cost_higher_with_detection_higher": 0,
+          "positive_cost_difference_sum_repeated_cells": 0,
+          "root_budget_cells": 1722
+        },
+        "examples": [],
+        "maximum_positive_cost_difference": 0
+      }
+    ],
+    "scope": "All 1,722 integer root-budget cells for each comparator; repeated budgets are not distinct incidents. Canonical E maximizes detection before minimizing cost; a weakly dominating frontier witness can differ from canonical E."
+  },
+  "checks": {
+    "anchor_summary_rows": 4320,
+    "cross_k_path_pairs": 10344,
+    "design_problem_anchor_rows": 160,
+    "design_summary_rows": 40,
+    "exact_numeric_checks": 650000,
+    "frontier_comparator_points": 10332,
+    "integer_root_budgets": 1722,
+    "legacy_anchor_parity_rows": 20064,
+    "paid_design_paths": 30510,
+    "paired_problem_rows": 4320,
+    "paired_summary_rows": 1080,
+    "population_cells": 8640
+  },
+  "created_at_utc": "2026-10-04T13:25:44.030443+00:00",
+  "detected_path_hindsight_lower_bound_checks": 1199,
+  "frozen_semantic_checker_result": {
+    "anchor_grid_rows": 30096,
+    "certificate_references_checked": 181443,
+    "child_combinations_checked": 105551,
+    "completed_anchor_paths_checked": 30096,
+    "completed_design_paths_checked": 30510,
+    "design_grid_rows": 30510,
+    "distinct_certificate_all_query_witness_checks": 17330,
+    "distinct_certificates_checked": 7201,
+    "distinct_expanded_certificates_checked": 4773,
+    "distinct_nominal_certificates_checked": 2428,
+    "exact_optimality_status": "complete",
+    "exact_roots_unavailable": 0,
+    "exact_roots_verified": 169,
+    "hindsight_rows_checked": 431,
+    "hindsight_subsets_enumerated": 10688,
+    "independence_limits": "All Bellman actions/branches/frontiers, subset minima and path semantics checked without production solver/runtime calls; preserved physical reconstruction, claim semantics and certificate checker reused. Original nominal optimizer not independently reproved. Tiny oracle enumerates whole trees without DP.",
+    "problem_count": 40,
+    "root_budgets_checked": 1722,
+    "root_count": 169,
+    "states_checked": 53290,
+    "status": "passed",
+    "unavailable_anchor_rows": 0,
+    "unavailable_design_rows": 0,
+    "unavailable_root_ids": [],
+    "unreferenced_certificates_checked": 0
+  },
+  "headline_paired": [
+    {
+      "budget_percent": 50,
+      "k": 1,
+      "left": "exact_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 39,
+          "mean": {
+            "exact": "-82471/25200",
+            "value": -3.27265873015873
+          },
+          "tied": 1
+        },
+        "added_cost_at_detection": {
+          "defined_problems": 11,
+          "higher": 3,
+          "lower": 0,
+          "mean": {
+            "exact": "7/22",
+            "value": 0.3181818181818182
+          },
+          "tied": 8
+        },
+        "catalogue_coverage_fraction": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 39,
+          "mean": {
+            "exact": "-33541/126000",
+            "value": -0.2661984126984127
+          },
+          "tied": 1
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "higher": 8,
+          "lower": 0,
+          "mean": {
+            "exact": "13/44",
+            "value": 0.29545454545454547
+          },
+          "tied": 14
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "higher": 1,
+          "lower": 0,
+          "mean": {
+            "exact": "1/400",
+            "value": 0.0025
+          },
+          "tied": 39
+        },
+        "warrant_restored": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 1,
+          "mean": {
+            "exact": "-1/400",
+            "value": -0.0025
+          },
+          "tied": 39
+        }
+      },
+      "population": "all",
+      "right": "closure_informed_affordable",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "k": 1,
+      "left": "exact_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 39,
+          "mean": {
+            "exact": "-29927/9450",
+            "value": -3.166878306878307
+          },
+          "tied": 1
+        },
+        "added_cost_at_detection": {
+          "defined_problems": 11,
+          "higher": 3,
+          "lower": 0,
+          "mean": {
+            "exact": "11/40",
+            "value": 0.275
+          },
+          "tied": 8
+        },
+        "catalogue_coverage_fraction": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 39,
+          "mean": {
+            "exact": "-48857/189000",
+            "value": -0.2585026455026455
+          },
+          "tied": 1
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "higher": 8,
+          "lower": 0,
+          "mean": {
+            "exact": "9/34",
+            "value": 0.2647058823529412
+          },
+          "tied": 14
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "higher": 1,
+          "lower": 0,
+          "mean": {
+            "exact": "1/600",
+            "value": 0.0016666666666666668
+          },
+          "tied": 39
+        },
+        "warrant_restored": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 1,
+          "mean": {
+            "exact": "-1/600",
+            "value": -0.0016666666666666668
+          },
+          "tied": 39
+        }
+      },
+      "population": "all",
+      "right": "closure_informed_affordable",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 50,
+      "k": 1,
+      "left": "exact_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "higher": 3,
+          "lower": 7,
+          "mean": {
+            "exact": "-31/44",
+            "value": -0.7045454545454546
+          },
+          "tied": 12
+        },
+        "added_cost_at_detection": {
+          "defined_problems": 11,
+          "higher": 3,
+          "lower": 0,
+          "mean": {
+            "exact": "7/22",
+            "value": 0.3181818181818182
+          },
+          "tied": 8
+        },
+        "catalogue_coverage_fraction": {
+          "defined_problems": 22,
+          "higher": 1,
+          "lower": 8,
+          "mean": {
+            "exact": "-743/9240",
+            "value": -0.0804112554112554
+          },
+          "tied": 13
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "higher": 8,
+          "lower": 0,
+          "mean": {
+            "exact": "13/44",
+            "value": 0.29545454545454547
+          },
+          "tied": 14
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 22,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22
+        },
+        "warrant_restored": {
+          "defined_problems": 22,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22
+        }
+      },
+      "population": "new",
+      "right": "closure_informed_affordable",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "k": 1,
+      "left": "exact_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 22,
+          "higher": 3,
+          "lower": 7,
+          "mean": {
+            "exact": "-35/68",
+            "value": -0.5147058823529411
+          },
+          "tied": 12
+        },
+        "added_cost_at_detection": {
+          "defined_problems": 11,
+          "higher": 3,
+          "lower": 0,
+          "mean": {
+            "exact": "11/40",
+            "value": 0.275
+          },
+          "tied": 8
+        },
+        "catalogue_coverage_fraction": {
+          "defined_problems": 22,
+          "higher": 1,
+          "lower": 8,
+          "mean": {
+            "exact": "-79/1190",
+            "value": -0.06638655462184874
+          },
+          "tied": 13
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 22,
+          "higher": 8,
+          "lower": 0,
+          "mean": {
+            "exact": "9/34",
+            "value": 0.2647058823529412
+          },
+          "tied": 14
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 22,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22
+        },
+        "warrant_restored": {
+          "defined_problems": 22,
+          "higher": 0,
+          "lower": 0,
+          "mean": {
+            "exact": "0",
+            "value": 0.0
+          },
+          "tied": 22
+        }
+      },
+      "population": "new",
+      "right": "closure_informed_affordable",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 50,
+      "k": 1,
+      "left": "exact_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 39,
+          "mean": {
+            "exact": "-5933311/1713600",
+            "value": -3.462483076563959
+          },
+          "tied": 1
+        },
+        "added_cost_at_detection": {
+          "defined_problems": 0,
+          "higher": 0,
+          "lower": 0,
+          "mean": null,
+          "tied": 0
+        },
+        "catalogue_coverage_fraction": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 39,
+          "mean": {
+            "exact": "-598037/2142000",
+            "value": -0.2791956115779645
+          },
+          "tied": 1
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 0,
+          "higher": 0,
+          "lower": 0,
+          "mean": null,
+          "tied": 0
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "higher": 1,
+          "lower": 0,
+          "mean": {
+            "exact": "1/360",
+            "value": 0.002777777777777778
+          },
+          "tied": 39
+        },
+        "warrant_restored": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 1,
+          "mean": {
+            "exact": "-1/360",
+            "value": -0.002777777777777778
+          },
+          "tied": 39
+        }
+      },
+      "population": "original",
+      "right": "closure_informed_affordable",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "k": 1,
+      "left": "exact_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 39,
+          "mean": {
+            "exact": "-1087147/321300",
+            "value": -3.383588546529723
+          },
+          "tied": 1
+        },
+        "added_cost_at_detection": {
+          "defined_problems": 0,
+          "higher": 0,
+          "lower": 0,
+          "mean": null,
+          "tied": 0
+        },
+        "catalogue_coverage_fraction": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 39,
+          "mean": {
+            "exact": "-3505573/12852000",
+            "value": -0.2727647836912543
+          },
+          "tied": 1
+        },
+        "detection_fraction_conflicts": {
+          "defined_problems": 0,
+          "higher": 0,
+          "lower": 0,
+          "mean": null,
+          "tied": 0
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "higher": 1,
+          "lower": 0,
+          "mean": {
+            "exact": "1/540",
+            "value": 0.001851851851851852
+          },
+          "tied": 39
+        },
+        "warrant_restored": {
+          "defined_problems": 40,
+          "higher": 0,
+          "lower": 1,
+          "mean": {
+            "exact": "-1/540",
+            "value": -0.001851851851851852
+          },
+          "tied": 39
+        }
+      },
+      "population": "original",
+      "right": "closure_informed_affordable",
+      "weighting": "structure_balanced"
+    }
+  ],
+  "headlines": [
+    {
+      "arms": {
+        "closure_informed": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        },
+        "closure_informed_affordable": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        },
+        "constant_first": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        },
+        "cost_order": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        },
+        "exact_frontier": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        },
+        "no_audit": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        }
+      },
+      "budget_percent": 0,
+      "counts": {
+        "affordability_gain": 0,
+        "exact_detection": 0,
+        "full_conflicts": 39,
+        "hindsight_feasible": 0,
+        "hindsight_impossible": 39,
+        "policy_selection_gap": 0,
+        "search_gap": 0
+      }
+    },
+    {
+      "arms": {
+        "closure_informed": {
+          "d": 7,
+          "detected_cost_sum": 10,
+          "dominating_cost": 26,
+          "dominating_detection": 7,
+          "frontier_matched_detection_cost_saving": 407,
+          "l": 433,
+          "new_signature_cost_sum": 35,
+          "nominal_compatible_cost_sum": 398,
+          "strictly_dominated_roots": 70,
+          "weakly_dominated_roots": 169
+        },
+        "closure_informed_affordable": {
+          "d": 7,
+          "detected_cost_sum": 10,
+          "dominating_cost": 26,
+          "dominating_detection": 7,
+          "frontier_matched_detection_cost_saving": 695,
+          "l": 721,
+          "new_signature_cost_sum": 63,
+          "nominal_compatible_cost_sum": 658,
+          "strictly_dominated_roots": 108,
+          "weakly_dominated_roots": 169
+        },
+        "constant_first": {
+          "d": 7,
+          "detected_cost_sum": 10,
+          "dominating_cost": 26,
+          "dominating_detection": 7,
+          "frontier_matched_detection_cost_saving": 425,
+          "l": 451,
+          "new_signature_cost_sum": 41,
+          "nominal_compatible_cost_sum": 410,
+          "strictly_dominated_roots": 72,
+          "weakly_dominated_roots": 169
+        },
+        "cost_order": {
+          "d": 6,
+          "detected_cost_sum": 8,
+          "dominating_cost": 20,
+          "dominating_detection": 6,
+          "frontier_matched_detection_cost_saving": 653,
+          "l": 673,
+          "new_signature_cost_sum": 62,
+          "nominal_compatible_cost_sum": 611,
+          "strictly_dominated_roots": 109,
+          "weakly_dominated_roots": 169
+        },
+        "exact_frontier": {
+          "d": 7,
+          "detected_cost_sum": 10,
+          "dominating_cost": 26,
+          "dominating_detection": 7,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 26,
+          "new_signature_cost_sum": 10,
+          "nominal_compatible_cost_sum": 16,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        },
+        "no_audit": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        }
+      },
+      "budget_percent": 25,
+      "counts": {
+        "affordability_gain": 0,
+        "exact_detection": 7,
+        "full_conflicts": 39,
+        "hindsight_feasible": 7,
+        "hindsight_impossible": 32,
+        "policy_selection_gap": 0,
+        "search_gap": 0
+      }
+    },
+    {
+      "arms": {
+        "closure_informed": {
+          "d": 20,
+          "detected_cost_sum": 56,
+          "dominating_cost": 142,
+          "dominating_detection": 20,
+          "frontier_matched_detection_cost_saving": 1588,
+          "l": 1730,
+          "new_signature_cost_sum": 132,
+          "nominal_compatible_cost_sum": 1598,
+          "strictly_dominated_roots": 135,
+          "weakly_dominated_roots": 169
+        },
+        "closure_informed_affordable": {
+          "d": 20,
+          "detected_cost_sum": 56,
+          "dominating_cost": 142,
+          "dominating_detection": 20,
+          "frontier_matched_detection_cost_saving": 1680,
+          "l": 1822,
+          "new_signature_cost_sum": 141,
+          "nominal_compatible_cost_sum": 1681,
+          "strictly_dominated_roots": 140,
+          "weakly_dominated_roots": 169
+        },
+        "constant_first": {
+          "d": 18,
+          "detected_cost_sum": 52,
+          "dominating_cost": 122,
+          "dominating_detection": 18,
+          "frontier_matched_detection_cost_saving": 1610,
+          "l": 1732,
+          "new_signature_cost_sum": 136,
+          "nominal_compatible_cost_sum": 1596,
+          "strictly_dominated_roots": 137,
+          "weakly_dominated_roots": 169
+        },
+        "cost_order": {
+          "d": 15,
+          "detected_cost_sum": 55,
+          "dominating_cost": 108,
+          "dominating_detection": 15,
+          "frontier_matched_detection_cost_saving": 1598,
+          "l": 1706,
+          "new_signature_cost_sum": 143,
+          "nominal_compatible_cost_sum": 1563,
+          "strictly_dominated_roots": 144,
+          "weakly_dominated_roots": 169
+        },
+        "exact_frontier": {
+          "d": 32,
+          "detected_cost_sum": 117,
+          "dominating_cost": 314,
+          "dominating_detection": 32,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 314,
+          "new_signature_cost_sum": 117,
+          "nominal_compatible_cost_sum": 197,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        },
+        "no_audit": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        }
+      },
+      "budget_percent": 50,
+      "counts": {
+        "affordability_gain": 0,
+        "exact_detection": 32,
+        "full_conflicts": 39,
+        "hindsight_feasible": 32,
+        "hindsight_impossible": 7,
+        "policy_selection_gap": 12,
+        "search_gap": 0
+      }
+    },
+    {
+      "arms": {
+        "closure_informed": {
+          "d": 39,
+          "detected_cost_sum": 223,
+          "dominating_cost": 414,
+          "dominating_detection": 39,
+          "frontier_matched_detection_cost_saving": 4044,
+          "l": 4458,
+          "new_signature_cost_sum": 223,
+          "nominal_compatible_cost_sum": 4235,
+          "strictly_dominated_roots": 165,
+          "weakly_dominated_roots": 169
+        },
+        "closure_informed_affordable": {
+          "d": 39,
+          "detected_cost_sum": 223,
+          "dominating_cost": 414,
+          "dominating_detection": 39,
+          "frontier_matched_detection_cost_saving": 4044,
+          "l": 4458,
+          "new_signature_cost_sum": 223,
+          "nominal_compatible_cost_sum": 4235,
+          "strictly_dominated_roots": 165,
+          "weakly_dominated_roots": 169
+        },
+        "constant_first": {
+          "d": 39,
+          "detected_cost_sum": 241,
+          "dominating_cost": 414,
+          "dominating_detection": 39,
+          "frontier_matched_detection_cost_saving": 4062,
+          "l": 4476,
+          "new_signature_cost_sum": 241,
+          "nominal_compatible_cost_sum": 4235,
+          "strictly_dominated_roots": 165,
+          "weakly_dominated_roots": 169
+        },
+        "cost_order": {
+          "d": 39,
+          "detected_cost_sum": 257,
+          "dominating_cost": 414,
+          "dominating_detection": 39,
+          "frontier_matched_detection_cost_saving": 4078,
+          "l": 4492,
+          "new_signature_cost_sum": 257,
+          "nominal_compatible_cost_sum": 4235,
+          "strictly_dominated_roots": 165,
+          "weakly_dominated_roots": 169
+        },
+        "exact_frontier": {
+          "d": 39,
+          "detected_cost_sum": 152,
+          "dominating_cost": 414,
+          "dominating_detection": 39,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 414,
+          "new_signature_cost_sum": 152,
+          "nominal_compatible_cost_sum": 262,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        },
+        "no_audit": {
+          "d": 0,
+          "detected_cost_sum": 0,
+          "dominating_cost": 0,
+          "dominating_detection": 0,
+          "frontier_matched_detection_cost_saving": 0,
+          "l": 0,
+          "new_signature_cost_sum": 0,
+          "nominal_compatible_cost_sum": 0,
+          "strictly_dominated_roots": 0,
+          "weakly_dominated_roots": 169
+        }
+      },
+      "budget_percent": 100,
+      "counts": {
+        "affordability_gain": 0,
+        "exact_detection": 39,
+        "full_conflicts": 39,
+        "hindsight_feasible": 39,
+        "hindsight_impossible": 0,
+        "policy_selection_gap": 0,
+        "search_gap": 0
+      }
+    }
+  ],
+  "input_sha256": {
+    "studies/exact_audit_frontier/results/certificates.json.gz": "d8e8e2c6d3fc7c0326e461fb5b57304d422d11617ddaffb4e234383fe02621eb",
+    "studies/exact_audit_frontier/results/design_runs.json.gz": "c67dad55b88e89a7510757b6c0f7e8af46f733e6b20e0b4cf7d506c7b4f80cbd",
+    "studies/exact_audit_frontier/results/design_summary.json.gz": "e67497490965b1ecdea1a9ad91f90abdf3dc3fba340f1253d837accf76f885ac",
+    "studies/exact_audit_frontier/results/independent_verification.json": "39aed892b433b754b726d0cb37fe09390d4f81e3ada7a283752c6ab338a0cc6c",
+    "studies/exact_audit_frontier/results/legacy_parity.json": "3d1154d963fe2f31464a83594bbeb2c8f460566a300ccdcd0b8fddb1ca6b6cd2",
+    "studies/exact_audit_frontier/results/manifest.json": "6177a235def766c08f38020c0ebd3b62487c1a9ae9c5cd00fe4735d296f8991d",
+    "studies/exact_audit_frontier/results/paired.json.gz": "bc90072af9ed7a7443a038421bb838845708c201649d2c4ae032170555cd43b0",
+    "studies/exact_audit_frontier/results/per_condition.json.gz": "6588592712427a84d7312269b9b9c1b1f305964140b7a8838622c103ff12fbbd",
+    "studies/exact_audit_frontier/results/roots.json.gz": "f57b4cd639edf95463405b83b09f8591ae5aafac023dbc6952014a5aa3420afc",
+    "studies/exact_audit_frontier/results/runs.json.gz": "976ee8e3f7b6b6c36644f6f071b1fb9ec912169b9026ccc94cb3ab52d44c7846",
+    "studies/exact_audit_frontier/results/summary.json.gz": "27166497a57242e986496141009d3d01554a844b2f3fefc8ff5467c8eebbeb64",
+    "studies/exact_audit_frontier/results/validation.json": "f6552e9cf74f127213f8dedd9240fd97f0bc571572cffcd0ff90fae88909358e"
+  },
+  "limitations": [
+    "This separate arithmetic audit uses the retained outcome and support classifications; the independently implemented frozen Bellman, paid-observation, support and certificate checker supplies semantic verification.",
+    "No fresh world generation, policy execution, model call, network request, cost calibration, sampling interval or timing benchmark was performed.",
+    "Frontier domination means an attainable point with at least comparator detection and no higher design cost; strictness and equality are counted separately, and the canonical E point may optimize a different detection level.",
+    "Hindsight affordability is an upper bound, not an executable policy; the miss decomposition is a count identity, not a partition into named signature sets.",
+    "Conditional cost-at-detection compares arm-specific detected subsets."
+  ],
+  "preservation_and_resources": {
+    "capped_roots": 0,
+    "child_combinations": {
+      "cap_per_root": 10000000,
+      "maximum_per_root": 6347,
+      "sum": 105551
+    },
+    "completed_roots": 169,
+    "freeze_sha256": "fff39cd695f83308b3f76c018a84c1fa01720c14c684b37f9356ab96cb4a0bcb",
+    "frontier_points": {
+      "maximum_frontier_size": 3,
+      "maximum_per_root": 3031,
+      "sum": 56415
+    },
+    "hashes_verified": {
+      "frozen_dependencies": 36,
+      "historical_tracked_files": 316,
+      "opaque_local_retained_files": 509,
+      "result_manifest_outputs": 11
+    },
+    "missing_roots": 0,
+    "pending_states": 0,
+    "recorded_all_integer_reconstruction_cpu_seconds_sum": 18.360769664,
+    "recorded_all_integer_reconstruction_wall_seconds_sum": 18.362122272,
+    "recorded_process_resources": {
+      "independent_checker": {
+        "cpu_seconds": 65.97403198200001,
+        "wall_seconds": 65.98378015500202
+      },
+      "peak_scope": "Cumulative process peak, not an isolated per-policy measurement",
+      "process_peak_rss_kib": 1070508,
+      "serialization": {
+        "cpu_seconds": 5.716371148999997,
+        "wall_seconds": 5.716792671002622
+      },
+      "total_cpu_seconds": 154.076544779,
+      "total_wall_seconds": 154.10351020700182
+    },
+    "recorded_solver_cpu_seconds_sum": 2.109118882,
+    "recorded_solver_wall_seconds_sum": 2.109375019,
+    "resource_scope": "Saved resource counters recomputed from every state, frontier and Cartesian child branch; CPU/wall values are recorded measurements, not independently timed.",
+    "result_manifest_sha256": "6177a235def766c08f38020c0ebd3b62487c1a9ae9c5cd00fe4735d296f8991d",
+    "states": {
+      "cap_per_root": 100000,
+      "maximum_per_root": 2725,
+      "sum": 53290
+    },
+    "status": "passed"
+  },
+  "saved_offline_verification_sha256": "e2162e0a2ff5a8b369b88f14d94bdbd8dff7c9ff10857b61b4506270cec367af",
+  "scope": "Independent exact rational reaggregation of saved executed paths, all anchor populations, subgroup/structure weights, paired contrasts, root frontier domination and hindsight count decomposition; no policy or model execution.",
+  "source_sha256": {
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/exact_audit_frontier/analysis.py": "3eef2030fce5a36cda700c73ff9f6265eb6bdd0f6aff45dfeb994ee45d435b18",
+    "studies/exact_audit_frontier/config.json": "3c48a1b2fe08c36b569450f8585386d46681ba563e5824c1d06c604df8728e08",
+    "studies/exact_audit_frontier/execution.py": "a246469ab6ccab509127cc42d6214d3d30bed46f358c28a881b5dc01cee41fec",
+    "studies/exact_audit_frontier/freeze.json": "fff39cd695f83308b3f76c018a84c1fa01720c14c684b37f9356ab96cb4a0bcb",
+    "studies/exact_audit_frontier/frontier.py": "8ce38cfa959ad360f94448fa02918f92e46048b14217c74bb57b12866147c222",
+    "studies/exact_audit_frontier/reference.py": "6cf422fe1f20a76310f10620253eff4461d82af7f5962165988e00c02b1f9cdb"
+  },
+  "status": "passed"
+}
