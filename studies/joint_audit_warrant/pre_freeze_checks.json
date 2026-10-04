@@ -1,0 +1,34 @@
+{
+  "additional_spend_usd": "0",
+  "baseline_verification_sha256": "5741eacacc3158b649c04fc6d8b5c60a3c5765f2db0c9018da950ae0deef8c06",
+  "checked_at_utc": "2026-10-04T14:11:58.668945+00:00",
+  "development_checks_sha256": "10fc6efb4d651761dab3ef118314c3afb9c9325bbceec6a89cbc91171b3a1539",
+  "focused_tests": {
+    "command": "pytest -q tests/test_joint_audit_warrant.py tests/test_joint_audit_support_execution.py tests/test_joint_audit_planner_guards.py tests/test_joint_audit_driver.py",
+    "failed": 0,
+    "passed": 90,
+    "scope": "Four new focused files; not a full-repository run.",
+    "skipped": 0,
+    "wall_seconds_reported": 17.27
+  },
+  "full_installed_suite": "Required once at final validation; not yet run.",
+  "independent_read_only_review": {
+    "scope": "Support semantics, information boundaries, saved E paths, one-budget sequential policy, triple recurrence, complete projection, result verifier, capped placeholders, exact aggregation and frozen dependencies.",
+    "status": "passed"
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_evaluation_policy_outcomes_observed": 0,
+  "offline_execution": "env -i allowlisted PATH and PYTHONDONTWRITEBYTECODE; socket connection and DNS operations fail closed.",
+  "preservation": {
+    "additional_local_files": 12,
+    "local_files": 509,
+    "tracked_files": 350
+  },
+  "schema_version": 1,
+  "status": "passed"
+}

@@ -1,0 +1,8 @@
+{
+  "excluded_fields": [
+    "selection_seconds",
+    "checking_seconds"
+  ],
+  "historical_e_anchor_runs": 5016,
+  "status": "passed"
+}

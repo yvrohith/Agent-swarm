@@ -1,0 +1,30 @@
+{
+  "development_exact_reference": {
+    "files": [
+      {
+        "byte_identical": true,
+        "bytes": 308473,
+        "copy": "studies/joint_audit_warrant/development_old_roots.json.gz",
+        "sha256": "adea40d1c000ab58221b6d76c85c4ef2d45ffa72e505cf27e8bff3e4d8a6075f",
+        "source": "artifacts/exact-audit-frontier/development-v1/roots.json.gz"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 120263,
+        "copy": "studies/joint_audit_warrant/development_old_design_runs.json.gz",
+        "sha256": "bad8315f6b900d1892f81884aec4e629ceca1d1022f565c16ae135d685069588",
+        "source": "artifacts/exact-audit-frontier/development-v1/design_runs.json.gz"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 388198,
+        "copy": "studies/joint_audit_warrant/development_old_anchor_runs.json.gz",
+        "sha256": "88cfa66718742967d51cf46ccd3b2cdc380f70179145e87429666181e89704e4",
+        "source": "artifacts/exact-audit-frontier/development-v1/runs.json.gz"
+      }
+    ],
+    "source_manifest": "artifacts/exact-audit-frontier/development-v1/manifest.json",
+    "source_manifest_sha256": "d3007a446f96f662c4e300940a36ece8c776057f3e69b51b0da5ab3686c9b9fb"
+  },
+  "purpose": "Portable byte-identical retained synthetic development references; no replacement generation or policy optimization."
+}

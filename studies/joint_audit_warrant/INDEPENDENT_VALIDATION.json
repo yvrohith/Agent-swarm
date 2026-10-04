@@ -1,0 +1,1124 @@
+{
+  "actual_k1_full_budget_adverse_same_proposal_cases": [
+    {
+      "joint_added_cost": 5,
+      "joint_final_claim_status": "unresolved",
+      "problem_id": "acq_94225",
+      "root_id": "audit_root_bcc1c354b463554920bc005d",
+      "sequential_added_cost": 13,
+      "sequential_final_claim_status": "ruled_out",
+      "signature_id": "082b8c80a27f6ef4be15707376d6c7a8d01a97d664ad22977b02006629cc7a4b"
+    }
+  ],
+  "actual_k_outcomes": [
+    {
+      "anchor_percent": 50,
+      "arm": "exact_frontier",
+      "irreducible": 170,
+      "k": 1,
+      "newly_restored": 2,
+      "pending": 45,
+      "population": "original",
+      "restored_without_alarm": 2,
+      "signature_count": 392,
+      "supported_same_proposal": 177,
+      "unsupported_definite": 94,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 50,
+      "arm": "E_then_support",
+      "irreducible": 173,
+      "k": 1,
+      "newly_restored": 3,
+      "pending": 41,
+      "population": "original",
+      "restored_without_alarm": 3,
+      "signature_count": 392,
+      "supported_same_proposal": 178,
+      "unsupported_definite": 93,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 50,
+      "arm": "joint_frontier",
+      "irreducible": 173,
+      "k": 1,
+      "newly_restored": 6,
+      "pending": 38,
+      "population": "original",
+      "restored_without_alarm": 6,
+      "signature_count": 392,
+      "supported_same_proposal": 181,
+      "unsupported_definite": 90,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 100,
+      "arm": "exact_frontier",
+      "irreducible": 173,
+      "k": 1,
+      "newly_restored": 3,
+      "pending": 41,
+      "population": "original",
+      "restored_without_alarm": 3,
+      "signature_count": 392,
+      "supported_same_proposal": 178,
+      "unsupported_definite": 93,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 100,
+      "arm": "E_then_support",
+      "irreducible": 178,
+      "k": 1,
+      "newly_restored": 11,
+      "pending": 28,
+      "population": "original",
+      "restored_without_alarm": 11,
+      "signature_count": 392,
+      "supported_same_proposal": 186,
+      "unsupported_definite": 85,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 100,
+      "arm": "joint_frontier",
+      "irreducible": 177,
+      "k": 1,
+      "newly_restored": 10,
+      "pending": 30,
+      "population": "original",
+      "restored_without_alarm": 10,
+      "signature_count": 392,
+      "supported_same_proposal": 185,
+      "unsupported_definite": 86,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 50,
+      "arm": "exact_frontier",
+      "irreducible": 196,
+      "k": 2,
+      "newly_restored": 2,
+      "pending": 19,
+      "population": "original",
+      "restored_without_alarm": 2,
+      "signature_count": 392,
+      "supported_same_proposal": 177,
+      "unsupported_definite": 94,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 50,
+      "arm": "E_then_support",
+      "irreducible": 199,
+      "k": 2,
+      "newly_restored": 3,
+      "pending": 15,
+      "population": "original",
+      "restored_without_alarm": 3,
+      "signature_count": 392,
+      "supported_same_proposal": 178,
+      "unsupported_definite": 93,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 50,
+      "arm": "joint_frontier",
+      "irreducible": 201,
+      "k": 2,
+      "newly_restored": 6,
+      "pending": 10,
+      "population": "original",
+      "restored_without_alarm": 6,
+      "signature_count": 392,
+      "supported_same_proposal": 181,
+      "unsupported_definite": 90,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 100,
+      "arm": "exact_frontier",
+      "irreducible": 199,
+      "k": 2,
+      "newly_restored": 3,
+      "pending": 15,
+      "population": "original",
+      "restored_without_alarm": 3,
+      "signature_count": 392,
+      "supported_same_proposal": 178,
+      "unsupported_definite": 93,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 100,
+      "arm": "E_then_support",
+      "irreducible": 207,
+      "k": 2,
+      "newly_restored": 10,
+      "pending": 0,
+      "population": "original",
+      "restored_without_alarm": 10,
+      "signature_count": 392,
+      "supported_same_proposal": 185,
+      "unsupported_definite": 86,
+      "withdrawn_definite": 0
+    },
+    {
+      "anchor_percent": 100,
+      "arm": "joint_frontier",
+      "irreducible": 207,
+      "k": 2,
+      "newly_restored": 10,
+      "pending": 0,
+      "population": "original",
+      "restored_without_alarm": 10,
+      "signature_count": 392,
+      "supported_same_proposal": 185,
+      "unsupported_definite": 86,
+      "withdrawn_definite": 0
+    }
+  ],
+  "artifact_scope": "Additive technical audit; frozen source, result records and historical files were not modified. Auxiliary checks made no file changes.",
+  "audit_script_sha256": "fe37b095fe70c8734011a1373c2127507c309da0740d47e36065555af611bbec",
+  "canonical_cost_support_tradeoffs": [
+    {
+      "comparator": "exact_frontier",
+      "counts": {
+        "cost_equal": 644,
+        "cost_higher": 8,
+        "support_equal": 644,
+        "support_higher": 8,
+        "unique_root_amounts": 652
+      },
+      "examples": [
+        {
+          "budget": 8,
+          "comparator_cost": 6,
+          "comparator_w": 0,
+          "cost_delta": 16,
+          "exact_detection": 2,
+          "joint_cost": 22,
+          "joint_w": 2,
+          "problem_id": "acq_94225",
+          "root_id": "audit_root_bcc1c354b463554920bc005d",
+          "support_delta": 2
+        },
+        {
+          "budget": 17,
+          "comparator_cost": 6,
+          "comparator_w": 0,
+          "cost_delta": 16,
+          "exact_detection": 2,
+          "joint_cost": 22,
+          "joint_w": 2,
+          "problem_id": "acq_94225",
+          "root_id": "audit_root_bcc1c354b463554920bc005d",
+          "support_delta": 2
+        },
+        {
+          "budget": 6,
+          "comparator_cost": 0,
+          "comparator_w": 0,
+          "cost_delta": 11,
+          "exact_detection": 0,
+          "joint_cost": 11,
+          "joint_w": 1,
+          "problem_id": "acq_94225",
+          "root_id": "audit_root_ce987ef89cd12d62eda17fa9",
+          "support_delta": 1
+        },
+        {
+          "budget": 13,
+          "comparator_cost": 0,
+          "comparator_w": 0,
+          "cost_delta": 11,
+          "exact_detection": 0,
+          "joint_cost": 11,
+          "joint_w": 1,
+          "problem_id": "acq_94225",
+          "root_id": "audit_root_ce987ef89cd12d62eda17fa9",
+          "support_delta": 1
+        },
+        {
+          "budget": 5,
+          "comparator_cost": 6,
+          "comparator_w": 0,
+          "cost_delta": 8,
+          "exact_detection": 2,
+          "joint_cost": 14,
+          "joint_w": 2,
+          "problem_id": "acq_94227",
+          "root_id": "audit_root_cbadaba2353d3874758f41ab",
+          "support_delta": 2
+        }
+      ]
+    },
+    {
+      "comparator": "E_then_support",
+      "counts": {
+        "cost_equal": 646,
+        "cost_lower": 6,
+        "support_equal": 650,
+        "support_higher": 2,
+        "unique_root_amounts": 652
+      },
+      "examples": [
+        {
+          "budget": 8,
+          "comparator_cost": 22,
+          "comparator_w": 0,
+          "cost_delta": 0,
+          "exact_detection": 2,
+          "joint_cost": 22,
+          "joint_w": 2,
+          "problem_id": "acq_94225",
+          "root_id": "audit_root_bcc1c354b463554920bc005d",
+          "support_delta": 2
+        },
+        {
+          "budget": 6,
+          "comparator_cost": 11,
+          "comparator_w": 0,
+          "cost_delta": 0,
+          "exact_detection": 0,
+          "joint_cost": 11,
+          "joint_w": 1,
+          "problem_id": "acq_94225",
+          "root_id": "audit_root_ce987ef89cd12d62eda17fa9",
+          "support_delta": 1
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "actual_k_physical_support_view_checks": 15048,
+    "anchor_summary_rows": 2160,
+    "design_problem_anchor_checks": 160,
+    "design_weighted_summary_checks": 40,
+    "exact_numeric_checks": 623160,
+    "paired_problem_rows": 4320,
+    "paired_summary_rows": 1080,
+    "physical_support_paid_path_checks": 5079,
+    "physical_world_truth_checks": 2184,
+    "population_cells": 4320,
+    "root_policy_point_checks": 1956,
+    "saved_E_anchor_views_unchanged": 5016,
+    "saved_E_design_paths_unchanged": 1693,
+    "sequential_original_budget_checks": 1693,
+    "sequential_support_action_checks": 59,
+    "support_threshold_price_checks": 1379,
+    "whole_frontier_projection_checks": 652
+  },
+  "created_at_utc": "2026-10-04T14:18:33.568645+00:00",
+  "fresh_saved_offline_verification_sha256": "0c88562a9b2c3a680adbfd91523c2c4ddd826ba269c65792b43a1fedce017d5d",
+  "headlines": [
+    {
+      "anchor_percent": 0,
+      "arms": {
+        "E_then_support": {
+          "added_cost": 0,
+          "added_query_count": 0,
+          "added_returned_bytes": 0,
+          "base_cost": 1617,
+          "d": 0,
+          "maximum_path_added_cost": 0,
+          "new_cost": 0,
+          "newly_supported": 0,
+          "original_cost": 0,
+          "support_phase_cost": 0,
+          "w": 175
+        },
+        "exact_frontier": {
+          "added_cost": 0,
+          "added_query_count": 0,
+          "added_returned_bytes": 0,
+          "base_cost": 1617,
+          "d": 0,
+          "maximum_path_added_cost": 0,
+          "new_cost": 0,
+          "newly_supported": 0,
+          "original_cost": 0,
+          "support_phase_cost": 0,
+          "w": 175
+        },
+        "joint_frontier": {
+          "added_cost": 0,
+          "added_query_count": 0,
+          "added_returned_bytes": 0,
+          "base_cost": 1617,
+          "d": 0,
+          "maximum_path_added_cost": 0,
+          "new_cost": 0,
+          "newly_supported": 0,
+          "original_cost": 0,
+          "support_phase_cost": 0,
+          "w": 175
+        }
+      },
+      "comparisons": {
+        "detection_ceiling": 0,
+        "joint_added_cost_vs_e": 0,
+        "joint_added_cost_vs_sequential": 0,
+        "joint_support_gain_vs_e": 0,
+        "joint_support_gain_vs_sequential": 0,
+        "sequential_added_cost_vs_e": 0,
+        "sequential_matched_support_cost_saving": 0,
+        "sequential_support_gain_vs_e": 0,
+        "zero_extra_cost_support_gain": 0
+      }
+    },
+    {
+      "anchor_percent": 25,
+      "arms": {
+        "E_then_support": {
+          "added_cost": 46,
+          "added_query_count": 35,
+          "added_returned_bytes": 5152,
+          "base_cost": 1617,
+          "d": 7,
+          "maximum_path_added_cost": 3,
+          "new_cost": 17,
+          "newly_supported": 0,
+          "original_cost": 29,
+          "support_phase_cost": 20,
+          "w": 175
+        },
+        "exact_frontier": {
+          "added_cost": 26,
+          "added_query_count": 19,
+          "added_returned_bytes": 2444,
+          "base_cost": 1617,
+          "d": 7,
+          "maximum_path_added_cost": 2,
+          "new_cost": 10,
+          "newly_supported": 0,
+          "original_cost": 16,
+          "support_phase_cost": 0,
+          "w": 175
+        },
+        "joint_frontier": {
+          "added_cost": 26,
+          "added_query_count": 19,
+          "added_returned_bytes": 2444,
+          "base_cost": 1617,
+          "d": 7,
+          "maximum_path_added_cost": 2,
+          "new_cost": 10,
+          "newly_supported": 0,
+          "original_cost": 16,
+          "support_phase_cost": 0,
+          "w": 175
+        }
+      },
+      "comparisons": {
+        "detection_ceiling": 7,
+        "joint_added_cost_vs_e": 0,
+        "joint_added_cost_vs_sequential": -20,
+        "joint_support_gain_vs_e": 0,
+        "joint_support_gain_vs_sequential": 0,
+        "sequential_added_cost_vs_e": 20,
+        "sequential_matched_support_cost_saving": 20,
+        "sequential_support_gain_vs_e": 0,
+        "zero_extra_cost_support_gain": 0
+      }
+    },
+    {
+      "anchor_percent": 50,
+      "arms": {
+        "E_then_support": {
+          "added_cost": 352,
+          "added_query_count": 164,
+          "added_returned_bytes": 23187,
+          "base_cost": 1617,
+          "d": 32,
+          "maximum_path_added_cost": 7,
+          "new_cost": 120,
+          "newly_supported": 3,
+          "original_cost": 232,
+          "support_phase_cost": 38,
+          "w": 178
+        },
+        "exact_frontier": {
+          "added_cost": 314,
+          "added_query_count": 148,
+          "added_returned_bytes": 20637,
+          "base_cost": 1617,
+          "d": 32,
+          "maximum_path_added_cost": 7,
+          "new_cost": 117,
+          "newly_supported": 2,
+          "original_cost": 197,
+          "support_phase_cost": 0,
+          "w": 177
+        },
+        "joint_frontier": {
+          "added_cost": 345,
+          "added_query_count": 159,
+          "added_returned_bytes": 22159,
+          "base_cost": 1617,
+          "d": 32,
+          "maximum_path_added_cost": 7,
+          "new_cost": 117,
+          "newly_supported": 6,
+          "original_cost": 228,
+          "support_phase_cost": 0,
+          "w": 181
+        }
+      },
+      "comparisons": {
+        "detection_ceiling": 32,
+        "joint_added_cost_vs_e": 31,
+        "joint_added_cost_vs_sequential": -7,
+        "joint_support_gain_vs_e": 4,
+        "joint_support_gain_vs_sequential": 3,
+        "sequential_added_cost_vs_e": 38,
+        "sequential_matched_support_cost_saving": 34,
+        "sequential_support_gain_vs_e": 1,
+        "zero_extra_cost_support_gain": 0
+      }
+    },
+    {
+      "anchor_percent": 100,
+      "arms": {
+        "E_then_support": {
+          "added_cost": 501,
+          "added_query_count": 221,
+          "added_returned_bytes": 31178,
+          "base_cost": 1617,
+          "d": 39,
+          "maximum_path_added_cost": 13,
+          "new_cost": 152,
+          "newly_supported": 10,
+          "original_cost": 349,
+          "support_phase_cost": 87,
+          "w": 185
+        },
+        "exact_frontier": {
+          "added_cost": 414,
+          "added_query_count": 194,
+          "added_returned_bytes": 27224,
+          "base_cost": 1617,
+          "d": 39,
+          "maximum_path_added_cost": 10,
+          "new_cost": 152,
+          "newly_supported": 3,
+          "original_cost": 262,
+          "support_phase_cost": 0,
+          "w": 178
+        },
+        "joint_frontier": {
+          "added_cost": 461,
+          "added_query_count": 211,
+          "added_returned_bytes": 29652,
+          "base_cost": 1617,
+          "d": 39,
+          "maximum_path_added_cost": 10,
+          "new_cost": 152,
+          "newly_supported": 10,
+          "original_cost": 309,
+          "support_phase_cost": 0,
+          "w": 185
+        }
+      },
+      "comparisons": {
+        "detection_ceiling": 39,
+        "joint_added_cost_vs_e": 47,
+        "joint_added_cost_vs_sequential": -40,
+        "joint_support_gain_vs_e": 7,
+        "joint_support_gain_vs_sequential": 0,
+        "sequential_added_cost_vs_e": 87,
+        "sequential_matched_support_cost_saving": 40,
+        "sequential_support_gain_vs_e": 7,
+        "zero_extra_cost_support_gain": 0
+      }
+    }
+  ],
+  "individual_path_tradeoffs": {
+    "comparisons": [
+      {
+        "comparator": "exact_frontier",
+        "counts": {
+          "cost_equal": 1669,
+          "cost_higher": 24,
+          "cost_lower": 0,
+          "support_equal": 1682,
+          "support_higher": 11,
+          "support_lower": 0,
+          "unique_signature_paths": 1693
+        },
+        "largest_positive_cost_examples": [
+          {
+            "added_cost_delta": 5,
+            "budget": 6,
+            "population": "original",
+            "problem_id": "acq_94225",
+            "root_id": "audit_root_ce987ef89cd12d62eda17fa9",
+            "support_delta": 0
+          },
+          {
+            "added_cost_delta": 5,
+            "budget": 6,
+            "population": "original",
+            "problem_id": "acq_94225",
+            "root_id": "audit_root_ce987ef89cd12d62eda17fa9",
+            "support_delta": 1
+          },
+          {
+            "added_cost_delta": 5,
+            "budget": 13,
+            "population": "original",
+            "problem_id": "acq_94225",
+            "root_id": "audit_root_ce987ef89cd12d62eda17fa9",
+            "support_delta": 0
+          }
+        ]
+      },
+      {
+        "comparator": "E_then_support",
+        "counts": {
+          "cost_equal": 1672,
+          "cost_higher": 0,
+          "cost_lower": 21,
+          "support_equal": 1690,
+          "support_higher": 3,
+          "support_lower": 0,
+          "unique_signature_paths": 1693
+        },
+        "largest_positive_cost_examples": []
+      }
+    ],
+    "scope": "Matched unique root/allowance/signature paths, each retaining its own charge; repeated allowance paths are not distinct incidents. These differ from aggregate root frontier objective values."
+  },
+  "input_sha256": {
+    "studies/joint_audit_warrant/results/certificates.json.gz": "1b19e3ab22f8e44694bdb16d5445bc4b2bae70d77c1a93d7f62b3d35e379e20a",
+    "studies/joint_audit_warrant/results/design_runs.json.gz": "a5e93038c1a499ca8623a2486bdd2c2c6a89f52cd16eeefcb650aadd1bcebcfe",
+    "studies/joint_audit_warrant/results/design_summary.json.gz": "3b1b57418d53fb92aca064bb93ff8964044bdfa3526b78104bfc9dc58a4f310a",
+    "studies/joint_audit_warrant/results/independent_verification.json": "a9029f13329eb5b1518b8a561aec8b7b9b34c538888f73e22aef56a23dfea602",
+    "studies/joint_audit_warrant/results/legacy_parity.json": "55651de62071fa359851ec0b94de2547e993a8ed54f1e3bc89a65487a83d8476",
+    "studies/joint_audit_warrant/results/manifest.json": "9adf504fc0bc5d64dedf4af0a0a30a31ea38f4da327bd8b7cf8a63402f6201d8",
+    "studies/joint_audit_warrant/results/paired.json.gz": "70e5cd16e71c41d810a8138ccc808a1c528540873e56a7608981834a5fe3e530",
+    "studies/joint_audit_warrant/results/per_condition.json.gz": "4626bca160f440ac736516fa2e3b859442dfee7c7e7209034d86681c86400198",
+    "studies/joint_audit_warrant/results/roots.json.gz": "3a409fadf9f5778c18d93b276c2d4733422e42f2bc90b263f28b2a0ac0f6f605",
+    "studies/joint_audit_warrant/results/runs.json.gz": "b17d48cdbe35ed1205115620a97dd7497b82de994c27588820b60cd693838e62",
+    "studies/joint_audit_warrant/results/summary.json.gz": "7180943423b3d7d34f8b91d1d6a7b867f0eec7ca500146606ce5647c3b4adf96",
+    "studies/joint_audit_warrant/results/validation.json": "3472c8c41327dcf0095d4be11619da8fca33295cec5a460cf67e9d858ebc2e01"
+  },
+  "limitations": [
+    "Physical event/claim definitions and retained closure validity are shared declared model assumptions. This independent audit derives each physical claim and signature from saved primitives and keeps all compatible worlds; it does not establish real-world truth.",
+    "Full Bellman recurrence and certificate-schema soundness are checked by the separate frozen reference verifier and tiny exhaustive-tree qualification. This arithmetic audit does not claim a second independent proof of those shared validators.",
+    "Support cost comparisons retain equal detection and separate differing support levels; a canonical J point and a cheaper equal-support frontier witness are different comparisons.",
+    "Root-budget cells, reused actual-k views and repeated verification passes are not independent incident observations.",
+    "At-least-support threshold curves are complete minimum-cost bounds; Pareto-pruned support levels are not claimed to enumerate every attainable exact-support level."
+  ],
+  "preservation_and_resources": {
+    "additional_prior_development_files": 12,
+    "caps": 0,
+    "child_combinations": {
+      "cap_per_root": 10000000,
+      "maximum_per_root": 1312,
+      "total": 22894
+    },
+    "completed_roots": 169,
+    "freeze_sha256": "6168b278fdf341eee6b43158fcce5d9db818bbe8e34536739911a4511cd2aadf",
+    "frontier_points": {
+      "maximum_frontier_size": 3,
+      "maximum_per_root": 597,
+      "total": 12505
+    },
+    "frozen_dependencies": 42,
+    "historical_tracked_files": 350,
+    "manifest_sha256": "9adf504fc0bc5d64dedf4af0a0a30a31ea38f4da327bd8b7cf8a63402f6201d8",
+    "opaque_retained_local_files": 509,
+    "pending_states": 0,
+    "recorded_all_arm_reconstruction_cpu_seconds_sum": 2.96398277,
+    "recorded_all_arm_reconstruction_wall_seconds_sum": 2.966093982,
+    "recorded_joint_backpointer_cpu_seconds_sum": 0.036044472,
+    "recorded_joint_backpointer_reconstruction_calls": 2004,
+    "recorded_joint_backpointer_wall_seconds_sum": 0.036404591,
+    "recorded_process_resources": {
+      "independent_checker": {
+        "cpu_seconds": 39.373298021,
+        "wall_seconds": 39.391735110999434
+      },
+      "peak_scope": "Cumulative process peak, not an isolated per-policy measurement",
+      "process_peak_rss_kib": 1142236,
+      "serialization": {
+        "cpu_seconds": 2.8536494359999978,
+        "wall_seconds": 2.8538154470006702
+      },
+      "total_cpu_seconds": 69.483486861,
+      "total_wall_seconds": 69.52010912800324
+    },
+    "recorded_solver_cpu_seconds_sum": 1.014047057,
+    "recorded_solver_wall_seconds_sum": 1.01491824,
+    "result_manifest_outputs": 11,
+    "root_anchor_requests": 676,
+    "states": {
+      "cap_per_root": 100000,
+      "maximum_per_root": 531,
+      "total": 11755
+    },
+    "status": "passed",
+    "timing_scope": "Saved measurements inspected, not independently timed; backpointer timing is included in all-arm execution, not additive. Process peak is cumulative.",
+    "unavailable_roots": 0,
+    "unique_root_budget_amounts": 652
+  },
+  "saved_frozen_semantic_verification": {
+    "anchor_grid_rows": 15048,
+    "certificate_references_checked": 80508,
+    "child_combinations_checked": 22894,
+    "completed_anchor_paths_checked": 15048,
+    "completed_design_paths_checked": 5079,
+    "design_grid_rows": 5079,
+    "distinct_certificate_all_query_witness_checks": 3916,
+    "distinct_certificates_checked": 1043,
+    "distinct_expanded_certificates_checked": 775,
+    "distinct_nominal_certificates_checked": 268,
+    "independence_limits": "Independent all-physical reward filtering, Bellman triples/pruning/ties, paid action/phase/cost replay and root price arithmetic; preserved physical validators, claim semantics, old E path checker and certificate checker reused. Whole-tree tiny oracle has no DP or child pruning. This is finite model validation, not validation of real-world assumptions.",
+    "joint_optimality_status": "complete",
+    "joint_roots_unavailable": 0,
+    "joint_roots_verified": 169,
+    "problem_count": 40,
+    "root_count": 169,
+    "states_checked": 11755,
+    "status": "passed",
+    "unavailable_anchor_rows": 0,
+    "unavailable_design_rows": 0,
+    "unavailable_root_ids": [],
+    "unique_anchor_frontiers_checked": 652,
+    "unreferenced_certificates_checked": 0
+  },
+  "scope": "Independent exact rational reaggregation and direct physical-world support checks from retained data only; no policy, optimizer, model-generation, network or API execution.",
+  "selected_verified_paired_metrics": [
+    {
+      "budget_percent": 50,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "-7/400"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "1/240"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "1/240"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-1/240"
+        }
+      },
+      "population": "all",
+      "right": "E_then_support",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "-7/600"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "1/180"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "1/180"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-1/180"
+        }
+      },
+      "population": "all",
+      "right": "E_then_support",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 50,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "-1/90"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "3/640"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "3/640"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-3/640"
+        }
+      },
+      "population": "original",
+      "right": "E_then_support",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "-1/135"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "1/160"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "1/160"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-1/160"
+        }
+      },
+      "population": "original",
+      "right": "E_then_support",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 50,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "19/400"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "1/150"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "1/150"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-1/150"
+        }
+      },
+      "population": "all",
+      "right": "exact_frontier",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "17/300"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "13/1800"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "13/1800"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-13/1800"
+        }
+      },
+      "population": "all",
+      "right": "exact_frontier",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 50,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "307/5760"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "43/5760"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "43/5760"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-43/5760"
+        }
+      },
+      "population": "original",
+      "right": "exact_frontier",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 50,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "55/864"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "7/864"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "7/864"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-7/864"
+        }
+      },
+      "population": "original",
+      "right": "exact_frontier",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 100,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "-1/18"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        }
+      },
+      "population": "all",
+      "right": "E_then_support",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 100,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "-2/27"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        }
+      },
+      "population": "all",
+      "right": "E_then_support",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 100,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "-1/16"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        }
+      },
+      "population": "original",
+      "right": "E_then_support",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 100,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "-1/12"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "0"
+        }
+      },
+      "population": "original",
+      "right": "E_then_support",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 100,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "7/80"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "17/1200"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "17/1200"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-17/1200"
+        }
+      },
+      "population": "all",
+      "right": "exact_frontier",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 100,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "11/100"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "31/1800"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "31/1800"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-31/1800"
+        }
+      },
+      "population": "all",
+      "right": "exact_frontier",
+      "weighting": "structure_balanced"
+    },
+    {
+      "budget_percent": 100,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "193/1920"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "19/1152"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "19/1152"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-19/1152"
+        }
+      },
+      "population": "original",
+      "right": "exact_frontier",
+      "weighting": "equal_problem"
+    },
+    {
+      "budget_percent": 100,
+      "k": 2,
+      "left": "joint_frontier",
+      "metrics": {
+        "added_cost": {
+          "defined_problems": 40,
+          "exact_mean": "547/4320"
+        },
+        "design_newly_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "29/1440"
+        },
+        "design_supported_original": {
+          "defined_problems": 40,
+          "exact_mean": "29/1440"
+        },
+        "finally_unsupported_definite": {
+          "defined_problems": 40,
+          "exact_mean": "-29/1440"
+        }
+      },
+      "population": "original",
+      "right": "exact_frontier",
+      "weighting": "structure_balanced"
+    }
+  ],
+  "source_sha256": {
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/joint_audit_warrant/analysis.py": "9977d8c7949631eb2003e8099f2ae8144002f77b9749c0112b16e3231634f40e",
+    "studies/joint_audit_warrant/config.json": "60c8f46b2a2f1e88b6732db564d71d35bf41017dd623df0ed7174dbf761fbdc9",
+    "studies/joint_audit_warrant/execution.py": "54934d7629adb6e9c9bd35d4346f40414295f10ce9c1e743120c0835c6719795",
+    "studies/joint_audit_warrant/freeze.json": "6168b278fdf341eee6b43158fcce5d9db818bbe8e34536739911a4511cd2aadf",
+    "studies/joint_audit_warrant/frontier.py": "352d7a0b7e93c7d33947d849a7e68eee06c696c2b22150b90a28f6f6b2035597",
+    "studies/joint_audit_warrant/reference.py": "eaaf42d1038a5cbd3a265196fb8a5c1b468c9a646d4beb7b2d5e14135692ea50",
+    "studies/joint_audit_warrant/support.py": "15728fded5b86ff954c8bfe849986d6d2709b6ae175641aad4e1ac1f13cb0265"
+  },
+  "status": "passed",
+  "zero_extra_cost_support_improvement_cells": []
+}

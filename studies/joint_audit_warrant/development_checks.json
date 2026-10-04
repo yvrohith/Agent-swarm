@@ -1,0 +1,116 @@
+{
+  "additional_spend_usd": "0",
+  "aggregate_cells": 144,
+  "certificate_checks": {
+    "cache_references": 9124,
+    "certificate_generation_seconds": 0.014901831978932023,
+    "certificate_verification_seconds": 0.4765329389847466,
+    "distinct_certificates_verified": 85,
+    "model_contract_history_keys": 85
+  },
+  "completed_anchor_runs": 1464,
+  "completed_cells": 144,
+  "completed_design_runs": 504,
+  "completed_roots": 15,
+  "expected_schedule": {
+    "anchor_cells": 144,
+    "anchor_runs": 1464,
+    "root_unique_budget_cells": 60,
+    "roots": 15,
+    "unique_design_runs_three_arms": 504
+  },
+  "failures": [],
+  "frozen_dependencies": null,
+  "manifest_sha256": "a8ef52057f0d55a0699e62d7d6a6a1f7dc8afb4dc4a1d0c6abda11e936ce4b5c",
+  "missing_problem_ids": [],
+  "missing_schedule_counts": {
+    "anchor_cells": 0,
+    "anchor_runs": 0,
+    "root_unique_budget_cells": 0,
+    "roots": 0,
+    "unique_design_runs_three_arms": 0
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_evaluation_policy_outcomes_observed": 0,
+  "output": "artifacts/joint-audit-warrant/development-v1",
+  "preservation": {
+    "additional_local_files": 12,
+    "local_files": 509,
+    "tracked_files": 350
+  },
+  "problems": 4,
+  "resources": {
+    "independent_checker": {
+      "cpu_seconds": 2.331886772,
+      "wall_seconds": 2.333009078000032
+    },
+    "peak_scope": "Cumulative process peak, not an isolated per-policy measurement",
+    "process_peak_rss_kib": 246516,
+    "serialization": {
+      "cpu_seconds": 0.7419665009999994,
+      "wall_seconds": 0.7420059650030453
+    },
+    "total_cpu_seconds": 6.204402539,
+    "total_wall_seconds": 6.20621197699802
+  },
+  "retained_schedule": {
+    "anchor_cells": 144,
+    "anchor_runs": 1464,
+    "root_unique_budget_cells": 60,
+    "roots": 15,
+    "unique_design_runs_three_arms": 504
+  },
+  "schedule": {
+    "anchor_cells": 144,
+    "anchor_runs": 1464,
+    "root_unique_budget_cells": 60,
+    "roots": 15,
+    "unique_design_runs_three_arms": 504
+  },
+  "source_sha256": {
+    "src/tracebench/__init__.py": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3",
+    "src/tracebench/evidence_acquisition/__init__.py": "cc13ce3dda5f44b8ee9c696f224464deee132f2ea92afb392b8acb33d1bafb07",
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "studies/acquisition_prior_robustness/aggregation.py": "d301074af6d8990d865c8752fe0ad9c98de4379ea221f1f4317b7baa3e5bf809",
+    "studies/acquisition_prior_robustness/sensitivity.py": "917771647708477955f3f72791dcea6295d4c8eb61f5665a9d7a2024398ddb41",
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/archive_model_misspecification/expanded.py": "c42410c809e3bc20e5e549821404c53d15099799981269f1ff09894036f31472",
+    "studies/archive_model_misspecification/reference.py": "b9b6346fa29ff5dd02e0edec855df9f761c4b8fe9ec7813900f6f6f30c28dd59",
+    "studies/archive_model_misspecification/results/details.json.gz": "5eb576b6044803cd88c8f82cf2b581ca707245108c71e57cbd7f5f1d93ca6cdc",
+    "studies/audit_aware_acquisition/analysis.py": "cace93aedebca67cf3bc6fafcbbc9a7940d0733780f88052c9b60d2a29360219",
+    "studies/audit_aware_acquisition/auditing.py": "d6e4c707e1d78edfbfe4b6e0e2e338541a38e59329e1d42cc2aff38009795c15",
+    "studies/audit_aware_acquisition/development_baseline.json.gz": "7349918d35661bad18f042abbf726d0f0c8da7236a3b3bc6fc8deddc24e0e1c0",
+    "studies/audit_aware_acquisition/reference.py": "b5815d0519f5aa8225bf7cc3990267807427a0fa17e47dbb6095e65dcc6d8245",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/exact_audit_frontier/execution.py": "a246469ab6ccab509127cc42d6214d3d30bed46f358c28a881b5dc01cee41fec",
+    "studies/exact_audit_frontier/frontier.py": "8ce38cfa959ad360f94448fa02918f92e46048b14217c74bb57b12866147c222",
+    "studies/exact_audit_frontier/reference.py": "6cf422fe1f20a76310f10620253eff4461d82af7f5962165988e00c02b1f9cdb",
+    "studies/exact_audit_frontier/results/design_runs.json.gz": "c67dad55b88e89a7510757b6c0f7e8af46f733e6b20e0b4cf7d506c7b4f80cbd",
+    "studies/exact_audit_frontier/results/roots.json.gz": "f57b4cd639edf95463405b83b09f8591ae5aafac023dbc6952014a5aa3420afc",
+    "studies/exact_audit_frontier/results/runs.json.gz": "976ee8e3f7b6b6c36644f6f071b1fb9ec912169b9026ccc94cb3ab52d44c7846",
+    "studies/joint_audit_warrant/ANALYSIS.md": "d7d7bc6bbaca1885f1924d8e8d458756320a1a3a7435fa6a841c9838aae6acc8",
+    "studies/joint_audit_warrant/METHOD.md": "e097e40b9ac1f289b79044096118a21f8aa620b868807a31593d889586d7e8c2",
+    "studies/joint_audit_warrant/analysis.py": "9977d8c7949631eb2003e8099f2ae8144002f77b9749c0112b16e3231634f40e",
+    "studies/joint_audit_warrant/baseline_verification.json": "5741eacacc3158b649c04fc6d8b5c60a3c5765f2db0c9018da950ae0deef8c06",
+    "studies/joint_audit_warrant/config.json": "60c8f46b2a2f1e88b6732db564d71d35bf41017dd623df0ed7174dbf761fbdc9",
+    "studies/joint_audit_warrant/development_old_anchor_runs.json.gz": "88cfa66718742967d51cf46ccd3b2cdc380f70179145e87429666181e89704e4",
+    "studies/joint_audit_warrant/development_old_design_runs.json.gz": "bad8315f6b900d1892f81884aec4e629ceca1d1022f565c16ae135d685069588",
+    "studies/joint_audit_warrant/development_old_roots.json.gz": "adea40d1c000ab58221b6d76c85c4ef2d45ffa72e505cf27e8bff3e4d8a6075f",
+    "studies/joint_audit_warrant/execution.py": "54934d7629adb6e9c9bd35d4346f40414295f10ce9c1e743120c0835c6719795",
+    "studies/joint_audit_warrant/frontier.py": "352d7a0b7e93c7d33947d849a7e68eee06c696c2b22150b90a28f6f6b2035597",
+    "studies/joint_audit_warrant/input_provenance.json": "5563ff8c7b70f559cf4ebe584035444128efabc127fd45211fdf6afdf58cadd9",
+    "studies/joint_audit_warrant/reference.py": "eaaf42d1038a5cbd3a265196fb8a5c1b468c9a646d4beb7b2d5e14135692ea50",
+    "studies/joint_audit_warrant/support.py": "15728fded5b86ff954c8bfe849986d6d2709b6ae175641aad4e1ac1f13cb0265",
+    "tests/test_joint_audit_driver.py": "050785127b5f604aea900789123ee2d1475451e9753fd400194b73ad4bffc076",
+    "tests/test_joint_audit_planner_guards.py": "52589d0fbb9228a5d68c3fa4748a1a59df595deab0ac6285daf98e85b91b3741",
+    "tests/test_joint_audit_support_execution.py": "1c43c758e3b3ccfa7674abba997ad7c7c8e52bbd04f7257aa9fc8e0bd9164247",
+    "tests/test_joint_audit_warrant.py": "d99ff9be52031babf06d5490d420f43b52bcf112abe74c90148949da2e2acc33"
+  },
+  "split": "development",
+  "status": "passed",
+  "unavailable_roots": []
+}

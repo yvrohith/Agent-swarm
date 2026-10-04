@@ -1,0 +1,87 @@
+{
+  "additional_spend_usd": "0",
+  "analysis_contract": "Pooled finite census counts and exact equal-problem/structure-balanced means; original/new/all populations, actual k, strata, and unsupported denominators remain distinct. No confidence intervals or significance claims.",
+  "arms": [
+    "exact_frontier",
+    "E_then_support",
+    "joint_frontier"
+  ],
+  "budget_contract": "Only floor(p*R/100) for p in 0,25,50,100 at preserved H0. Deduplicate identical amounts for execution/planning but retain every anchor label. Child branches independently receive the same residual pathwise allowance.",
+  "cap_contract": "Counters span all distinct anchor budgets per root. A cap makes joint exact results unavailable at every anchor, preserving partial witnesses, comparators, and missing denominators. Caps are never increased after outcomes.",
+  "caps": {
+    "child_combinations_per_root": 10000000,
+    "states_per_root": 100000
+  },
+  "design_envelope_k": 2,
+  "development_baseline_source": "studies/audit_aware_acquisition/development_baseline.json.gz",
+  "development_old_anchor_runs_source": "studies/joint_audit_warrant/development_old_anchor_runs.json.gz",
+  "development_old_design_runs_source": "studies/joint_audit_warrant/development_old_design_runs.json.gz",
+  "development_old_roots_source": "studies/joint_audit_warrant/development_old_roots.json.gz",
+  "development_problems": 4,
+  "development_source": "studies/evidence_acquisition/development_problems.json",
+  "evaluation_anchor_cells": 1440,
+  "evaluation_baseline_source": "studies/archive_model_misspecification/results/details.json.gz",
+  "evaluation_old_anchor_runs_source": "studies/exact_audit_frontier/results/runs.json.gz",
+  "evaluation_old_design_runs_source": "studies/exact_audit_frontier/results/design_runs.json.gz",
+  "evaluation_old_roots_source": "studies/exact_audit_frontier/results/roots.json.gz",
+  "evaluation_problems": 40,
+  "evaluation_source": "studies/evidence_acquisition/evaluation_problems.json",
+  "expanded_world_cap": 4096,
+  "expected_schedule": {
+    "development": {
+      "anchor_cells": 144,
+      "anchor_runs": 1464,
+      "root_unique_budget_cells": 60,
+      "roots": 15,
+      "unique_design_runs_three_arms": 504
+    },
+    "evaluation": {
+      "anchor_cells": 1440,
+      "anchor_runs": 15048,
+      "root_unique_budget_cells": 652,
+      "roots": 169,
+      "unique_design_runs_three_arms": 5079
+    }
+  },
+  "extra_budget_percentages": [
+    0,
+    25,
+    50,
+    100
+  ],
+  "group_source": "studies/acquisition_prior_robustness/structure_groups.json",
+  "information_contract": "J and E_then_support receive nominal M0 and hypothetical physical M2 semantics. Old E receives its preserved observable k2 envelope. Actual k, realized omissions, actual unqueried answers, hidden parent identity, and evaluator labels are never selector inputs.",
+  "model_calls": 0,
+  "network_requests": 0,
+  "objective": {
+    "canonical_order": [
+      "maximize d",
+      "maximize w",
+      "minimize l",
+      "fixed equal-triple tie"
+    ],
+    "d": "Number of distinct hypothetical k2 signatures producing a checked nominal conflict before first-alarm stopping.",
+    "l": "Sum of actual added retrieval cost across every distinct hypothetical k2 signature, including nonconflicting archives.",
+    "w": "At no-alarm leaves, number of compatible nominal complete signatures if the same definite original proposal is supported by ALL compatible hypothetical M2 physical realizations; otherwise zero.",
+    "weighting": "Each distinct complete k2 signature has unit weight; not worlds, omission parents, or a deployment prior."
+  },
+  "old_policy_contract": "Preserve exact saved E paths and tie choices; projection of the full joint frontier to d,l after Pareto pruning must equal the SAVED historical frontier at that allowance.",
+  "omission_budgets": [
+    0,
+    1,
+    2
+  ],
+  "outcomes_per_query_cap": 2,
+  "query_cap": 8,
+  "reviewed_reference": "79f51a82cc0f8c8c58b4af40c5f9532269839328",
+  "schema_version": 1,
+  "sequential_baseline": "Execute exact SAVED canonical E choices at the original allowance. After a no-alarm E stop, if P0 is definite, not yet supported under M2, and some compatible full M2 signature can support it, acquire the cheapest affordable unqueried action, ties by opaque ID. Recheck conflict first, then support and attainability. Never allocate a second budget.",
+  "signature_cap": 256,
+  "stop_contract": "First nominal conflict ends all retrieval. No withdrawal, unknown, opposite conclusion, or new-signature support contributes to original-proposal reward.",
+  "study_status": "Exploratory follow-up informed by the completed detection-only study; not a correction or untouched holdout.",
+  "study_version": "joint-audit-warrant-v1",
+  "support_model_k": 2,
+  "support_price": "Retain max-detection nondominated support levels and a minimum-cost curve for achieving at least each integer support threshold; do not claim that Pareto-pruned exact-w levels enumerate all feasible exact-w policies.",
+  "ties": "Prefer STOP, then lower current query cost, then opaque query ID, then canonical child-choice encoding in fixed outcome order.",
+  "validation_contract": "Focused development and independent exhaustive tiny-tree enumeration before freeze; saved Bellman/path/certificate/aggregation checks after execution. Full installed offline test suite once at final validation, with actual passes/failures/skips."
+}

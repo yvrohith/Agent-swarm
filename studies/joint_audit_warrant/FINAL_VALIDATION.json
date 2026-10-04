@@ -1,0 +1,218 @@
+{
+  "documentation_checks": {
+    "local_links_checked": 34,
+    "no_network_command_python_syntax": "passed",
+    "no_network_command_shell_syntax": "passed",
+    "scope": "Report read against saved outcomes; syntax checked without another evaluation or test-suite execution."
+  },
+  "evaluation": {
+    "additional_spend_usd": "0",
+    "aggregate_cells": 1440,
+    "certificate_checks": {
+      "cache_references": 93174,
+      "certificate_generation_seconds": 0.17447984695172636,
+      "certificate_verification_seconds": 7.173868287936784,
+      "distinct_certificates_verified": 1043,
+      "model_contract_history_keys": 1043
+    },
+    "completed_anchor_runs": 15048,
+    "completed_cells": 1440,
+    "completed_design_runs": 5079,
+    "completed_roots": 169,
+    "expected_schedule": {
+      "anchor_cells": 1440,
+      "anchor_runs": 15048,
+      "root_unique_budget_cells": 652,
+      "roots": 169,
+      "unique_design_runs_three_arms": 5079
+    },
+    "failures": [],
+    "frozen_dependencies": 42,
+    "missing_problem_ids": [],
+    "missing_schedule_counts": {
+      "anchor_cells": 0,
+      "anchor_runs": 0,
+      "root_unique_budget_cells": 0,
+      "roots": 0,
+      "unique_design_runs_three_arms": 0
+    },
+    "model_calls": 0,
+    "network_requests": 0,
+    "preservation": {
+      "additional_local_files": 12,
+      "local_files": 509,
+      "tracked_files": 350
+    },
+    "problems": 40,
+    "resources": {
+      "independent_checker": {
+        "cpu_seconds": 39.373298021,
+        "wall_seconds": 39.391735110999434
+      },
+      "peak_scope": "Cumulative process peak, not an isolated per-policy measurement",
+      "process_peak_rss_kib": 1142236,
+      "serialization": {
+        "cpu_seconds": 2.8536494359999978,
+        "wall_seconds": 2.8538154470006702
+      },
+      "total_cpu_seconds": 69.483486861,
+      "total_wall_seconds": 69.52010912800324
+    },
+    "retained_schedule": {
+      "anchor_cells": 1440,
+      "anchor_runs": 15048,
+      "root_unique_budget_cells": 652,
+      "roots": 169,
+      "unique_design_runs_three_arms": 5079
+    },
+    "schedule": {
+      "anchor_cells": 1440,
+      "anchor_runs": 15048,
+      "root_unique_budget_cells": 652,
+      "roots": 169,
+      "unique_design_runs_three_arms": 5079
+    },
+    "split": "evaluation",
+    "status": "passed",
+    "unavailable_roots": []
+  },
+  "external_activity": {
+    "additional_spend_usd": "0",
+    "credential_access": false,
+    "dependency_downloads": 0,
+    "model_calls": 0,
+    "network_requests": 0,
+    "provider_private_reasoning_access": false
+  },
+  "focused_tests": {
+    "command": "pytest -q tests/test_joint_audit_warrant.py tests/test_joint_audit_support_execution.py tests/test_joint_audit_planner_guards.py tests/test_joint_audit_driver.py",
+    "failed": 0,
+    "passed": 90,
+    "scope": "Four new focused files; not a full-repository run.",
+    "skipped": 0,
+    "wall_seconds_reported": 17.27
+  },
+  "freeze": {
+    "dependencies": 42,
+    "new_evaluation_outcomes_observed_before_freeze": 0,
+    "sha256": "6168b278fdf341eee6b43158fcce5d9db818bbe8e34536739911a4511cd2aadf"
+  },
+  "fresh_saved_output_verification": {
+    "path": "studies/joint_audit_warrant/OFFLINE_VERIFICATION.json",
+    "sha256": "0c88562a9b2c3a680adbfd91523c2c4ddd826ba269c65792b43a1fedce017d5d",
+    "status": "passed"
+  },
+  "full_installed_offline_suite": {
+    "command": ".venv/bin/python invoking pytest.main([\"-q\", \"--junitxml=artifacts/joint-audit-warrant/full-offline-pytest.xml\"])",
+    "console_wall_seconds": 89.11,
+    "errors": 0,
+    "failed": 0,
+    "invocations": 1,
+    "junit_path": "artifacts/joint-audit-warrant/full-offline-pytest.xml",
+    "junit_seconds": 89.098,
+    "junit_sha256": "ff204c718d052fd1b1da34d6cc75b3c09edbdf69967844d3a5b372fbdc5313e9",
+    "passed": 1125,
+    "scope": "All installed repository tests, including the 90 new tests; not a dependency-scoped run.",
+    "skipped": 0
+  },
+  "historical_tracked_worktree_unchanged": true,
+  "independent_arithmetic_and_physical_support_audit": {
+    "checks": {
+      "actual_k_physical_support_view_checks": 15048,
+      "anchor_summary_rows": 2160,
+      "design_problem_anchor_checks": 160,
+      "design_weighted_summary_checks": 40,
+      "exact_numeric_checks": 623160,
+      "paired_problem_rows": 4320,
+      "paired_summary_rows": 1080,
+      "physical_support_paid_path_checks": 5079,
+      "physical_world_truth_checks": 2184,
+      "population_cells": 4320,
+      "root_policy_point_checks": 1956,
+      "saved_E_anchor_views_unchanged": 5016,
+      "saved_E_design_paths_unchanged": 1693,
+      "sequential_original_budget_checks": 1693,
+      "sequential_support_action_checks": 59,
+      "support_threshold_price_checks": 1379,
+      "whole_frontier_projection_checks": 652
+    },
+    "path": "studies/joint_audit_warrant/INDEPENDENT_VALIDATION.json",
+    "sha256": "0e5f6f428d6dfc6174eb8c6952add60cb0620fa1b35fd041952fd0527a22301b",
+    "status": "passed"
+  },
+  "index_unchanged": true,
+  "limits": [
+    "Finite supplied physical hypotheses, deterministic policies and signature-census weights; not real-incident accuracy or deployment prevalence.",
+    "New support policies receive hypothetical M2 physical claim semantics beyond historical E observable-envelope knowledge.",
+    "Full M2 retrieval still leaves 86 of 271 original definite proposals unsupported.",
+    "The full-budget actual-k1 sequential baseline supports 186 originals versus joint 185; this adverse result is retained.",
+    "Certificate semantics and physical validators are preserved shared dependencies; independent checks do not establish real-world assumptions."
+  ],
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "scope": "All repository Python sources; checked before source freeze.",
+    "status": "passed"
+  },
+  "local_development_output": {
+    "manifest_sha256": "a8ef52057f0d55a0699e62d7d6a6a1f7dc8afb4dc4a1d0c6abda11e936ce4b5c",
+    "path": "artifacts/joint-audit-warrant/development-v1",
+    "verified_outputs": 11
+  },
+  "new_artifacts_sha256": {
+    "studies/joint_audit_warrant/ANALYSIS.md": "d7d7bc6bbaca1885f1924d8e8d458756320a1a3a7435fa6a841c9838aae6acc8",
+    "studies/joint_audit_warrant/INDEPENDENT_VALIDATION.json": "0e5f6f428d6dfc6174eb8c6952add60cb0620fa1b35fd041952fd0527a22301b",
+    "studies/joint_audit_warrant/METHOD.md": "e097e40b9ac1f289b79044096118a21f8aa620b868807a31593d889586d7e8c2",
+    "studies/joint_audit_warrant/OFFLINE_VERIFICATION.json": "0c88562a9b2c3a680adbfd91523c2c4ddd826ba269c65792b43a1fedce017d5d",
+    "studies/joint_audit_warrant/RESULTS.md": "7267bbda922f73ca363c5dedb0e2731acff0063302957aef86e77bf70d01ff9e",
+    "studies/joint_audit_warrant/analysis.py": "9977d8c7949631eb2003e8099f2ae8144002f77b9749c0112b16e3231634f40e",
+    "studies/joint_audit_warrant/baseline_verification.json": "5741eacacc3158b649c04fc6d8b5c60a3c5765f2db0c9018da950ae0deef8c06",
+    "studies/joint_audit_warrant/config.json": "60c8f46b2a2f1e88b6732db564d71d35bf41017dd623df0ed7174dbf761fbdc9",
+    "studies/joint_audit_warrant/development_checks.json": "10fc6efb4d651761dab3ef118314c3afb9c9325bbceec6a89cbc91171b3a1539",
+    "studies/joint_audit_warrant/development_old_anchor_runs.json.gz": "88cfa66718742967d51cf46ccd3b2cdc380f70179145e87429666181e89704e4",
+    "studies/joint_audit_warrant/development_old_design_runs.json.gz": "bad8315f6b900d1892f81884aec4e629ceca1d1022f565c16ae135d685069588",
+    "studies/joint_audit_warrant/development_old_roots.json.gz": "adea40d1c000ab58221b6d76c85c4ef2d45ffa72e505cf27e8bff3e4d8a6075f",
+    "studies/joint_audit_warrant/execution.py": "54934d7629adb6e9c9bd35d4346f40414295f10ce9c1e743120c0835c6719795",
+    "studies/joint_audit_warrant/freeze.json": "6168b278fdf341eee6b43158fcce5d9db818bbe8e34536739911a4511cd2aadf",
+    "studies/joint_audit_warrant/frontier.py": "352d7a0b7e93c7d33947d849a7e68eee06c696c2b22150b90a28f6f6b2035597",
+    "studies/joint_audit_warrant/input_provenance.json": "5563ff8c7b70f559cf4ebe584035444128efabc127fd45211fdf6afdf58cadd9",
+    "studies/joint_audit_warrant/pre_freeze_checks.json": "b630d2ed820344ddc8785aca66a61f8fb5d07a6dc08ba51b06f3564a05e48550",
+    "studies/joint_audit_warrant/preservation.json": "1d9fdaa02e44264bfaa6bf520026679d71025c98278c7197bf4fa3031d578e0b",
+    "studies/joint_audit_warrant/reference.py": "eaaf42d1038a5cbd3a265196fb8a5c1b468c9a646d4beb7b2d5e14135692ea50",
+    "studies/joint_audit_warrant/results/certificates.json.gz": "1b19e3ab22f8e44694bdb16d5445bc4b2bae70d77c1a93d7f62b3d35e379e20a",
+    "studies/joint_audit_warrant/results/design_runs.json.gz": "a5e93038c1a499ca8623a2486bdd2c2c6a89f52cd16eeefcb650aadd1bcebcfe",
+    "studies/joint_audit_warrant/results/design_summary.json.gz": "3b1b57418d53fb92aca064bb93ff8964044bdfa3526b78104bfc9dc58a4f310a",
+    "studies/joint_audit_warrant/results/independent_verification.json": "a9029f13329eb5b1518b8a561aec8b7b9b34c538888f73e22aef56a23dfea602",
+    "studies/joint_audit_warrant/results/legacy_parity.json": "55651de62071fa359851ec0b94de2547e993a8ed54f1e3bc89a65487a83d8476",
+    "studies/joint_audit_warrant/results/manifest.json": "9adf504fc0bc5d64dedf4af0a0a30a31ea38f4da327bd8b7cf8a63402f6201d8",
+    "studies/joint_audit_warrant/results/paired.json.gz": "70e5cd16e71c41d810a8138ccc808a1c528540873e56a7608981834a5fe3e530",
+    "studies/joint_audit_warrant/results/per_condition.json.gz": "4626bca160f440ac736516fa2e3b859442dfee7c7e7209034d86681c86400198",
+    "studies/joint_audit_warrant/results/roots.json.gz": "3a409fadf9f5778c18d93b276c2d4733422e42f2bc90b263f28b2a0ac0f6f605",
+    "studies/joint_audit_warrant/results/runs.json.gz": "b17d48cdbe35ed1205115620a97dd7497b82de994c27588820b60cd693838e62",
+    "studies/joint_audit_warrant/results/summary.json.gz": "7180943423b3d7d34f8b91d1d6a7b867f0eec7ca500146606ce5647c3b4adf96",
+    "studies/joint_audit_warrant/results/validation.json": "3472c8c41327dcf0095d4be11619da8fca33295cec5a460cf67e9d858ebc2e01",
+    "studies/joint_audit_warrant/support.py": "15728fded5b86ff954c8bfe849986d6d2709b6ae175641aad4e1ac1f13cb0265",
+    "tests/test_joint_audit_driver.py": "050785127b5f604aea900789123ee2d1475451e9753fd400194b73ad4bffc076",
+    "tests/test_joint_audit_planner_guards.py": "52589d0fbb9228a5d68c3fa4748a1a59df595deab0ac6285daf98e85b91b3741",
+    "tests/test_joint_audit_support_execution.py": "1c43c758e3b3ccfa7674abba997ad7c7c8e52bbd04f7257aa9fc8e0bd9164247",
+    "tests/test_joint_audit_warrant.py": "d99ff9be52031babf06d5490d420f43b52bcf112abe74c90148949da2e2acc33"
+  },
+  "preservation": {
+    "additional_local_files": 12,
+    "local_files": 509,
+    "tracked_files": 350
+  },
+  "publication_actions": {
+    "committed": false,
+    "deployed": false,
+    "published": false,
+    "pushed": false,
+    "staged": false,
+    "submitted": false
+  },
+  "schema_version": 1,
+  "scope": "Completed fixed joint detection/warrant extension only; no follow-on study.",
+  "self_hash_exclusion": "This final validation record is excluded from its own artifact hash map.",
+  "starting_and_final_head": "79f51a82cc0f8c8c58b4af40c5f9532269839328",
+  "status": "passed",
+  "validated_at_utc": "2026-10-04T14:25:57.342245+00:00"
+}

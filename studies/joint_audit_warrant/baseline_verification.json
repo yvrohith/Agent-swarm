@@ -1,0 +1,501 @@
+{
+  "additional_old_development_local_files_verified": 12,
+  "additional_spend_usd": "0",
+  "baseline_reaggregation_script_sha256": "cdb0b8e3d3123890be8eaf6a49268d71e81472847ddd706d1b1b68185f84ae4e",
+  "checked_at_utc": "2026-10-04T13:54:42.093814+00:00",
+  "complete_archive_supported_original_ceiling_by_k": {
+    "0": 271,
+    "1": 200,
+    "2": 185
+  },
+  "credential_access": false,
+  "expected_schedule": {
+    "development": {
+      "anchor_cells": 144,
+      "anchor_runs": 1464,
+      "root_unique_budget_cells": 60,
+      "roots": 15,
+      "unique_design_runs_three_arms": 504
+    },
+    "evaluation": {
+      "anchor_cells": 1440,
+      "anchor_runs": 15048,
+      "root_unique_budget_cells": 652,
+      "roots": 169,
+      "unique_design_runs_three_arms": 5079
+    }
+  },
+  "freeze_chain": [
+    {
+      "freeze_sha256": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+      "frozen_dependencies_checked": 19,
+      "study": "evidence_acquisition"
+    },
+    {
+      "freeze_sha256": "b4aa0f67a5be921bb0882c1f53dffd4c5ef19b425dd63e83997eefc27390cbe2",
+      "frozen_dependencies_checked": 34,
+      "study": "acquisition_prior_robustness"
+    },
+    {
+      "freeze_sha256": "6243d8d8ff95dad06abad0fc5dc1f79118fcd49042c175468118f9025b492fea",
+      "frozen_dependencies_checked": 23,
+      "study": "archive_model_misspecification"
+    },
+    {
+      "freeze_sha256": "b31fd98de70fbec09756e268ed1ea3c617c66b3f2f5df773a0e58aba03594f9a",
+      "frozen_dependencies_checked": 27,
+      "study": "audit_aware_acquisition"
+    },
+    {
+      "freeze_sha256": "fff39cd695f83308b3f76c018a84c1fa01720c14c684b37f9356ab96cb4a0bcb",
+      "frozen_dependencies_checked": 36,
+      "study": "exact_audit_frontier"
+    }
+  ],
+  "independence_limits": [
+    "Only preserved historical policies are verified/reaggregated. No new joint or sequential evaluation policy is executed.",
+    "The old offline verifier independently checks its own Bellman/path logic but reuses preserved physical and certificate semantics; it does not establish incident truth or independently reprove the original nominal optimizer.",
+    "The full-archive support ceiling is an existing saved-reference endpoint under each declared contract, not a new scientific discovery."
+  ],
+  "input_only_anchor_schedule": {
+    "development": {
+      "coincident_root_anchor_views": 0,
+      "design_signatures": 42,
+      "new_signatures": 4,
+      "original_signatures": 38,
+      "per_policy_actual_k_anchor_views": 488,
+      "per_policy_actual_k_problem_cells": 48,
+      "per_policy_design_anchor_views": 168,
+      "per_policy_unique_design_paths": 168,
+      "problems": 4,
+      "root_anchor_views": 60,
+      "root_input_schedule_sha256": "312ab2a7e2a53cd26a7d29e3d3628d5d3f61e5388556615843265499612861ab",
+      "roots": 15,
+      "unique_root_amounts": 60
+    },
+    "evaluation": {
+      "coincident_root_anchor_views": 24,
+      "design_signatures": 431,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "per_policy_actual_k_anchor_views": 5016,
+      "per_policy_actual_k_problem_cells": 480,
+      "per_policy_design_anchor_views": 1724,
+      "per_policy_unique_design_paths": 1693,
+      "problems": 40,
+      "root_anchor_views": 676,
+      "root_input_schedule_sha256": "d771caa8edd0ef601bc6f1f06766f6b16ea4fe18655352374d372cb08a22c206",
+      "roots": 169,
+      "unique_root_amounts": 652
+    }
+  },
+  "input_sha256": {
+    "artifacts/exact-audit-frontier/development-v1/design_runs.json.gz": "bad8315f6b900d1892f81884aec4e629ceca1d1022f565c16ae135d685069588",
+    "artifacts/exact-audit-frontier/development-v1/manifest.json": "d3007a446f96f662c4e300940a36ece8c776057f3e69b51b0da5ab3686c9b9fb",
+    "artifacts/exact-audit-frontier/development-v1/roots.json.gz": "adea40d1c000ab58221b6d76c85c4ef2d45ffa72e505cf27e8bff3e4d8a6075f",
+    "artifacts/exact-audit-frontier/development-v1/runs.json.gz": "88cfa66718742967d51cf46ccd3b2cdc380f70179145e87429666181e89704e4",
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/archive_model_misspecification/results/details.json.gz": "5eb576b6044803cd88c8f82cf2b581ca707245108c71e57cbd7f5f1d93ca6cdc",
+    "studies/audit_aware_acquisition/development_baseline.json.gz": "7349918d35661bad18f042abbf726d0f0c8da7236a3b3bc6fc8deddc24e0e1c0",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/exact_audit_frontier/FINAL_VALIDATION.json": "bdd041f45278fe688694ef4f4a43e1ca20891f8db06be8af740d26d80a083b2e",
+    "studies/exact_audit_frontier/config.json": "3c48a1b2fe08c36b569450f8585386d46681ba563e5824c1d06c604df8728e08",
+    "studies/exact_audit_frontier/development_checks.json": "a9f1c854bbeccf6fe714630efb5835026180d6d121ae05c52befcd9cf9aa9b05",
+    "studies/exact_audit_frontier/freeze.json": "fff39cd695f83308b3f76c018a84c1fa01720c14c684b37f9356ab96cb4a0bcb",
+    "studies/exact_audit_frontier/results/design_runs.json.gz": "c67dad55b88e89a7510757b6c0f7e8af46f733e6b20e0b4cf7d506c7b4f80cbd",
+    "studies/exact_audit_frontier/results/manifest.json": "6177a235def766c08f38020c0ebd3b62487c1a9ae9c5cd00fe4735d296f8991d",
+    "studies/exact_audit_frontier/results/roots.json.gz": "f57b4cd639edf95463405b83b09f8591ae5aafac023dbc6952014a5aa3420afc",
+    "studies/exact_audit_frontier/results/runs.json.gz": "976ee8e3f7b6b6c36644f6f071b1fb9ec912169b9026ccc94cb3ab52d44c7846",
+    "studies/joint_audit_warrant/development_old_anchor_runs.json.gz": "88cfa66718742967d51cf46ccd3b2cdc380f70179145e87429666181e89704e4",
+    "studies/joint_audit_warrant/development_old_design_runs.json.gz": "bad8315f6b900d1892f81884aec4e629ceca1d1022f565c16ae135d685069588",
+    "studies/joint_audit_warrant/development_old_roots.json.gz": "adea40d1c000ab58221b6d76c85c4ef2d45ffa72e505cf27e8bff3e4d8a6075f",
+    "studies/joint_audit_warrant/input_provenance.json": "5563ff8c7b70f559cf4ebe584035444128efabc127fd45211fdf6afdf58cadd9",
+    "studies/joint_audit_warrant/preservation.json": "1d9fdaa02e44264bfaa6bf520026679d71025c98278c7197bf4fa3031d578e0b"
+  },
+  "local_manifest_sha256": "e71c117d7a61fba099970ee5bbc1209850e4440f38955b23dd3412e3eb49a69a",
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_joint_policy_outcomes_observed": 0,
+  "new_sequential_policy_outcomes_observed": 0,
+  "offline_historical_verification": {
+    "command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONPATH=src PYTHONDONTWRITEBYTECODE=1 .venv/bin/python [socket-denial wrapper] -m studies.exact_audit_frontier.analysis verify",
+    "exit_code": 0,
+    "output_directories_overwritten": false,
+    "result": {
+      "independent_verification": {
+        "anchor_grid_rows": 30096,
+        "certificate_references_checked": 181443,
+        "child_combinations_checked": 105551,
+        "completed_anchor_paths_checked": 30096,
+        "completed_design_paths_checked": 30510,
+        "design_grid_rows": 30510,
+        "distinct_certificate_all_query_witness_checks": 17330,
+        "distinct_certificates_checked": 7201,
+        "distinct_expanded_certificates_checked": 4773,
+        "distinct_nominal_certificates_checked": 2428,
+        "exact_optimality_status": "complete",
+        "exact_roots_unavailable": 0,
+        "exact_roots_verified": 169,
+        "hindsight_rows_checked": 431,
+        "hindsight_subsets_enumerated": 10688,
+        "independence_limits": "All Bellman actions/branches/frontiers, subset minima and path semantics checked without production solver/runtime calls; preserved physical reconstruction, claim semantics and certificate checker reused. Original nominal optimizer not independently reproved. Tiny oracle enumerates whole trees without DP.",
+        "problem_count": 40,
+        "root_budgets_checked": 1722,
+        "root_count": 169,
+        "states_checked": 53290,
+        "status": "passed",
+        "unavailable_anchor_rows": 0,
+        "unavailable_design_rows": 0,
+        "unavailable_root_ids": [],
+        "unreferenced_certificates_checked": 0
+      },
+      "legacy_parity": {
+        "excluded_fields": [
+          "selection_seconds",
+          "checking_seconds"
+        ],
+        "historical_anchor_runs": 20064,
+        "status": "passed"
+      },
+      "schedule": {
+        "anchor_cells": 2880,
+        "anchor_runs": 30096,
+        "integer_design_runs_six_arms": 30510,
+        "root_integer_budget_cells": 1722,
+        "roots": 169
+      },
+      "scope": "Frozen scientific dependencies and retained outputs; historical preservation is checked separately",
+      "status": "passed"
+    },
+    "socket_denial": [
+      "socket.socket.connect",
+      "socket.socket.connect_ex",
+      "socket.create_connection",
+      "socket.getaddrinfo"
+    ],
+    "status": "passed"
+  },
+  "old_development": {
+    "anchor_views": 2928,
+    "design_runs": 2520,
+    "historical_development_checks_sha256": "a9f1c854bbeccf6fe714630efb5835026180d6d121ae05c52befcd9cf9aa9b05",
+    "manifest_outputs_verified": 11,
+    "manifest_sha256": "d3007a446f96f662c4e300940a36ece8c776057f3e69b51b0da5ab3686c9b9fb",
+    "portable_copy_sources": {
+      "design_runs.json.gz": {
+        "sha256": "bad8315f6b900d1892f81884aec4e629ceca1d1022f565c16ae135d685069588",
+        "source": "artifacts/exact-audit-frontier/development-v1/design_runs.json.gz"
+      },
+      "roots.json.gz": {
+        "sha256": "adea40d1c000ab58221b6d76c85c4ef2d45ffa72e505cf27e8bff3e4d8a6075f",
+        "source": "artifacts/exact-audit-frontier/development-v1/roots.json.gz"
+      },
+      "runs.json.gz": {
+        "sha256": "88cfa66718742967d51cf46ccd3b2cdc380f70179145e87429666181e89704e4",
+        "source": "artifacts/exact-audit-frontier/development-v1/runs.json.gz"
+      }
+    },
+    "problems": 4,
+    "roots": 15,
+    "status": "passed"
+  },
+  "old_evaluation_counts": {
+    "actual_k_anchor_views": 30096,
+    "aggregate_cells": 2880,
+    "design_runs": 30510,
+    "integer_root_budget_cells": 1722,
+    "old_E_anchor_paths_bound_to_exact_saved_design_choices": 5016,
+    "problems": 40,
+    "roots": 169,
+    "structure_groups": 30
+  },
+  "old_final_validation_interpretation": "316 is the historically recorded pre-commit baseline; current350 includes34 committed exact-frontier study files and tests. No old manifest is refreshed.",
+  "old_final_validation_precommit_preservation_count": 316,
+  "old_test_scope": {
+    "historical_dependencies": 210,
+    "new_focused": 86,
+    "passed": 296,
+    "scope": "dependency-scoped, not a full repository run; this baseline step does not rerun those tests"
+  },
+  "opaque_local_files_verified": 509,
+  "original_proposal_census": {
+    "definite_P0": 271,
+    "initial_supported_M2": 175,
+    "initial_unsupported_M2": 96,
+    "irreducible_P0": 121,
+    "signatures": 392
+  },
+  "portable_development_exact_reference": {
+    "files": [
+      {
+        "byte_identical": true,
+        "bytes": 308473,
+        "copy": "studies/joint_audit_warrant/development_old_roots.json.gz",
+        "sha256": "adea40d1c000ab58221b6d76c85c4ef2d45ffa72e505cf27e8bff3e4d8a6075f",
+        "source": "artifacts/exact-audit-frontier/development-v1/roots.json.gz"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 120263,
+        "copy": "studies/joint_audit_warrant/development_old_design_runs.json.gz",
+        "sha256": "bad8315f6b900d1892f81884aec4e629ceca1d1022f565c16ae135d685069588",
+        "source": "artifacts/exact-audit-frontier/development-v1/design_runs.json.gz"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 388198,
+        "copy": "studies/joint_audit_warrant/development_old_anchor_runs.json.gz",
+        "sha256": "88cfa66718742967d51cf46ccd3b2cdc380f70179145e87429666181e89704e4",
+        "source": "artifacts/exact-audit-frontier/development-v1/runs.json.gz"
+      }
+    ],
+    "source_manifest": "artifacts/exact-audit-frontier/development-v1/manifest.json",
+    "source_manifest_sha256": "d3007a446f96f662c4e300940a36ece8c776057f3e69b51b0da5ab3686c9b9fb"
+  },
+  "prior_artifact_hashes": [
+    {
+      "artifact_pins_checked": 0,
+      "final_validation_sha256": "212b2382e3e19073f9888e7c6ea30c0df9380a8dc554a68673bc96a019ce7b53",
+      "study": "archive_model_misspecification"
+    },
+    {
+      "artifact_pins_checked": 0,
+      "final_validation_sha256": "cc56262d8a0f9b6ef07d407bd01cbe1da06c28ab4298b63635bf981444a367c3",
+      "study": "audit_aware_acquisition"
+    },
+    {
+      "artifact_pins_checked": 33,
+      "final_validation_sha256": "bdd041f45278fe688694ef4f4a43e1ca20891f8db06be8af740d26d80a083b2e",
+      "study": "exact_audit_frontier"
+    }
+  ],
+  "prior_result_manifests": [
+    {
+      "manifest_sha256": "d8a66b24107949ceb4346a9001df86dc331f027a5247c34958bb27341735d9f5",
+      "result_hashes_checked": 5,
+      "study": "evidence_acquisition"
+    },
+    {
+      "manifest_sha256": "cfad54ca8b0b52e352c51c04959da30790232b0170612c77ad0e81b50f6927ec",
+      "result_hashes_checked": 5,
+      "study": "acquisition_prior_robustness"
+    },
+    {
+      "manifest_sha256": "f4479aadfa0fe6a557d52e5abe9ee230ff8b7e35d43600cbe3305484455a3fee",
+      "result_hashes_checked": 5,
+      "study": "archive_model_misspecification"
+    },
+    {
+      "manifest_sha256": "2fb087221bb0aab1003cb20f1ff075b0df02fd18c67b8f7806a9cced7a47e264",
+      "result_hashes_checked": 7,
+      "study": "audit_aware_acquisition"
+    },
+    {
+      "manifest_sha256": "6177a235def766c08f38020c0ebd3b62487c1a9ae9c5cd00fe4735d296f8991d",
+      "result_hashes_checked": 11,
+      "study": "exact_audit_frontier"
+    }
+  ],
+  "reference_anchor_reaggregation": [
+    {
+      "added_cost_all": 1730,
+      "added_cost_new": 132,
+      "added_cost_original": 1598,
+      "all_signatures": 431,
+      "anchor_percent": 50,
+      "arm": "closure_informed",
+      "base_cost_all": 1617,
+      "detections": 20,
+      "k": 1,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 3,
+      "supported_original": 178,
+      "unsupported_original": 93
+    },
+    {
+      "added_cost_all": 1822,
+      "added_cost_new": 141,
+      "added_cost_original": 1681,
+      "all_signatures": 431,
+      "anchor_percent": 50,
+      "arm": "closure_informed_affordable",
+      "base_cost_all": 1617,
+      "detections": 20,
+      "k": 1,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 3,
+      "supported_original": 178,
+      "unsupported_original": 93
+    },
+    {
+      "added_cost_all": 314,
+      "added_cost_new": 117,
+      "added_cost_original": 197,
+      "all_signatures": 431,
+      "anchor_percent": 50,
+      "arm": "exact_frontier",
+      "base_cost_all": 1617,
+      "detections": 32,
+      "k": 1,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 2,
+      "supported_original": 177,
+      "unsupported_original": 94
+    },
+    {
+      "added_cost_all": 4458,
+      "added_cost_new": 223,
+      "added_cost_original": 4235,
+      "all_signatures": 431,
+      "anchor_percent": 100,
+      "arm": "closure_informed",
+      "base_cost_all": 1617,
+      "detections": 39,
+      "k": 1,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 25,
+      "supported_original": 200,
+      "unsupported_original": 71
+    },
+    {
+      "added_cost_all": 4458,
+      "added_cost_new": 223,
+      "added_cost_original": 4235,
+      "all_signatures": 431,
+      "anchor_percent": 100,
+      "arm": "closure_informed_affordable",
+      "base_cost_all": 1617,
+      "detections": 39,
+      "k": 1,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 25,
+      "supported_original": 200,
+      "unsupported_original": 71
+    },
+    {
+      "added_cost_all": 414,
+      "added_cost_new": 152,
+      "added_cost_original": 262,
+      "all_signatures": 431,
+      "anchor_percent": 100,
+      "arm": "exact_frontier",
+      "base_cost_all": 1617,
+      "detections": 39,
+      "k": 1,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 3,
+      "supported_original": 178,
+      "unsupported_original": 93
+    },
+    {
+      "added_cost_all": 1730,
+      "added_cost_new": 132,
+      "added_cost_original": 1598,
+      "all_signatures": 431,
+      "anchor_percent": 50,
+      "arm": "closure_informed",
+      "base_cost_all": 1617,
+      "detections": 20,
+      "k": 2,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 3,
+      "supported_original": 178,
+      "unsupported_original": 93
+    },
+    {
+      "added_cost_all": 1822,
+      "added_cost_new": 141,
+      "added_cost_original": 1681,
+      "all_signatures": 431,
+      "anchor_percent": 50,
+      "arm": "closure_informed_affordable",
+      "base_cost_all": 1617,
+      "detections": 20,
+      "k": 2,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 3,
+      "supported_original": 178,
+      "unsupported_original": 93
+    },
+    {
+      "added_cost_all": 314,
+      "added_cost_new": 117,
+      "added_cost_original": 197,
+      "all_signatures": 431,
+      "anchor_percent": 50,
+      "arm": "exact_frontier",
+      "base_cost_all": 1617,
+      "detections": 32,
+      "k": 2,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 2,
+      "supported_original": 177,
+      "unsupported_original": 94
+    },
+    {
+      "added_cost_all": 4458,
+      "added_cost_new": 223,
+      "added_cost_original": 4235,
+      "all_signatures": 431,
+      "anchor_percent": 100,
+      "arm": "closure_informed",
+      "base_cost_all": 1617,
+      "detections": 39,
+      "k": 2,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 10,
+      "supported_original": 185,
+      "unsupported_original": 86
+    },
+    {
+      "added_cost_all": 4458,
+      "added_cost_new": 223,
+      "added_cost_original": 4235,
+      "all_signatures": 431,
+      "anchor_percent": 100,
+      "arm": "closure_informed_affordable",
+      "base_cost_all": 1617,
+      "detections": 39,
+      "k": 2,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 10,
+      "supported_original": 185,
+      "unsupported_original": 86
+    },
+    {
+      "added_cost_all": 414,
+      "added_cost_new": 152,
+      "added_cost_original": 262,
+      "all_signatures": 431,
+      "anchor_percent": 100,
+      "arm": "exact_frontier",
+      "base_cost_all": 1617,
+      "detections": 39,
+      "k": 2,
+      "new_signatures": 39,
+      "original_signatures": 392,
+      "restored_original": 3,
+      "supported_original": 178,
+      "unsupported_original": 93
+    }
+  ],
+  "repository_instructions": "No AGENTS.md found in the repository/workspace search.",
+  "schema_version": 1,
+  "starting_head": "79f51a82cc0f8c8c58b4af40c5f9532269839328",
+  "starting_worktree": "clean, observed before the new study directory existed",
+  "status": "passed",
+  "tracked_historical_files_verified": 350,
+  "tracked_sha256_mapping_digest": "ae61e7e9e2fbe3f42b2e03edf0e8bb9c61dd559d13131ec0a0127f972867d441"
+}
