@@ -1,0 +1,101 @@
+{
+  "additional_spend_usd": "0",
+  "baseline_head": "be3b22c4fd655d82dedbb2e86cd9abc8378b8334",
+  "baseline_reproduction": {
+    "full_budget_trajectories": 1960,
+    "historical_certificates": 1922,
+    "metric_rows": 200,
+    "status": "passed"
+  },
+  "checked_at_utc": "2026-10-04T01:30:15.536238+00:00",
+  "credential_access": false,
+  "evaluation": {
+    "certificate_failures": 0,
+    "deployments": 5,
+    "exact_prior_problem_solves": 200,
+    "exact_state_cap": 100000,
+    "failed_or_capped_solves": 0,
+    "matched_charged_queries": 14273,
+    "matched_signature_trajectories": 5880,
+    "maximum_admitted_exact_states": 111,
+    "pipeline_seconds": 52.78885753900249,
+    "planning_modes": 2,
+    "policies": 5,
+    "prior_invariance_prefix_checks": 81588,
+    "prior_ratio_bound_checks": 200,
+    "problems": 40,
+    "rows": 2000,
+    "structural_groups": 30,
+    "timing_constructions": 600,
+    "timing_repetition_workload_hashes_agree": true,
+    "timing_repetitions": 3,
+    "unavailable_rows": 0,
+    "unique_new_certificates": 2394,
+    "zero_optimum_problem_prior_pairs": 25
+  },
+  "existing_tracked_files_modified": 0,
+  "freeze_sha256": "b4aa0f67a5be921bb0882c1f53dffd4c5ef19b425dd63e83997eefc27390cbe2",
+  "frozen_dependencies": 34,
+  "full_offline_test_suite": {
+    "blocked_socket_functions": [
+      "socket.socket.connect",
+      "socket.socket.connect_ex",
+      "socket.create_connection",
+      "socket.getaddrinfo"
+    ],
+    "command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 .venv/bin/python (socket-blocking wrapper executing pytest -q)",
+    "elapsed_seconds": 23.08,
+    "failed": 0,
+    "passed": 816,
+    "skipped": 0
+  },
+  "git_actions": "No staging, commit, push, reset, or history rewrite",
+  "historical_preservation": {
+    "historical_local_files": 509,
+    "historical_tracked_files": 240
+  },
+  "independent_audit_counts": {
+    "deployment_distributions": 200,
+    "history_prefix_status_invariance_checks": 81588,
+    "independently_reconstructed_p0_policy_trees": 200,
+    "matched_trajectories": 5880,
+    "new_unique_certificates_reconstructed": 2394,
+    "original_full_budget_policy_certificates_reconstructed": 1052,
+    "original_prior_reproduced_rows": 400,
+    "per_problem_paired_contrasts": 800,
+    "prior_mismatch_bounds": 200,
+    "reaggregated_problem_policy_rows": 2000,
+    "signature_mass_records": 1960,
+    "summary_paired_rows": 200,
+    "summary_policy_rows": 500,
+    "summary_prior_penalty_rows": 50,
+    "timing_constructions": 600,
+    "weight_tables": 10,
+    "zero_optimum_problem_prior_pairs": 25
+  },
+  "independent_verification_sha256": "ddce7502d8fe773e63d2de81eecf5ad2023027e4f7f2e31d2a35b3bc442fba14",
+  "initial_checkout": "clean",
+  "limits": [
+    "Fixed finite model and 30 structural groups, not independent incident samples",
+    "Positive-prior invariance does not test forged evidence, omitted mechanisms or unreliable completeness",
+    "Matched-prior planners are supplied the new workload distribution, not inferred knowledge",
+    "CPU and abstract retrieval cost have no supplied conversion into money or deployment latency",
+    "The legacy chronology defect remains documented and isolated; no historical generator correction or rerun"
+  ],
+  "lint": {
+    "command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 .venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "missing_or_ignored_links": 0,
+  "model_calls": 0,
+  "network_requests": 0,
+  "original_followup_result_hashes_verified": 5,
+  "preexisting_followup": false,
+  "presentation_or_submission_changes": false,
+  "provider_private_reasoning_access": false,
+  "relative_documentation_links_checked": 24,
+  "report_sha256": "3b3a0cfe00b3d966301bdcb312c01425b08c62406584b17814912731b126184d",
+  "result_manifest_sha256": "cfad54ca8b0b52e352c51c04959da30790232b0170612c77ad0e81b50f6927ec",
+  "status": "passed",
+  "technical_blockers": []
+}

@@ -1,0 +1,15 @@
+{
+  "additional_spend_usd": "0",
+  "completed_at_utc": "2026-10-04T01:20:08.987856+00:00",
+  "frozen_dependencies": 34,
+  "model_calls": 0,
+  "network_requests": 0,
+  "pipeline_seconds": 52.78885753900249,
+  "preservation": {
+    "historical_local_files": 509,
+    "historical_tracked_files": 240
+  },
+  "problems": 40,
+  "rows": 2000,
+  "split": "evaluation"
+}

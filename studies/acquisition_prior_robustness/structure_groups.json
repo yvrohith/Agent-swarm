@@ -1,0 +1,538 @@
+{
+  "additional_spend_usd": "0",
+  "aggregation_definition": {
+    "equal_problem": "Average each problem metric with weight 1/40, or 1/n_stratum within a stratum.",
+    "pairing": "Compute policy differences on each same problem before applying the selected weights. Keep all 40 problem identities.",
+    "selection": "Use exactly the existing fingerprints, with no splitting, merging, regeneration, outcome-based regrouping or revised costs.",
+    "structure_balanced": "First average the metric over all original problems within each existing group, then average those group means equally; global problem weight 1/(30 * group_size), within-stratum problem weight 1/(stratum_group_count * group_size)."
+  },
+  "baseline_commit": "be3b22c4fd655d82dedbb2e86cd9abc8378b8334",
+  "cases_generated": 0,
+  "created_at_utc": "2026-10-04T01:11:07.466248+00:00",
+  "fingerprint_definition": {
+    "assignment_fields": [
+      "assignment",
+      "derived Boolean claim value",
+      "reordered query-answer tuple"
+    ],
+    "audit_semantic_projection": "The full problem with problem_id, seed, split and fingerprint fields removed, and the query catalogue replaced by canonical-sorted complete query objects with only id and cost removed; hash given per group.",
+    "directly_omitted_model_fields": [
+      "acquisition_time",
+      "assumptions",
+      "event_catalog",
+      "generator_version",
+      "initial_record_ids",
+      "prior",
+      "record_catalog",
+      "schema_version",
+      "selection",
+      "sources",
+      "stratum",
+      "subtype",
+      "full world records beyond assignments/claim/answers"
+    ],
+    "normalization": "Sort catalogue queries by (record_id, cost). Reorder each hypothetical-world answer tuple to that catalogue order. Copy each complete query object except its opaque id.",
+    "omission_audit": "For every repeated group, every full problem field other than problem_id/seed/split/query catalogue/fingerprint metadata was compared for exact equality. Full query objects were compared as multisets after deleting only id/cost. No mismatch occurred.",
+    "payload_fields": [
+      "claim",
+      "structure",
+      "initial_evidence",
+      "queries",
+      "assignments"
+    ],
+    "query_fields_retained": "kind, record_id, scope and complete outcome payloads, with multiplicity; only id and cost are removed.",
+    "unweighted_hash": "Using the same sorted query order, delete cost from every copied query, then apply the same canonical SHA256.",
+    "weighted_hash": "SHA256 of canonical UTF-8 JSON: sorted keys, compact separators, ensure_ascii=False, allow_nan=False."
+  },
+  "group_count": 30,
+  "group_size_counts": {
+    "1": 20,
+    "2": 10
+  },
+  "groups": [
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "048e878a2787ec01abc3657ed2428955bc9997fb9ea24eaf41b899c1b5237182",
+      "members": [
+        "acq_94220",
+        "acq_94226"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "93f6eab86dceba58db52a27012b1cf90d896be633291c5f0441decf6add0ff00",
+      "size": 2,
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "048e878a2787ec01abc3657ed2428955bc9997fb9ea24eaf41b899c1b5237182"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "092865940f0229208f634275c3c64e2a59560d966d60f3acfcf66ae83c8046f8",
+      "members": [
+        "acq_94224"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "f06c092cea955540213e448ac36771773a7590ad80a6709c5f06f0befcd899c3",
+      "size": 1,
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "092865940f0229208f634275c3c64e2a59560d966d60f3acfcf66ae83c8046f8"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "0e14ceaa93bdba35603ca4e921831611e9bbd618eec21ca04e4151af8c0b423f",
+      "members": [
+        "acq_94230",
+        "acq_94236"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "8256553724f2e51a98ca1816e123db6d544b9a7dd72a8fc9fb04926f49b30433",
+      "size": 2,
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "0e14ceaa93bdba35603ca4e921831611e9bbd618eec21ca04e4151af8c0b423f"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "0ecd953ad4203cd246038eb5864d790ed695bc584208296f33cc7d307802f5ba",
+      "members": [
+        "acq_94215"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "b3a5186d7f90d04591656b1fd7c1e3280fe7e24ae6f66ac21500a899a62dea3e",
+      "size": 1,
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "0ecd953ad4203cd246038eb5864d790ed695bc584208296f33cc7d307802f5ba"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "165a0afe20db614cf702c1ba918ece2ee72a6d4a876817a845662b1d06e03a64",
+      "members": [
+        "acq_94231"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "8500f1b4245950e2b9ced0b196df297a80e6cdc87043b27622e43747da77cacb",
+      "size": 1,
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "165a0afe20db614cf702c1ba918ece2ee72a6d4a876817a845662b1d06e03a64"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "1ce6399326f8067811e2809a25142768e54fa782141de67be5c16d5025c7399d",
+      "members": [
+        "acq_94232"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "6c83be980d60c01a36d716d84c7fce832cf837be6d9158aa627d215771e62c28",
+      "size": 1,
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "1ce6399326f8067811e2809a25142768e54fa782141de67be5c16d5025c7399d"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "20150fc6e2e55401272a4c3cc3061678a3764e14406e2e28557ca59b76086092",
+      "members": [
+        "acq_94227"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "ffa1f34730cd3942ec036a01aa8def8aa4c5029388ab2e931a1ecb9c7d09d11d",
+      "size": 1,
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "20150fc6e2e55401272a4c3cc3061678a3764e14406e2e28557ca59b76086092"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "2f1ea6f24b73609a221b2fd6710df6ecb398e1b4443fbe3bcf9625bb383def0a",
+      "members": [
+        "acq_94213",
+        "acq_94219"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "07d1754b6714420b8d56ec071867b53d3f223ad37c79ec7f2d8331617e38b93d",
+      "size": 2,
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "2f1ea6f24b73609a221b2fd6710df6ecb398e1b4443fbe3bcf9625bb383def0a"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "35e2981513b9b96ffc5c64942498a6577ba83e0fd304a4ef07d2b4e3f7e61bcc",
+      "members": [
+        "acq_94235"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "41eef6b69534f4afd7826e079864f61217617a7edfd188e937dc942bc3de1b7d",
+      "size": 1,
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "35e2981513b9b96ffc5c64942498a6577ba83e0fd304a4ef07d2b4e3f7e61bcc"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "394c3fca84145a0060135f1febb010f066d8df1515792fbfb740e1121bab506d",
+      "members": [
+        "acq_94218"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "55e61a3a236d72f69dfa997b43236cf000b754ca44333f55cb7482349dafbf45",
+      "size": 1,
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "394c3fca84145a0060135f1febb010f066d8df1515792fbfb740e1121bab506d"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "4505ba77b0e19e935abba28ac29a8f8f8bf0efcc782d0f9151851c8bfb531d01",
+      "members": [
+        "acq_94217"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "69588e19304690438fa14a2ac5f39fd52034c42bb1ab79081edb076dead6547f",
+      "size": 1,
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "4505ba77b0e19e935abba28ac29a8f8f8bf0efcc782d0f9151851c8bfb531d01"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "47c946189726e2064028ab9db54204b0d39bb60f97ab7ec9c4285a2c8ef6b6d3",
+      "members": [
+        "acq_94222"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "5ff59efd268c9f020c41de347e5d650442efb51c2190672894782c3106f96efd",
+      "size": 1,
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "47c946189726e2064028ab9db54204b0d39bb60f97ab7ec9c4285a2c8ef6b6d3"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "5aa94d94973ffc77eb723080a2ec317c34a7d64be7252c37853a4b2ede583d70",
+      "members": [
+        "acq_94234"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "17ee90e349deb8ffd8932a62010c1f28a69c6f1750f1b39cf27122d2dc4104a7",
+      "size": 1,
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "5aa94d94973ffc77eb723080a2ec317c34a7d64be7252c37853a4b2ede583d70"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "6336a7d1a2c4f43b49368601d95db7f9a48ad722cbc1b6a125ede7fdf5110db5",
+      "members": [
+        "acq_94238"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "3daa04ef24119e36fba4e24882fd42c96328791f50daa73e69f121174b7df98a",
+      "size": 1,
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "6336a7d1a2c4f43b49368601d95db7f9a48ad722cbc1b6a125ede7fdf5110db5"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "6bf08df11160b95a6bd5fbb55beda399b264aa080f32913066d17a0ff3a6b26f",
+      "members": [
+        "acq_94211"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "cad24393b844311b755b6ed1d8b833d9c01d28a5a9644317c2ddb439118d72e3",
+      "size": 1,
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "6bf08df11160b95a6bd5fbb55beda399b264aa080f32913066d17a0ff3a6b26f"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "7626b113f5a8248ed9093822379d8c062cd29ee239607d534c52631313003351",
+      "members": [
+        "acq_94200",
+        "acq_94206"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "27eea13e7aa68dc1e3ed7d17d8e5a38b28064c625a42dccda65137491a2bb147",
+      "size": 2,
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "7626b113f5a8248ed9093822379d8c062cd29ee239607d534c52631313003351"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "8aa38abee0b2bff311aa806b9a54fc93a476cf55d445591199df29e64b215c29",
+      "members": [
+        "acq_94212"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "9b05b01edc19630fbdf71408a4f18f5195788384fa33105fd9a0f931e9c37496",
+      "size": 1,
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "8aa38abee0b2bff311aa806b9a54fc93a476cf55d445591199df29e64b215c29"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "8b0b2262cf7b951b77fce9f5a448bfd1b497a7bd6afdf6bf475515826eaf6f94",
+      "members": [
+        "acq_94204"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "7fd66206694ec968d25fe5d2c23e886a6e3eb86fe37b49149dd4b3db2417fd6c",
+      "size": 1,
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "8b0b2262cf7b951b77fce9f5a448bfd1b497a7bd6afdf6bf475515826eaf6f94"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "8de24e09ebecf5bc9df9a411cd8bc00a724d4144a6b923c4b98ada9e6d580cdb",
+      "members": [
+        "acq_94225"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "412c735933024effef01f44eed9581d91fbe8f7cb6e97619175f08957d01dbdb",
+      "size": 1,
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "8de24e09ebecf5bc9df9a411cd8bc00a724d4144a6b923c4b98ada9e6d580cdb"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "8f6cd206e9ee9321d7b2445f9a5bab38665fff51bf8424b4f672fe92a66fdc6a",
+      "members": [
+        "acq_94233",
+        "acq_94239"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "ac9b14bffa715dbeabb6a20bc6a618002b9c935e630bb701765cd166b3a8c7f8",
+      "size": 2,
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "8f6cd206e9ee9321d7b2445f9a5bab38665fff51bf8424b4f672fe92a66fdc6a"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "9c1b1535502ff6a15abbd9e10886dc51168baee7752c856669079ddb33729ec3",
+      "members": [
+        "acq_94214"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "15c8d8e5c4d5a3e4560d71c5923f3d4c6faef2a68c6f0fe8874b8475e8ec04bc",
+      "size": 1,
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "9c1b1535502ff6a15abbd9e10886dc51168baee7752c856669079ddb33729ec3"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "a23f584ac93aa84a072fac5aacdd97a3e05fa7c52009a1f7cde29f9f0770cdbf",
+      "members": [
+        "acq_94203",
+        "acq_94209"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "f1ff812e87d075bb2e44a5175ac87571d58e664a1bbd4ce8c41dc38776aacd4a",
+      "size": 2,
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "a23f584ac93aa84a072fac5aacdd97a3e05fa7c52009a1f7cde29f9f0770cdbf"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "aa78a18a55cfe3add5b3b63e97d77fd9e741640a3d3f46fdd1a715636e1404e2",
+      "members": [
+        "acq_94221"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "25bd91a810c45014121dc47a2e1530f9a3635ed3f5d6a4f28996a78681aa5b85",
+      "size": 1,
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "aa78a18a55cfe3add5b3b63e97d77fd9e741640a3d3f46fdd1a715636e1404e2"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "ab1d67a924e4276e70cfde05121d73a4108bcbe85fdfcfdab6332f8df07113df",
+      "members": [
+        "acq_94237"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "9dccb0c59a89b57565de63269a31c931fb7921961e728d4dea0fef1969587051",
+      "size": 1,
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "ab1d67a924e4276e70cfde05121d73a4108bcbe85fdfcfdab6332f8df07113df"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "b6b5bab2b94edd93a03d28c8d21f07ddcc6d6997c64ca0774cc3e9ae7ed826ba",
+      "members": [
+        "acq_94223",
+        "acq_94229"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "e9b4b4a20a0851ea29db534fd574b58a2d2bfc6a1ac3fc91dd727bde1f2d0e4c",
+      "size": 2,
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "b6b5bab2b94edd93a03d28c8d21f07ddcc6d6997c64ca0774cc3e9ae7ed826ba"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "d1dfeee6bf7b74419211c5f9bc00594e6f839bee89a21e56ad37eae9596c9b6a",
+      "members": [
+        "acq_94228"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "adb0180048435ea8de1efad79c1aa1a94f576db8c1bc7a10116052b03176d179",
+      "size": 1,
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "d1dfeee6bf7b74419211c5f9bc00594e6f839bee89a21e56ad37eae9596c9b6a"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "db3c6dc2fa50a623be6367521bf5a019afd8d5d1f4a1dde93745f44d0f28be93",
+      "members": [
+        "acq_94202",
+        "acq_94208"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "1d5083a58f4544f3967d0f22461a48695a19c1cdb6aa9e46764935d91309d995",
+      "size": 2,
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "db3c6dc2fa50a623be6367521bf5a019afd8d5d1f4a1dde93745f44d0f28be93"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "e21b759168d50143cba3dd1bd33cfca6528cb056f34d514f98619ce1a0910979",
+      "members": [
+        "acq_94201",
+        "acq_94207"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "4935bea5044d40049e9cf4570f0a3e7f7b8181b271d5c333e4b6d7f2bbe99693",
+      "size": 2,
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "e21b759168d50143cba3dd1bd33cfca6528cb056f34d514f98619ce1a0910979"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "ead4aca04118279d6238db38f7cb7d47c0a76ec0349d19a17a7eaf16833cd2fa",
+      "members": [
+        "acq_94205"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "f7a77f736e59cd86e463e6172e6d1724134623853f78d27565028454ddb523bc",
+      "size": 1,
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "ead4aca04118279d6238db38f7cb7d47c0a76ec0349d19a17a7eaf16833cd2fa"
+    },
+    {
+      "all_nonmetadata_nonquery_fields_equal": true,
+      "group_id": "f3f43e7087d3cf627665d95f66148992b6cbd32528fd8cb9d23d91154a614f2e",
+      "members": [
+        "acq_94210",
+        "acq_94216"
+      ],
+      "query_payload_multiset_equal_after_removing_ids_and_costs": true,
+      "semantic_projection_sha256": "5576d52a058fb486ae5abd187f74761f2cc02e22076181e9d6887448c864de28",
+      "size": 2,
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "f3f43e7087d3cf627665d95f66148992b6cbd32528fd8cb9d23d91154a614f2e"
+    }
+  ],
+  "input_sha256": {
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/generator.py": "4a826765cee8d7f9b79187b5dedbae241fdcaeece05c75d98603c3f25e44df81",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "src/tracebench/evidence_acquisition/study.py": "606331edceb2a3cc3edf5fba2ccdcdc783703861cb751a27625c6a7f962fa08c",
+    "studies/evidence_acquisition/config.json": "afe2507e505baefdc666a5ec7e702c6f316d48ad4b7ad55a9f2d4a17d4949241",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/evidence_acquisition/freeze.json": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+    "studies/evidence_acquisition/input_manifest.json": "7e6cc52f4e15f61d69e6b506e6c100539a375a4b9ecd27ac4dd440a508f3b896",
+    "studies/evidence_acquisition/results/certificates.json.gz": "877d154cd04c08f2e048f990c514d270275a5fabbce3031c94453cccbf1c2f08",
+    "studies/evidence_acquisition/results/manifest.json": "d8a66b24107949ceb4346a9001df86dc331f027a5247c34958bb27341735d9f5",
+    "studies/evidence_acquisition/results/per_problem_policy_budget.json": "4d7dd4271bda18fdab0ed698025c978dd5b6e73c98267bb286b697cdce652894",
+    "studies/evidence_acquisition/results/runtime.json": "75a53151fa6cbb447e2536f6c6fbe036b7c6ce109fddf400b6f1a789fabffe51",
+    "studies/evidence_acquisition/results/signature_runs.json.gz": "862b75cefdd6f1d6c3c1c0ef50880ebb5ac741e5a3e79242d98676de4b7818b9",
+    "studies/evidence_acquisition/results/summary.json": "af6a09dd054a8a82fa6cd311c65437aced741f8cef6ae0238dd3c70a934cb65c"
+  },
+  "limitations": [
+    "The fingerprint is a fixed syntactic projection, not graph isomorphism or a universal semantic-equivalence test. Equality checks protect this fixed 40-problem set only.",
+    "Opaque query IDs and catalogue order are omitted. They can change deterministic tie-breaking and acquisition trajectories. Groups represent price/configuration variants, not identical policy behavior.",
+    "Duplicate catalogue actions remain separate entries and retain multiplicity; they are not deduplicated.",
+    "Prior masses are omitted by the original fingerprint but are exactly identical within each current repeated group. All other omitted semantic fields were checked directly.",
+    "Structure-balanced aggregates average groups, not independent sampled incidents; no sampling confidence interval is justified."
+  ],
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_prior_policy_comparisons_performed": 0,
+  "new_structure_balanced_outcome_comparisons_performed": 0,
+  "old_frozen_dependency_hashes_verified": 19,
+  "old_saved_result_hashes_verified": 5,
+  "original_manifest_membership_matched": true,
+  "problem_count": 40,
+  "problem_to_group": {
+    "acq_94200": "7626b113f5a8248ed9093822379d8c062cd29ee239607d534c52631313003351",
+    "acq_94201": "e21b759168d50143cba3dd1bd33cfca6528cb056f34d514f98619ce1a0910979",
+    "acq_94202": "db3c6dc2fa50a623be6367521bf5a019afd8d5d1f4a1dde93745f44d0f28be93",
+    "acq_94203": "a23f584ac93aa84a072fac5aacdd97a3e05fa7c52009a1f7cde29f9f0770cdbf",
+    "acq_94204": "8b0b2262cf7b951b77fce9f5a448bfd1b497a7bd6afdf6bf475515826eaf6f94",
+    "acq_94205": "ead4aca04118279d6238db38f7cb7d47c0a76ec0349d19a17a7eaf16833cd2fa",
+    "acq_94206": "7626b113f5a8248ed9093822379d8c062cd29ee239607d534c52631313003351",
+    "acq_94207": "e21b759168d50143cba3dd1bd33cfca6528cb056f34d514f98619ce1a0910979",
+    "acq_94208": "db3c6dc2fa50a623be6367521bf5a019afd8d5d1f4a1dde93745f44d0f28be93",
+    "acq_94209": "a23f584ac93aa84a072fac5aacdd97a3e05fa7c52009a1f7cde29f9f0770cdbf",
+    "acq_94210": "f3f43e7087d3cf627665d95f66148992b6cbd32528fd8cb9d23d91154a614f2e",
+    "acq_94211": "6bf08df11160b95a6bd5fbb55beda399b264aa080f32913066d17a0ff3a6b26f",
+    "acq_94212": "8aa38abee0b2bff311aa806b9a54fc93a476cf55d445591199df29e64b215c29",
+    "acq_94213": "2f1ea6f24b73609a221b2fd6710df6ecb398e1b4443fbe3bcf9625bb383def0a",
+    "acq_94214": "9c1b1535502ff6a15abbd9e10886dc51168baee7752c856669079ddb33729ec3",
+    "acq_94215": "0ecd953ad4203cd246038eb5864d790ed695bc584208296f33cc7d307802f5ba",
+    "acq_94216": "f3f43e7087d3cf627665d95f66148992b6cbd32528fd8cb9d23d91154a614f2e",
+    "acq_94217": "4505ba77b0e19e935abba28ac29a8f8f8bf0efcc782d0f9151851c8bfb531d01",
+    "acq_94218": "394c3fca84145a0060135f1febb010f066d8df1515792fbfb740e1121bab506d",
+    "acq_94219": "2f1ea6f24b73609a221b2fd6710df6ecb398e1b4443fbe3bcf9625bb383def0a",
+    "acq_94220": "048e878a2787ec01abc3657ed2428955bc9997fb9ea24eaf41b899c1b5237182",
+    "acq_94221": "aa78a18a55cfe3add5b3b63e97d77fd9e741640a3d3f46fdd1a715636e1404e2",
+    "acq_94222": "47c946189726e2064028ab9db54204b0d39bb60f97ab7ec9c4285a2c8ef6b6d3",
+    "acq_94223": "b6b5bab2b94edd93a03d28c8d21f07ddcc6d6997c64ca0774cc3e9ae7ed826ba",
+    "acq_94224": "092865940f0229208f634275c3c64e2a59560d966d60f3acfcf66ae83c8046f8",
+    "acq_94225": "8de24e09ebecf5bc9df9a411cd8bc00a724d4144a6b923c4b98ada9e6d580cdb",
+    "acq_94226": "048e878a2787ec01abc3657ed2428955bc9997fb9ea24eaf41b899c1b5237182",
+    "acq_94227": "20150fc6e2e55401272a4c3cc3061678a3764e14406e2e28557ca59b76086092",
+    "acq_94228": "d1dfeee6bf7b74419211c5f9bc00594e6f839bee89a21e56ad37eae9596c9b6a",
+    "acq_94229": "b6b5bab2b94edd93a03d28c8d21f07ddcc6d6997c64ca0774cc3e9ae7ed826ba",
+    "acq_94230": "0e14ceaa93bdba35603ca4e921831611e9bbd618eec21ca04e4151af8c0b423f",
+    "acq_94231": "165a0afe20db614cf702c1ba918ece2ee72a6d4a876817a845662b1d06e03a64",
+    "acq_94232": "1ce6399326f8067811e2809a25142768e54fa782141de67be5c16d5025c7399d",
+    "acq_94233": "8f6cd206e9ee9321d7b2445f9a5bab38665fff51bf8424b4f672fe92a66fdc6a",
+    "acq_94234": "5aa94d94973ffc77eb723080a2ec317c34a7d64be7252c37853a4b2ede583d70",
+    "acq_94235": "35e2981513b9b96ffc5c64942498a6577ba83e0fd304a4ef07d2b4e3f7e61bcc",
+    "acq_94236": "0e14ceaa93bdba35603ca4e921831611e9bbd618eec21ca04e4151af8c0b423f",
+    "acq_94237": "ab1d67a924e4276e70cfde05121d73a4108bcbe85fdfcfdab6332f8df07113df",
+    "acq_94238": "6336a7d1a2c4f43b49368601d95db7f9a48ad722cbc1b6a125ede7fdf5110db5",
+    "acq_94239": "8f6cd206e9ee9321d7b2445f9a5bab38665fff51bf8424b4f672fe92a66fdc6a"
+  },
+  "schema_version": 1,
+  "status": "verified_no_material_collisions_in_existing_inputs",
+  "stratum_group_counts": {
+    "archive_ambiguity": 8,
+    "complementary_candidates": 8,
+    "negative_completeness": 8,
+    "positive_receipt": 6
+  },
+  "unweighted_fingerprints_recomputed_and_matched": 40,
+  "weighted_fingerprints_recomputed_and_matched": 40
+}

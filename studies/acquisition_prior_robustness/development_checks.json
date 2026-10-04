@@ -1,0 +1,21 @@
+{
+  "additional_spend_usd": "0",
+  "all_timing_repetitions_completed": true,
+  "bound_checks": 20,
+  "certificate_failures": 0,
+  "cold_timing_constructions": 60,
+  "deduplicated_certificates": 181,
+  "development_manifest_sha256": "07b5b07a3ee32b3c066b34010c12e86c8277003a6dc73ee294c7b52a9bfecbdd",
+  "development_results_directory": "artifacts/acquisition-prior-robustness/development-v1",
+  "evaluation_comparisons_observed": 0,
+  "failed_or_capped_policies": 0,
+  "independent_audit": "Direct rational formulas, saved signature/charge accounting, all181 certificates,60 matched cost rows and20 exact bounds independently checked before evaluation.",
+  "invariant_prefix_checks": 7364,
+  "matched_signature_trajectories": 570,
+  "model_calls": 0,
+  "network_requests": 0,
+  "policy_rows": 200,
+  "problems": 4,
+  "repeated_timing_workloads_agree": true,
+  "status": "verified"
+}

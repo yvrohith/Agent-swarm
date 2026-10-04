@@ -1,0 +1,14 @@
+{
+  "additional_spend_usd": "0",
+  "completed_at_utc": "2026-10-04T01:20:08.987856+00:00",
+  "files_sha256": {
+    "details.json.gz": "1160da8d715c4920b2ccfe53cac6fd5eb2740c14dd0d6930df1e2c1a18f24f12",
+    "per_problem.json": "4cefa2b8904a405b7af5f50d0a387116d7079f2d32e96d4334eb91ad8c04326f",
+    "runtime.json": "295f352241d377d71daa2b01977240806d748033abb06b900c8b8e1ac463b82e",
+    "summary.json": "6a9f568fd5c06a636db1b4b16f02a7a834c545d7801a844f3a9a82d97c0c032d",
+    "validation.json": "2f6172d94cbd30098b6cfc0091300a9704acbd8c284e396f4d081a899846bcc6"
+  },
+  "freeze_sha256": "b4aa0f67a5be921bb0882c1f53dffd4c5ef19b425dd63e83997eefc27390cbe2",
+  "model_calls": 0,
+  "network_requests": 0
+}

@@ -1,0 +1,1774 @@
+{
+  "additional_spend_usd": "0",
+  "baseline_commit": "be3b22c4fd655d82dedbb2e86cd9abc8378b8334",
+  "cases_generated": 0,
+  "checks": {
+    "actual_retained_signature_answers_match_each_full_budget_history": true,
+    "all_160_saved_paired_contrasts_match": true,
+    "all_200_saved_expected_metric_rows_and_maxima_match": true,
+    "all_200_saved_gaps_ratios_and_zero_flags_match": true,
+    "all_40_saved_exact_dp_values_match_full_budget_costs": true,
+    "all_full_budget_statuses_match_attainable_signature_classes": true,
+    "complete_unique_full_budget_signature_policy_schedule": true,
+    "cost_query_count_and_payload_bytes_recomputed_from_histories": true,
+    "every_saved_certificate_reconstructed_without_trusting_cached_flags": true,
+    "old_freeze_hashes_match": true,
+    "old_result_manifest_hashes_match": true,
+    "positive_receipt_adverse_pair_cut_comparison_reproduced": true,
+    "prepared_input_hashes_match": true,
+    "reported_seven_pair_cut_losses_to_schema_aware_reproduced": true,
+    "signature_masses_exactly_match_model_priors": true
+  },
+  "counts": {
+    "all_saved_certificates_independently_reconstructed": 1922,
+    "certificate_failures": 0,
+    "distinct_certificates_referenced_at_full_budget": 1156,
+    "false_irreducibility": 0,
+    "full_budget_charged_queries": 6225,
+    "full_budget_problem_policy_rows": 200,
+    "full_budget_signature_policy_runs": 1960,
+    "full_signatures": 392,
+    "optimal_comparisons_matched": 200,
+    "original_full_budget_stratum_subtype_rows_matched": 45,
+    "paired_problem_comparisons_matched": 160,
+    "positive_optimum_problem_denominator": 35,
+    "problems": 40,
+    "zero_optimum_problems": 5
+  },
+  "created_at_utc": "2026-10-04T01:11:07.466248+00:00",
+  "full_budget_equal_problem_means": {
+    "exact_optimal": {
+      "archive_irreducible": {
+        "exact": "153/320",
+        "value": 0.478125
+      },
+      "budget_exhausted_unresolved": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "cost": {
+        "exact": "1725/512",
+        "value": 3.369140625
+      },
+      "established": {
+        "exact": "11/40",
+        "value": 0.275
+      },
+      "hindsight_cost": {
+        "exact": "7281/2560",
+        "value": 2.844140625
+      },
+      "inconsistent": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "query_count": {
+        "exact": "4631/2560",
+        "value": 1.808984375
+      },
+      "returned_bytes": {
+        "exact": "152683/640",
+        "value": 238.5671875
+      },
+      "ruled_out": {
+        "exact": "79/320",
+        "value": 0.246875
+      },
+      "unresolved_pending": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "pair_cut": {
+      "archive_irreducible": {
+        "exact": "153/320",
+        "value": 0.478125
+      },
+      "budget_exhausted_unresolved": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "cost": {
+        "exact": "607/160",
+        "value": 3.79375
+      },
+      "established": {
+        "exact": "11/40",
+        "value": 0.275
+      },
+      "hindsight_cost": {
+        "exact": "7281/2560",
+        "value": 2.844140625
+      },
+      "inconsistent": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "query_count": {
+        "exact": "1401/640",
+        "value": 2.1890625
+      },
+      "returned_bytes": {
+        "exact": "19013/64",
+        "value": 297.078125
+      },
+      "ruled_out": {
+        "exact": "79/320",
+        "value": 0.246875
+      },
+      "unresolved_pending": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "read_all": {
+      "archive_irreducible": {
+        "exact": "153/320",
+        "value": 0.478125
+      },
+      "budget_exhausted_unresolved": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "cost": {
+        "exact": "133/10",
+        "value": 13.3
+      },
+      "established": {
+        "exact": "11/40",
+        "value": 0.275
+      },
+      "hindsight_cost": {
+        "exact": "7281/2560",
+        "value": 2.844140625
+      },
+      "inconsistent": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "query_count": {
+        "exact": "28/5",
+        "value": 5.6
+      },
+      "returned_bytes": {
+        "exact": "31079/40",
+        "value": 776.975
+      },
+      "ruled_out": {
+        "exact": "79/320",
+        "value": 0.246875
+      },
+      "unresolved_pending": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "schema_aware": {
+      "archive_irreducible": {
+        "exact": "153/320",
+        "value": 0.478125
+      },
+      "budget_exhausted_unresolved": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "cost": {
+        "exact": "1353/320",
+        "value": 4.228125
+      },
+      "established": {
+        "exact": "11/40",
+        "value": 0.275
+      },
+      "hindsight_cost": {
+        "exact": "7281/2560",
+        "value": 2.844140625
+      },
+      "inconsistent": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "query_count": {
+        "exact": "41/20",
+        "value": 2.05
+      },
+      "returned_bytes": {
+        "exact": "34141/128",
+        "value": 266.7265625
+      },
+      "ruled_out": {
+        "exact": "79/320",
+        "value": 0.246875
+      },
+      "unresolved_pending": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "world_entropy": {
+      "archive_irreducible": {
+        "exact": "153/320",
+        "value": 0.478125
+      },
+      "budget_exhausted_unresolved": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "cost": {
+        "exact": "1313/320",
+        "value": 4.103125
+      },
+      "established": {
+        "exact": "11/40",
+        "value": 0.275
+      },
+      "hindsight_cost": {
+        "exact": "7281/2560",
+        "value": 2.844140625
+      },
+      "inconsistent": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "query_count": {
+        "exact": "3059/1280",
+        "value": 2.38984375
+      },
+      "returned_bytes": {
+        "exact": "417411/1280",
+        "value": 326.10234375
+      },
+      "ruled_out": {
+        "exact": "79/320",
+        "value": 0.246875
+      },
+      "unresolved_pending": {
+        "exact": "0",
+        "value": 0.0
+      }
+    }
+  },
+  "input_sha256": {
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/generator.py": "4a826765cee8d7f9b79187b5dedbae241fdcaeece05c75d98603c3f25e44df81",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "src/tracebench/evidence_acquisition/study.py": "606331edceb2a3cc3edf5fba2ccdcdc783703861cb751a27625c6a7f962fa08c",
+    "studies/evidence_acquisition/config.json": "afe2507e505baefdc666a5ec7e702c6f316d48ad4b7ad55a9f2d4a17d4949241",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/evidence_acquisition/freeze.json": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+    "studies/evidence_acquisition/input_manifest.json": "7e6cc52f4e15f61d69e6b506e6c100539a375a4b9ecd27ac4dd440a508f3b896",
+    "studies/evidence_acquisition/results/certificates.json.gz": "877d154cd04c08f2e048f990c514d270275a5fabbce3031c94453cccbf1c2f08",
+    "studies/evidence_acquisition/results/manifest.json": "d8a66b24107949ceb4346a9001df86dc331f027a5247c34958bb27341735d9f5",
+    "studies/evidence_acquisition/results/per_problem_policy_budget.json": "4d7dd4271bda18fdab0ed698025c978dd5b6e73c98267bb286b697cdce652894",
+    "studies/evidence_acquisition/results/runtime.json": "75a53151fa6cbb447e2536f6c6fbe036b7c6ce109fddf400b6f1a789fabffe51",
+    "studies/evidence_acquisition/results/signature_runs.json.gz": "862b75cefdd6f1d6c3c1c0ef50880ebb5ac741e5a3e79242d98676de4b7818b9",
+    "studies/evidence_acquisition/results/summary.json": "af6a09dd054a8a82fa6cd311c65437aced741f8cef6ae0238dd3c70a934cb65c"
+  },
+  "limitations": [
+    "This reproduces the supplied finite baseline; it is not a new incident sample or a shifted-prior robustness finding.",
+    "Saved exact dynamic-program values were compared against exact-policy executed costs; this check did not rerun the optimizer or independently prove global optimality.",
+    "Hindsight certificates and their costs were reconstructed; global subset minimality was not re-enumerated in this reproduction.",
+    "Original runtime observations are unchanged and are not fresh cold-cache timing measurements."
+  ],
+  "method": "Load the frozen existing 40 inputs, construct their finite models without calling the generator, reconstruct each saved certificate independently, verify histories against the indexed full signature, derive charges/query counts/canonical UTF-8 payload bytes from those histories, sum exact original rational signature masses, and compare with all existing full-budget rows, stratified means, saved dynamic-program values, paired contrasts and optimality records. No saved certificate_valid or prior independent-verification flag is accepted without reconstruction.",
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_prior_policy_comparisons_performed": 0,
+  "new_structure_balanced_outcome_comparisons_performed": 0,
+  "old_frozen_dependency_hashes_verified": 19,
+  "old_saved_result_hashes_verified": 5,
+  "paired_counts_and_differences": [
+    {
+      "comparison": "schema_aware",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-139/320",
+        "value": -0.434375
+      },
+      "pair_cut_higher": 7,
+      "pair_cut_lower": 19,
+      "problems": 40,
+      "stratum": "all",
+      "tied": 14
+    },
+    {
+      "comparison": "world_entropy",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-99/320",
+        "value": -0.309375
+      },
+      "pair_cut_higher": 1,
+      "pair_cut_lower": 16,
+      "problems": 40,
+      "stratum": "all",
+      "tied": 23
+    },
+    {
+      "comparison": "exact_optimal",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "1087/2560",
+        "value": 0.424609375
+      },
+      "pair_cut_higher": 24,
+      "pair_cut_lower": 0,
+      "problems": 40,
+      "stratum": "all",
+      "tied": 16
+    },
+    {
+      "comparison": "read_all",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-1521/160",
+        "value": -9.50625
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 40,
+      "problems": 40,
+      "stratum": "all",
+      "tied": 0
+    },
+    {
+      "comparison": "schema_aware",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-21/160",
+        "value": -0.13125
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 4,
+      "problems": 10,
+      "stratum": "archive_ambiguity",
+      "tied": 6
+    },
+    {
+      "comparison": "world_entropy",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-11/80",
+        "value": -0.1375
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 3,
+      "problems": 10,
+      "stratum": "archive_ambiguity",
+      "tied": 7
+    },
+    {
+      "comparison": "exact_optimal",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "3/40",
+        "value": 0.075
+      },
+      "pair_cut_higher": 2,
+      "pair_cut_lower": 0,
+      "problems": 10,
+      "stratum": "archive_ambiguity",
+      "tied": 8
+    },
+    {
+      "comparison": "read_all",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-391/40",
+        "value": -9.775
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 10,
+      "problems": 10,
+      "stratum": "archive_ambiguity",
+      "tied": 0
+    },
+    {
+      "comparison": "schema_aware",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-187/160",
+        "value": -1.16875
+      },
+      "pair_cut_higher": 3,
+      "pair_cut_lower": 6,
+      "problems": 10,
+      "stratum": "complementary_candidates",
+      "tied": 1
+    },
+    {
+      "comparison": "world_entropy",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-1/5",
+        "value": -0.2
+      },
+      "pair_cut_higher": 1,
+      "pair_cut_lower": 3,
+      "problems": 10,
+      "stratum": "complementary_candidates",
+      "tied": 6
+    },
+    {
+      "comparison": "exact_optimal",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "453/640",
+        "value": 0.7078125
+      },
+      "pair_cut_higher": 10,
+      "pair_cut_lower": 0,
+      "problems": 10,
+      "stratum": "complementary_candidates",
+      "tied": 0
+    },
+    {
+      "comparison": "read_all",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-953/80",
+        "value": -11.9125
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 10,
+      "problems": 10,
+      "stratum": "complementary_candidates",
+      "tied": 0
+    },
+    {
+      "comparison": "schema_aware",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-87/160",
+        "value": -0.54375
+      },
+      "pair_cut_higher": 2,
+      "pair_cut_lower": 6,
+      "problems": 10,
+      "stratum": "negative_completeness",
+      "tied": 2
+    },
+    {
+      "comparison": "world_entropy",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-17/40",
+        "value": -0.425
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 6,
+      "problems": 10,
+      "stratum": "negative_completeness",
+      "tied": 4
+    },
+    {
+      "comparison": "exact_optimal",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "229/320",
+        "value": 0.715625
+      },
+      "pair_cut_higher": 9,
+      "pair_cut_lower": 0,
+      "problems": 10,
+      "stratum": "negative_completeness",
+      "tied": 1
+    },
+    {
+      "comparison": "read_all",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-19/2",
+        "value": -9.5
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 10,
+      "problems": 10,
+      "stratum": "negative_completeness",
+      "tied": 0
+    },
+    {
+      "comparison": "schema_aware",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "17/160",
+        "value": 0.10625
+      },
+      "pair_cut_higher": 2,
+      "pair_cut_lower": 3,
+      "problems": 10,
+      "stratum": "positive_receipt",
+      "tied": 5
+    },
+    {
+      "comparison": "world_entropy",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-19/40",
+        "value": -0.475
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 4,
+      "problems": 10,
+      "stratum": "positive_receipt",
+      "tied": 6
+    },
+    {
+      "comparison": "exact_optimal",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "1/5",
+        "value": 0.2
+      },
+      "pair_cut_higher": 3,
+      "pair_cut_lower": 0,
+      "problems": 10,
+      "stratum": "positive_receipt",
+      "tied": 7
+    },
+    {
+      "comparison": "read_all",
+      "mean_pair_cut_minus_comparison": {
+        "exact": "-547/80",
+        "value": -6.8375
+      },
+      "pair_cut_higher": 0,
+      "pair_cut_lower": 10,
+      "problems": 10,
+      "stratum": "positive_receipt",
+      "tied": 0
+    }
+  ],
+  "per_problem": [
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "pair_cut": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "read_all": {
+          "exact": "12",
+          "value": 12.0
+        },
+        "schema_aware": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "world_entropy": {
+          "exact": "2",
+          "value": 2.0
+        }
+      },
+      "problem_id": "acq_94200",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "23/4",
+          "value": 5.75
+        },
+        "pair_cut": {
+          "exact": "6",
+          "value": 6.0
+        },
+        "read_all": {
+          "exact": "10",
+          "value": 10.0
+        },
+        "schema_aware": {
+          "exact": "25/4",
+          "value": 6.25
+        },
+        "world_entropy": {
+          "exact": "6",
+          "value": 6.0
+        }
+      },
+      "problem_id": "acq_94201",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "pair_cut": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "read_all": {
+          "exact": "8",
+          "value": 8.0
+        },
+        "schema_aware": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "world_entropy": {
+          "exact": "2",
+          "value": 2.0
+        }
+      },
+      "problem_id": "acq_94202",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "29/4",
+          "value": 7.25
+        },
+        "pair_cut": {
+          "exact": "8",
+          "value": 8.0
+        },
+        "read_all": {
+          "exact": "16",
+          "value": 16.0
+        },
+        "schema_aware": {
+          "exact": "29/4",
+          "value": 7.25
+        },
+        "world_entropy": {
+          "exact": "8",
+          "value": 8.0
+        }
+      },
+      "problem_id": "acq_94203",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "pair_cut": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "read_all": {
+          "exact": "10",
+          "value": 10.0
+        },
+        "schema_aware": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "world_entropy": {
+          "exact": "4",
+          "value": 4.0
+        }
+      },
+      "problem_id": "acq_94204",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "17/4",
+          "value": 4.25
+        },
+        "pair_cut": {
+          "exact": "17/4",
+          "value": 4.25
+        },
+        "read_all": {
+          "exact": "8",
+          "value": 8.0
+        },
+        "schema_aware": {
+          "exact": "9/2",
+          "value": 4.5
+        },
+        "world_entropy": {
+          "exact": "17/4",
+          "value": 4.25
+        }
+      },
+      "problem_id": "acq_94205",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "pair_cut": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "read_all": {
+          "exact": "12",
+          "value": 12.0
+        },
+        "schema_aware": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "world_entropy": {
+          "exact": "1",
+          "value": 1.0
+        }
+      },
+      "problem_id": "acq_94206",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "13/2",
+          "value": 6.5
+        },
+        "pair_cut": {
+          "exact": "13/2",
+          "value": 6.5
+        },
+        "read_all": {
+          "exact": "11",
+          "value": 11.0
+        },
+        "schema_aware": {
+          "exact": "13/2",
+          "value": 6.5
+        },
+        "world_entropy": {
+          "exact": "13/2",
+          "value": 6.5
+        }
+      },
+      "problem_id": "acq_94207",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "pair_cut": {
+          "exact": "3",
+          "value": 3.0
+        },
+        "read_all": {
+          "exact": "9",
+          "value": 9.0
+        },
+        "schema_aware": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "world_entropy": {
+          "exact": "3",
+          "value": 3.0
+        }
+      },
+      "problem_id": "acq_94208",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "23/8",
+          "value": 2.875
+        },
+        "pair_cut": {
+          "exact": "23/8",
+          "value": 2.875
+        },
+        "read_all": {
+          "exact": "8",
+          "value": 8.0
+        },
+        "schema_aware": {
+          "exact": "49/16",
+          "value": 3.0625
+        },
+        "world_entropy": {
+          "exact": "29/8",
+          "value": 3.625
+        }
+      },
+      "problem_id": "acq_94209",
+      "stratum": "positive_receipt",
+      "subtype": "positive_receipt",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "13/8",
+          "value": 1.625
+        },
+        "pair_cut": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "read_all": {
+          "exact": "12",
+          "value": 12.0
+        },
+        "schema_aware": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "world_entropy": {
+          "exact": "2",
+          "value": 2.0
+        }
+      },
+      "problem_id": "acq_94210",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "53/8",
+          "value": 6.625
+        },
+        "pair_cut": {
+          "exact": "17/2",
+          "value": 8.5
+        },
+        "read_all": {
+          "exact": "16",
+          "value": 16.0
+        },
+        "schema_aware": {
+          "exact": "9",
+          "value": 9.0
+        },
+        "world_entropy": {
+          "exact": "9",
+          "value": 9.0
+        }
+      },
+      "problem_id": "acq_94211",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "pair_cut": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "read_all": {
+          "exact": "12",
+          "value": 12.0
+        },
+        "schema_aware": {
+          "exact": "1",
+          "value": 1.0
+        },
+        "world_entropy": {
+          "exact": "2",
+          "value": 2.0
+        }
+      },
+      "problem_id": "acq_94212",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "351/64",
+          "value": 5.484375
+        },
+        "pair_cut": {
+          "exact": "13/2",
+          "value": 6.5
+        },
+        "read_all": {
+          "exact": "18",
+          "value": 18.0
+        },
+        "schema_aware": {
+          "exact": "63/8",
+          "value": 7.875
+        },
+        "world_entropy": {
+          "exact": "13/2",
+          "value": 6.5
+        }
+      },
+      "problem_id": "acq_94213",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "9/2",
+          "value": 4.5
+        },
+        "pair_cut": {
+          "exact": "23/4",
+          "value": 5.75
+        },
+        "read_all": {
+          "exact": "16",
+          "value": 16.0
+        },
+        "schema_aware": {
+          "exact": "7",
+          "value": 7.0
+        },
+        "world_entropy": {
+          "exact": "13/2",
+          "value": 6.5
+        }
+      },
+      "problem_id": "acq_94214",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "13/2",
+          "value": 6.5
+        },
+        "pair_cut": {
+          "exact": "7",
+          "value": 7.0
+        },
+        "read_all": {
+          "exact": "18",
+          "value": 18.0
+        },
+        "schema_aware": {
+          "exact": "17/2",
+          "value": 8.5
+        },
+        "world_entropy": {
+          "exact": "15/2",
+          "value": 7.5
+        }
+      },
+      "problem_id": "acq_94215",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "13/8",
+          "value": 1.625
+        },
+        "pair_cut": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "read_all": {
+          "exact": "13",
+          "value": 13.0
+        },
+        "schema_aware": {
+          "exact": "13/8",
+          "value": 1.625
+        },
+        "world_entropy": {
+          "exact": "3",
+          "value": 3.0
+        }
+      },
+      "problem_id": "acq_94216",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "pair_cut": {
+          "exact": "5/2",
+          "value": 2.5
+        },
+        "read_all": {
+          "exact": "6",
+          "value": 6.0
+        },
+        "schema_aware": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "world_entropy": {
+          "exact": "5/2",
+          "value": 2.5
+        }
+      },
+      "problem_id": "acq_94217",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "13/8",
+          "value": 1.625
+        },
+        "pair_cut": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "read_all": {
+          "exact": "9",
+          "value": 9.0
+        },
+        "schema_aware": {
+          "exact": "9/4",
+          "value": 2.25
+        },
+        "world_entropy": {
+          "exact": "5/2",
+          "value": 2.5
+        }
+      },
+      "problem_id": "acq_94218",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "311/64",
+          "value": 4.859375
+        },
+        "pair_cut": {
+          "exact": "23/4",
+          "value": 5.75
+        },
+        "read_all": {
+          "exact": "18",
+          "value": 18.0
+        },
+        "schema_aware": {
+          "exact": "115/16",
+          "value": 7.1875
+        },
+        "world_entropy": {
+          "exact": "23/4",
+          "value": 5.75
+        }
+      },
+      "problem_id": "acq_94219",
+      "stratum": "negative_completeness",
+      "subtype": "negative_completeness",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "67/16",
+          "value": 4.1875
+        },
+        "pair_cut": {
+          "exact": "11/2",
+          "value": 5.5
+        },
+        "read_all": {
+          "exact": "20",
+          "value": 20.0
+        },
+        "schema_aware": {
+          "exact": "9/2",
+          "value": 4.5
+        },
+        "world_entropy": {
+          "exact": "11/2",
+          "value": 5.5
+        }
+      },
+      "problem_id": "acq_94220",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "171/32",
+          "value": 5.34375
+        },
+        "pair_cut": {
+          "exact": "47/8",
+          "value": 5.875
+        },
+        "read_all": {
+          "exact": "13",
+          "value": 13.0
+        },
+        "schema_aware": {
+          "exact": "125/16",
+          "value": 7.8125
+        },
+        "world_entropy": {
+          "exact": "45/8",
+          "value": 5.625
+        }
+      },
+      "problem_id": "acq_94221",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "6",
+          "value": 6.0
+        },
+        "pair_cut": {
+          "exact": "7",
+          "value": 7.0
+        },
+        "read_all": {
+          "exact": "18",
+          "value": 18.0
+        },
+        "schema_aware": {
+          "exact": "8",
+          "value": 8.0
+        },
+        "world_entropy": {
+          "exact": "7",
+          "value": 7.0
+        }
+      },
+      "problem_id": "acq_94222",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "229/64",
+          "value": 3.578125
+        },
+        "pair_cut": {
+          "exact": "15/4",
+          "value": 3.75
+        },
+        "read_all": {
+          "exact": "16",
+          "value": 16.0
+        },
+        "schema_aware": {
+          "exact": "115/16",
+          "value": 7.1875
+        },
+        "world_entropy": {
+          "exact": "15/4",
+          "value": 3.75
+        }
+      },
+      "problem_id": "acq_94223",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "25/8",
+          "value": 3.125
+        },
+        "pair_cut": {
+          "exact": "17/4",
+          "value": 4.25
+        },
+        "read_all": {
+          "exact": "15",
+          "value": 15.0
+        },
+        "schema_aware": {
+          "exact": "7/2",
+          "value": 3.5
+        },
+        "world_entropy": {
+          "exact": "9/2",
+          "value": 4.5
+        }
+      },
+      "problem_id": "acq_94224",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "5",
+          "value": 5.0
+        },
+        "pair_cut": {
+          "exact": "11/2",
+          "value": 5.5
+        },
+        "read_all": {
+          "exact": "19",
+          "value": 19.0
+        },
+        "schema_aware": {
+          "exact": "15/2",
+          "value": 7.5
+        },
+        "world_entropy": {
+          "exact": "6",
+          "value": 6.0
+        }
+      },
+      "problem_id": "acq_94225",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "107/32",
+          "value": 3.34375
+        },
+        "pair_cut": {
+          "exact": "7/2",
+          "value": 3.5
+        },
+        "read_all": {
+          "exact": "24",
+          "value": 24.0
+        },
+        "schema_aware": {
+          "exact": "23/4",
+          "value": 5.75
+        },
+        "world_entropy": {
+          "exact": "5",
+          "value": 5.0
+        }
+      },
+      "problem_id": "acq_94226",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "pair_cut": {
+          "exact": "5/2",
+          "value": 2.5
+        },
+        "read_all": {
+          "exact": "6",
+          "value": 6.0
+        },
+        "schema_aware": {
+          "exact": "2",
+          "value": 2.0
+        },
+        "world_entropy": {
+          "exact": "5/2",
+          "value": 2.5
+        }
+      },
+      "problem_id": "acq_94227",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "11/2",
+          "value": 5.5
+        },
+        "pair_cut": {
+          "exact": "13/2",
+          "value": 6.5
+        },
+        "read_all": {
+          "exact": "21",
+          "value": 21.0
+        },
+        "schema_aware": {
+          "exact": "13/2",
+          "value": 6.5
+        },
+        "world_entropy": {
+          "exact": "13/2",
+          "value": 6.5
+        }
+      },
+      "problem_id": "acq_94228",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "183/32",
+          "value": 5.71875
+        },
+        "pair_cut": {
+          "exact": "13/2",
+          "value": 6.5
+        },
+        "read_all": {
+          "exact": "18",
+          "value": 18.0
+        },
+        "schema_aware": {
+          "exact": "157/16",
+          "value": 9.8125
+        },
+        "world_entropy": {
+          "exact": "13/2",
+          "value": 6.5
+        }
+      },
+      "problem_id": "acq_94229",
+      "stratum": "complementary_candidates",
+      "subtype": "complementary_candidates",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "pair_cut": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "read_all": {
+          "exact": "7",
+          "value": 7.0
+        },
+        "schema_aware": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "world_entropy": {
+          "exact": "0",
+          "value": 0.0
+        }
+      },
+      "problem_id": "acq_94230",
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "zero_optimal_cost": true
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "9/2",
+          "value": 4.5
+        },
+        "pair_cut": {
+          "exact": "9/2",
+          "value": 4.5
+        },
+        "read_all": {
+          "exact": "9",
+          "value": 9.0
+        },
+        "schema_aware": {
+          "exact": "5",
+          "value": 5.0
+        },
+        "world_entropy": {
+          "exact": "5",
+          "value": 5.0
+        }
+      },
+      "problem_id": "acq_94231",
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "pair_cut": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "read_all": {
+          "exact": "18",
+          "value": 18.0
+        },
+        "schema_aware": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "world_entropy": {
+          "exact": "0",
+          "value": 0.0
+        }
+      },
+      "problem_id": "acq_94232",
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "zero_optimal_cost": true
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "13/4",
+          "value": 3.25
+        },
+        "pair_cut": {
+          "exact": "7/2",
+          "value": 3.5
+        },
+        "read_all": {
+          "exact": "10",
+          "value": 10.0
+        },
+        "schema_aware": {
+          "exact": "4",
+          "value": 4.0
+        },
+        "world_entropy": {
+          "exact": "4",
+          "value": 4.0
+        }
+      },
+      "problem_id": "acq_94233",
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "pair_cut": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "read_all": {
+          "exact": "13",
+          "value": 13.0
+        },
+        "schema_aware": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "world_entropy": {
+          "exact": "0",
+          "value": 0.0
+        }
+      },
+      "problem_id": "acq_94234",
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "zero_optimal_cost": true
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "43/8",
+          "value": 5.375
+        },
+        "pair_cut": {
+          "exact": "43/8",
+          "value": 5.375
+        },
+        "read_all": {
+          "exact": "15",
+          "value": 15.0
+        },
+        "schema_aware": {
+          "exact": "11/2",
+          "value": 5.5
+        },
+        "world_entropy": {
+          "exact": "43/8",
+          "value": 5.375
+        }
+      },
+      "problem_id": "acq_94235",
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "pair_cut": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "read_all": {
+          "exact": "15",
+          "value": 15.0
+        },
+        "schema_aware": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "world_entropy": {
+          "exact": "0",
+          "value": 0.0
+        }
+      },
+      "problem_id": "acq_94236",
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "zero_optimal_cost": true
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "4",
+          "value": 4.0
+        },
+        "pair_cut": {
+          "exact": "4",
+          "value": 4.0
+        },
+        "read_all": {
+          "exact": "7",
+          "value": 7.0
+        },
+        "schema_aware": {
+          "exact": "4",
+          "value": 4.0
+        },
+        "world_entropy": {
+          "exact": "4",
+          "value": 4.0
+        }
+      },
+      "problem_id": "acq_94237",
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "zero_optimal_cost": false
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "pair_cut": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "read_all": {
+          "exact": "15",
+          "value": 15.0
+        },
+        "schema_aware": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "world_entropy": {
+          "exact": "0",
+          "value": 0.0
+        }
+      },
+      "problem_id": "acq_94238",
+      "stratum": "archive_ambiguity",
+      "subtype": "globally_indistinguishable_source_use",
+      "zero_optimal_cost": true
+    },
+    {
+      "full_budget_costs": {
+        "exact_optimal": {
+          "exact": "35/8",
+          "value": 4.375
+        },
+        "pair_cut": {
+          "exact": "39/8",
+          "value": 4.875
+        },
+        "read_all": {
+          "exact": "11",
+          "value": 11.0
+        },
+        "schema_aware": {
+          "exact": "81/16",
+          "value": 5.0625
+        },
+        "world_entropy": {
+          "exact": "21/4",
+          "value": 5.25
+        }
+      },
+      "problem_id": "acq_94239",
+      "stratum": "archive_ambiguity",
+      "subtype": "mixed_resolvability_source_use",
+      "zero_optimal_cost": false
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Reaggregation of the original p0 full-budget results only; no planner rerun, case regeneration, shifted-prior evaluation or new structure-balanced cost comparison.",
+  "status": "passed",
+  "verified_certificate_status_counts": {
+    "archive_irreducible": 471,
+    "established": 580,
+    "ruled_out": 438,
+    "unresolved_pending": 433
+  },
+  "zero_optimum_policy_costs": {
+    "acq_94230": {
+      "exact_optimal": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "pair_cut": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "read_all": {
+        "exact": "7",
+        "value": 7.0
+      },
+      "schema_aware": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "world_entropy": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "acq_94232": {
+      "exact_optimal": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "pair_cut": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "read_all": {
+        "exact": "18",
+        "value": 18.0
+      },
+      "schema_aware": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "world_entropy": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "acq_94234": {
+      "exact_optimal": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "pair_cut": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "read_all": {
+        "exact": "13",
+        "value": 13.0
+      },
+      "schema_aware": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "world_entropy": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "acq_94236": {
+      "exact_optimal": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "pair_cut": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "read_all": {
+        "exact": "15",
+        "value": 15.0
+      },
+      "schema_aware": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "world_entropy": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    "acq_94238": {
+      "exact_optimal": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "pair_cut": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "read_all": {
+        "exact": "15",
+        "value": 15.0
+      },
+      "schema_aware": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "world_entropy": {
+        "exact": "0",
+        "value": 0.0
+      }
+    }
+  },
+  "zero_optimum_problem_ids": [
+    "acq_94230",
+    "acq_94232",
+    "acq_94234",
+    "acq_94236",
+    "acq_94238"
+  ],
+  "zero_optimum_ratio_rule": "All five zero-optimum problems retained in means and paired counts, excluded from all optimum ratios; 35 positive-optimum problems per policy. Read-all still pays for its full catalogue."
+}

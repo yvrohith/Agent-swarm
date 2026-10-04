@@ -1,0 +1,23 @@
+{
+  "additional_spend_usd": "0",
+  "baseline_reproduction": "verified 1960 saved full-budget runs,200 metric rows,1922 historical certificates,30 structural groups",
+  "development": "4 unchanged saved problems;200 rows;570 matched trajectories;181 certificates;20 bounds;60 cold timing constructions;zero failures",
+  "evaluation_comparisons_observed": 0,
+  "failed": 0,
+  "full_suite_passed": 816,
+  "independent_review": "Positive rational transforms, p0 versus q separation, group weighting, frozen algorithms, capped-solve accounting and common timing workload verified. Independent tiny-tree helper pinned in computational closure.",
+  "lint_command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 .venv/bin/ruff check .",
+  "lint_passed": true,
+  "model_calls": 0,
+  "network_blocked_during_tests": true,
+  "network_requests": 0,
+  "passed": true,
+  "pre_freeze_integration_correction": "Initial freeze gate rejected successful audit files because their explicit status labels differed from the driver expectation. Fixed the label contract and added two regression cases before any freeze file or evaluation outcome existed; no scientific calculation changed.",
+  "preservation": {
+    "historical_local_files": 509,
+    "historical_tracked_files": 240
+  },
+  "pytest_command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 .venv/bin/python (socket-blocking wrapper executing pytest -q)",
+  "pytest_seconds": 23.08,
+  "skipped": 0
+}
