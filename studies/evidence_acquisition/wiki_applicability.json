@@ -1,0 +1,403 @@
+{
+  "additional_spend_usd": "0",
+  "census_rerun": false,
+  "claim_scope": "Case-sensitive bounded literal titles and unchanged SequenceMatcher insertion/inheritance rule; not authorship, exposure, or source use",
+  "completed_at_utc": "2026-10-04T00:39:55.864694+00:00",
+  "examples": [
+    {
+      "ambiguous_spans": [],
+      "basis": "No bounded literal title in the retrieved target; no predecessor assumption required",
+      "claim": "Target contains at least one inserted bounded literal occurrence of the referenced title under the existing rule",
+      "comparison_eligible": true,
+      "exclusion_reasons": [],
+      "flags": [],
+      "gap_is_not_empty_predecessor": false,
+      "inherited_spans": [],
+      "inserted_spans": [],
+      "pair_status": "no_target_literal_match",
+      "parent_id": "dse~FinanceSequenceMar26OAI3@1",
+      "parent_retrieval": "performed",
+      "referenced_title": "AgentVeteranNYCTest",
+      "retrieval_count": 2,
+      "retrievals": [
+        {
+          "decoded_text_utf8_bytes": 471,
+          "decoded_text_utf8_sha256": "8406dc31c05ac0cea7a35a1bc5943f17f76f4ea24112eef120a76d876aff8f42",
+          "outcome": "retained_record",
+          "record_sha256": "3455f2230f8c4ec4cb6f7fd3b89d601de5f3156b7b06d0006fbade109f1d4266",
+          "revision_id": "dse~FinanceSequenceMar26OAI3@2",
+          "site": "dse"
+        },
+        {
+          "decoded_text_utf8_bytes": 280,
+          "decoded_text_utf8_sha256": "e98832ec9b93496ccf6e8d1bf26dadbff86e462e5055aae4de2d121499e45317",
+          "outcome": "retained_record",
+          "record_sha256": "82ebb2182aa7340801b9695aa67a2e41773d49c939c8e6f15bdbba59527bb6d1",
+          "revision_id": "dse~FinanceSequenceMar26OAI3@1",
+          "site": "dse"
+        }
+      ],
+      "slot_kind": "connected_two_revision_history",
+      "source_title_metadata": {
+        "is_creation": true,
+        "page": "AgentVeteranNYCTest",
+        "parent_id": null,
+        "record_sha256": "a1c2bbbd7e4c7fa4a538bf463be0f233b3e9b6abd70c355ca3b48a38290844a8",
+        "revision_id": "dse~AgentVeteranNYCTest@1",
+        "site": "dse",
+        "source_file": "revisions.jsonl",
+        "source_line": 3791,
+        "timestamp": "2026-06-17T16:47:36Z",
+        "timestamp_uncertainty_seconds": 1
+      },
+      "status": "ruled_out",
+      "target": {
+        "is_creation": false,
+        "page": "FinanceSequenceMar26OAI3",
+        "parent_id": "dse~FinanceSequenceMar26OAI3@1",
+        "record_sha256": "3455f2230f8c4ec4cb6f7fd3b89d601de5f3156b7b06d0006fbade109f1d4266",
+        "revision_id": "dse~FinanceSequenceMar26OAI3@2",
+        "site": "dse",
+        "source_file": "revisions.jsonl",
+        "source_line": 6211,
+        "timestamp": "2026-06-17T21:53:26Z",
+        "timestamp_uncertainty_seconds": 1
+      },
+      "target_matches": []
+    },
+    {
+      "ambiguous_spans": [],
+      "basis": "No bounded literal title in the retrieved target; no predecessor assumption required",
+      "claim": "Target contains at least one inserted bounded literal occurrence of the referenced title under the existing rule",
+      "comparison_eligible": true,
+      "exclusion_reasons": [],
+      "flags": [],
+      "gap_is_not_empty_predecessor": false,
+      "inherited_spans": [],
+      "inserted_spans": [],
+      "pair_status": "no_target_literal_match",
+      "parent_id": "dse~SandboxResearchHelperZ@1",
+      "parent_retrieval": "performed",
+      "referenced_title": "RedirectVar13",
+      "retrieval_count": 2,
+      "retrievals": [
+        {
+          "decoded_text_utf8_bytes": 429,
+          "decoded_text_utf8_sha256": "286cdb9226e721f8def24927adab178cd1b715b923fa352f3885ea1190cc4ff3",
+          "outcome": "retained_record",
+          "record_sha256": "7068f4e932d4d33d2d3735dacad14629f4cd9845734ea8101447e76fefc573e0",
+          "revision_id": "dse~SandboxResearchHelperZ@2",
+          "site": "dse"
+        },
+        {
+          "decoded_text_utf8_bytes": 114,
+          "decoded_text_utf8_sha256": "3d6a9b924a68fa0edcbd0f562b78e01ef54e9d9b3ab6d2d06f6c04bff62d262f",
+          "outcome": "retained_record",
+          "record_sha256": "db9323c15d6845a6cb80fc65df20f80ff596004b44f126611b2f9301bf902c55",
+          "revision_id": "dse~SandboxResearchHelperZ@1",
+          "site": "dse"
+        }
+      ],
+      "slot_kind": "connected_two_revision_history",
+      "source_title_metadata": {
+        "is_creation": true,
+        "page": "RedirectVar13",
+        "parent_id": null,
+        "record_sha256": "bda2acb628549552592a8b60c962edcee6e61f0c041bc6ad58df1aa58c4bc602",
+        "revision_id": "dse~RedirectVar13@1",
+        "site": "dse",
+        "source_file": "revisions.jsonl",
+        "source_line": 9181,
+        "timestamp": "2026-05-26T13:23:52Z",
+        "timestamp_uncertainty_seconds": 1
+      },
+      "status": "ruled_out",
+      "target": {
+        "is_creation": false,
+        "page": "SandboxResearchHelperZ",
+        "parent_id": "dse~SandboxResearchHelperZ@1",
+        "record_sha256": "7068f4e932d4d33d2d3735dacad14629f4cd9845734ea8101447e76fefc573e0",
+        "revision_id": "dse~SandboxResearchHelperZ@2",
+        "site": "dse",
+        "source_file": "revisions.jsonl",
+        "source_line": 9375,
+        "timestamp": "2026-05-26T14:11:30Z",
+        "timestamp_uncertainty_seconds": 1
+      },
+      "target_matches": []
+    },
+    {
+      "ambiguous_spans": [],
+      "basis": "No bounded literal title in the retrieved target; no predecessor assumption required",
+      "claim": "Target contains at least one inserted bounded literal occurrence of the referenced title under the existing rule",
+      "comparison_eligible": false,
+      "exclusion_reasons": [
+        "missing_predecessor"
+      ],
+      "flags": [
+        "missing_predecessor"
+      ],
+      "gap_is_not_empty_predecessor": true,
+      "inherited_spans": [],
+      "inserted_spans": [],
+      "pair_status": "no_target_literal_match",
+      "parent_id": null,
+      "parent_retrieval": "not_issued: publisher supplies no retained predecessor pointer; history gap preserved",
+      "referenced_title": "RedirectVar13",
+      "retrieval_count": 1,
+      "retrievals": [
+        {
+          "decoded_text_utf8_bytes": 2122,
+          "decoded_text_utf8_sha256": "45f31e743eecd99c8745f84f0309c81455eea3e2782ba6c338b2cb77af7cd5d5",
+          "outcome": "retained_record",
+          "record_sha256": "b61361b0da70070d2dc907fa094dfff2fb78fc30227db5fd9a7750e63e8dbd90",
+          "revision_id": "dse~TestSeite@703",
+          "site": "dse"
+        }
+      ],
+      "slot_kind": "published_history_gap",
+      "source_title_metadata": {
+        "is_creation": true,
+        "page": "RedirectVar13",
+        "parent_id": null,
+        "record_sha256": "bda2acb628549552592a8b60c962edcee6e61f0c041bc6ad58df1aa58c4bc602",
+        "revision_id": "dse~RedirectVar13@1",
+        "site": "dse",
+        "source_file": "revisions.jsonl",
+        "source_line": 9181,
+        "timestamp": "2026-05-26T13:23:52Z",
+        "timestamp_uncertainty_seconds": 1
+      },
+      "status": "ruled_out",
+      "target": {
+        "is_creation": false,
+        "page": "TestSeite",
+        "parent_id": null,
+        "record_sha256": "b61361b0da70070d2dc907fa094dfff2fb78fc30227db5fd9a7750e63e8dbd90",
+        "revision_id": "dse~TestSeite@703",
+        "site": "dse",
+        "source_file": "revisions.jsonl",
+        "source_line": 10284,
+        "timestamp": "2026-05-26T14:31:27Z",
+        "timestamp_uncertainty_seconds": 1
+      },
+      "target_matches": []
+    },
+    {
+      "ambiguous_spans": [],
+      "basis": "No bounded literal title in the retrieved target; no predecessor assumption required",
+      "claim": "Target contains at least one inserted bounded literal occurrence of the referenced title under the existing rule",
+      "comparison_eligible": false,
+      "exclusion_reasons": [
+        "missing_predecessor"
+      ],
+      "flags": [
+        "missing_predecessor"
+      ],
+      "gap_is_not_empty_predecessor": true,
+      "inherited_spans": [],
+      "inserted_spans": [],
+      "pair_status": "no_target_literal_match",
+      "parent_id": null,
+      "parent_retrieval": "not_issued: publisher supplies no retained predecessor pointer; history gap preserved",
+      "referenced_title": "FederalDataReferenceXYZ",
+      "retrieval_count": 1,
+      "retrievals": [
+        {
+          "decoded_text_utf8_bytes": 0,
+          "decoded_text_utf8_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outcome": "retained_record",
+          "record_sha256": "33cdc3e30ee5a8f913672bb1c968d8e8334ab5dfbbcefa4ab186ef06da9ad7be",
+          "revision_id": "dse~StartSeite@217",
+          "site": "dse"
+        }
+      ],
+      "slot_kind": "published_history_gap",
+      "source_title_metadata": {
+        "is_creation": true,
+        "page": "FederalDataReferenceXYZ",
+        "parent_id": null,
+        "record_sha256": "74c88ee37fbfb156813343085a0669d58e525e9a9f35ea639e5ef90cd45f4c02",
+        "revision_id": "dse~FederalDataReferenceXYZ@1",
+        "site": "dse",
+        "source_file": "revisions.jsonl",
+        "source_line": 6149,
+        "timestamp": "2026-05-24T06:02:19Z",
+        "timestamp_uncertainty_seconds": 1
+      },
+      "status": "ruled_out",
+      "target": {
+        "is_creation": false,
+        "page": "StartSeite",
+        "parent_id": null,
+        "record_sha256": "33cdc3e30ee5a8f913672bb1c968d8e8334ab5dfbbcefa4ab186ef06da9ad7be",
+        "revision_id": "dse~StartSeite@217",
+        "site": "dse",
+        "source_file": "revisions.jsonl",
+        "source_line": 9677,
+        "timestamp": "2026-05-26T11:27:48Z",
+        "timestamp_uncertainty_seconds": 1
+      },
+      "target_matches": []
+    }
+  ],
+  "full_text_copied": false,
+  "histories": 4,
+  "limitations": [
+    "Titles and target histories were selected mechanically from metadata; no efficiency advantage was tested or claimed.",
+    "Initial metadata reveals parent availability; gap slots require no invented empty predecessor.",
+    "No target match can rule out insertion without resolving a missing-history comparison; these are distinct facts.",
+    "No synthetic prior, finite natural-language world set, optimality claim or archive-irreducibility conclusion is applied to wiki text.",
+    "Integrity pins do not independently authenticate publisher truth or complete the published history.",
+    "Full raw texts remain only in the already local ignored pinned archive; no new text package was created."
+  ],
+  "model_calls": 0,
+  "network_requests": 0,
+  "retrievals": 6,
+  "selection": {
+    "body_access_during_selection": false,
+    "created_at_utc": "2026-10-04T00:39:53.582494+00:00",
+    "input_sha256": {
+      "data/raw/wiki/full-wiki-logs.zip": "eb68aa12d26bf189d8bfc4ce47f4d8af66ae5ba7ebbadd429738297a3cbb25ae",
+      "src/tracebench/wiki_analysis.py": "8eed62eed7103d65e7ad609b2c4ab7cd29ce232f87cfce512c8df3e247afd194",
+      "src/tracebench/wiki_loader.py": "cbcf2689511801e55814e7d8931383f74f899f42c5bc2c6b51c8b07dba9636f7",
+      "src/tracebench/wiki_model.py": "aeb2ade4aa4b657ef6c153ec32bc7ef237feefcb31e6dc211417e2090e0e5eb6",
+      "studies/wiki_case_study/source_manifest.json": "601bfbdacfbef32cce37689781644fee638d43f5a422fc992cf8af070e59ec3e"
+    },
+    "loader_note": "Existing pinned loader decoded/validated archive integrity; selection received metadata-only projections",
+    "metadata_inventory_sha256": "a437cd8b15ab89155dca08aa9c8e55fb7200de106497e7f920e8b8e804e1522d",
+    "script_sha256": "f3ab66d18739529b3327fe87bb8abd5b55c7f880e21539f972a4badf44b19646",
+    "selected": [
+      {
+        "parent_id": "dse~FinanceSequenceMar26OAI3@1",
+        "referenced_title": "AgentVeteranNYCTest",
+        "slot_kind": "connected_two_revision_history",
+        "source_title_metadata": {
+          "is_creation": true,
+          "page": "AgentVeteranNYCTest",
+          "parent_id": null,
+          "record_sha256": "a1c2bbbd7e4c7fa4a538bf463be0f233b3e9b6abd70c355ca3b48a38290844a8",
+          "revision_id": "dse~AgentVeteranNYCTest@1",
+          "site": "dse",
+          "source_file": "revisions.jsonl",
+          "source_line": 3791,
+          "timestamp": "2026-06-17T16:47:36Z",
+          "timestamp_uncertainty_seconds": 1
+        },
+        "target": {
+          "is_creation": false,
+          "page": "FinanceSequenceMar26OAI3",
+          "parent_id": "dse~FinanceSequenceMar26OAI3@1",
+          "record_sha256": "3455f2230f8c4ec4cb6f7fd3b89d601de5f3156b7b06d0006fbade109f1d4266",
+          "revision_id": "dse~FinanceSequenceMar26OAI3@2",
+          "site": "dse",
+          "source_file": "revisions.jsonl",
+          "source_line": 6211,
+          "timestamp": "2026-06-17T21:53:26Z",
+          "timestamp_uncertainty_seconds": 1
+        }
+      },
+      {
+        "parent_id": "dse~SandboxResearchHelperZ@1",
+        "referenced_title": "RedirectVar13",
+        "slot_kind": "connected_two_revision_history",
+        "source_title_metadata": {
+          "is_creation": true,
+          "page": "RedirectVar13",
+          "parent_id": null,
+          "record_sha256": "bda2acb628549552592a8b60c962edcee6e61f0c041bc6ad58df1aa58c4bc602",
+          "revision_id": "dse~RedirectVar13@1",
+          "site": "dse",
+          "source_file": "revisions.jsonl",
+          "source_line": 9181,
+          "timestamp": "2026-05-26T13:23:52Z",
+          "timestamp_uncertainty_seconds": 1
+        },
+        "target": {
+          "is_creation": false,
+          "page": "SandboxResearchHelperZ",
+          "parent_id": "dse~SandboxResearchHelperZ@1",
+          "record_sha256": "7068f4e932d4d33d2d3735dacad14629f4cd9845734ea8101447e76fefc573e0",
+          "revision_id": "dse~SandboxResearchHelperZ@2",
+          "site": "dse",
+          "source_file": "revisions.jsonl",
+          "source_line": 9375,
+          "timestamp": "2026-05-26T14:11:30Z",
+          "timestamp_uncertainty_seconds": 1
+        }
+      },
+      {
+        "parent_id": null,
+        "referenced_title": "RedirectVar13",
+        "slot_kind": "published_history_gap",
+        "source_title_metadata": {
+          "is_creation": true,
+          "page": "RedirectVar13",
+          "parent_id": null,
+          "record_sha256": "bda2acb628549552592a8b60c962edcee6e61f0c041bc6ad58df1aa58c4bc602",
+          "revision_id": "dse~RedirectVar13@1",
+          "site": "dse",
+          "source_file": "revisions.jsonl",
+          "source_line": 9181,
+          "timestamp": "2026-05-26T13:23:52Z",
+          "timestamp_uncertainty_seconds": 1
+        },
+        "target": {
+          "is_creation": false,
+          "page": "TestSeite",
+          "parent_id": null,
+          "record_sha256": "b61361b0da70070d2dc907fa094dfff2fb78fc30227db5fd9a7750e63e8dbd90",
+          "revision_id": "dse~TestSeite@703",
+          "site": "dse",
+          "source_file": "revisions.jsonl",
+          "source_line": 10284,
+          "timestamp": "2026-05-26T14:31:27Z",
+          "timestamp_uncertainty_seconds": 1
+        }
+      },
+      {
+        "parent_id": null,
+        "referenced_title": "FederalDataReferenceXYZ",
+        "slot_kind": "published_history_gap",
+        "source_title_metadata": {
+          "is_creation": true,
+          "page": "FederalDataReferenceXYZ",
+          "parent_id": null,
+          "record_sha256": "74c88ee37fbfb156813343085a0669d58e525e9a9f35ea639e5ef90cd45f4c02",
+          "revision_id": "dse~FederalDataReferenceXYZ@1",
+          "site": "dse",
+          "source_file": "revisions.jsonl",
+          "source_line": 6149,
+          "timestamp": "2026-05-24T06:02:19Z",
+          "timestamp_uncertainty_seconds": 1
+        },
+        "target": {
+          "is_creation": false,
+          "page": "StartSeite",
+          "parent_id": null,
+          "record_sha256": "33cdc3e30ee5a8f913672bb1c968d8e8334ab5dfbbcefa4ab186ef06da9ad7be",
+          "revision_id": "dse~StartSeite@217",
+          "site": "dse",
+          "source_file": "revisions.jsonl",
+          "source_line": 9677,
+          "timestamp": "2026-05-26T11:27:48Z",
+          "timestamp_uncertainty_seconds": 1
+        }
+      }
+    ],
+    "selection_rule": "From DSE metadata only, rank eligible target revision identities by SHA256 of [salt,slot_kind,site,page,revision_id]. Select two distinct histories having exactly two retained revisions: a declared creation followed by its explicit child. Then select two distinct histories whose first retained revision is a declared missing-predecessor noncreation. For each target, choose a different nonnavigation source page with a strictly earlier timestamp interval, ranked by SHA256 of [salt,source,site,page]; choose its earliest strictly earlier revision as metadata evidence. Never inspect text, reference matches, gold, or retrieval outcomes for selection."
+  },
+  "selection_log": "artifacts/evidence-acquisition/wiki-applicability-selection.json",
+  "selection_log_sha256": "045f3ea614a321054b24ab1673879faedd2ecacc936b88aff5af94b4940fa350",
+  "source_formatting": {
+    "ast_unchanged": true,
+    "current_source_sha256": "0c4e606e83d4d5161939f7c7dc402afff031ebc2d02f0008edb7c87ec4dabdcc",
+    "execution_source_sha256": "f3ab66d18739529b3327fe87bb8abd5b55c7f880e21539f972a4badf44b19646",
+    "note": "Ruff reformatted one import after execution; no selection, retrieval or classification logic changed. Selection log remains unchanged. Exact execution source is reconstructible by the stated replacement.",
+    "reconstruct_execution_source": {
+      "replace_current": "from tracebench.wiki_analysis import (\n    DEFAULT_EXCLUDED_TITLES,\n    _pattern,\n    _strictly_before,\n    analyze_references,\n)",
+      "with_executed": "from tracebench.wiki_analysis import DEFAULT_EXCLUDED_TITLES, _pattern, _strictly_before, analyze_references"
+    }
+  },
+  "study_role": "secondary descriptive existing-wiki applicability, separate from finite experiment"
+}

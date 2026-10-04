@@ -1,0 +1,380 @@
+{
+  "development_count": 4,
+  "distinct_unweighted_structures": 30,
+  "distinct_weighted_problems": 40,
+  "evaluation_count": 40,
+  "evaluation_policy_outcomes_observed": false,
+  "files_sha256": {
+    "development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893"
+  },
+  "generated_at_utc": "2026-10-04T00:23:22.266593+00:00",
+  "generation_failures": [],
+  "generator_sha256": "4a826765cee8d7f9b79187b5dedbae241fdcaeece05c75d98603c3f25e44df81",
+  "interpretation": "Cost variants of one structure are not independent scientific problems.",
+  "repeated_structures": {
+    "048e878a2787ec01abc3657ed2428955bc9997fb9ea24eaf41b899c1b5237182": [
+      "acq_94220",
+      "acq_94226"
+    ],
+    "0e14ceaa93bdba35603ca4e921831611e9bbd618eec21ca04e4151af8c0b423f": [
+      "acq_94230",
+      "acq_94236"
+    ],
+    "2f1ea6f24b73609a221b2fd6710df6ecb398e1b4443fbe3bcf9625bb383def0a": [
+      "acq_94213",
+      "acq_94219"
+    ],
+    "7626b113f5a8248ed9093822379d8c062cd29ee239607d534c52631313003351": [
+      "acq_94200",
+      "acq_94206"
+    ],
+    "8f6cd206e9ee9321d7b2445f9a5bab38665fff51bf8424b4f672fe92a66fdc6a": [
+      "acq_94233",
+      "acq_94239"
+    ],
+    "a23f584ac93aa84a072fac5aacdd97a3e05fa7c52009a1f7cde29f9f0770cdbf": [
+      "acq_94203",
+      "acq_94209"
+    ],
+    "b6b5bab2b94edd93a03d28c8d21f07ddcc6d6997c64ca0774cc3e9ae7ed826ba": [
+      "acq_94223",
+      "acq_94229"
+    ],
+    "db3c6dc2fa50a623be6367521bf5a019afd8d5d1f4a1dde93745f44d0f28be93": [
+      "acq_94202",
+      "acq_94208"
+    ],
+    "e21b759168d50143cba3dd1bd33cfca6528cb056f34d514f98619ce1a0910979": [
+      "acq_94201",
+      "acq_94207"
+    ],
+    "f3f43e7087d3cf627665d95f66148992b6cbd32528fd8cb9d23d91154a614f2e": [
+      "acq_94210",
+      "acq_94216"
+    ]
+  },
+  "selection": "all declared seeds, no outcome-based selection/rejection or regeneration",
+  "structural_fingerprints": [
+    {
+      "problem_id": "acq_94200",
+      "seed": 94200,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "e2a2d2d0001c63b1fc79c31ad6e695a9dc11cad54102d6ca8dbcaa618bf47424",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "7626b113f5a8248ed9093822379d8c062cd29ee239607d534c52631313003351"
+    },
+    {
+      "problem_id": "acq_94201",
+      "seed": 94201,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "a754ddf6ee0a6c12529b959574db4373cfba5a4eb0dfd1ab3a0c0dc714f5af50",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "e21b759168d50143cba3dd1bd33cfca6528cb056f34d514f98619ce1a0910979"
+    },
+    {
+      "problem_id": "acq_94202",
+      "seed": 94202,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "c3b6ea600f89526736c487012024c866ec76ba60039c87933803df3dc34bc6fa",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "db3c6dc2fa50a623be6367521bf5a019afd8d5d1f4a1dde93745f44d0f28be93"
+    },
+    {
+      "problem_id": "acq_94203",
+      "seed": 94203,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "5db9a0d3737ea38d2fc123fccc77b7c4a949f1bbb1bcd40755ef5d37bc67e077",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "a23f584ac93aa84a072fac5aacdd97a3e05fa7c52009a1f7cde29f9f0770cdbf"
+    },
+    {
+      "problem_id": "acq_94204",
+      "seed": 94204,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "0424f4f18f597edfdde409e11079bc5b0a37b7cee45e3256286182eead3530cf",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "8b0b2262cf7b951b77fce9f5a448bfd1b497a7bd6afdf6bf475515826eaf6f94"
+    },
+    {
+      "problem_id": "acq_94205",
+      "seed": 94205,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "46b986dc9060263b32513e108d578790e0a464bd26a23a62e24788871888b3eb",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "ead4aca04118279d6238db38f7cb7d47c0a76ec0349d19a17a7eaf16833cd2fa"
+    },
+    {
+      "problem_id": "acq_94206",
+      "seed": 94206,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "532610e9c0fa3b75cee0b19c3490a55e7420b11ae293ffee459ef84e0ead3992",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "7626b113f5a8248ed9093822379d8c062cd29ee239607d534c52631313003351"
+    },
+    {
+      "problem_id": "acq_94207",
+      "seed": 94207,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "3f573b3e07f2e1245ee77a74b5af77fc25f355abfe699ca6f6715b9d298084f9",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "e21b759168d50143cba3dd1bd33cfca6528cb056f34d514f98619ce1a0910979"
+    },
+    {
+      "problem_id": "acq_94208",
+      "seed": 94208,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "b68ea47bfb1b438640cb36163490bc0d2d7e3a476ee701e0051b6898a5647d05",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "db3c6dc2fa50a623be6367521bf5a019afd8d5d1f4a1dde93745f44d0f28be93"
+    },
+    {
+      "problem_id": "acq_94209",
+      "seed": 94209,
+      "stratum": "positive_receipt",
+      "structural_fingerprint": "7d79e63e1856e0f7e23ff1708910d0a241bbdaeec29f93f86cc844b2e1807ae6",
+      "subtype": "positive_receipt",
+      "unweighted_structure_fingerprint": "a23f584ac93aa84a072fac5aacdd97a3e05fa7c52009a1f7cde29f9f0770cdbf"
+    },
+    {
+      "problem_id": "acq_94210",
+      "seed": 94210,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "285cfbcfe00bdfb368491587bf730a8c3322781a21b796b87938c6430a648443",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "f3f43e7087d3cf627665d95f66148992b6cbd32528fd8cb9d23d91154a614f2e"
+    },
+    {
+      "problem_id": "acq_94211",
+      "seed": 94211,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "da757aa9dca3d97ed2b977b3562485f4a21676fc954a3df6353e257e3f84a408",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "6bf08df11160b95a6bd5fbb55beda399b264aa080f32913066d17a0ff3a6b26f"
+    },
+    {
+      "problem_id": "acq_94212",
+      "seed": 94212,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "212a845ddc883c4e715163da368e25f06ef5e4a6e84e3e76b03c32745ec41a88",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "8aa38abee0b2bff311aa806b9a54fc93a476cf55d445591199df29e64b215c29"
+    },
+    {
+      "problem_id": "acq_94213",
+      "seed": 94213,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "663690f3abbefebfd040fb38ece61f10c8983bf22098ee65fddc30134e2bafbe",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "2f1ea6f24b73609a221b2fd6710df6ecb398e1b4443fbe3bcf9625bb383def0a"
+    },
+    {
+      "problem_id": "acq_94214",
+      "seed": 94214,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "652ca7c8a92421454cf28c11cfcafac330749db97b8012b407c9abe26ea37ad2",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "9c1b1535502ff6a15abbd9e10886dc51168baee7752c856669079ddb33729ec3"
+    },
+    {
+      "problem_id": "acq_94215",
+      "seed": 94215,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "49d04f1f3da59f9dca52564b47f86830532ae8cb730b4a04512cc142ff7d30ea",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "0ecd953ad4203cd246038eb5864d790ed695bc584208296f33cc7d307802f5ba"
+    },
+    {
+      "problem_id": "acq_94216",
+      "seed": 94216,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "ddae1ba66f78d7e05fd723e3ffd1e388b5924c4e34b822e2354c2de38f900eb3",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "f3f43e7087d3cf627665d95f66148992b6cbd32528fd8cb9d23d91154a614f2e"
+    },
+    {
+      "problem_id": "acq_94217",
+      "seed": 94217,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "ec202b8f0bfe18fb9115a39eb56e7a1f558b92942b744be0fa683be098dcba04",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "4505ba77b0e19e935abba28ac29a8f8f8bf0efcc782d0f9151851c8bfb531d01"
+    },
+    {
+      "problem_id": "acq_94218",
+      "seed": 94218,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "bea9f9fcb25d2f5229b37462217962651434e00e66d7759422da0c25dc332954",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "394c3fca84145a0060135f1febb010f066d8df1515792fbfb740e1121bab506d"
+    },
+    {
+      "problem_id": "acq_94219",
+      "seed": 94219,
+      "stratum": "negative_completeness",
+      "structural_fingerprint": "11687e13def29138824e81cb3960519fde89308d85e9e44b17f71053e21861d0",
+      "subtype": "negative_completeness",
+      "unweighted_structure_fingerprint": "2f1ea6f24b73609a221b2fd6710df6ecb398e1b4443fbe3bcf9625bb383def0a"
+    },
+    {
+      "problem_id": "acq_94220",
+      "seed": 94220,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "8780a0aba5e4c20df744b284c21ba31ce7b80842bd26ba3aa676ec4eaa4f3498",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "048e878a2787ec01abc3657ed2428955bc9997fb9ea24eaf41b899c1b5237182"
+    },
+    {
+      "problem_id": "acq_94221",
+      "seed": 94221,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "dde76d1089488307c41f648cc61e368d447008936ccda9d3f4bc0499fd45f246",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "aa78a18a55cfe3add5b3b63e97d77fd9e741640a3d3f46fdd1a715636e1404e2"
+    },
+    {
+      "problem_id": "acq_94222",
+      "seed": 94222,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "560652a0b11dcfab18861852b8dac3d27cb098535ee1aa449b196e3c1ab84879",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "47c946189726e2064028ab9db54204b0d39bb60f97ab7ec9c4285a2c8ef6b6d3"
+    },
+    {
+      "problem_id": "acq_94223",
+      "seed": 94223,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "466db57648a9b91e31d956368b6c2b722ee7eed6f155657d68f9df8038a48da1",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "b6b5bab2b94edd93a03d28c8d21f07ddcc6d6997c64ca0774cc3e9ae7ed826ba"
+    },
+    {
+      "problem_id": "acq_94224",
+      "seed": 94224,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "bd16d602afd90920858675b17c03be6e48a5e543b53b53f152a6ef182861dcd8",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "092865940f0229208f634275c3c64e2a59560d966d60f3acfcf66ae83c8046f8"
+    },
+    {
+      "problem_id": "acq_94225",
+      "seed": 94225,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "a4328775ae4b606c508306f521a1bc575fc704062f22b8f3b0dd6962d0c4d173",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "8de24e09ebecf5bc9df9a411cd8bc00a724d4144a6b923c4b98ada9e6d580cdb"
+    },
+    {
+      "problem_id": "acq_94226",
+      "seed": 94226,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "9bfdef30aed0318690ce7c1af44e20a5e13c7848b0f5d1315dcc9e1bca3e47f0",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "048e878a2787ec01abc3657ed2428955bc9997fb9ea24eaf41b899c1b5237182"
+    },
+    {
+      "problem_id": "acq_94227",
+      "seed": 94227,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "7678537e89203fb06ab0420efd0fadc2e9f4cad6855b7345604c7ee9abd3d849",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "20150fc6e2e55401272a4c3cc3061678a3764e14406e2e28557ca59b76086092"
+    },
+    {
+      "problem_id": "acq_94228",
+      "seed": 94228,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "8de056fa2f702e6b84d727557c8e626e0bdc476f3e847959b6a65ba02ed323b7",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "d1dfeee6bf7b74419211c5f9bc00594e6f839bee89a21e56ad37eae9596c9b6a"
+    },
+    {
+      "problem_id": "acq_94229",
+      "seed": 94229,
+      "stratum": "complementary_candidates",
+      "structural_fingerprint": "efde87ba677ec73b3e8d828a55ae37af96bd1ceaf6dd472957b869a7fb810e8c",
+      "subtype": "complementary_candidates",
+      "unweighted_structure_fingerprint": "b6b5bab2b94edd93a03d28c8d21f07ddcc6d6997c64ca0774cc3e9ae7ed826ba"
+    },
+    {
+      "problem_id": "acq_94230",
+      "seed": 94230,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "48bacb4aaa66470a505041edd4ed41f2768d982aa6a1a0b896d8959a5aad772e",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "0e14ceaa93bdba35603ca4e921831611e9bbd618eec21ca04e4151af8c0b423f"
+    },
+    {
+      "problem_id": "acq_94231",
+      "seed": 94231,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "ff7cbf8e53dc2a847ef756ab7b7cba789024d6b4a2afe4213aefdb482d4ed758",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "165a0afe20db614cf702c1ba918ece2ee72a6d4a876817a845662b1d06e03a64"
+    },
+    {
+      "problem_id": "acq_94232",
+      "seed": 94232,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "3bb4f5ef23e5261cbe0fae52354d069dbde6c5b2f61f72fc04a8d04c4aab1e1d",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "1ce6399326f8067811e2809a25142768e54fa782141de67be5c16d5025c7399d"
+    },
+    {
+      "problem_id": "acq_94233",
+      "seed": 94233,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "4996a21a28d0d728718cda1d0b9684dc552f7b611bf3ffe1a53a130a252d1670",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "8f6cd206e9ee9321d7b2445f9a5bab38665fff51bf8424b4f672fe92a66fdc6a"
+    },
+    {
+      "problem_id": "acq_94234",
+      "seed": 94234,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "b92fc7f05fc1d00f3a2a520596db01152f7582326ea06e7fdec366edb02a6489",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "5aa94d94973ffc77eb723080a2ec317c34a7d64be7252c37853a4b2ede583d70"
+    },
+    {
+      "problem_id": "acq_94235",
+      "seed": 94235,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "6c6803cb9447a06d65a2f234c7ca384b0dafa84c6e69ad35d751aabc93a6b1fa",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "35e2981513b9b96ffc5c64942498a6577ba83e0fd304a4ef07d2b4e3f7e61bcc"
+    },
+    {
+      "problem_id": "acq_94236",
+      "seed": 94236,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "301d36d7f7071162849a7bf08362a64e3b609d569407616b828029e71db0f5bb",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "0e14ceaa93bdba35603ca4e921831611e9bbd618eec21ca04e4151af8c0b423f"
+    },
+    {
+      "problem_id": "acq_94237",
+      "seed": 94237,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "05041fcf1fdfde8c594c2a5979aceff464c3508b8b66c20ebebd64abc2e7b975",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "ab1d67a924e4276e70cfde05121d73a4108bcbe85fdfcfdab6332f8df07113df"
+    },
+    {
+      "problem_id": "acq_94238",
+      "seed": 94238,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "31e18443f2303ccf5030f09a8101cd7e531fbf4cb2ab602d26226a9587c6b9fb",
+      "subtype": "globally_indistinguishable_source_use",
+      "unweighted_structure_fingerprint": "6336a7d1a2c4f43b49368601d95db7f9a48ad722cbc1b6a125ede7fdf5110db5"
+    },
+    {
+      "problem_id": "acq_94239",
+      "seed": 94239,
+      "stratum": "archive_ambiguity",
+      "structural_fingerprint": "aebeadae89db5b0f99c5dfab941175afe00004a19ad6974584e9b5ba50f3514a",
+      "subtype": "mixed_resolvability_source_use",
+      "unweighted_structure_fingerprint": "8f6cd206e9ee9321d7b2445f9a5bab38665fff51bf8424b4f672fe92a66fdc6a"
+    }
+  ]
+}

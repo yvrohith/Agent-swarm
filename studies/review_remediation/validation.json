@@ -1,0 +1,72 @@
+{
+  "additional_spend_usd": "0",
+  "authorized_documentation_changes": {
+    "LIMITATIONS.md": {
+      "after_sha256": "08e2f1d64eac25771ad0e625cc95f9d42c153696a2d5b5ec0e0754635647b260",
+      "before_sha256": "07632fa91cdfc9cd930ce053689f7772d5553b66176694af774ec33c00733cb1"
+    },
+    "README.md": {
+      "after_sha256": "5d3e88ee66909506319d9c954289b6d8ef6421723ca98837c1d9453289be6b4f",
+      "before_sha256": "daba9434e26c428cbcd10c99b45bea3f8e6d6a665a11be6164b726be563a7bb8"
+    },
+    "docs/FINAL_SUBMISSION.md": {
+      "after_sha256": "6374912ec86c837b00f351cebdd4c4378808f8bfcacf5bb55d4f5474a9cd463e",
+      "before_sha256": "947712422fd50a7a9df01ca90a0716615b7e4a202d8aa62f1db24e68c04c9b7f"
+    },
+    "docs/REVIEWER_GUIDE.md": {
+      "after_sha256": "58ff13bcef1122710e1ba42551a76ce3c762bf870c2dc0855fdea7e95362a117",
+      "before_sha256": "c535626e6212855f8b0f3a5aacd755ac54a1f9d794b20c12ea4a100c5f099082"
+    },
+    "studies/evidence_responsiveness/README.md": {
+      "after_sha256": "af98d37609cd2b4cebfd9ce1e8118edb552b78c739acca71c928ae11e8f1deef",
+      "before_sha256": "18b5d5782035cd6e1c4375e7427746d268d4ad97659ca200c7855d778fa97da9"
+    },
+    "studies/investigator_utility/README.md": {
+      "after_sha256": "4af96dae3b1232833b0ab8544bbc3a94ea9f94070060db224ea44a89a5731633",
+      "before_sha256": "acea0d15804cb07370a0af76bf0137615d91985ffdd13dbd0482498f6b9dc4cb"
+    },
+    "studies/investigator_utility/openrouter_v1/README.md": {
+      "after_sha256": "3b5b54209693944aeaa1133fdd38291f34a77b91d046f390610240e8066fa3b1",
+      "before_sha256": "cf01ece8505c4beecf166c0e3acc8e67975b8a61cabc9c1c582f632151910faa"
+    },
+    "studies/investigator_utility/openrouter_v1/response_evidence/README.md": {
+      "after_sha256": "26df4392113d664540658bc0b8151232f86c6f1d605c5f3159ba25b9c8845a5c",
+      "before_sha256": "b19a1aa5a49f5d6e18b36993fce519b1ca48d511f766eab723e998765dca75b7"
+    }
+  },
+  "baseline_head": "38d456a5235c3b03e5bef50c4755f5f3279d316c",
+  "credential_access": false,
+  "current_scoring_verifier_passed": true,
+  "documentation_relative_links_checked": 211,
+  "final_checked_at_utc": "2026-10-04T00:47:30.342842+00:00",
+  "final_full_suite": {
+    "command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 .venv/bin/python (socket-blocking wrapper running pytest -q)",
+    "elapsed_seconds": 20.02,
+    "failed": 0,
+    "full_suite_passed": 754,
+    "network_blocked": true,
+    "skipped": 0,
+    "socket_functions_blocked": [
+      "socket.socket.connect",
+      "socket.socket.connect_ex",
+      "socket.create_connection",
+      "socket.getaddrinfo"
+    ]
+  },
+  "git_actions": "none",
+  "historical_scientific_files_unchanged": 177,
+  "lint_passed": true,
+  "local_call_and_ledger_files_unchanged": 509,
+  "missing_or_ignored_links": 0,
+  "model_calls": 0,
+  "network_requests": 0,
+  "phase_a_tests": {
+    "elapsed_seconds": 19.31,
+    "failed": 0,
+    "full_suite_passed": 751,
+    "network_blocked": true,
+    "skipped": 0
+  },
+  "primary_scores_and_historical_responses_unchanged": true,
+  "private_reasoning_inspected": false
+}

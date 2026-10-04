@@ -1,0 +1,566 @@
+{
+  "cache_scope": "one planner per problem and policy across signatures/budgets; runtime is pipeline cost, not independent query latency",
+  "evaluation_seconds": 50.24499134600046,
+  "problems": [
+    {
+      "exact_value": "1",
+      "hindsight_seconds": 0.003694384000482387,
+      "planning_seconds": {
+        "exact_optimal": 0.0006652440097241197,
+        "pair_cut": 0.002334541000891477,
+        "read_all": 0.0004281960063963197,
+        "schema_aware": 0.00018825299775926396,
+        "world_entropy": 0.002741725998930633
+      },
+      "preprocessing_seconds": 0.000719226000001072,
+      "problem_id": "acq_94200",
+      "solver_states": 9
+    },
+    {
+      "exact_value": "23/4",
+      "hindsight_seconds": 0.012685679999776767,
+      "planning_seconds": {
+        "exact_optimal": 0.0025966299945139326,
+        "pair_cut": 0.009597957998266793,
+        "read_all": 0.0009516310037724907,
+        "schema_aware": 0.0007029680109553738,
+        "world_entropy": 0.008197231985832332
+      },
+      "preprocessing_seconds": 0.0008673289994476363,
+      "problem_id": "acq_94201",
+      "solver_states": 34
+    },
+    {
+      "exact_value": "1",
+      "hindsight_seconds": 0.003338116999657359,
+      "planning_seconds": {
+        "exact_optimal": 0.0006775010024284711,
+        "pair_cut": 0.0022109379970061127,
+        "read_all": 0.0003797499903157586,
+        "schema_aware": 0.00019328400048834737,
+        "world_entropy": 0.002740560994425323
+      },
+      "preprocessing_seconds": 0.000506153000969789,
+      "problem_id": "acq_94202",
+      "solver_states": 9
+    },
+    {
+      "exact_value": "29/4",
+      "hindsight_seconds": 0.022461110000222106,
+      "planning_seconds": {
+        "exact_optimal": 0.005869824002729729,
+        "pair_cut": 0.024653645001308178,
+        "read_all": 0.0019894599936378654,
+        "schema_aware": 0.0014132669948594412,
+        "world_entropy": 0.0221842509945418
+      },
+      "preprocessing_seconds": 0.0014826770002400735,
+      "problem_id": "acq_94203",
+      "solver_states": 37
+    },
+    {
+      "exact_value": "2",
+      "hindsight_seconds": 0.0032467090004502097,
+      "planning_seconds": {
+        "exact_optimal": 0.0006116210024629254,
+        "pair_cut": 0.0018908650017692707,
+        "read_all": 0.0002816609921865165,
+        "schema_aware": 0.0001864589921751758,
+        "world_entropy": 0.002241566002339823
+      },
+      "preprocessing_seconds": 0.0005113009992783191,
+      "problem_id": "acq_94204",
+      "solver_states": 9
+    },
+    {
+      "exact_value": "17/4",
+      "hindsight_seconds": 0.01095692200033227,
+      "planning_seconds": {
+        "exact_optimal": 0.003412231011679978,
+        "pair_cut": 0.010461293004482286,
+        "read_all": 0.0010639720130711794,
+        "schema_aware": 0.000838432002638001,
+        "world_entropy": 0.009029702998304856
+      },
+      "preprocessing_seconds": 0.0008786960006545996,
+      "problem_id": "acq_94205",
+      "solver_states": 30
+    },
+    {
+      "exact_value": "1",
+      "hindsight_seconds": 0.003380500000275788,
+      "planning_seconds": {
+        "exact_optimal": 0.0006782439995731693,
+        "pair_cut": 0.002234782001323765,
+        "read_all": 0.0004365439981484087,
+        "schema_aware": 0.00023047399554343428,
+        "world_entropy": 0.0020372390063130297
+      },
+      "preprocessing_seconds": 0.0005135649989824742,
+      "problem_id": "acq_94206",
+      "solver_states": 9
+    },
+    {
+      "exact_value": "13/2",
+      "hindsight_seconds": 0.012106586998925195,
+      "planning_seconds": {
+        "exact_optimal": 0.0028169049928692402,
+        "pair_cut": 0.009058773997821845,
+        "read_all": 0.0007817659970896784,
+        "schema_aware": 0.0007943899981910363,
+        "world_entropy": 0.008183727990399348
+      },
+      "preprocessing_seconds": 0.0010520380001253216,
+      "problem_id": "acq_94207",
+      "solver_states": 34
+    },
+    {
+      "exact_value": "2",
+      "hindsight_seconds": 0.0037280850010574795,
+      "planning_seconds": {
+        "exact_optimal": 0.0006517139991046861,
+        "pair_cut": 0.003184914008670603,
+        "read_all": 0.00035556199691200163,
+        "schema_aware": 0.00018595199253468309,
+        "world_entropy": 0.002773339998384472
+      },
+      "preprocessing_seconds": 0.0005180419993848773,
+      "problem_id": "acq_94208",
+      "solver_states": 9
+    },
+    {
+      "exact_value": "23/8",
+      "hindsight_seconds": 0.022117743001217605,
+      "planning_seconds": {
+        "exact_optimal": 0.006072599993785843,
+        "pair_cut": 0.020492064009886235,
+        "read_all": 0.0018046670102194184,
+        "schema_aware": 0.0014115579906501807,
+        "world_entropy": 0.019673056003739475
+      },
+      "preprocessing_seconds": 0.0015266740010702051,
+      "problem_id": "acq_94209",
+      "solver_states": 37
+    },
+    {
+      "exact_value": "13/8",
+      "hindsight_seconds": 0.010768258000098285,
+      "planning_seconds": {
+        "exact_optimal": 0.002796815002511721,
+        "pair_cut": 0.011871779995999532,
+        "read_all": 0.0012917630119773094,
+        "schema_aware": 0.0008760140062804567,
+        "world_entropy": 0.010378051001680433
+      },
+      "preprocessing_seconds": 0.0008254459989984753,
+      "problem_id": "acq_94210",
+      "solver_states": 27
+    },
+    {
+      "exact_value": "53/8",
+      "hindsight_seconds": 0.04523283999878913,
+      "planning_seconds": {
+        "exact_optimal": 0.012317272990912898,
+        "pair_cut": 0.05807418099720962,
+        "read_all": 0.0044163229958940065,
+        "schema_aware": 0.003867565006657969,
+        "world_entropy": 0.047005146989249624
+      },
+      "preprocessing_seconds": 0.0017394349997630343,
+      "problem_id": "acq_94211",
+      "solver_states": 94
+    },
+    {
+      "exact_value": "1",
+      "hindsight_seconds": 0.004034197001601569,
+      "planning_seconds": {
+        "exact_optimal": 0.0006673360021522967,
+        "pair_cut": 0.002218745998106897,
+        "read_all": 0.0004331090021878481,
+        "schema_aware": 0.0002045880046352977,
+        "world_entropy": 0.002735954001764185
+      },
+      "preprocessing_seconds": 0.0005523229992832057,
+      "problem_id": "acq_94212",
+      "solver_states": 9
+    },
+    {
+      "exact_value": "351/64",
+      "hindsight_seconds": 0.08337187599863682,
+      "planning_seconds": {
+        "exact_optimal": 0.025086459991143784,
+        "pair_cut": 0.11451953800315096,
+        "read_all": 0.008934384990425315,
+        "schema_aware": 0.006996127995080315,
+        "world_entropy": 0.10743979799190129
+      },
+      "preprocessing_seconds": 0.0031095119993551634,
+      "problem_id": "acq_94213",
+      "solver_states": 99
+    },
+    {
+      "exact_value": "9/2",
+      "hindsight_seconds": 0.010419022000860423,
+      "planning_seconds": {
+        "exact_optimal": 0.00254142200719798,
+        "pair_cut": 0.00968137799827673,
+        "read_all": 0.0009467059990129201,
+        "schema_aware": 0.0007281369998963783,
+        "world_entropy": 0.00932982399535831
+      },
+      "preprocessing_seconds": 0.0008321559998876182,
+      "problem_id": "acq_94214",
+      "solver_states": 27
+    },
+    {
+      "exact_value": "13/2",
+      "hindsight_seconds": 0.046728543000426725,
+      "planning_seconds": {
+        "exact_optimal": 0.013904675011872314,
+        "pair_cut": 0.05343271900892432,
+        "read_all": 0.005470844000228681,
+        "schema_aware": 0.002722226006881101,
+        "world_entropy": 0.04967679801484337
+      },
+      "preprocessing_seconds": 0.0018240429999423213,
+      "problem_id": "acq_94215",
+      "solver_states": 92
+    },
+    {
+      "exact_value": "13/8",
+      "hindsight_seconds": 0.011922249001145246,
+      "planning_seconds": {
+        "exact_optimal": 0.003120255994872423,
+        "pair_cut": 0.012222282986840582,
+        "read_all": 0.001087679007468978,
+        "schema_aware": 0.000703783998687868,
+        "world_entropy": 0.012222892006320762
+      },
+      "preprocessing_seconds": 0.0008585550003772369,
+      "problem_id": "acq_94216",
+      "solver_states": 27
+    },
+    {
+      "exact_value": "2",
+      "hindsight_seconds": 0.015419665000081295,
+      "planning_seconds": {
+        "exact_optimal": 0.0021123020069353515,
+        "pair_cut": 0.007484111998564913,
+        "read_all": 0.0008654269986436702,
+        "schema_aware": 0.0006613319910684368,
+        "world_entropy": 0.0069679579937655944
+      },
+      "preprocessing_seconds": 0.0010662189997674432,
+      "problem_id": "acq_94217",
+      "solver_states": 27
+    },
+    {
+      "exact_value": "13/8",
+      "hindsight_seconds": 0.01126879300136352,
+      "planning_seconds": {
+        "exact_optimal": 0.0028644429967243923,
+        "pair_cut": 0.012048960008542053,
+        "read_all": 0.0015832060034881579,
+        "schema_aware": 0.0008662059990456328,
+        "world_entropy": 0.01157194300503761
+      },
+      "preprocessing_seconds": 0.0008790570009296061,
+      "problem_id": "acq_94218",
+      "solver_states": 27
+    },
+    {
+      "exact_value": "311/64",
+      "hindsight_seconds": 0.08346445399911318,
+      "planning_seconds": {
+        "exact_optimal": 0.026512111000556615,
+        "pair_cut": 0.11232465298235184,
+        "read_all": 0.007246133007356548,
+        "schema_aware": 0.006494162984381546,
+        "world_entropy": 0.10499199499099632
+      },
+      "preprocessing_seconds": 0.003467431999524706,
+      "problem_id": "acq_94219",
+      "solver_states": 99
+    },
+    {
+      "exact_value": "67/16",
+      "hindsight_seconds": 0.08319981699969503,
+      "planning_seconds": {
+        "exact_optimal": 0.02660792099959508,
+        "pair_cut": 0.11250011800439097,
+        "read_all": 0.008320830997035955,
+        "schema_aware": 0.005086500008474104,
+        "world_entropy": 0.10632106899720384
+      },
+      "preprocessing_seconds": 0.0032485619994986337,
+      "problem_id": "acq_94220",
+      "solver_states": 81
+    },
+    {
+      "exact_value": "171/32",
+      "hindsight_seconds": 0.04654241600110254,
+      "planning_seconds": {
+        "exact_optimal": 0.014626694013713859,
+        "pair_cut": 0.05264673204146675,
+        "read_all": 0.0044490930067695444,
+        "schema_aware": 0.00351109203438682,
+        "world_entropy": 0.048774415990919806
+      },
+      "preprocessing_seconds": 0.0016387930008932017,
+      "problem_id": "acq_94221",
+      "solver_states": 103
+    },
+    {
+      "exact_value": "6",
+      "hindsight_seconds": 0.013896877999286517,
+      "planning_seconds": {
+        "exact_optimal": 0.0026757629893836565,
+        "pair_cut": 0.012283008987651556,
+        "read_all": 0.001256968002053327,
+        "schema_aware": 0.0007602210007462418,
+        "world_entropy": 0.010795468993819668
+      },
+      "preprocessing_seconds": 0.0010807810012920527,
+      "problem_id": "acq_94222",
+      "solver_states": 24
+    },
+    {
+      "exact_value": "229/64",
+      "hindsight_seconds": 0.08403747899865266,
+      "planning_seconds": {
+        "exact_optimal": 0.03170484398651752,
+        "pair_cut": 0.11849523398268502,
+        "read_all": 0.009167183019599179,
+        "schema_aware": 0.00720001199078979,
+        "world_entropy": 0.10112311201737612
+      },
+      "preprocessing_seconds": 0.0030521549997502007,
+      "problem_id": "acq_94223",
+      "solver_states": 111
+    },
+    {
+      "exact_value": "25/8",
+      "hindsight_seconds": 0.0464667019987246,
+      "planning_seconds": {
+        "exact_optimal": 0.013811317989166128,
+        "pair_cut": 0.05645774099320988,
+        "read_all": 0.005010128987123608,
+        "schema_aware": 0.0034515509905759245,
+        "world_entropy": 0.05369246800728433
+      },
+      "preprocessing_seconds": 0.0017135250000137603,
+      "problem_id": "acq_94224",
+      "solver_states": 81
+    },
+    {
+      "exact_value": "5",
+      "hindsight_seconds": 0.044856161999632604,
+      "planning_seconds": {
+        "exact_optimal": 0.017000493995510624,
+        "pair_cut": 0.05940937499508436,
+        "read_all": 0.0045564720039692475,
+        "schema_aware": 0.003949342002670164,
+        "world_entropy": 0.05203023199464951
+      },
+      "preprocessing_seconds": 0.0016650129982735962,
+      "problem_id": "acq_94225",
+      "solver_states": 94
+    },
+    {
+      "exact_value": "107/32",
+      "hindsight_seconds": 0.07926141400093911,
+      "planning_seconds": {
+        "exact_optimal": 0.025774253977942863,
+        "pair_cut": 0.10183402398797625,
+        "read_all": 0.008289479006634792,
+        "schema_aware": 0.0068363040263648145,
+        "world_entropy": 0.09817756596930849
+      },
+      "preprocessing_seconds": 0.0031905340001685545,
+      "problem_id": "acq_94226",
+      "solver_states": 81
+    },
+    {
+      "exact_value": "2",
+      "hindsight_seconds": 0.012735276000967133,
+      "planning_seconds": {
+        "exact_optimal": 0.002193472000726615,
+        "pair_cut": 0.007945434999783174,
+        "read_all": 0.0007756720006000251,
+        "schema_aware": 0.0006545329924847465,
+        "world_entropy": 0.006627104985454935
+      },
+      "preprocessing_seconds": 0.001036463001582888,
+      "problem_id": "acq_94227",
+      "solver_states": 27
+    },
+    {
+      "exact_value": "11/2",
+      "hindsight_seconds": 0.044151519001388806,
+      "planning_seconds": {
+        "exact_optimal": 0.014493746979496791,
+        "pair_cut": 0.05805787301505916,
+        "read_all": 0.0044209839707036735,
+        "schema_aware": 0.004296348990465049,
+        "world_entropy": 0.05332796997936384
+      },
+      "preprocessing_seconds": 0.0017908519985212479,
+      "problem_id": "acq_94228",
+      "solver_states": 66
+    },
+    {
+      "exact_value": "183/32",
+      "hindsight_seconds": 0.09005540099860809,
+      "planning_seconds": {
+        "exact_optimal": 0.0312861759957741,
+        "pair_cut": 0.11983943499581073,
+        "read_all": 0.007741719973637373,
+        "schema_aware": 0.009174091002932983,
+        "world_entropy": 0.10767109199150582
+      },
+      "preprocessing_seconds": 0.003032265000001644,
+      "problem_id": "acq_94229",
+      "solver_states": 111
+    },
+    {
+      "exact_value": "0",
+      "hindsight_seconds": 0.008347190001586569,
+      "planning_seconds": {
+        "exact_optimal": 0.00019291100397822447,
+        "pair_cut": 0.00017138500516011845,
+        "read_all": 0.001093014996513375,
+        "schema_aware": 0.00017188999663630966,
+        "world_entropy": 0.0001653279978199862
+      },
+      "preprocessing_seconds": 0.0008674290002090856,
+      "problem_id": "acq_94230",
+      "solver_states": 1
+    },
+    {
+      "exact_value": "9/2",
+      "hindsight_seconds": 0.019294615000035265,
+      "planning_seconds": {
+        "exact_optimal": 0.004753461998916464,
+        "pair_cut": 0.01648146999468736,
+        "read_all": 0.0011721059909177711,
+        "schema_aware": 0.0015869639937591273,
+        "world_entropy": 0.014746715993169346
+      },
+      "preprocessing_seconds": 0.0016179920003196457,
+      "problem_id": "acq_94231",
+      "solver_states": 37
+    },
+    {
+      "exact_value": "0",
+      "hindsight_seconds": 0.001916934001201298,
+      "planning_seconds": {
+        "exact_optimal": 5.8388000979903154e-05,
+        "pair_cut": 4.5379998482530937e-05,
+        "read_all": 0.00018772400289890356,
+        "schema_aware": 8.75530004122993e-05,
+        "world_entropy": 4.430799890542403e-05
+      },
+      "preprocessing_seconds": 0.0005900010000914335,
+      "problem_id": "acq_94232",
+      "solver_states": 1
+    },
+    {
+      "exact_value": "13/4",
+      "hindsight_seconds": 0.01999447100024554,
+      "planning_seconds": {
+        "exact_optimal": 0.00602456099295523,
+        "pair_cut": 0.02203199999348726,
+        "read_all": 0.0016887499878066592,
+        "schema_aware": 0.001566610997542739,
+        "world_entropy": 0.02006338199134916
+      },
+      "preprocessing_seconds": 0.0014328029992611846,
+      "problem_id": "acq_94233",
+      "solver_states": 37
+    },
+    {
+      "exact_value": "0",
+      "hindsight_seconds": 0.007707630000368226,
+      "planning_seconds": {
+        "exact_optimal": 0.00018302500211575534,
+        "pair_cut": 0.00015340100435423665,
+        "read_all": 0.0008271729966509156,
+        "schema_aware": 0.00015744700613140594,
+        "world_entropy": 0.0001547679967188742
+      },
+      "preprocessing_seconds": 0.0008536179993825499,
+      "problem_id": "acq_94234",
+      "solver_states": 1
+    },
+    {
+      "exact_value": "43/8",
+      "hindsight_seconds": 0.01896633799879055,
+      "planning_seconds": {
+        "exact_optimal": 0.005595514994638506,
+        "pair_cut": 0.019315126992296427,
+        "read_all": 0.0014479120109172072,
+        "schema_aware": 0.0013958649906271603,
+        "world_entropy": 0.017948130998775014
+      },
+      "preprocessing_seconds": 0.001428976998795406,
+      "problem_id": "acq_94235",
+      "solver_states": 37
+    },
+    {
+      "exact_value": "0",
+      "hindsight_seconds": 0.009935330999724101,
+      "planning_seconds": {
+        "exact_optimal": 0.00020958300228812732,
+        "pair_cut": 0.00017064699750335421,
+        "read_all": 0.0009186309853248531,
+        "schema_aware": 0.00016826099999889266,
+        "world_entropy": 0.00016717899598006625
+      },
+      "preprocessing_seconds": 0.0010287519999110373,
+      "problem_id": "acq_94236",
+      "solver_states": 1
+    },
+    {
+      "exact_value": "4",
+      "hindsight_seconds": 0.005185603999052546,
+      "planning_seconds": {
+        "exact_optimal": 0.0010168010085180867,
+        "pair_cut": 0.003315675006888341,
+        "read_all": 0.0002630640010465868,
+        "schema_aware": 0.0001869730058388086,
+        "world_entropy": 0.0027031310073653003
+      },
+      "preprocessing_seconds": 0.0007956909994391026,
+      "problem_id": "acq_94237",
+      "solver_states": 10
+    },
+    {
+      "exact_value": "0",
+      "hindsight_seconds": 0.008125460000883322,
+      "planning_seconds": {
+        "exact_optimal": 0.00019087899272562936,
+        "pair_cut": 0.0001818269993236754,
+        "read_all": 0.0010504579986445606,
+        "schema_aware": 0.00016194299860217143,
+        "world_entropy": 0.0001539349996164674
+      },
+      "preprocessing_seconds": 0.0008992269995360402,
+      "problem_id": "acq_94238",
+      "solver_states": 1
+    },
+    {
+      "exact_value": "35/8",
+      "hindsight_seconds": 0.019280802000139374,
+      "planning_seconds": {
+        "exact_optimal": 0.005294374997902196,
+        "pair_cut": 0.02072468899677915,
+        "read_all": 0.001852980007242877,
+        "schema_aware": 0.0014240119853639044,
+        "world_entropy": 0.022377335999408388
+      },
+      "preprocessing_seconds": 0.0014815559989074245,
+      "problem_id": "acq_94239",
+      "solver_states": 37
+    }
+  ]
+}

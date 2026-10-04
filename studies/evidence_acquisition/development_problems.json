@@ -1,0 +1,7766 @@
+[
+  {
+    "acquisition_time": 100,
+    "assumptions": {
+      "assignment_prior": "uniform independent Boolean generative assignments; not an empirical incident distribution",
+      "authenticity": "retained receipts truthfully identify occurring events",
+      "closed_catalogue": true,
+      "completeness": "only declared exact source/recipient/window context scopes force receipt retention",
+      "dependencies": {
+        "completeness_shared_across_routes": true,
+        "context_retention": "independent",
+        "duplicate_queries_retrieve_same_record": true,
+        "upstream_wrong_completeness_and_nuisance_retention_shared": true
+      },
+      "initial_information": "only initial_evidence and this hypothetical model; no realized world identifier",
+      "query_semantics": "passive retained-record lookup; empty means no retained record, not no event",
+      "temporal_semantics": "source precedes request, delivery and context; writes see all strictly prior contexts",
+      "use_alternative": "same target output can arise from direct exposed source use or independent shared input"
+    },
+    "claim": {
+      "kind": "any_context_exposure",
+      "recipient": "run_target",
+      "source_ids": [
+        "source_0"
+      ],
+      "target_write_id": "target",
+      "window": [
+        15,
+        35
+      ]
+    },
+    "event_catalog": [
+      {
+        "id": "request_0",
+        "kind": "request",
+        "parent_id": null,
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 20
+      },
+      {
+        "id": "delivery_0",
+        "kind": "delivery",
+        "parent_id": "request_0",
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 21
+      },
+      {
+        "id": "context_0",
+        "kind": "context",
+        "parent_id": "delivery_0",
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 22
+      }
+    ],
+    "generator_version": "finite-retention-v1",
+    "initial_evidence": [
+      {
+        "authenticated": true,
+        "id": "initial_marker",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 9,
+        "value": "same visible output is compatible with direct and shared input"
+      }
+    ],
+    "initial_record_ids": [
+      "initial_marker"
+    ],
+    "prior": [
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8"
+    ],
+    "problem_id": "acq_94100",
+    "queries": [
+      {
+        "cost": 2,
+        "id": "q_b719bf1d3ae1",
+        "kind": "completeness",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "unrelated_source",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_kind": "context",
+            "id": "wrong_complete",
+            "kind": "completeness",
+            "logging_complete": true,
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "unrelated_source",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 85
+          }
+        },
+        "record_id": "wrong_complete",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_2bded249e562",
+        "kind": "context_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "context_0",
+            "id": "record_context_0",
+            "kind": "context_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 22
+          }
+        },
+        "record_id": "record_context_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 1,
+        "id": "q_6981fa94ae03",
+        "kind": "request_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "request_0",
+            "id": "record_request_0",
+            "kind": "request_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 20
+          }
+        },
+        "record_id": "record_request_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 4,
+        "id": "q_b9da9c22b3b1",
+        "kind": "context_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "context_0",
+            "id": "record_context_0",
+            "kind": "context_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 22
+          }
+        },
+        "record_id": "record_context_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_7ef11d3cc7e8",
+        "kind": "archive_record",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "unrelated_source",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "id": "nuisance",
+            "kind": "archive_record",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "unrelated_source",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 41,
+            "value": "retained checkpoint marker"
+          }
+        },
+        "record_id": "nuisance",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        }
+      }
+    ],
+    "record_catalog": [
+      {
+        "authenticated": true,
+        "event_id": "request_0",
+        "id": "record_request_0",
+        "kind": "request_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 20
+      },
+      {
+        "authenticated": true,
+        "event_id": "delivery_0",
+        "id": "record_delivery_0",
+        "kind": "delivery_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 21
+      },
+      {
+        "authenticated": true,
+        "event_id": "context_0",
+        "id": "record_context_0",
+        "kind": "context_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 22
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "complete_0",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 45
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "wrong_complete",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 85
+      },
+      {
+        "authenticated": true,
+        "id": "nuisance",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 41,
+        "value": "retained checkpoint marker"
+      },
+      {
+        "authenticated": true,
+        "id": "initial_marker",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 9,
+        "value": "same visible output is compatible with direct and shared input"
+      }
+    ],
+    "schema_version": 1,
+    "seed": 94100,
+    "selection": {
+      "policy_outcomes_consulted": false,
+      "rejections": [],
+      "rule": "seed maps to fixed structural choices before policy execution"
+    },
+    "sources": [
+      {
+        "id": "source_0",
+        "written_at": 1
+      }
+    ],
+    "split": "development",
+    "stratum": "positive_receipt",
+    "structural_fingerprint": "91ccc956597327e4eb7fc16849639205981380caf3c6647914cf63ec2e0cb09d",
+    "structure": {
+      "failure_gate": "context",
+      "initial_complete": false,
+      "retention": "independent",
+      "routes": 1,
+      "variables": [
+        "event_0",
+        "retention_0",
+        "nuisance"
+      ]
+    },
+    "subtype": "positive_receipt",
+    "unweighted_structure_fingerprint": "7626b113f5a8248ed9093822379d8c062cd29ee239607d534c52631313003351",
+    "worlds": [
+      {
+        "assignment": {
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_00",
+        "occurring_event_ids": [
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_01",
+        "occurring_event_ids": [
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_02",
+        "occurring_event_ids": [
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_03",
+        "occurring_event_ids": [
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_04",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_05",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_06",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_07",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      }
+    ]
+  },
+  {
+    "acquisition_time": 100,
+    "assumptions": {
+      "assignment_prior": "uniform independent Boolean generative assignments; not an empirical incident distribution",
+      "authenticity": "retained receipts truthfully identify occurring events",
+      "closed_catalogue": true,
+      "completeness": "only declared exact source/recipient/window context scopes force receipt retention",
+      "dependencies": {
+        "completeness_shared_across_routes": true,
+        "context_retention": "shared",
+        "duplicate_queries_retrieve_same_record": true,
+        "upstream_wrong_completeness_and_nuisance_retention_shared": true
+      },
+      "initial_information": "only initial_evidence and this hypothetical model; no realized world identifier",
+      "query_semantics": "passive retained-record lookup; empty means no retained record, not no event",
+      "temporal_semantics": "source precedes request, delivery and context; writes see all strictly prior contexts",
+      "use_alternative": "same target output can arise from direct exposed source use or independent shared input"
+    },
+    "claim": {
+      "kind": "any_context_exposure",
+      "recipient": "run_target",
+      "source_ids": [
+        "source_0",
+        "source_1"
+      ],
+      "target_write_id": "target",
+      "window": [
+        15,
+        35
+      ]
+    },
+    "event_catalog": [
+      {
+        "id": "request_0",
+        "kind": "request",
+        "parent_id": null,
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 20
+      },
+      {
+        "id": "delivery_0",
+        "kind": "delivery",
+        "parent_id": "request_0",
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 21
+      },
+      {
+        "id": "context_0",
+        "kind": "context",
+        "parent_id": "delivery_0",
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 22
+      },
+      {
+        "id": "request_1",
+        "kind": "request",
+        "parent_id": null,
+        "recipient": "run_target",
+        "source_id": "source_1",
+        "time": 25
+      },
+      {
+        "id": "delivery_1",
+        "kind": "delivery",
+        "parent_id": "request_1",
+        "recipient": "run_target",
+        "source_id": "source_1",
+        "time": 26
+      },
+      {
+        "id": "context_1",
+        "kind": "context",
+        "parent_id": "delivery_1",
+        "recipient": "run_target",
+        "source_id": "source_1",
+        "time": 27
+      }
+    ],
+    "generator_version": "finite-retention-v1",
+    "initial_evidence": [
+      {
+        "authenticated": true,
+        "id": "initial_marker",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "unrelated_run",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 39,
+        "value": "same visible output is compatible with direct and shared input"
+      }
+    ],
+    "initial_record_ids": [
+      "initial_marker"
+    ],
+    "prior": [
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32"
+    ],
+    "problem_id": "acq_94101",
+    "queries": [
+      {
+        "cost": 4,
+        "id": "q_cf85a60b8073",
+        "kind": "completeness",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "unrelated_run",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_kind": "context",
+            "id": "wrong_complete",
+            "kind": "completeness",
+            "logging_complete": true,
+            "scope": {
+              "recipient": "unrelated_run",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 85
+          }
+        },
+        "record_id": "wrong_complete",
+        "scope": {
+          "recipient": "unrelated_run",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 1,
+        "id": "q_51f159ded14f",
+        "kind": "delivery_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "delivery_0",
+            "id": "record_delivery_0",
+            "kind": "delivery_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 21
+          }
+        },
+        "record_id": "record_delivery_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 1,
+        "id": "q_6003d5036caf",
+        "kind": "context_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "context_0",
+            "id": "record_context_0",
+            "kind": "context_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 22
+          }
+        },
+        "record_id": "record_context_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_5d12378d1c15",
+        "kind": "completeness",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_kind": "context",
+            "id": "complete_0",
+            "kind": "completeness",
+            "logging_complete": true,
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 45
+          }
+        },
+        "record_id": "complete_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 4,
+        "id": "q_b3ceca853712",
+        "kind": "context_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_1",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "context_1",
+            "id": "record_context_1",
+            "kind": "context_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_1",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 27
+          }
+        },
+        "record_id": "record_context_1",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_9a7c32e90ae2",
+        "kind": "completeness",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_1",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_kind": "context",
+            "id": "complete_1",
+            "kind": "completeness",
+            "logging_complete": true,
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_1",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 45
+          }
+        },
+        "record_id": "complete_1",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        }
+      }
+    ],
+    "record_catalog": [
+      {
+        "authenticated": true,
+        "event_id": "request_0",
+        "id": "record_request_0",
+        "kind": "request_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 20
+      },
+      {
+        "authenticated": true,
+        "event_id": "delivery_0",
+        "id": "record_delivery_0",
+        "kind": "delivery_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 21
+      },
+      {
+        "authenticated": true,
+        "event_id": "context_0",
+        "id": "record_context_0",
+        "kind": "context_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 22
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "complete_0",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 45
+      },
+      {
+        "authenticated": true,
+        "event_id": "request_1",
+        "id": "record_request_1",
+        "kind": "request_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 25
+      },
+      {
+        "authenticated": true,
+        "event_id": "delivery_1",
+        "id": "record_delivery_1",
+        "kind": "delivery_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 26
+      },
+      {
+        "authenticated": true,
+        "event_id": "context_1",
+        "id": "record_context_1",
+        "kind": "context_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 27
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "complete_1",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 45
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "wrong_complete",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "unrelated_run",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 85
+      },
+      {
+        "authenticated": true,
+        "id": "nuisance",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "unrelated_run",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 41,
+        "value": "retained checkpoint marker"
+      },
+      {
+        "authenticated": true,
+        "id": "initial_marker",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "unrelated_run",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 39,
+        "value": "same visible output is compatible with direct and shared input"
+      }
+    ],
+    "schema_version": 1,
+    "seed": 94101,
+    "selection": {
+      "policy_outcomes_consulted": false,
+      "rejections": [],
+      "rule": "seed maps to fixed structural choices before policy execution"
+    },
+    "sources": [
+      {
+        "id": "source_0",
+        "written_at": 1
+      },
+      {
+        "id": "source_1",
+        "written_at": 2
+      }
+    ],
+    "split": "development",
+    "stratum": "negative_completeness",
+    "structural_fingerprint": "0bb4f88564733b64a3131c1216450062595ab11b7a1835b18a8b940b70c99b3c",
+    "structure": {
+      "failure_gate": "delivery",
+      "initial_complete": false,
+      "retention": "shared",
+      "routes": 2,
+      "variables": [
+        "event_0",
+        "event_1",
+        "retention_0",
+        "complete",
+        "nuisance"
+      ]
+    },
+    "subtype": "negative_completeness",
+    "unweighted_structure_fingerprint": "6bf08df11160b95a6bd5fbb55beda399b264aa080f32913066d17a0ff3a6b26f",
+    "worlds": [
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_00",
+        "occurring_event_ids": [
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_01",
+        "occurring_event_ids": [
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_02",
+        "occurring_event_ids": [
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_03",
+        "occurring_event_ids": [
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_04",
+        "occurring_event_ids": [
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_05",
+        "occurring_event_ids": [
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_06",
+        "occurring_event_ids": [
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_07",
+        "occurring_event_ids": [
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_08",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_09",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_10",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_11",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_1",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_12",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_13",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_context_1",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_14",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_15",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_1",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_16",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_17",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_18",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_19",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_20",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_21",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_22",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_23",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_24",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_25",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_26",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_0",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_27",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_context_1",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_28",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "record_context_0",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_29",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_context_1",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_30",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_0",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "unrelated_run",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_31",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_context_1",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      }
+    ]
+  },
+  {
+    "acquisition_time": 100,
+    "assumptions": {
+      "assignment_prior": "uniform independent Boolean generative assignments; not an empirical incident distribution",
+      "authenticity": "retained receipts truthfully identify occurring events",
+      "closed_catalogue": true,
+      "completeness": "only declared exact source/recipient/window context scopes force receipt retention",
+      "dependencies": {
+        "completeness_shared_across_routes": true,
+        "context_retention": "opposite",
+        "duplicate_queries_retrieve_same_record": true,
+        "upstream_wrong_completeness_and_nuisance_retention_shared": true
+      },
+      "initial_information": "only initial_evidence and this hypothetical model; no realized world identifier",
+      "query_semantics": "passive retained-record lookup; empty means no retained record, not no event",
+      "temporal_semantics": "source precedes request, delivery and context; writes see all strictly prior contexts",
+      "use_alternative": "same target output can arise from direct exposed source use or independent shared input"
+    },
+    "claim": {
+      "kind": "all_context_exposure",
+      "recipient": "run_target",
+      "source_ids": [
+        "source_0",
+        "source_1"
+      ],
+      "target_write_id": "target",
+      "window": [
+        15,
+        35
+      ]
+    },
+    "event_catalog": [
+      {
+        "id": "request_0",
+        "kind": "request",
+        "parent_id": null,
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 20
+      },
+      {
+        "id": "delivery_0",
+        "kind": "delivery",
+        "parent_id": "request_0",
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 21
+      },
+      {
+        "id": "context_0",
+        "kind": "context",
+        "parent_id": "delivery_0",
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 22
+      },
+      {
+        "id": "request_1",
+        "kind": "request",
+        "parent_id": null,
+        "recipient": "run_target",
+        "source_id": "source_1",
+        "time": 25
+      },
+      {
+        "id": "delivery_1",
+        "kind": "delivery",
+        "parent_id": "request_1",
+        "recipient": "run_target",
+        "source_id": "source_1",
+        "time": 26
+      },
+      {
+        "id": "context_1",
+        "kind": "context",
+        "parent_id": "delivery_1",
+        "recipient": "run_target",
+        "source_id": "source_1",
+        "time": 27
+      }
+    ],
+    "generator_version": "finite-retention-v1",
+    "initial_evidence": [
+      {
+        "authenticated": true,
+        "id": "initial_marker",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            70,
+            80
+          ]
+        },
+        "time": 9,
+        "value": "same visible output is compatible with direct and shared input"
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "complete_0",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 45
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "complete_1",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 45
+      }
+    ],
+    "initial_record_ids": [
+      "initial_marker",
+      "complete_0",
+      "complete_1"
+    ],
+    "prior": [
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16",
+      "1/16"
+    ],
+    "problem_id": "acq_94102",
+    "queries": [
+      {
+        "cost": 2,
+        "id": "q_7eb86957354c",
+        "kind": "completeness",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                70,
+                80
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_kind": "context",
+            "id": "wrong_complete",
+            "kind": "completeness",
+            "logging_complete": true,
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                70,
+                80
+              ]
+            },
+            "time": 85
+          }
+        },
+        "record_id": "wrong_complete",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            70,
+            80
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_54c6696e6d3c",
+        "kind": "context_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "context_0",
+            "id": "record_context_0",
+            "kind": "context_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 22
+          }
+        },
+        "record_id": "record_context_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 4,
+        "id": "q_98639c514f79",
+        "kind": "archive_record",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                70,
+                80
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "id": "nuisance",
+            "kind": "archive_record",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                70,
+                80
+              ]
+            },
+            "time": 41,
+            "value": "retained checkpoint marker"
+          }
+        },
+        "record_id": "nuisance",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            70,
+            80
+          ]
+        }
+      },
+      {
+        "cost": 1,
+        "id": "q_53add98e4dce",
+        "kind": "context_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "context_0",
+            "id": "record_context_0",
+            "kind": "context_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 22
+          }
+        },
+        "record_id": "record_context_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 1,
+        "id": "q_fcada88b37a0",
+        "kind": "context_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_1",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "context_1",
+            "id": "record_context_1",
+            "kind": "context_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_1",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 27
+          }
+        },
+        "record_id": "record_context_1",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_ed1711cbc6f7",
+        "kind": "request_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "request_0",
+            "id": "record_request_0",
+            "kind": "request_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 20
+          }
+        },
+        "record_id": "record_request_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      }
+    ],
+    "record_catalog": [
+      {
+        "authenticated": true,
+        "event_id": "request_0",
+        "id": "record_request_0",
+        "kind": "request_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 20
+      },
+      {
+        "authenticated": true,
+        "event_id": "delivery_0",
+        "id": "record_delivery_0",
+        "kind": "delivery_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 21
+      },
+      {
+        "authenticated": true,
+        "event_id": "context_0",
+        "id": "record_context_0",
+        "kind": "context_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 22
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "complete_0",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 45
+      },
+      {
+        "authenticated": true,
+        "event_id": "request_1",
+        "id": "record_request_1",
+        "kind": "request_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 25
+      },
+      {
+        "authenticated": true,
+        "event_id": "delivery_1",
+        "id": "record_delivery_1",
+        "kind": "delivery_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 26
+      },
+      {
+        "authenticated": true,
+        "event_id": "context_1",
+        "id": "record_context_1",
+        "kind": "context_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 27
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "complete_1",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_1",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 45
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "wrong_complete",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            70,
+            80
+          ]
+        },
+        "time": 85
+      },
+      {
+        "authenticated": true,
+        "id": "nuisance",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            70,
+            80
+          ]
+        },
+        "time": 41,
+        "value": "retained checkpoint marker"
+      },
+      {
+        "authenticated": true,
+        "id": "initial_marker",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            70,
+            80
+          ]
+        },
+        "time": 9,
+        "value": "same visible output is compatible with direct and shared input"
+      }
+    ],
+    "schema_version": 1,
+    "seed": 94102,
+    "selection": {
+      "policy_outcomes_consulted": false,
+      "rejections": [],
+      "rule": "seed maps to fixed structural choices before policy execution"
+    },
+    "sources": [
+      {
+        "id": "source_0",
+        "written_at": 1
+      },
+      {
+        "id": "source_1",
+        "written_at": 2
+      }
+    ],
+    "split": "development",
+    "stratum": "complementary_candidates",
+    "structural_fingerprint": "d93fa95c7ae9cb4e8a3028054aa8fb666636084c18ab23af1535ac3f05980c71",
+    "structure": {
+      "failure_gate": "context",
+      "initial_complete": true,
+      "retention": "opposite",
+      "routes": 2,
+      "variables": [
+        "event_0",
+        "event_1",
+        "retention_0",
+        "nuisance"
+      ]
+    },
+    "subtype": "complementary_candidates",
+    "unweighted_structure_fingerprint": "47c946189726e2064028ab9db54204b0d39bb60f97ab7ec9c4285a2c8ef6b6d3",
+    "worlds": [
+      {
+        "assignment": {
+          "event_0": false,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_00",
+        "occurring_event_ids": [
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_01",
+        "occurring_event_ids": [
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_02",
+        "occurring_event_ids": [
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_03",
+        "occurring_event_ids": [
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_04",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_05",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_1",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_06",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": false,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_07",
+        "occurring_event_ids": [
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_1",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_08",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_09",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "event_1": false,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_10",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "event_1": false,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_11",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_12",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_0",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_13",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_context_1",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "event_1": true,
+          "nuisance": false,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_14",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "record_context_0",
+          "record_context_1"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "event_0": true,
+          "event_1": true,
+          "nuisance": true,
+          "retention_0": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              70,
+              80
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_1",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_15",
+        "occurring_event_ids": [
+          "context_0",
+          "context_1",
+          "delivery_0",
+          "delivery_1",
+          "request_0",
+          "request_1"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0",
+              "source_1"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "complete_1",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_context_1",
+          "record_delivery_0",
+          "record_delivery_1",
+          "record_request_0",
+          "record_request_1",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      }
+    ]
+  },
+  {
+    "acquisition_time": 100,
+    "assumptions": {
+      "assignment_prior": "uniform independent Boolean generative assignments; not an empirical incident distribution",
+      "authenticity": "retained receipts truthfully identify occurring events",
+      "closed_catalogue": true,
+      "completeness": "only declared exact source/recipient/window context scopes force receipt retention",
+      "dependencies": {
+        "completeness_shared_across_routes": true,
+        "context_retention": "independent",
+        "duplicate_queries_retrieve_same_record": true,
+        "upstream_wrong_completeness_and_nuisance_retention_shared": true
+      },
+      "initial_information": "only initial_evidence and this hypothetical model; no realized world identifier",
+      "query_semantics": "passive retained-record lookup; empty means no retained record, not no event",
+      "temporal_semantics": "source precedes request, delivery and context; writes see all strictly prior contexts",
+      "use_alternative": "same target output can arise from direct exposed source use or independent shared input"
+    },
+    "claim": {
+      "kind": "source_use",
+      "recipient": "run_target",
+      "source_ids": [
+        "source_0"
+      ],
+      "target_write_id": "target",
+      "window": [
+        15,
+        35
+      ]
+    },
+    "event_catalog": [
+      {
+        "id": "request_0",
+        "kind": "request",
+        "parent_id": null,
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 20
+      },
+      {
+        "id": "delivery_0",
+        "kind": "delivery",
+        "parent_id": "request_0",
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 21
+      },
+      {
+        "id": "context_0",
+        "kind": "context",
+        "parent_id": "delivery_0",
+        "recipient": "run_target",
+        "source_id": "source_0",
+        "time": 22
+      }
+    ],
+    "generator_version": "finite-retention-v1",
+    "initial_evidence": [
+      {
+        "authenticated": true,
+        "id": "initial_marker",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 39,
+        "value": "same visible output is compatible with direct and shared input"
+      }
+    ],
+    "initial_record_ids": [
+      "initial_marker"
+    ],
+    "prior": [
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32",
+      "1/32"
+    ],
+    "problem_id": "acq_94103",
+    "queries": [
+      {
+        "cost": 1,
+        "id": "q_54410da19922",
+        "kind": "completeness",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_kind": "context",
+            "id": "complete_0",
+            "kind": "completeness",
+            "logging_complete": true,
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 45
+          }
+        },
+        "record_id": "complete_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 1,
+        "id": "q_107584cdea46",
+        "kind": "archive_record",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "unrelated_source",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "id": "nuisance",
+            "kind": "archive_record",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "unrelated_source",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 41,
+            "value": "retained checkpoint marker"
+          }
+        },
+        "record_id": "nuisance",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_b7c9b044a911",
+        "kind": "delivery_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "delivery_0",
+            "id": "record_delivery_0",
+            "kind": "delivery_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 21
+          }
+        },
+        "record_id": "record_delivery_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_354c59ba89e4",
+        "kind": "context_receipt",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_id": "context_0",
+            "id": "record_context_0",
+            "kind": "context_receipt",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "source_0",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 22
+          }
+        },
+        "record_id": "record_context_0",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        }
+      },
+      {
+        "cost": 2,
+        "id": "q_2ce9d80b0e87",
+        "kind": "completeness",
+        "outcomes": {
+          "missing": {
+            "kind": "lookup_empty",
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "unrelated_source",
+              "window": [
+                15,
+                35
+              ]
+            }
+          },
+          "present": {
+            "authenticated": true,
+            "event_kind": "context",
+            "id": "wrong_complete",
+            "kind": "completeness",
+            "logging_complete": true,
+            "scope": {
+              "recipient": "run_target",
+              "source_id": "unrelated_source",
+              "window": [
+                15,
+                35
+              ]
+            },
+            "time": 85
+          }
+        },
+        "record_id": "wrong_complete",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        }
+      }
+    ],
+    "record_catalog": [
+      {
+        "authenticated": true,
+        "event_id": "request_0",
+        "id": "record_request_0",
+        "kind": "request_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 20
+      },
+      {
+        "authenticated": true,
+        "event_id": "delivery_0",
+        "id": "record_delivery_0",
+        "kind": "delivery_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 21
+      },
+      {
+        "authenticated": true,
+        "event_id": "context_0",
+        "id": "record_context_0",
+        "kind": "context_receipt",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 22
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "complete_0",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "source_0",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 45
+      },
+      {
+        "authenticated": true,
+        "event_kind": "context",
+        "id": "wrong_complete",
+        "kind": "completeness",
+        "logging_complete": true,
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 85
+      },
+      {
+        "authenticated": true,
+        "id": "nuisance",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 41,
+        "value": "retained checkpoint marker"
+      },
+      {
+        "authenticated": true,
+        "id": "initial_marker",
+        "kind": "archive_record",
+        "scope": {
+          "recipient": "run_target",
+          "source_id": "unrelated_source",
+          "window": [
+            15,
+            35
+          ]
+        },
+        "time": 39,
+        "value": "same visible output is compatible with direct and shared input"
+      }
+    ],
+    "schema_version": 1,
+    "seed": 94103,
+    "selection": {
+      "policy_outcomes_consulted": false,
+      "rejections": [],
+      "rule": "seed maps to fixed structural choices before policy execution"
+    },
+    "sources": [
+      {
+        "id": "source_0",
+        "written_at": 1
+      }
+    ],
+    "split": "development",
+    "stratum": "archive_ambiguity",
+    "structural_fingerprint": "5b3a32b27fc786c2a22dde698a614b8c181b13ffa62a12473c839d9d5d06010c",
+    "structure": {
+      "failure_gate": "delivery",
+      "initial_complete": false,
+      "retention": "independent",
+      "routes": 1,
+      "variables": [
+        "event_0",
+        "retention_0",
+        "complete",
+        "use",
+        "nuisance"
+      ]
+    },
+    "subtype": "mixed_resolvability_source_use",
+    "unweighted_structure_fingerprint": "8f6cd206e9ee9321d7b2445f9a5bab38665fff51bf8424b4f672fe92a66fdc6a",
+    "worlds": [
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": false,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_00",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": false,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_01",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": false,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_02",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": false,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_03",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": false,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_04",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": false,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_05",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": false,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_06",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": false,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_07",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": true,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_08",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": true,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_09",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": true,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_10",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": true,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_11",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": true,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_12",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": true,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_13",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "nuisance": false,
+          "retention_0": true,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_14",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": false,
+          "nuisance": true,
+          "retention_0": true,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_15",
+        "occurring_event_ids": [
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "nuisance",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": false,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_16",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": false,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_17",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": false,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_18",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker"
+        ],
+        "selected_source_ids": [
+          "source_0"
+        ],
+        "source_mechanism": "direct"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": false,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_19",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [
+          "source_0"
+        ],
+        "source_mechanism": "direct"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": false,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_20",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": false,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_21",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": false,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_22",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [
+          "source_0"
+        ],
+        "source_mechanism": "direct"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": false,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_23",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [
+          "source_0"
+        ],
+        "source_mechanism": "direct"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": true,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_24",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": true,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_25",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": true,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_26",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [
+          "source_0"
+        ],
+        "source_mechanism": "direct"
+      },
+      {
+        "assignment": {
+          "complete": false,
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": true,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_27",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [
+          "source_0"
+        ],
+        "source_mechanism": "direct"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": true,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_28",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": true,
+          "use": false
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_29",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [],
+        "source_mechanism": "shared_input"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "nuisance": false,
+          "retention_0": true,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_30",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "record_context_0"
+        ],
+        "selected_source_ids": [
+          "source_0"
+        ],
+        "source_mechanism": "direct"
+      },
+      {
+        "assignment": {
+          "complete": true,
+          "event_0": true,
+          "nuisance": true,
+          "retention_0": true,
+          "use": true
+        },
+        "complete_context_scopes": [
+          {
+            "recipient": "run_target",
+            "source_id": "unrelated_source",
+            "window": [
+              15,
+              35
+            ]
+          },
+          {
+            "recipient": "run_target",
+            "source_id": "source_0",
+            "window": [
+              15,
+              35
+            ]
+          }
+        ],
+        "id": "hypothesis_31",
+        "occurring_event_ids": [
+          "context_0",
+          "delivery_0",
+          "request_0"
+        ],
+        "recipient_writes": [
+          {
+            "context_sources": [],
+            "id": "earlier_write",
+            "recipient": "run_target",
+            "time": 10
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "intermediate_write",
+            "recipient": "run_target",
+            "time": 40
+          },
+          {
+            "context_sources": [
+              "source_0"
+            ],
+            "id": "target",
+            "recipient": "run_target",
+            "time": 50
+          }
+        ],
+        "retained_record_ids": [
+          "complete_0",
+          "initial_marker",
+          "nuisance",
+          "record_context_0",
+          "record_delivery_0",
+          "record_request_0",
+          "wrong_complete"
+        ],
+        "selected_source_ids": [
+          "source_0"
+        ],
+        "source_mechanism": "direct"
+      }
+    ]
+  }
+]

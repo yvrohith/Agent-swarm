@@ -1,0 +1,107 @@
+{
+  "additional_spend_usd": "0",
+  "baseline_head": "38d456a5235c3b03e5bef50c4755f5f3279d316c",
+  "checked_at_utc": "2026-10-04T00:47:30.342842+00:00",
+  "credential_access": false,
+  "dependency_scoped_utility_verifier": {
+    "development": 24,
+    "evaluation": 144,
+    "passed": true,
+    "required_files": 16,
+    "responses": 168
+  },
+  "documentation_relative_links_checked": 211,
+  "existing_file_changes": [
+    "LIMITATIONS.md",
+    "README.md",
+    "docs/FINAL_SUBMISSION.md",
+    "docs/REVIEWER_GUIDE.md",
+    "studies/evidence_responsiveness/README.md",
+    "studies/investigator_utility/README.md",
+    "studies/investigator_utility/openrouter_v1/README.md",
+    "studies/investigator_utility/openrouter_v1/response_evidence/README.md"
+  ],
+  "freeze_sha256": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+  "frozen_acquisition_dependencies_unchanged": 19,
+  "full_suite": {
+    "command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 .venv/bin/python (socket-blocking wrapper running pytest -q)",
+    "elapsed_seconds": 20.02,
+    "failed": 0,
+    "full_suite_passed": 754,
+    "network_blocked": true,
+    "skipped": 0,
+    "socket_functions_blocked": [
+      "socket.socket.connect",
+      "socket.socket.connect_ex",
+      "socket.create_connection",
+      "socket.getaddrinfo"
+    ]
+  },
+  "git_actions": "No staging, commit, push, reset, or history rewrite",
+  "git_diff_check_passed": true,
+  "historical_scientific_files_unchanged": 177,
+  "independent_saved_results_checks": {
+    "budgets": 5,
+    "certificates_independently_recomputed": 1922,
+    "charged_queries_recomputed": 19300,
+    "dp_saved_values_equal_executed_full_budget_expectations": 40,
+    "false_irreducibility": 0,
+    "incorrect_or_unverifiable_certificates": 0,
+    "irreducibility_signature_cells_checked": 645,
+    "optimal_comparisons_recomputed": 200,
+    "paired_contrasts_recomputed": 160,
+    "policies": 5,
+    "prior_weighted_rows_independently_reaggregated": 1000,
+    "problems": 40,
+    "signature_policy_budget_runs_verified": 9800
+  },
+  "independent_verification_sha256": "a962ef8950e0bc7d6c24597b0754b82d33288fe8b9d699c252c9c66a5c136968",
+  "initial_checkout_clean": true,
+  "limitations": [
+    "Archive conclusions are conditional on supplied finite assumptions, priors, query catalogue and costs",
+    "40 parameterized problems comprise 30 unweighted structures",
+    "Shared-checker correctness is a validation consequence, not independent scientific evidence",
+    "Legacy chronology defect is documented; corrected-generator estimate impact remains untested",
+    "Wiki checks are descriptive, with no acquisition-efficiency comparison"
+  ],
+  "lint_command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 .venv/bin/ruff check .",
+  "lint_passed": true,
+  "local_call_and_ledger_files_unchanged": 509,
+  "missing_or_ignored_links": 0,
+  "model_calls": 0,
+  "network_requests": 0,
+  "new_files_scope": "Isolated acquisition source/tests/technical study artifacts; additive review diagnostics and score verifier; no presentation or raw response package",
+  "optional_wiki": {
+    "comparison_ineligible_histories": 2,
+    "efficiency_comparison_performed": false,
+    "histories": 4,
+    "post_execution_import_formatting_ast_unchanged": true,
+    "retrievals": 6,
+    "ruled_out_literal_claims": 4,
+    "source_hashes_verified": true
+  },
+  "original_result_files_unchanged": 5,
+  "owner_actions_remaining": [
+    "Supply approved attribution if desired",
+    "Choose repository license"
+  ],
+  "preexisting_acquisition_extension": false,
+  "private_reasoning_inspected": false,
+  "result_manifest_sha256": "d8a66b24107949ceb4346a9001df86dc331f027a5247c34958bb27341735d9f5",
+  "retrospective_diagnostic_input_hashes_unchanged": 13,
+  "status": "verified",
+  "technical_blockers": [],
+  "technical_output_sha256": {
+    "studies/evidence_acquisition/RESULTS.md": "021329a1c98a870d2a23ab7b6a339ca9e6e606ecd16eb151d6e227de8bb39592",
+    "studies/evidence_acquisition/wiki_applicability.json": "3f242db98d80531f7adea3da1d46c4d265d0f149c1955b5db56300b7ae980ba5",
+    "studies/evidence_acquisition/wiki_applicability.py": "0c4e606e83d4d5161939f7c7dc402afff031ebc2d02f0008edb7c87ec4dabdcc",
+    "studies/review_remediation/REVIEW.md": "39629d8450d2ac7e863d6d11c2a0c1ce407cce181f659149ae1f49bae9d7d7c3"
+  },
+  "validation_includes": [
+    "Exact DP versus independent tiny decision-tree enumeration",
+    "Scoped completeness and temporal consistency",
+    "Certificate tampering and all-cell irreducibility coverage",
+    "Charged lookup and budget stopping boundaries",
+    "Scientific dependency and score verification tampering"
+  ]
+}

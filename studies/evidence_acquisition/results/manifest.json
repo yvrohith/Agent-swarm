@@ -1,0 +1,15 @@
+{
+  "additional_spend_usd": "0",
+  "completed_at_utc": "2026-10-04T00:32:51.581594+00:00",
+  "encoding": "certificates.json.gz and signature_runs.json.gz are lossless UTF-8 JSON (gzip mtime=0); signature_index indexes lexicographically sorted Model.signature_cells. Certificates include exact acquired histories. All contents deliberately synthetic. Expand large histories only under ignored artifacts/evidence-acquisition.",
+  "files_sha256": {
+    "certificates.json.gz": "877d154cd04c08f2e048f990c514d270275a5fabbce3031c94453cccbf1c2f08",
+    "per_problem_policy_budget.json": "4d7dd4271bda18fdab0ed698025c978dd5b6e73c98267bb286b697cdce652894",
+    "runtime.json": "75a53151fa6cbb447e2536f6c6fbe036b7c6ce109fddf400b6f1a789fabffe51",
+    "signature_runs.json.gz": "862b75cefdd6f1d6c3c1c0ef50880ebb5ac741e5a3e79242d98676de4b7818b9",
+    "summary.json": "af6a09dd054a8a82fa6cd311c65437aced741f8cef6ae0238dd3c70a934cb65c"
+  },
+  "freeze_sha256": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+  "model_calls": 0,
+  "network_requests": 0
+}

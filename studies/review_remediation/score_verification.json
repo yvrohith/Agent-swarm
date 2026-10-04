@@ -1,0 +1,77 @@
+{
+  "baseline_head": "38d456a5235c3b03e5bef50c4755f5f3279d316c",
+  "checked_at_utc": "2026-10-04T00:16:04.919197+00:00",
+  "closure": {
+    "excluded": "README/LIMITATIONS/navigation/demo files; whole-checkout preservation gates; old verify.py; unused simulator/runtime modules; full prompts/provider envelopes/private reasoning/raw corpus. Provenance-only historical pin records are not recursive runtime dependencies.",
+    "hash_origins": "The original response-evidence manifest supplies 13 scientific dependency pins; that manifest itself is pinned to its existing recorded SHA in evidence_responsiveness/preservation.json. Used scorer/artifact pins also agree with the original freeze. No current scientific hash replaces an existing historical value. The new entrypoint has its own additive version-2 pin.",
+    "historical_files": 14,
+    "manifest": "studies/investigator_utility/openrouter_v1/response_evidence/scoring_manifest_v2.json",
+    "method": "The unchanged scorer is imported directly by verified filename, without package initialization. All files read by response/scoring/schedule/summary/control/accounting checks are enumerated and pinned. Standard-library dependencies require Python3.11+.",
+    "source_imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "random",
+      "collections",
+      "statistics"
+    ],
+    "total_files_including_new_verifier_and_manifest": 16
+  },
+  "current_command": "python studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py",
+  "current_result": {
+    "cases": 28,
+    "charged_or_reserved_usd": "2.9989060",
+    "development": 24,
+    "evaluation": 144,
+    "provider_reported_cost_usd": "2.8615140",
+    "resamples": 2000,
+    "responses": 168,
+    "status": "verified",
+    "unknown_actual_cost_attempts": 1
+  },
+  "evidence_limit": "Reproducing scores against retained labels does not independently validate labels' semantics, full original prompts, explanation faithfulness, or provider authenticity. This verifier makes no historical whole-checkout preservation claim.",
+  "files_added": [
+    "studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py",
+    "studies/investigator_utility/openrouter_v1/response_evidence/scoring_manifest_v2.json",
+    "tests/test_utility_score_verification.py",
+    "studies/review_remediation/score_verification.json"
+  ],
+  "historical_check_after_authorized_docs": {
+    "context": "This message identifies the response-evidence README pinned by old files_sha256; it is an authorized current-doc edit. Historical verify.py and manifest.json retain their original bytes.",
+    "exit_code": 1,
+    "stderr": "Verification failed: File hash mismatch: README.md"
+  },
+  "initial_historical_check": {
+    "command": "python studies/investigator_utility/openrouter_v1/response_evidence/verify.py",
+    "context": "Reproduced before authorized concurrent README maintenance; no file was reverted.",
+    "exit_code": 1,
+    "stderr": "Verification failed: File hash mismatch: demo/index.html"
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py tests/test_utility_score_verification.py",
+    "status": "passed"
+  },
+  "network_or_model_calls": 0,
+  "preservation": {
+    "historical_manifest_sha256": "5954afb3d5d1886c18f115c18bf558335937f082be59f97dd30fc3415dac8681",
+    "historical_verifier_sha256": "0cd2d25da2530aad71ce4308f7133a1ac5df343139f8f6ba7e992dcb8c87c09c",
+    "immutable_baseline_files": 177,
+    "unchanged": true
+  },
+  "retained_checks": [
+    "Path containment and symlink escape rejection; duplicate JSON-key rejection.",
+    "All168 first visible responses/refusals and exact string/null hashes, unique case/split/model/arm/attempt identity.",
+    "Case/gold/claim/record metadata, all168 unchanged strict scores,144 evaluation schedule/request hashes and numerical rows.",
+    "Exact2000-resample paired summaries and analytic controls.",
+    "Full168-call reservation schedule, token usage costs, authoritative charges, unknown reservation retention, freeze/ledger linkage and cumulative25-dollar cap."
+  ],
+  "spend_usd": 0,
+  "status": "verified",
+  "tests": {
+    "command": ".venv/bin/pytest -q tests/test_utility_score_verification.py",
+    "coverage": "Current checkout and minimal copied tree from unrelated cwd; no README/demo/package files; unrelated-file independence; response/gold/scorer/schedule/config/score/accounting tamper; every missing required file; missing pins; attempted refresh against current modified scorer; duplicate keys; traversal and symlink escape.",
+    "failed": 0,
+    "passed": 32,
+    "seconds": 10.43
+  }
+}

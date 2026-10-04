@@ -1,0 +1,142 @@
+{
+  "config": {
+    "additional_spend_usd": "0",
+    "budget_percentages": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "budget_rounding": "floor(read_all_cost * percentage / 100)",
+    "development": [
+      {
+        "seed": 94100,
+        "stratum": "positive_receipt"
+      },
+      {
+        "seed": 94101,
+        "stratum": "negative_completeness"
+      },
+      {
+        "seed": 94102,
+        "stratum": "complementary_candidates"
+      },
+      {
+        "seed": 94103,
+        "stratum": "archive_ambiguity"
+      }
+    ],
+    "evaluation_strata": [
+      {
+        "name": "positive_receipt",
+        "seeds": [
+          94200,
+          94201,
+          94202,
+          94203,
+          94204,
+          94205,
+          94206,
+          94207,
+          94208,
+          94209
+        ]
+      },
+      {
+        "name": "negative_completeness",
+        "seeds": [
+          94210,
+          94211,
+          94212,
+          94213,
+          94214,
+          94215,
+          94216,
+          94217,
+          94218,
+          94219
+        ]
+      },
+      {
+        "name": "complementary_candidates",
+        "seeds": [
+          94220,
+          94221,
+          94222,
+          94223,
+          94224,
+          94225,
+          94226,
+          94227,
+          94228,
+          94229
+        ]
+      },
+      {
+        "name": "archive_ambiguity",
+        "seeds": [
+          94230,
+          94231,
+          94232,
+          94233,
+          94234,
+          94235,
+          94236,
+          94237,
+          94238,
+          94239
+        ]
+      }
+    ],
+    "evaluation_unit": "one generated problem; exactly sum over its full-signature cells with prior mass",
+    "model_calls": 0,
+    "network_requests": 0,
+    "outcomes_per_query_limit": 2,
+    "policies": [
+      "read_all",
+      "schema_aware",
+      "world_entropy",
+      "pair_cut",
+      "exact_optimal"
+    ],
+    "prior": "uniform over the declared valid finite generative assignments, never empirical incident frequencies",
+    "query_costs": [
+      1,
+      2,
+      4
+    ],
+    "query_limit": 8,
+    "resampling": "none; complete fixed finite-model expectations, no sampling confidence intervals",
+    "schema_version": 1,
+    "study": "finite-retained-evidence-acquisition-v1",
+    "tie_rule": "maximum objective per cost; ties use lower visible cost then lexicographic opaque query ID",
+    "world_limit": 64
+  },
+  "development_only_before_freeze": true,
+  "evaluation_policy_outcomes_observed": false,
+  "files_sha256": {
+    "src/tracebench/__init__.py": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3",
+    "src/tracebench/evidence_acquisition/__init__.py": "cc13ce3dda5f44b8ee9c696f224464deee132f2ea92afb392b8acb33d1bafb07",
+    "src/tracebench/evidence_acquisition/__main__.py": "6d878006e0141b9660353752ab78969094fa54f7b4feaff98a04b8df7ef35d27",
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/generator.py": "4a826765cee8d7f9b79187b5dedbae241fdcaeece05c75d98603c3f25e44df81",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "src/tracebench/evidence_acquisition/study.py": "606331edceb2a3cc3edf5fba2ccdcdc783703861cb751a27625c6a7f962fa08c",
+    "studies/evidence_acquisition/ANALYSIS.md": "07d3530484d16fdc16fd413680363fb0fee46a122c8366e91501d8003828f925",
+    "studies/evidence_acquisition/METHOD.md": "82fd25e0656e29fc07fd94ec326d71db6e3a45199d6ffa595662e55350667ae6",
+    "studies/evidence_acquisition/config.json": "afe2507e505baefdc666a5ec7e702c6f316d48ad4b7ad55a9f2d4a17d4949241",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/development_results.json": "bc706d8b51a1e8291f79a4338dca1afdc41c68dd40f82329913f16b59d04edb5",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/evidence_acquisition/input_manifest.json": "7e6cc52f4e15f61d69e6b506e6c100539a375a4b9ecd27ac4dd440a508f3b896",
+    "studies/evidence_acquisition/pre_freeze_checks.json": "86e89c7d73ee062702c6e4715b4d322d36db56d81d02e4f4da450815e4a85f49",
+    "tests/test_acquisition_model.py": "d22e6409dd444731aced90906fc57be5aeab760b85a0724e5fec40122df83dfd",
+    "tests/test_acquisition_policies.py": "88c74fc13c599eac1f11bdef13350316030e841888f0dc8c02c410e875b1a985",
+    "tests/test_acquisition_study.py": "bf0854c6b1904f6f5a5ef68b41c0d4d94b86aa81d4131d7d3a6329182956beeb"
+  },
+  "frozen_at_utc": "2026-10-04T00:31:47.990033+00:00",
+  "python_version": "3.12.14",
+  "schema_version": 1
+}

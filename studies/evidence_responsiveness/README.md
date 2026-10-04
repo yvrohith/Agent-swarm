@@ -1,85 +1,77 @@
 # Bounded evidence-responsiveness audit
 
-This separate exploratory study asks whether an investigator answers correctly when decisive evidence changes and stays correct when an irrelevant detail changes. It preserves the completed utility pilot's ceiling, null, adverse, and response-contract findings. The [completed report](results/REPORT.md) and [submission addendum](SUBMISSION_ADDENDUM.md) give the actual results; this guide documents validation and access requirements.
+This completed exploratory study asks whether an investigator answers correctly
+when decisive evidence changes and stays correct when an irrelevant detail changes.
+It preserves the separate utility pilot's ceiling, null, adverse and response-contract
+findings. See the [completed report](results/REPORT.md),
+[historical addendum](SUBMISSION_ADDENDUM.md) and
+[current synthesis](../../docs/FINAL_SUBMISSION.md).
 
-The fixed design has **eight receipt and four controlled wiki-derived evaluation families**, plus one development family per substrate. Each family has three independently presented variants: base, irrelevant change, and decisive change. The three primary outcomes require correct answers to both members of the decisive pair, both members of the invariant pair, or all three family members. Receipt and wiki-derived outcomes and models remain separate. Altered wiki-derived text is a controlled fixture, not a historical observation.
+The design has eight receipt and four controlled wiki-derived evaluation families,
+plus one development family per substrate. Each family has three independently
+presented variants: base, irrelevant change and decisive change. Correctness is
+required on both members of a decisive or invariant pair, or on all three family
+members. The 72 evaluation calls are not 72 independent problems. Models and
+substrates remain separate; altered wiki text is a controlled fixture, not a
+historical observation.
 
-The baseline is `88ad3cb7e10fe82a15e8c30400ea780b370663d3`. The isolated implementation is in [`src/tracebench/evidence_responsiveness/`](../../src/tracebench/evidence_responsiveness/), with [analysis rules](ANALYSIS.md), [configuration](config.json), and [preservation hashes](preservation.json). Historical scientific files, frozen results, and raw outputs retain their recorded bytes. The preservation policy permits only the two project entry points to receive actual-result links after reporting; historical hashes remain recorded.
+Terra passes every decisive pair and all receipt families, but gives one valid,
+incorrect answer in a wiki invariant pair. Sonnet's 26 rejected responses and ten
+accepted/correct responses measure end-to-end model/prompt/adapter/parser performance.
+They do not establish zero evidence-reasoning competence. The
+[offline failure audit](offline_failure_audit/REPORT.md) found no result-changing
+adapter or scorer defect. All 42 identifiable objects in its audited Sonnet outputs
+used array-valued `answers`; the array-shape hypothesis explains zero observed failures.
 
-## Local checks without investigator calls
+## Completed artifacts and access
 
-Run from the repository root in the installed locked environment. `--offline` prevents dependency downloads; it requires dependencies already installed. The cache location below works in the cloud workspace.
+- [Per-variant scores](results/per_variant.json), including separately marked
+  development rows, and [evaluation family scores](results/per_family.json).
+- [Summary and intervals](results/summary.json), [constant-status controls](results/baselines.json)
+  and [fixed-rule examples](results/examples.json).
+- [Execution accounting](results/execution.json), [response hashes](results/response_manifest.json)
+  and [execution freeze](frozen/freeze.json).
+- [Analysis rules](ANALYSIS.md), [configuration](config.json),
+  [historical preservation snapshot](preservation.json) and
+  [offline diagnostic verification](offline_failure_audit/verification.json).
 
-```sh
-export UV_CACHE_DIR=/tmp/tracebench-uv-cache
-uv run --frozen --offline python -m tracebench.evidence_responsiveness validate
-uv run --frozen --offline python -m tracebench.evidence_responsiveness preflight
-```
+Tracked tables permit inspection and reaggregation. Full response rescoring requires
+the retained exact requests, visible completions, fixture texts and certificates in
+ignored `artifacts/evidence-responsiveness/`. The final-only diagnostic material is
+under `artifacts/evidence-responsiveness/offline-failure-audit/`; it excludes provider-private
+reasoning. These local paths are not supplied by a public checkout. Hashes identify
+content but do not supply missing bytes. The [verification reference](../../docs/REVIEWER_GUIDE.md)
+distinguishes the available public and local evidence.
 
-`validate` recomputes certificates, family relationships, metadata invariance, constant-status controls, and historical preservation. It needs the exact prepared files in ignored `artifacts/evidence-responsiveness/prepared/`. `preflight` verifies the recorded model configuration and computes the complete schedule's conservative cost against the **cumulative** ceiling, including the historical utility ledger and unresolved reservations. Neither command issues investigator calls; preflight is not a live provider-access test.
+Investigators received the complete fixture texts and declared assumptions, with
+family linkage, transformation roles, provenance and certificates withheld. Valid
+evidence IDs check existence, not semantic support or reasoning faithfulness.
+Mechanical and AI-assisted label checks are not independent human validation.
+Family/history bootstrap intervals describe these small selected strata; zero-width
+all-pass or all-fail intervals do not establish generalization certainty.
 
-`prepare` is a separate no-call construction step requiring the pinned wiki inputs and previous selection manifests. It writes the fixed ignored prepared directory and refuses to replace it. Do not remove or regenerate an existing selected study to make a check pass. The [wiki source guide](../../case_study/README.md) records original data provenance.
+## Historical verification and lifecycle
 
-## Execution and report lifecycle
+The implementation baseline is `88ad3cb7e10fe82a15e8c30400ea780b370663d3`.
+The [recorded offline audit](offline_failure_audit/REPORT.md#interpretation-and-preservation)
+reproduced all 72 evaluation scores and 24 model/family rows from retained responses
+at its documented snapshot. Its instructions require the full retained inputs,
+not only the public tables or the four-example local package.
 
-The CLI phases are `prepare`, `validate`, `preflight`, `develop`, `freeze`, `run`, and `report`. **`develop` and `run` can issue billable investigator calls.** They are not part of the offline checking instructions. The separate development families precede the evaluation freeze; the evaluation uses the frozen schedule once. Existing phase records, freezes, prepared cases, and results are not overwritten.
+The historical CLI commands `validate`, `preflight`, `report` and the inline
+`verify_frozen` path enforce historical repository pins as well as scientific
+inputs. Later authorized Markdown changes can therefore fail those historical
+checks even when numerical inputs are unchanged. They are not a standalone current
+public score-verification route. Their source, manifests and earlier
+[documentation-change record](presentation_update.json) remain unchanged; do not
+refresh their hashes, delete results or restore older work over the current checkout.
 
-Once an authorized run has finished, the following command scores its retained first responses and writes the report without new investigator calls:
+The separate utility pilot now has a [current scoring-only verifier](../investigator_utility/openrouter_v1/response_evidence/README.md).
+That verifier checks the utility response release, not these responsiveness scores.
 
-```sh
-uv run --frozen --offline python -m tracebench.evidence_responsiveness report
-```
-
-`report` requires the fixed prepared files, exact local request/response records, shared accounting history, evaluation snapshot, and matching freeze. It refuses an existing `results/` directory. Do not delete curated outputs to rerun it.
-
-## Verify saved response scores offline
-
-After results exist, an authorized reviewer with the ignored artifacts can compare freshly parsed first responses with saved per-variant scores. This reads local files and prints only the number of checked rows; it does not expose response text, repair answers, or call a model.
-
-```sh
-uv run --frozen --offline python - <<'PY'
-import json
-from tracebench.evidence_responsiveness.__main__ import (
-    FROZEN, RAW, STUDY, inputs, requests, verify_frozen,
-)
-from tracebench.evidence_responsiveness.common import file_hash, read
-from tracebench.evidence_responsiveness.scoring import score_variant
-
-verify_frozen()
-execution = read(STUDY / "results/execution.json")
-ledger = RAW / "calls/attempts.jsonl"
-assert file_hash(ledger) == execution["ledger_sha256"]
-cases, golds, families = inputs()
-by_case = {case["case_id"]: case for case in cases}
-by_gold = {gold["case_id"]: gold for gold in golds}
-completed = {}
-for line in ledger.read_text().splitlines():
-    event = json.loads(line)
-    if event["event"] == "attempt_completed":
-        completed.setdefault(event["attempt_key"], event)
-rows = []
-for request in requests(cases, families, read(FROZEN / "config.json")):
-    event = completed.get(request["attempt_key"])
-    saved = read(RAW / "calls" / event["response_file"]) if event else {}
-    choice = (saved.get("raw_response", {}).get("choices") or [{}])[0]
-    rows.append(score_variant(
-        by_case[request["case_id"]], by_gold[request["case_id"]],
-        saved.get("completion_text"), request["model_id"], choice.get("finish_reason"),
-        refused=bool(choice.get("message", {}).get("refusal")),
-    ))
-assert rows == read(STUDY / "results/per_variant.json")
-print(f"Verified {len(rows)} saved variant-score rows; no investigator calls.")
-PY
-```
-
-## Artifact access and interpretation
-
-The expected completed-run outputs are [REPORT.md](results/REPORT.md), [per-variant scores](results/per_variant.json), [per-family scores](results/per_family.json), [summary](results/summary.json), [controls](results/baselines.json), [examples](results/examples.json), [execution accounting](results/execution.json), and [response hashes](results/response_manifest.json). These paths describe the output contract; their presence and execution status, not this guide, establish completion. The [submission addendum](SUBMISSION_ADDENDUM.md) interprets the completed run without revising earlier studies.
-
-Full exact requests, completions, provider-private reasoning, fixture texts, transformation provenance, and evaluator-only certificates remain in ignored local artifacts under the release rules. Investigator prompts receive the complete fixture texts and declared assumptions. Family linkage, transformation roles, source provenance, and gold certificates never enter those prompts. Public manifests and hashes identify records; **hashes do not provide access to their contents**. Public score tables permit inspection and reaggregation, but full response rescoring requires authorized access to the retained artifacts. Nothing here authorizes publishing raw records or responses.
-
-Families are the measurement units: 72 planned evaluation calls across two models are not 72 independent problems. Whole-family/history bootstrap intervals describe these small fixed strata. All-pass or all-fail zero-width intervals do not establish generalization certainty. Valid evidence IDs do not prove semantic support or private reasoning faithfulness; gold and leakage checks are mechanical/AI-assisted, with no independent human validation claimed.
-
-## Historical document pins
-
-The [post-report presentation record](presentation_update.json) lists the two entry-point updates and their before/after hashes. The report’s preservation snapshot was taken before these edits; the current check retains 136 scientific/other tracked files and 415 historical raw files byte-for-byte while explicitly listing the two changed entry points. The earlier utility response verifier successfully checked all 168 saved responses before these edits. Its unchanged manifest also pins its historical root README/submission text, so that whole-document check belongs to baseline `88ad3cb7e10fe82a15e8c30400ea780b370663d3` and rejects these later documentation edits. Neither its checks nor historical manifests were weakened or rewritten.
+The original lifecycle was `prepare`, `validate`, `preflight`, `develop`, `freeze`,
+`run`, then `report`. `develop` and `run` can issue billable model calls and are not
+offline verification commands. `prepare` requires the pinned wiki inputs and writes
+a new prepared directory; `report` refuses an existing results directory. The
+[source guide](../../case_study/README.md) records the wiki input provenance. No
+regeneration or repeated model run is needed to read the completed results.

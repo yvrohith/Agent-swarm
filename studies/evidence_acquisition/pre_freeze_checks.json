@@ -1,0 +1,18 @@
+{
+  "additional_spend_usd": "0",
+  "development_certificate_failures": 0,
+  "development_problems": 4,
+  "development_signature_policy_budget_runs": 950,
+  "evaluation_policy_runs_before_freeze": 0,
+  "existing_and_new_tests_passed": 751,
+  "failures": 0,
+  "historical_protected_files_unchanged": 177,
+  "independent_checks": "A1 scorer closure; A2 final-only diagnosis; A3/A4 chronology and error metrics; source review of model and policy; independent reconciliation of all development run masses/costs/bytes and full freeze dependency closure.",
+  "isolation": "No legacy simulator, observer, estimator, model adapter or frozen scorer imported by the acquisition package. Independent model/temporal/certificate tests passed.",
+  "lint": "ruff check src tests studies/review_remediation studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py; passed",
+  "model_calls": 0,
+  "network_requests": 0,
+  "phase_a_dependencies_isolated": true,
+  "pytest_command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 MPLCONFIGDIR=/tmp/tracebench-remediation-mpl .venv/bin/python (socket-blocking wrapper running pytest -q)",
+  "pytest_elapsed_seconds": 19.31
+}

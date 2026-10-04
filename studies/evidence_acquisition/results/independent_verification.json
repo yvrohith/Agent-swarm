@@ -1,0 +1,174 @@
+{
+  "additional_spend_usd": "0",
+  "audit_source_sha256": "ddb96d5528bcbb78172849963af8a82e7a6a39b35a06731c36714c861809194d",
+  "budget_prefix_and_next_query_affordability_checks": 9800,
+  "budgets": 5,
+  "certificate_status_counts": {
+    "archive_irreducible": 471,
+    "established": 580,
+    "ruled_out": 438,
+    "unresolved_pending": 433
+  },
+  "certificate_verifier_source_sha256": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+  "certificates_independently_recomputed": 1922,
+  "charged_queries_recomputed": 19300,
+  "checked_at_utc": "2026-10-04T00:37:35.062392+00:00",
+  "dp_saved_values_equal_executed_full_budget_expectations": 40,
+  "evaluation_policy_calls_in_this_check": 0,
+  "false_irreducibility": 0,
+  "freeze_sha256": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+  "frozen_dependencies_verified": 19,
+  "incorrect_or_unverifiable_certificates": 0,
+  "irreducibility_signature_cells_checked": 645,
+  "limitations": [
+    "DP saved values are checked against executed exact-policy expectations; independent tiny-tree optimality checks are in the frozen tests, not a newly repeated evaluation.",
+    "Runtimes are retained measurements; this audit checks fields/accounting but cannot reproduce elapsed wall-clock observations.",
+    "Certificates establish conclusions only relative to the supplied finite model and permitted archive; logical soundness is a checker consequence."
+  ],
+  "model_calls": 0,
+  "model_source_sha256": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+  "network_requests": 0,
+  "optimal_comparisons_recomputed": 200,
+  "original_result_files_sha256": {
+    "certificates.json.gz": "877d154cd04c08f2e048f990c514d270275a5fabbce3031c94453cccbf1c2f08",
+    "per_problem_policy_budget.json": "4d7dd4271bda18fdab0ed698025c978dd5b6e73c98267bb286b697cdce652894",
+    "runtime.json": "75a53151fa6cbb447e2536f6c6fbe036b7c6ce109fddf400b6f1a789fabffe51",
+    "signature_runs.json.gz": "862b75cefdd6f1d6c3c1c0ef50880ebb5ac741e5a3e79242d98676de4b7818b9",
+    "summary.json": "af6a09dd054a8a82fa6cd311c65437aced741f8cef6ae0238dd3c70a934cb65c"
+  },
+  "original_result_manifest_sha256": "d8a66b24107949ceb4346a9001df86dc331f027a5247c34958bb27341735d9f5",
+  "paired_contrasts_recomputed": 160,
+  "paired_results": {
+    "archive_ambiguity": {
+      "exact_optimal": {
+        "better": 0,
+        "flat": 8,
+        "mean_exact": "3/40",
+        "worse": 2
+      },
+      "read_all": {
+        "better": 10,
+        "flat": 0,
+        "mean_exact": "-391/40",
+        "worse": 0
+      },
+      "schema_aware": {
+        "better": 4,
+        "flat": 6,
+        "mean_exact": "-21/160",
+        "worse": 0
+      },
+      "world_entropy": {
+        "better": 3,
+        "flat": 7,
+        "mean_exact": "-11/80",
+        "worse": 0
+      }
+    },
+    "complementary_candidates": {
+      "exact_optimal": {
+        "better": 0,
+        "flat": 0,
+        "mean_exact": "453/640",
+        "worse": 10
+      },
+      "read_all": {
+        "better": 10,
+        "flat": 0,
+        "mean_exact": "-953/80",
+        "worse": 0
+      },
+      "schema_aware": {
+        "better": 6,
+        "flat": 1,
+        "mean_exact": "-187/160",
+        "worse": 3
+      },
+      "world_entropy": {
+        "better": 3,
+        "flat": 6,
+        "mean_exact": "-1/5",
+        "worse": 1
+      }
+    },
+    "negative_completeness": {
+      "exact_optimal": {
+        "better": 0,
+        "flat": 1,
+        "mean_exact": "229/320",
+        "worse": 9
+      },
+      "read_all": {
+        "better": 10,
+        "flat": 0,
+        "mean_exact": "-19/2",
+        "worse": 0
+      },
+      "schema_aware": {
+        "better": 6,
+        "flat": 2,
+        "mean_exact": "-87/160",
+        "worse": 2
+      },
+      "world_entropy": {
+        "better": 6,
+        "flat": 4,
+        "mean_exact": "-17/40",
+        "worse": 0
+      }
+    },
+    "positive_receipt": {
+      "exact_optimal": {
+        "better": 0,
+        "flat": 7,
+        "mean_exact": "1/5",
+        "worse": 3
+      },
+      "read_all": {
+        "better": 10,
+        "flat": 0,
+        "mean_exact": "-547/80",
+        "worse": 0
+      },
+      "schema_aware": {
+        "better": 3,
+        "flat": 5,
+        "mean_exact": "17/160",
+        "worse": 2
+      },
+      "world_entropy": {
+        "better": 4,
+        "flat": 6,
+        "mean_exact": "-19/40",
+        "worse": 0
+      }
+    }
+  },
+  "policies": 5,
+  "prior_weighted_rows_independently_reaggregated": 1000,
+  "problems": 40,
+  "runtime_accounting": {
+    "exact_solver_states": 1687,
+    "hindsight_seconds": 1.0843031730055372,
+    "planning_seconds": {
+      "exact_optimal": 0.3196697899365972,
+      "pair_cut": 1.2620587009914743,
+      "read_all": 0.1052391279645235,
+      "schema_aware": 0.0820926939832134,
+      "world_entropy": 1.159187474870123
+    },
+    "preprocessing_seconds": 0.05617486799383187,
+    "recorded_evaluation_seconds": 50.24499134600046
+  },
+  "scope": "Read-only recomputation from frozen inputs and saved compressed histories; no evaluation rerun or new grid. This additive diagnostic is not included in the original result manifest.",
+  "signature_policy_budget_runs_verified": 9800,
+  "status": "verified",
+  "unresolved_findings": [],
+  "zero_optimal_problem_ids": [
+    "acq_94230",
+    "acq_94232",
+    "acq_94234",
+    "acq_94236",
+    "acq_94238"
+  ]
+}

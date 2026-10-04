@@ -1,16 +1,16 @@
 # Trace Completeness Curves
 
-**Start here:** [Current research synthesis](docs/FINAL_SUBMISSION.md) ·
-[Reviewer guide and evidence access](docs/REVIEWER_GUIDE.md).
+**The utility pilot did not establish a general reasoning benefit from provenance
+assistance: every schema-valid status was correct, and Sonnet's observed score
+differences concerned response acceptance.** This finding concerns the utility
+pilot; the separate responsiveness study contains a verified incorrect Terra answer.
 
-For investigator findings, read the [utility results](studies/investigator_utility/openrouter_v1/results/REPORT.md),
-[responsiveness results](studies/evidence_responsiveness/results/REPORT.md), and
-[offline failure diagnosis](studies/evidence_responsiveness/offline_failure_audit/REPORT.md).
-The [historical submission](docs/SUBMISSION.md) remains preserved; the final synthesis
-connects the completed work.
+Read the [current research synthesis](docs/FINAL_SUBMISSION.md) for the connected
+findings and the [verification reference](docs/REVIEWER_GUIDE.md) for sources and
+access limits. The [original submission](docs/SUBMISSION.md) remains historical.
 
 Trace Completeness Curves tests what incomplete agent logs can establish about
-information flow. The project brings together five completed studies:
+information flow. Its five completed attribution and investigator studies are:
 
 - **[Synthetic source-attribution benchmark](results/REPORT.md):** Measure attribution
   errors against known realized source-use edges as different telemetry types become
@@ -35,6 +35,10 @@ information flow. The project brings together five completed studies:
   decisive pair but fails one wiki invariant pair; Sonnet’s paired scores are dominated
   by invalid responses. Controlled wiki edits are fixtures, not incident observations.
 
+The separate [finite evidence-acquisition extension](studies/evidence_acquisition/RESULTS.md)
+compares passive retrieval policies under an explicit archive model. Its technical
+report retains cost gains, adverse comparisons, and the limits of checkable ambiguity.
+
 Exposure is not source use, and source use is not counterfactual causal necessity.
 See the [initial benchmark's claims and analysis specification](CLAIMS.md) and each
 study's report for its scope and limitations.
@@ -43,6 +47,16 @@ study's report for its scope and limitations.
 
 **This pilot does not establish a general forensic-reasoning benefit from provenance
 assistance.** It reports a bounded comparison with flat, adverse and invalid outcomes retained.
+
+All schema-valid utility statuses were correct. Sonnet's 18 rejected evaluation
+responses comprise eight field-ID problems, six serialization problems and four
+refusals; Terra has no rejected evaluation responses. A separate
+[retrospective diagnostic](studies/review_remediation/utility_diagnostic.json)
+recovers 12 Sonnet responses under fixed, gold-blind extraction/field rules. Two
+multi-object responses remain ambiguous and all four refusals remain failures.
+These diagnostic results do not replace the primary scores below. Native
+JSON-schema enforcement was not requested in any of the 144 saved evaluation
+request bodies; performance under such enforcement was not measured.
 
 **Primary comparison: C−B**, where A receives raw evidence and a competent task, B adds
 a strong checklist, and C adds record indexing, full character alignments, locators,
@@ -106,6 +120,10 @@ wiki-derived families, plus 12 development calls, with no retries.
 
 Terra made one valid but incorrect answer after an irrelevant wiki edit. Sonnet had
 26 invalid outputs, including two refusals; all 10 valid answers were correct.
+Its 0/8 receipt results measure the full model/prompt/adapter/parser pipeline, not
+zero reasoning competence. The [offline audit](studies/evidence_responsiveness/offline_failure_audit/REPORT.md)
+found no result-changing adapter/scorer defect; all 42 identifiable Sonnet response
+objects used arrays, so the array-shape hypothesis explains zero observed failures.
 The companion requiring nonempty valid evidence IDs yields the same paired scores.
 Invalid responses stay in the denominators. These small, selected strata do not
 establish general evidence tracking or change the utility pilot’s findings.
@@ -122,13 +140,25 @@ retained local artifacts; public hashes alone do not supply the evidence. See th
 Generate synthetic swarms with known realized source-use edges, hide telemetry types,
 and measure the errors of temporal-proximity and witness-reuse investigators.
 
-**Initial result:** In the high-shock scenario (`p=0.3`), witness precision rises from
+**Initial result:** In the high-shock scenario (`p=0.3`, shock `0.9`), witness precision rises from
 8.2% with writes to 75.3% with channel-context records, at 52.1% recall throughout.
-Yet its target-fraction error increases from 0.030 with requests to 0.059 with context.
-These are synthetic results: correct, complete logs preserve true candidates by design.
+From requests to context, mean absolute target-fraction error increases from
+**0.030 to 0.059**, while mean target disagreement decreases from **0.181 to 0.114**.
+These different metrics use the same 12 saved worlds: target disagreement counts
+false-positive plus false-negative targets, whereas signed fraction error subtracts
+them. Earlier cancellation can make a worse set of target decisions yield a closer
+aggregate fraction. See the [derived per-world table](studies/review_remediation/derived_target_errors.csv)
+and [derivation](studies/review_remediation/derived_target_errors.json).
 
-**Implication:** Better source-edge precision need not improve an aggregate source-use
-estimate, and exposure records still leave attribution ambiguity.
+These remain results of the legacy structural simulator. A
+[timestamp/state audit](studies/review_remediation/chronology.json) reproduced a
+first-context-availability contradiction in a six-write configuration; it found
+none in the 12 reported high-shock worlds or 40 missing-receipt worlds checked.
+The effect of a corrected simulator on prior estimates was not measured. Existing
+results are preserved, without a claim of chronological replay fidelity.
+
+**Implication:** Better target classification can coexist with a worse aggregate
+source-selection fraction estimate; exposure still does not establish source use.
 
 ![Initial telemetry-ablation results](results/trace_completeness.png)
 
@@ -145,7 +175,8 @@ uv run tracebench equivalence
 
 The curated initial run is in [results/REPORT.md](results/REPORT.md). Generated raw
 experiments belong in ignored `artifacts/`; only deliberately selected, non-sensitive
-research evidence belongs in `results/`.
+research evidence belongs in `results/`. These commands reproduce the legacy
+generator, including its [documented chronology limitation](LIMITATIONS.md).
 
 ## Missing-receipt follow-up
 
@@ -180,15 +211,8 @@ uv run tracebench wiki-audit --archive data/raw/wiki/full-wiki-logs.zip \
   --protocol studies/wiki_case_study/ANALYSIS.md --output artifacts/wiki-replication
 ```
 
-## Initial synthetic benchmark explorer
-
-```bash
-uv run python -m http.server 8000 --bind 127.0.0.1
-```
-
-Open the `/demo/` path on that local server. Its charts cover only the initial synthetic
-benchmark, using the curated `results/benchmark.json`. The static explorer makes no
-external requests and does not run new experiments. Read the separate
+The existing [benchmark explorer](demo/index.html) covers only the initial synthetic
+benchmark, using the curated `results/benchmark.json`. Read the separate
 [missing-receipt report](studies/missing_receipts/results/REPORT.md),
 [public-wiki report](studies/wiki_case_study/REPORT.md), and
 [wiki evidence cards](studies/wiki_case_study/results/REPORT.md#source-linked-evidence-cards)
@@ -200,13 +224,11 @@ and saved response evidence are separate from the initial benchmark explorer.
 
 - [Claims and analysis specification](CLAIMS.md)
 - [Evidence card](EVIDENCE_CARD.md) and [limitations](LIMITATIONS.md)
-- [Hackathon deliverables and verification status](docs/HACKATHON.md)
+- [Dated organizer requirements and source record](docs/HACKATHON.md)
 - [Related work and source status](docs/RELATED_WORK.md)
 - [German-wiki case-study status](case_study/README.md)
+- [Technical review corrections and verification scope](studies/review_remediation/REVIEW.md)
 
-The verified competition requirements call for a short write-up or video and the code
-repository, with real-world results optional. See the [submission write-up](docs/SUBMISSION.md).
-The official deadline is Sunday, October 4, 2026, at **8 p.m. Eastern / 5 p.m. Pacific**.
-The [official logistics and submission link](docs/HACKATHON.md) are recorded; exact form
-limits and terms remain unverified because the form returned HTTP 403. No detailed
-scoring rubric appears on the checked pages.
+The [current synthesis](docs/FINAL_SUBMISSION.md) connects the completed measurements
+and their distinct evidence limits. Dated organizer and source checks remain in their
+historical records; no current external requirements are inferred from them.

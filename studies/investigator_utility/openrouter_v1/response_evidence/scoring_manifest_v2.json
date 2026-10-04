@@ -1,0 +1,132 @@
+{
+  "bootstrap_seed": 73021,
+  "dependency_closure": {
+    "compared_outputs": "response_manifest.json, execution.json, per_case_scores.json, paired_summary.json, sanity_baselines.json. The embedded execution preflight supplies full development/evaluation reservation metadata.",
+    "frozen_metadata": "freeze.json, case_manifest.json, gold_certificates.json, prompt_manifest.json, config.json. Only these referenced dependencies are read; other freeze fields are retained historical metadata.",
+    "new_entrypoint": "verify_scores.py plus this manifest; preserve repository-relative paths in a minimal copied tree.",
+    "not_dependencies": "README, LIMITATIONS, demo/navigation files, old verify.py, broad preservation source file, raw prompts/envelopes/corpus, nonimported simulator/runtime source. Provenance-only records do not cause recursive historical-checkout gates.",
+    "response_evidence": "Exact JSONL response bytes, scoring_cases.json, and original manifest for existing hash provenance.",
+    "runtime": "Python3.11+ standard library; scorer imports __future__, hashlib, json, random, collections, statistics. No project installation/lockfile/network/API required.",
+    "scorer": "Direct filename import of the unchanged scoring.py; no package initialization or historical simulator import."
+  },
+  "evidence_limit": "Score reproduction against retained labels does not independently validate gold semantics, complete original prompts, explanation faithfulness, or original provider authenticity. No private reasoning or inference is used.",
+  "expected_counts": {
+    "development": 24,
+    "evaluation": 144,
+    "total": 168
+  },
+  "files_sha256": {
+    "src/tracebench/investigator_utility/scoring.py": "c5119c7745a3e3bc840894df21986a0749c5db4ccde414706ea5c6db16eadf48",
+    "studies/investigator_utility/openrouter_v1/frozen/case_manifest.json": "5f185aa2fa518d56488e12530ce1210ffeb545f893f0718514f6de72d77e087a",
+    "studies/investigator_utility/openrouter_v1/frozen/config.json": "8af4b4415b3a09a9276ed799a7b491d0b4c22db4e286f40c828b50fa42c5230a",
+    "studies/investigator_utility/openrouter_v1/frozen/freeze.json": "3174e440442ed5c9de24331d727cbc677168ea3ff45926e5abead7ee7d0b07bb",
+    "studies/investigator_utility/openrouter_v1/frozen/gold_certificates.json": "33d45ec5ea3416e5b5956ff316889b6836949395673f0d3e5b28d75c192e58ac",
+    "studies/investigator_utility/openrouter_v1/frozen/prompt_manifest.json": "87bf2b710b6dd103b635fd98a920ab2b1c446f7b54762cbd612a9f8f76b7750e",
+    "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json": "5954afb3d5d1886c18f115c18bf558335937f082be59f97dd30fc3415dac8681",
+    "studies/investigator_utility/openrouter_v1/response_evidence/responses.jsonl": "21da9d524bee2cc1cfede1b8b885a5f73b01b1ee7600c1840b84e9e19bceadd6",
+    "studies/investigator_utility/openrouter_v1/response_evidence/scoring_cases.json": "967619692abb6dc7ce81cb2dcc77db8f7fa256582e73115ba5027920aca59c88",
+    "studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py": "9e8172cff6ca90e89d9ddba6aef6a560385755cdb03da7cbb6a916c2a39cfbe5",
+    "studies/investigator_utility/openrouter_v1/results/execution.json": "f629b194857c3c342d847c8306d5f9fdc5e7382f3565c4ea65c9439728c9c56b",
+    "studies/investigator_utility/openrouter_v1/results/paired_summary.json": "f28ff2134a3e4bbde28fcb6ad2f0d73eb188cca502c34af3c0a420e438bb7a5b",
+    "studies/investigator_utility/openrouter_v1/results/per_case_scores.json": "9fd3594c866b26d715af2ed678eef68685e4cdbc34a8f61a5cea5220bff075d3",
+    "studies/investigator_utility/openrouter_v1/results/response_manifest.json": "3505747aa00d336afebe672d492b5462205c86e691ec53856f1f3bd71421b10f",
+    "studies/investigator_utility/openrouter_v1/results/sanity_baselines.json": "50b3f0a2e83678fe1a5b4cedef88b3614f176c598e41629e472d7a8827271503"
+  },
+  "hash_origins": {
+    "src/tracebench/investigator_utility/scoring.py": {
+      "key": "src/tracebench/investigator_utility/scoring.py",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/frozen/case_manifest.json": {
+      "key": "studies/investigator_utility/openrouter_v1/frozen/case_manifest.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/frozen/config.json": {
+      "key": "studies/investigator_utility/openrouter_v1/frozen/config.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/frozen/freeze.json": {
+      "key": "studies/investigator_utility/openrouter_v1/frozen/freeze.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/frozen/gold_certificates.json": {
+      "key": "studies/investigator_utility/openrouter_v1/frozen/gold_certificates.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/frozen/prompt_manifest.json": {
+      "key": "studies/investigator_utility/openrouter_v1/frozen/prompt_manifest.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json": {
+      "key": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "record": "studies/evidence_responsiveness/preservation.json",
+      "runtime_dependency": false,
+      "section": "tracked_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/response_evidence/responses.jsonl": {
+      "key": "responses.jsonl",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/response_evidence/scoring_cases.json": {
+      "key": "scoring_cases.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py": {
+      "record": "new version-2 verifier",
+      "runtime_dependency": true,
+      "section": "additive implementation"
+    },
+    "studies/investigator_utility/openrouter_v1/results/execution.json": {
+      "key": "studies/investigator_utility/openrouter_v1/results/execution.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/results/paired_summary.json": {
+      "key": "studies/investigator_utility/openrouter_v1/results/paired_summary.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/results/per_case_scores.json": {
+      "key": "studies/investigator_utility/openrouter_v1/results/per_case_scores.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/results/response_manifest.json": {
+      "key": "studies/investigator_utility/openrouter_v1/results/response_manifest.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    },
+    "studies/investigator_utility/openrouter_v1/results/sanity_baselines.json": {
+      "key": "studies/investigator_utility/openrouter_v1/results/sanity_baselines.json",
+      "record": "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json",
+      "runtime_dependency": true,
+      "section": "repository_files_sha256"
+    }
+  },
+  "historical_dependencies": 14,
+  "required_files": 16,
+  "resamples": 2000,
+  "schema_version": 2,
+  "scope": "Released visible responses, minimal scoring cases and retained gold, frozen scorer, applicable schedule/configuration, saved scores/paired summaries/controls and accounting. This is not whole-checkout preservation.",
+  "source_commit": "0bb581e9b9debaf1160754931964ab90dc3b9702"
+}

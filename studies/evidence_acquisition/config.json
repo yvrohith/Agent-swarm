@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "study": "finite-retained-evidence-acquisition-v1",
+  "development": [
+    {"seed": 94100, "stratum": "positive_receipt"},
+    {"seed": 94101, "stratum": "negative_completeness"},
+    {"seed": 94102, "stratum": "complementary_candidates"},
+    {"seed": 94103, "stratum": "archive_ambiguity"}
+  ],
+  "evaluation_strata": [
+    {"name": "positive_receipt", "seeds": [94200,94201,94202,94203,94204,94205,94206,94207,94208,94209]},
+    {"name": "negative_completeness", "seeds": [94210,94211,94212,94213,94214,94215,94216,94217,94218,94219]},
+    {"name": "complementary_candidates", "seeds": [94220,94221,94222,94223,94224,94225,94226,94227,94228,94229]},
+    {"name": "archive_ambiguity", "seeds": [94230,94231,94232,94233,94234,94235,94236,94237,94238,94239]}
+  ],
+  "policies": ["read_all", "schema_aware", "world_entropy", "pair_cut", "exact_optimal"],
+  "query_costs": [1,2,4],
+  "budget_percentages": [0,25,50,75,100],
+  "budget_rounding": "floor(read_all_cost * percentage / 100)",
+  "prior": "uniform over the declared valid finite generative assignments, never empirical incident frequencies",
+  "world_limit": 64,
+  "query_limit": 8,
+  "outcomes_per_query_limit": 2,
+  "tie_rule": "maximum objective per cost; ties use lower visible cost then lexicographic opaque query ID",
+  "evaluation_unit": "one generated problem; exactly sum over its full-signature cells with prior mass",
+  "resampling": "none; complete fixed finite-model expectations, no sampling confidence intervals",
+  "model_calls": 0,
+  "network_requests": 0,
+  "additional_spend_usd": "0"
+}

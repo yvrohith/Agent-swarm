@@ -1,0 +1,29 @@
+# Retained-evidence model and certificates
+
+## Observation model
+
+Each input explicitly enumerates a bounded set of hypothetical generative assignments, a scoped Boolean claim, initial evidence, an archive query catalogue, and strictly positive rational prior masses. Authentic retained receipts imply their events. An empty lookup is a retrieval result, not a denial of occurrence: it is compatible with nonoccurrence and nonretention unless a relevant complete-logging declaration rules out the latter. Declarations for other sources, recipients or time windows do not establish target completeness. Duplicate/correlated records share their declared generative causes. Events and context availability must satisfy the model's independent temporal validation; the legacy stochastic simulator is not imported.
+
+For acquired action/outcome history H, S(H) contains exactly the worlds agreeing with every acquired answer and the initial evidence. Priors never remove possible worlds. A missing history has a different representation from an explicit lookup yielding no record. Repeating a query does not create new information. The evaluator's actual archive is private to a charged lookup interface; planners may examine all hypothetical worlds but are not told which world is actual.
+
+## Full-archive classes and certificates
+
+The full signature sigma(w) is the ordered tuple of every permitted query answer. Its cell is established if every member satisfies the claim, ruled_out if none do, and archive_irreducible if claim values differ. Let tau(w) be this cell's class. At a partial history, terminal status requires all remaining worlds to have the same tau, with a corresponding certificate. A mixed S alone does not justify early irreducibility. Every reachable signature cell must be mixed.
+
+Certificates pin the complete finite model/assumptions, claim and initial evidence, and list the acquired action/outcome identifiers. A separate checker redoes exhaustive compatibility and checks witness coverage; it does not trust cached verdicts, planner actions or evaluator success flags. Definite certificates identify the exhaustive remaining set. Pending uncertainty supplies two compatible opposite-claim constructions. Irreducibility certificates supply an opposite-claim pair for every remaining full-signature cell and verify identical answers across the entire query catalogue, plus exact coverage. A certificate reveals no actual hidden source-selection label or realized world identity. Hypothetical world identifiers designate checkable constructions, not the evaluator's actual world. Contradictory histories return inconsistent, never a truth claim.
+
+The impossibility argument is standard: worlds with opposite claim values and identical answers to all catalogue queries produce the same initial evidence and, inductively, the same adaptive histories. Any deterministic history-dependent policy therefore asks the same next query and receives the same answer in both worlds. No such policy can distinguish them. This establishes only model/catalogue-relative indistinguishability, not impossibility under all conceivable future evidence.
+
+## Acquisition objectives
+
+Read-all retrieves the catalogue in its recorded order. Schema-aware prioritizes queries visibly relevant to the claim scope, favors context and completeness over delivery and request, then other relevant and unrelated items; it breaks ties by visible cost then opaque ID. World-entropy chooses maximal expected Shannon entropy reduction of the current world distribution per cost. Entropy reduction need not resolve the claim.
+
+For pair-cut, using original positive prior masses, E(S) = sum over unordered u,v in S with tau(u) != tau(v) of p(u)p(v). For each query with outcome subsets S_o, gain = E(S) − sum_o P(o|S)E(S_o). Select the largest gain/cost. Pair weights are not renormalized inside E. The stopping certificate, not one-step claim accuracy, controls termination; complementary queries remain available. This is equivalence-class-style selection without a claimed approximation guarantee. Objective ties favor lower visible cost then lexicographic opaque query ID.
+
+Exact adaptive planning memoizes V(S,R). It is zero at a verified terminal state, otherwise min_q[c(q) + sum_o P(o|S)V(S_o,R\{q})]. Probabilities and costs use rational arithmetic; constant-answer queries can be skipped. An exhausted catalogue without a terminal certificate is an implementation/model error. Independent exhaustive decision-tree tests on tiny fixtures check this recurrence. Exact optimality is relative to this finite supplied model and prior, not to real investigators.
+
+The hindsight lower bound enumerates all subsets of the full observed query history and selects the globally cheapest subset certifying the same attainable archive class. It uses evidence about which results occurred that was unavailable to a prospective policy, and is therefore not an executable strategy. Query costs, query counts, returned bytes and physical record-set size are separate quantities.
+
+## Interpretation limits
+
+Enumeration, certain-answer reasoning, dynamic programming and active equivalence-class acquisition are established methods. The contribution is their tested application to incomplete retained evidence with checkable archive-level ambiguity. Logical soundness follows from declared semantics and certificate validation; measured outcomes concern retrieval efficiency. Model preprocessing and planning are measured separately from abstract acquisition cost. The possible-world model, costs, priors, authentic evidence and valid completeness assumptions are supplied, not discovered from arbitrary logs. Source-use alternatives can share all exposure records; query efficiency cannot manufacture unavailable evidence. All-pass correctness does not establish deployment reliability, and a heuristic losing to schema-aware ordering is retained as a limitation.
