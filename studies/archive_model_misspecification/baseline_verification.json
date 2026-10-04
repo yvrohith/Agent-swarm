@@ -1,0 +1,665 @@
+{
+  "additional_spend_usd": "0",
+  "baseline_head": "920f67c5b512c4dc2b571bd74b5684a06ba85b01",
+  "cases_generated": 0,
+  "checked_at_utc": "2026-10-04T01:56:07.261895+00:00",
+  "credential_access": false,
+  "exact_p0_equal_problem_expected": {
+    "archive_irreducible": {
+      "exact": "153/320",
+      "value": 0.478125
+    },
+    "cost": {
+      "exact": "1725/512",
+      "value": 3.369140625
+    },
+    "established": {
+      "exact": "11/40",
+      "value": 0.275
+    },
+    "query_count": {
+      "exact": "4631/2560",
+      "value": 1.808984375
+    },
+    "returned_bytes": {
+      "exact": "152683/640",
+      "value": 238.5671875
+    },
+    "ruled_out": {
+      "exact": "79/320",
+      "value": 0.246875
+    }
+  },
+  "findings": [],
+  "full_signature_terminal_counts": {
+    "archive_irreducible": 121,
+    "established": 158,
+    "ruled_out": 113
+  },
+  "group_size_counts": {
+    "1": 20,
+    "2": 10
+  },
+  "initial_checkout": "clean",
+  "limits": [
+    "Nominal trajectory charging, observations, logical stopping and certificates were verified from saved histories; optimal decisions and previous policy/timing grids were not rerun.",
+    "Saved hindsight-cost expectations were carried through the nominal row consistency check; hindsight subset minimality was not recomputed.",
+    "Whole-checkout and retained private-record byte preservation are recorded separately by the task owner; no provider-private envelopes or credentials were decoded.",
+    "The historical chronology defect remains documented and is outside this finite acquisition model; no simulator correction or rerun is implied."
+  ],
+  "model_calls": 0,
+  "network_requests": 0,
+  "old_files_modified": 0,
+  "per_problem_exact_p0": [
+    {
+      "expected_cost": {
+        "exact": "1",
+        "value": 1.0
+      },
+      "problem_id": "acq_94200",
+      "queries": 5,
+      "signatures": 4,
+      "stratum": "positive_receipt",
+      "worlds": 8
+    },
+    {
+      "expected_cost": {
+        "exact": "23/4",
+        "value": 5.75
+      },
+      "problem_id": "acq_94201",
+      "queries": 4,
+      "signatures": 9,
+      "stratum": "positive_receipt",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "1",
+        "value": 1.0
+      },
+      "problem_id": "acq_94202",
+      "queries": 5,
+      "signatures": 4,
+      "stratum": "positive_receipt",
+      "worlds": 8
+    },
+    {
+      "expected_cost": {
+        "exact": "29/4",
+        "value": 7.25
+      },
+      "problem_id": "acq_94203",
+      "queries": 5,
+      "signatures": 10,
+      "stratum": "positive_receipt",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "2",
+        "value": 2.0
+      },
+      "problem_id": "acq_94204",
+      "queries": 4,
+      "signatures": 4,
+      "stratum": "positive_receipt",
+      "worlds": 8
+    },
+    {
+      "expected_cost": {
+        "exact": "17/4",
+        "value": 4.25
+      },
+      "problem_id": "acq_94205",
+      "queries": 5,
+      "signatures": 8,
+      "stratum": "positive_receipt",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "1",
+        "value": 1.0
+      },
+      "problem_id": "acq_94206",
+      "queries": 5,
+      "signatures": 4,
+      "stratum": "positive_receipt",
+      "worlds": 8
+    },
+    {
+      "expected_cost": {
+        "exact": "13/2",
+        "value": 6.5
+      },
+      "problem_id": "acq_94207",
+      "queries": 4,
+      "signatures": 9,
+      "stratum": "positive_receipt",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "2",
+        "value": 2.0
+      },
+      "problem_id": "acq_94208",
+      "queries": 5,
+      "signatures": 4,
+      "stratum": "positive_receipt",
+      "worlds": 8
+    },
+    {
+      "expected_cost": {
+        "exact": "23/8",
+        "value": 2.875
+      },
+      "problem_id": "acq_94209",
+      "queries": 5,
+      "signatures": 10,
+      "stratum": "positive_receipt",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "13/8",
+        "value": 1.625
+      },
+      "problem_id": "acq_94210",
+      "queries": 6,
+      "signatures": 8,
+      "stratum": "negative_completeness",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "53/8",
+        "value": 6.625
+      },
+      "problem_id": "acq_94211",
+      "queries": 6,
+      "signatures": 17,
+      "stratum": "negative_completeness",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "1",
+        "value": 1.0
+      },
+      "problem_id": "acq_94212",
+      "queries": 5,
+      "signatures": 4,
+      "stratum": "negative_completeness",
+      "worlds": 8
+    },
+    {
+      "expected_cost": {
+        "exact": "351/64",
+        "value": 5.484375
+      },
+      "problem_id": "acq_94213",
+      "queries": 7,
+      "signatures": 18,
+      "stratum": "negative_completeness",
+      "worlds": 64
+    },
+    {
+      "expected_cost": {
+        "exact": "9/2",
+        "value": 4.5
+      },
+      "problem_id": "acq_94214",
+      "queries": 5,
+      "signatures": 8,
+      "stratum": "negative_completeness",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "13/2",
+        "value": 6.5
+      },
+      "problem_id": "acq_94215",
+      "queries": 7,
+      "signatures": 16,
+      "stratum": "negative_completeness",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "13/8",
+        "value": 1.625
+      },
+      "problem_id": "acq_94216",
+      "queries": 6,
+      "signatures": 8,
+      "stratum": "negative_completeness",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "2",
+        "value": 2.0
+      },
+      "problem_id": "acq_94217",
+      "queries": 4,
+      "signatures": 8,
+      "stratum": "negative_completeness",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "13/8",
+        "value": 1.625
+      },
+      "problem_id": "acq_94218",
+      "queries": 6,
+      "signatures": 8,
+      "stratum": "negative_completeness",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "311/64",
+        "value": 4.859375
+      },
+      "problem_id": "acq_94219",
+      "queries": 7,
+      "signatures": 18,
+      "stratum": "negative_completeness",
+      "worlds": 64
+    },
+    {
+      "expected_cost": {
+        "exact": "67/16",
+        "value": 4.1875
+      },
+      "problem_id": "acq_94220",
+      "queries": 8,
+      "signatures": 16,
+      "stratum": "complementary_candidates",
+      "worlds": 64
+    },
+    {
+      "expected_cost": {
+        "exact": "171/32",
+        "value": 5.34375
+      },
+      "problem_id": "acq_94221",
+      "queries": 6,
+      "signatures": 17,
+      "stratum": "complementary_candidates",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "6",
+        "value": 6.0
+      },
+      "problem_id": "acq_94222",
+      "queries": 6,
+      "signatures": 8,
+      "stratum": "complementary_candidates",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "229/64",
+        "value": 3.578125
+      },
+      "problem_id": "acq_94223",
+      "queries": 7,
+      "signatures": 18,
+      "stratum": "complementary_candidates",
+      "worlds": 64
+    },
+    {
+      "expected_cost": {
+        "exact": "25/8",
+        "value": 3.125
+      },
+      "problem_id": "acq_94224",
+      "queries": 7,
+      "signatures": 16,
+      "stratum": "complementary_candidates",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "5",
+        "value": 5.0
+      },
+      "problem_id": "acq_94225",
+      "queries": 7,
+      "signatures": 16,
+      "stratum": "complementary_candidates",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "107/32",
+        "value": 3.34375
+      },
+      "problem_id": "acq_94226",
+      "queries": 8,
+      "signatures": 16,
+      "stratum": "complementary_candidates",
+      "worlds": 64
+    },
+    {
+      "expected_cost": {
+        "exact": "2",
+        "value": 2.0
+      },
+      "problem_id": "acq_94227",
+      "queries": 4,
+      "signatures": 8,
+      "stratum": "complementary_candidates",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "11/2",
+        "value": 5.5
+      },
+      "problem_id": "acq_94228",
+      "queries": 8,
+      "signatures": 14,
+      "stratum": "complementary_candidates",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "183/32",
+        "value": 5.71875
+      },
+      "problem_id": "acq_94229",
+      "queries": 7,
+      "signatures": 18,
+      "stratum": "complementary_candidates",
+      "worlds": 64
+    },
+    {
+      "expected_cost": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "problem_id": "acq_94230",
+      "queries": 6,
+      "signatures": 6,
+      "stratum": "archive_ambiguity",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "9/2",
+        "value": 4.5
+      },
+      "problem_id": "acq_94231",
+      "queries": 4,
+      "signatures": 9,
+      "stratum": "archive_ambiguity",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "problem_id": "acq_94232",
+      "queries": 5,
+      "signatures": 2,
+      "stratum": "archive_ambiguity",
+      "worlds": 8
+    },
+    {
+      "expected_cost": {
+        "exact": "13/4",
+        "value": 3.25
+      },
+      "problem_id": "acq_94233",
+      "queries": 5,
+      "signatures": 9,
+      "stratum": "archive_ambiguity",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "problem_id": "acq_94234",
+      "queries": 5,
+      "signatures": 6,
+      "stratum": "archive_ambiguity",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "43/8",
+        "value": 5.375
+      },
+      "problem_id": "acq_94235",
+      "queries": 5,
+      "signatures": 9,
+      "stratum": "archive_ambiguity",
+      "worlds": 32
+    },
+    {
+      "expected_cost": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "problem_id": "acq_94236",
+      "queries": 6,
+      "signatures": 6,
+      "stratum": "archive_ambiguity",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "4",
+        "value": 4.0
+      },
+      "problem_id": "acq_94237",
+      "queries": 3,
+      "signatures": 4,
+      "stratum": "archive_ambiguity",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "problem_id": "acq_94238",
+      "queries": 6,
+      "signatures": 6,
+      "stratum": "archive_ambiguity",
+      "worlds": 16
+    },
+    {
+      "expected_cost": {
+        "exact": "35/8",
+        "value": 4.375
+      },
+      "problem_id": "acq_94239",
+      "queries": 5,
+      "signatures": 9,
+      "stratum": "archive_ambiguity",
+      "worlds": 32
+    }
+  ],
+  "policy_grid_reruns": 0,
+  "preserved_acquisition_dependency_sha256": {
+    "src/tracebench/__init__.py": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3",
+    "src/tracebench/evidence_acquisition/__init__.py": "cc13ce3dda5f44b8ee9c696f224464deee132f2ea92afb392b8acb33d1bafb07",
+    "src/tracebench/evidence_acquisition/__main__.py": "6d878006e0141b9660353752ab78969094fa54f7b4feaff98a04b8df7ef35d27",
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/generator.py": "4a826765cee8d7f9b79187b5dedbae241fdcaeece05c75d98603c3f25e44df81",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "src/tracebench/evidence_acquisition/study.py": "606331edceb2a3cc3edf5fba2ccdcdc783703861cb751a27625c6a7f962fa08c",
+    "studies/evidence_acquisition/ANALYSIS.md": "07d3530484d16fdc16fd413680363fb0fee46a122c8366e91501d8003828f925",
+    "studies/evidence_acquisition/METHOD.md": "82fd25e0656e29fc07fd94ec326d71db6e3a45199d6ffa595662e55350667ae6",
+    "studies/evidence_acquisition/config.json": "afe2507e505baefdc666a5ec7e702c6f316d48ad4b7ad55a9f2d4a17d4949241",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/development_results.json": "bc706d8b51a1e8291f79a4338dca1afdc41c68dd40f82329913f16b59d04edb5",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/evidence_acquisition/input_manifest.json": "7e6cc52f4e15f61d69e6b506e6c100539a375a4b9ecd27ac4dd440a508f3b896",
+    "studies/evidence_acquisition/pre_freeze_checks.json": "86e89c7d73ee062702c6e4715b4d322d36db56d81d02e4f4da450815e4a85f49",
+    "tests/test_acquisition_model.py": "d22e6409dd444731aced90906fc57be5aeab760b85a0724e5fec40122df83dfd",
+    "tests/test_acquisition_policies.py": "88c74fc13c599eac1f11bdef13350316030e841888f0dc8c02c410e875b1a985",
+    "tests/test_acquisition_study.py": "bf0854c6b1904f6f5a5ef68b41c0d4d94b86aa81d4131d7d3a6329182956beeb"
+  },
+  "preserved_prior_robustness_dependency_sha256": {
+    "src/tracebench/__init__.py": "f1e330d12b23db5749359ec8e2bb84b1d9305e37e6aba0f9c5501df58873e8e3",
+    "src/tracebench/evidence_acquisition/__init__.py": "cc13ce3dda5f44b8ee9c696f224464deee132f2ea92afb392b8acb33d1bafb07",
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "src/tracebench/evidence_acquisition/study.py": "606331edceb2a3cc3edf5fba2ccdcdc783703861cb751a27625c6a7f962fa08c",
+    "studies/acquisition_prior_robustness/ANALYSIS.md": "f62a699a79b4ea6941cd093824972511a0242914f7078ca4e8761f87abfe430d",
+    "studies/acquisition_prior_robustness/METHOD.md": "9367e685e57ba417a4866fbc79db1c75217c669770a1878af52a5e5a8a5be08b",
+    "studies/acquisition_prior_robustness/aggregation.py": "d301074af6d8990d865c8752fe0ad9c98de4379ea221f1f4317b7baa3e5bf809",
+    "studies/acquisition_prior_robustness/analysis.py": "e0b797f0cd13261a9bd60fe96f4d0221f20feae2d982e61fc55b7520a7341db2",
+    "studies/acquisition_prior_robustness/baseline_reproduction.json": "f868ed04041543ce04a3f4d6c6dca81077df8061c9dea5144b499d291caf95ee",
+    "studies/acquisition_prior_robustness/config.json": "27e341b3f8cac2791e12fbd5d200252a7c6fb3082575c44297ab0bfaa55825bb",
+    "studies/acquisition_prior_robustness/development_checks.json": "4b078d94e6f92f19e709b7b5694f0dc52da9443e2c446f9f692f5c7ae7a94262",
+    "studies/acquisition_prior_robustness/pre_freeze_checks.json": "0839a20e594aeced3347f00893d32292782115dc69647092e33e0821397e990a",
+    "studies/acquisition_prior_robustness/sensitivity.py": "917771647708477955f3f72791dcea6295d4c8eb61f5665a9d7a2024398ddb41",
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/acquisition_prior_robustness/timing.py": "a00ae6ccae189c4a185b0a226b5b325b879795517564b9c905460000a0b45b6e",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/development_results.json": "bc706d8b51a1e8291f79a4338dca1afdc41c68dd40f82329913f16b59d04edb5",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/evidence_acquisition/freeze.json": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+    "studies/evidence_acquisition/input_manifest.json": "7e6cc52f4e15f61d69e6b506e6c100539a375a4b9ecd27ac4dd440a508f3b896",
+    "studies/evidence_acquisition/results/certificates.json.gz": "877d154cd04c08f2e048f990c514d270275a5fabbce3031c94453cccbf1c2f08",
+    "studies/evidence_acquisition/results/independent_verification.json": "a962ef8950e0bc7d6c24597b0754b82d33288fe8b9d699c252c9c66a5c136968",
+    "studies/evidence_acquisition/results/manifest.json": "d8a66b24107949ceb4346a9001df86dc331f027a5247c34958bb27341735d9f5",
+    "studies/evidence_acquisition/results/per_problem_policy_budget.json": "4d7dd4271bda18fdab0ed698025c978dd5b6e73c98267bb286b697cdce652894",
+    "studies/evidence_acquisition/results/runtime.json": "75a53151fa6cbb447e2536f6c6fbe036b7c6ce109fddf400b6f1a789fabffe51",
+    "studies/evidence_acquisition/results/signature_runs.json.gz": "862b75cefdd6f1d6c3c1c0ef50880ebb5ac741e5a3e79242d98676de4b7818b9",
+    "studies/evidence_acquisition/results/summary.json": "af6a09dd054a8a82fa6cd311c65437aced741f8cef6ae0238dd3c70a934cb65c",
+    "tests/test_acquisition_policies.py": "88c74fc13c599eac1f11bdef13350316030e841888f0dc8c02c410e875b1a985",
+    "tests/test_acquisition_prior_aggregation.py": "9183f8b28de4e53fb9531d52a813579128b990f2bd489933c007989f8c35b9e4",
+    "tests/test_acquisition_prior_driver.py": "2e0a348440748e1205f633a0154b0cebf7d6aa99fa6740a033f8659fed335c31",
+    "tests/test_acquisition_prior_robustness.py": "2c2ca71e2b6cd3bd82b7813fe952aa826ca99ceb2f665ac709905d6cdf8e6521",
+    "tests/test_acquisition_prior_timing.py": "b50de72bc41d9b7f6e4bd1287f283297aa18c42f048767d613dd5db39ab88e98"
+  },
+  "provider_private_reasoning_access": false,
+  "read_input_and_source_sha256": {
+    "src/tracebench/evidence_acquisition/certificates.py": "f15e26996f757012bf6770466a08920a004e89df60fb671ae53a25b17fa6f79b",
+    "src/tracebench/evidence_acquisition/generator.py": "4a826765cee8d7f9b79187b5dedbae241fdcaeece05c75d98603c3f25e44df81",
+    "src/tracebench/evidence_acquisition/model.py": "115aade9b236146f27e1db5c0ee25f94a6ef7dc3f9aeecc77b18e903e19ec94d",
+    "src/tracebench/evidence_acquisition/policies.py": "d36e55f384d97fb5ea0c605a07c619610d8d23839be4037073ffaf9d1110bd5f",
+    "src/tracebench/evidence_acquisition/study.py": "606331edceb2a3cc3edf5fba2ccdcdc783703861cb751a27625c6a7f962fa08c",
+    "studies/acquisition_prior_robustness/ANALYSIS.md": "f62a699a79b4ea6941cd093824972511a0242914f7078ca4e8761f87abfe430d",
+    "studies/acquisition_prior_robustness/FINAL_VALIDATION.json": "63d8e551131144b7f9fe43a9ba307cc00c0ed01eab3db59dac2e713fe698529c",
+    "studies/acquisition_prior_robustness/METHOD.md": "9367e685e57ba417a4866fbc79db1c75217c669770a1878af52a5e5a8a5be08b",
+    "studies/acquisition_prior_robustness/RESULTS.md": "3b3a0cfe00b3d966301bdcb312c01425b08c62406584b17814912731b126184d",
+    "studies/acquisition_prior_robustness/freeze.json": "b4aa0f67a5be921bb0882c1f53dffd4c5ef19b425dd63e83997eefc27390cbe2",
+    "studies/acquisition_prior_robustness/results/independent_verification.json": "ddce7502d8fe773e63d2de81eecf5ad2023027e4f7f2e31d2a35b3bc442fba14",
+    "studies/acquisition_prior_robustness/results/manifest.json": "cfad54ca8b0b52e352c51c04959da30790232b0170612c77ad0e81b50f6927ec",
+    "studies/acquisition_prior_robustness/structure_groups.json": "8e191748bf4086aa355e6e202ec4cd31df98baaa6b0fece2ae4aabb5a37483f8",
+    "studies/evidence_acquisition/ANALYSIS.md": "07d3530484d16fdc16fd413680363fb0fee46a122c8366e91501d8003828f925",
+    "studies/evidence_acquisition/METHOD.md": "82fd25e0656e29fc07fd94ec326d71db6e3a45199d6ffa595662e55350667ae6",
+    "studies/evidence_acquisition/RESULTS.md": "021329a1c98a870d2a23ab7b6a339ca9e6e606ecd16eb151d6e227de8bb39592",
+    "studies/evidence_acquisition/config.json": "afe2507e505baefdc666a5ec7e702c6f316d48ad4b7ad55a9f2d4a17d4949241",
+    "studies/evidence_acquisition/development_problems.json": "de1ff71ef5a92fed1d61fe1aeb53e59320e7043bacf9bcef611321c972ef966d",
+    "studies/evidence_acquisition/evaluation_problems.json": "70a3777e93ee7dc13ade902392afe280d49dc986eb7ef47a213f0411a2772893",
+    "studies/evidence_acquisition/freeze.json": "6aa847bdacbbcad433745517ce37c7b3d57558c327f996cd9d9f3e3097759ec9",
+    "studies/evidence_acquisition/input_manifest.json": "7e6cc52f4e15f61d69e6b506e6c100539a375a4b9ecd27ac4dd440a508f3b896",
+    "studies/evidence_acquisition/results/certificates.json.gz": "877d154cd04c08f2e048f990c514d270275a5fabbce3031c94453cccbf1c2f08",
+    "studies/evidence_acquisition/results/manifest.json": "d8a66b24107949ceb4346a9001df86dc331f027a5247c34958bb27341735d9f5",
+    "studies/evidence_acquisition/results/per_problem_policy_budget.json": "4d7dd4271bda18fdab0ed698025c978dd5b6e73c98267bb286b697cdce652894",
+    "studies/evidence_acquisition/results/runtime.json": "75a53151fa6cbb447e2536f6c6fbe036b7c6ce109fddf400b6f1a789fabffe51",
+    "studies/evidence_acquisition/results/signature_runs.json.gz": "862b75cefdd6f1d6c3c1c0ef50880ebb5ac741e5a3e79242d98676de4b7818b9",
+    "studies/investigator_utility/openrouter_v1/response_evidence/README.md": "26df4392113d664540658bc0b8151232f86c6f1d605c5f3159ba25b9c8845a5c",
+    "studies/investigator_utility/openrouter_v1/response_evidence/scoring_manifest_v2.json": "503b0bf45a7499743c97ab608fdf997b36753b781e5b620ca9a550db3565624d",
+    "studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py": "9e8172cff6ca90e89d9ddba6aef6a560385755cdb03da7cbb6a916c2a39cfbe5",
+    "studies/review_remediation/REVIEW.md": "39629d8450d2ac7e863d6d11c2a0c1ce407cce181f659149ae1f49bae9d7d7c3"
+  },
+  "schema_version": 1,
+  "scope": "Saved nominal full-budget exact-p0 histories/certificates and structural fingerprints; old freeze/output integrity and current offline score-only reproduction. No new support expansion or acquisition-policy execution.",
+  "score_dependency_sha256": {
+    "src/tracebench/investigator_utility/scoring.py": "c5119c7745a3e3bc840894df21986a0749c5db4ccde414706ea5c6db16eadf48",
+    "studies/investigator_utility/openrouter_v1/frozen/case_manifest.json": "5f185aa2fa518d56488e12530ce1210ffeb545f893f0718514f6de72d77e087a",
+    "studies/investigator_utility/openrouter_v1/frozen/config.json": "8af4b4415b3a09a9276ed799a7b491d0b4c22db4e286f40c828b50fa42c5230a",
+    "studies/investigator_utility/openrouter_v1/frozen/freeze.json": "3174e440442ed5c9de24331d727cbc677168ea3ff45926e5abead7ee7d0b07bb",
+    "studies/investigator_utility/openrouter_v1/frozen/gold_certificates.json": "33d45ec5ea3416e5b5956ff316889b6836949395673f0d3e5b28d75c192e58ac",
+    "studies/investigator_utility/openrouter_v1/frozen/prompt_manifest.json": "87bf2b710b6dd103b635fd98a920ab2b1c446f7b54762cbd612a9f8f76b7750e",
+    "studies/investigator_utility/openrouter_v1/response_evidence/manifest.json": "5954afb3d5d1886c18f115c18bf558335937f082be59f97dd30fc3415dac8681",
+    "studies/investigator_utility/openrouter_v1/response_evidence/responses.jsonl": "21da9d524bee2cc1cfede1b8b885a5f73b01b1ee7600c1840b84e9e19bceadd6",
+    "studies/investigator_utility/openrouter_v1/response_evidence/scoring_cases.json": "967619692abb6dc7ce81cb2dcc77db8f7fa256582e73115ba5027920aca59c88",
+    "studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py": "9e8172cff6ca90e89d9ddba6aef6a560385755cdb03da7cbb6a916c2a39cfbe5",
+    "studies/investigator_utility/openrouter_v1/results/execution.json": "f629b194857c3c342d847c8306d5f9fdc5e7382f3565c4ea65c9439728c9c56b",
+    "studies/investigator_utility/openrouter_v1/results/paired_summary.json": "f28ff2134a3e4bbde28fcb6ad2f0d73eb188cca502c34af3c0a420e438bb7a5b",
+    "studies/investigator_utility/openrouter_v1/results/per_case_scores.json": "9fd3594c866b26d715af2ed678eef68685e4cdbc34a8f61a5cea5220bff075d3",
+    "studies/investigator_utility/openrouter_v1/results/response_manifest.json": "3505747aa00d336afebe672d492b5462205c86e691ec53856f1f3bd71421b10f",
+    "studies/investigator_utility/openrouter_v1/results/sanity_baselines.json": "50b3f0a2e83678fe1a5b4cedef88b3614f176c598e41629e472d7a8827271503"
+  },
+  "score_only_verification": {
+    "command": "env -i PATH=/usr/local/bin:/usr/bin:/bin PYTHONDONTWRITEBYTECODE=1 .venv/bin/python studies/investigator_utility/openrouter_v1/response_evidence/verify_scores.py",
+    "exit_code": 0,
+    "output": {
+      "cases": 28,
+      "charged_or_reserved_usd": "2.9989060",
+      "development": 24,
+      "evaluation": 144,
+      "historical_dependencies": 14,
+      "provider_reported_cost_usd": "2.8615140",
+      "required_files_including_verifier_and_manifest": 16,
+      "resamples": 2000,
+      "responses": 168,
+      "scope": "released scores and accounting; not historical checkout preservation",
+      "status": "verified",
+      "unknown_actual_cost_attempts": 1
+    },
+    "scope_limit": "Reproduces retained visible-answer scores, schedules, bootstrap summaries and accounting; does not inspect private provider envelopes, authenticate providers or revalidate all supplied evidence/gold semantics."
+  },
+  "status": "passed",
+  "stratum_group_counts": {
+    "archive_ambiguity": 8,
+    "complementary_candidates": 8,
+    "negative_completeness": 8,
+    "positive_receipt": 6
+  },
+  "stratum_problem_counts": {
+    "archive_ambiguity": 10,
+    "complementary_candidates": 10,
+    "negative_completeness": 10,
+    "positive_receipt": 10
+  },
+  "timing_sweeps": 0,
+  "verification": {
+    "acquisition_frozen_dependencies": 19,
+    "acquisition_manifest_outputs": 5,
+    "catalogue_actions": 224,
+    "development_problems": 4,
+    "evaluation_problems": 40,
+    "exact_p0_charged_queries_checked": 797,
+    "exact_p0_metric_rows_reaggregated": 40,
+    "exact_p0_signature_trajectories_checked": 392,
+    "exact_p0_unique_certificates_reconstructed": 169,
+    "material_grouping_collisions": 0,
+    "nominal_full_signatures": 392,
+    "nominal_worlds": 1064,
+    "original_structure_groups": 30,
+    "original_weighted_and_unweighted_fingerprints_matched": 40,
+    "prior_final_report_and_independent_audit_pins_match": true,
+    "prior_robustness_frozen_dependencies": 34,
+    "prior_robustness_manifest_outputs": 5,
+    "proper_prefixes_nonterminal": 797
+  },
+  "zero_optimum_problem_ids": [
+    "acq_94230",
+    "acq_94232",
+    "acq_94234",
+    "acq_94236",
+    "acq_94238"
+  ]
+}

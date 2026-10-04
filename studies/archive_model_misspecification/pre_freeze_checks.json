@@ -1,0 +1,68 @@
+{
+  "additional_spend_usd": "0",
+  "checked_at_utc": "2026-10-04T02:11:32.284080+00:00",
+  "credential_access": false,
+  "development": {
+    "additional_spend_usd": "0",
+    "cells": 12,
+    "completed_cells": 12,
+    "evaluation_policy_outcomes_observed": 0,
+    "frozen_dependencies": null,
+    "initial_preservation": {
+      "local_files": 509,
+      "tracked_files": 266
+    },
+    "manifest_sha256": "534092ef5b456c1f7dedc28b47f0596dbf9c5a4e4d763fa75b33726da4b7d6a3",
+    "model_calls": 0,
+    "network_requests": 0,
+    "output": "artifacts/archive-model-misspecification/development-v1",
+    "preservation": {
+      "local_files": 509,
+      "tracked_files": 266
+    },
+    "problems": 4,
+    "split": "development",
+    "status": "passed",
+    "unavailable_cells": 0
+  },
+  "evaluation_expansions_computed": 0,
+  "evaluation_policy_outcomes_observed": 0,
+  "execution_environment": "Installed .venv; clean env -i PATH; socket connect/connect_ex/create_connection/getaddrinfo denied during root tests and development execution",
+  "focused_tests": {
+    "failed": 0,
+    "files": [
+      "tests/test_archive_model_misspecification.py",
+      "tests/test_archive_misspecification_reference.py"
+    ],
+    "included_in_full_suite": true,
+    "passed": 67
+  },
+  "full_tests": {
+    "command": "pytest -q",
+    "failed": 0,
+    "passed": 883,
+    "seconds": 25.81
+  },
+  "independent_pre_freeze_review": {
+    "all_query_witness_checks": 602,
+    "development_problem_conditions": 12,
+    "expanded_certificates_checked": 167,
+    "limits": "Verification checks can recur across conditions; original exact optimizer reused, not independently reproved",
+    "nominal_certificates_checked": 167,
+    "remaining_material_findings": [],
+    "scope": "Contracts, physical closure, all-compatible-world inference, denominators, nominal policy evidence boundary and failure handling",
+    "signature_histories_checked": 122,
+    "status": "passed"
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check .",
+    "status": "passed"
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 266
+  },
+  "status": "passed"
+}

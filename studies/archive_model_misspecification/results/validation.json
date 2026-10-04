@@ -1,0 +1,20 @@
+{
+  "additional_spend_usd": "0",
+  "cells": 120,
+  "completed_cells": 120,
+  "frozen_dependencies": 23,
+  "initial_preservation": {
+    "local_files": 509,
+    "tracked_files": 266
+  },
+  "model_calls": 0,
+  "network_requests": 0,
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 266
+  },
+  "problems": 40,
+  "split": "evaluation",
+  "status": "passed",
+  "unavailable_cells": 0
+}

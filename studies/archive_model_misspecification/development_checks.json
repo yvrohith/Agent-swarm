@@ -1,0 +1,23 @@
+{
+  "additional_spend_usd": "0",
+  "cells": 12,
+  "completed_cells": 12,
+  "evaluation_policy_outcomes_observed": 0,
+  "frozen_dependencies": null,
+  "initial_preservation": {
+    "local_files": 509,
+    "tracked_files": 266
+  },
+  "manifest_sha256": "534092ef5b456c1f7dedc28b47f0596dbf9c5a4e4d763fa75b33726da4b7d6a3",
+  "model_calls": 0,
+  "network_requests": 0,
+  "output": "artifacts/archive-model-misspecification/development-v1",
+  "preservation": {
+    "local_files": 509,
+    "tracked_files": 266
+  },
+  "problems": 4,
+  "split": "development",
+  "status": "passed",
+  "unavailable_cells": 0
+}
