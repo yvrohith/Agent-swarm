@@ -7,6 +7,7 @@ to bytes of the caller-supplied pinned JSONL file.
 
 import gzip
 import hashlib
+import io
 import json
 import math
 import zipfile
@@ -135,6 +136,7 @@ def load_fixture(revisions_path: Path, manifest_path: Path) -> LoadedWiki:
 RELEASE_PARSER_VERSION = "tracebench-wiki-explorer-schema-2-v1"
 _RELEASE_FILES = {"pages.jsonl", "revisions.jsonl", "events.jsonl", "labels.jsonl", "manifest.json"}
 _MAX_EXPANDED_BYTES = 128 * 1024 * 1024
+_MAX_SUPPLEMENT_INPUT_BYTES = 128 * 1024 * 1024
 
 
 def release_inventory() -> tuple[dict, ...]:
@@ -336,7 +338,10 @@ def load_release(archive_path: Path, other_wikis_path: Path | None = None) -> Lo
         seqs = page_sequences.get(key, set())
         if not seqs or len(seqs) != page.get("n_revs"):
             raise ValueError("Publisher page revision count mismatch")
-        if seqs != set(range(min(seqs), max(seqs) + 1)) or min(seqs) - 1 != page.get("n_revs_before"):
+        # Positive, unique integers are contiguous iff their span equals their count.
+        # Never allocate a range whose size is controlled by a revision's sequence ID.
+        first, last = min(seqs), max(seqs)
+        if last - first + 1 != len(seqs) or first - 1 != page.get("n_revs_before"):
             raise ValueError("Publisher logical history is not contiguous within the declared cut")
     by_wiki = Counter(revision.site for revision in revisions)
     for wiki, n_revisions in by_wiki.items():
@@ -395,10 +400,31 @@ def load_release(archive_path: Path, other_wikis_path: Path | None = None) -> Lo
     return LoadedWiki(tuple(revisions), observed, release_inventory(), auxiliary)
 
 
+def _bounded_read(stream, limit: int, description: str) -> bytes:
+    """Read at most limit + 1 bytes, rejecting oversized input without truncation."""
+    chunks, size = [], 0
+    while True:
+        chunk = stream.read(min(64 * 1024, limit + 1 - size))
+        if not chunk:
+            return b"".join(chunks)
+        size += len(chunk)
+        if size > limit:
+            raise ValueError(f"{description} exceeds the bounded size limit")
+        chunks.append(chunk)
+
+
 def _load_other_wikis(path: Path) -> tuple[tuple[Revision, ...], dict]:
     """Preserve recovered added lines as snippets, never reconstruct snapshots."""
-    packed = path.read_bytes()
-    raw = gzip.decompress(packed) if path.suffix == ".gz" else packed
+    with path.open("rb") as stream:
+        packed = _bounded_read(stream, _MAX_SUPPLEMENT_INPUT_BYTES, "Supplement input")
+    if path.suffix == ".gz":
+        # GzipFile streams all concatenated members through one cumulative bound.
+        with gzip.GzipFile(fileobj=io.BytesIO(packed)) as stream:
+            raw = _bounded_read(stream, _MAX_EXPANDED_BYTES, "Expanded supplement")
+    else:
+        raw = packed
+        if len(raw) > _MAX_EXPANDED_BYTES:
+            raise ValueError("Expanded supplement exceeds the bounded size limit")
     value = json.loads(raw)
     if not isinstance(value, dict) or not {"recovered", "source", "pages"} <= value.keys():
         raise ValueError("Unsupported recovered other-wiki schema")
